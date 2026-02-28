@@ -1,0 +1,111 @@
+{
+    "label": "Summons",
+    "folders": {
+        "Gesture: Create": "Gesture: Create",
+        "Gesture: Conjure": "Gesture: Conjure"
+    },
+    "entries": {
+        "Acid Absorption": {
+            "name": "Acid Absorption"
+        },
+        "Amorphous": {
+            "name": "Amorphous"
+        },
+        "Aqueous Transmission": {
+            "name": "Aqueous Transmission"
+        },
+        "Bony Claws": {
+            "name": "Bony Claws"
+        },
+        "Cold Absorption": {
+            "name": "Cold Absorption"
+        },
+        "Deathly Armor": {
+            "name": "Deathly Armor"
+        },
+        "Earth Sprite": {
+            "name": "Earth Sprite"
+        },
+        "Earth Visitor": {
+            "name": "Earth Visitor"
+        },
+        "Earthen Claw": {
+            "name": "Earthen Claw"
+        },
+        "Electricity Absorption": {
+            "name": "Electricity Absorption"
+        },
+        "Elemental Armor": {
+            "name": "Elemental Armor"
+        },
+        "False Appearance": {
+            "name": "False Appearance"
+        },
+        "Fire Absorption": {
+            "name": "Fire Absorption"
+        },
+        "Flame Claw": {
+            "name": "Flame Claw"
+        },
+        "Flame Sprite": {
+            "name": "Flame Sprite"
+        },
+        "Flame Visitor": {
+            "name": "Flame Visitor"
+        },
+        "Frost Claw": {
+            "name": "Frost Claw"
+        },
+        "Frost Sprite": {
+            "name": "Frost Sprite"
+        },
+        "Frost Visitor": {
+            "name": "Frost Visitor"
+        },
+        "Gesture: Arrow": {
+            "name": "Gesture: Arrow"
+        },
+        "Gesture: Aspect": {
+            "name": "Gesture: Aspect"
+        },
+        "Gesture: Fan": {
+            "name": "Gesture: Fan"
+        },
+        "Gesture: Influence": {
+            "name": "Gesture: Influence"
+        },
+        "Gesture: Ray": {
+            "name": "Gesture: Ray"
+        },
+        "Icy Claw": {
+            "name": "Icy Claw"
+        },
+        "Moldy Skeleton": {
+            "name": "Moldy Skeleton"
+        },
+        "Rune: Death": {
+            "name": "Rune: Death"
+        },
+        "Rune: Earth": {
+            "name": "Rune: Earth"
+        },
+        "Rune: Flame": {
+            "name": "Rune: Flame"
+        },
+        "Rune: Frost": {
+            "name": "Rune: Frost"
+        },
+        "Rune: Lightning": {
+            "name": "Rune: Lightning"
+        },
+        "Storm Sprite": {
+            "name": "Storm Sprite"
+        },
+        "Storm Visitor": {
+            "name": "Storm Visitor"
+        },
+        "Voltaic Claw": {
+            "name": "Voltaic Claw"
+        }
+    }
+}

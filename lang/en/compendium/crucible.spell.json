@@ -1,0 +1,73 @@
+{
+    "label": "Spell",
+    "folders": {
+        "Gesture: Aura": "Gesture: Aura",
+        "Gesture: Strike": "Gesture: Strike",
+        "Gesture: Aspect": "Gesture: Aspect",
+        "Gesture: Pulse": "Gesture: Pulse",
+        "Gesture: Infuence": "Gesture: Infuence",
+        "Gesture: Creation": "Gesture: Creation",
+        "Gesture: Sense": "Gesture: Sense"
+    },
+    "entries": {
+        "Bind Armament": {
+            "name": "Bind Armament",
+            "description": "<p>You bind the weapon currently equipped in your main-hand as your Bound Armament.</p><p>While bound, you may conjure the weapon into a free hand without any resource cost. You can conjure the weapon across any distance including if it has been <strong>Disarmed</strong>.</p><p></p><p></p>"
+        },
+        "Curse of Atrophy": {
+            "name": "Curse of Atrophy",
+            "description": "<p>You sap the physical strength of your target, causing their muscles to wither and weaken in a way that cannot be undone by ordinary rest or recovery.</p>"
+        },
+        "Curse of Delusion": {
+            "name": "Curse of Delusion",
+            "description": "<p>You cloud the clarity of your target's mind, permanently impairing their perception and sound judgment in ways that resist ordinary healing.</p>"
+        },
+        "Curse of Dullness": {
+            "name": "Curse of Dullness",
+            "description": "<p>You dim the spark of intellect within your target, permanently impairing their capacity for swift thought and reasoning in ways that cannot be mended by rest alone.</p>"
+        },
+        "Curse of Exhaustion": {
+            "name": "Curse of Exhaustion",
+            "description": "<p>You drain the vital resilience of your target, leaving them constitutionally weakened in a way that persists beyond any ordinary recovery.</p>"
+        },
+        "Curse of Lethargy": {
+            "name": "Curse of Lethargy",
+            "description": "<p>You smother the spark of quickness within your target, dulling their reflexes and slowing their body's response in a way that endures permanently.</p>"
+        },
+        "Curse of Scorn": {
+            "name": "Curse of Scorn",
+            "description": "<p>You diminish the force of your target's personality, making them less compelling and harder for others to heed in a way that proves permanent.</p>"
+        },
+        "Dawn Beacon": {
+            "name": "Dawn Beacon",
+            "description": "<p>You call forth the piercing light of dawn that penetrates the darkness around you, revealing the area and dispelling sources of magical darkness.</p>"
+        },
+        "Engulfing Darkness": {
+            "name": "Engulfing Darkness",
+            "description": "<p>You conjure an oppressive sphere of magical darkness that shrouds vision and suffocates light within its area.</p>"
+        },
+        "Invisibility": {
+            "name": "Invisibility",
+            "description": "<p>A sophisticated use of Illusory magic, the Invisibility spell allows the caster to wrap light and shadow around themselves like donning a cloak, reflecting the world about them as if they were not standing there. What person wouldn't believe it when their own eyes tell them that there is nothing to see?</p>"
+        },
+        "Lifebloom": {
+            "name": "Lifebloom",
+            "description": "<p>Few are those that can serve as a conduit within the physical world and allow the raw powers of Life and Soul to comingle, tipping the balance in their favour. This spell allows the caster to serve as a wellspring for the abundant forces that bring all soulful life into being. With a susurration of air the caster is surrounded with dancing motes of the pure energies of life and soul, like dozens of fireflies or the sparks from a fire, and a those within the radius are filled with a calming sensation as if they were immersed in pleasantly warm water. All plant life in the vicinity immediately surges through stages of growth to bloom, and the scent of pollen and lush greenery fills the air.</p>"
+        },
+        "Protective Mirage": {
+            "name": "Protective Mirage",
+            "description": "<p>You <strong>Aspect </strong>yourself in a mirage of shifting <strong>Illumination</strong> and <strong>Shadow</strong> which mask your current position and allow you to <strong>Elude</strong> incoming blows.</p>"
+        },
+        "Revive": {
+            "name": "Revive",
+            "description": "<p>A potent expression of Life and Control magics, Revive allows the caster to intervene in the natural process of death by driving a surge of the essence of life into the body of the recently deceased. Those who have experienced Revival are often reluctant to discuss it, but describe it as a sensation that is unpleasantly reminiscent of being woken suddenly from a deep slumber to find they have been freezing— the flesh prickles and aches, the mind reels, and the soul aches with the memory of its interrupted departure.</p>"
+        },
+        "Telecognition": {
+            "name": "Telecognition",
+            "description": "<p>A rudimentary example of the complex art of penetrating the minds of others, Telecognition skims thoughts from the surface of a subject's mind like leaves from the surface of a pond. Though it may not be disruptive, it is unsubtle— just as the pond ripples when its surface is touched, so too does the mind.</p><p></p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "label": "Ancestry",
+    "entries": {
+        "Devilkin": {
+            "name": "Devilkin",
+            "description": "<p>You were born with unexpected magical influence over your creation. Your physical appearance shows tell-tale signs that the superstitious associate with planar beings- crimson flesh, ineffective wings or horns, reptilian eyes. Your dislike of light and preternatural resistance to fire does little to dissuade people from thinking you are an actual devil.</p>"
+        },
+        "Dwarven": {
+            "name": "Dwarven",
+            "description": "<p>Like your parents before you, you were born with the enduring fortitude of the Dwarves. Your stout stature and burly physical appearance are the hallmarks of a people born of earth and stone. A legacy of physical resilience is yours to inherit, for in your breast beats a heart of stone.</p>"
+        },
+        "Elvish": {
+            "name": "Elvish",
+            "description": "<p>Graceful in movement and swift in thought, you were born a long-lived elf. Your slight and nimble frame and sculpted features are the inherited traits of a people for whom elegance is a way of life. Your predisposition toward quick-thinking and precise movement the evolutionary results of hundreds of years of tradition.</p>"
+        },
+        "Giantkin": {
+            "name": "Giantkin",
+            "description": "<p>Elemental forces presided over your birth, instilling you with supernatural vigor. Your large frame and muscular build often lead others to believe you are an unthinking mass of muscle, but yours is a people known most for their physical resilience and the deep well of their knowledge. You have inherited the strength of mountains.</p>"
+        },
+        "Gnome": {
+            "name": "Gnome",
+            "description": "<p>Yours was a birth of exuberant celebration. Your diminutive body and delicate features are paired with an almost supernatural propensity for discovery. The traditions of your people embrace a lust for life and the importance of quick-thinking and quick-action.</p>"
+        },
+        "Halfling": {
+            "name": "Halfling",
+            "description": "<p>You were raised in a creche surrounded by other halflings. Your lilliputian stature, thick-soled hairy feet, and the swiftness of your mind and body are what your people are most known for. Yours is a people for whom education and tradition are paramount.</p>"
+        },
+        "Human": {
+            "name": "Human",
+            "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
+        },
+        "Orcish": {
+            "name": "Orcish",
+            "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

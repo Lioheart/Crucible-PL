@@ -1,0 +1,9 @@
+Hooks.once('init', () => {
+  if (typeof Babele !== 'undefined') {
+    game.babele.register({
+      module: 'lang-pl-crucible', // Identyfikator twojego modułu
+      lang: 'pl', // Język
+      dir: 'lang/pl/compendium', // Katalog z tłumaczeniami
+    });
+  }
+});

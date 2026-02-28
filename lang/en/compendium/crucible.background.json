@@ -1,0 +1,44 @@
+{
+    "label": "Background",
+    "entries": {
+        "Acolyte": {
+            "name": "Acolyte",
+            "description": "<p>You were a person of faith. You learned how to live selflessly in service to others or in pursuit of a higher ideal.</p>"
+        },
+        "Constable": {
+            "name": "Constable",
+            "description": "<p>You were part of a law enforcement organization. You learned how to remain vigilant to your surroundings, work within complex social structures, and affect an imposing presence.</p>"
+        },
+        "Merchant": {
+            "name": "Merchant",
+            "description": "<p>You were a travelling salesperson or tended a small shop. You spent a significant portion of your time learning the art of negotiation with people from all walks of life, and where the boundaries of the best deal lay.</p>"
+        },
+        "Performer": {
+            "name": "Performer",
+            "description": "You were a travelling entertainer. You learned to be comfortable attending a variety of social functions, how to play to your audience, embellishing details of your performance to evoke particular emotional responses."
+        },
+        "Physician": {
+            "name": "Physician",
+            "description": "<p>You were a healer or medical professional of some variety. You have spent a portion of your life learning medical science, and you have a propensity for noticing illness in others. You know how to treat wounds, diseases, and how to identify their sources.</p>"
+        },
+        "Scholar": {
+            "name": "Scholar",
+            "description": "<p>You were always most at home in a library or classroom. Your studies focused on unravelling the mysteries of the world around you, and there are few theoretical subjects with which you are not already familiar.</p>"
+        },
+        "Soldier": {
+            "name": "Soldier",
+            "description": "<p>You were a rank-and-file member of a military organization of some variety. Discipline made you a survivor and emphasized the importance of demonstrating strength and dominance over others, and years on horseback or marching taught you how to handle all manner of terrain.</p>"
+        },
+        "Urchin": {
+            "name": "Urchin",
+            "description": "<p>Few learn to survive the way you did. Yours was a harsh education in distrust. You learned to watch others for the telltale signs of danger or disloyalty, to avoid the attention of others, scavenging for scraps of food on the streets of some urban sprawl.</p>"
+        },
+        "Wanderer": {
+            "name": "Wanderer",
+            "description": "<p>Yours has been an itinerant life. You enjoy nothing more than the feeling of a cart or mount below you, watching some foreign sky slowly pass above you. You learned to pay careful attention to your surroundings and their needs, to tend the creatures on which you rely, and to make do with what you can find.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

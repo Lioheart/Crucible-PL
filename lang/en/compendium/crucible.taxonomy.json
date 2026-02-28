@@ -1,0 +1,116 @@
+{
+    "label": "Taxonomy",
+    "folders": {
+        "Dragon": "Dragon",
+        "Elemental": "Elemental",
+        "Monstrosity": "Monstrosity",
+        "Undead": "Undead",
+        "Giant": "Giant",
+        "Humanoid": "Humanoid",
+        "Construct": "Construct",
+        "Beast": "Beast",
+        "Outsiders": "Outsiders",
+        "Ooze": "Ooze"
+    },
+    "entries": {
+        "Amphibian": {
+            "name": "Amphibian",
+            "description": "<p>Beasts which dwell within or nearby water. Amphibians are typically dexterous, but some varieties are powerful or large in size.</p><ul><li><p><strong>Size</strong>: variable</p></li><li><p><strong>Stride</strong>: variable</p></li></ul>"
+        },
+        "Apparatus": {
+            "name": "Apparatus",
+            "description": "<p>Constructs built for simple purposes, such as multi-stage automated trap devices or machines to perform a specific repetitive function.</p>"
+        },
+        "Arachnid": {
+            "name": "Arachnid",
+            "description": "<p>Beasts from the arachnid family which spin webs to ensnare and prey upon small creatures or insects. Arachnids are typically dexterous and patient, but some varieties favor power or aggression.</p><ul><li><p><strong>Size</strong>: variable</p></li><li><p><strong>Stride</strong>: variable</p></li></ul>"
+        },
+        "Boar": {
+            "name": "Boar",
+            "description": "<p>Mammals with thick hide, dangerous tusks, and a powerful low-seated center of mass.</p>"
+        },
+        "Crystal Spider": {
+            "name": "Crystal Spider",
+            "description": "<p>Arachnid comprised of or encrusted in refractive crystalline plates and formations.</p>"
+        },
+        "Drake": {
+            "name": "Drake",
+            "description": "<p>Serpentine creatures which are lesser kin of dragons. Drakes generally live and hunt in packs, unlike more solitary full dragons. Drakes range from younger and smaller varieties often called \"Drakelings\" to huge specimens sometimes referred to as \"Ultra Drakes\".</p><p>Observed size variations include:</p><ul><li><p><strong>Drakeling</strong>: Size 3, Stride 10</p></li><li><p><strong>Drake</strong>: Size 6, Stride 16</p></li><li><p><strong>Ultra Drake</strong>: Size 9, Stride 12</p></li></ul><p>Different types of Drakes feature a different range of damage resistances and vulnerabilities depending on their sub-species.</p>"
+        },
+        "Earth Elemental": {
+            "name": "Earth Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
+        },
+        "Fire Elemental": {
+            "name": "Fire Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
+        },
+        "Frost Elemental": {
+            "name": "Frost Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
+        },
+        "Ghoul": {
+            "name": "Ghoul",
+            "description": "<p>Malevolent and cunning undead who retain enough of their mortal cognition to construct and execute upon plans and schemes to torment or destroy living creatures.</p>"
+        },
+        "Grave Hound": {
+            "name": "Grave Hound",
+            "description": "<p>Terrible undead canines who have fallen to corruption and become servants of undeath. Grave Hounds are found as guardians of unholy places, companions to the forces of undeath, or as terrible packs dispatched to hunt and terrorize the living.</p>"
+        },
+        "Harbinger": {
+            "name": "Harbinger",
+            "description": "<p>Otherworldly beings from the void beyond.</p>"
+        },
+        "Hobgoblin": {
+            "name": "Hobgoblin",
+            "description": "Hobgoblins are humanoids which typically congregate in martial societies which are orderly and disciplined. Hobgoblins are both cunning and uncompromising, making dangerous foes or powerful allies."
+        },
+        "Hyena": {
+            "name": "Hyena",
+            "description": "Mammals from the hyena family. Hyenas are carnivorous pack hunters with powerful necks and jaws."
+        },
+        "Ogre": {
+            "name": "Ogre",
+            "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
+        },
+        "Rodent": {
+            "name": "Rodent",
+            "description": "<p>Beasts which typically congregate in high populations in and around humanoid settlements and are opportunistic scavengers. </p>"
+        },
+        "Skeleton": {
+            "name": "Skeleton",
+            "description": "<p>Malevolent undying creatures brought to life by necromancy, created from the skeletal remains of long-dead humanoids. Driven by unholy forces beyond their control, @ref[name] rarely exist of their own accord, and are often encountered as the minions of evil spellcasters and greater undead.</p>"
+        },
+        "Slime": {
+            "name": "Slime",
+            "description": "<p>Creatures made primarily of gelatinous material. They are generally slow, small in size, and incapable of spellcasting or speech. Some exceptions have been documented with variations of slimes which are large, fast, or capable of communication.</p>"
+        },
+        "Storm Elemental": {
+            "name": "Storm Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+        },
+        "War Machine": {
+            "name": "War Machine",
+            "description": "<p>Constructs built for the purpose of being instruments of war or formidable guardians.</p>"
+        },
+        "Werewolf": {
+            "name": "Werewolf",
+            "description": "<p>Lycanthropic shapeshifters who walk as men but take wolven form.</p>"
+        },
+        "Winged Terror": {
+            "name": "Winged Terror",
+            "description": "<p>Monstrous creatures that rule the skies and prey upon those bel0w.</p>"
+        },
+        "Wraith": {
+            "name": "Wraith",
+            "description": "<p>Wraiths are incorporeal undead born from souls that refused release - their physical form dissolved entirely into shadow, leaving only spite and sorrow given motion. They ignore conventional defenses, their touch bypassing armor and parry alike to assault the psychic and necrotic vulnerabilities of the living directly. Prolonged exposure to a wraith's presence drains morale as much as health, and those who survive an encounter often find their focus and resolve slow to return.</p>"
+        },
+        "Zombie": {
+            "name": "Zombie",
+            "description": "<p>The shambling corpses of the restless dead, their still-rotting bodies bloated with putrescence. They move without regard for the wounds they sustain and seek only mindless consumption.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

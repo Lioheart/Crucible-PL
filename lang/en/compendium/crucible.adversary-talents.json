@@ -1,0 +1,253 @@
+{
+    "label": "Adversary-Talents",
+    "folders": {
+        "Ooze": "Ooze",
+        "Charge": "Charge",
+        "Passive": "Passive",
+        "Bites": "Bites",
+        "Claws": "Claws",
+        "Construct": "Construct",
+        "Communication": "Communication",
+        "Undead": "Undead",
+        "Beast": "Beast",
+        "Critical Hits": "Critical Hits",
+        "Strikes": "Strikes",
+        "Movement": "Movement",
+        "Resistances": "Resistances",
+        "Bursts": "Bursts",
+        "Flight": "Flight",
+        "Death": "Death",
+        "Breath": "Breath",
+        "Senses": "Senses",
+        "Tail": "Tail"
+    },
+    "entries": {
+        "Acid Absorption": {
+            "name": "Acid Absorption",
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Acid Spit": {
+            "name": "Acid Spit",
+            "description": "<p>The creature has salivary glands which produce a caustic acid.</p>"
+        },
+        "Acid Spray": {
+            "name": "Acid Spray",
+            "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>"
+        },
+        "Amorphous": {
+            "name": "Amorphous",
+            "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to half its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
+        },
+        "Aqueous Transmission": {
+            "name": "Aqueous Transmission",
+            "description": "<p>The @ref[name] is able to move instantaneously through water.</p>"
+        },
+        "Bestial Senses": {
+            "name": "Bestial Senses",
+            "description": "<p>The @ref[actor.name]{creature} has finely honed senses and is particularly perceptive of their environment, all <strong>Awareness</strong> checks gain <strong>+2 Boons</strong>.</p>"
+        },
+        "Blood Sense": {
+            "name": "Blood Sense",
+            "description": "<p>The @ref[actor.name]{creature} can precisely sense any blooded creature within 20 feet which does not have all its hit points. Any weapon or skill attack against a wounded creature does not suffer <strong>Banes</strong> that would normally apply if the creature were @Condition[blinded].</p>"
+        },
+        "Bonded Mind": {
+            "name": "Bonded Mind",
+            "description": "<p>The mind of a @ref[actor.name]{creature} with this talent is inextricably bound to other members of its group. It is capable of instantaneous telepathic communication with any other @ref[actor.taxonomy.name]{creature of its taxonomy} within 60 feet.</p>"
+        },
+        "Burrower": {
+            "name": "Burrower",
+            "description": "<p>The @ref[actor.name]{creature} has a supernatural ability to rapidly burrow through solid surfaces which are not entirely impermeable.</p><p>Additionally, it can compress its body to pass through apertures that can accommodate ¼ of its <strong>Size</strong>.</p>"
+        },
+        "Clinging Grip": {
+            "name": "Clinging Grip",
+            "description": "<p>The @ref[actor.name]{creature} is able to cling to vertical or overhead surfaces with exceptional grip or adhesion. This creature can avoid falling as long as they are adjacent to any solid surface which can reasonably support them.</p>"
+        },
+        "Cold Absorption": {
+            "name": "Cold Absorption",
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within frigid environments. Its <strong>Cold</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Corrode Weapon": {
+            "name": "Corrode Weapon",
+            "description": "<p>The internal corrosive metabolism of the @ref[actor.name]{ooze} threatens to dissolve metal weapons that strike it.</p>"
+        },
+        "Corruption Absorption": {
+            "name": "Corruption Absorption",
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of Death magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Electricity Absorption": {
+            "name": "Electricity Absorption",
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Elusive Flight": {
+            "name": "Elusive Flight",
+            "description": "<p>This @ref[actor.name]{creature} is especially elusive while in flight, able to swoop in and out of combat without provoking any <strong>Disengagement</strong>. It can be engaged if it lands upon the ground and Disengagement may apply if it attempts to return to flight.</p>"
+        },
+        "Extended Breath": {
+            "name": "Extended Breath",
+            "description": "<p>The @ref[actor.name]{creature} can hold its breath for <strong>15 minutes</strong>.</p>"
+        },
+        "False Appearance": {
+            "name": "False Appearance",
+            "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+        },
+        "Fire Absorption": {
+            "name": "Fire Absorption",
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Glider": {
+            "name": "Glider",
+            "description": "<p>The @ref[actor.name]{creature} can control its movement while falling and may perform the <strong>Move</strong> action up to a maximum distance of its <strong>Stride</strong> for each 20 feet that it falls.</p><p>If it spends Action to Move in this way, it does not suffer falling damage upon landing.</p>"
+        },
+        "Gloom Sight": {
+            "name": "Gloom Sight",
+            "description": "<p>The @ref[actor.name]{creature} can gaze into the gloom of total darkness and see normally. Magical darkness does not impede the creature's vision.</p><p><strong>System Development</strong>: This feature needs automation to configure vision and detection modes that are unaffected by magical darkness.</p>"
+        },
+        "Glowing Body": {
+            "name": "Glowing Body",
+            "description": "<p>The @ref[actor.name]{creature} emits non-magical bright light in a 15-foot radius and dim light in a 30 foot radius.</p>"
+        },
+        "Grave Mark": {
+            "name": "Grave Mark",
+            "description": "<p>When the @ref[actor.name]{creature} achieves a Critical Hit with a melee attack, it leaves a baleful Grave Mark upon its target.</p>"
+        },
+        "Horrific Critical": {
+            "name": "Horrific Critical",
+            "description": "<p>The @ref[actor.name]{creature} delivers savage and grotesque blows that evoke fear within any who behold them.</p>"
+        },
+        "Immutable Form": {
+            "name": "Immutable Form",
+            "description": "<p>The @ref[actor.name] is immune to any spell or effect which alters its physical form.</p>"
+        },
+        "Lightning Spit": {
+            "name": "Lightning Spit",
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel minor voltaic discharge.</p>"
+        },
+        "Lightning Spray": {
+            "name": "Lightning Spray",
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel powerful voltaic discharge.</p>"
+        },
+        "Magical Sight": {
+            "name": "Magical Sight",
+            "description": "<p>The @ref[actor.name]{creature} has otherworldly sight that makes it especially aware of dangers or opportunities. It gains +2 <strong>Boons</strong> to any <strong>Awareness</strong> check and can see @Condition[invisible] creatures.</p>"
+        },
+        "Multiply": {
+            "name": "Multiply",
+            "description": "<p>The @ref[actor.name]{ooze} grows rapidly, increasing in health and size.</p>"
+        },
+        "Necrotic Bite": {
+            "name": "Necrotic Bite",
+            "description": "<p>The @ref[actor.name]{creature} tears into flesh with a maw that is corrupted by pestilence and undeath.</p>"
+        },
+        "Noxious Spit": {
+            "name": "Noxious Spit",
+            "description": "<p>The @ref[actor.name]{creature} produces a salivary toxin that it can expel in a projected globule.</p>"
+        },
+        "Noxious Spray": {
+            "name": "Noxious Spray",
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel toxic discharge in a projected ray.</p>"
+        },
+        "Pack Hunter": {
+            "name": "Pack Hunter",
+            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
+        },
+        "Pouncing Strike": {
+            "name": "Pouncing Strike",
+            "description": "<p>This creature lunges forward, putting its whole weight behind a leaping strike.</p>"
+        },
+        "Psychic Absorption": {
+            "name": "Psychic Absorption",
+            "description": "<p>The @ref[actor.name]{creature} is exceptionally unyielding to attacks on its mind. Its <strong>Psychic</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Radiant Absorption": {
+            "name": "Radiant Absorption",
+            "description": "<p>The @ref[actor.name]{creature} is no stranger to the chaotic force of light. Its <strong>Radiant</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Radiant Death Burst": {
+            "name": "Radiant Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of radiant energy.</p>"
+        },
+        "Raking Talons": {
+            "name": "Raking Talons",
+            "description": "<p>The @ref[actor.name]{creature} attacks rapidly with its talons, dealing multiple raking blows against a single target.</p>"
+        },
+        "Repugnant Pustules": {
+            "name": "Repugnant Pustules",
+            "description": "<p>A malodorous cloud hangs about this creature like a pall, the rank noxious scent that can only come from active decay. Striking this creature is likely to release repugnant and corrupting essence.</p>"
+        },
+        "Restless Dead": {
+            "name": "Restless Dead",
+            "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
+        },
+        "Restraining Chomp": {
+            "name": "Restraining Chomp",
+            "description": "<p>The @ref[actor.name]{creature} uses its powerful jaws to bite and hold a target with a powerful chomp.</p>"
+        },
+        "Sacrifice Self": {
+            "name": "Sacrifice Self",
+            "description": "<p>The @ref[actor.name]{creature} may intervene to take a blow instead of an adjacent ally.</p>"
+        },
+        "Self-Repair": {
+            "name": "Self-Repair",
+            "description": "<p>The @ref[actor.name]{construct} activates internal repairing mechanisms to mitigate damage it has taken.</p>"
+        },
+        "Servitor": {
+            "name": "Servitor",
+            "description": "<p>The @ref[actor.name]{creature} serves the will of another and maintains a connection to that master that allows the transmission or messages or even the sharing of senses between the servitor and its controller.</p>"
+        },
+        "Shadow Gait": {
+            "name": "Shadow Gait",
+            "description": "<p>The @ref[actor.name]{creature} is able to step into and out of shadow itself to move in nightmarish and unpredictable ways.</p>"
+        },
+        "Slippery Form": {
+            "name": "Slippery Form",
+            "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>"
+        },
+        "Subdivide": {
+            "name": "Subdivide",
+            "description": "<p>The @ref[actor.name]{ooze} can divide itself into multiple parts, each an independent copy of the original.</p>"
+        },
+        "Sunlight Weakness": {
+            "name": "Sunlight Weakness",
+            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+        },
+        "Swooping Strike": {
+            "name": "Swooping Strike",
+            "description": "<p>This @ref[actor.name]{creature} swoops from high above into a diving attack.</p>"
+        },
+        "Tail Sweep": {
+            "name": "Tail Sweep",
+            "description": "<p>The @ref[actor.name]{creature} can whip its heavy tail across the battlefield with terrible force.</p>"
+        },
+        "Thermal Vision": {
+            "name": "Thermal Vision",
+            "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures which are warm-blooded or otherwise emit heat up to 60 feet away as long as they are not behind total cover and you are not Blinded or Incapacitated. A creature detected using this Thermal Vision is treated as visible for the purposes of actions which require you to see your target.</p><p></p>"
+        },
+        "Thrash": {
+            "name": "Thrash",
+            "description": "<p>Once the @ref[actor.name]{creature} has an enemy restrained, it will thrash violently dealing terrible blows to the grasped victim.</p>"
+        },
+        "Trampling Charge": {
+            "name": "Trampling Charge",
+            "description": "<p>The @ref[actor.name]{creature} uses its prodigious size to charge forward, trampling smaller creatures that stand in its way.</p>"
+        },
+        "Tusk Charge": {
+            "name": "Tusk Charge",
+            "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet."
+        },
+        "Venomous Bite": {
+            "name": "Venomous Bite",
+            "description": "<p>The @ref[actor.name]{creature} injects toxin with their bite.</p>"
+        },
+        "Void Absorption": {
+            "name": "Void Absorption",
+            "description": "<p>The @ref[actor.name]{creature} is no stranger to the orderly force of darkness. Its <strong>Void</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Web Spinner": {
+            "name": "Web Spinner",
+            "description": "<p>The @ref[actor.name]{creature} can create powerfully adhesive webbing. It ignores any movement restrictions or restraints otherwise caused by webbing.</p><p>While in contact with a web, the @ref[actor.name]{creature} knows the precise location of any other creature in contact with the same web.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

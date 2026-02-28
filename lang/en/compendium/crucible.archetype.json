@@ -1,0 +1,155 @@
+{
+    "label": "Archetype",
+    "folders": {
+        "Humanoids": "Humanoids",
+        "Dragons": "Dragons",
+        "Constructs": "Constructs",
+        "Elementals": "Elementals",
+        "Beasts": "Beasts"
+    },
+    "entries": {
+        "Adult Drake": {
+            "name": "Adult Drake",
+            "description": "<p>Fully grown drakes which are dangerous stalkers and pack hunters. </p>"
+        },
+        "Archer": {
+            "name": "Archer",
+            "description": "Ranged combatants with training is the use of bows."
+        },
+        "Bard": {
+            "name": "Bard",
+            "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p>"
+        },
+        "Berserker": {
+            "name": "Berserker",
+            "description": "A rage-fueled warrior which prefers two-handed attacks using Heavy weapons."
+        },
+        "Brigand": {
+            "name": "Brigand",
+            "description": "<p>Villainous lawbreakers whether they be bandits, pirates, ruffians, or other knaves.</p>"
+        },
+        "Burrower": {
+            "name": "Burrower",
+            "description": "<p>Beasts or beast-like creatures which are expert at burrowing through solid material.</p>"
+        },
+        "Chomper": {
+            "name": "Chomper",
+            "description": "<p>Beasts that rely on vicious bites from their oversized mouths.</p>"
+        },
+        "Commonfolk": {
+            "name": "Commonfolk",
+            "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
+        },
+        "Drakeling": {
+            "name": "Drakeling",
+            "description": "<p>Smaller or younger drakes which are individually undersized, but dangerous as stalkers who hunt in packs.</p>"
+        },
+        "Elemental Mote": {
+            "name": "Elemental Mote",
+            "description": "<p>Motes are the smallest elemental embodiments that still take physical form. They are generally unintelligent and act according to environmental stimuli or following the instinctual direction of a nearby greater elemental.</p>"
+        },
+        "Elemental Sprite": {
+            "name": "Elemental Sprite",
+            "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+        },
+        "Elemental Visitor": {
+            "name": "Elemental Visitor",
+            "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+        },
+        "Elemental Wanderer": {
+            "name": "Elemental Wanderer",
+            "description": "<p>Wanderers are significant manifestations of elemental energy that assume a form that is imposing or majestic. They are self-aware, sapient, and understand that they unnatural interlopers when outside of their typical realm. They are often driven by some instinctive or premeditated purpose which has drawn them forth.</p>"
+        },
+        "Fighter": {
+            "name": "Fighter",
+            "description": "Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor."
+        },
+        "Grappler": {
+            "name": "Grappler",
+            "description": "Fighters who specialize in physically restraining their adversaries and rendering them susceptible to further attacks."
+        },
+        "Guardian Beast": {
+            "name": "Guardian Beast",
+            "description": "<p>Beasts that serve as guardians, standing watch over places or people to whom they are unwaveringly loyal.</p>"
+        },
+        "Justiciar": {
+            "name": "Justiciar",
+            "description": "<p>Justiciars are divine champions which bring the wrath and judgment of divine power to those who are wicked or unworthy.</p>"
+        },
+        "Lawkeeper": {
+            "name": "Lawkeeper",
+            "description": "<p>Constables, detectives, investigators, and other officers of the law who are responsible for keeping the peace and hunting down those who break it.</p>"
+        },
+        "Mage": {
+            "name": "Mage",
+            "description": "A magic user which wields flame and electricity in battle."
+        },
+        "Necromancer": {
+            "name": "Necromancer",
+            "description": "<p>Necromancers are spellcasters who have turned their intellect and wisdom toward the unmaking of death's finality, studying the necrotic and psychic forces that linger between life and oblivion. They are rarely found alone - a Necromancer of any threat rank will have bent nearby undead to their will, and defeating one without first disrupting their conjured servants is a costly proposition. In direct confrontation they are physically fragile, with low dodge and no meaningful parry or block, but their ability to sustain ongoing necrotic effects, sap the focus and morale of their enemies, and replenish their own resources from the suffering of others makes them dangerous adversaries at any level.</p>"
+        },
+        "Occultist": {
+            "name": "Occultist",
+            "description": "Magic users who practice spellcraft using otherworldly and eldritch forces."
+        },
+        "Operator": {
+            "name": "Operator",
+            "description": "<p>Operators are experts at maneuvering in tense situations, able to balance shrewd political sense with cunning and decisive action.</p>"
+        },
+        "Pack Member": {
+            "name": "Pack Member",
+            "description": "Beasts that hunt in packs."
+        },
+        "Priest": {
+            "name": "Priest",
+            "description": "<p>Devout servants of the gods who derive their power through their faith and devotion to their deity.</p>"
+        },
+        "Protector": {
+            "name": "Protector",
+            "description": "<p>Stalwart warriors who interpose themselves between their allies and peril, seeking foremost to protect themselves and others from harm.</p>"
+        },
+        "Scout": {
+            "name": "Scout",
+            "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
+        },
+        "Servitor": {
+            "name": "Servitor",
+            "description": "<p>Creatures which are specialized in espionage or performing tasks in remote service of a controlling master.</p>"
+        },
+        "Shapeshifter": {
+            "name": "Shapeshifter",
+            "description": "<p>Shapeshifters practice the arts of bestial transformation, a type of primal magic that is ancient and different than commonly practiced runic spellcraft.</p>"
+        },
+        "Skirmisher": {
+            "name": "Skirmisher",
+            "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+        },
+        "Spellblade": {
+            "name": "Spellblade",
+            "description": "<p>Spellblades are magically empowered warriors who weave spellcraft into their weapon attacks to create devastating strikes.</p>"
+        },
+        "Swashbuckler": {
+            "name": "Swashbuckler",
+            "description": "<p>Those who engage in the dangerous life aboard a sailing ship, or practice the trade of high seas piracy. You are known for your wit, charm, and sometimes reckless bravery.</p>"
+        },
+        "Thief": {
+            "name": "Thief",
+            "description": "<p>Rogueish characters who are adept in infiltrating areas they are not supposed to enter and taking things they are not supposed to have.</p>"
+        },
+        "Trader": {
+            "name": "Trader",
+            "description": "<p>Your expertise is in traveling the world and facilitating the exchange of goods.</p>"
+        },
+        "Tusker": {
+            "name": "Tusker",
+            "description": "<p>Beasts that fight using their own mass, momentum, and sharpened tusks.</p>"
+        },
+        "Ultra Drake": {
+            "name": "Ultra Drake",
+            "description": "<p>Mature drakes who are the apex predators of their kind.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

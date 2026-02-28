@@ -1,0 +1,193 @@
+{
+    "label": "Playtest",
+    "entries": {
+        "Playtest 1 - The Ring of Valor": {
+            "name": "Playtest 1 - The Ring of Valor",
+            "caption": "Test your mettle in the Ring of Valor, the first available playtest for the Crucible game system.",
+            "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>",
+            "folders": {
+                "Crucible Playtest": "Crucible Playtest",
+                "The Ring of Valor": "The Ring of Valor",
+                "Day 1": "Day 1",
+                "Day 2": "Day 2",
+                "Day 3": "Day 3",
+                "Day 4": "Day 4",
+                "Day 5": "Day 5",
+                "Pregenerated Heroes": "Pregenerated Heroes",
+                "Level 1": "Level 1",
+                "Level 6": "Level 6"
+            },
+            "journals": {
+                "Playtest One: The Ring of Valor": {
+                    "name": "Playtest One: The Ring of Valor",
+                    "pages": {
+                        "Introduction": {
+                            "name": "Introduction",
+                            "text": "<p><strong>Playtest One: The Ring of Valor </strong>is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of challenges in the Ring of Valor.</p><p>Players may either create their own characters from scratch following the @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6]{Character Creation} process (recommended) or use the Level 1 premade characters provided in the <strong>Pregenerated Heroes</strong> compendium pack.</p><p>This challenge is designed and balanced for a party of four player characters, although we encourage you to test with a smaller or larger party as well. The difficulty of challenges can be adjusted by manipulating the threat level of @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaries}.</p><p>The Ring of Valor consists of six battles, one each day, during which the party faces increasingly dangerous opponents culminating in a final match against the reigning champions - the last group of heroes to overcome the arena. After each encounter, the party advances in level before facing their next test. Each battle is designed to introduce new gameplay mechanics and provide an opportunity to test out new abilities gained through level advancement.</p><h2 class=\"divider\">Providing Feedback</h2><p>If you test Crucible and experience the Ring of Valor, please help us by taking a few moments to @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Provide Feedback} in the <strong>#crucible</strong> channel of our community Discord server.</p><h2 class=\"divider\">Regarding Defeat</h2><p>Normally, in Crucible - defeat whether by <strong>Insanity</strong> or <strong>Death</strong> would be the end of a character's journey. In the case of this initial playtest, however, we recommend that you as the Gamemaster adopt a more flexible approach.</p><p>In the interest of testing the system and collecting useful feedback, we recommend allowing a party who experiences defeat to re-attempt the same challenge until successful OR to be permitted to advance to the next challenge regardless should one of the daily challenges prove too difficult to be surmounted.</p>"
+                        },
+                        "Day One - The Feral Scramble": {
+                            "name": "Day One - The Feral Scramble",
+                            "text": "<p>In the Day One challenge, 4 Level 1 heroes face off against a pack of frenzied beasts:</p><ul><li><p>4x @UUID[Actor.tqLT327VnrBXrLtj]{Huiana}<strong> </strong>(Level ½ Minion)</p></li><li><p>4x @UUID[Actor.owg68yqumk7KxV9B]{Baizaz}<strong> </strong>(Level ½ Minion)</p></li></ul><p><strong>Protagonist Threat</strong>: 1 × 4 = 4</p><p><strong>Adversary Threat</strong>: ⅓ × 8 = 2.66</p><p><strong>Encounter Difficulty</strong>: Difficult</p><h2 class=\"divider\">Introduction</h2><p>The party emerges onto the sand to find themselves in a large arena, surrounded by stands containing a cheering crowd. A commentator spectates from a booth overlooking the sands, where the arena's owner sits. The Commentator's voice is amplified by magic, carried throughout the arena.</p><blockquote><p>We're here on the first day of the Grand Exhibition at the Ring of Valor, and the crowd is already going wild! The first match of the day is about to begin, and as the newcomers step onto the sand for the first time, the crowd is clearly eager to see how they perform. The Scramble is always an audience favorite- will the newcomers survive and triumph against these ravenous wild beasts?!</p></blockquote><p>The party is instructed to proceed to stand in the center of the arena. The Huiana and Baizas are positioned on either side of the arena in groups of 4. Once the party reaches the center of the arena, a few moments are given to build tension and then the beasts emerge from the tunnels on the East and West sides of the map. Add everyone to a <strong>Combat</strong> encounter and start the combat to roll <strong>Initiative</strong> for <strong>Round 1</strong>.</p><h2 class=\"divider\">Tactics</h2><p>The <strong>Huiana</strong> are pack hunters and rely on flanking tactics to surround and harry a single protagonist, benefitting from their <strong>Pack Hunter</strong> talent. This challenge serves as an introduction to @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.KGXiKFUWrPgb7wsx]{Movement and Flanking} mechanics.</p><p>The <strong>Baisaz</strong> have formidable momentum and power in their charge. The Baisaz will charge a target using their <strong>Tusk Charge</strong> while using their movement or any remaining action to regain separation from their target to charge again.</p><p>Both Huiana and Baisaz are weak against damage to their @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.FmmADsI9qo1uIIT3]{Morale}. When the beasts become broken they will flee the arena, retreating down the nearest tunnel into the catacombs below. This initial challenge can serve as a learning experince that demoralizing your foes is a useful path towards victory.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all eight beasts have been defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>When ready to proceed, characters should each use the <strong>Recover</strong> action to regain lost resources and all characters should gain a level, advancing to level 2 to face @UUID[.eQdArtcrGi4wobap]{Day Two - Hammer and Anvil}.</p>"
+                        },
+                        "Day Two - Hammer and Anvil": {
+                            "name": "Day Two - Hammer and Anvil",
+                            "text": "<p>In the Day Two challenge, 4 Level 2 heroes face off against the gladiatorial duo of Hammer and Anvil (Challenge 9).</p><ul><li><p>@UUID[Actor.XA9W38PGmAs3ZLDa]{Hammer} (Level 3 Elite)</p></li><li><p>@UUID[Actor.KSoJR8uwT5Qzka7p]{Anvil} (Level 3 Elite)</p></li></ul><p><strong>Protagonist Threat</strong>: 2 × 4 = 8</p><p><strong>Adversary Threat</strong>: 4 × 2 = 8</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"It's a beautiful day in the Ring of Valor, and it's looking like we're in for a treat. Today's match marks the return of that deadly duo, the giants of the game, the terrible two: Hammer and Anvil.\"</p><p>The announcer pauses as the crowd roars before continuing: \"What a welcome! You can just hear how eager the fans are to see these two in action again. Let's see if our new contenders can stand up to the challenge!\"</p></blockquote><p>The party is instructed to gather in front of the tunnel on the west side of the arena. Once the party is in position, Hammer and Anvil emerge from the tunnel on the opposite east side and the battle begins!</p><h2 class=\"divider\">Tactics</h2><p>Hammer and Anvil are a pair of adversaries which fight as a coordinated team.</p><p><strong>Anvil's</strong> tactics primarily focus on trying to get close and grapple an enemy in order to create opportunities for Hammer to attack. Anvil will use <strong>Hammer Toss</strong> to get Hammer quickly into the fray and then use <strong>Wrestler</strong> to restrain enemies and <strong>Heavy Strike</strong> to deliver punishing blows.</p><p><strong>Hammer</strong> is a skirmisher, moving in and out of combat to capture opportunities to unleash a devastating sequence of dual-wield attacks using <strong>Flurry</strong> or using a <strong>Strike + Offhand Strike</strong> combo. Any enemies that attempt to disengage, Hammer will subdue using <strong>Hamstring.</strong></p><h2 class=\"divider\">Advancement</h2><p>The fight ends when both Hammer and Anvil have been defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the <strong>Recover</strong> action, and gain a level advancing to Level 3 to face @UUID[.v5EIDeTtHdQ7Wb5J]{Day Three - The Skeletal Army}.</p>"
+                        },
+                        "Day Three - The Skeletal Army": {
+                            "name": "Day Three - The Skeletal Army",
+                            "text": "<p>In the third challenge, 4 Level 3 heroes face off against the necromancer Orivech and his skeleton army!</p><ul><li><p>@UUID[Actor.JuobjWohGACVeoyn]{Orivech} (Level 3 Boss)</p><ul><li><p>Summoned @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Creation of Death} (Level 1 Minion)</p></li></ul></li><li><p>6x @UUID[Actor.aQkmEcwfImmdUINF]{Skeletal Spearman} (Level 1 Minion)</p></li><li><p>6x @UUID[Actor.7jL3UmgXbqxXKClM]{Skeletal Archer} (Level 1 Minion)</p></li></ul><p><strong>Protagonist Threat</strong>: 3 × 4 = 12</p><p><strong>Adversary Threat</strong>: 6 + (½ × 6) + (½ × 6) = 12</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><p>For this challenge the party is instructed to assemble with their backs to the cliff on the North side of the arena.</p><blockquote><p>\"Welcome back - one and all - to the Ring of Valor for day three of our gripping gauntlet! Today we celebrate the reenactment of one of the historic battles of our history. These few brave champions, their backs to the edge of oblivion, facing down against the dread necromancer Orivech and his skeletal army!\"</p><p>The crowd roars in eager anticipation as Orivech and his skeletal minions emerge from the south stairs and enter the arena.</p></blockquote><p>Orivech and the skeletons emerge from the south entrance and array themselves in a battle formation before the encounter begins!</p><h2 class=\"divider\">Tactics</h2><p>Orivech will play defensively and rely upon his legion of skeletons to subdue his enemies. As a Boss enemy, Orivech has <strong>10 Action</strong> per round and will use the <strong>Compose</strong> inflection on most spells in order to conserve <strong>Focus</strong> and will spend leftover Action on <strong>Recover Focus</strong>.</p><p>Orivech' tactics revolve around using the <strong>Create</strong> gesture to conjure more @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Creation of Death} minions. Orivech can sustain up to 3 such minions at a time because of the <strong>Conjurer</strong> talent. When threatened directly he will use the <strong>Push </strong>inflection to force enemies backwards.</p><p>The Skeletal Archers will <strong>Strike</strong> to focus fire at whichever target Orivech designates, using <strong>Evasive Shot</strong> to reposition themselves. The Skeletal Spearman will rush forward to engage enemy fighters and block their path, trying to trip them with <strong>Leg Sweep</strong>.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when Orivech is defeated. When the necromancer falls, his skeletal minions disintegrate to dust alongside him. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the Recover action, and gain a level advancing to Level 4. All heroes may also increase the quality of their equipped Weapons to <strong>Fine</strong>. After resting, the gauntlet continues with @UUID[.hEpGF7rbNFVUMm86]{Day Four - Koy Rent}.</p>"
+                        },
+                        "Day Four - Koy Rent": {
+                            "name": "Day Four - Koy Rent",
+                            "text": "<p>In this fourth challenge, 4 level 4 heroes square off against the lycanthropic menace Koy Rent.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Level 7 Boss)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 4 = 16</p><p><strong>Adversary Threat</strong>: 14</p><p><strong>Encounter Difficulty</strong>: Difficult</p><h2 class=\"divider\">Introduction</h2><p>For this challenge, the party assembles on the east side of the Arena.</p><blockquote><p>\"Today's match is a special one- featuring the return of a retired champion in a one-day-only exhibition! Folks, you know him, you love him, he's here, he's there, he is EV-ERY-WHERE!--- Koy Rent! Rent left the ring after a grievous injury, cheered off the field of victory by an understanding crowd. With him back in the games we have to wonder: will he climb to champion or will he fall to these new contenders?\"</p></blockquote><p>Koy Rent enters the arena from the West entrance and immediately attacks!</p><h2 class=\"divider\">Tactics</h2><p>Koy Rent is a formidable fighter. As a Level 7 Boss with significant Health and Morale pools, the party will have little hope of withstanding his onslaught in direct melee combat.</p><p>Rent will use <strong>Ferocious Howl </strong>to inflict the <strong>Frightened </strong>condition and move quickly to close distance into melee range with as many enemies as possible. Rent will use <strong>Flurry</strong> when facing a single target to subdue them quickly with a relentless onslaught of claw attacks, dealing additional bleeding damage through the <strong>Bloodletter</strong> talent.</p><p>The party cannot hope to withstand this onslaught in melee combat and will need to think carefully about how to slow Koy Rent down.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when Koy Rent is defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the <strong>Recover</strong> action, and gain a level; advancing to Level 5. All heroes may also increase the quality of their equipped Armor to <strong>Fine</strong>. The party returns the next day to face @UUID[.sISxZXCLNvpjkY02]{Day Five - Void Harbingers}.</p>"
+                        },
+                        "Day Five - Void Harbingers": {
+                            "name": "Day Five - Void Harbingers",
+                            "text": "<p>In this challenge, 4 Level 5 heroes face off against a trio of Void Harbingers:</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Harbinger of Fear} (L4 Elite)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Harbinger of Disease} (L4 Elite)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Harbinger of Madness} (L4 Elite)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 5 = 20</p><p><strong>Adversary Threat</strong>: 3 × 6 = 18</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Tonight we're in for some true excitement as the summoners have conjured a new challenge from realms beyond the umbral veil! Ladies and gentlemen, from the darkest recesses and liminal spaces beyond the edge of reality, welcome to the Ring of Valor: the Void Harbingers!\"</p></blockquote><h2 class=\"divider\">Tactics</h2><p>The <strong>Harbinger of Fear</strong> is a mobile predator that feasts on fearful thoughts. It will use <strong>Ethereal Warp</strong> to move freely about the battlefield and <strong>Eldritch Emanataion</strong> to inflict fear on groups of enemies. Once it has isolated a frightened enemy it will <strong>Strike</strong> with it's Psychic Maw.</p><p>The <strong>Harbinger of Disease </strong>is a bearer of pestilence that inflicts the <strong>Diseased</strong> condition using it's <strong>Pestilent Lash</strong> ability. This Harbinger also has spellcasting ability which it will use to further sap life and morale, targeting groups of enemies with the <strong>Pulse</strong> gesture or individual targets using <strong>Influence</strong>.</p><p>The <strong>Harbinger of Madness</strong> is a psychological predator which will close to melee range before using the <strong>Mind Flay </strong>ability against groups of enemies or <strong>Devour Thoughts</strong> against a single foe.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all three Harbingers are defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the Recover action, and gain a level; advancing to Level 6. All heroes may also increase the quality of their equipped Armor to <strong>Fine</strong>. The party returns the next day to face @UUID[.UxIXSvvJCdqx2Tar]{Day Six - Mirror Match}.</p>"
+                        },
+                        "Day Six - Mirror Match": {
+                            "name": "Day Six - Mirror Match",
+                            "text": "<p>In this final challenge, 4 Level 6 heroes come head-to-head with a rival adventuring party comprised of 4 Level 6 heroes.</p><ul><li><p>@UUID[Actor.iLUfMcYjAbZFY4CJ]{Duurath} (Level 6)</p></li><li><p>@UUID[Actor.0crVYYsPvV9KDEJ2]{Belladonna} (Level 6)</p></li><li><p>@UUID[Actor.2lvTCCOj4dnBI774]{Eliorwen} (Level 6)</p></li><li><p>@UUID[Actor.Il4NDaNBdHNcjJ9d]{Kagura} (Level 6)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 6 = 24</p><p><strong>Adversary Threat</strong>: 4 × 6 = 24</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Well, well… your champions have proven themselves against all of the formidable adversaries which this arena had to offer, so it's time to pit them against the storied veterans and champions of a past competition. Prepare yourselves for a battle of champions!\"</p></blockquote><p>This is an especially difficult challenge because all four opposing heroes are individually optimized and work well as a team.</p><h2 class=\"divider\">Tactics</h2><p>Each of the opponents in this challenge functions as a heroic protagonist with their own array of talents, actions, and equipment.</p><h4>Duurath</h4><p><strong>Duurath </strong>is a dangerous melee combatant with high <strong>Engagement</strong>, strong physical defense, and the <strong>Dread Lord</strong> signature talent which demoralizes and frightens foes. Duurath will close on enemy combatants using <strong>Shield Charge</strong> and lock them down using <strong>Cadence</strong> to deliver high damage or <strong>Counter Strike</strong> to retaliate when blocking incoming blows. Defensively, Duurath can use <strong>Kinetic Ward</strong> to protect himself from a chosen type of physical damage.</p><h4>Belladonna</h4><p><strong>Belladonna</strong> is a cunning and elusive melee combatant with the <strong>Poisoner</strong> talent. At the beginning of the battle she will activate <strong>Poison Blades</strong>. She will use <strong>Distract</strong> against enemy spellcasters to sap their Focus, and <strong>Combat Medicine</strong> to restore the health of her allies. Belladonna will seek out more vulnerable enemy combatants, closing to melee range using <strong>Tumble </strong>if necessary and <strong>Flurry</strong> to apply rapid damage and poisoned conditions.</p><h4>Eliorwen</h4><p><strong>Eliorwen</strong> is a deadly archer, infusing shots from her Longbow with lightning spells using her <strong>Arcane Archer</strong> talent. Eliorwen will identify a dangerous enemy and target them with <strong>Mark Prey</strong> to reduce their defenses for herself and her allies. She will use <strong>Precision Shot</strong> coupled with reduced cost <strong>Voltaic Arrow</strong> to deliver reliable sustained damage from a distance.</p><h4>Kagura</h4><p><strong>Kagura</strong> is a versatile support character able to heal both mind and body of her allies. She will cast the <strong>Life</strong> rune using either the <strong>Influence</strong>, <strong>Pulse</strong>, or <strong>Ray</strong> gestures to trigger additional healing from her <strong>Mender</strong> talent. Kagura can sustain healing nearly indefinitely through thoughtful use of the <strong>Compose</strong> inflection as well as <strong>Conserve Effort</strong>. Kagura avoids direct confrontation and instead will disengage from combat and seek protection from her allies.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all four adversaries are defeated. The crowd is thrilled with the party's performance and celebrates them as eternal champions of the Ring of Valor. There are not any more planned events in the Ring of Valor at this time, but please see @UUID[.aNlzMnfUkwpLrSox]{Further Challenges} if you wish to continue testing by improvising new challenges for the party to face.</p>"
+                        },
+                        "Further Challenges": {
+                            "name": "Further Challenges",
+                            "text": "<p>Thank you for completing the <strong>Crucible Playtest</strong>. We hope that you and your players enjoyed the testing experience. For further challenges to evaluate the system, we recommend the following:</p><ol><li><p>Repeat the @UUID[.UxIXSvvJCdqx2Tar]{Day Six - Mirror Match} challenge but with different combinations of Level 6 Pregen characters as adversaries.</p></li><li><p>Create your own @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaries} by testing out the initial system of Taxonomies and Archetypes.</p></li></ol><p>Please consider taking the time to @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Provide Feedback} which can help us further develop and improve this new role-playing game system.</p>"
+                        }
+                    }
+                }
+            },
+            "scenes": {
+                "Arena of Valor": {
+                    "name": "Arena of Valor"
+                }
+            },
+            "macros": {
+                "Recover": {
+                    "name": "Recover"
+                },
+                "Toggle Talent Tree": {
+                    "name": "Toggle Talent Tree"
+                },
+                "Full Rest": {
+                    "name": "Full Rest"
+                }
+            },
+            "actors": {
+                "Baizaz": {
+                    "name": "Baizaz",
+                    "tokenName": {
+                        "name": "Baizaz"
+                    }
+                },
+                "Huiana": {
+                    "name": "Huiana",
+                    "tokenName": {
+                        "name": "Huiana"
+                    }
+                },
+                "Anvil": {
+                    "name": "Anvil",
+                    "tokenName": {
+                        "name": "Anvil"
+                    }
+                },
+                "Hammer": {
+                    "name": "Hammer",
+                    "tokenName": {
+                        "name": "Hammer"
+                    }
+                },
+                "Orivech": {
+                    "name": "Orivech",
+                    "tokenName": {
+                        "name": "Orivech"
+                    }
+                },
+                "Skeletal Archer": {
+                    "name": "Skeletal Archer",
+                    "tokenName": {
+                        "name": "Skeletal Archer"
+                    }
+                },
+                "Skeletal Spearman": {
+                    "name": "Skeletal Spearman",
+                    "tokenName": {
+                        "name": "Skeletal Spearman"
+                    }
+                },
+                "Koy Rent": {
+                    "name": "Koy Rent",
+                    "tokenName": {
+                        "name": "Koy Rent"
+                    }
+                },
+                "Harbinger of Disease": {
+                    "name": "Harbinger of Disease",
+                    "tokenName": {
+                        "name": "Harbinger of Disease"
+                    }
+                },
+                "Harbinger of Fear": {
+                    "name": "Harbinger of Fear",
+                    "tokenName": {
+                        "name": "Harbinger of Fear"
+                    }
+                },
+                "Harbinger of Madness": {
+                    "name": "Harbinger of Madness",
+                    "tokenName": {
+                        "name": "Harbinger of Madness"
+                    }
+                },
+                "Zarajah": {
+                    "name": "Zarajah",
+                    "tokenName": {
+                        "name": "Zarajah"
+                    }
+                },
+                "Agnath": {
+                    "name": "Agnath",
+                    "tokenName": {
+                        "name": "Agnath"
+                    }
+                },
+                "Belladonna": {
+                    "name": "Belladonna",
+                    "tokenName": {
+                        "name": "Belladonna"
+                    }
+                },
+                "Duurath": {
+                    "name": "Duurath",
+                    "tokenName": {
+                        "name": "Duurath"
+                    }
+                },
+                "Eliorwen": {
+                    "name": "Eliorwen",
+                    "tokenName": {
+                        "name": "Eliorwen"
+                    }
+                },
+                "Fizzit": {
+                    "name": "Fizzit",
+                    "tokenName": {
+                        "name": "Fizzit"
+                    }
+                },
+                "Kagura": {
+                    "name": "Kagura",
+                    "tokenName": {
+                        "name": "Kagura"
+                    }
+                },
+                "Ulfen": {
+                    "name": "Ulfen",
+                    "tokenName": {
+                        "name": "Ulfen"
+                    }
+                }
+            }
+        }
+    }
+}

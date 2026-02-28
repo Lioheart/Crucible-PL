@@ -1,0 +1,145 @@
+{
+    "label": "Weapon",
+    "folders": {
+        "Shields": "Shields",
+        "Unarmed": "Unarmed",
+        "Ranged": "Ranged",
+        "Talisman": "Talisman",
+        "Melee (2h)": "Melee (2h)",
+        "Melee (1h)": "Melee (1h)"
+    },
+    "entries": {
+        "Arcane Orb": {
+            "name": "Arcane Orb"
+        },
+        "Bastard Sword": {
+            "name": "Bastard Sword"
+        },
+        "Battle Axe": {
+            "name": "Battle Axe"
+        },
+        "Buckler": {
+            "name": "Buckler"
+        },
+        "Ceremonial Dagger": {
+            "name": "Ceremonial Dagger"
+        },
+        "Claw Hammer": {
+            "name": "Claw Hammer"
+        },
+        "Claws": {
+            "name": "Claws"
+        },
+        "Club": {
+            "name": "Club"
+        },
+        "Dagger": {
+            "name": "Dagger"
+        },
+        "Dart Gun": {
+            "name": "Dart Gun"
+        },
+        "Glaive": {
+            "name": "Glaive"
+        },
+        "Great Hammer": {
+            "name": "Great Hammer"
+        },
+        "Greataxe": {
+            "name": "Greataxe"
+        },
+        "Greatclub": {
+            "name": "Greatclub"
+        },
+        "Greatsword": {
+            "name": "Greatsword"
+        },
+        "Grimoire": {
+            "name": "Grimoire"
+        },
+        "Halberd": {
+            "name": "Halberd"
+        },
+        "Hand Axe": {
+            "name": "Hand Axe"
+        },
+        "Hand Crossbow": {
+            "name": "Hand Crossbow"
+        },
+        "Heater Shield": {
+            "name": "Heater Shield"
+        },
+        "Heavy Crossbow": {
+            "name": "Heavy Crossbow"
+        },
+        "Katana": {
+            "name": "Katana"
+        },
+        "Katar": {
+            "name": "Katar"
+        },
+        "Kite Shield": {
+            "name": "Kite Shield"
+        },
+        "Longbow": {
+            "name": "Longbow"
+        },
+        "Longsword": {
+            "name": "Longsword"
+        },
+        "Mage Staff": {
+            "name": "Mage Staff"
+        },
+        "Pistol": {
+            "name": "Pistol"
+        },
+        "Quarterstaff": {
+            "name": "Quarterstaff"
+        },
+        "Rapier": {
+            "name": "Rapier"
+        },
+        "Sai": {
+            "name": "Sai"
+        },
+        "Scimitar": {
+            "name": "Scimitar"
+        },
+        "Shortbow": {
+            "name": "Shortbow"
+        },
+        "Shortsword": {
+            "name": "Shortsword"
+        },
+        "Skull Fetish": {
+            "name": "Skull Fetish"
+        },
+        "Sling": {
+            "name": "Sling"
+        },
+        "Spear": {
+            "name": "Spear"
+        },
+        "Spiked Greatclub": {
+            "name": "Spiked Greatclub"
+        },
+        "Spiked Knuckles": {
+            "name": "Spiked Knuckles"
+        },
+        "Stiletto": {
+            "name": "Stiletto"
+        },
+        "Torch": {
+            "name": "Torch"
+        },
+        "Tower Shield": {
+            "name": "Tower Shield"
+        },
+        "War Hammer": {
+            "name": "War Hammer"
+        },
+        "War Lance": {
+            "name": "War Lance"
+        }
+    }
+}

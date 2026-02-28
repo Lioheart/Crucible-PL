@@ -1,0 +1,38 @@
+{
+  "id": "lang-pl-crucible",
+  "title": "Polskie tłumaczenie Crucible",
+  "description": "Polskie tłumaczenie do Crucible",
+  "version": "vDev",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "src/translator.js",
+    "src/fix-token-names.js"
+  ],
+  "relationships": {
+  },
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "lang/pl/pl.json",
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Jakub H.",
+      "discord": "lioheart77",
+      "email": "caco7.lioheart@gmail.com",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "url": "Filled in by the release workflow",
+  "manifest": "Filled in by the release workflow",
+  "download": "Filled in by the release workflow"
+}
