@@ -2040,7 +2040,7 @@
 
 "WEAPON": {
   "CATEGORIES": {
-    "CategoryHands": "{category} ({hands}h)",
+    "CategoryHands": "{category} ({hands}r)",
     "Light": "Lekka",
     "Simple": "Prosta",
     "Balanced": "Wyważona",
