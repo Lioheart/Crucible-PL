@@ -384,7 +384,7 @@
     },
     "movement": {
       "size": {
-        "base": "Rozmiar podstawy",
+        "base": "Rozmiar podstawowy",
         "label": "Rozmiar",
         "tooltip": "Liczba pól siatki zajmowanych przez tę istotę."
       },
