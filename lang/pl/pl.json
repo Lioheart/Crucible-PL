@@ -384,7 +384,7 @@
     },
     "movement": {
       "size": {
-        "base": "Rozmiar podstawy",
+        "base": "Rozmiar podstawowy",
         "label": "Rozmiar",
         "tooltip": "Liczba pól siatki zajmowanych przez tę istotę."
       },
@@ -393,7 +393,7 @@
         "hint": "Dodatkowy modyfikator do podstawowego rozmiaru stworzenia określonego przez Pochodzenie lub Taksonomię."
       },
       "stride": {
-        "base": "Podstawowy bieg",
+        "base": "Bieg podstawowy",
         "label": "Bieg",
         "tooltip": "Odległość ruchu za każdy wydany Punkt Akcji."
       },
@@ -451,7 +451,7 @@
       "empty": "Wyposaż się w maksymalnie {slots} akcesoriów z Plecaka, przełączając ikonę tarczy."
     },
     "ACTIVE": {
-      "header": "Aktywne atrybuty"
+      "header": "Aktywne zdolności"
     },
     "ARMOR": {
       "header": "Pancerz",
@@ -1091,7 +1091,7 @@
 "DAMAGE.Radiant": "Świetliste",
 "DAMAGE.Slashing": "Cięte",
 "DAMAGE.Spiritual": "Duchowe",
-"DAMAGE.Void": "Pustki",
+"DAMAGE.Void": "Pustka",
 
 "DEFENSES.Armor": "Pancerz",
 "DEFENSES.Block": "Blok",
@@ -1099,7 +1099,7 @@
 "DEFENSES.Parry": "Parowanie",
 "DEFENSES.Fortitude": "Wytrwałość",
 "DEFENSES.Reflex": "Refleks",
-"DEFENSES.Willpower": "Siła woli",
+"DEFENSES.Willpower": "Wola",
 "DEFENSES.Physical": "Fizyczne",
 "DEFENSES.Wounds": "Rany",
 "DEFENSES.Madness": "Szaleństwo",
@@ -1174,8 +1174,8 @@
   "STATUSES": {
     "Asleep": "Uśpiony",
     "Blind": "Oślepiony",
-    "Broken": "Połamany",
-    "Burrowing": "Rycie",
+    "Broken": "Zepsuty",
+    "Burrowing": "Zakopany",
     "Dead": "Martwy",
     "Deaf": "Ogłuszony",
     "Diseased": "Chory",
@@ -1306,7 +1306,7 @@
       "label": "Jakość"
     },
     "broken": {
-      "label": "Połamany"
+      "label": "Zepsuty"
     },
     "enchantment": {
       "label": "Poziom zaklinania"
@@ -1372,7 +1372,7 @@
     "NotKnown": "Nieznane",
     "Parry": "Parowanie {parry}",
     "Range": "Zasięg {range}",
-    "Stackable": "Grupowalny",
+    "Stackable": "Grupowalna",
     "Unequipped": "Nie wyposażony"
   },
   "WARNINGS": {
@@ -1435,7 +1435,7 @@
 
 "LANGUAGES": {
   "Common": "Wspólny",
-  "Sign": "Znak"
+  "Sign": "Znaki"
 },
 
 "LOOT": {
@@ -1582,11 +1582,11 @@
 "SKILL": {
   "CATEGORY": {
     "EXPLORATION": {
-      "label": "Eksploracja",
+      "label": "Eksploracji",
       "hint": "Umiejętności eksploracyjne odnoszą się do Twojej zdolności do przemierzania świata i stawiania czoła wyzwaniom, jakie on stawia."
     },
     "KNOWLEDGE": {
-      "label": "Wiedza",
+      "label": "Wiedzy",
       "hint": "Umiejętności związane z wiedzą odnoszą się do zdolności twojej postaci do uczenia się i rozumienia różnych tematów."
     },
     "SOCIAL": {
@@ -1655,7 +1655,7 @@
   "SheetTitle": "[{actor}] {skill} Umiejętność",
   "ChoosePath": "Przed dalszym rozwijaniem tej umiejętności należy wybrać ścieżkę specjalizacji.",
   "CantAfford": "Nie stać cię na podniesienie tej umiejętności. Kolejny poziom kosztuje {cost} punktów, a masz do dyspozycji {points} punktów umiejętności.",
-  "CategoryHeader": "{category} Umiejętności",
+  "CategoryHeader": "Umiejętności {category}",
   "Id": "ID umiejętności",
   "Overview": "Przegląd umiejętności",
   "PassiveSpecific": "Pasywne: {passive}",
@@ -2040,7 +2040,7 @@
 
 "WEAPON": {
   "CATEGORIES": {
-    "CategoryHands": "{category} ({hands}h)",
+    "CategoryHands": "{category} ({hands}r)",
     "Light": "Lekka",
     "Simple": "Prosta",
     "Balanced": "Wyważona",
@@ -2098,7 +2098,7 @@
     "ReturningTooltip": "Ta broń została zaprojektowana w sposób magiczny lub mechaniczny tak, aby po rzuceniu powróciła do ręki użytkownika. Wykorzystanie akcji Rzucenie bronią z tą bronią nie powoduje jej Upuszczenia.",
     "Thrown": "Rzucana",
     "ThrownTooltip": "Broń ta została zaprojektowana tak, aby nadawała się do rzucania i nie podlega karze Zgub, która zazwyczaj jest nakładana na akcję rzucania bronią.",
-    "Versatile": "Wszechstronny",
+    "Versatile": "Wszechstronna",
     "VersatileTooltip": "Broń tę można dzierżyć jedną lub dwiema rękami i przełączać się między tymi trybami bez ponoszenia kosztów Punktów Akcji. Podczas dzierżenia broni dwiema rękami zyskuje ona dodatkowe +2 do podstawowych obrażeń, ale atak kosztuje 1 dodatkowy Punkt Akcji.",
     "DamageTooltip": "Skrótowe przedstawienie możliwości ofensywnych tej broni, wyrażone jako Premia do ataku / Premia do obrażeń / Mnożnik obrażeń."
   },
