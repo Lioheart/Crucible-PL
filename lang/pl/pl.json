@@ -1655,7 +1655,7 @@
   "SheetTitle": "[{actor}] {skill} Umiejętność",
   "ChoosePath": "Przed dalszym rozwijaniem tej umiejętności należy wybrać ścieżkę specjalizacji.",
   "CantAfford": "Nie stać cię na podniesienie tej umiejętności. Kolejny poziom kosztuje {cost} punktów, a masz do dyspozycji {points} punktów umiejętności.",
-  "CategoryHeader": "{category} Umiejętności",
+  "CategoryHeader": "Umiejętności {category}",
   "Id": "ID umiejętności",
   "Overview": "Przegląd umiejętności",
   "PassiveSpecific": "Pasywne: {passive}",
