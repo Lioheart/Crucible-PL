@@ -1,0 +1,116 @@
+{
+    "label": "Taksonomia",
+    "folders": {
+        "Dragon": "Smok",
+        "Elemental": "Żywiołak",
+        "Monstrosity": "Potworność",
+        "Undead": "Nieumarły",
+        "Giant": "Olbrzym",
+        "Humanoid": "Humanoid",
+        "Construct": "Konstrukt",
+        "Beast": "Bestia",
+        "Outsiders": "Zewnętrzni",
+        "Ooze": "Śluz"
+    },
+    "entries": {
+        "Amphibian": {
+            "name": "Płaz",
+            "description": "<p>Zwierzęta zamieszkujące wody lub ich okolice. Płazy są zazwyczaj zwinne, ale niektóre gatunki są silne lub duże.</p><ul><li><p><strong>Rozmiar</strong>: zmienny</p></li><li><p><strong>Bieg</strong>: zmienny</p></li></ul>"
+        },
+        "Apparatus": {
+            "name": "Aparatura",
+            "description": "<p>Konstrukcje zbudowane w prostych celach, takie jak wielostopniowe automatyczne urządzenia pułapkowe lub maszyny wykonujące określoną powtarzalną funkcję.</p>"
+        },
+        "Arachnid": {
+            "name": "Pajęczak",
+            "description": "<p>Zwierzęta z rodziny pajęczaków, które tkają sieci, aby łapać i polować na małe stworzenia lub owady. Pajęczaki są zazwyczaj zręczne i cierpliwe, ale niektóre gatunki preferują siłę lub agresję.</p><ul><li><p><strong>Rozmiar</strong>: zmienny</p></li><li><p><strong>Bieg</strong>: zmienny</p></li></ul>"
+        },
+        "Boar": {
+            "name": "Dzik",
+            "description": "<p>Ssaki o grubej skórze, niebezpiecznych kłach i potężnym, nisko osadzonym środku ciężkości.</p>"
+        },
+        "Crystal Spider": {
+            "name": "Pająk kryształowy",
+            "description": "<p>Pajęczak złożony z lub pokryty refrakcyjnymi płytkami krystalicznymi i formacjami.</p>"
+        },
+        "Drake": {
+            "name": "Smoczydło",
+            "description": "<p>Wężowe stworzenia, które są mniejszymi krewnymi smoków. Smoczydła zazwyczaj żyją i polują w stadach, w przeciwieństwie do bardziej samotniczych pełnoprawnych smoków. Smoczydła występują w różnych odmianach, od młodszych i mniejszych, często nazywanych \"smoczątkami\", po ogromne okazy, czasami określane jako \"ultra smoki\"</p><p>Zaobserwowane różnice wielkości obejmują:</p><ul><li><p><strong>Smoczątko</strong>: Rozmiar 3, Bieg 10</p></li><li><p><strong>Smoczydło</strong>: Rozmiar 6, Bieg 16</p></li><li><p><strong>Ultra Smok</strong>: Rozmiar 9, Bieg 12</p></li></ul><p>Różne typy smoczydł charakteryzują się różnym zakresem odporności na obrażenia i podatności na uszkodzenia w zależności od podgatunku.</p>"
+        },
+        "Earth Elemental": {
+            "name": "Żywiołak ziemi",
+            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi ziemi.</p>"
+        },
+        "Fire Elemental": {
+            "name": "Żywiołak ognia",
+            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi ognia.</p>"
+        },
+        "Frost Elemental": {
+            "name": "Żywiołak mrozu",
+            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi mrozu.</p>"
+        },
+        "Ghoul": {
+            "name": "Ghoul",
+            "description": "<p>Złośliwe i przebiegłe nieumarłe istoty, które zachowały wystarczającą część swojej śmiertelnej świadomości, aby tworzyć i realizować plany oraz intrygi mające na celu dręczenie lub niszczenie żywych stworzeń.</p>"
+        },
+        "Grave Hound": {
+            "name": "Trupi ogar",
+            "description": "<p>Straszliwe nieumarłe psy, które uległy zepsuciu i stały się sługami nieśmiertelności. Trupie ogary pełnią rolę strażników nieświętych miejsc, towarzyszy sił nieśmiertelności lub straszliwych watah wysyłanych na polowania i terroryzowanie żywych.</p>"
+        },
+        "Harbinger": {
+            "name": "Zwiastun",
+            "description": "<p>Istoty z innego świata, pochodzące z pustki poza granicami.</p>"
+        },
+        "Hobgoblin": {
+            "name": "Hobgoblin",
+            "description": "Hobgobliny to humanoidalne stworzenia, które zazwyczaj gromadzą się w uporządkowanych i zdyscyplinowanych społecznościach wojskowych. Hobgobliny są zarówno przebiegłe, jak i bezkompromisowe, co czyni je niebezpiecznymi wrogami lub potężnymi sojusznikami."
+        },
+        "Hyena": {
+            "name": "Hiena",
+            "description": "Ssaki z rodziny hien. Hieny są mięsożernymi drapieżnikami polującymi w stadach, wyposażonymi w potężne szyje i szczęki."
+        },
+        "Ogre": {
+            "name": "Ogr",
+            "description": "<p>Potężni olbrzymi, znani ze swojej brutalnej siły i bezpośredniego podejścia do rozwiązywania problemów.</p>"
+        },
+        "Rodent": {
+            "name": "Gryzoń",
+            "description": "<p>Zwierzęta, które zazwyczaj gromadzą się w dużych populacjach w pobliżu osad humanoidalnych i są oportunistycznymi padlinożercami. </p>"
+        },
+        "Skeleton": {
+            "name": "Szkielet",
+            "description": "<p>Złośliwe nieśmiertelne stworzenia powołane do życia przez nekromancję, stworzone ze szczątek szkieletów dawno zmarłych humanoidów. Kierowane przez nieczyste siły, nad którymi nie mają kontroli, @ref[name] rzadko istnieją z własnej woli i często spotyka się je jako sługi złych czarowników i potężniejszych nieumarłych.</p>"
+        },
+        "Slime": {
+            "name": "Szlam",
+            "description": "<p>Stworzenia zbudowane głównie z galaretowatej materii. Są zazwyczaj powolne, niewielkich rozmiarów i nie potrafią rzucać zaklęć ani mówić. Odnotowano jednak pewne wyjątki – istnieją odmiany śluzowców, które są duże, szybkie lub potrafią się komunikować.</p>"
+        },
+        "Storm Elemental": {
+            "name": "Żywiołak burzy",
+            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi błyskawicy.</p>"
+        },
+        "War Machine": {
+            "name": "Maszyna wojenna",
+            "description": "<p>Konstrukcje zbudowane w celu wykorzystania jako narzędzia wojny lub potężni strażnicy.</p>"
+        },
+        "Werewolf": {
+            "name": "Wilkołak",
+            "description": "<p>Likantropiczni zmiennokształtni, którzy chodzą jako ludzie, ale przyjmują wilczą postać.</p>"
+        },
+        "Winged Terror": {
+            "name": "Skrzydlaty terror",
+            "description": "<p>Potworne stworzenia, które rządzą niebem i polują na tych poniżej.</p>"
+        },
+        "Wraith": {
+            "name": "Widmo",
+            "description": "<p>Widma to niematerialne nieumarłe istoty zrodzone z dusz, które nie chciały odejść – ich fizyczna postać całkowicie rozpłynęła się w cieniu, pozostawiając jedynie gniew i smutek, które nabrały ruchu. Ignorują one konwencjonalne środki obrony, a ich dotyk omija zarówno zbroję, jak i parowanie, atakując bezpośrednio psychiczne i nekrotyczne słabości żywych. Długotrwała ekspozycja na obecność widma wyczerpuje zarówno morale, jak i zdrowie, a ci, którzy przeżyją spotkanie, często zauważają, że powrót koncentracji i determinacji zajmuje im więcej czasu.</p>"
+        },
+        "Zombie": {
+            "name": "Zombie",
+            "description": "<p>Chwiejące się zwłoki niespokojnych zmarłych, ich wciąż gnijące ciała spuchnięte od rozkładu. Poruszają się bez względu na odniesione rany i dążą wyłącznie do bezmyślnego konsumowania.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
