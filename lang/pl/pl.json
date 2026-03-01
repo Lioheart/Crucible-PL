@@ -393,7 +393,7 @@
         "hint": "Dodatkowy modyfikator do podstawowego rozmiaru stworzenia określonego przez Pochodzenie lub Taksonomię."
       },
       "stride": {
-        "base": "Podstawowy bieg",
+        "base": "Bieg podstawowy",
         "label": "Bieg",
         "tooltip": "Odległość ruchu za każdy wydany Punkt Akcji."
       },
