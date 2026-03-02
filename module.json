@@ -12,6 +12,20 @@
     "src/fix-token-names.js"
   ],
   "relationships": {
+    "systems": [
+      {
+        "id": "crucible",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
   },
   "languages": [
     {
