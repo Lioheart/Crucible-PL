@@ -1,0 +1,111 @@
+{
+    "label": "Przywołania",
+    "folders": {
+        "Gesture: Create": "Gest: Tworzenie",
+        "Gesture: Conjure": "Gest: Wywołanie"
+    },
+    "entries": {
+        "Acid Absorption": {
+            "name": "Absorpcja kwasu"
+        },
+        "Amorphous": {
+            "name": "Amorficzny"
+        },
+        "Aqueous Transmission": {
+            "name": "Transmisja wodna"
+        },
+        "Bony Claws": {
+            "name": "Kościste pazury"
+        },
+        "Cold Absorption": {
+            "name": "Absorpcja zimna"
+        },
+        "Deathly Armor": {
+            "name": "Pancerz śmierci"
+        },
+        "Earth Sprite": {
+            "name": "Ziemski chochlik"
+        },
+        "Earth Visitor": {
+            "name": "Ziemski gość"
+        },
+        "Earthen Claw": {
+            "name": "Ziemski pazur"
+        },
+        "Electricity Absorption": {
+            "name": "Absorpcja elektryczności"
+        },
+        "Elemental Armor": {
+            "name": "Pancerz żywiołów"
+        },
+        "False Appearance": {
+            "name": "Fałszywy wygląd"
+        },
+        "Fire Absorption": {
+            "name": "Absorpcja ognia"
+        },
+        "Flame Claw": {
+            "name": "Płomienny pazur"
+        },
+        "Flame Sprite": {
+            "name": "Ognisty chochlik"
+        },
+        "Flame Visitor": {
+            "name": "Ognisty gość"
+        },
+        "Frost Claw": {
+            "name": "Mroźny pazur"
+        },
+        "Frost Sprite": {
+            "name": "Mroźny chochlik"
+        },
+        "Frost Visitor": {
+            "name": "Mroźny gość"
+        },
+        "Gesture: Arrow": {
+            "name": "Gest: Strzała"
+        },
+        "Gesture: Aspect": {
+            "name": "Gest: Aspekt"
+        },
+        "Gesture: Fan": {
+            "name": "Gest: Wachlarz"
+        },
+        "Gesture: Influence": {
+            "name": "Gest: Wpływ"
+        },
+        "Gesture: Ray": {
+            "name": "Gest: Promień"
+        },
+        "Icy Claw": {
+            "name": "Lodowy pazur"
+        },
+        "Moldy Skeleton": {
+            "name": "Zapleśniały szkielet"
+        },
+        "Rune: Death": {
+            "name": "Runa: Śmierć"
+        },
+        "Rune: Earth": {
+            "name": "Runa: Ziemia"
+        },
+        "Rune: Flame": {
+            "name": "Runa: Płomień"
+        },
+        "Rune: Frost": {
+            "name": "Runa: Mróz"
+        },
+        "Rune: Lightning": {
+            "name": "Runa: Błyskawica"
+        },
+        "Storm Sprite": {
+            "name": "Burzowy chochlik"
+        },
+        "Storm Visitor": {
+            "name": "Burzowy gość"
+        },
+        "Voltaic Claw": {
+            "name": "Elektryczny pazur"
+        }
+    }
+}
