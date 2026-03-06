@@ -792,7 +792,7 @@
 "ACTION.TagCostTooltip": "Koszt Punktów Akcji lub Punktów Skupienia potrzebnych do wykonania tej akcji.",
 
 "ACTION.TagCostAction": "{action}A",
-"ACTION.TagCostFocus": "{focus}F",
+"ACTION.TagCostFocus": "{focus}S",
 "ACTION.TagCostHand.one": "{hands} Ręka",
 "ACTION.TagCostHand.other": "{hands} Rąk",
 "ACTION.TagCostHeroism": "{heroism}H",
