@@ -744,7 +744,7 @@
 "ACTION.TagMeleeTooltip": "Aby wykonać tę akcję, musisz mieć broń do walki wręcz lub być nieuzbrojonym.",
 "ACTION.TagMainHand": "Główna ręka",
 "ACTION.TagMainHandTooltip": "Ta akcja wykorzystuje broń w ręce głównej do wykonania ataku.",
-"ACTION.TagMaintained": "Utrzymywany",
+"ACTION.TagMaintained": "Podtrzymywany",
 "ACTION.TagMaintainedTooltip": "Ta akcja może być utrzymana, co powoduje poniesienie jej kosztu skupienia na początku twoich tur.",
 "ACTION.TagMovement": "Ruch",
 "ACTION.TagMovementTooltip": "Ta akcja pozwala na przemieszczanie się w ramach jej aktywacji, w tym zmniejszenie kosztu punktów akcji za darmową akcję przemieszczania się w każdej rundzie.",
