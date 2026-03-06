@@ -54,17 +54,14 @@
             "name": "Adrenaline Surge",
             "description": "<p>You can draw upon exceptional reserves of physical strength to meet challenges imposed on your body.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Adrenaline Surge": {
-                        "name": "Adrenaline Surge",
-                        "description": "<p>You expend <strong>Heroism</strong> and benefit from <strong>+2 Boons</strong> to any action which scales using Strength for 3 Rounds. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>",
-                        "effects": [
-                            {
-                                "name": "Adrenaline Surge"
-                            }
-                        ]
-                    }
+                "Adrenaline Surge": {
+                    "name": "Adrenaline Surge",
+                    "description": "<p>You expend <strong>Heroism</strong> and benefit from <strong>+2 Boons</strong> to any action which scales using Strength for 3 Rounds. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Adrenaline Surge"
+                        }
+                    ]
                 }
             }
         },
@@ -72,12 +69,9 @@
             "name": "Alchemical Resolve",
             "description": "You rapidly apply alchemical vapours which instill your ally with supplemental bravery in the face of horror.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Alchemical Resolve": {
-                        "name": "Alchemical Resolve",
-                        "description": "<p>You rapidly bolster the Morale of an ally within 4 feet by applying vapours. Perform a <strong>Medicine</strong> check against the target's <strong>Madness Threshold</strong>. Successful checks restore <strong>Morale</strong>.</p>"
-                    }
+                "Alchemical Resolve": {
+                    "name": "Alchemical Resolve",
+                    "description": "<p>You rapidly bolster the Morale of an ally within 4 feet by applying vapours. Perform a <strong>Medicine</strong> check against the target's <strong>Madness Threshold</strong>. Successful checks restore <strong>Morale</strong>.</p>"
                 }
             }
         },
@@ -93,13 +87,10 @@
             "name": "Anticipate Harm",
             "description": "Your keen reflexes and acuity allow you to anticipate imminent danger and react to avoid it.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Anticipate Harm": {
-                        "name": "Anticipate Harm",
-                        "condition": "You are targeted by an area-of-effect attack, the source of which you can see.",
-                        "description": "<p>You may immediately move 4 feet after the area-of-effect of the attack is declared. If this movement escapes the area of the attack, you are unaffected.</p>"
-                    }
+                "Anticipate Harm": {
+                    "name": "Anticipate Harm",
+                    "condition": "You are targeted by an area-of-effect attack, the source of which you can see.",
+                    "description": "<p>You may immediately move 4 feet after the area-of-effect of the attack is declared. If this movement escapes the area of the attack, you are unaffected.</p>"
                 }
             }
         },
@@ -135,13 +126,10 @@
             "name": "Artful Parry",
             "description": "<p>You anticipate dodging an attack, intercepting it to intentionally Parry the strike.</p><p></p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Artful Parry": {
-                        "name": "Artful Parry",
-                        "condition": "You Dodge an incoming melee Strike.",
-                        "description": "<p>When you defend against a melee attack using the <strong>Dodge</strong> defense, you can react and expend <strong>Focus</strong> to instead <strong>Parry</strong> the attack.</p>"
-                    }
+                "Artful Parry": {
+                    "name": "Artful Parry",
+                    "condition": "You Dodge an incoming melee Strike.",
+                    "description": "<p>When you defend against a melee attack using the <strong>Dodge</strong> defense, you can react and expend <strong>Focus</strong> to instead <strong>Parry</strong> the attack.</p>"
                 }
             }
         },
@@ -149,13 +137,10 @@
             "name": "Assassin",
             "description": "<p>You specialize in bringing death the the unwary. Any Strike or Spell attack against an <strong>Unaware</strong> target becomes <strong>Deadly</strong>.</p><p>An Unaware creature hit by your attack may not alert its allies until its own turn in Combat.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Mark For Death": {
-                        "name": "Mark For Death",
-                        "condition": "You are unobserved.",
-                        "description": "You spend 1 minute studying a creature. Perform a Knowledge Test about your target. If successful, you learn all damage types against which the target is Vulnerable. Your minimum Initiative during the first round of Combat becomes one greater than the Initiative of your marked target.</p>"
-                    }
+                "Mark For Death": {
+                    "name": "Mark For Death",
+                    "condition": "You are unobserved.",
+                    "description": "You spend 1 minute studying a creature. Perform a Knowledge Test about your target. If successful, you learn all damage types against which the target is Vulnerable. Your minimum Initiative during the first round of Combat becomes one greater than the Initiative of your marked target.</p>"
                 }
             }
         },
@@ -163,12 +148,9 @@
             "name": "Assess Strength",
             "description": "<p>You take a moment to observe a creature which you can see and develop intuition about its areas of strength.</p>\n<p>Perform a <strong>Knowledge Test</strong> using a Skill chosen by the Gamemaster. On a success, you learn which Defense type of Physical, Fortutude, Willpower, or Reflex is highest for the creature. On a Critical Success you learn the two highest defense types.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Assess Strength": {
-                        "name": "Assess Strength",
-                        "description": "<p>You observe a creature you can see to assess it's notable areas of strength.</p>"
-                    }
+                "Assess Strength": {
+                    "name": "Assess Strength",
+                    "description": "<p>You observe a creature you can see to assess it's notable areas of strength.</p>"
                 }
             }
         },
@@ -208,13 +190,10 @@
             "name": "Backstab",
             "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Backstab": {
-                        "name": "Backstab",
-                        "condition": "You are attacking a target with the Flanked condition.",
-                        "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
-                    }
+                "Backstab": {
+                    "name": "Backstab",
+                    "condition": "You are attacking a target with the Flanked condition.",
+                    "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
                 }
             }
         },
@@ -222,18 +201,15 @@
             "name": "Bard",
             "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p><p>You learn <strong>Rune: Soul </strong>if you do not already know it. When restoring the morale of allies using the Rune of Spirit you gain <strong>+2 Boons</strong> to your roll.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Laughing Matter": {
-                        "name": "Laughing Matter",
-                        "condition": "An enemy fails to affect you or any ally with an attack.",
-                        "description": "<p>When an enemy uses an attack that fails to affect you or any ally, you construct a cutting jest or pantomime which makes a fool of their feeble effort.</p><p>You make an <strong>Performance</strong> skill attack against the target's <strong>Fortitude</strong>, dealing <strong>Psychic</strong> damage to <strong>Morale</strong> upon a success. Furthermore, upon a success, the target suffers 1 <strong>Bane</strong> to all rolls until the start of their next turn.</p><p>The target must be able to see and understand you to be affected by this ability.</p>",
-                        "effects": [
-                            {
-                                "name": "Laughing Matter"
-                            }
-                        ]
-                    }
+                "Laughing Matter": {
+                    "name": "Laughing Matter",
+                    "condition": "An enemy fails to affect you or any ally with an attack.",
+                    "description": "<p>When an enemy uses an attack that fails to affect you or any ally, you construct a cutting jest or pantomime which makes a fool of their feeble effort.</p><p>You make an <strong>Performance</strong> skill attack against the target's <strong>Fortitude</strong>, dealing <strong>Psychic</strong> damage to <strong>Morale</strong> upon a success. Furthermore, upon a success, the target suffers 1 <strong>Bane</strong> to all rolls until the start of their next turn.</p><p>The target must be able to see and understand you to be affected by this ability.</p>",
+                    "effects": [
+                        {
+                            "name": "Laughing Matter"
+                        }
+                    ]
                 }
             }
         },
@@ -249,12 +225,9 @@
             "name": "Berserk Strike",
             "description": "<p>You channel your lust for combat into an adrenaline-fueled strike which increases in power as you become more wounded.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Berserk Strike": {
-                        "name": "Berserk Strike",
-                        "description": "<p>You imbue your strike with momentum and intensity, increasing the <strong>Damage Bonus</strong> of your strike according to your missing <strong>Health</strong>.</p><ul><li><p>If your Health is below 75%, your Strike deals <strong>+1 Damage</strong></p></li><li><p>If your Health is below 50%, your Strike deals <strong>+2 Damage</strong></p></li><li><p>If your Health is below 25%, your Strike deals <strong>+3 Damage</strong></p></li></ul><p>This damage bonus is doubled if you are using a <strong>Two-Handed</strong> weapon.</p>"
-                    }
+                "Berserk Strike": {
+                    "name": "Berserk Strike",
+                    "description": "<p>You imbue your strike with momentum and intensity, increasing the <strong>Damage Bonus</strong> of your strike according to your missing <strong>Health</strong>.</p><ul><li><p>If your Health is below 75%, your Strike deals <strong>+1 Damage</strong></p></li><li><p>If your Health is below 50%, your Strike deals <strong>+2 Damage</strong></p></li><li><p>If your Health is below 25%, your Strike deals <strong>+3 Damage</strong></p></li></ul><p>This damage bonus is doubled if you are using a <strong>Two-Handed</strong> weapon.</p>"
                 }
             }
         },
@@ -262,18 +235,15 @@
             "name": "Berserker",
             "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Berserker Rage": {
-                        "name": "Berserker Rage",
-                        "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
-                        "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
-                        "effects": [
-                            {
-                                "name": "Berserker Rage"
-                            }
-                        ]
-                    }
+                "Berserker Rage": {
+                    "name": "Berserker Rage",
+                    "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
+                    "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                    "effects": [
+                        {
+                            "name": "Berserker Rage"
+                        }
+                    ]
                 }
             }
         },
@@ -293,13 +263,10 @@
             "name": "Body Block",
             "description": "You lean into an attack which was otherwise defended with your Armor, converting its result into a Block instead.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Body Block": {
-                        "name": "Body Block",
-                        "condition": "You defend against a melee attack with your Armor or as a Glance.",
-                        "description": "<p>An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.</p>"
-                    }
+                "Body Block": {
+                    "name": "Body Block",
+                    "condition": "You defend against a melee attack with your Armor or as a Glance.",
+                    "description": "<p>An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.</p>"
                 }
             }
         },
@@ -307,17 +274,14 @@
             "name": "Bull Rush",
             "description": "<p>You can use your physical prowess to push past opponents who block your path.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Bull Rush": {
-                        "name": "Bull Rush",
-                        "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
-                        "effects": [
-                            {
-                                "name": "Bull Rush"
-                            }
-                        ]
-                    }
+                "Bull Rush": {
+                    "name": "Bull Rush",
+                    "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
+                    "effects": [
+                        {
+                            "name": "Bull Rush"
+                        }
+                    ]
                 }
             }
         },
@@ -337,17 +301,14 @@
             "name": "Chirurgeon",
             "description": "<p>Your improvisational expertise with battlefield medicine can save many lives. You make all <strong>Medicine</strong> checks during combat with <strong>+1 Boon</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Medicinal Compound": {
-                        "name": "Medicinal Compound",
-                        "description": "<p>You delve into your medical supplies, hastily combining whatever you might have available to salve the target's wounds or calm the target's mind. Perform a <strong>Medicine Check</strong>.</p><p>The attempt is contested by the higher of the target's <strong>Healing Threshold</strong> or <strong>Rallying Threshold</strong>. If successful the target immediately regains both Health and Morale as well as half that amount at the beginning of each of the subsequent 3 turns.</p>",
-                        "effects": [
-                            {
-                                "name": "Medicinal Compound"
-                            }
-                        ]
-                    }
+                "Medicinal Compound": {
+                    "name": "Medicinal Compound",
+                    "description": "<p>You delve into your medical supplies, hastily combining whatever you might have available to salve the target's wounds or calm the target's mind. Perform a <strong>Medicine Check</strong>.</p><p>The attempt is contested by the higher of the target's <strong>Healing Threshold</strong> or <strong>Rallying Threshold</strong>. If successful the target immediately regains both Health and Morale as well as half that amount at the beginning of each of the subsequent 3 turns.</p>",
+                    "effects": [
+                        {
+                            "name": "Medicinal Compound"
+                        }
+                    ]
                 }
             }
         },
@@ -355,17 +316,14 @@
             "name": "Clarify Intent",
             "description": "You use apply your situational awareness and persuasiveness to rapidly communicate a plan of action to an ally.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Clarify Intent": {
-                        "name": "Clarify Intent",
-                        "description": "<p>You explain your intentions to an ally within 12 feet. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.</p>",
-                        "effects": [
-                            {
-                                "name": "Clarify Intent"
-                            }
-                        ]
-                    }
+                "Clarify Intent": {
+                    "name": "Clarify Intent",
+                    "description": "<p>You explain your intentions to an ally within 12 feet. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.</p>",
+                    "effects": [
+                        {
+                            "name": "Clarify Intent"
+                        }
+                    ]
                 }
             }
         },
@@ -373,12 +331,9 @@
             "name": "Cleave",
             "description": "This martial technique is a specialized two-handed fighting maneuver which relies upon brute strength to swing your weapon in a wide arc, hitting multiple enemies in its path.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Cleave": {
-                        "name": "Cleave",
-                        "description": "<p>A ferocious two-handed swing cleaves through foes in a 120 degree arc.</p>"
-                    }
+                "Cleave": {
+                    "name": "Cleave",
+                    "description": "<p>A ferocious two-handed swing cleaves through foes in a 120 degree arc.</p>"
                 }
             }
         },
@@ -386,12 +341,9 @@
             "name": "Combat Medicine",
             "description": "Your knowledge and skill in Medicine covers the rapid triage, diagnosis, and treatment of wounds.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Combat Medicine": {
-                        "name": "Combat Medicine",
-                        "description": "<p>You rapidly treat the wounds of an ally within 4 feet. Perform a <strong>Medicine Check</strong> against the target's Wounds Threshold. Your ally's Health is increased by the amount of the Roll in excess of the threshold.</p>"
-                    }
+                "Combat Medicine": {
+                    "name": "Combat Medicine",
+                    "description": "<p>You rapidly treat the wounds of an ally within 4 feet. Perform a <strong>Medicine Check</strong> against the target's Wounds Threshold. Your ally's Health is increased by the amount of the Roll in excess of the threshold.</p>"
                 }
             }
         },
@@ -423,13 +375,10 @@
             "name": "Counter Evade",
             "description": "<p>You are practiced in evasive fighting styles which use an enemy's missed attack to devise an opening to counter-attack.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Counter Evade": {
-                        "name": "Counter Evade",
-                        "condition": "You Dodge an incoming melee Strike.",
-                        "description": "<p>When you defend against a melee attack with a <strong>Dodge</strong>, you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
-                    }
+                "Counter Evade": {
+                    "name": "Counter Evade",
+                    "condition": "You Dodge an incoming melee Strike.",
+                    "description": "<p>When you defend against a melee attack with a <strong>Dodge</strong>, you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
                 }
             }
         },
@@ -437,13 +386,10 @@
             "name": "Counter Riposte",
             "description": "<p>You are expert in translating a parried attack into a swift counter against your exposed enemy.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Counter Riposte": {
-                        "name": "Counter Riposte",
-                        "condition": "You Parry an incoming melee Strike.",
-                        "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
-                    }
+                "Counter Riposte": {
+                    "name": "Counter Riposte",
+                    "condition": "You Parry an incoming melee Strike.",
+                    "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
                 }
             }
         },
@@ -451,13 +397,10 @@
             "name": "Counter Strike",
             "description": "<p>You are trained to transition between defending with your shield and a swift counter-attack.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Counter Strike": {
-                        "name": "Counter Strike",
-                        "condition": "You Block an incoming melee Strike.",
-                        "description": "<p>When you defend against a melee attack with a <strong>Block</strong> you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
-                    }
+                "Counter Strike": {
+                    "name": "Counter Strike",
+                    "condition": "You Block an incoming melee Strike.",
+                    "description": "<p>When you defend against a melee attack with a <strong>Block</strong> you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
                 }
             }
         },
@@ -465,13 +408,10 @@
             "name": "Counterspell",
             "description": "<p>You immediately react to a spell being cast and compose a rune and gesture designed to unravel and negate the spellcraft of an enemy mage.</p><h2 class=\"divider\">Playtest Notes</h2><p>This action can now be used in playtesting, but it is not yet <em>fully automated</em>. The Counterspell can be performed, but it is up to the Gamemaster to manually reverse a previously applied spell and to manually deduct its <strong>Action</strong> and <strong>Focus</strong> cost. These steps of the overall Counterspell workflow <em>will be automated</em> in a subsequent update such that a confirmed Counterspell will also confirm the spell that was countered, but with its effects removed.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Counterspell": {
-                        "name": "Counterspell",
-                        "condition": "Another creature which you can see is casting a spell.",
-                        "description": "<p>You form arcane energy into a countervailing spellcraft, targeting a spellcaster you can see within 30 feet.</p><p>Designate a <strong>Rune</strong> and <strong>Gesture</strong> which you know to attempt to counter the spell. Choosing a Rune which is opposed to one used in the spell grants <strong>+2 Boons</strong> to your attempt. Selecting the identical Gesture as the one being cast also adds <strong>+2 Boons</strong> to your attempt.</p><p>Perform a harmless Spell Attack against your target's <strong>Willpower</strong> defense. If your roll exceeds their defense, the spell is countered and its magic is nullified, producing no effects.</p>"
-                    }
+                "Counterspell": {
+                    "name": "Counterspell",
+                    "condition": "Another creature which you can see is casting a spell.",
+                    "description": "<p>You form arcane energy into a countervailing spellcraft, targeting a spellcaster you can see within 30 feet.</p><p>Designate a <strong>Rune</strong> and <strong>Gesture</strong> which you know to attempt to counter the spell. Choosing a Rune which is opposed to one used in the spell grants <strong>+2 Boons</strong> to your attempt. Selecting the identical Gesture as the one being cast also adds <strong>+2 Boons</strong> to your attempt.</p><p>Perform a harmless Spell Attack against your target's <strong>Willpower</strong> defense. If your roll exceeds their defense, the spell is countered and its magic is nullified, producing no effects.</p>"
                 }
             }
         },
@@ -499,12 +439,9 @@
             "name": "Decisive Action",
             "description": "<p>Your sharpened mind thinks quickly amidst the maelstrom of combat, identifying and seizing opportunities that others might miss.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Decisive Action": {
-                        "name": "Decisive Action",
-                        "description": "<p>You expend <strong>Heroism</strong> to instantly recover half your <strong>Intellect</strong> in <strong>Action</strong>. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>"
-                    }
+                "Decisive Action": {
+                    "name": "Decisive Action",
+                    "description": "<p>You expend <strong>Heroism</strong> to instantly recover half your <strong>Intellect</strong> in <strong>Action</strong>. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>"
                 }
             }
         },
@@ -512,13 +449,10 @@
             "name": "Defensive Roll",
             "description": "<p>You are a nimble skirmisher, always in movement to stay one step ahead of your enemies in combat.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Defensive Roll": {
-                        "name": "Defensive Roll",
-                        "condition": "You Dodge an incoming melee Strike.",
-                        "description": "<p>When you <strong>Dodge</strong> a melee attack you can expend <strong>Focus</strong> to leap into a defensive roll, moving up to your <strong>Size</strong> in any direction.</p>"
-                    }
+                "Defensive Roll": {
+                    "name": "Defensive Roll",
+                    "condition": "You Dodge an incoming melee Strike.",
+                    "description": "<p>When you <strong>Dodge</strong> a melee attack you can expend <strong>Focus</strong> to leap into a defensive roll, moving up to your <strong>Size</strong> in any direction.</p>"
                 }
             }
         },
@@ -530,12 +464,9 @@
             "name": "Dervish",
             "description": "<p>You are specialized in fighting with two weapons. In combat you become a whirlwind of weapons, deadly to any foes who approach.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Whirlwind": {
-                        "name": "Whirlwind",
-                        "description": "<p>You become a cyclone of whirling weaponry, making <strong>Strike</strong> attacks with both weapons against every enemy within range.</p>"
-                    }
+                "Whirlwind": {
+                    "name": "Whirlwind",
+                    "description": "<p>You become a cyclone of whirling weaponry, making <strong>Strike</strong> attacks with both weapons against every enemy within range.</p>"
                 }
             }
         },
@@ -559,17 +490,14 @@
             "name": "Dirty Tricks",
             "description": "You have pouches of sand and dust that you use to temporarily distract or blind an enemy.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Dirty Tricks": {
-                        "name": "Dirty Tricks",
-                        "description": "<p>You fling debris into the eyes of an enemy. If the Strike is successful, they are Blinded until the end of their next Turn.</p>",
-                        "effects": [
-                            {
-                                "name": "Dirty Tricks"
-                            }
-                        ]
-                    }
+                "Dirty Tricks": {
+                    "name": "Dirty Tricks",
+                    "description": "<p>You fling debris into the eyes of an enemy. If the Strike is successful, they are Blinded until the end of their next Turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Dirty Tricks"
+                        }
+                    ]
                 }
             }
         },
@@ -577,12 +505,9 @@
             "name": "Disarming Strike",
             "description": "<p>A martial technique designed to disarm your opponent, forcing them to drop an object held in one of their hands.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Disarming Strike": {
-                        "name": "Disarming Strike",
-                        "description": "<p>You make a <strong>Strike </strong>against a the <strong>Reflex</strong> defense of a single target. The technique is <strong>Difficult</strong> to perform and deals reduced damage. If successful, the target's mainhand weapon is <strong>Dropped</strong>.</p>"
-                    }
+                "Disarming Strike": {
+                    "name": "Disarming Strike",
+                    "description": "<p>You make a <strong>Strike </strong>against a the <strong>Reflex</strong> defense of a single target. The technique is <strong>Difficult</strong> to perform and deals reduced damage. If successful, the target's mainhand weapon is <strong>Dropped</strong>.</p>"
                 }
             }
         },
@@ -594,12 +519,9 @@
             "name": "Diversionist",
             "description": "<p>You specialize in using subterfuge to distract or trick your opponent during combat.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Distract": {
-                        "name": "Distract",
-                        "description": "<p>You make a <strong>Deception</strong> based <strong>Skill Attack</strong> against the <strong>Willpower </strong>defense of a target within 30 feet which can see or hear you. On a success, the target loses <strong>1 Focus</strong>.</p>"
-                    }
+                "Distract": {
+                    "name": "Distract",
+                    "description": "<p>You make a <strong>Deception</strong> based <strong>Skill Attack</strong> against the <strong>Willpower </strong>defense of a target within 30 feet which can see or hear you. On a success, the target loses <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -607,17 +529,14 @@
             "name": "Dread Lord",
             "description": "<p>You exude a terrible presence on the battlefield which tests the morale of nearby enemies that behold you, breaking the resolve of the weak-willed.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Formidable Presence": {
-                        "name": "Formidable Presence",
-                        "description": "<p>You make an Intimidation skill attack against the Willpower defense of enemies within 12 feet, dealing Void damage to Morale and causing the Frightened condition for 1 Round to those whose defense you overcome.</p>",
-                        "effects": [
-                            {
-                                "name": "Formidable Presence"
-                            }
-                        ]
-                    }
+                "Formidable Presence": {
+                    "name": "Formidable Presence",
+                    "description": "<p>You make an Intimidation skill attack against the Willpower defense of enemies within 12 feet, dealing Void damage to Morale and causing the Frightened condition for 1 Round to those whose defense you overcome.</p>",
+                    "effects": [
+                        {
+                            "name": "Formidable Presence"
+                        }
+                    ]
                 }
             }
         },
@@ -625,12 +544,9 @@
             "name": "Dual Wield",
             "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Offhand Strike": {
-                        "name": "Offhand Strike",
-                        "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
-                    }
+                "Offhand Strike": {
+                    "name": "Offhand Strike",
+                    "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
                 }
             }
         },
@@ -658,18 +574,15 @@
             "name": "Executioner's Strike",
             "description": "<p>You deliver a single decisive strike against a wounded enemy.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Executioner's Strike": {
-                        "name": "Executioner's Strike",
-                        "condition": "Your target is Bloodied.",
-                        "description": "<p>You deliver a Deadly Strike with a two-handed heavy weapon. If your attack is successful, your opponent also suffers the Bleeding condition for 3 Rounds, taking additional damage each Round equal to your Strength score.</p>",
-                        "effects": [
-                            {
-                                "name": "Executioner's Strike"
-                            }
-                        ]
-                    }
+                "Executioner's Strike": {
+                    "name": "Executioner's Strike",
+                    "condition": "Your target is Bloodied.",
+                    "description": "<p>You deliver a Deadly Strike with a two-handed heavy weapon. If your attack is successful, your opponent also suffers the Bleeding condition for 3 Rounds, taking additional damage each Round equal to your Strength score.</p>",
+                    "effects": [
+                        {
+                            "name": "Executioner's Strike"
+                        }
+                    ]
                 }
             }
         },
@@ -677,13 +590,10 @@
             "name": "Extoll Deeds",
             "description": "You inspire courage within your allies by extolling the heroic deeds of a companion. You may react by composing a verse, making a quip, or shouting a battle cry when an ally you can see <strong>Incapacitates</strong> or achieves a <strong>Critical Hit</strong> against an enemy creature. The celebration of these heroic deeds restores the Morale of your allies within 6 spaces.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Extoll Deeds": {
-                        "name": "Extoll Deeds",
-                        "condition": "An ally whom you can see slays or scores a critical hit against an enemy.",
-                        "description": "<p>You compose a verse, make a quip, or shout a battle cry to extoll the heroic deeds of one of your allies. All allies near to you regain <strong>Morale</strong> equal to half your <strong>Presence</strong> score.</p>"
-                    }
+                "Extoll Deeds": {
+                    "name": "Extoll Deeds",
+                    "condition": "An ally whom you can see slays or scores a critical hit against an enemy.",
+                    "description": "<p>You compose a verse, make a quip, or shout a battle cry to extoll the heroic deeds of one of your allies. All allies near to you regain <strong>Morale</strong> equal to half your <strong>Presence</strong> score.</p>"
                 }
             }
         },
@@ -695,12 +605,9 @@
             "name": "Fan of Arrows",
             "description": "This difficult ranged weaponry technique allows you to fire a multiple shots with your weapon in a sweeping cone, each targeting a different enemy in the area of effect.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Fan of Arrows": {
-                        "name": "Fan of Arrows",
-                        "description": "<p>You fire multiple projectiles from your ranged weapon in an arc, striking all enemy targets within a 40 foot cone.</p>"
-                    }
+                "Fan of Arrows": {
+                    "name": "Fan of Arrows",
+                    "description": "<p>You fire multiple projectiles from your ranged weapon in an arc, striking all enemy targets within a 40 foot cone.</p>"
                 }
             }
         },
@@ -708,12 +615,9 @@
             "name": "Feinting Strike",
             "description": "<p>A two-weapon technique which makes a feint with your primary weapon, exposing your target for an off-hand attack.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Feinting Strike": {
-                        "name": "Feinting Strike",
-                        "description": "<p>You feint with your mainhand weapon, making a <strong>Deception</strong> attack against the target's <strong>Reflex</strong> defense. You immediately make a <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p><p>If your Deception was successful, you gain <strong>+2 Boons</strong> to your Strike and it deals an additional <strong>+6 Damage</strong>.</p>"
-                    }
+                "Feinting Strike": {
+                    "name": "Feinting Strike",
+                    "description": "<p>You feint with your mainhand weapon, making a <strong>Deception</strong> attack against the target's <strong>Reflex</strong> defense. You immediately make a <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p><p>If your Deception was successful, you gain <strong>+2 Boons</strong> to your Strike and it deals an additional <strong>+6 Damage</strong>.</p>"
                 }
             }
         },
@@ -721,12 +625,9 @@
             "name": "Ferocious Leap",
             "description": "<p>You leap powerfully into battle to deliver a punishing blow to a nearby enemy with your mainhand weapon.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Ferocious Leap": {
-                        "name": "Ferocious Leap",
-                        "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
-                    }
+                "Ferocious Leap": {
+                    "name": "Ferocious Leap",
+                    "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
                 }
             }
         },
@@ -738,12 +639,9 @@
             "name": "Flaming Arrow",
             "description": "<p>You take time to light and loose an arrow covered in flammable pitch. This shot takes longer but is very damaging to either creatures or structures.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Flaming Arrow": {
-                        "name": "Flaming Arrow",
-                        "description": "<p>You loose a <strong>Empowered</strong> ranged strike using a <strong>Projectile</strong> weapon which deals <strong>Fire</strong> damage upon impact.</p>"
-                    }
+                "Flaming Arrow": {
+                    "name": "Flaming Arrow",
+                    "description": "<p>You loose a <strong>Empowered</strong> ranged strike using a <strong>Projectile</strong> weapon which deals <strong>Fire</strong> damage upon impact.</p>"
                 }
             }
         },
@@ -751,17 +649,14 @@
             "name": "Flash of Steel",
             "description": "<p>You are an expert in using a thrown weapon to imbalance or expose your target for follow-up strikes.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Flash of Steel": {
-                        "name": "Flash of Steel",
-                        "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes <strong>Exposed</strong> until the start of their next Turn.</p>",
-                        "effects": [
-                            {
-                                "name": "Flash of Steel"
-                            }
-                        ]
-                    }
+                "Flash of Steel": {
+                    "name": "Flash of Steel",
+                    "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes <strong>Exposed</strong> until the start of their next Turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Flash of Steel"
+                        }
+                    ]
                 }
             }
         },
@@ -777,12 +672,9 @@
             "name": "Flurry",
             "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Flurry": {
-                        "name": "Flurry",
-                        "description": "<p>You <strong>Strike</strong> twice with each weapon, but each strike is <strong>Difficult</strong>.</p>"
-                    }
+                "Flurry": {
+                    "name": "Flurry",
+                    "description": "<p>You <strong>Strike</strong> twice with each weapon, but each strike is <strong>Difficult</strong>.</p>"
                 }
             }
         },
@@ -790,12 +682,9 @@
             "name": "Flying Kick",
             "description": "An unarmed technique where you launch yourself while running at an enemy in a leaping kick which is empowered to deal additional damage.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Flying Kick": {
-                        "name": "Flying Kick",
-                        "description": "<p><strong>Move</strong> forward between 3 feet and 6 feet in a straight line to kick an enemy with an empowered <strong>Strike</strong>.</p>"
-                    }
+                "Flying Kick": {
+                    "name": "Flying Kick",
+                    "description": "<p><strong>Move</strong> forward between 3 feet and 6 feet in a straight line to kick an enemy with an empowered <strong>Strike</strong>.</p>"
                 }
             }
         },
@@ -811,13 +700,10 @@
             "name": "Fulcrum",
             "description": "<p>Balance, positioning, and leverage are your greatest allies in combat. You know how to use a foe's momentum against them and that a small redirection in force can turn the tide of battle.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Conserve Momentum": {
-                        "name": "Conserve Momentum",
-                        "condition": "You Block, Parry, or Dodge an incoming melee Strike.",
-                        "description": "You redirect the force of a melee attack which misses you, pivoting it to instead hit some other adjacent enemy. Your attacker must re-roll their attack targetting their ally instead."
-                    }
+                "Conserve Momentum": {
+                    "name": "Conserve Momentum",
+                    "condition": "You Block, Parry, or Dodge an incoming melee Strike.",
+                    "description": "You redirect the force of a melee attack which misses you, pivoting it to instead hit some other adjacent enemy. Your attacker must re-roll their attack targetting their ally instead."
                 }
             }
         },
@@ -901,17 +787,14 @@
             "name": "Hamstring",
             "description": "<p>You use a slashing weapon to target the legs of an enemy and cripple their movement.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Hamstring": {
-                        "name": "Hamstring",
-                        "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the <strong>Slowed</strong> condition for <strong>3 Rounds</strong>.</p>",
-                        "effects": [
-                            {
-                                "name": "Hamstring"
-                            }
-                        ]
-                    }
+                "Hamstring": {
+                    "name": "Hamstring",
+                    "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the <strong>Slowed</strong> condition for <strong>3 Rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Hamstring"
+                        }
+                    ]
                 }
             }
         },
@@ -919,17 +802,14 @@
             "name": "Healer",
             "description": "<p>You are unparalleled at manipulating vital arcana to treat injuries. You learn <strong>Rune: Life</strong> if you do not already know it. When healing allies using the Rune of Life you gain <strong>+2 Boons</strong> to your roll.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Font of Life": {
-                        "name": "Font of Life",
-                        "description": "<p>You bring forth an aura of life-giving magic. Immediately upon activation and at the start of your turn for <strong>3 Rounds</strong> every ally within 20 feet heals for an amount equal to your <strong>Wisdom</strong> score.</p><p><strong>WIP: This action is currently treated as an Area of Effect, granting healing-over-time effects to those within the initial range. When auras are automated by the system in Foundry VTT version 14, the mechanical implementation of this action will match the description.</strong></p>",
-                        "effects": [
-                            {
-                                "name": "Font of Life"
-                            }
-                        ]
-                    }
+                "Font of Life": {
+                    "name": "Font of Life",
+                    "description": "<p>You bring forth an aura of life-giving magic. Immediately upon activation and at the start of your turn for <strong>3 Rounds</strong> every ally within 20 feet heals for an amount equal to your <strong>Wisdom</strong> score.</p><p><strong>WIP: This action is currently treated as an Area of Effect, granting healing-over-time effects to those within the initial range. When auras are automated by the system in Foundry VTT version 14, the mechanical implementation of this action will match the description.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Font of Life"
+                        }
+                    ]
                 }
             }
         },
@@ -941,12 +821,9 @@
             "name": "Heavy Weapon Training",
             "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing. You are <strong>Trained</strong> with all weapons in the <strong>Heavy</strong> and <strong>Balanced</strong> categories.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Heavy Strike": {
-                        "name": "Heavy Strike",
-                        "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
-                    }
+                "Heavy Strike": {
+                    "name": "Heavy Strike",
+                    "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
                 }
             }
         },
@@ -1014,13 +891,10 @@
             "name": "Inquisitor",
             "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Inquisitor's Strike": {
-                        "name": "Inquisitor's Strike",
-                        "condition": "Your target is casting a spell.",
-                        "description": "When an enemy within your Engagement radius whom you can see casts a spell, you may react to Strike that target. On a Critical Hit the target's spell is interrupted and the magic is lost."
-                    }
+                "Inquisitor's Strike": {
+                    "name": "Inquisitor's Strike",
+                    "condition": "Your target is casting a spell.",
+                    "description": "When an enemy within your Engagement radius whom you can see casts a spell, you may react to Strike that target. On a Critical Hit the target's spell is interrupted and the magic is lost."
                 }
             }
         },
@@ -1032,17 +906,14 @@
             "name": "Inspire Heroism",
             "description": "Your courageous presence inspires your nearby allies to strike with confidence.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Inspire Heroism": {
-                        "name": "Inspire Heroism",
-                        "description": "<p>Each ally, excluding yourself, within <strong>10 Feet</strong> gains <strong>+1 Boon</strong> to actions performed until the end of their next Turn.</p>",
-                        "effects": [
-                            {
-                                "name": "Inspire Heroism"
-                            }
-                        ]
-                    }
+                "Inspire Heroism": {
+                    "name": "Inspire Heroism",
+                    "description": "<p>Each ally, excluding yourself, within <strong>10 Feet</strong> gains <strong>+1 Boon</strong> to actions performed until the end of their next Turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Inspire Heroism"
+                        }
+                    ]
                 }
             }
         },
@@ -1054,13 +925,10 @@
             "name": "Intercept",
             "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Intercept": {
-                        "name": "Intercept",
-                        "condition": "An enemy moves into or through your Engagement radius.",
-                        "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
-                    }
+                "Intercept": {
+                    "name": "Intercept",
+                    "condition": "An enemy moves into or through your Engagement radius.",
+                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
                 }
             }
         },
@@ -1068,13 +936,10 @@
             "name": "Interrupting Throw",
             "description": "<p>You are alert and prepared to use your equipped weapon to interrupt enemy spellcraft.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Interrupting Throw": {
-                        "name": "Interrupting Throw",
-                        "condition": "An enemy you can see casts a Spell which costs 3 Action or greater.",
-                        "description": "<p>When an enemy that you can see casts a <strong>Spell</strong> which costs <strong>3 Action</strong> or greater, you can make a <strong>Reaction</strong> to perform a <strong>Thrown</strong> weapon attack against the caster. If your attack results in a <strong>Critical Hit</strong> the spell is interrupted and its magic is lost.</p>"
-                    }
+                "Interrupting Throw": {
+                    "name": "Interrupting Throw",
+                    "condition": "An enemy you can see casts a Spell which costs 3 Action or greater.",
+                    "description": "<p>When an enemy that you can see casts a <strong>Spell</strong> which costs <strong>3 Action</strong> or greater, you can make a <strong>Reaction</strong> to perform a <strong>Thrown</strong> weapon attack against the caster. If your attack results in a <strong>Critical Hit</strong> the spell is interrupted and its magic is lost.</p>"
                 }
             }
         },
@@ -1098,12 +963,9 @@
             "name": "Intimidator",
             "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Intimidate": {
-                        "name": "Intimidate",
-                        "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
-                    }
+                "Intimidate": {
+                    "name": "Intimidate",
+                    "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
                 }
             }
         },
@@ -1111,12 +973,9 @@
             "name": "Intuit Weakness",
             "description": "<p>You calm your mind and study the physiology of your foe, seeking a vulnerability in its defenses.</p><p>Perform a <strong>Knowledge Test</strong> using an appropriate Skill chosen by the Gamemaster. On a success, you learn the Damage type that the creature has the greatest vulnerability towards, if any. On a Critical Success you learn the two Damage types which have the largest vulnerability.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Intuit Weakness": {
-                        "name": "Intuit Weakness",
-                        "description": "<p>You still your mind and study the physiology of your foe, attempting to identify a vulnerability in its defenses.</p>"
-                    }
+                "Intuit Weakness": {
+                    "name": "Intuit Weakness",
+                    "description": "<p>You still your mind and study the physiology of your foe, attempting to identify a vulnerability in its defenses.</p>"
                 }
             }
         },
@@ -1152,17 +1011,14 @@
             "name": "Last Stand",
             "description": "<p>You can muster the toughness and courage to fight on and stand your ground against improbable odds.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Last Stand": {
-                        "name": "Last Stand",
-                        "description": "<p>You expend <strong>Heroism</strong> to instantly recover two times your <strong>Toughness</strong> in <strong>Health</strong>. Your <strong>Healing Threshold</strong> is reduced by 2 for the next 3 Rounds.</p>",
-                        "effects": [
-                            {
-                                "name": "Last Stand"
-                            }
-                        ]
-                    }
+                "Last Stand": {
+                    "name": "Last Stand",
+                    "description": "<p>You expend <strong>Heroism</strong> to instantly recover two times your <strong>Toughness</strong> in <strong>Health</strong>. Your <strong>Healing Threshold</strong> is reduced by 2 for the next 3 Rounds.</p>",
+                    "effects": [
+                        {
+                            "name": "Last Stand"
+                        }
+                    ]
                 }
             }
         },
@@ -1170,17 +1026,14 @@
             "name": "Leg Sweep",
             "description": "<p>You use a weapon which scales using <strong>Strength </strong>to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Leg Sweep": {
-                        "name": "Leg Sweep",
-                        "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
-                        "effects": [
-                            {
-                                "name": "Leg Sweep"
-                            }
-                        ]
-                    }
+                "Leg Sweep": {
+                    "name": "Leg Sweep",
+                    "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Leg Sweep"
+                        }
+                    ]
                 }
             }
         },
@@ -1204,12 +1057,9 @@
             "name": "Light Weapon Training",
             "description": "<p>You know how to wield light weapons fluidly with a high degree of maneuverability and grace in combat. You are <strong>Trained</strong> with all weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Lunge": {
-                        "name": "Lunge",
-                        "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
-                    }
+                "Lunge": {
+                    "name": "Lunge",
+                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
                 }
             }
         },
@@ -1225,17 +1075,14 @@
             "name": "Mark Prey",
             "description": "<p>You fire a special shot which deals no damage, but explodes in luminous powder clearly marking your target.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Mark Prey": {
-                        "name": "Mark Prey",
-                        "description": "<p>You Strike using a special shot. If your attack is successful the target is <strong>Exposed</strong> for the next 3 Turns.</p>",
-                        "effects": [
-                            {
-                                "name": "Marked"
-                            }
-                        ]
-                    }
+                "Mark Prey": {
+                    "name": "Mark Prey",
+                    "description": "<p>You Strike using a special shot. If your attack is successful the target is <strong>Exposed</strong> for the next 3 Turns.</p>",
+                    "effects": [
+                        {
+                            "name": "Marked"
+                        }
+                    ]
                 }
             }
         },
@@ -1251,12 +1098,9 @@
             "name": "Mechanical Weapon Training",
             "description": "<p>You are familiar in the design and usage of crossbows, firearms, and other similar armaments. You are <strong>Trained</strong> with weapons in the <strong>Mechanical</strong> category.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Rapid Reload": {
-                        "name": "Rapid Reload",
-                        "description": "<p>You focus deeply and calm your nerves to quickly <strong>Reload</strong> your mechanical weapon with exceptional haste.</p>"
-                    }
+                "Rapid Reload": {
+                    "name": "Rapid Reload",
+                    "description": "<p>You focus deeply and calm your nerves to quickly <strong>Reload</strong> your mechanical weapon with exceptional haste.</p>"
                 }
             }
         },
@@ -1292,12 +1136,9 @@
             "name": "Mnemonic Realization",
             "description": "<p>Your sharpened mind is full of secrets and techniques to remember them. Once per Day you may focus your thoughts and attempt to recall a word that sparks your memory.</p>\n<p>The Gamemaster must provide you with a one-word clue that is appropriate for your direction of inquiry. It is left to Gamemaster discretion how direct or vague to be with the clue they provide.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Mnemonic Realization": {
-                        "name": "Mnemonic Realization",
-                        "description": "<p>You survey your memories attempting to recall a clue for your current situation.</p>"
-                    }
+                "Mnemonic Realization": {
+                    "name": "Mnemonic Realization",
+                    "description": "<p>You survey your memories attempting to recall a clue for your current situation.</p>"
                 }
             }
         },
@@ -1305,12 +1146,9 @@
             "name": "Monk",
             "description": "<p>You balance monastic discipline with expertise in martial arts, balancing attack and defense in harmony.</p><p>While Unarmored, you gain a +2 bonus to your Reflex and Willpower defenses.</p><p>While Unarmed you can use the Double Punch action.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Double Punch": {
-                        "name": "Double Punch",
-                        "description": "<p>You Strike twice in the blink of an eye, punching with both arms.</p>"
-                    }
+                "Double Punch": {
+                    "name": "Double Punch",
+                    "description": "<p>You Strike twice in the blink of an eye, punching with both arms.</p>"
                 }
             }
         },
@@ -1322,12 +1160,9 @@
             "name": "Natural Weapon Training",
             "description": "<p>You have a developed familiarity with using features of your own body as a natural weapons including claws, jaws, tails, or other mechanisms of self-defense. You are <strong>Trained</strong> with weapons in the <strong>Natural</strong> category.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Wild Strike": {
-                        "name": "Wild Strike",
-                        "description": "<p>Immediately after you perform a basic Strike, you perform a reduced-cost follow-up <strong>Strike</strong> against the same target using a different <strong>Natural</strong> weapon that you have access to.</p>"
-                    }
+                "Wild Strike": {
+                    "name": "Wild Strike",
+                    "description": "<p>Immediately after you perform a basic Strike, you perform a reduced-cost follow-up <strong>Strike</strong> against the same target using a different <strong>Natural</strong> weapon that you have access to.</p>"
                 }
             }
         },
@@ -1339,13 +1174,10 @@
             "name": "Nosferatu",
             "description": "<p>You are afflicted with a rare blood mutation which allows your wounds to rapidly heal through hematophagy.</p><p>You can restore your Health by biting a living target. This attack is made with a Superior Natural weapon which scales using Strength and deals Piercing damage.</p><p>Your vulnerability to Radiant damage increases by 10.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Vampiric Bite": {
-                        "name": "Vampiric Bite",
-                        "condition": "Your target is a living creature.",
-                        "description": "<p>You grasp an enemy and bite it with sharp incisors, rapidly draining its blood to heal your own wounds. This attack requires a free hand to grasp your target while you feed.</p>"
-                    }
+                "Vampiric Bite": {
+                    "name": "Vampiric Bite",
+                    "condition": "Your target is a living creature.",
+                    "description": "<p>You grasp an enemy and bite it with sharp incisors, rapidly draining its blood to heal your own wounds. This attack requires a free hand to grasp your target while you feed.</p>"
                 }
             }
         },
@@ -1369,13 +1201,10 @@
             "name": "Overwatch",
             "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Disrupting Shot": {
-                        "name": "Disrupting Shot",
-                        "condition": "Your target is casting a spell.",
-                        "description": "When an enemy you can see casts a spell, you may react to Strike that target. The technique is difficult to perform, but on a Critical Hit the target's spell is interrupted and the magic is lost."
-                    }
+                "Disrupting Shot": {
+                    "name": "Disrupting Shot",
+                    "condition": "Your target is casting a spell.",
+                    "description": "When an enemy you can see casts a spell, you may react to Strike that target. The technique is difficult to perform, but on a Critical Hit the target's spell is interrupted and the magic is lost."
                 }
             }
         },
@@ -1387,12 +1216,9 @@
             "name": "Penetrating Shot",
             "description": "You load special ammunition which deals less damage but penetrates directly through a line of targets.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Penetrating Shot": {
-                        "name": "Penetrating Shot",
-                        "description": "<p>You fire a shot which penetrates through multiple targets in a direct line.</p>"
-                    }
+                "Penetrating Shot": {
+                    "name": "Penetrating Shot",
+                    "description": "<p>You fire a shot which penetrates through multiple targets in a direct line.</p>"
                 }
             }
         },
@@ -1400,12 +1226,9 @@
             "name": "Penetrating Throw",
             "description": "<p>You can hurl your weapon with such ferocity that it strikes all targets in a direct line.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Penetrating Throw": {
-                        "name": "Penetrating Throw",
-                        "description": "<p>You perform a <strong>Throw</strong> weapon strike which penetrates to hit all enemies in a straight line.</p>"
-                    }
+                "Penetrating Throw": {
+                    "name": "Penetrating Throw",
+                    "description": "<p>You perform a <strong>Throw</strong> weapon strike which penetrates to hit all enemies in a straight line.</p>"
                 }
             }
         },
@@ -1433,17 +1256,14 @@
             "name": "Pinning Shot",
             "description": "You fire a tactically placed shot to pin your target against a nearby surface.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Pinning Shot": {
-                        "name": "Pinning Shot",
-                        "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes <strong>Restrained</strong> until the end of their next Turn.</p>",
-                        "effects": [
-                            {
-                                "name": "Pinning Shot"
-                            }
-                        ]
-                    }
+                "Pinning Shot": {
+                    "name": "Pinning Shot",
+                    "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes <strong>Restrained</strong> until the end of their next Turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Pinning Shot"
+                        }
+                    ]
                 }
             }
         },
@@ -1451,12 +1271,9 @@
             "name": "Pistoleer",
             "description": "<p>Your familiarity with mechanical firearms is unmatched. You can perform the Reload action for free once per Round.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Salvo": {
-                        "name": "Salvo",
-                        "description": "You fire a barrage of attacks using a one-handed mechanical weapon, shooting three times at a target without the need to reload in-between shots."
-                    }
+                "Salvo": {
+                    "name": "Salvo",
+                    "description": "You fire a barrage of attacks using a one-handed mechanical weapon, shooting three times at a target without the need to reload in-between shots."
                 }
             }
         },
@@ -1468,17 +1285,14 @@
             "name": "Poisoner",
             "description": "<p>You can apply Poison to weapons which deal Slashing or Piercing damage. You deal an additional +2 damage whenever you deal Poison damage and your Strikes cause the <strong>Poisoned</strong> condition on Critical Strikes which deal damage to Health.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Poison Blades": {
-                        "name": "Poison Blades",
-                        "description": "<p>You nimbly lather your blades in toxic alchemical oils which apply the Poisoned condition on Critical Strikes.</p>",
-                        "effects": [
-                            {
-                                "name": "Poison Blades"
-                            }
-                        ]
-                    }
+                "Poison Blades": {
+                    "name": "Poison Blades",
+                    "description": "<p>You nimbly lather your blades in toxic alchemical oils which apply the Poisoned condition on Critical Strikes.</p>",
+                    "effects": [
+                        {
+                            "name": "Poison Blades"
+                        }
+                    ]
                 }
             }
         },
@@ -1494,12 +1308,9 @@
             "name": "Precision Shot",
             "description": "You take time to steady your aim and target the weakest point of a foe. You may only get one shot, but you make it count.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Precision Shot": {
-                        "name": "Precision Shot",
-                        "description": "<p>You steady your aim and fire a single accurate shot.</p>"
-                    }
+                "Precision Shot": {
+                    "name": "Precision Shot",
+                    "description": "<p>You steady your aim and fire a single accurate shot.</p>"
                 }
             }
         },
@@ -1519,12 +1330,9 @@
             "name": "Projectile Weapon Training",
             "description": "<p>You have a basic education in archery and other projectile weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Projectile </strong>categories.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Quick Draw": {
-                        "name": "Quick Draw",
-                        "description": "<p>You can loose a shot under pressure, although with decreased accuracy. You perform a <strong>Strike</strong> that is <strong>Difficult</strong>, but has a reduced Action cost.</p>"
-                    }
+                "Quick Draw": {
+                    "name": "Quick Draw",
+                    "description": "<p>You can loose a shot under pressure, although with decreased accuracy. You perform a <strong>Strike</strong> that is <strong>Difficult</strong>, but has a reduced Action cost.</p>"
                 }
             }
         },
@@ -1532,18 +1340,15 @@
             "name": "Provocateur",
             "description": "You specialize in barbed repartee crafted to highlight your opponent's shortcomings. In combat you can launch quips which provoke your foes.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Scathing Mockery": {
-                        "name": "Scathing Mockery",
-                        "condition": "Your target can hear and understand you.",
-                        "description": "You exaggerate your opponent's shortcomings with a scathing bon mot, performing a Diplomacy skill attack against your target's Willpower. On a success they suffer modest Psychic damage to Morale and become Enraged for 1 Round.",
-                        "effects": [
-                            {
-                                "name": "Scathing Mockery"
-                            }
-                        ]
-                    }
+                "Scathing Mockery": {
+                    "name": "Scathing Mockery",
+                    "condition": "Your target can hear and understand you.",
+                    "description": "You exaggerate your opponent's shortcomings with a scathing bon mot, performing a Diplomacy skill attack against your target's Willpower. On a success they suffer modest Psychic damage to Morale and become Enraged for 1 Round.",
+                    "effects": [
+                        {
+                            "name": "Scathing Mockery"
+                        }
+                    ]
                 }
             }
         },
@@ -1555,17 +1360,14 @@
             "name": "Rallying Cry",
             "description": "<p>Your presence as a battlefield leader fortifies and restores the morale of your allies.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Rallying Cry": {
-                        "name": "Rallying Cry",
-                        "description": "<p>You emit a courageous bellow that inspires allies within 12 feet of you to remain stalwart in the face of peril. All allies within range immediately recover your <strong>Presence</strong> score in <strong>Morale</strong> and become @Condition[resolute] for 3 Rounds.</p>",
-                        "effects": [
-                            {
-                                "name": "Rallying Cry"
-                            }
-                        ]
-                    }
+                "Rallying Cry": {
+                    "name": "Rallying Cry",
+                    "description": "<p>You emit a courageous bellow that inspires allies within 12 feet of you to remain stalwart in the face of peril. All allies within range immediately recover your <strong>Presence</strong> score in <strong>Morale</strong> and become @Condition[resolute] for 3 Rounds.</p>",
+                    "effects": [
+                        {
+                            "name": "Rallying Cry"
+                        }
+                    ]
                 }
             }
         },
@@ -1577,13 +1379,10 @@
             "name": "Repercussive Block",
             "description": "<p>You can channel explosive force into a counter-bash which can disarm your opponent when blocking with your shield.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Repercussive Block": {
-                        "name": "Repercussive Block",
-                        "condition": "You Block a Melee attack with an equipped shield.",
-                        "description": "<p>When you <strong>Block</strong> a <strong>Melee</strong> attack, you can react to counter-attack with your equipped shield. This technique is <strong>Harmless</strong> but, if successful, will disarm your opponent forcing their weapon to be <strong>Dropped</strong>.</p>"
-                    }
+                "Repercussive Block": {
+                    "name": "Repercussive Block",
+                    "condition": "You Block a Melee attack with an equipped shield.",
+                    "description": "<p>When you <strong>Block</strong> a <strong>Melee</strong> attack, you can react to counter-attack with your equipped shield. This technique is <strong>Harmless</strong> but, if successful, will disarm your opponent forcing their weapon to be <strong>Dropped</strong>.</p>"
                 }
             }
         },
@@ -1599,12 +1398,9 @@
             "name": "Rune: Control",
             "description": "<p>The orderly force of discipline and permanence. The Control rune governs thought, reason, and persistence.</p><p>The Control rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Psychic</strong> damage to <strong>Morale</strong>. It is opposed by the chaotic rune of <strong>Kinesis</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Motivate": {
-                        "name": "Motivate",
-                        "description": "<p>Your command of the Rune of Control allows you to affect the decision making of others in basic ways, producing one of the following effects:</p><ul><li><p>Moderately intensify or dampen the primary emotion being felt by a creature you touch. If the creature is intelligent enough to be aware of the laws governing spellcraft, they are aware of your actions.</p></li><li><p>Understand the abstract motivations of another living creature which allows you to touch it. You are able to intuit their immediate goals expressed in the form of a single verb.</p></li><li><p>Intensely focus on your current objective and the means of achieving it. You receive a brief hint or reminder from the Gamemaster about that objective containing only information which you have previously learned.</p></li></ul><p>Motivate may only affect a creature or object which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Motivate": {
+                    "name": "Motivate",
+                    "description": "<p>Your command of the Rune of Control allows you to affect the decision making of others in basic ways, producing one of the following effects:</p><ul><li><p>Moderately intensify or dampen the primary emotion being felt by a creature you touch. If the creature is intelligent enough to be aware of the laws governing spellcraft, they are aware of your actions.</p></li><li><p>Understand the abstract motivations of another living creature which allows you to touch it. You are able to intuit their immediate goals expressed in the form of a single verb.</p></li><li><p>Intensely focus on your current objective and the means of achieving it. You receive a brief hint or reminder from the Gamemaster about that objective containing only information which you have previously learned.</p></li></ul><p>Motivate may only affect a creature or object which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1612,12 +1408,9 @@
             "name": "Rune: Death",
             "description": "<p>The orderly force of destruction, responsible for the corruption of all biological matter. The Death rune governs decay and destruction.</p><p>The Death rune scales using <strong>Presence</strong>, targets <strong>Fortitude</strong>, and deals <strong>Corruption</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Life</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Ennervate": {
-                        "name": "Ennervate",
-                        "description": "<p>Your command of the Rune of Death allows for basic communion with the dead and for rudimentary manipulation of unholy forces, producing one of the following effects:</p><ul><li><p>Spread decay over an object no larger than a 1-foot cube, causing plants to wither, metallic objects to rust, wood to become rotten, food to grow foul, or a corpse to rapidly decompose. Magical objects are typically unaffected.</p></li><li><p>Cause a corpse which has been dead for less than seven days or otherwise preserved to perform a lifeless reenactment of its final moments. Its movements imitate those that occurred during the creature's final 30 seconds of life. You have no control over the creature nor can it communicate in any other way.</p></li><li><p>Hasten the death of a willing creature that is currently dying, causing it to pass swiftly and peacefully.</p></li></ul><p>Ennervate may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Ennervate": {
+                    "name": "Ennervate",
+                    "description": "<p>Your command of the Rune of Death allows for basic communion with the dead and for rudimentary manipulation of unholy forces, producing one of the following effects:</p><ul><li><p>Spread decay over an object no larger than a 1-foot cube, causing plants to wither, metallic objects to rust, wood to become rotten, food to grow foul, or a corpse to rapidly decompose. Magical objects are typically unaffected.</p></li><li><p>Cause a corpse which has been dead for less than seven days or otherwise preserved to perform a lifeless reenactment of its final moments. Its movements imitate those that occurred during the creature's final 30 seconds of life. You have no control over the creature nor can it communicate in any other way.</p></li><li><p>Hasten the death of a willing creature that is currently dying, causing it to pass swiftly and peacefully.</p></li></ul><p>Ennervate may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1625,12 +1418,9 @@
             "name": "Rune: Earth",
             "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Mould": {
-                        "name": "Mould",
-                        "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Mould": {
+                    "name": "Mould",
+                    "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1638,12 +1428,9 @@
             "name": "Rune: Flame",
             "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Enkindle": {
-                        "name": "Enkindle",
-                        "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Enkindle": {
+                    "name": "Enkindle",
+                    "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1651,12 +1438,9 @@
             "name": "Rune: Frost",
             "description": "<p>The orderly force of water and cold. The Frost rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Condense": {
-                        "name": "Condense",
-                        "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Condense": {
+                    "name": "Condense",
+                    "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1664,12 +1448,9 @@
             "name": "Rune: Illumination",
             "description": "<p>The orderly force of light and energy. The Illumination rune governs light and radiance. </p><p>The Illumination rune scales using <strong>Presence</strong>, targets <strong>Reflex</strong>, and deals <strong>Radiant</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Illusion</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Reveal": {
-                        "name": "Reveal",
-                        "description": "<p>Your command of the Rune of Illumination allows you to create light and exert basic control over its radiance, producing one of the following effects:</p><ul><li><p>Create a ball of light called a \"tosslight\" which sheds bright light in a 20 foot radius and dim light in a 40 foot radius. The light can hover near your body, be affixed to an item or surface, or be thrown up to a distance of 30 feet. You may dismiss your tosslight at any time and may only have a single tosslight at a time, casting this spell again causes your previous tosslight to disappear.</p></li><li><p>Inscribe up to 200 words of invisible text into paper like a scroll, page, or book. The text is written from light itself and hidden from non-magical detection. It can be made visible by yourself or another through use of this spell combined with a spoken passphrase that you define at the time of inscription.</p></li><li><p>Touch a physical object that produces dim light, causing it to become bright light for as long as you maintain physical contact. Only one light source may be intensified in this way at a given time.</p></li></ul><p>Reveal may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Reveal": {
+                    "name": "Reveal",
+                    "description": "<p>Your command of the Rune of Illumination allows you to create light and exert basic control over its radiance, producing one of the following effects:</p><ul><li><p>Create a ball of light called a \"tosslight\" which sheds bright light in a 20 foot radius and dim light in a 40 foot radius. The light can hover near your body, be affixed to an item or surface, or be thrown up to a distance of 30 feet. You may dismiss your tosslight at any time and may only have a single tosslight at a time, casting this spell again causes your previous tosslight to disappear.</p></li><li><p>Inscribe up to 200 words of invisible text into paper like a scroll, page, or book. The text is written from light itself and hidden from non-magical detection. It can be made visible by yourself or another through use of this spell combined with a spoken passphrase that you define at the time of inscription.</p></li><li><p>Touch a physical object that produces dim light, causing it to become bright light for as long as you maintain physical contact. Only one light source may be intensified in this way at a given time.</p></li></ul><p>Reveal may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1677,12 +1458,9 @@
             "name": "Rune: Illusion",
             "description": "<p>The chaotic force of trickery and whimsy. The illusion rune governs magical manifestations of falsehood or misdirection.</p><p>The Illusion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong> defense, and deals <strong>Psychic</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Illumination</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Seeming": {
-                        "name": "Seeming",
-                        "description": "<p>Your command of the Rune of Illusion allows you to fabricate perception in various simple ways and to manipulate shadow and light to create distraction or entertainment, producing one of the following effects:</p><ul><li><p>Modify a single aspect of your own physical appearance. Such alterations might include adjusting the sound of your voice, changing the color of your eyes, gaining illusory horns, or appearing slightly taller or shorter. The alteration persists until you Rest or enact a different alteration and can be verified as illusory by physical inspection.</p></li><li><p>Manifest a convincing recreation of a short sound or single scent that you can clearly recall. The illusion originates from your position and lasts for 10 seconds. You can control the volume of the sound or odorousness of the scent to be perceptible up to a range of 60 feet or shorter.</p></li><li><p>Decouple your shadow from your form, specifically controlling its movements separately from your own. You can maintain this illusion as long as you do not perform any other action that consumes <strong>Focus</strong>.</p></li></ul><p>Seeming may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Seeming": {
+                    "name": "Seeming",
+                    "description": "<p>Your command of the Rune of Illusion allows you to fabricate perception in various simple ways and to manipulate shadow and light to create distraction or entertainment, producing one of the following effects:</p><ul><li><p>Modify a single aspect of your own physical appearance. Such alterations might include adjusting the sound of your voice, changing the color of your eyes, gaining illusory horns, or appearing slightly taller or shorter. The alteration persists until you Rest or enact a different alteration and can be verified as illusory by physical inspection.</p></li><li><p>Manifest a convincing recreation of a short sound or single scent that you can clearly recall. The illusion originates from your position and lasts for 10 seconds. You can control the volume of the sound or odorousness of the scent to be perceptible up to a range of 60 feet or shorter.</p></li><li><p>Decouple your shadow from your form, specifically controlling its movements separately from your own. You can maintain this illusion as long as you do not perform any other action that consumes <strong>Focus</strong>.</p></li></ul><p>Seeming may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1690,12 +1468,9 @@
             "name": "Rune: Kinesis",
             "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Propel": {
-                        "name": "Propel",
-                        "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Propel": {
+                    "name": "Propel",
+                    "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1703,12 +1478,9 @@
             "name": "Rune: Life",
             "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong> or inflicts <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Bloom": {
-                        "name": "Bloom",
-                        "description": "<p>Your command of the Rune of Life allows you to stimulate biological growth and nourish physical health, producing one of the following effects:</p><ul><li><p>Cultivate 1 cubic foot of existing plants or fungus to rapidly grow to a healthy, blossoming, or harvestable state.</p></li><li><p>Identify a negative physical condition that is affecting a creature such as @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Verify whether a portion of food or drink is free of contamination from bacteria, parasites, or poison.</p></li></ul><p>Bloom may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Bloom": {
+                    "name": "Bloom",
+                    "description": "<p>Your command of the Rune of Life allows you to stimulate biological growth and nourish physical health, producing one of the following effects:</p><ul><li><p>Cultivate 1 cubic foot of existing plants or fungus to rapidly grow to a healthy, blossoming, or harvestable state.</p></li><li><p>Identify a negative physical condition that is affecting a creature such as @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Verify whether a portion of food or drink is free of contamination from bacteria, parasites, or poison.</p></li></ul><p>Bloom may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1716,12 +1488,9 @@
             "name": "Rune: Lightning",
             "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Energize": {
-                        "name": "Energize",
-                        "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Energize": {
+                    "name": "Energize",
+                    "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1729,12 +1498,9 @@
             "name": "Rune: Oblivion",
             "description": "<p>A chaotic force of destruction and annihilation of existence. The Oblivion rune governs unmaking of matter or decoherence of spirit.</p><p>The Oblivion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Void</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Soul</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Erase": {
-                        "name": "Erase",
-                        "description": "<p>Your command of the Rune of Oblivion allows you to unravel tiny holes in the fabric of existence, producing one of the following effects:</p><ul><li><p>Disintegrate a non-magical object you hold smaller than a 6-inch cube, sundering it to a fine particulate dust of its component elements.</p></li><li><p>Anesthetize the ability to feel emotion from yourself or a willing target that you touch, causing it to enter a placid, stoic, or dispassionate state. This effect can be maintained as long as you make no further <strong>Action</strong>.</p></li><li><p>Subdue the potency of a light source, causing its visible radius to be reduced by half for as long as you maintain physical contact with it. Only one light source may be dampened in this way at a given time.</p></li></ul><p>Erase may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Erase": {
+                    "name": "Erase",
+                    "description": "<p>Your command of the Rune of Oblivion allows you to unravel tiny holes in the fabric of existence, producing one of the following effects:</p><ul><li><p>Disintegrate a non-magical object you hold smaller than a 6-inch cube, sundering it to a fine particulate dust of its component elements.</p></li><li><p>Anesthetize the ability to feel emotion from yourself or a willing target that you touch, causing it to enter a placid, stoic, or dispassionate state. This effect can be maintained as long as you make no further <strong>Action</strong>.</p></li><li><p>Subdue the potency of a light source, causing its visible radius to be reduced by half for as long as you maintain physical contact with it. Only one light source may be dampened in this way at a given time.</p></li></ul><p>Erase may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1742,12 +1508,9 @@
             "name": "Rune: Soul",
             "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Evoke": {
-                        "name": "Evoke",
-                        "description": "<p>Your command of the Rune of Soul allows you to facilitate basic forms of spiritual influence, producing one of the following effects:</p><ul><li><p>Enable yourself or another willing person to revisit a core memory of a moment from their past up to one minute in duration as if it happened recently.</p></li><li><p>Identify a negative spiritual condition that is affecting a person such as @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Create a momentary spiritual connection with another willing creature that allows them to recognize an idea which can be expressed as a single word.</p></li></ul><p>Uses of Evoke may only affect yourself or another creature which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                    }
+                "Evoke": {
+                    "name": "Evoke",
+                    "description": "<p>Your command of the Rune of Soul allows you to facilitate basic forms of spiritual influence, producing one of the following effects:</p><ul><li><p>Enable yourself or another willing person to revisit a core memory of a moment from their past up to one minute in duration as if it happened recently.</p></li><li><p>Identify a negative spiritual condition that is affecting a person such as @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Create a momentary spiritual connection with another willing creature that allows them to recognize an idea which can be expressed as a single word.</p></li></ul><p>Uses of Evoke may only affect yourself or another creature which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1759,13 +1522,10 @@
             "name": "Ruthless Momentum",
             "description": "<p>You relish the carnage you can cause in combat and continue to press the fray as each enemy falls.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Ruthless Momentum": {
-                        "name": "Ruthless Momentum",
-                        "condition": "You incapacitate an enemy with a melee attack.",
-                        "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
-                    }
+                "Ruthless Momentum": {
+                    "name": "Ruthless Momentum",
+                    "condition": "You incapacitate an enemy with a melee attack.",
+                    "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
                 }
             }
         },
@@ -1801,12 +1561,9 @@
             "name": "Second Wind",
             "description": "Your physical hardiness allows you to push yourself beyond conventional limits.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Second Wind": {
-                        "name": "Second Wind",
-                        "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
-                    }
+                "Second Wind": {
+                    "name": "Second Wind",
+                    "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
                 }
             }
         },
@@ -1814,21 +1571,18 @@
             "name": "Shapeshifter",
             "description": "<p>You possess supernatural ability to transform your body into the shapes of beasts.</p><p>You undergo a transformation where you assume the form of a beast that you are familiar with and which is half your level or less. While transformed you have the exact attributes and abilities of the chosen beast.</p><p>Your equipment is magically incorporated into the form that you take, however you gain no benefit from that equipment while transformed.</p><p>If your bestial form becomes Incapacitated you revert back to your normal form with any excess damage becoming Wounds. If your Morale is Broken while in beast form your transformation ends and any excess damage becomes Madness.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Beast Shape": {
-                        "name": "Beast Shape",
-                        "description": "<p>You assume the form of a beast that you are familiar with of one-half your level or less.</p>",
-                        "effects": [
-                            {
-                                "name": "Beast Shape"
-                            }
-                        ]
-                    },
-                    "Revert Shape": {
-                        "name": "Revert Shape",
-                        "description": "<p>You end your bestial transformation, returning to your normal form.</p>"
-                    }
+                "Beast Shape": {
+                    "name": "Beast Shape",
+                    "description": "<p>You assume the form of a beast that you are familiar with of one-half your level or less.</p>",
+                    "effects": [
+                        {
+                            "name": "Beast Shape"
+                        }
+                    ]
+                },
+                "Revert Shape": {
+                    "name": "Revert Shape",
+                    "description": "<p>You end your bestial transformation, returning to your normal form.</p>"
                 }
             }
         },
@@ -1836,12 +1590,9 @@
             "name": "Shield Charge",
             "description": "<p>A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 20 feet in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Shield Charge": {
-                        "name": "Shield Charge",
-                        "description": "<p>You charge forward in a straight line, passing through the space of any creatures you encounter and making a <strong>Strike </strong>against each successive foe. Any creature <strong>Critically Hit</strong> by the attack may be pushed into an adjacent space of your choosing. You may not end your charge in the same space as another creature.</p>"
-                    }
+                "Shield Charge": {
+                    "name": "Shield Charge",
+                    "description": "<p>You charge forward in a straight line, passing through the space of any creatures you encounter and making a <strong>Strike </strong>against each successive foe. Any creature <strong>Critically Hit</strong> by the attack may be pushed into an adjacent space of your choosing. You may not end your charge in the same space as another creature.</p>"
                 }
             }
         },
@@ -1853,17 +1604,14 @@
             "name": "Shield Combat Training",
             "description": "<p>You are practiced at fighting with shield, using it to slam into and imbalance your foes. You are <strong>Trained</strong> with weapons in the <strong>Shield</strong> category.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Shield Bash": {
-                        "name": "Shield Bash",
-                        "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the @Condition[staggered] condition for one Round.</p>",
-                        "effects": [
-                            {
-                                "name": "Shield Bash"
-                            }
-                        ]
-                    }
+                "Shield Bash": {
+                    "name": "Shield Bash",
+                    "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the @Condition[staggered] condition for one Round.</p>",
+                    "effects": [
+                        {
+                            "name": "Shield Bash"
+                        }
+                    ]
                 }
             }
         },
@@ -1879,13 +1627,10 @@
             "name": "Slipstep",
             "description": "<p>Your nimbleness allows you to occasionally perform exceptionally elusive maneuvers to evade harm on the battlefield.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Slipstep": {
-                        "name": "Slipstep",
-                        "condition": "An action targets you",
-                        "description": "<p>As a <strong>Reaction</strong> to an action that targets you before it is confirmed, you may expend <strong>Heroism</strong> to instantly move up to your <strong>Stride</strong>. The interrupted action is nullified without being confirmed or applying any effects.</p><p>This movement does not provoke any Disengagement.</p>"
-                    }
+                "Slipstep": {
+                    "name": "Slipstep",
+                    "condition": "An action targets you",
+                    "description": "<p>As a <strong>Reaction</strong> to an action that targets you before it is confirmed, you may expend <strong>Heroism</strong> to instantly move up to your <strong>Stride</strong>. The interrupted action is nullified without being confirmed or applying any effects.</p><p>This movement does not provoke any Disengagement.</p>"
                 }
             }
         },
@@ -1921,12 +1666,9 @@
             "name": "Soothe",
             "description": "You administer a soothing Performance which rallies your allies, restoring Morale.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Soothe": {
-                        "name": "Soothe",
-                        "description": "<p>You perform a calming verse, benefiting all allies who can perceive you within 12 feet. Make a <strong>Performance Check</strong> against the Madness threshold of each ally. On success, each ally's Morale is restored.</p>"
-                    }
+                "Soothe": {
+                    "name": "Soothe",
+                    "description": "<p>You perform a calming verse, benefiting all allies who can perceive you within 12 feet. Make a <strong>Performance Check</strong> against the Madness threshold of each ally. On success, each ally's Morale is restored.</p>"
                 }
             }
         },
@@ -1950,17 +1692,14 @@
             "name": "Steadfast",
             "description": "Your patient resolve allows you to endure psychologically grueling ordeals with steadfast determination.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Steadfast Resolve": {
-                        "name": "Steadfast Resolve",
-                        "description": "<p>You harden yourself against demoralization. Your Morale is increased by your Wisdom score and you temporarily gain the Resolute condition.</p>",
-                        "effects": [
-                            {
-                                "name": "Steadfast Resolve"
-                            }
-                        ]
-                    }
+                "Steadfast Resolve": {
+                    "name": "Steadfast Resolve",
+                    "description": "<p>You harden yourself against demoralization. Your Morale is increased by your Wisdom score and you temporarily gain the Resolute condition.</p>",
+                    "effects": [
+                        {
+                            "name": "Steadfast Resolve"
+                        }
+                    ]
                 }
             }
         },
@@ -2000,17 +1739,14 @@
             "name": "Stunning Strike",
             "description": "An challenging unarmed technique which targets vital pressure points on the bodies of your adversaries. You unleash a debilitating strike which, if successful, leaves your enemy Stunned.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Stunning Strike": {
-                        "name": "Stunning Strike",
-                        "description": "<p>You <strong>Strike</strong> a vital pressure point, inflicting <strong>Stun</strong> on your enemy for 1 Round if successful.</p>",
-                        "effects": [
-                            {
-                                "name": "Stunning Strike"
-                            }
-                        ]
-                    }
+                "Stunning Strike": {
+                    "name": "Stunning Strike",
+                    "description": "<p>You <strong>Strike</strong> a vital pressure point, inflicting <strong>Stun</strong> on your enemy for 1 Round if successful.</p>",
+                    "effects": [
+                        {
+                            "name": "Stunning Strike"
+                        }
+                    ]
                 }
             }
         },
@@ -2022,17 +1758,14 @@
             "name": "Sundering Strike",
             "description": "<p>You know a martial technique to exploit the weakest points of an enemy's defenses, exposing them to further harm.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Sundering Strike": {
-                        "name": "Sundering Strike",
-                        "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
-                        "effects": [
-                            {
-                                "name": "Sundered Armor"
-                            }
-                        ]
-                    }
+                "Sundering Strike": {
+                    "name": "Sundering Strike",
+                    "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                    "effects": [
+                        {
+                            "name": "Sundered Armor"
+                        }
+                    ]
                 }
             }
         },
@@ -2048,12 +1781,9 @@
             "name": "Swipe",
             "description": "You perform a broad swipe with your weapon, hitting two adjacent targets within your weapon range.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Swipe": {
-                        "name": "Swipe",
-                        "description": "<p>You perform a <strong>Strike</strong> against two adjacent enemies, attacking both of them using a single swing of your great weapon.</p>"
-                    }
+                "Swipe": {
+                    "name": "Swipe",
+                    "description": "<p>You perform a <strong>Strike</strong> against two adjacent enemies, attacking both of them using a single swing of your great weapon.</p>"
                 }
             }
         },
@@ -2061,12 +1791,9 @@
             "name": "Tactician",
             "description": "<p>You are a cunning battlefield tactician, able to organize and direct your allies to act with increased effectiveness.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Tactical Plan": {
-                        "name": "Tactical Plan",
-                        "description": "Using 10 words or fewer, describe a course of action to an ally who acts after you in Initiative order. If that ally carries out your described plan later in the same Round, they gain +2 Boons on any dice rolls associated with that plan. The Gamemaster may arbitrate whether or not the plan was followed."
-                    }
+                "Tactical Plan": {
+                    "name": "Tactical Plan",
+                    "description": "Using 10 words or fewer, describe a course of action to an ally who acts after you in Initiative order. If that ally carries out your described plan later in the same Round, they gain +2 Boons on any dice rolls associated with that plan. The Gamemaster may arbitrate whether or not the plan was followed."
                 }
             }
         },
@@ -2086,12 +1813,9 @@
             "name": "Talisman Weapon Training",
             "description": "<p>You understand the arcane usage of talismans, orbs, foci, or other similar implements to channel magic or empower spellcraft. You are <strong>Trained</strong> with weapons in the <strong>Talisman</strong> categories.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Refocus": {
-                        "name": "Refocus",
-                        "description": "<p>You use your equipped Talisman to attempt to regain some <strong>Focus</strong>. You perform a <strong>Harmless</strong> <strong>Strike</strong> against your own <strong>Rallying</strong> threshold.</p><p>On a success you recover <strong>+1 Focus</strong> if using a one-handed Talisman and <strong>+2 Focus</strong> if using a two-handed Talisman. On a critical success the amount of Focus recovered increases by an additional +1.</p>"
-                    }
+                "Refocus": {
+                    "name": "Refocus",
+                    "description": "<p>You use your equipped Talisman to attempt to regain some <strong>Focus</strong>. You perform a <strong>Harmless</strong> <strong>Strike</strong> against your own <strong>Rallying</strong> threshold.</p><p>On a success you recover <strong>+1 Focus</strong> if using a one-handed Talisman and <strong>+2 Focus</strong> if using a two-handed Talisman. On a critical success the amount of Focus recovered increases by an additional +1.</p>"
                 }
             }
         },
@@ -2111,12 +1835,9 @@
             "name": "Thread the Needle",
             "description": "You concentrate to fire a shot into the swirl of melee. This attack benefits from <strong>Flanking</strong> as if it were a melee attack.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Thread the Needle": {
-                        "name": "Thread the Needle",
-                        "description": "<p>You fire a precise shot into melee combat, targeting an enemy which is engaged by one of your allies.</p>"
-                    }
+                "Thread the Needle": {
+                    "name": "Thread the Needle",
+                    "description": "<p>You fire a precise shot into melee combat, targeting an enemy which is engaged by one of your allies.</p>"
                 }
             }
         },
@@ -2128,12 +1849,9 @@
             "name": "Tumble Through",
             "description": "<p>You can use your athleticism in dangerous situations to escape harm or bypass enemy combatants.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Tumble": {
-                        "name": "Tumble",
-                        "description": "<p>Make a <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's <strong>Reflex</strong> defense.</p><p>On a success you may move up to twice your <strong>Stride</strong>, including the ability to pass through your target enemy's space, without provoking any <strong>Disengagement</strong> reactions.</p><p>On a failure your movement is blocked and your remain in your current position.</p>"
-                    }
+                "Tumble": {
+                    "name": "Tumble",
+                    "description": "<p>Make a <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's <strong>Reflex</strong> defense.</p><p>On a success you may move up to twice your <strong>Stride</strong>, including the ability to pass through your target enemy's space, without provoking any <strong>Disengagement</strong> reactions.</p><p>On a failure your movement is blocked and your remain in your current position.</p>"
                 }
             }
         },
@@ -2141,12 +1859,9 @@
             "name": "Twinned Shot",
             "description": "<p>You prepare two shots to fire simultaneously at a single target.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Twinned Shot": {
-                        "name": "Twinned Shot",
-                        "description": "<p>Using this <strong>Difficult</strong> technique, you fire two projectiles at once making two <strong>Strike</strong> attacks against the same target.</p>"
-                    }
+                "Twinned Shot": {
+                    "name": "Twinned Shot",
+                    "description": "<p>Using this <strong>Difficult</strong> technique, you fire two projectiles at once making two <strong>Strike</strong> attacks against the same target.</p>"
                 }
             }
         },
@@ -2162,17 +1877,14 @@
             "name": "Unarmed Combat Training",
             "description": "<p>You are familiar with basic martial arts and hand-to-hand combat. You know how to subdue or restrain opponents using your physical Strength. You are <strong>Trained</strong> with weapons in the <strong>Unarmed</strong> category.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Grapple": {
-                        "name": "Grapple",
-                        "description": "<p>You attempt to physically restrain or subdue an opponent. Perform a <strong>Athletics</strong> skill attack against an adjacent target. If successful, both you and your target are @Condition[restrained] for 1 Round.</p>",
-                        "effects": [
-                            {
-                                "name": "Grappling"
-                            }
-                        ]
-                    }
+                "Grapple": {
+                    "name": "Grapple",
+                    "description": "<p>You attempt to physically restrain or subdue an opponent. Perform a <strong>Athletics</strong> skill attack against an adjacent target. If successful, both you and your target are @Condition[restrained] for 1 Round.</p>",
+                    "effects": [
+                        {
+                            "name": "Grappling"
+                        }
+                    ]
                 }
             }
         },
@@ -2180,12 +1892,9 @@
             "name": "Unshakeable Poise",
             "description": "<p>You demonstrate exceptional poise in stressful circumstances, your cool head prevailing when others around you lose their composure.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Unshakeable Poise": {
-                        "name": "Unshakeable Poise",
-                        "description": "<p>You expend <strong>Heroism</strong> to instantly recover your <strong>Wisdom</strong> in <strong>Focus</strong>. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>"
-                    }
+                "Unshakeable Poise": {
+                    "name": "Unshakeable Poise",
+                    "description": "<p>You expend <strong>Heroism</strong> to instantly recover your <strong>Wisdom</strong> in <strong>Focus</strong>. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>"
                 }
             }
         },
@@ -2197,12 +1906,9 @@
             "name": "Uppercut",
             "description": "A two-handed weapon technique where you swing your weapon upwards, making a second Strike with the backswing of your weapon.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Uppercut": {
-                        "name": "Uppercut",
-                        "description": "<p>Following a basic Strike attack which did not critically miss, you <strong>Strike</strong> the same target again with the backswing of your weapon at reduced <strong>Action</strong> cost.</p>"
-                    }
+                "Uppercut": {
+                    "name": "Uppercut",
+                    "description": "<p>Following a basic Strike attack which did not critically miss, you <strong>Strike</strong> the same target again with the backswing of your weapon at reduced <strong>Action</strong> cost.</p>"
                 }
             }
         },
@@ -2218,17 +1924,14 @@
             "name": "Vow of Animus",
             "description": "You swear a vow to destroy a specific character or creature. You gain +2 Boons to Strike or Spell attacks against to subject of your vow. You may only swear such a vow against one enemy at a time. Swearing a new vow relinquishes your prior vow.",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Vow of Animus": {
-                        "name": "Vow of Animus",
-                        "description": "<p>You vow to vanquish a specific foe who becomes the subject of your animus.</p>",
-                        "effects": [
-                            {
-                                "name": "Vow of Animus"
-                            }
-                        ]
-                    }
+                "Vow of Animus": {
+                    "name": "Vow of Animus",
+                    "description": "<p>You vow to vanquish a specific foe who becomes the subject of your animus.</p>",
+                    "effects": [
+                        {
+                            "name": "Vow of Animus"
+                        }
+                    ]
                 }
             }
         },
@@ -2260,12 +1963,9 @@
             "name": "Wildspeaker",
             "description": "<p>You have a preternatural knack for communicating with animals. Through body language and sounds, you are capable of interpreting and communicating in the language of the wilderness.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Wildspeak": {
-                        "name": "Wildspeak",
-                        "description": "<p>If you succeed on a [[/skillCheck wilderness 14]] check, you may pose simple questions to a <strong>Beast</strong> which can perceive you. As long as the creature is not hostile it will respond accurately within the limits of its own knowledge.</p><ul><li><p>Beasts with an <strong>Intellect</strong> score of zero are incapable of understanding you.</p></li><li><p>Beasts with an <strong>Intellect</strong> score of 1 can only respond with \"yes\" or \"no\" responses.</p></li><li><p>Beasts with an <strong>Intellect</strong> score greater than 1 can provide simple multi-word responses.</p></li></ul>"
-                    }
+                "Wildspeak": {
+                    "name": "Wildspeak",
+                    "description": "<p>If you succeed on a [[/skillCheck wilderness 14]] check, you may pose simple questions to a <strong>Beast</strong> which can perceive you. As long as the creature is not hostile it will respond accurately within the limits of its own knowledge.</p><ul><li><p>Beasts with an <strong>Intellect</strong> score of zero are incapable of understanding you.</p></li><li><p>Beasts with an <strong>Intellect</strong> score of 1 can only respond with \"yes\" or \"no\" responses.</p></li><li><p>Beasts with an <strong>Intellect</strong> score greater than 1 can provide simple multi-word responses.</p></li></ul>"
                 }
             }
         },
@@ -2273,20 +1973,19 @@
             "name": "Zealous Smite",
             "description": "<p>You can imbue righteous power into your blow with a heavy weapon.</p>",
             "actions": {
-                "converter": "translateActionsMap",
-                "entries": {
-                    "Zealous Smite": {
-                        "name": "Zealous Smite",
-                        "condition": "You are attacking an Exposed enemy with a Heavy weapon.",
-                        "description": "<p>You <strong>Strike</strong> using a Strength-based weapon. The attack becomes <strong>Deadly</strong> and any damage dealt is <strong>Radiant</strong>.</p>"
-                    }
+                "Zealous Smite": {
+                    "name": "Zealous Smite",
+                    "condition": "You are attacking an Exposed enemy with a Heavy weapon.",
+                    "description": "<p>You <strong>Strike</strong> using a Strength-based weapon. The attack becomes <strong>Deadly</strong> and any damage dealt is <strong>Radiant</strong>.</p>"
                 }
             }
         }
     },
     "mapping": {
         "description": "system.description",
-        "actions": "system.actions",
-        "effects": "system.actions.*.effects"
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }
