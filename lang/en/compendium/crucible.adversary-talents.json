@@ -28,11 +28,33 @@
         },
         "Acid Spit": {
             "name": "Acid Spit",
-            "description": "<p>The creature has salivary glands which produce a caustic acid.</p>"
+            "description": "<p>The creature has salivary glands which produce a caustic acid.</p>",
+            "actions": {
+                "Acid Spit": {
+                    "name": "Acid Spit",
+                    "description": "<p>The @ref[actor.name]{creature} spits a glob of acidic bile at a target within 20 feet.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Acid Spit"
+                        }
+                    ]
+                }
+            }
         },
         "Acid Spray": {
             "name": "Acid Spray",
-            "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>"
+            "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
+            "actions": {
+                "Acid Spray": {
+                    "name": "Acid Spray",
+                    "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Acid Spray"
+                        }
+                    ]
+                }
+            }
         },
         "Amorphous": {
             "name": "Amorphous",
@@ -40,7 +62,13 @@
         },
         "Aqueous Transmission": {
             "name": "Aqueous Transmission",
-            "description": "<p>The @ref[name] is able to move instantaneously through water.</p>"
+            "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
+            "actions": {
+                "Aqueous Transmission": {
+                    "name": "Aqueous Transmission",
+                    "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                }
+            }
         },
         "Bestial Senses": {
             "name": "Bestial Senses",
@@ -56,11 +84,29 @@
         },
         "Burrower": {
             "name": "Burrower",
-            "description": "<p>The @ref[actor.name]{creature} has a supernatural ability to rapidly burrow through solid surfaces which are not entirely impermeable.</p><p>Additionally, it can compress its body to pass through apertures that can accommodate ¼ of its <strong>Size</strong>.</p>"
+            "description": "<p>The @ref[actor.name]{creature} has a supernatural ability to rapidly burrow through solid surfaces which are not entirely impermeable.</p><p>Additionally, it can compress its body to pass through apertures that can accommodate ¼ of its <strong>Size</strong>.</p>",
+            "actions": {
+                "Explosive Emergence": {
+                    "name": "Explosive Emergence",
+                    "condition": "While burrowing.",
+                    "description": "<p>The @ref[actor.name]{creature} emerges from a subterranean position with surprising and sudden force. This action may only be activated immediately the creature leaves the @Condition[burrowing] state.</p><p>The @ref[actor.name]{creature} erupts to <strong>Strike</strong> against all enemies within its weapon range with an <strong>Empowered</strong> attack.</p>"
+                }
+            }
         },
         "Clinging Grip": {
             "name": "Clinging Grip",
-            "description": "<p>The @ref[actor.name]{creature} is able to cling to vertical or overhead surfaces with exceptional grip or adhesion. This creature can avoid falling as long as they are adjacent to any solid surface which can reasonably support them.</p>"
+            "description": "<p>The @ref[actor.name]{creature} is able to cling to vertical or overhead surfaces with exceptional grip or adhesion. This creature can avoid falling as long as they are adjacent to any solid surface which can reasonably support them.</p>",
+            "actions": {
+                "Dropping Strike": {
+                    "name": "Dropping Strike",
+                    "description": "<p>The @ref[actor.name]{creature} can drop from overhead to <strong>Strike</strong> a creature below it. The target creature suffers an <strong>Empowered</strong> attack which, if successful, knocks them @Condition[prone] in addition to dealing damage.</p><p>The @ref[actor.name]{creature} can suffer falling damage from this attack only if it misses its target.</p>",
+                    "effects": [
+                        {
+                            "name": "Dropping Strike"
+                        }
+                    ]
+                }
+            }
         },
         "Cold Absorption": {
             "name": "Cold Absorption",
@@ -68,7 +114,14 @@
         },
         "Corrode Weapon": {
             "name": "Corrode Weapon",
-            "description": "<p>The internal corrosive metabolism of the @ref[actor.name]{ooze} threatens to dissolve metal weapons that strike it.</p>"
+            "description": "<p>The internal corrosive metabolism of the @ref[actor.name]{ooze} threatens to dissolve metal weapons that strike it.</p>",
+            "actions": {
+                "Corrode Weapon": {
+                    "name": "Corrode Weapon",
+                    "condition": "Struck in melee by a weapon made of metal.",
+                    "description": "<p>When struck by a melee weapon made of metal, the ooze attempts to consume the weapon itself, potentially breaking it.</p><p>This attack is <strong>Harmless</strong>, but if successful the <strong>Quality</strong> of the weapon used in the attack is downgraded by one tier. On a Critical Success or if the weapon is already <strong>Shoddy</strong>, the weapon becomes entirely <strong>Broken</strong>. Enchanted weapons are protected against this effect.</p>"
+                }
+            }
         },
         "Corruption Absorption": {
             "name": "Corruption Absorption",
@@ -108,11 +161,35 @@
         },
         "Grave Mark": {
             "name": "Grave Mark",
-            "description": "<p>When the @ref[actor.name]{creature} achieves a Critical Hit with a melee attack, it leaves a baleful Grave Mark upon its target.</p>"
+            "description": "<p>When the @ref[actor.name]{creature} achieves a Critical Hit with a melee attack, it leaves a baleful Grave Mark upon its target.</p>",
+            "actions": {
+                "Grave Mark": {
+                    "name": "Grave Mark",
+                    "condition": "When achieving a Critical Hit with a melee attack.",
+                    "description": "<p>After achieving a <strong>Critical Hit</strong> with a melee attack, the @ref[actor.name]{creature} attacks the target's <strong>Willpower</strong> defense, leaving a Grave Mark upon a success that inflicts the @Condition[exhausted] condition that persists until the target completes a <strong>Rest</strong>.</p><p>If a humanoid creature bearing a Grave Mark dies while under the effects of the mark, it rises from death on its subsequent Turn as a @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
+                    "effects": [
+                        {
+                            "name": "Grave Mark"
+                        }
+                    ]
+                }
+            }
         },
         "Horrific Critical": {
             "name": "Horrific Critical",
-            "description": "<p>The @ref[actor.name]{creature} delivers savage and grotesque blows that evoke fear within any who behold them.</p>"
+            "description": "<p>The @ref[actor.name]{creature} delivers savage and grotesque blows that evoke fear within any who behold them.</p>",
+            "actions": {
+                "Horrific Critical": {
+                    "name": "Horrific Critical",
+                    "condition": "Immediately after the creature achieves a Critical Hit with a melee attack.",
+                    "description": "<p>When the @ref[actor.name]{creature} achieves a <strong>Critical Hit</strong> using a melee attack it may exaggerate the blow in a way that evokes fear within those who behold the strike.</p><p>All the enemies within 30 feet who can see the creature face a <strong>Harmless</strong> attack against their <strong>Willpower</strong> or become @Condition[frightened] for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Horrific Critical"
+                        }
+                    ]
+                }
+            }
         },
         "Immutable Form": {
             "name": "Immutable Form",
@@ -120,11 +197,33 @@
         },
         "Lightning Spit": {
             "name": "Lightning Spit",
-            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel minor voltaic discharge.</p>"
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel minor voltaic discharge.</p>",
+            "actions": {
+                "Lightning Spit": {
+                    "name": "Lightning Spit",
+                    "description": "<p>The @ref[actor.name]{creature} spits a small bolt of lightning at a target creature within 20 feet, attacking its <strong>Reflex</strong> and dealing <strong>Electricity</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[shocked] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Lightning Spit"
+                        }
+                    ]
+                }
+            }
         },
         "Lightning Spray": {
             "name": "Lightning Spray",
-            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel powerful voltaic discharge.</p>"
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel powerful voltaic discharge.</p>",
+            "actions": {
+                "Lightning Spray": {
+                    "name": "Lightning Spray",
+                    "description": "<p>The @ref[actor.name]{creature} expels a bolt of lighting in a 30 foot ray that is 4 feet wide, attacking the <strong>Reflex</strong> of each target along that path and dealing <strong>Electricity</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[shocked] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Lightning Spray"
+                        }
+                    ]
+                }
+            }
         },
         "Magical Sight": {
             "name": "Magical Sight",
@@ -132,19 +231,58 @@
         },
         "Multiply": {
             "name": "Multiply",
-            "description": "<p>The @ref[actor.name]{ooze} grows rapidly, increasing in health and size.</p>"
+            "description": "<p>The @ref[actor.name]{ooze} grows rapidly, increasing in health and size.</p>",
+            "actions": {
+                "Multiply": {
+                    "name": "Multiply",
+                    "description": "<p>The ooze's cells rapidly multiply as the creature grows. Its <strong>Size</strong> increases by 1 and its <strong>Health</strong> increases by its <strong>Toughness</strong> value.</p>"
+                }
+            }
         },
         "Necrotic Bite": {
             "name": "Necrotic Bite",
-            "description": "<p>The @ref[actor.name]{creature} tears into flesh with a maw that is corrupted by pestilence and undeath.</p>"
+            "description": "<p>The @ref[actor.name]{creature} tears into flesh with a maw that is corrupted by pestilence and undeath.</p>",
+            "actions": {
+                "Necrotic Bite": {
+                    "name": "Necrotic Bite",
+                    "description": "<p>The @ref[actor.name]{creature} attacks with a pestilent bite that is <strong>Empowered</strong> and deals <strong>Corruption</strong> damage.</p><p>On a <strong>Critical Success</strong> the attack causes the @Condition[decaying] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Necrotic Bite"
+                        }
+                    ]
+                }
+            }
         },
         "Noxious Spit": {
             "name": "Noxious Spit",
-            "description": "<p>The @ref[actor.name]{creature} produces a salivary toxin that it can expel in a projected globule.</p>"
+            "description": "<p>The @ref[actor.name]{creature} produces a salivary toxin that it can expel in a projected globule.</p>",
+            "actions": {
+                "Noxious Spit": {
+                    "name": "Noxious Spit",
+                    "description": "<p>The @ref[actor.name]{creature} spits globule of toxin at a target creature within 20 feet, attacking its <strong>Reflex</strong> and dealing <strong>Poison </strong>damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[poisoned] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Noxious Spit"
+                        }
+                    ]
+                }
+            }
         },
         "Noxious Spray": {
             "name": "Noxious Spray",
-            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel toxic discharge in a projected ray.</p>"
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel toxic discharge in a projected ray.</p>",
+            "actions": {
+                "Noxious Spray": {
+                    "name": "Noxious Spray",
+                    "description": "<p>The @ref[actor.name]{creature} expels toxic discharge in a 30 foot ray that is 4 feet wide, attacking the <strong>Reflex</strong> of each target along that path and dealing <strong>Poison</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[poisoned] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Noxious Spray"
+                        }
+                    ]
+                }
+            }
         },
         "Pack Hunter": {
             "name": "Pack Hunter",
@@ -152,7 +290,18 @@
         },
         "Pouncing Strike": {
             "name": "Pouncing Strike",
-            "description": "<p>This creature lunges forward, putting its whole weight behind a leaping strike.</p>"
+            "description": "<p>This creature lunges forward, putting its whole weight behind a leaping strike.</p>",
+            "actions": {
+                "Pouncing Strike": {
+                    "name": "Pouncing Strike",
+                    "description": "<p>This attack may be used after a <strong>Move</strong> that brings the @ref[actor.name]{creature} at least 10 feet closer to its target. If the creature was above the target, this attack gains <strong>+1 Boon</strong> per 10 feet of elevation decrease in that movement.</p><p>If this attack is a <strong>Critical Hit</strong>, the target of the attack is immediately knocked @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Pouncing Strike"
+                        }
+                    ]
+                }
+            }
         },
         "Psychic Absorption": {
             "name": "Psychic Absorption",
@@ -164,15 +313,44 @@
         },
         "Radiant Death Burst": {
             "name": "Radiant Death Burst",
-            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of radiant energy.</p>"
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of radiant energy.</p>",
+            "actions": {
+                "Radiant Death Burst": {
+                    "name": "Radiant Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Radiant</strong> energy which attacks the <strong>Fortitude</strong> defense of all nearby creatures that fail to resist the effect.</p>"
+                }
+            }
         },
         "Raking Talons": {
             "name": "Raking Talons",
-            "description": "<p>The @ref[actor.name]{creature} attacks rapidly with its talons, dealing multiple raking blows against a single target.</p>"
+            "description": "<p>The @ref[actor.name]{creature} attacks rapidly with its talons, dealing multiple raking blows against a single target.</p>",
+            "actions": {
+                "Raking Talons": {
+                    "name": "Raking Talons",
+                    "description": "<p>The @ref[actor.name]{creature} attacks swiftly with both talons.</p><p>If at least one attack results in a <strong>Critical Success</strong>, it inflicts the @Condition[bleeding] condition for <strong>2 Rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Raking Talons"
+                        }
+                    ]
+                }
+            }
         },
         "Repugnant Pustules": {
             "name": "Repugnant Pustules",
-            "description": "<p>A malodorous cloud hangs about this creature like a pall, the rank noxious scent that can only come from active decay. Striking this creature is likely to release repugnant and corrupting essence.</p>"
+            "description": "<p>A malodorous cloud hangs about this creature like a pall, the rank noxious scent that can only come from active decay. Striking this creature is likely to release repugnant and corrupting essence.</p>",
+            "actions": {
+                "Repugnant Pustules": {
+                    "name": "Repugnant Pustules",
+                    "description": "<p>When the @ref[actor.name]{creature} is hit by a <strong>Strike</strong>, it may partially burst to release a spray of sickening fluid that deals <strong>Corruption</strong> damage. This action scales with <strong>Toughness</strong> and targets the <strong>Reflex</strong> defense of any creature within 3 feet.</p><p>On a <strong>Critical Success</strong>, the affected target becomes temporarily @Condition[diseased] for 3 Rounds.</p>",
+                    "effects": [
+                        {
+                            "name": "Repugnant Pustules"
+                        }
+                    ]
+                }
+            }
         },
         "Restless Dead": {
             "name": "Restless Dead",
@@ -180,31 +358,84 @@
         },
         "Restraining Chomp": {
             "name": "Restraining Chomp",
-            "description": "<p>The @ref[actor.name]{creature} uses its powerful jaws to bite and hold a target with a powerful chomp.</p>"
+            "description": "<p>The @ref[actor.name]{creature} uses its powerful jaws to bite and hold a target with a powerful chomp.</p>",
+            "actions": {
+                "Restraining Chomp": {
+                    "name": "Restraining Chomp",
+                    "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained</strong> until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
+                    "effects": [
+                        {
+                            "name": "Restraining Chomp"
+                        }
+                    ]
+                }
+            }
         },
         "Sacrifice Self": {
             "name": "Sacrifice Self",
-            "description": "<p>The @ref[actor.name]{creature} may intervene to take a blow instead of an adjacent ally.</p>"
+            "description": "<p>The @ref[actor.name]{creature} may intervene to take a blow instead of an adjacent ally.</p>",
+            "actions": {
+                "Sacrifice Self": {
+                    "name": "Sacrifice Self",
+                    "condition": "A nearby ally is targeted by a hostile action.",
+                    "description": "<p>The @ref[actor.name]{creature} reacts, performing a <strong>Movement</strong> up to their <strong>Stride </strong>to interpose itself between a nearby ally and some source of harm which it can perceive.</p><p>The @ref[actor.name]{creature} becomes @Condition[dead], destroyed in their sacrifice, but the triggering action causes no effects to its original target.</p>",
+                    "effects": [
+                        {
+                            "name": "Sacrifice Self"
+                        }
+                    ]
+                }
+            }
         },
         "Self-Repair": {
             "name": "Self-Repair",
-            "description": "<p>The @ref[actor.name]{construct} activates internal repairing mechanisms to mitigate damage it has taken.</p>"
+            "description": "<p>The @ref[actor.name]{construct} activates internal repairing mechanisms to mitigate damage it has taken.</p>",
+            "actions": {
+                "Self-Repair": {
+                    "name": "Self-Repair",
+                    "description": "<p>The construct recovers its <strong>Toughness</strong> value in <strong>Health</strong> and immediately ends a single status condition of its choice that is currently affecting it.</p>"
+                }
+            }
         },
         "Servitor": {
             "name": "Servitor",
-            "description": "<p>The @ref[actor.name]{creature} serves the will of another and maintains a connection to that master that allows the transmission or messages or even the sharing of senses between the servitor and its controller.</p>"
+            "description": "<p>The @ref[actor.name]{creature} serves the will of another and maintains a connection to that master that allows the transmission or messages or even the sharing of senses between the servitor and its controller.</p>",
+            "actions": {
+                "Servitor Sending": {
+                    "name": "Servitor Sending",
+                    "description": "<p>The @ref[actor.name]{creature} can contact its master, sending inaudible communication which is instantaneously received by its controller as long as that other creature is capable of receiving messages.</p>"
+                }
+            }
         },
         "Shadow Gait": {
             "name": "Shadow Gait",
-            "description": "<p>The @ref[actor.name]{creature} is able to step into and out of shadow itself to move in nightmarish and unpredictable ways.</p>"
+            "description": "<p>The @ref[actor.name]{creature} is able to step into and out of shadow itself to move in nightmarish and unpredictable ways.</p>",
+            "actions": {
+                "Shadow Gait": {
+                    "name": "Shadow Gait",
+                    "description": "<p>While in dim light or darkness, the @ref[actor.name] can meld into shadow to disappear from view. It may <strong>Move</strong> and reappear within a different area which is also dim light or darkness. This is a <strong>Displace</strong> movement which provokes no disengagement.</p>"
+                }
+            }
         },
         "Slippery Form": {
             "name": "Slippery Form",
-            "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>"
+            "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>",
+            "actions": {
+                "Slippery Escape": {
+                    "name": "Slippery Escape",
+                    "description": "<p>The creature uses it slippery form to escape restraints, immediately ending the <strong>Restrained</strong> condition.</p>"
+                }
+            }
         },
         "Subdivide": {
             "name": "Subdivide",
-            "description": "<p>The @ref[actor.name]{ooze} can divide itself into multiple parts, each an independent copy of the original.</p>"
+            "description": "<p>The @ref[actor.name]{ooze} can divide itself into multiple parts, each an independent copy of the original.</p>",
+            "actions": {
+                "Subdivide": {
+                    "name": "Subdivide",
+                    "description": "<p>The ooze's cells rapidly divide and the creature splits in two! The original creature and its clone equally divide its remaining <strong>Health</strong>. The <strong>Size</strong> of each resulting creature is decreased by 1.</p><p>If in combat, the new creature acts as a <strong>Summon</strong> and joins at <strong>Initiative</strong> 1. This Action may only be used if the creature has Size larger than 2. The created ooze never has rank superior to <strong>Normal</strong>.</p>"
+                }
+            }
         },
         "Sunlight Weakness": {
             "name": "Sunlight Weakness",
@@ -212,11 +443,33 @@
         },
         "Swooping Strike": {
             "name": "Swooping Strike",
-            "description": "<p>This @ref[actor.name]{creature} swoops from high above into a diving attack.</p>"
+            "description": "<p>This @ref[actor.name]{creature} swoops from high above into a diving attack.</p>",
+            "actions": {
+                "Swooping Strike": {
+                    "name": "Swooping Strike",
+                    "description": "<p>This attack may be used after a <strong>Move</strong> which descended at least 10 feet towards the target. The attack gains <strong>+1 Boon</strong> per 10 feet of elevation decrease in that movement.</p><p>If this attack is a <strong>Critical Hit</strong>, the target of the attack is immediately knocked @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Swooping Strike"
+                        }
+                    ]
+                }
+            }
         },
         "Tail Sweep": {
             "name": "Tail Sweep",
-            "description": "<p>The @ref[actor.name]{creature} can whip its heavy tail across the battlefield with terrible force.</p>"
+            "description": "<p>The @ref[actor.name]{creature} can whip its heavy tail across the battlefield with terrible force.</p>",
+            "actions": {
+                "Tail Sweep": {
+                    "name": "Tail Sweep",
+                    "description": "<p>The @ref[actor.name]{creature} sweeps its heavy tail in a circular arc, striking all creatures within range. On a <strong>Critical Hit</strong>, affected targets become @Condition[staggered] for until the end of their next turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Tail Sweep"
+                        }
+                    ]
+                }
+            }
         },
         "Thermal Vision": {
             "name": "Thermal Vision",
@@ -224,19 +477,59 @@
         },
         "Thrash": {
             "name": "Thrash",
-            "description": "<p>Once the @ref[actor.name]{creature} has an enemy restrained, it will thrash violently dealing terrible blows to the grasped victim.</p>"
+            "description": "<p>Once the @ref[actor.name]{creature} has an enemy restrained, it will thrash violently dealing terrible blows to the grasped victim.</p>",
+            "actions": {
+                "Thrash": {
+                    "name": "Thrash",
+                    "condition": "The target is Restrained by this creature.",
+                    "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has <strong>Restrained</strong>.</p>"
+                }
+            }
         },
         "Trampling Charge": {
             "name": "Trampling Charge",
-            "description": "<p>The @ref[actor.name]{creature} uses its prodigious size to charge forward, trampling smaller creatures that stand in its way.</p>"
+            "description": "<p>The @ref[actor.name]{creature} uses its prodigious size to charge forward, trampling smaller creatures that stand in its way.</p>",
+            "actions": {
+                "Trampling Charge": {
+                    "name": "Trampling Charge",
+                    "description": "<p>The @ref[actor.name]{creature} moves forward up to twice its <strong>Stride</strong>, attacking the <strong>Reflex</strong> defense of all creatures in its path. Targets who are half the creature's size or smaller are @Condition[stunned] until the end of their next turn as they are slammed aside.</p>",
+                    "effects": [
+                        {
+                            "name": "Trampling Charge"
+                        }
+                    ]
+                }
+            }
         },
         "Tusk Charge": {
             "name": "Tusk Charge",
-            "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet."
+            "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet.",
+            "actions": {
+                "Tusk Charge": {
+                    "name": "Tusk Charge",
+                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked Prone.</p>",
+                    "effects": [
+                        {
+                            "name": "Tusk Charge"
+                        }
+                    ]
+                }
+            }
         },
         "Venomous Bite": {
             "name": "Venomous Bite",
-            "description": "<p>The @ref[actor.name]{creature} injects toxin with their bite.</p>"
+            "description": "<p>The @ref[actor.name]{creature} injects toxin with their bite.</p>",
+            "actions": {
+                "Venomous Bite": {
+                    "name": "Venomous Bite",
+                    "description": "<p>The @ref[actor.name]{creature} attacks, injects toxin which, if successful, inflicts the @Condition[poisoned] condition for <strong>6 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Venomous Bite"
+                        }
+                    ]
+                }
+            }
         },
         "Void Absorption": {
             "name": "Void Absorption",
@@ -244,10 +537,20 @@
         },
         "Web Spinner": {
             "name": "Web Spinner",
-            "description": "<p>The @ref[actor.name]{creature} can create powerfully adhesive webbing. It ignores any movement restrictions or restraints otherwise caused by webbing.</p><p>While in contact with a web, the @ref[actor.name]{creature} knows the precise location of any other creature in contact with the same web.</p>"
+            "description": "<p>The @ref[actor.name]{creature} can create powerfully adhesive webbing. It ignores any movement restrictions or restraints otherwise caused by webbing.</p><p>While in contact with a web, the @ref[actor.name]{creature} knows the precise location of any other creature in contact with the same web.</p>",
+            "actions": {
+                "Web Spinner": {
+                    "name": "Web Spinner",
+                    "description": "<p>The creature can spend 10 minutes to spin a new new section of webbing that covers a 5-foot area.</p>"
+                }
+            }
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }
