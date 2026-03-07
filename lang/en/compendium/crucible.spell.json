@@ -12,62 +12,209 @@
     "entries": {
         "Bind Armament": {
             "name": "Bind Armament",
-            "description": "<p>You bind the weapon currently equipped in your main-hand as your Bound Armament.</p><p>While bound, you may conjure the weapon into a free hand without any resource cost. You can conjure the weapon across any distance including if it has been <strong>Disarmed</strong>.</p><p></p><p></p>"
+            "description": "<p>You bind the weapon currently equipped in your main-hand as your Bound Armament.</p><p>While bound, you may conjure the weapon into a free hand without any resource cost. You can conjure the weapon across any distance including if it has been <strong>Disarmed</strong>.</p><p></p><p></p>",
+            "actions": {
+                "Bind Armament": {
+                    "name": "Bind Armament",
+                    "description": "<p>You bind the weapon currently equipped in your main-hand as your Bound Armament.</p>"
+                },
+                "Conjure Armament": {
+                    "name": "Conjure Armament",
+                    "description": "<p>You call your bound armament back into your grasp. As long as you have sufficient free hands to hold it, the weapon returns instantaneously to you and is no longer <strong>Disarmed</strong>.</p>"
+                }
+            }
         },
         "Curse of Atrophy": {
             "name": "Curse of Atrophy",
-            "description": "<p>You sap the physical strength of your target, causing their muscles to wither and weaken in a way that cannot be undone by ordinary rest or recovery.</p>"
+            "description": "<p>You sap the physical strength of your target, causing their muscles to wither and weaken in a way that cannot be undone by ordinary rest or recovery.</p>",
+            "actions": {
+                "Curse of Atrophy": {
+                    "name": "Curse of Atrophy",
+                    "description": "<p>Touch the target to afflict them with a wasting curse that permanently reduces their <strong>Strength</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Atrophy"
+                        }
+                    ]
+                }
+            }
         },
         "Curse of Delusion": {
             "name": "Curse of Delusion",
-            "description": "<p>You cloud the clarity of your target's mind, permanently impairing their perception and sound judgment in ways that resist ordinary healing.</p>"
+            "description": "<p>You cloud the clarity of your target's mind, permanently impairing their perception and sound judgment in ways that resist ordinary healing.</p>",
+            "actions": {
+                "Curse of Delusion": {
+                    "name": "Curse of Delusion",
+                    "description": "<p>Touch the target to becloud their perceptions with a curse that permanently reduces their <strong>Wisdom</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Delusion"
+                        }
+                    ]
+                }
+            }
         },
         "Curse of Dullness": {
             "name": "Curse of Dullness",
-            "description": "<p>You dim the spark of intellect within your target, permanently impairing their capacity for swift thought and reasoning in ways that cannot be mended by rest alone.</p>"
+            "description": "<p>You dim the spark of intellect within your target, permanently impairing their capacity for swift thought and reasoning in ways that cannot be mended by rest alone.</p>",
+            "actions": {
+                "Curse of Dullness": {
+                    "name": "Curse of Dullness",
+                    "description": "<p>Touch the target to dull their mind with a curse that permanently reduces their <strong>Intellect</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Dullness"
+                        }
+                    ]
+                }
+            }
         },
         "Curse of Exhaustion": {
             "name": "Curse of Exhaustion",
-            "description": "<p>You drain the vital resilience of your target, leaving them constitutionally weakened in a way that persists beyond any ordinary recovery.</p>"
+            "description": "<p>You drain the vital resilience of your target, leaving them constitutionally weakened in a way that persists beyond any ordinary recovery.</p>",
+            "actions": {
+                "Curse of Exhaustion": {
+                    "name": "Curse of Exhaustion",
+                    "description": "<p>Touch the target to drain their vitality with a curse that permanently reduces their <strong>Toughness</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Exhaustion"
+                        }
+                    ]
+                }
+            }
         },
         "Curse of Lethargy": {
             "name": "Curse of Lethargy",
-            "description": "<p>You smother the spark of quickness within your target, dulling their reflexes and slowing their body's response in a way that endures permanently.</p>"
+            "description": "<p>You smother the spark of quickness within your target, dulling their reflexes and slowing their body's response in a way that endures permanently.</p>",
+            "actions": {
+                "Curse of Lethargy": {
+                    "name": "Curse of Lethargy",
+                    "description": "<p>Touch the target to afflict them with sluggishness, permanently reducing their <strong>Dexterity</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Lethargy"
+                        }
+                    ]
+                }
+            }
         },
         "Curse of Scorn": {
             "name": "Curse of Scorn",
-            "description": "<p>You diminish the force of your target's personality, making them less compelling and harder for others to heed in a way that proves permanent.</p>"
+            "description": "<p>You diminish the force of your target's personality, making them less compelling and harder for others to heed in a way that proves permanent.</p>",
+            "actions": {
+                "Curse of Scorn": {
+                    "name": "Curse of Scorn",
+                    "description": "<p>Touch the target to wither their force of will with a curse that permanently reduces their <strong>Presence</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Curse of Scorn"
+                        }
+                    ]
+                }
+            }
         },
         "Dawn Beacon": {
             "name": "Dawn Beacon",
-            "description": "<p>You call forth the piercing light of dawn that penetrates the darkness around you, revealing the area and dispelling sources of magical darkness.</p>"
+            "description": "<p>You call forth the piercing light of dawn that penetrates the darkness around you, revealing the area and dispelling sources of magical darkness.</p>",
+            "actions": {
+                "Dawn Beacon": {
+                    "name": "Dawn Beacon",
+                    "description": "<p>You create a pillar of magical light centered upon your current position which creates a cylinder of light creating 30 feet of bright light and an additional 30 feet of dim light. The pillar remains in place for 6 rounds or until dispelled.</p><p>This magical light counteracts magical darkness and destroys any source of magical darkness whose origin is contained within its area.</p><p>Enemies within the area when the light is first created must resist an attack against their <strong>Fortitude</strong> or be @Condition[blinded] for one round.</p><p><strong>WIP: This spell does not yet automatically create a light source, which must be done manually for now. Eventually this will be automated using a new Foundry VTT version 14 framework for template placement.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Dawn Beacon"
+                        }
+                    ]
+                }
+            }
         },
         "Engulfing Darkness": {
             "name": "Engulfing Darkness",
-            "description": "<p>You conjure an oppressive sphere of magical darkness that shrouds vision and suffocates light within its area.</p>"
+            "description": "<p>You conjure an oppressive sphere of magical darkness that shrouds vision and suffocates light within its area.</p>",
+            "actions": {
+                "Engulfing Darkness": {
+                    "name": "Engulfing Darkness",
+                    "description": "<p>You create a sphere of magical darkness around your current position with 20 foot radius which remains in place for 6 rounds or until dispelled.</p><p>Within the area of this darkness all non-magical light sources are quenched and creatures are treated as @Condition[blinded].</p><p>The area of this sphere is constrained by solid walls. Creatures outside this area cannot see into it and the effective area of light sources outside this area ends at its perimeter.</p><p><strong>WIP: This spell does not yet automatically create a darkness source, which must be done manually for now. Eventually this will be automated using a new Foundry VTT version 14 framework for template placement.</strong></p>"
+                }
+            }
         },
         "Invisibility": {
             "name": "Invisibility",
-            "description": "<p>A sophisticated use of Illusory magic, the Invisibility spell allows the caster to wrap light and shadow around themselves like donning a cloak, reflecting the world about them as if they were not standing there. What person wouldn't believe it when their own eyes tell them that there is nothing to see?</p>"
+            "description": "<p>A sophisticated use of Illusory magic, the Invisibility spell allows the caster to wrap light and shadow around themselves like donning a cloak, reflecting the world about them as if they were not standing there. What person wouldn't believe it when their own eyes tell them that there is nothing to see?</p>",
+            "actions": {
+                "Invisibility": {
+                    "name": "Invisibility",
+                    "description": "<p>You become @Condition[invisible] and cannot be detected using sight-based perception. You cannot be directly targeted by any action. This spell must be <strong>Maintained</strong> in order to remain in effect.</p>",
+                    "effects": [
+                        {
+                            "name": "Invisibility"
+                        }
+                    ]
+                }
+            }
         },
         "Lifebloom": {
             "name": "Lifebloom",
-            "description": "<p>Few are those that can serve as a conduit within the physical world and allow the raw powers of Life and Soul to comingle, tipping the balance in their favour. This spell allows the caster to serve as a wellspring for the abundant forces that bring all soulful life into being. With a susurration of air the caster is surrounded with dancing motes of the pure energies of life and soul, like dozens of fireflies or the sparks from a fire, and a those within the radius are filled with a calming sensation as if they were immersed in pleasantly warm water. All plant life in the vicinity immediately surges through stages of growth to bloom, and the scent of pollen and lush greenery fills the air.</p>"
+            "description": "<p>Few are those that can serve as a conduit within the physical world and allow the raw powers of Life and Soul to comingle, tipping the balance in their favour. This spell allows the caster to serve as a wellspring for the abundant forces that bring all soulful life into being. With a susurration of air the caster is surrounded with dancing motes of the pure energies of life and soul, like dozens of fireflies or the sparks from a fire, and a those within the radius are filled with a calming sensation as if they were immersed in pleasantly warm water. All plant life in the vicinity immediately surges through stages of growth to bloom, and the scent of pollen and lush greenery fills the air.</p>",
+            "actions": {
+                "Lifebloom": {
+                    "name": "Lifebloom",
+                    "description": "<p>You channel vital magic into an aura that restores the Health and Morale of all allies within 30 feet of you. Each round, allies who start their turn within this aura recover your <strong>Wisdom</strong> in both <strong>Health</strong> and <strong>Morale</strong>. The spell must be maintained.</p><p><strong>WIP: This spell is currently treated as an Area of Effect, granting healing-over-time effects to those within initial range. Removal of these effects if the spell ceases being maintained must be done manually for now. When auras are automated by the system in Foundry VTT version 14, the mechanical implementation of this spell will match the description.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Lifebloom"
+                        }
+                    ]
+                }
+            }
         },
         "Protective Mirage": {
             "name": "Protective Mirage",
-            "description": "<p>You <strong>Aspect </strong>yourself in a mirage of shifting <strong>Illumination</strong> and <strong>Shadow</strong> which mask your current position and allow you to <strong>Elude</strong> incoming blows.</p>"
+            "description": "<p>You <strong>Aspect </strong>yourself in a mirage of shifting <strong>Illumination</strong> and <strong>Shadow</strong> which mask your current position and allow you to <strong>Elude</strong> incoming blows.</p>",
+            "actions": {
+                "Protective Mirage": {
+                    "name": "Protective Mirage",
+                    "description": "<p>You become surrounded by three illusory duplicates which last up to 10 Rounds. Any incoming <strong>Strike</strong> against you is made with a number of <strong>Banes</strong> equal to two times your number of duplicates remaining. Each time a Strike misses you, one of your duplicates disappears.</p>",
+                    "effects": [
+                        {
+                            "name": "Mirage"
+                        }
+                    ]
+                }
+            }
         },
         "Revive": {
             "name": "Revive",
-            "description": "<p>A potent expression of Life and Control magics, Revive allows the caster to intervene in the natural process of death by driving a surge of the essence of life into the body of the recently deceased. Those who have experienced Revival are often reluctant to discuss it, but describe it as a sensation that is unpleasantly reminiscent of being woken suddenly from a deep slumber to find they have been freezing— the flesh prickles and aches, the mind reels, and the soul aches with the memory of its interrupted departure.</p>"
+            "description": "<p>A potent expression of Life and Control magics, Revive allows the caster to intervene in the natural process of death by driving a surge of the essence of life into the body of the recently deceased. Those who have experienced Revival are often reluctant to discuss it, but describe it as a sensation that is unpleasantly reminiscent of being woken suddenly from a deep slumber to find they have been freezing— the flesh prickles and aches, the mind reels, and the soul aches with the memory of its interrupted departure.</p>",
+            "actions": {
+                "Revive": {
+                    "name": "Revive",
+                    "description": "<p>You restore a creature which has recently become @Condition[dead] back to life, reducing its <strong>Wounds</strong> by your <strong>Wisdom</strong> score. If successful, the revived creature is @Condition[disoriented] and @Condition[staggered] for 10 minutes.</p>",
+                    "effects": [
+                        {
+                            "name": "Revived"
+                        }
+                    ]
+                }
+            }
         },
         "Telecognition": {
             "name": "Telecognition",
-            "description": "<p>A rudimentary example of the complex art of penetrating the minds of others, Telecognition skims thoughts from the surface of a subject's mind like leaves from the surface of a pond. Though it may not be disruptive, it is unsubtle— just as the pond ripples when its surface is touched, so too does the mind.</p><p></p>"
+            "description": "<p>A rudimentary example of the complex art of penetrating the minds of others, Telecognition skims thoughts from the surface of a subject's mind like leaves from the surface of a pond. Though it may not be disruptive, it is unsubtle— just as the pond ripples when its surface is touched, so too does the mind.</p><p></p>",
+            "actions": {
+                "Telecognition": {
+                    "name": "Telecognition",
+                    "description": "<p>You reach into the mind of a <strong>Humanoid</strong> or <strong>Giant</strong> creature, attempting to penetrate their <strong>Willpower</strong> defense to understand their thoughts and motives. The target of this spell is aware of the intrusion, even if they cannot perceive you.</p><p>If successful, the Gamemaster (in the case of an Adversary target) or Player (in the case of a Hero target) must describe to you in 3 words or less what idea or sentiment is at the forefront of their thoughts in the current moment.</p><p>Upon a Critical Success, this description may use up to 10 words to convey deeper understanding.</p>"
+                }
+            }
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }
