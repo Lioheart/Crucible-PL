@@ -1,0 +1,44 @@
+{
+    "label": "Przeszłość",
+    "entries": {
+        "Acolyte": {
+            "name": "Akolita",
+            "description": "<p>Byłeś osobą wierzącą. Nauczyłeś się żyć bezinteresownie, służąc innym lub dążąc do wyższych ideałów.</p>"
+        },
+        "Constable": {
+            "name": "Konstabl",
+            "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
+        },
+        "Merchant": {
+            "name": "Kupiec",
+            "description": "<p>Byłeś przedstawicielem handlowym lub prowadziłeś mały sklep. Znaczną część czasu spędzałeś na nauce sztuki negocjacji z ludźmi z różnych środowisk i na poszukiwaniu granic najlepszej oferty.</p>"
+        },
+        "Performer": {
+            "name": "Wykonawca",
+            "description": "Byłeś wędrownym artystą estradowym. Nauczyłeś się czuć swobodnie podczas różnych imprez towarzyskich, jak grać przed publicznością, upiększać szczegóły swojego występu, aby wywołać określone reakcje emocjonalne."
+        },
+        "Physician": {
+            "name": "Lekarz",
+            "description": "<p>Byłeś uzdrowicielem lub pracownikiem służby zdrowia. Część swojego życia poświęciłeś na naukę medycyny i masz zdolność dostrzegania chorób u innych. Wiesz, jak leczyć rany i choroby oraz jak rozpoznawać ich przyczyny.</p>"
+        },
+        "Scholar": {
+            "name": "Naukowiec",
+            "description": "<p>Zawsze najlepiej czułeś się w bibliotece lub sali lekcyjnej. Twoje studia skupiały się na odkrywaniu tajemnic otaczającego Cię świata i niewiele jest przedmiotów teoretycznych, których jeszcze nie znasz.</p>"
+        },
+        "Soldier": {
+            "name": "Żołnierz",
+            "description": "<p>Byłeś szeregowym członkiem jakiejś organizacji wojskowej. Dyscyplina sprawiła, że przetrwałeś i podkreśliła znaczenie okazywania siły i dominacji nad innymi, a lata spędzone na koniu lub w marszu nauczyły cię, jak radzić sobie w każdym terenie.</p>"
+        },
+        "Urchin": {
+            "name": "Ulicznik",
+            "description": "<p>Niewielu uczy się przetrwać tak jak ty. Twoja edukacja była surowa i oparta na nieufności. Nauczyłeś się obserwować innych, wypatrując oznak niebezpieczeństwa lub nielojalności, unikać zwracania na siebie uwagi, szukać resztek jedzenia na ulicach rozległych miast.</p>"
+        },
+        "Wanderer": {
+            "name": "Wędrowiec",
+            "description": "<p>Twoje życie upływało w ciągłej wędrówce. Nie ma dla Ciebie nic przyjemniejszego niż uczucie jazdy wozem lub na wierzchowcu, obserwowanie nieznanego nieba powoli przesuwającego się nad głową. Nauczyłeś się zwracać baczną uwagę na otoczenie i jego potrzeby, dbać o stworzenia, na których polegasz, i radzić sobie z tym, co uda Ci się znaleźć.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
