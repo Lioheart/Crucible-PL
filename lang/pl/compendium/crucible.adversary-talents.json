@@ -1,0 +1,556 @@
+{
+    "label": "Talenty przeciwników",
+    "folders": {
+        "Ooze": "Śluz",
+        "Charge": "Szarża",
+        "Passive": "Pasywne",
+        "Bites": "Ugryzienia",
+        "Claws": "Pazury",
+        "Construct": "Konstrukt",
+        "Communication": "Komunikacja",
+        "Undead": "Nieumarły",
+        "Beast": "Bestia",
+        "Critical Hits": "Krytyczne trafienia",
+        "Strikes": "Uderzenia",
+        "Movement": "Ruch",
+        "Resistances": "Odporności",
+        "Bursts": "Wybuchy",
+        "Flight": "Latanie",
+        "Death": "Śmierć",
+        "Breath": "Zionięcie",
+        "Senses": "Zmysły",
+        "Tail": "Ogon"
+    },
+    "entries": {
+        "Acid Absorption": {
+            "name": "Absorpcja kwasu",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w środowiskach kwaśnych. Jego odporność na <strong>Kwas</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Acid Spit": {
+            "name": "Plucie kwasem",
+            "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwas.</p>",
+            "actions": {
+                "Acid Spit": {
+                    "name": "Plucie kwasem",
+                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kwaśną żółcią w cel znajdujący się w odległości do 20 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Plucie kwasem"
+                        }
+                    ]
+                }
+            }
+        },
+        "Acid Spray": {
+            "name": "Rozprysk kwasu",
+            "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
+            "actions": {
+                "Acid Spray": {
+                    "name": "Rozprysk kwasu",
+                    "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozprysk kwasu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Amorphous": {
+            "name": "Amorficzny",
+            "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego <strong>Biegu</strong>. Otrzymuje premię do <strong>Uniku</strong> równą połowie swojej wartości <strong>Wytrzymałości</strong>i jest odporny na stan @Condition[restrained].</p>"
+        },
+        "Aqueous Transmission": {
+            "name": "Transmisja wodna",
+            "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
+            "actions": {
+                "Aqueous Transmission": {
+                    "name": "Transmisja wodna",
+                    "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                }
+            }
+        },
+        "Bestial Senses": {
+            "name": "Zwierzęce zmysły",
+            "description": "<p>@ref[actor.name]{Stworzenie} ma wyostrzone zmysły i jest szczególnie wyczulony na otoczenie, wszystkie testy <strong>Świadomości</strong> otrzymują <strong>+2 Korzyści</strong>.</p>"
+        },
+        "Blood Sense": {
+            "name": "Zmysł krwi",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi precyzyjnie wyczuć każdą krwawiącą istotę w promieniu 20 stóp, która nie posiada wszystkich Punktów Życia. Każda broń lub atak umiejętności przeciwko zranionej istocie nie podlega <strong>Zgubie</strong>, które normalnie miałyby zastosowanie, gdyby istota była @Condition[blinded].</p>"
+        },
+        "Bonded Mind": {
+            "name": "Połączone umysły",
+            "description": "<p>Umysł @ref[actor.name]{Stworzenie} posiadającego ten talent jest nierozerwalnie związany z innymi członkami swojej grupy. Jest on zdolny do natychmiastowej komunikacji telepatycznej z każdym innym @ref[actor.taxonomy.name]{stworzeniem tej samej taksonomii} w promieniu 60 stóp.</p>"
+        },
+        "Burrower": {
+            "name": "Kopacz",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność szybkiego przedzierania się przez twarde powierzchnie, które nie są całkowicie nieprzepuszczalne.</p><p>Dodatkowo może ścisnąć swoje ciało, aby przejść przez otwory, które mogą pomieścić ¼ jego <strong>Rozmiaru</strong>.</p>",
+            "actions": {
+                "Explosive Emergence": {
+                    "name": "Wybuchowe pojawienie się",
+                    "condition": "Podczas kopania.",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>Uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                }
+            }
+        },
+        "Clinging Grip": {
+            "name": "Przyczepny chwyt",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi przylegać do pionowych lub wiszących powierzchni dzięki wyjątkowej przyczepności. Stworzenie to może uniknąć upadku, dopóki znajduje się w pobliżu jakiejkolwiek solidnej powierzchni, która jest w stanie je utrzymać.</p>",
+            "actions": {
+                "Dropping Strike": {
+                    "name": "Uderzenie z góry",
+                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                    "effects": [
+                        {
+                            "name": "Uderzenie z góry"
+                        }
+                    ]
+                }
+            }
+        },
+        "Cold Absorption": {
+            "name": "Absorpcja zimna",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Corrode Weapon": {
+            "name": "Korodowanie broni",
+            "description": "<p>Wewnętrzny korozyjny metabolizm @ref[actor.name]{śluzu} grozi rozpuszczeniem metalowej broni, która go uderzy.</p>",
+            "actions": {
+                "Corrode Weapon": {
+                    "name": "Korodowanie broni",
+                    "condition": "Uderzony w walce wręcz bronią wykonaną z metalu.",
+                    "description": "<p>Po uderzeniu bronią białą wykonaną z metalu, śluz próbuje pochłonąć samą broń, potencjalnie ją łamiąc. </p><p>Atak ten jest <strong>Nieszkodliwy</strong>, ale jeśli się powiedzie, <strong>Jakość</strong> broni użytej do ataku zostaje obniżona o jeden poziom. W przypadku Krytycznego Sukcesu lub jeśli broń jest już <strong>Tandetna</strong>, broń zostaje całkowicie <strong>Zepsuta</strong>. Broń zaklęta jest chroniona przed tym efektem.</p>"
+                }
+            }
+        },
+        "Corruption Absorption": {
+            "name": "Absorpcja zepsucia",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii śmierci. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Electricity Absorption": {
+            "name": "Absorpcja elektryczności",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Elusive Flight": {
+            "name": "Nieuchwytny lot",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest szczególnie nieuchwytne podczas lotu, potrafiące wlatywać i wylatywać z walki bez wywoływania <strong>Wycofania się</strong>. Można je zaatakować, jeśli wyląduje na ziemi, a Wycofanie się może mieć zastosowanie, jeśli spróbuje powrócić do lotu.</p>"
+        },
+        "Extended Breath": {
+            "name": "Wydłużony oddech",
+            "description": "<p>@ref[actor.name]{Stworzenie} może wstrzymywać oddech przez <strong>15 minut</strong>.</p>"
+        },
+        "False Appearance": {
+            "name": "Fałszywy wygląd",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
+        },
+        "Fire Absorption": {
+            "name": "Absorpcja ognia",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Glider": {
+            "name": "Szybowanie",
+            "description": "<p>@ref[actor.name]{Stworzenie} może kontrolować swój ruch podczas upadku i może wykonać akcję <strong>Ruchu</strong> na maksymalną odległość równą jego <strong>Biegu</strong> za każde 20 stóp upadku.</p><p>Jeśli wykorzysta akcję Ruchu w ten sposób, nie ponosi obrażeń od upadku po wylądowaniu.</p>"
+        },
+        "Gloom Sight": {
+            "name": "Widzenie w mroku",
+            "description": "<p>@ref[actor.name]{Stworzenie} może patrzeć w całkowitej ciemności i widzieć normalnie. Magiczna ciemność nie ogranicza jego widzenia.</p><p><strong>Rozwój systemu</strong>: Ta funkcja wymaga automatyzacji, aby skonfigurować tryby widzenia i wykrywania, na które nie ma wpływu magiczna ciemność.</p>"
+        },
+        "Glowing Body": {
+            "name": "Świecące ciało",
+            "description": "<p>@ref[actor.name]{Stworzenie} emituje niemagiczne jasne światło w promieniu 15 stóp i słabe światło w promieniu 30 stóp.</p>"
+        },
+        "Grave Mark": {
+            "name": "Trupi znak",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zadaje Krytyczne Trafienie atakiem wręcz, pozostawia na swoim celu złowrogi Trupi Znak.</p>",
+            "actions": {
+                "Grave Mark": {
+                    "name": "Trupi znak",
+                    "condition": "W przypadku Trafienia krytycznego atakiem wręcz.",
+                    "description": "<p>Po osiągnięciu <strong>Krytycznego Trafienia</strong> atakiem wręcz, @ref[actor.name]{stworzenie} atakuje obronę <strong> Woli</strong> celu, pozostawiając w przypadku sukcesu Trupi Znak, który nakłada stan @Condition[exhausted], utrzymujący się do momentu, aż cel zakończy <strong>Odpoczynek</strong>.</p><p>Jeśli humanoidalna istota nosząca Trupi Znak umrze pod wpływem tego znaku, w następnej turze powstaje z martwych jako @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
+                    "effects": [
+                        {
+                            "name": "Trupi znak"
+                        }
+                    ]
+                }
+            }
+        },
+        "Horrific Critical": {
+            "name": "Przerażający krytyk",
+            "description": "<p>@ref[actor.name]{Stworzenie} zadaje brutalne i groteskowe ciosy, które budzą strach u każdego, kto je widzi.</p>",
+            "actions": {
+                "Horrific Critical": {
+                    "name": "Przerażający krytyk",
+                    "condition": "Natychmiast po tym, jak stworzenie osiągnie Trafienie krytyczne atakiem wręcz.",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} osiąga <strong>Krytyczne Trafienie</strong> za pomocą ataku wręcz, może wyolbrzymiać cios w sposób, który wywołuje strach u tych, którzy są świadkami uderzenia.</p><p>Wszyscy przeciwnicy w promieniu 30 stóp, którzy widzą stworzenie, muszą wykonać <strong>Nieszkodliwy</strong> test przeciwko swojej <strong>Woli</strong> lub otrzymają @Condition[frightened] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Przerażający krytyk"
+                        }
+                    ]
+                }
+            }
+        },
+        "Immutable Form": {
+            "name": "Niezmienna postać",
+            "description": "<p>@ref[actor.name] jest odporny na wszelkie zaklęcia i efekty, które zmieniają jego fizyczną postać.</p>"
+        },
+        "Lightning Spit": {
+            "name": "Plucie błyskawicą",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie wytwarzać i wyrzucać niewielkie wyładowania elektryczne.</p>",
+            "actions": {
+                "Lightning Spit": {
+                    "name": "Plucie błyskawicą",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wypluwa niewielką błyskawicę w kierunku wybranego stworzenia znajdującego się w odległości do 20 stóp, atakując jego <strong>Refleks</strong> i zadając obrażenia <strong>Elektryczne</strong>.</p><p>W przypadku <strong>Krytycznego Trafienia</strong> atak powoduje stan @Condition[shocked] trwający <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Plucie błyskawicą"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lightning Spray": {
+            "name": "Rozprysk błyskawicy",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie wytwarzać i wyrzucać potężne wyładowania elektryczne.</p>",
+            "actions": {
+                "Lightning Spray": {
+                    "name": "Rozprysk błyskawicy",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyrzuca błyskawicę o zasięgu 30 stóp i szerokości 4 stóp, atakując <strong>Refleks</strong> każdego celu na tej ścieżce i zadając obrażenia <strong>Elektryczne</strong>. </p><p>W przypadku <strong>Trafienia krytycznego</strong> atak powoduje stan @Condition[shocked] trwający <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozprysk błyskawicy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Magical Sight": {
+            "name": "Magiczny wzrok",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność widzenia, dzięki której jest szczególnie wyczulony na niebezpieczeństwa i okazje. Otrzymuje +2 <strong>Korzyści</strong> do wszystkich testów <strong>Świadomości</strong> i może widzieć stworzenia @Condition[invisible].</p>"
+        },
+        "Multiply": {
+            "name": "Wielokrotność",
+            "description": "<p>@ref[actor.name]{Śluz} szybko rośnie, zwiększając swoje zdrowie i rozmiar.</p>",
+            "actions": {
+                "Multiply": {
+                    "name": "Wielokrotność",
+                    "description": "<p>Komórki szlamu szybko się namnażają wraz z rozwojem stworzenia. Jego <strong>Rozmiar</strong> zwiększa się o 1, a <strong>Zdrowie</strong> wzrasta o wartość jego <strong>Wytrzymałości</strong>.</p>"
+                }
+            }
+        },
+        "Necrotic Bite": {
+            "name": "Nekrotyczne ugryzienie",
+            "description": "<p>@ref[actor.name]{Stworzenie} rozrywa ciało szczękami skażonymi zarazą i nieśmiercią.</p>",
+            "actions": {
+                "Necrotic Bite": {
+                    "name": "Nekrotyczne ugryzienie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje zaraźliwym ugryzieniem, które jest <strong>Wzmocnione</strong> i zadaje obrażenia od <strong>zepsucia</strong>.</p><p>W przypadku <strong>Krytycznego Sukcesu</strong> atak powoduje stan @Condition[decaying] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Nekrotyczne ugryzienie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Noxious Spit": {
+            "name": "Plucie trucizną",
+            "description": "<p>@ref[actor.name]{Stworzenie} wytwarza toksynę ślinową, którą może wyrzucać w postaci wyrzucanej kropli.</p>",
+            "actions": {
+                "Noxious Spit": {
+                    "name": "Plucie trucizną",
+                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kulką toksyny w kierunku stworzenia znajdującego się w odległości do 20 stóp, atakując jego <strong>Refleks</strong> i zadając obrażenia <strong>Trucizną</strong>.</p><p>W przypadku <strong>Krytycznego Trafienia</strong> atak powoduje stan @Condition[poisoned] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Plucie trucizną"
+                        }
+                    ]
+                }
+            }
+        },
+        "Noxious Spray": {
+            "name": "Rozprysk trucizny",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie wytwarzać i wyrzucać toksyczne wydzieliny w postaci strumienia. </p>",
+            "actions": {
+                "Noxious Spray": {
+                    "name": "Rozprysk trucizny",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyrzuca toksyczną substancję w promieniu 30 stóp i szerokości 4 stóp, atakując <strong>Refleks</strong> każdego celu na tej ścieżce i zadając obrażenia <strong>Trucizną</strong>.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak powoduje stan @Condition[poisoned] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozprysk trucizny"
+                        }
+                    ]
+                }
+            }
+        },
+        "Pack Hunter": {
+            "name": "Stadny łowca",
+            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Flankowanego</strong> wroga.</p>"
+        },
+        "Pouncing Strike": {
+            "name": "Atak z wyskoku",
+            "description": "<p>Stworzenie to rzuca się do przodu, wykorzystując całą swoją masę do wykonania skoku i ataku.</p>",
+            "actions": {
+                "Pouncing Strike": {
+                    "name": "Atak z wyskoku",
+                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który zbliża @ref[actor.name]{stworzenie} o co najmniej 10 stóp do celu. Jeśli stworzenie znajdowało się nad celem, atak ten zyskuje <strong>+1 Korzyść</strong> za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest <strong>Trafieniem krytycznym</strong>, cel ataku natychmiast zostaje @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Atak z wyskoku"
+                        }
+                    ]
+                }
+            }
+        },
+        "Psychic Absorption": {
+            "name": "Absorpcja psychiczna",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest wyjątkowo odporne na ataki na swój umysł. Jego odporność na <strong>Psychiczne</strong> obrażenia jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Radiant Absorption": {
+            "name": "Absorpcja świetlna",
+            "description": "<p>@ref[actor.name]{Stworzenie} nie jest obce chaotycznej sile światła. Jego odporność na <strong>Świetliste</strong> obrażenia jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Radiant Death Burst": {
+            "name": "Świetlisty wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę świetlistej energii.</p>",
+            "actions": {
+                "Radiant Death Burst": {
+                    "name": "Świetlisty wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} stanie się @Condition[dead], eksploduje impulsem <strong>Świetlistej</strong> energii, który atakuje obronę <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, które nie zdołają oprzeć się temu efektowi.</p>"
+                }
+            }
+        },
+        "Raking Talons": {
+            "name": "Drapieżne szpony",
+            "description": "<p>@ref[actor.name]{Stworzenie} atakuje szybko swoimi szponami, zadając wiele ciosów pojedynczemu celowi.</p>",
+            "actions": {
+                "Raking Talons": {
+                    "name": "Drapieżne szpony",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje szybko oboma szponami.</p><p>Jeśli co najmniej jeden atak zakończy się <strong>Krytycznym Sukcesem</strong>, powoduje on stan @Condition[bleeding] trwający <strong>2 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Drapieżne szpony"
+                        }
+                    ]
+                }
+            }
+        },
+        "Repugnant Pustules": {
+            "name": "Odrażające czyraki",
+            "description": "<p>Wokół tej istoty unosi się cuchnąca chmura, niczym całun, a jej ohydny, trujący zapach może pochodzić wyłącznie z aktywnego rozkładu. Uderzenie tej istoty prawdopodobnie spowoduje uwolnienie odrażającej esencji zepsucia.</p>",
+            "actions": {
+                "Repugnant Pustules": {
+                    "name": "Odrażające czyraki",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                    "effects": [
+                        {
+                            "name": "Odrażające czyraki"
+                        }
+                    ]
+                }
+            }
+        },
+        "Restless Dead": {
+            "name": "Niespokojni umarli",
+            "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
+        },
+        "Restraining Chomp": {
+            "name": "Zaciśnięcie",
+            "description": "<p>@ref[actor.name]{Stworzenie} używa swoich potężnych szczęk, aby ugryźć i utrzymać ofiarę silnym ugryzieniem.</p>",
+            "actions": {
+                "Restraining Chomp": {
+                    "name": "Zaciśnięcie",
+                    "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, zostaje ona również <strong>Wstrzymana</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                    "effects": [
+                        {
+                            "name": "Zaciśnięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Sacrifice Self": {
+            "name": "Poświęcenie siebie",
+            "description": "<p>@ref[actor.name]{Stworzenie} może interweniować, aby przyjąć cios zamiast sąsiedniego sojusznika.</p>",
+            "actions": {
+                "Sacrifice Self": {
+                    "name": "Poświęcenie siebie",
+                    "condition": "Pobliskiego sojusznika atakuje wróg.",
+                    "description": "<p>@ref[actor.name]{Stworzenie} reaguje, wykonując <strong>Ruch</strong> o długości równej <strong>Biegowi</strong>, aby stanąć między pobliskim sojusznikiem a źródłem zagrożenia, które jest w stanie dostrzec.</p><p>@ref[actor.name]{Stworzenie} staje się @Condition[dead], ginąc w wyniku swojego poświęcenia, ale wywołująca to działanie akcja nie powoduje żadnych skutków dla pierwotnego celu.</p>",
+                    "effects": [
+                        {
+                            "name": "Poświęcenie siebie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Self-Repair": {
+            "name": "Samonaprawa",
+            "description": "<p>@ref[actor.name]{Konstrukt} aktywuje wewnętrzne mechanizmy naprawcze w celu złagodzenia poniesionych szkód.</p>",
+            "actions": {
+                "Self-Repair": {
+                    "name": "Samonaprawa",
+                    "description": "<p>Konstrukt odzyskuje swoją wartość <strong>Wytrzymałości</strong> w postaci <strong>Zdrowia</strong> i natychmiast kończy jeden wybrany przez siebie stan, który obecnie na niego oddziałuje.</p>"
+                }
+            }
+        },
+        "Servitor": {
+            "name": "Sługa",
+            "description": "<p>@ref[actor.name]{Stworzenie} służy woli innego i utrzymuje połączenie z tym panem, które umożliwia przekazywanie wiadomości, a nawet dzielenie się zmysłami między sługą a jego właścicielem.</p>",
+            "actions": {
+                "Servitor Sending": {
+                    "name": "Wysłanie wiadomości sługi",
+                    "description": "<p>@ref[actor.name]{Stworzenie} może skontaktować się ze swoim panem, wysyłając niesłyszalne komunikaty, które są natychmiast odbierane przez właściciela, o ile ta druga istota jest w stanie odbierać wiadomości.</p>"
+                }
+            }
+        },
+        "Shadow Gait": {
+            "name": "Widmowy chód",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi wchodzić i wychodzić z cienia, poruszając się w koszmarny i nieprzewidywalny sposób.</p>",
+            "actions": {
+                "Shadow Gait": {
+                    "name": "Widmowy chód",
+                    "description": "<p>W słabym świetle lub ciemności @ref[actor.name] może wtopić się w cień i zniknąć z pola widzenia. Może się <strong>Poruszyć</strong> i pojawić się ponownie w innym miejscu, również słabo oświetlonym lub zaciemnionym. Jest to ruch typu <strong>Przemieszczenie</strong>, który nie powoduje wycofania się z walki.</p>"
+                }
+            }
+        },
+        "Slippery Form": {
+            "name": "Śliska postać",
+            "description": "<p>To stworzenie jest stale śliskie, co pozwala mu uniknąć schwytania za pomocą fizycznych środków przymusu.</p>",
+            "actions": {
+                "Slippery Escape": {
+                    "name": "Śliska ucieczka",
+                    "description": "<p>Stworzenie wykorzystuje swoją śliską postać, aby uwolnić się z ograniczeń, natychmiast kończąc stan <strong>Wstrzymany</strong>.</p>"
+                }
+            }
+        },
+        "Subdivide": {
+            "name": "Podział",
+            "description": "<p>@ref[actor.name]{Śluz} może podzielić się na wiele części, z których każda jest niezależną kopią oryginału.</p>",
+            "actions": {
+                "Subdivide": {
+                    "name": "Podział",
+                    "description": "<p>Komórki szlamu szybko się dzielą, a stworzenie rozdziela się na dwie części! Oryginalne stworzenie i jego klon dzielą między siebie pozostałe <strong>Zdrowie</strong>. <strong>Rozmiar</strong> każdego z powstałych stworzeń zmniejsza się o 1.</p><p>W przypadku walki nowe stworzenie działa jak <strong>Przywołane</strong> i dołącza z <strong>Inicjatywą</strong> 1. Akcja ta może być użyta tylko wtedy, gdy stworzenie ma rozmiar większy niż 2. Utworzony śluz nigdy nie ma rangi wyższej niż <strong>Normalna</strong>.</p>"
+                }
+            }
+        },
+        "Sunlight Weakness": {
+            "name": "Wrażliwość na światło słoneczne",
+            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
+        },
+        "Swooping Strike": {
+            "name": "Atak z powietrza",
+            "description": "<p>@ref[actor.name]{Stworzenie} pikuje z dużej wysokości, wykonując atak z powietrza.</p>",
+            "actions": {
+                "Swooping Strike": {
+                    "name": "Atak z powietrza",
+                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który spowodował spadek o co najmniej 10 stóp w kierunku celu. Atak zyskuje <strong>+1 Korzyść</strong> za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest <strong>Trafieniem krytycznym</strong>, cel ataku zostaje natychmiast @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Atak z powietrza"
+                        }
+                    ]
+                }
+            }
+        },
+        "Tail Sweep": {
+            "name": "Zamach ogonem",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi uderzać swoim ciężkim ogonem na polu bitwy z ogromną siłą.</p>",
+            "actions": {
+                "Tail Sweep": {
+                    "name": "Zamach ogonem",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wymachuje swoim ciężkim ogonem po łuku, uderzając wszystkie stworzenia w zasięgu. W przypadku <strong>Trafienia krytycznego</strong> dotknięte cele otrzymują @Condition[staggered] do końca swojej następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Zamach ogonem"
+                        }
+                    ]
+                }
+            }
+        },
+        "Thermal Vision": {
+            "name": "Widzenie termiczne",
+            "description": "<p>@ref[actor.name]{Stworzenie} postrzega świat poprzez różnice temperatur z dużą precyzją, co pozwala mu zlokalizować stworzenia stałocieplne lub emitujące ciepło w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną, a postać nie jest Oślepiona lub Obezwładniona. Stworzenie wykryte za pomocą tego widzenia termicznego jest traktowane jako widoczne dla celów działań wymagających widzenia celu.</p><p></p>"
+        },
+        "Thrash": {
+            "name": "Szarpanina",
+            "description": "<p>Gdy @ref[actor.name]{stworzenie} obezwładni wroga, zacznie go brutalnie okładać, zadając mu potężne ciosy.</p>",
+            "actions": {
+                "Thrash": {
+                    "name": "Szarpanina",
+                    "condition": "Cel jest Wstrzymany przez tę istotę.",
+                    "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
+                }
+            }
+        },
+        "Trampling Charge": {
+            "name": "Taranowanie",
+            "description": "<p>@ref[actor.name]{Stworzenie} wykorzystuje swoje ogromne rozmiary, aby szarżować do przodu, miażdżąc mniejsze stworzenia, które staną mu na drodze.</p>",
+            "actions": {
+                "Trampling Charge": {
+                    "name": "Taranowanie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} porusza się do przodu o odległość równą dwukrotności swojego <strong>Biegu</strong>, atakując obronę <strong>Refleks</strong> wszystkich stworzeń na swojej drodze. Cele, które są o połowę mniejsze od tego stworzenia lub mniejsze, są @Condition[stunned] do końca swojej następnej tury, ponieważ zostają one odrzucone na bok.</p>",
+                    "effects": [
+                        {
+                            "name": "Taranowanie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Tusk Charge": {
+            "name": "Szarża kłami",
+            "description": "Dzik opuszcza głowę i szarżuje z szaloną prędkością, a jego kły wystają spod śliniącego się gardła.",
+            "actions": {
+                "Tusk Charge": {
+                    "name": "Szarża kłami",
+                    "description": "<p>Wykonaj Szarżę w linii prostej i zaatakuj pierwsze napotkane stworzenie. Jeśli atak się powiedzie, cel zostanie Przewrócony.</p>",
+                    "effects": [
+                        {
+                            "name": "Szarża kłami"
+                        }
+                    ]
+                }
+            }
+        },
+        "Venomous Bite": {
+            "name": "Jadowite ugryzienie",
+            "description": "<p>@ref[actor.name]{Stworzenie} wstrzykuje toksynę poprzez ugryzienie.</p>",
+            "actions": {
+                "Venomous Bite": {
+                    "name": "Jadowite ugryzienie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje, wstrzykując toksynę, która w przypadku powodzenia powoduje stan @Condition[poisoned] przez <strong>6 tur</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Jadowite ugryzienie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Void Absorption": {
+            "name": "Absorpcja pustki",
+            "description": "<p>@ref[actor.name]{Stworzenie} nie jest obce uporządkowanej sile ciemności. Jego odporność na obrażenia od <strong>Pustki</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Web Spinner": {
+            "name": "Przędnik",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi tworzyć silnie klejącą sieć. Ignoruje wszelkie ograniczenia ruchu lub skrępowania spowodowane przez sieć.</p><p>Podczas kontaktu z siecią @ref[actor.name]{stworzenie} zna dokładną lokalizację każdego innego stworzenia, które ma kontakt z tą samą siecią.</p>",
+            "actions": {
+                "Web Spinner": {
+                    "name": "Przędnik",
+                    "description": "<p>Stworzenie może poświęcić 10 minut na utkanie nowej części sieci, która pokrywa obszar o powierzchni 5 stóp.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
+    }
+}
