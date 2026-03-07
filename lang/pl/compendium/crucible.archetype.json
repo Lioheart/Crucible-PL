@@ -1,0 +1,155 @@
+{
+    "label": "Archetyp",
+    "folders": {
+        "Humanoids": "Humanoidy",
+        "Dragons": "Smoki",
+        "Constructs": "Konstrukty",
+        "Elementals": "Żywiołaki",
+        "Beasts": "Bestie"
+    },
+    "entries": {
+        "Adult Drake": {
+            "name": "Dorosłe smoczydło",
+            "description": "<p>W pełni dorosłe smoczydła, które są niebezpiecznymi prześladowcami i polują w stadach.</p>"
+        },
+        "Archer": {
+            "name": "Łucznik",
+            "description": "Wojownicy walczący na odległość, którzy przeszli odpowiednie szkolenie, używają łuków."
+        },
+        "Bard": {
+            "name": "Bard",
+            "description": "<p>Praktykujesz ustne i muzyczne tradycje heroicznej opowieści, aby wzbudzić odwagę w swoich sojusznikach, zdemoralizować wrogów i szybko znaleźć niekonwencjonalne rozwiązania problemów.</p>"
+        },
+        "Berserker": {
+            "name": "Berserker",
+            "description": "Wojownik napędzany gniewem, który preferuje ataki obiema rękami przy użyciu ciężkiej broni."
+        },
+        "Brigand": {
+            "name": "Bandyta",
+            "description": "<p>Nikczemni przestępcy, niezależnie od tego, czy są to bandyci, piraci, łotrzykowie czy inni łotrzykowie.</p>"
+        },
+        "Burrower": {
+            "name": "Kopacz",
+            "description": "<p>Zwierzęta lub stworzenia podobne do zwierząt, które są ekspertami w kopaniu tuneli w twardych materiałach.</p>"
+        },
+        "Chomper": {
+            "name": "Kłapacz",
+            "description": "<p>Bestie, które polegają na okrutnych ugryzieniach swoich ogromnych pysków.</p>"
+        },
+        "Commonfolk": {
+            "name": "Pospólstwo",
+            "description": "<p>Zwykli obywatele świata, którzy nie posiadają żadnych wyjątkowych umiejętności ani zdolności przydatnych w przygodach.</p>"
+        },
+        "Drakeling": {
+            "name": "Smoczątko",
+            "description": "<p>Mniejsze lub młodsze smoczydła, które indywidualnie są zbyt małe, ale stanowią zagrożenie jako łowcy polujący w stadach.</p>"
+        },
+        "Elemental Mote": {
+            "name": "Cząstka żywiołów",
+            "description": "<p>Cząsteczki są najmniejszymi elementarnymi postaciami, które nadal przyjmują fizyczną formę. Zazwyczaj nie są inteligentne i działają zgodnie z bodźcami środowiskowymi lub podążają za instynktownymi wskazówkami większego elementarza znajdującego się w pobliżu.</p>"
+        },
+        "Elemental Sprite": {
+            "name": "Duch żywiołów",
+            "description": "<p>Duszki są mniejszymi żywiołakami, które są ucieleśnieniem swojego pierwotnego żywiołu, ale nie posiadają inteligencji swoich większych krewnych.</p>"
+        },
+        "Elemental Visitor": {
+            "name": "Gość żywiołów",
+            "description": "<p>Goście są ucieleśnieniem surowej energii żywiołów, która przybiera formy przypominające nieco ludzkie postacie. W przeciwieństwie do swoich mniej znaczących krewnych, Goście Żywiołów potrafią się komunikować i rozumieć, chociaż ich motywacje rzadko pokrywają się z motywacjami śmiertelników.</p>"
+        },
+        "Elemental Wanderer": {
+            "name": "Wędrowiec żywiołów",
+            "description": "<p>Wędrowcy są znaczącymi przejawami energii żywiołów, które przyjmują imponującą lub majestatyczną postać. Są samoświadomi, rozumni i zdają sobie sprawę, że poza swoim typowym królestwem są nienaturalnymi intruzami. Często kierują nimi instynktowne lub przemyślane cele, które ich przyciągnęły.</p>"
+        },
+        "Fighter": {
+            "name": "Wojownik",
+            "description": "Wykwalifikowani wojownicy walczący w zwarciu, biegli w posługiwaniu się bronią jednoręczną, tarczą i ciężką zbroją."
+        },
+        "Grappler": {
+            "name": "Zapaśnik",
+            "description": "Wojownicy, którzy specjalizują się w fizycznym obezwładnianiu przeciwników i narażaniu ich na dalsze ataki."
+        },
+        "Guardian Beast": {
+            "name": "Strażnik bestii",
+            "description": "<p>Bestie pełniące rolę strażników, czuwające nad miejscami lub ludźmi, którym są niezachwianie lojalne.</p>"
+        },
+        "Justiciar": {
+            "name": "Justycjariusz",
+            "description": "<p>Sędziowie to boscy bohaterowie, którzy wymierzają gniew i sąd boskiej mocy tym, którzy są niegodziwi lub niegodni.</p>"
+        },
+        "Lawkeeper": {
+            "name": "Strażnik prawa",
+            "description": "<p>Funkcjonariusze policji, detektywi, śledczy i inni przedstawiciele organów ścigania odpowiedzialni za utrzymanie porządku publicznego i ściganie osób, które go naruszają.</p>"
+        },
+        "Mage": {
+            "name": "Mag",
+            "description": "Mag, który w walce posługuje się ogniem i elektrycznością."
+        },
+        "Necromancer": {
+            "name": "Nekromanta",
+            "description": "<p>Nekromanci to czarodzieje, którzy wykorzystują swoją inteligencję i mądrość do przełamania ostateczności śmierci, badając siły nekrotyczne i psychiczne, które pozostają pomiędzy życiem a zapomnieniem. Rzadko spotyka się ich samotnie – nekromanta dowolnego poziomu zagrożenia podporządkował sobie pobliskie nieumarłe istoty, a pokonanie go bez uprzedniego zniszczenia jego przywołanych sług jest kosztownym przedsięwzięciem. W bezpośredniej konfrontacji są fizycznie słabi, mają niską zdolność uników i nie potrafią skutecznie parować ani blokować ciosów, ale ich zdolność do utrzymywania trwałych efektów nekrotycznych, osłabiania koncentracji i morale wrogów oraz uzupełniania własnych zasobów cierpieniem innych sprawia, że są niebezpiecznymi przeciwnikami na każdym poziomie.</p>"
+        },
+        "Occultist": {
+            "name": "Okultysta",
+            "description": "Użytkownicy magii, którzy praktykują czary, wykorzystując siły z innego świata i nadprzyrodzone."
+        },
+        "Operator": {
+            "name": "Operator",
+            "description": "<p>Operatorzy są ekspertami w manewrowaniu w napiętych sytuacjach, potrafią zrównoważyć przenikliwe wyczucie polityczne z przebiegłością i zdecydowanym działaniem.</p>"
+        },
+        "Pack Member": {
+            "name": "Członek stada",
+            "description": "Zwierzęta polujące w stadach."
+        },
+        "Priest": {
+            "name": "Kapłan",
+            "description": "<p>Pobożni słudzy bogów, którzy czerpią swoją moc z wiary i oddania swoim bóstwom.</p>"
+        },
+        "Protector": {
+            "name": "Obrońca",
+            "description": "<p>Nieustraszeni wojownicy, którzy stawiają się między swoimi sojusznikami a niebezpieczeństwem, dążąc przede wszystkim do ochrony siebie i innych przed krzywdą.</p>"
+        },
+        "Scout": {
+            "name": "Zwiadowca",
+            "description": "<p>Osoby przeszkolone w zakresie rozpoznania i wstępnej eksploracji nieznanych obszarów.</p>"
+        },
+        "Servitor": {
+            "name": "Sługa",
+            "description": "<p>Stworzenia wyspecjalizowane w szpiegostwie lub wykonywaniu zadań w odległej służbie kontrolującego je pana.</p>"
+        },
+        "Shapeshifter": {
+            "name": "Zmiennokształtny",
+            "description": "<p>Zmiennokształtni praktykują sztukę przemiany w zwierzęta, rodzaj pierwotnej magii, która jest starożytna i różni się od powszechnie praktykowanej magii runicznej.</p>"
+        },
+        "Skirmisher": {
+            "name": "Harcownik",
+            "description": "Nieustępliwy i zdeterminowany wojownik walczący w zwarciu, który wykorzystuje połączenie zwinności i siły, aby pokonać przeciwników."
+        },
+        "Spellblade": {
+            "name": "Zaklęte ostrze",
+            "description": "<p>Zaklęte ostrza to magicznie wzmocnieni wojownicy, którzy wykorzystują sztukę czarów w swoich atakach bronią, aby zadawać niszczycielskie ciosy.</p>"
+        },
+        "Swashbuckler": {
+            "name": "Zawadiaka",
+            "description": "<p>Osoby, które prowadzą niebezpieczne życie na pokładzie żaglowca lub zajmują się piractwem na pełnym morzu. Znane są ze swojej inteligencji, uroku osobistego, a czasem także z lekkomyślnej odwagi.</p>"
+        },
+        "Thief": {
+            "name": "Złodziej",
+            "description": "<p>Nieuczciwe postacie, które są biegłe w infiltrowaniu obszarów, do których nie powinny mieć wstępu, i zabieraniu rzeczy, które nie powinny posiadać.</p>"
+        },
+        "Trader": {
+            "name": "Handlarz",
+            "description": "<p>Twoja specjalizacja to podróżowanie po świecie i ułatwianie wymiany towarów.</p>"
+        },
+        "Tusker": {
+            "name": "Bawół",
+            "description": "<p>Bestie, które walczą, wykorzystując swoją masę, pęd i ostre kły.</p>"
+        },
+        "Ultra Drake": {
+            "name": "Ultra smok",
+            "description": "<p>Dojrzałe smoczydło, które są największymi drapieżnikami wśród swojego gatunku.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
