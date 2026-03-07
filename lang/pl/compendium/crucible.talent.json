@@ -1620,7 +1620,7 @@
             "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Ochrony</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Ochrony, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
         },
         "Skirmisher": {
-            "name": "Pionier",
+            "name": "Harcownik",
             "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
         },
         "Slipstep": {
