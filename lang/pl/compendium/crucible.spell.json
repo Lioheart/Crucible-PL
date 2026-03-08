@@ -1,0 +1,220 @@
+{
+    "label": "Zaklęcia Ikoniczne",
+    "folders": {
+        "Gesture: Aura": "Gest: Aura",
+        "Gesture: Strike": "Gest: Uderzenie",
+        "Gesture: Aspect": "Gest: Aspekt",
+        "Gesture: Pulse": "Gest: Impuls",
+        "Gesture: Infuence": "Gest: Wpływ",
+        "Gesture: Creation": "Gest: Stworzenie",
+        "Gesture: Sense": "Gest: Zmysł"
+    },
+    "entries": {
+        "Bind Armament": {
+            "name": "Wiązanie uzbrojenia",
+            "description": "<p>Wiążesz broń aktualnie wyposażoną w swojej głównej ręce jako swoje Wiązane Uzbrojenie.</p><p>Podczas wiązania możesz przywołać broń do wolnej ręki bez żadnych kosztów zasobów. Możesz przywołać broń z dowolnej odległości, nawet jeśli została ona <strong>Rozbrojona</strong>.</p><p></p><p></p>",
+            "actions": {
+                "Bind Armament": {
+                    "name": "Wiązanie uzbrojenia",
+                    "description": "<p>Wiążesz broń aktualnie wyposażoną w rękę główną jako swoje Wiązane uzbrojenie.</p>"
+                },
+                "Conjure Armament": {
+                    "name": "Przywołanie uzbrojenia",
+                    "description": "<p>Przywołujesz z powrotem do siebie związane uzbrojenie. Jeśli masz wystarczająco dużo wolnych rąk, aby je utrzymać, broń natychmiast wraca do ciebie i nie jest już <strong>Rozbrojona</strong>.</p>"
+                }
+            }
+        },
+        "Curse of Atrophy": {
+            "name": "Klątwa zaniku",
+            "description": "<p>Osłabiasz siłę fizyczną celu, powodując zanik i osłabienie mięśni, którego nie można odwrócić zwykłym odpoczynkiem lub regeneracją.</p>",
+            "actions": {
+                "Curse of Atrophy": {
+                    "name": "Klątwa zaniku",
+                    "description": "<p>Dotknij celu, aby rzucić na niego klątwę wyniszczającą, która trwale zmniejsza jego <strong>Siłę</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa zaniku"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Delusion": {
+            "name": "Klątwa złudzenia",
+            "description": "<p>Zaciemniasz umysł celu, trwale zaburzając jego postrzeganie i zdolność rozsądnej oceny sytuacji w sposób, który nie podlega zwykłemu leczeniu.</p>",
+            "actions": {
+                "Curse of Delusion": {
+                    "name": "Klątwa złudzenia",
+                    "description": "<p>Dotknij celu, aby zamglić jego postrzeganie klątwą, która trwale obniża jego <strong>Mądrość</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa złudzenia"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Dullness": {
+            "name": "Klątwa otępienia",
+            "description": "<p>Osłabiasz błysk intelektu u swojej ofiary, trwale ograniczając jej zdolność do szybkiego myślenia i rozumowania w sposób, którego nie da się naprawić samym odpoczynkiem.</p>",
+            "actions": {
+                "Curse of Dullness": {
+                    "name": "Klątwa otępienia",
+                    "description": "<p>Dotknij celu, aby otępić jego umysł klątwą, która trwale obniża jego <strong>Intelekt</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa otępienia"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Exhaustion": {
+            "name": "Klątwa wyczerpania",
+            "description": "<p>Wyczerpujesz żywotną odporność swojego celu, pozostawiając go osłabionym fizycznie w sposób, który wykracza poza zwykłą regenerację.</p>",
+            "actions": {
+                "Curse of Exhaustion": {
+                    "name": "Klątwa wyczerpania",
+                    "description": "<p>Dotknij celu, aby wyssać z niego witalność za pomocą klątwy, która trwale obniża jego <strong>Wytrzymałość</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa wyczerpania"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Lethargy": {
+            "name": "Klątwa letargu",
+            "description": "<p>Tłumisz iskrę szybkości w swoim celu, osłabiając jego refleks i spowalniając reakcje ciała w sposób trwały.</p>",
+            "actions": {
+                "Curse of Lethargy": {
+                    "name": "Klątwa letargu",
+                    "description": "<p>Dotknij celu, aby obdarzyć go spowolnieniem, trwale zmniejszając jego <strong>Zręczność</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa letargu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Scorn": {
+            "name": "Klątwa pogardy",
+            "description": "<p>Osłabiasz siłę osobowości swojego celu, sprawiając, że staje się on mniej przekonujący i trudniejszy do zaakceptowania przez innych w sposób, który okazuje się trwały.</p>",
+            "actions": {
+                "Curse of Scorn": {
+                    "name": "Klątwa pogardy",
+                    "description": "<p>Dotknij celu, aby osłabić jego siłę woli klątwą, która trwale zmniejsza jego <strong>Prezencję</strong> o 2 punkty.</p>",
+                    "effects": [
+                        {
+                            "name": "Klątwa pogardy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Dawn Beacon": {
+            "name": "Blask świtu",
+            "description": "<p>Wywołujesz przenikliwe światło świtu, które rozjaśnia otaczającą cię ciemność, odsłaniając teren i rozpraszając źródła magicznej ciemności.</p>",
+            "actions": {
+                "Dawn Beacon": {
+                    "name": "Blask świtu",
+                    "description": "<p>Tworzysz słup magicznego światła w miejscu, w którym się znajdujesz, który tworzy cylinder światła o promieniu 30 stóp jasnego światła i dodatkowych 30 stóp słabego światła. Słup pozostaje na miejscu przez 6 rund lub do momentu jego rozproszenia.</p><p>To magiczne światło przeciwdziała magicznej ciemności i niszczy wszelkie źródła magicznej ciemności, których źródło znajduje się w jego zasięgu.</p><p>Wrogowie znajdujący się w obszarze w momencie utworzenia światła muszą wykonać rzut obronny na <strong>Wytrwałość</strong> lub zostaną @Condition[blinded] na jedną rundę.</p><p><strong>W trakcie prac: Zaklęcie to nie tworzy jeszcze automatycznie źródła światła, co na razie musi być wykonane ręcznie. Ostatecznie zostanie to zautomatyzowane przy użyciu nowego frameworka Foundry VTT w wersji 14 do umieszczania szablonów.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Blask świtu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Engulfing Darkness": {
+            "name": "Ogarniająca ciemność",
+            "description": "<p>Wywołujesz przytłaczającą sferę magicznej ciemności, która zasłania widok i tłumi światło w swoim zasięgu.</p>",
+            "actions": {
+                "Engulfing Darkness": {
+                    "name": "Ogarniająca ciemność",
+                    "description": "<p>Tworzysz kulę magicznej ciemności wokół swojej aktualnej pozycji o promieniu 20 stóp, która pozostaje na miejscu przez 6 rund lub do momentu jej rozproszenia.</p><p>W obszarze tej ciemności wszystkie niemagiczne źródła światła zostają zgaszone, a stworzenia są traktowane jako @Condition[blinded].</p><p>Obszar tej kuli jest ograniczony solidnymi ścianami. Stworzenia znajdujące się poza tym obszarem nie widzą jego wnętrza, a skuteczny obszar działania źródeł światła poza tym obszarem kończy się na jego obrzeżach.</p><p><strong>W trakcie prac: Zaklęcie to nie tworzy jeszcze automatycznie źródła ciemności, co na razie musi być wykonywane ręcznie. Ostatecznie zostanie to zautomatyzowane przy użyciu nowej wersji Foundry VTT 14 do umieszczania szablonów.</strong></p>"
+                }
+            }
+        },
+        "Invisibility": {
+            "name": "Niewidzialność",
+            "description": "<p>Zaawansowane wykorzystanie magii iluzji, zaklęcie Niewidzialność pozwala rzucającemu na siebie otulić światłem i cieniem niczym płaszczem, odbijając otaczający świat tak, jakby nie było go w nim. Kto nie uwierzyłby własnym oczom, które mówią mu, że nie ma nic do zobaczenia?</p>",
+            "actions": {
+                "Invisibility": {
+                    "name": "Niewidzialność",
+                    "description": "<p>Stajesz się @Condition[invisible] i nie można Cię wykryć za pomocą zmysłu wzroku. Nie możesz być bezpośrednim celem żadnego działania. Aby zaklęcie pozostało aktywne, należy je <strong>Podtrzymywać</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Niewidzialność"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lifebloom": {
+            "name": "Rozkwit życia",
+            "description": "<p>Niewielu jest tych, którzy mogą służyć jako przewodnicy w świecie fizycznym i pozwolić, aby surowe moce Życia i Duszy połączyły się, przechylając równowagę na ich korzyść. Zaklęcie to pozwala rzucającemu służyć jako źródło obfitych sił, które powołują do życia wszystkie dusze. Wraz z szumem powietrza rzucający zaklęcie zostaje otoczony tańczącymi drobinkami czystej energii życia i duszy, przypominającymi dziesiątki świetlików lub iskry z ognia, a osoby znajdujące się w promieniu zaklęcia ogarnia uczucie spokoju, jakby zanurzyły się w przyjemnie ciepłej wodzie. Wszystkie rośliny w pobliżu natychmiast przechodzą przez kolejne etapy wzrostu, aż do kwitnienia, a zapach pyłku i bujnej zieleni wypełnia powietrze.</p>",
+            "actions": {
+                "Lifebloom": {
+                    "name": "Rozkwit życia",
+                    "description": "<p>Kierujesz magiczną energię do aury, która przywraca Zdrowie i Morale wszystkim sojusznikom w promieniu 30 stóp od ciebie. W każdej rundzie sojusznicy, którzy rozpoczynają swoją turę w tej aurze, odzyskują wartość twojej <strong>Mądrości</strong> zarówno w postaci <strong>Zdrowia</strong>, jak i <strong>Morale</strong>. Zaklęcie musi być podtrzymywane. </p><p><strong>W trakcie prac: Zaklęcie to jest obecnie traktowane jako obszar działania, zapewniający efekt leczenia w czasie osobom znajdującym się w początkowym zasięgu. Usunięcie tych efektów w przypadku zaprzestania podtrzymywania zaklęcia musi być na razie wykonane ręcznie. Gdy aury zostaną zautomatyzowane przez system w Foundry VTT w wersji 14, mechaniczne wdrożenie tego zaklęcia będzie zgodne z opisem.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Rozkwit życia"
+                        }
+                    ]
+                }
+            }
+        },
+        "Protective Mirage": {
+            "name": "Ochronny miraż",
+            "description": "<p><strong>Otaczasz się</strong> mirażem zmieniającego się <strong>Oświetlenia</strong> i <strong>Cienia</strong>, które maskują Twoją aktualną pozycję i pozwalają Ci <strong>Uniknąć</strong> nadchodzących ciosów.</p>",
+            "actions": {
+                "Protective Mirage": {
+                    "name": "Ochronny miraż",
+                    "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                    "effects": [
+                        {
+                            "name": "Miraż"
+                        }
+                    ]
+                }
+            }
+        },
+        "Revive": {
+            "name": "Ożywienie",
+            "description": "<p>Ożywienie to potężna magia Życia i Kontroli, która pozwala rzucającemu zaklęcie ingerować w naturalny proces śmierci poprzez wtłoczenie esencji życia do ciała niedawno zmarłego. Osoby, które doświadczyły Ożywienia, często niechętnie o tym mówią, ale opisują to jako nieprzyjemne uczucie przypominające nagłe przebudzenie z głębokiego snu i odkrycie, że są przemarznięte – ciało mrowi i boli, umysł kręci się, a dusza cierpi z powodu wspomnienia przerwanej śmierci.</p>",
+            "actions": {
+                "Revive": {
+                    "name": "Ożywienie",
+                    "description": "<p>Przywracasz do życia stworzenie, które niedawno znalazło się w stanie @Condition[dead], zmniejszając jego <strong>Ran</strong> o wartość twojej <strong>Mądrości</strong>. Jeśli operacja się powiedzie, ożywione stworzenie pozostaje w stanie @Condition[disoriented] i @Condition[staggered] przez 10 minut.</p>",
+                    "effects": [
+                        {
+                            "name": "Ożywiony"
+                        }
+                    ]
+                }
+            }
+        },
+        "Telecognition": {
+            "name": "Telepoznanie",
+            "description": "<p>Telekognicja, podstawowy przykład złożonej sztuki penetrowania umysłów innych osób, zbiera myśli z powierzchni umysłu podmiotu niczym liście z powierzchni stawu. Chociaż nie jest to zabieg destrukcyjny, jest on mało subtelny — podobnie jak staw, którego powierzchnia faluje po dotknięciu, tak samo dzieje się z umysłem. </p><p></p>",
+            "actions": {
+                "Telecognition": {
+                    "name": "Telepoznanie",
+                    "description": "<p>Wnikasz w umysł stworzenia typu <strong>humanoid</strong> lub <strong>gigant</strong>, próbując przebić się przez jej obronę <strong>Woli</strong>, aby zrozumieć jej myśli i motywy. Cel tego zaklęcia jest świadomy tej ingerencji, nawet jeśli nie może cię dostrzec.</p><p>Jeśli rzut się powiedzie, Mistrz Gry (w przypadku przeciwnika) lub gracz (w przypadku bohatera) musi opisać ci w maksymalnie 3 słowach, jaka idea lub uczucie dominuje w jego myślach w danym momencie.</p><p>W przypadku krytycznego sukcesu opis ten może zawierać do 10 słów, aby przekazać głębsze zrozumienie.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
+    }
+}
