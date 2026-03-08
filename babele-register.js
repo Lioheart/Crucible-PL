@@ -73,8 +73,8 @@ Hooks.once("init", () => {
 // 	if (!sourceId || !originalName) return;
 //
 // 	item.updateSource({
-// 		"flags.dnd5e_pl.id": sourceId,
-// 		"flags.dnd5e_pl.originalName": originalName
+// 		"flags.lang-pl-crucible.id": sourceId,
+// 		"flags.lang-pl-crucible.originalName": originalName
 // 	});
 // });
 

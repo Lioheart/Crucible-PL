@@ -8,7 +8,7 @@
     "verified": "13"
   },
   "esmodules": [
-    "./babele-register.js",
+    "babele-register.js",
     "src/fix-token-names.js",
     "src/original-name.js"
   ],
