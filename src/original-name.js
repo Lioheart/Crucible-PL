@@ -1,42 +1,37 @@
-Hooks.on("renderActorSheet5eNPC", async (document, html) => {
-    await addOriginalNameDnD(document, html);
+Hooks.on("renderItemSheet", async (app, html, data) => {
+    await addOriginalNameCrucible(app, html);
 });
 
-Hooks.on("renderItemSheet5e", async (document, html) => {
-    await addOriginalNameDnD(document, html);
-});
+async function addOriginalNameCrucible(app, html) {
 
-async function addOriginalNameDnD(document, html) {
-    // Sprawdzamy, czy opcja jest aktywna
-    if (!game.settings.get("dnd5e_pl", "dual-language-names")) return;
+    // opcja w settings
+    if (!game.settings.get("lang-pl-crucible", "dual-language-names")) return;
 
-    const originalname = document.document?.flags?.babele?.originalName;
-    if (!originalname) {
-        console.log("Brak originalName w flagach Babele.");
-        return;
-    }
+    const document = app.document;
 
-    // Obsługa DOM bez jQuery
+    const originalName = document?.flags?.babele?.originalName;
+    if (!originalName) return;
+
     const root = html instanceof HTMLElement ? html : html[0];
-    if (!root || !(root instanceof HTMLElement)) {
-        console.warn("Nieprawidłowy obiekt HTML:", html);
-        return;
-    }
+    if (!root) return;
 
-    const nameElement = root.querySelector(".document-name");
-    if (!nameElement) {
-        console.warn("Nie znaleziono .document-name.");
-        return;
-    }
+    const title = root.querySelector("h1.title");
+    if (!title) return;
 
-    const translatedname = nameElement.textContent.trim();
+    const translatedNameInput = title.querySelector('input[name="name"]');
+    if (!translatedNameInput) return;
 
-    if (originalname !== translatedname) {
-        const engnamehtml = `
-            <div class="english-name">
-                <h3 class="item-name">${originalname}</h3>
-            </div>`;
+    const translatedName = translatedNameInput.value;
 
-        nameElement.insertAdjacentHTML("afterend", engnamehtml);
-    }
+    if (originalName === translatedName) return;
+
+    // unikamy duplikatu
+    if (root.querySelector(".original-name")) return;
+
+    const engNameHtml = `
+    <div class="original-name" style="font-size:0.9em; opacity:0.8;">
+    ${originalName}
+    </div>`;
+
+    title.insertAdjacentHTML("afterend", engNameHtml);
 }
