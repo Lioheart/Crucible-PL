@@ -1,5 +1,19 @@
-Hooks.on("renderItemSheet", async (app, html, data) => {
-    await addOriginalNameCrucible(app, html);
+const crucibleItemSheets = [
+    "CrucibleAncestryItemSheet",
+    "CrucibleBackgroundItemSheet",
+    "CrucibleTalentItemSheet",
+    "CrucibleSpellItemSheet",
+    "CrucibleTaxonomyItemSheet",
+    "CrucibleAccessoryItemSheet",
+    "CrucibleLootItemSheet",
+    "CrucibleArmorItemSheet",
+    "CrucibleConsumableItemSheet",
+    "CrucibleToolItemSheet",
+    "CrucibleWeaponItemSheet"
+];
+
+crucibleItemSheets.forEach(sheet => {
+    Hooks.on(`render${sheet}`, (app, html) => addOriginalNameCrucible(app, html));
 });
 
 async function addOriginalNameCrucible(app, html) {

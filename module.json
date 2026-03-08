@@ -12,6 +12,9 @@
     "src/fix-token-names.js",
     "src/original-name.js"
   ],
+  "styles": [
+      "styles/lang-pl-crucible.css"
+  ],
   "relationships": {
     "systems": [
       {
