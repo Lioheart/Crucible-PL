@@ -456,6 +456,10 @@
                 }
             }
         },
+        "Deft Grip": {
+            "name": "Deft Grip",
+            "description": "Your grasp of your weaponry is fluid and precise. You can perform Actions which require a free hand while wielding a two-handed ranged weapon."
+        },
         "Demolitionist": {
             "name": "Demolitionist",
             "description": "<p>Your remarkable expertise with munitions allows you to wield them efficiently amidst the chaos of combat. Each turn, your first usage of a <strong>Bomb</strong> has a reduced cost of <strong>-1 Action</strong>. </p><p>You are no longer targeted by your own bombs, even if you are otherwise within their area of effect.</p>"
@@ -1733,7 +1737,7 @@
         },
         "Strong Grip": {
             "name": "Strong Grip",
-            "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+            "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
         },
         "Stunning Strike": {
             "name": "Stunning Strike",
