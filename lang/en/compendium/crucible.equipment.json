@@ -35,6 +35,17 @@
             "name": "Alchemist's Fire",
             "description": {
                 "public": "<p>A flammable concoction that ignites upon impact and burns intensely for a short time.</p>"
+            },
+            "actions": {
+                "Alchemist's Fire": {
+                    "name": "Alchemist's Fire",
+                    "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Alchemist's Fire"
+                        }
+                    ]
+                }
             }
         },
         "Alchemist's Portable Workbench": {
@@ -60,6 +71,12 @@
             "name": "Antitoxin",
             "description": {
                 "public": "<p>A slender phial that contains a slightly golden-colored liquid. It smells foul, but contains the alchemical agents necessary to neutralize a wide variety of toxins.</p>"
+            },
+            "actions": {
+                "Antitoxin": {
+                    "name": "Antitoxin",
+                    "description": "<p>Consuming this @ref[name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
+                }
             }
         },
         "Arcane Orb": {
@@ -97,6 +114,12 @@
             "description": {
                 "public": "<p>A flask filled with a reddish liquid explodes when it breaks open, creating a small explosive fire that quickly dissipates.</p>",
                 "private": "<p></p><p>Primarily used to break apart large pieces of ore, these alchemical flasks pack a concentrated punch. If combined in a large enough quantity, they can also be used to create a chain reaction that results in larger explosions.</p>"
+            },
+            "actions": {
+                "Blast Flask": {
+                    "name": "Blast Flask",
+                    "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
+                }
             }
         },
         "Book": {
@@ -127,6 +150,17 @@
             "name": "Caustic Phial",
             "description": {
                 "public": "<p>Corrosive liquid swirls within this vial of intentionally thin glass, designed to shatter on impact and spill the caustic substance upon a target.</p>"
+            },
+            "actions": {
+                "Caustic Phial": {
+                    "name": "Caustic Phial",
+                    "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Caustic Phial"
+                        }
+                    ]
+                }
             }
         },
         "Ceremonial Dagger": {
@@ -169,6 +203,17 @@
             "name": "Choking Ampoule",
             "description": {
                 "public": "<p>This sealed glass phial contains a swirling cloud of dense green gas held at pressure within. Shattering the ampoule would release its contained fumes which cause a demoralizing and suffocating effect on those exposed to it.</p>"
+            },
+            "actions": {
+                "Choking Ampoule": {
+                    "name": "Choking Ampoule",
+                    "description": "<p>You hurl the @ref[name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Choking Ampoule"
+                        }
+                    ]
+                }
             }
         },
         "Claw Hammer": {
@@ -188,6 +233,17 @@
             "description": {
                 "public": "<p>A nondescript black cloak that seems as if it would match with almost any outfit.</p><p></p>",
                 "private": "<p>While equipped and <strong>Invested</strong>, its wearer gains the <strong>Kindly Visage</strong> action and a benefit to all Diplomacy checks depending on the enchantment tier of the item.</p><ul><li><p><strong>Minor</strong> enchantment: <strong>+1 Boon</strong></p></li><li><p><strong>Major </strong>enchantment: <strong>+2 Boons</strong></p></li><li><p><strong>Legendary</strong> enchantment: <strong>+3 Boons</strong></p></li></ul>"
+            },
+            "actions": {
+                "Kindly Visage": {
+                    "name": "Kindly Visage",
+                    "description": "<p>You assume an illusory appearance once per rest which alters your appearance as well as your attire. The illusion cannot alter your ancestry, but can change other aspects of your anatomy including your apparent gender. The cloak itself does not change in appearance and remains visible.</p><p>The illusion persists indefinitely and can be dismissed at-will. Once activated, the cloak cannot produce another illusion in this way until 24 hours have passed.</p>",
+                    "effects": [
+                        {
+                            "name": "Kindly Visage"
+                        }
+                    ]
+                }
             }
         },
         "Club": {
@@ -404,12 +460,29 @@
             "name": "Healing Elixir",
             "description": {
                 "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
+            },
+            "actions": {
+                "Healing Elixir": {
+                    "name": "Healing Elixir",
+                    "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
+                }
             }
         },
         "Healing Tonic": {
             "name": "Healing Tonic",
             "description": {
                 "public": "<p>This potion contains a specialized alchemical formula to gradually close wounds and improve bodily health.</p>"
+            },
+            "actions": {
+                "Healing Tonic": {
+                    "name": "Healing Tonic",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each Round</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Healing Tonic"
+                        }
+                    ]
+                }
             }
         },
         "Heater Shield": {
@@ -562,6 +635,21 @@
             "name": "Paralytic Vial",
             "description": {
                 "public": "<p>This small vial contains an oily liquid that is noticeably thicker than water. It emits a an acrid scent that evokes a sense of wrongness.</p>"
+            },
+            "actions": {
+                "Ingest Paralytic": {
+                    "name": "Ingest Paralytic",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Paralytic Toxin"
+                        }
+                    ]
+                },
+                "Apply Paralytic": {
+                    "name": "Apply Paralytic",
+                    "description": "<p>The contents of this vial can be added to food, drink, smeared upon a bladed weapon, or combined with some alternative delivery mechanism.</p><p><em>This action, which consumes the available usage of the poison, should be used when it is first applied.</em></p>"
+                }
             }
         },
         "Pen": {
@@ -605,6 +693,21 @@
             "name": "Poison Vial",
             "description": {
                 "public": "<p>This small vial contains murky liquid that is noticeably thicker than water. It emits a disconcerting scent that evokes a sense of wrongness.</p>"
+            },
+            "actions": {
+                "Ingest Poison": {
+                    "name": "Ingest Poison",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Poisoned"
+                        }
+                    ]
+                },
+                "Apply Poison": {
+                    "name": "Apply Poison",
+                    "description": "<p>The contents of this vial can be added to food, drink, smeared upon a bladed weapon, or combined with some alternative delivery mechanism.</p><p><em>This action, which consumes the available usage of the poison, should be used when it is first applied.</em></p>"
+                }
             }
         },
         "Poisoner's Toolkit": {
@@ -629,12 +732,29 @@
             "name": "Rallying Elixir",
             "description": {
                 "public": "<p>This potion contains a specialized alchemical formula to rapidly fortify the psyche and improve morale.</p>"
+            },
+            "actions": {
+                "Rallying Elixir": {
+                    "name": "Rallying Elixir",
+                    "description": "<p>Immediately recover an amount of <strong>Morale </strong>dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Morale</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Morale</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Morale</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Morale</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Morale</strong>.</p></li></ul>"
+                }
             }
         },
         "Rallying Tonic": {
             "name": "Rallying Tonic",
             "description": {
                 "public": "<p>This potion contains a specialized alchemical formula to gradually fortify the psyche and improve morale.</p>"
+            },
+            "actions": {
+                "Rallying Tonic": {
+                    "name": "Rallying Tonic",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each Round</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Rallying Tonic"
+                        }
+                    ]
+                }
             }
         },
         "Rapier": {
@@ -685,6 +805,12 @@
             "description": {
                 "public": "<p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p><p>This ring can be instinctually activated by its bearer when in freefall to enter a graceful and controlled descent.</p>",
                 "private": "<p>This item is presented as a ring, but it can be any type of accessory like an amulet, cloak, bracers, or other type of trinket.</p>"
+            },
+            "actions": {
+                "Ring of Gliding": {
+                    "name": "Ring of Gliding",
+                    "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide.</p><ul><li><p><strong>Minor </strong>enchantment: <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Superior</strong> enchantment: <strong>2 feet </strong>per <strong>20 feet</strong> of descent.</p></li><li><p><strong>Masterwork </strong>enchantment: <strong>4 feet</strong> per <strong>20 feet</strong> of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+                }
             }
         },
         "Ring of Reinforcement": {
@@ -800,24 +926,63 @@
             "name": "Spell Scroll (Legendary)",
             "description": {
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Read Scroll",
+                    "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+                    "effects": [
+                        {
+                            "name": "Read Scroll"
+                        }
+                    ]
+                }
             }
         },
         "Spell Scroll (Major)": {
             "name": "Spell Scroll (Major)",
             "description": {
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Read Scroll",
+                    "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+                    "effects": [
+                        {
+                            "name": "Read Scroll"
+                        }
+                    ]
+                }
             }
         },
         "Spell Scroll (Minor)": {
             "name": "Spell Scroll (Minor)",
             "description": {
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Read Scroll",
+                    "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+                    "effects": [
+                        {
+                            "name": "Read Scroll"
+                        }
+                    ]
+                }
             }
         },
         "Spellband": {
             "name": "Spellband",
             "description": {
                 "public": "<p>This ring made of an opaque stone that has been carefully carved with graceful, sweeping layers evoking an ancient aesthetic. The ring serves as a powerful spellcasting focus for the <strong>Invested</strong> wearer.</p>"
+            },
+            "actions": {
+                "Spellband": {
+                    "name": "Spellband",
+                    "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this band. The amount of Focus restored depends on the enchantment bonus of the ring.</p><ul><li><p><strong>Minor </strong>enchantment: <strong>4 Focus</strong></p></li><li><p><strong>Major </strong>enchantment: <strong>6 Focus</strong></p></li><li><p><strong>Legendary </strong>enchantment: <strong>8 Focus</strong></p></li></ul>"
+                }
             }
         },
         "Spiked Greatclub": {
@@ -848,6 +1013,21 @@
             "name": "Steel-Jaw Trap",
             "description": {
                 "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center</p>"
+            },
+            "actions": {
+                "Arm Steel-Jaw Trap": {
+                    "name": "Arm Steel-Jaw Trap",
+                    "description": "<p>Setting the trap places a dangerous hazard that deals significant damage if triggered. It must be affixed by heavy chain to an immobile object, such as a tree or spike driven into the ground. The area of the trap is a circle with a radius of 2 feet.</p>"
+                },
+                "Trigger Steel-Jaw Trap": {
+                    "name": "Trigger Steel-Jaw Trap",
+                    "description": "<p>When triggered the creature that set the trap makes a <strong>Wilderness</strong> skill attack against the <strong>Reflex</strong> defense of a single target which triggered the trap. If not resisted, it deals piercing damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul><p></p>",
+                    "effects": [
+                        {
+                            "name": "Steel-Jaw Trap"
+                        }
+                    ]
+                }
             }
         },
         "Stiletto": {
@@ -942,6 +1122,10 @@
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }
