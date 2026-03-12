@@ -1,0 +1,1131 @@
+{
+    "label": "Wyposażenie",
+    "folders": {
+        "Consumables": "Materiały eksploatacyjne",
+        "Accessories": "Akcesoria",
+        "Melee (1h)": "Walka wręcz (1r)",
+        "Implements": "Przyrządy",
+        "Bombs": "Bomby",
+        "Other": "Inne",
+        "Clothing": "Ubranie",
+        "Ranged": "Dystansowy",
+        "Armor": "Pancerz",
+        "Scrolls": "Zwoje",
+        "Flasks": "Fiolki",
+        "Heavy": "Ciężka",
+        "Jewelry": "Biżuteria",
+        "Wilderness": "Dzika przyroda",
+        "Ingredients": "Składniki",
+        "Light": "Lekka",
+        "Weapons": "Bronie",
+        "Medium": "Średni",
+        "Traps": "Pułapki",
+        "Light Sources": "Źródła światła",
+        "Tools": "Narzędzia",
+        "Toxins": "Toksyny",
+        "Unarmed": "Nieuzbrojony",
+        "Melee (2h)": "Walka wręcz (2r)",
+        "Adventuring Gear": "Sprzęt poszukiwaczy przygód",
+        "Shields": "Tarcze",
+        "Talisman": "Talizman",
+        "Crafting Kits": "Zestawy rzemieślnicze"
+    },
+    "entries": {
+        "Alchemist's Fire": {
+            "name": "Ogień alchemika",
+            "description": {
+                "public": "<p>Łatwopalna mieszanka, która zapala się przy uderzeniu i pali się intensywnie przez krótki czas.</p>"
+            },
+            "actions": {
+                "Alchemist's Fire": {
+                    "name": "Ogień alchemika",
+                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Ogień alchemika"
+                        }
+                    ]
+                }
+            }
+        },
+        "Alchemist's Portable Workbench": {
+            "name": "Przenośny warsztat alchemika",
+            "description": {
+                "public": "<p>Przenośne urządzenie do destylacji miedzi, preferowane przez alchemików, którzy nie mają dostępu do własnego warsztatu, ze względu na swoją składaną konstrukcję. Wiele jego elementów można odkręcić i przechowywać wewnątrz korpusu destylatora podczas podróży. Chociaż montaż i demontaż tego urządzenia zajmuje trochę czasu, może ono zastąpić bardziej stałe laboratorium dla osób podróżujących.</p>"
+            }
+        },
+        "Alchemist's Toolkit": {
+            "name": "Zestaw narzędzi alchemika",
+            "description": {
+                "public": "<p>Drewniane pudełko owinięte skórą, zawierające kamienny moździerz i tłuczek, miejsce na kilka zakorkowanych fiolek, drewnianą łyżkę oraz małą składaną żelazną ramę i mały mosiężny garnek do mieszania składników nad ogniem.</p>"
+            }
+        },
+        "Amulet of Nimbleness": {
+            "name": "Amulet zwinności",
+            "description": {
+                "public": "<blockquote><p>Ten kolorowy naszyjnik zawiera kamienny amulet, który świeci runą, emitującą słabe iskry elektryczne. Trzymając go, odczuwasz surrealistyczne wrażenie, że świat wokół ciebie nieco zwalnia.</p></blockquote><p>Amulet ten zapewnia premię do obrony <strong>Refleksu</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Refleksu</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Refleksu</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Refleksu</strong></p></li></ul>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako amulet, ale może to być dowolny rodzaj akcesorium, np. pierścień, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            }
+        },
+        "Antitoxin": {
+            "name": "Antytoksyna",
+            "description": {
+                "public": "<p>Smukła fiolka zawierająca lekko złocistą ciecz. Pachnie nieprzyjemnie, ale zawiera środki alchemiczne niezbędne do neutralizacji wielu różnych toksyn.</p>"
+            },
+            "actions": {
+                "Antitoxin": {
+                    "name": "Antytoksyna",
+                    "description": "<p>Spożycie tego @ref[name] pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez ten @ref[name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
+                }
+            }
+        },
+        "Arcane Orb": {
+            "name": "Kula arkan",
+            "description": {
+                "public": "<p>Kula z kryształu lub szkła, która w dłoni utalentowanego czarodzieja staje się przewodnikiem jego mocy. Gromadzi energię elektryczną w swojej kuli, a następnie uderza w cel z elektryzującą siłą.</p>"
+            }
+        },
+        "Bag of Holding": {
+            "name": "Torba przechowywania",
+            "description": {
+                "public": "<p>Ta spektakularnie wykonana torba posiada wyszukane zdobienia, które jasno pokazują, że nie jest to zwykły plecak. Kiedy jesteś <strong>wyposażony</strong> i <strong>zainwestowany</strong> w nią, twoja zdolność przenoszenia przedmiotów wzrasta trzykrotnie.</p>"
+            }
+        },
+        "Bastard Sword": {
+            "name": "Miecz półtoraręczny",
+            "description": {
+                "public": "<p>Miecz bękarci, znany również jako miecz półtoraręczny, jest wszechstronną bronią o prostym, obosiecznym ostrzu o długości około 1 metra. Broń ta została wykuta tak, aby zapewnić zarówno zwinność podczas walki jedną ręką, jak i siłę podczas walki dwoma rękami.</p>"
+            }
+        },
+        "Battle Axe": {
+            "name": "Topór bojowy",
+            "description": {
+                "public": "<p>Ciężka broń z ostrzem w kształcie półksiężyca, stworzona do przecinania zarówno zbroi, jak i kości. Jej trzonek nosi ślady niezliczonych uderzeń. Broń tę można trzymać jedną lub dwiema rękami. </p>"
+            }
+        },
+        "Blanket": {
+            "name": "Koc",
+            "description": {
+                "public": "<p>Gruba filcowana tkanina wełniana lub włóknista o wielu zastosowaniach.</p>"
+            }
+        },
+        "Blast Flask": {
+            "name": "Kolba wybuchowa",
+            "description": {
+                "public": "<p>Kolba wypełniona czerwonawym płynem eksploduje po rozbiciu, powodując niewielki wybuch ognia, który szybko się rozprasza.</p>",
+                "private": "<p></p><p>Te flaszki alchemiczne, używane głównie do rozbijania dużych kawałków rudy, mają ogromną moc. Po połączeniu w wystarczająco dużej ilości mogą również służyć do wywołania reakcji łańcuchowej, która powoduje większe eksplozje.</p>"
+            },
+            "actions": {
+                "Blast Flask": {
+                    "name": "Kolba wybuchowa",
+                    "description": "<p>Podpalamasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                }
+            }
+        },
+        "Book": {
+            "name": "Książka",
+            "description": {
+                "public": "<p>Książka oprawiona w płótno lub skórę, pokryta drewnem.</p>"
+            }
+        },
+        "Brigandine": {
+            "name": "Brygantyna",
+            "description": {
+                "public": "<p>Płaszcz lub kamizelka z tkaniny lub skóry, podszyta małymi, nitowanymi stalowymi płytkami ukrytymi w środku, brygantyna jest preferowana przez najemników i strażników ze względu na imponujące połączenie elastyczności i solidnej ochrony.</p>"
+            }
+        },
+        "Buckler": {
+            "name": "Puklerz",
+            "description": {
+                "public": "<p>Mała, okrągła metalowa tarcza wielkości talerza obiadowego, puklerz jest narzędziem szermierza służącym do odbijania ciosów i kontrolowania przestrzeni, noszonym na przedramieniu lub trzymywanym jak broń.</p>"
+            }
+        },
+        "Candle": {
+            "name": "Świeca",
+            "description": {
+                "public": "<p>Mały słupek wosku uformowany wokół centralnego knota, który po zapaleniu emituje słabe, ciepłe światło. Każda świeca może palić się przez około osiem godzin.</p>"
+            }
+        },
+        "Caustic Phial": {
+            "name": "Fiolka z substancją żrącą",
+            "description": {
+                "public": "<p>Żrąca ciecz wiruje w tej fiolce wykonanej celowo z cienkiego szkła, zaprojektowanej tak, aby pękać przy uderzeniu i rozlewać żrącą substancję na cel.</p>"
+            },
+            "actions": {
+                "Caustic Phial": {
+                    "name": "Fiolka z substancją żrącą",
+                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[corroding] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od korozji i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Fiolka z substancją żrącą"
+                        }
+                    ]
+                }
+            }
+        },
+        "Ceremonial Dagger": {
+            "name": "Sztylet ceremonialny",
+            "description": {
+                "public": "<p>To ostrze jest mniej funkcjonalne i bardziej ozdobne niż zwykły sztylet. Jego inskrypcje i kunszt wykonania sprawiają, że nadaje się ono do użycia jako narzędzie do rzucania zaklęć. W walce emituje przeszywające wybuchy magicznej energii.</p>"
+            }
+        },
+        "Chain": {
+            "name": "Łańcuch",
+            "description": {
+                "public": "<p>Łańcuch stalowy o długości 75 centymetrów, który może być używany do wspomagania wspinaczki lub w połączeniu z wyposażeniem mocującym do zabezpieczania przedmiotów w miejscu.</p>"
+            }
+        },
+        "Chain Hook": {
+            "name": "Hak łańcuchowy",
+            "description": {
+                "public": "<p>Solidny i elastyczny łańcuch zakończony haczykiem z zadziorami. W rękach doświadczonego wojownika łańcuch można rzucić w kierunku celu, rozrywając jego ciało lub wyposażenie.</p>"
+            }
+        },
+        "Chain Mail": {
+            "name": "Kolczuga",
+            "description": {
+                "public": "<p>Kolczuga, czyli siatka połączonych ze sobą stalowych pierścieni noszona na wyściółce, zapewnia doskonałą ochronę przed cięciami i przyzwoitą ochronę przed pchnięciami, choć rozkłada ciężar na całe ciało.</p>"
+            }
+        },
+        "Charm of Tenacity": {
+            "name": "Amulet wytrwałości",
+            "description": {
+                "public": "<blockquote><p>Ten naszyjnik pokryty amuletami wygląda na rustykalny, ale po bliższym przyjrzeniu się można dostrzec delikatne wykończenie, które charakteryzuje jego wykonanie. Trzymając go, czujesz, jak Twój oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten amulet zapewnia premię do obrony <strong>Wytrwałości</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Wytrwałości</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Wytrwałości</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Wytrwałości</strong></p></li></ul>"
+            }
+        },
+        "Chirurgeon's Toolkit": {
+            "name": "Zestaw narzędzi chirurga",
+            "description": {
+                "public": "<p>Skórzana torba z drewnianym dnem. Zawiera brzytwę, piłę ręczną, szczypce, bandaże, butelkę spirytusu alchemicznego, igłę i nici oraz dziesięcio-centymetrową drewnianą gałąź owiniętą skórą. Wszystko, co może być potrzebne do wykonania amputacji lub wycięcia.</p>"
+            }
+        },
+        "Choking Ampoule": {
+            "name": "Dusząca ampułka",
+            "description": {
+                "public": "<p>Ta zamknięta szklana fiolka zawiera wirującą chmurę gęstego zielonego gazu utrzymywanego pod ciśnieniem. Rozbicie ampułki spowoduje uwolnienie zawartych w niej oparów, które wywołują demoralizujący i duszący efekt na osoby narażone na ich działanie.</p>"
+            },
+            "actions": {
+                "Choking Ampoule": {
+                    "name": "Dusząca ampułka",
+                    "description": "<p>Rzucasz @ref[name], co w bezpośrednim skutku jest <strong>nieszkodliwe</strong>, ale powoduje stan @Condition[poisoned] u wszystkich wrogów w promieniu 8 stóp <strong>Wybuchu</strong>, którzy nie zdołali oprzeć się atakowi swoją <strong>Wytrwałością</strong>.</p><p>Gaz zadaje obrażenia od trucizny <strong>Morale</strong> w ilości zależnej od jakości @ref[name]. W przypadku krytycznego sukcesu, dotknięty cel staje się również @Condition[silenced] na czas trwania.</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 3 rundy</p></li><li><p><strong>Standardowa jakość</strong> - 6 obrażeń przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> - 12 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Wybitna jakość</strong> - 20 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Mistrzowska jakość</strong> - 30 punktów obrażeń przez 3 rundy</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Dusząca ampułka"
+                        }
+                    ]
+                }
+            }
+        },
+        "Claw Hammer": {
+            "name": "Młotek stolarski",
+            "description": {
+                "public": "<p>Młotek stolarski, pozornie skromne narzędzie z płaską powierzchnią uderzeniową i zakrzywionym dziobem, w rękach zdeterminowanej osoby może stać się niebezpieczną bronią.</p>"
+            }
+        },
+        "Claws": {
+            "name": "Pazury",
+            "description": {
+                "public": "<p>Noszone na rękach niczym drugi zestaw szponów, broń pazurowa – czy to stalowe przedłużenia, czy potworne wyroby z kości – rozdziera i rozrywa dzikimi, szybkimi cięciami.</p>"
+            }
+        },
+        "Cloak of Kindly Visage": {
+            "name": "Płaszcz życzliwego oblicza",
+            "description": {
+                "public": "<p>Niepozorna czarna peleryna, która wydaje się pasować do niemal każdego stroju.</p><p></p>",
+                "private": "<p>Po wyposażeniu i <strong>zainwestowaniu</strong> użytkownik otrzymuje akcję <strong>Życzliwe oblicze</strong> oraz premię do wszystkich testów Dyplomacji w zależności od poziomu Zaklinania przedmiotu.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>+1 Korzyść</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>+2 Korzyści</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>+3 Korzyści</strong></p></li></ul>"
+            },
+            "actions": {
+                "Kindly Visage": {
+                    "name": "Życzliwe oblicze",
+                    "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam płaszcz nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji płaszcz nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
+                    "effects": [
+                        {
+                            "name": "Życzliwe oblicze"
+                        }
+                    ]
+                }
+            }
+        },
+        "Club": {
+            "name": "Maczuga",
+            "description": {
+                "public": "<p>Pałka to prymitywna, ale skuteczna broń. Jest to tępy kawałek drewna lub kości, przeznaczony raczej do miażdżenia niż do cięcia. W rękach nawet niewprawnych wojowników może być niebezpiecznym narzędziem.</p>"
+            }
+        },
+        "Common Clothing": {
+            "name": "Zwykłe ubrania",
+            "description": {
+                "public": "<p>Koszulę, spodnie, bieliznę, skarpety i buty lub trzewiki odpowiednie do wykonywania prac fizycznych lub podróży nie można nosić wraz z pancerzem.</p>"
+            }
+        },
+        "Cook's Toolkit": {
+            "name": "Zestaw narzędzi kucharskich",
+            "description": {
+                "public": "<p>Żelazny garnek z zamykaną pokrywką, szeroki nóż i drewniane przybory kuchenne zaprojektowane tak, aby można je było schować do środka podczas podróży, pozostawiając miejsce na skórzaną torebkę do przechowywania ziaren, butelkę oleju spożywczego, przypraw lub soli i innych drobnych produktów spożywczych.</p>"
+            }
+        },
+        "Cooking Oil": {
+            "name": "Olej spożywczy",
+            "description": {
+                "public": "<p>Szklana lub gliniana butelka owinięta skórą, zawierająca olej roślinny nadający się do użytku w kuchni.</p>"
+            }
+        },
+        "Crowbar": {
+            "name": "Łom",
+            "description": {
+                "public": "<p>Lekko wygięty pręt z mocnego metalu, zakończony hakiem z płaską główką. Służy do wywierania nacisku, aby oddzielić jeden przedmiot od drugiego.</p>"
+            }
+        },
+        "Dagger": {
+            "name": "Sztylet",
+            "description": {
+                "public": "<p>Mały, szybki i zabójczy sztylet z łatwością wbija się między żebra lub w szczeliny w pancerzu. Jego ostre ostrze jest ulubioną bronią zabójców, złodziei i tych, którzy preferują ciche zabójstwa.</p>"
+            }
+        },
+        "Dart Gun": {
+            "name": "Dmuchawka",
+            "description": {
+                "public": "<p>Kompaktowa broń rurowa przeznaczona do cichego wystrzeliwania małych, często zatrutych pocisków. Dmuchawka jest ulubioną bronią zabójców, treserów bestii i tajemniczych alchemików.</p>"
+            }
+        },
+        "Disarming Toolkit": {
+            "name": "Zestaw narzędzi do rozbrajania",
+            "description": {
+                "public": "<p>Mała skórzana torebka zawierająca zestaw szczypiec, nożyc, szydełek i zestaw składanych metalowych prętów, które można ze sobą skręcić. Przeznaczona do rozbrajania lub uruchamiania sideł, linek pułapkowych, płyt naciskowych i innych popularnych pułapek.</p>"
+            }
+        },
+        "Dress Clothing": {
+            "name": "Eleganckie ubrania",
+            "description": {
+                "public": "<p>Królewski zestaw eleganckich szat, odpowiedni do udziału w uroczystościach i wydarzeniach towarzyskich, zawiera płaszcz lub suknię, chustkę lub krawat, elegancką koszulę lub gorset, kamizelkę lub gorset, spodnie lub halkę, pasek lub szelki, pończochy i eleganckie buty.</p>"
+            }
+        },
+        "Enchanter's Portable Workbench": {
+            "name": "Przenośny warsztat do zaklinania",
+            "description": {
+                "public": "<p>Składane drewniane pudełko, które można rozłożyć, tworząc niewielki ozdobny ołtarz. Zawiera kamienną miskę na ofiary, skórzaną matę do przykrycia powierzchni roboczej oraz miejsce do przechowywania różdżek zaklęć, świec rytualnych, paczuszek kadzideł i narzędzi do grawerowania.</p>"
+            }
+        },
+        "Enchanter's Toolkit": {
+            "name": "Zestaw narzędzi do zaklinania",
+            "description": {
+                "public": "<p>Skórzana torba z drewnianym wykończeniem. Zawiera świece rytualne, małą miskę na ofiary, paczki kadzideł i proszkowe odczynniki oraz materiałową matę do wykorzystania jako powierzchnia robocza.</p>"
+            }
+        },
+        "Expanded Toolbelt": {
+            "name": "Rozszerzony pas narzędziowy",
+            "description": {
+                "public": "<p>Rozszerzony pas narzędziowy w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca na pasie narzędziowym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce na pasie narzędziowym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca na pasie narzędziowym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca na pasie narzędziowym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca na pasie narzędziowym</p></li></ul>"
+            }
+        },
+        "Firestarter": {
+            "name": "Hubka i krzesiwo",
+            "description": {
+                "public": "<p>Mała torebka z woskowanego skóry zawierająca suszone rozdrobnione włókna roślinne i wióry drzewne, z małym zapięciem wewnątrz do mocowania kawałka krzemienia i stalowego pierścienia uderzeniowego do rozpalania ognia.</p>"
+            }
+        },
+        "Fishing Pole": {
+            "name": "Wędka",
+            "description": {
+                "public": "<p>Składany drewniany drąg z metalowymi pierścieniami i słupkiem do przymocowania żyłki. Z łatwością mieści się w plecaku lub obok niego.</p>"
+            }
+        },
+        "Flame Staff": {
+            "name": "Kostur ognia",
+            "description": {
+                "public": "<p>Ta magiczna laska jest talizmanem pomagającym w rzucaniu zaklęć lub rzucaniu na wrogów strumieniami magicznego ognia.</p>"
+            }
+        },
+        "Fletcher's Toolkit": {
+            "name": "Zestaw narzędzi brzechwiarza",
+            "description": {
+                "public": "<p>Skórzany kołczan z zamykaną końcówką, zawierający uchwyt montażowy, strug, szczotki i małą przędzarkę do nawijania plecionych sznurków. Po otwarciu rozkłada się na matę, która może służyć jako płaska powierzchnia robocza.</p>"
+            }
+        },
+        "Glaive": {
+            "name": "Glewia",
+            "description": {
+                "public": "<p>Glewia to broń drzewcowa z zakrzywionym ostrzem przypominającym miecz, zamocowanym na końcu długiego trzonka. Służy do wykonywania szerokich, łukowatych ciosów, które przecinają wrogów.</p>"
+            }
+        },
+        "Glue": {
+            "name": "Klej",
+            "description": {
+                "public": "<p>Fiolka zwykłego kleju zwierzęcego.</p>"
+            }
+        },
+        "Glyphweaver's Portable Workbench": {
+            "name": "Przenośny warsztat do tkania glifów",
+            "description": {
+                "public": "<p>Składane drewniane pudełko, które można rozłożyć, tworząc niewielki stół warsztatowy przeznaczony do wykonywania glifów. Zawiera dłuta i szydła do grawerowania, młotek jubilerski, ozdobną skórzaną matę oraz miejsce do przechowywania glifów i innych materiałów rytualnych.</p>"
+            }
+        },
+        "Glyphweaver's Toolkit": {
+            "name": "Zestaw narzędzi do tkania glifów",
+            "description": {
+                "public": "<p>Skórzana torba z drewna. Zawiera dłuta i szydła do grawerowania, młotek jubilerski, ozdobną skórzaną matę oraz miejsce do przechowywania glifów i innych materiałów rytualnych.</p>"
+            }
+        },
+        "Grapnel": {
+            "name": "Hak",
+            "description": {
+                "public": "<p>Prosty stalowy hak z dwoma lub czterema zębami, przeznaczony do stosowania z liną lub łańcuchem w celu zamocowania liny do konstrukcji drewnianych.</p>"
+            }
+        },
+        "Great Hammer": {
+            "name": "Wielki młot",
+            "description": {
+                "public": "<p>Ten dwuręczny potwór ma ogromną głowę z żelaza lub kamienia, którą miażdży zbroje, kości i wolę każdym potężnym ciosem.</p>"
+            }
+        },
+        "Greataxe": {
+            "name": "Wielki topór",
+            "description": {
+                "public": "<p>Wielki topór to potężna broń z szerokim, często podwójnym ostrzem, stworzona do zadawania niszczycielskich ciosów, siekających ludzi i zwierzęta z ogromną siłą. </p>"
+            }
+        },
+        "Greatclub": {
+            "name": "Wielka maczuga",
+            "description": {
+                "public": "<p>Gruby kawałek ciężkiego drewna, czasem nabity żelaznymi kolcami, wielka maczuga jest prymitywną, ale budzącą grozę bronią, niebezpieczną nawet w rękach niedoświadczonego użytkownika.</p>"
+            }
+        },
+        "Greatsword": {
+            "name": "Wielki miecz",
+            "description": {
+                "public": "<p>Dłuższy i cięższy od standardowego miecza długiego, wielki miecz jest bronią dwuręczną przeznaczoną do wykonywania potężnych zamachów, a jego długość zapewnia zarówno zasięg, jak i budzi respekt.</p>"
+            }
+        },
+        "Grimoire": {
+            "name": "Grimuar",
+            "description": {
+                "public": "<p>Ta ciężka księga służy jako skarbnica wiedzy, a także narzędzie do rzucania zaklęć. W rękach praktykującego magię może ona wywoływać potężne uderzenia mocy w kierunku celu.</p>"
+            }
+        },
+        "Hacksaw": {
+            "name": "Piła do metalu",
+            "description": {
+                "public": "<p>Powszechnie stosowane narzędzie ręczne służące do cięcia metalu.</p>"
+            }
+        },
+        "Halberd": {
+            "name": "Halabarda",
+            "description": {
+                "public": "<p>Łącząc ostrze topora, grot włóczni i hak na jednym drążku, halabarda jest wszechstronną bronią, która może służyć do pchnięć, cięć lub chwytania broni przeciwnika w celu przeprowadzenia kontrataku.</p>"
+            }
+        },
+        "Hammer": {
+            "name": "Młotek",
+            "description": {
+                "public": "<p>Powszechnie stosowane narzędzie ręczne wykorzystywane w stolarstwie lub obróbce metali. Nie jest przeznaczone do walki.</p>"
+            }
+        },
+        "Hand Axe": {
+            "name": "Topór ręczny",
+            "description": {
+                "public": "<p>Kompaktowy i zabójczy topór ręczny to jednoręczne narzędzie z krótkim trzonkiem i ostrym ostrzem, idealne do rzucania lub walki w zwarciu, gdzie szybkość przeważa nad zasięgiem.</p>"
+            }
+        },
+        "Hand Crossbow": {
+            "name": "Ręczna kusza",
+            "description": {
+                "public": "<p>Ta kusza wielkości dłoni łączy w sobie moc i łatwość ukrycia, dzięki czemu idealnie nadaje się do zaskakujących strzałów z bliskiej odległości lub desperackiego ostatniego strzału osaczonego łotra.</p>"
+            }
+        },
+        "Handmirror": {
+            "name": "Lusterko ręczne",
+            "description": {
+                "public": "<p>Prosty kawałek ręcznie polerowanego szkła z odblaskowym metalowym podłożem, który może służyć do oglądania własnego odbicia.</p>"
+            }
+        },
+        "Handsaw": {
+            "name": "Piła ręczna",
+            "description": {
+                "public": "<p>Popularne narzędzie ręczne służące do cięcia drewna.</p>"
+            }
+        },
+        "Harness": {
+            "name": "Uprząż",
+            "description": {
+                "public": "<p>Regulowana uprząż ze skóry i stali, zaprojektowana tak, aby pasowała do tułowia humanoida, może być używana z liną lub łańcuchem jako pomoc przy wspinaczce lub do celów unieruchomienia.</p>"
+            }
+        },
+        "Healer's Toolkit": {
+            "name": "Zestaw narzędzi uzdrowiciela",
+            "description": {
+                "public": "<p>Skórzana torba podróżna z drewnianym dnem. Zawiera bandaże, butelkę spirytusu alchemicznego, igłę i nici oraz różne drobne zioła i preparaty stosowane w leczeniu powszechnych chorób i urazów.</p>"
+            }
+        },
+        "Healing Elixir": {
+            "name": "Eliksir leczenia",
+            "description": {
+                "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
+            },
+            "actions": {
+                "Healing Elixir": {
+                    "name": "Eliksir leczenia",
+                    "description": "<p>Natychmiastowo przywraca ilość <strong>Zdrowia</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Zdrowia</strong>.</p></li></ul>"
+                }
+            }
+        },
+        "Healing Tonic": {
+            "name": "Tonik leczniczy",
+            "description": {
+                "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która stopniowo zamyka rany i poprawia stan zdrowia organizmu.</p>"
+            },
+            "actions": {
+                "Healing Tonic": {
+                    "name": "Tonik leczniczy",
+                    "description": "<p>Natychmiast oraz na początku każdej z kolejnych 5 <strong>rund</strong> odzyskaj ilość <strong>Zdrowia</strong> zależną od jakości toniku.</p><ul><li><p><strong>Tandetna jakość</strong> - Leczy 2 punkty <strong>Zdrowia</strong> na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Leczy 4 punkty <strong>Zdrowia</strong> na rundę</p></li><li><p><strong>Dobra jakość</strong> - Leczy 8 punktów <strong>Zdrowia</strong> na rundę</p></li><li><p><strong>Wybitna jakość</strong> - Leczy 16 punktów <strong>Zdrowia</strong> na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> - Leczy 32 punktów <strong>Zdrowia</strong> na rundę</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Tonik leczniczy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Heater Shield": {
+            "name": "Tarcza herbowa",
+            "description": {
+                "public": "<p>Nazwana tak ze względu na swój kształt przypominający herb, tarcza herbowa zapewnia równowagę między pokryciem a mobilnością.</p>"
+            }
+        },
+        "Heavy Crossbow": {
+            "name": "Ciężka kusza",
+            "description": {
+                "public": "<p>Potężna kusza o stalowych ramionach, wymagająca użycia korby lub dźwigni do naciągnięcia cięciwy, wystrzeliwuje niszczycielskie bełty, które są w stanie przebić zbroję lub przygwoździć wrogów do ścian.</p>"
+            }
+        },
+        "Heavy Hides": {
+            "name": "Utwardzona skórznia",
+            "description": {
+                "public": "<p>Te wytrzymałe zbroje, wykonane z twardych skór wielkich zwierząt lub potworów, są noszone przez myśliwych i dzikich ludzi, zapewniając trwałą, ale prymitywną ochronę w terenie.</p>"
+            }
+        },
+        "Holy Symbol": {
+            "name": "Święty symbol",
+            "description": {
+                "public": "<p>Ten talizman jest widocznym wyrazem wiary jego posiadacza i mocy, jaką mu nadaje. W walce może być użyty do wystrzelenia w kierunku wroga palącej wiązki promieniującego światła.</p>",
+                "private": "<p>Rodzaj obrażeń zadawanych przez ten talizman można dostosować do domeny bóstwa, które czci jego posiadacz.</p>"
+            }
+        },
+        "Ice Staff": {
+            "name": "Kostur lodu",
+            "description": {
+                "public": "<p>Ta magiczna laska jest talizmanem, który pomaga w rzucaniu zaklęć lub wystrzeliwaniu lodowych pocisków w kierunku wrogów.</p>"
+            }
+        },
+        "Incense": {
+            "name": "Kadzidło",
+            "description": {
+                "public": "<p>Pałeczki lub szyszki z żywicy, sproszkowanego drewna i olejków kwiatowych, które po spaleniu wydzielają słodko pachnący dym. Każde opakowanie zawiera 12 sztuk.</p>"
+            }
+        },
+        "Ink": {
+            "name": "Atrament",
+            "description": {
+                "public": "<p>Fiolka zwykłego atramentu do pisania.</p>"
+            }
+        },
+        "Javelin": {
+            "name": "Oszczep",
+            "description": {
+                "public": "<p>Ostrze z metalu zamontowane na długim drążku sprawia, że oszczep jest wystarczająco lekki, aby można go było rzucać, ale jednocześnie wystarczająco wytrzymały, aby nadawał się do walki w zwarciu.</p>"
+            }
+        },
+        "Jeweler's Portable Workbench": {
+            "name": "Przenośny warsztat jubilerski",
+            "description": {
+                "public": "<p>Płytkie drewniane pudełko oprawione w skórę, zawierające składaną szlifierkę, kamień szlifierski i kamień polerski, młotek jubilerski oraz małe stalowe kowadło, pozostawiające miejsce na bezpieczne przechowywanie bieżących projektów podczas podróży.</p>"
+            }
+        },
+        "Jeweler's Toolkit": {
+            "name": "Zestaw narzędzi jubilerskich",
+            "description": {
+                "public": "<p>Skórzana torba na narzędzia z drewnianą podstawą. Zawiera pilniki, suwmiarki, mały kamień szlifierski, środki do polerowania i szmatki oraz zestaw niedrogich osadników. Torba może być całkowicie rozłożona, tworząc gładką powierzchnię roboczą.</p>"
+            }
+        },
+        "Katana": {
+            "name": "Katana",
+            "description": {
+                "public": "<p>Wykonana z niezwykłą precyzją katana to zakrzywione ostrze o pojedynczym ostrzu, wykonane ze stali składanej, którego zabójcza gracja odzwierciedla dyscyplinę osoby, która ją dzierży.</p>"
+            }
+        },
+        "Katar": {
+            "name": "Katar",
+            "description": {
+                "public": "<p>Katar to sztylet z prostym ostrzem i poziomym uchwytem, który dzięki brutalnej sile pozwala przebić zbroję i wnętrzności jednym, bezpośrednim pchnięciem.</p>"
+            }
+        },
+        "Kite Shield": {
+            "name": "Tarcza migdałowata",
+            "description": {
+                "public": "<p>Wysoka i zwężająca się, zapewniająca ochronę całego ciała, tarcza migdałkowata osłania ciało użytkownika i jest preferowana zarówno przez kawalerię, jak i piechotę ze względu na doskonałą ochronę i charakterystyczny kształt.</p>"
+            }
+        },
+        "Lantern": {
+            "name": "Latarnia",
+            "description": {
+                "public": "<p>Latarnia opalana olejem lub magicznie oświetlona, która rzuca jasne światło w promieniu 20 stóp i słabe światło w promieniu 40 stóp.</p>"
+            }
+        },
+        "Leather Armor": {
+            "name": "Skórznia",
+            "description": {
+                "public": "<p>Wykonana z grubej, gotowanej skóry utwardzonej w formie płytek lub pasów, skórzana zbroja zapewnia lekką ochronę, idealną dla zwiadowców, łotrzyków i lekko uzbrojonych harcowników.</p>"
+            }
+        },
+        "Lockpicks": {
+            "name": "Wytrychy",
+            "description": {
+                "public": "<p>Zestaw długich, cienkich metalowych szpilek z lekko zakrzywionymi końcami, przeznaczonych do manipulowania wewnętrznymi mechanizmami zamków, oraz metalowy pręt do wywierania nacisku. W odpowiednich rękach mogą one służyć do otwierania zamków równie dobrze, jak każdy klucz.</p>"
+            }
+        },
+        "Longbow": {
+            "name": "Długi łuk",
+            "description": {
+                "public": "<p>Wysoki łuk prosty, często wyższy od łucznika, który go naciąga, wymaga ogromnej siły i lat praktyki, aby opanować sztukę strzelania z niego, wysyłając strzały z zabójczą siłą na pole bitwy.</p>"
+            }
+        },
+        "Longsword": {
+            "name": "Długi miecz",
+            "description": {
+                "public": "<p>Długi miecz to obosieczne ostrze, które dzierży się obiema rękami, aby zapewnić równowagę i siłę. Zazwyczaj posiada duży jelec służący do parowania ciosów.</p>"
+            }
+        },
+        "Luminary Band": {
+            "name": "Pierścień świetlny",
+            "description": {
+                "public": "<p>Misternie grawerowany złoty pierścień, który otacza eliptyczny, błyszczący pomarańczowy kamień szlachetny.</p><p>Po założeniu i <strong>zainwestowaniu</strong> pierścień ten zapewnia korzyści przy rzucaniu dowolnego złożonego zaklęcia zawierającego <strong>Fleksję</strong>.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>+1 Korzyść</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>+2 Korzyści</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>+3 Korzyści</strong></p></li></ul>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            }
+        },
+        "Lyre": {
+            "name": "Lira",
+            "description": {
+                "public": "<p>Instrument strunowy w zakrzywionej ramie. Lira jest ulubionym instrumentem wielu wędrownych bardów i gawędziarzy, którzy wykorzystują muzykę, aby wzmocnić swoją magię lub przemowę.</p>"
+            }
+        },
+        "Mace": {
+            "name": "Buława",
+            "description": {
+                "public": "<p>Jednoręczna broń tępa, charakteryzująca się ciężką głowicą, zazwyczaj wykutą z metalu, która przekształca pęd zamachu użytkownika w uderzenie łamiące kości.</p>"
+            }
+        },
+        "Mealkit": {
+            "name": "Zestaw do posiłków",
+            "description": {
+                "public": "<p>Skórzana torebka zawierająca metalowy kubek, talerz, widelec i kawałek materiału do wycierania ich do czysta.</p>"
+            }
+        },
+        "Messenger Coin": {
+            "name": "Moneta posłańca",
+            "description": {
+                "public": "<p>Mała mosiężna moneta z szeroką, uśmiechniętą twarzą i małymi czerwonymi oczami z granatu. Moneta jest wybita specyficzną sekwencją symboli, które łączą ją z inną monetą, umożliwiając dwóm posiadaczom komunikację na duże odległości. </p><p>Jeśli trzymasz monetę i mówisz do niej, natychmiast łączy się ona z monetą siostrzaną i zaczyna głośno mówić, przekazując to, co mówisz, oraz odpowiedź. Połączenie trwa do 1 minuty, po czym zostaje przerwane. Każda moneta może być użyta raz podczas długiego odpoczynku.</p><p>Moneta może być użyta 5 razy, po czym jej magia zanika i staje się prawie bezwartościowa.</p>"
+            }
+        },
+        "Padded Armor": {
+            "name": "Przeszywalnica",
+            "description": {
+                "public": "<p>Składająca się z pikowanych warstw materiału wypełnionych szmatami lub wełną, wyściełana zbroja chroni ciało przed uderzeniami tępymi przedmiotami i służy jako podkład pod cięższy sprzęt.</p>"
+            }
+        },
+        "Paralytic Vial": {
+            "name": "Fiolka paraliżująca",
+            "description": {
+                "public": "<p>Ta mała fiolka zawiera oleistą ciecz, która jest wyraźnie gęstsza od wody. Wydziela gryzący zapach, który wywołuje poczucie niepokoju.</p>"
+            },
+            "actions": {
+                "Ingest Paralytic": {
+                    "name": "Spożycie środka paraliżującego",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[paralyzed].</p><p>Czas trwania zależy od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 1 runda</p></li><li><p><strong>Standardowa jakość</strong> – 2 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 8 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – czas nieokreślony</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Toksyna paraliżująca"
+                        }
+                    ]
+                },
+                "Apply Paralytic": {
+                    "name": "Aplikacja paraliżu",
+                    "description": "<p>Zawartość tej fiolki można dodać do jedzenia, napoju, posmarować nią broń białą lub połączyć z innym mechanizmem dostarczania.</p><p><em>Ta akcja, która zużywa dostępną ilość trucizny, powinna być użyta przy pierwszym zastosowaniu.</em></p>"
+                }
+            }
+        },
+        "Pen": {
+            "name": "Pióro",
+            "description": {
+                "public": "<p>Powszechnie używane narzędzie piśmienne przez skrybów, umożliwiające wymianę różnych końcówek w celu uzyskania różnych stylów pisma.</p>"
+            }
+        },
+        "Perfume": {
+            "name": "Perfumy",
+            "description": {
+                "public": "<p>Delikatny kosmetyk w postaci olejków o zapachu kwiatowym, zaprojektowany, aby zamaskować naturalny zapach i zapewnić przyjemniejsze doznania zapachowe. Każda mała fiolka zawiera 20 dawek.</p>"
+            }
+        },
+        "Periapt of Determination": {
+            "name": "Amulet determinacji",
+            "description": {
+                "public": "<blockquote><p>Elegancki srebrny amulet z niebieskimi klejnotami daje Ci poczucie niezłomności, gdy go trzymasz, gotowy stawić czoła każdemu wyzwaniu.</p></blockquote><p>Amulet ten zapewnia premię do obrony <strong>Woli</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Woli</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Woli</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Woli</strong></p></li></ul>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako amulet, ale może to być dowolny rodzaj akcesorium, np. pierścień, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            }
+        },
+        "Pickaxe": {
+            "name": "Kilof",
+            "description": {
+                "public": "<p>Kilof, czyli półksiężycowy kolec zamontowany na solidnym trzonku, jest tradycyjnym narzędziem górniczym, ale może być również używany w walce do zadawania niebezpiecznych ciosów kłutych.</p>"
+            }
+        },
+        "Pistol": {
+            "name": "Pistolet",
+            "description": {
+                "public": "<p>Wczesna broń palna na proch czarny, wystrzeliwująca pojedynczy, głośny pocisk, pistolet skałkowy jest bronią hazardzisty — zabójczą w mgnieniu oka, ale powolną w przeładowywaniu w chaosie bitwy.</p>"
+            }
+        },
+        "Plate Mail": {
+            "name": "Zbroja płytowa",
+            "description": {
+                "public": "<p>Najwyższy poziom ochrony osobistej – zbroja płytowa otacza ciało starannie dopasowanymi stalowymi płytami, zapewniając niemal całkowitą ochronę, a jednocześnie imponującą swobodę ruchów dla wyszkolonego użytkownika.</p>"
+            }
+        },
+        "Poison Vial": {
+            "name": "Fiolka z trucizną",
+            "description": {
+                "public": "<p>Ta mała fiolka zawiera mętną ciecz, która jest wyraźnie gęstsza od wody. Wydziela niepokojący zapach, który wywołuje poczucie niepokoju.</p>"
+            },
+            "actions": {
+                "Ingest Poison": {
+                    "name": "Spożycie trucizny",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> –  obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Zatruty"
+                        }
+                    ]
+                },
+                "Apply Poison": {
+                    "name": "Aplikacja trucizny",
+                    "description": "<p>Zawartość tej fiolki można dodać do jedzenia, napoju, posmarować nią broń białą lub połączyć z innym mechanizmem dostarczania.</p><p><em>Ta akcja, która zużywa dostępną ilość trucizny, powinna być użyta przy pierwszym zastosowaniu.</em></p>"
+                }
+            }
+        },
+        "Poisoner's Toolkit": {
+            "name": "Zestaw narzędzi truciciela",
+            "description": {
+                "public": "<p>Drewniane pudełko owinięte skórą z wygrawerowanym ozdobnym haftem krzyżykowym, aby wyraźnie zaznaczyć, że zawiera niebezpieczne przedmioty. Zawiera kamienny moździerz i tłuczek, miejsce na kilka zakorkowanych fiolek z trującymi składnikami, srebrną łyżkę oraz małą składaną żelazną ramę i mały mosiężny garnek do mieszania składników nad ogniem.</p>"
+            }
+        },
+        "Primordial Seed": {
+            "name": "Pierwotne ziarno",
+            "description": {
+                "public": "<p>Ten talizman, ceniony przez druidów wyczulonych na moc ziemi, pomaga w praktykowaniu magii lub może być użyty w walce do skierowania strumienia trujących zarodników w stronę wroga.</p>"
+            }
+        },
+        "Quarterstaff": {
+            "name": "Kostur",
+            "description": {
+                "public": "<p>Prosta drewniana laska o długości od około 1,8 do 2,4 metra, kostur jest bronią o zwodniczej równowadze, która w rękach wyszkolonego użytkownika może być śmiertelnie niebezpieczna.</p>"
+            }
+        },
+        "Rallying Elixir": {
+            "name": "Eliksir mobilizujący",
+            "description": {
+                "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko wzmacnia psychikę i poprawia morale.</p>"
+            },
+            "actions": {
+                "Rallying Elixir": {
+                    "name": "Eliksir mobilizujący",
+                    "description": "<p>Natychmiastowo przywraca ilość <strong>Morale</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Morale</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Morale</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Morale</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Morale</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Morale</strong>.</p></li></ul>"
+                }
+            }
+        },
+        "Rallying Tonic": {
+            "name": "Tonik mobilizujący",
+            "description": {
+                "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która stopniowo wzmacnia psychikę i poprawia morale.</p>"
+            },
+            "actions": {
+                "Rallying Tonic": {
+                    "name": "Tonik mobilizujący",
+                    "description": "<p>Natychmiast oraz na początku każdej z kolejnych 5 <strong>rund</strong> odzyskaj ilość <strong>Morale</strong> zależną od jakości toniku.</p><ul><li><p><strong>Tandetna jakość</strong> - Leczy 2 punkty <strong>Morale</strong> na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Leczy 4 punkty <strong>Morale</strong> na rundę</p></li><li><p><strong>Dobra jakość</strong> - Leczy 8 punktów <strong>Morale</strong> na rundę</p></li><li><p><strong>Wybitna jakość</strong> - Leczy 16 punktów <strong>Morale</strong> na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> - Leczy 32 punktów <strong>Morale</strong> na rundę</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Tonik mobilizujący"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rapier": {
+            "name": "Rapier",
+            "description": {
+                "public": "<p>Długi, smukły i doskonale wyważony rapier jest bronią wybieraną przez szermierzy, a jego ostry jak igła czubek idealnie nadaje się do błyskawicznych pchnięć i śmiertelnych pojedynków.</p>"
+            }
+        },
+        "Rations": {
+            "name": "Racje żywnościowe",
+            "description": {
+                "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
+            }
+        },
+        "Razor": {
+            "name": "Brzytwa",
+            "description": {
+                "public": "<p>Szczególnie ostre ostrze używane do golenia lub, w niektórych przypadkach, do zabiegów chirurgicznych.</p>"
+            }
+        },
+        "Repair Kit (smith)": {
+            "name": "Zestaw naprawczy (kowalski)",
+            "description": {
+                "public": "<p>Skórzana torba zawierająca kamienie do ostrzenia i szlifierkę, mały młotek, mały tygiel do topienia metalu oraz zestaw małych kawałków złomu. Może służyć do naprawy metalowej zbroi, broni i akcesoriów.</p>"
+            }
+        },
+        "Repair Kit (tailor)": {
+            "name": "Zestaw naprawczy (krawiecki)",
+            "description": {
+                "public": "<p>Skórzana torba zawierająca nożyczki, igły, ramkę tkacką oraz zestaw małych kawałków materiału, skóry, nici i sznurka. Może służyć do naprawy odzieży i skórzanej zbroi oraz akcesoriów.</p>"
+            }
+        },
+        "Ring Mail": {
+            "name": "Kolczuga pierścieniowa",
+            "description": {
+                "public": "<p>Kolczuga pierścieniowa składa się z metalowych pierścieni przyszytych do wyściełanej podstawy, zapewniając mniejszą ochronę niż cięższe rodzaje kolczugi, ale w zamian za to większą swobodę ruchów.</p>"
+            }
+        },
+        "Ring of Evasion": {
+            "name": "Pierścień uników",
+            "description": {
+                "public": "<blockquote><p>Ten elegancki, ozdobiony pierścień jest nieco śliski i trudny do uchwycenia. Podczas trzymania wibruje niemal niezauważalnie.</p></blockquote><p>Pierścień ten zapewnia premię do obrony <strong>Unik</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Uniku</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Uniku</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Uniku</strong></p></li></ul>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            }
+        },
+        "Ring of Gliding": {
+            "name": "Pierścień szybowania",
+            "description": {
+                "public": "<p>Elegancka obrączka z jasnoniebieskiej stali, ozdobiona spiralnym wzorem, który sprawia wrażenie, jakby nieustannie powoli obracała się na palcu osoby noszącej.</p><p>Pierścień ten może być instynktownie aktywowany przez osobę noszącą podczas swobodnego spadania, aby zapewnić jej pełne gracji i kontrolowane opadanie.</p>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            },
+            "actions": {
+                "Ring of Gliding": {
+                    "name": "Pierścień szybowania",
+                    "description": "<p>Jeżeli użyjesz go podczas <strong>spadania</strong>, możesz przesunąć się w bok o określoną liczbę pól od początkowej pozycji podczas szybowania.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>1 stopa</strong> na każde <strong>20 stóp</strong> spadania. </p></li><li><p><strong>Wybitne</strong> zaklinanie: <strong>2 stopy</strong> na każde <strong>20 stóp</strong> spadania.</p></li><li><p><strong>Mistrzowskie</strong> zaklinanie: <strong>4 stopy</strong> na każde <strong>20 stóp</strong> spadania.</p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu ani nie stajesz się @Condition[prone].</p>"
+                }
+            }
+        },
+        "Ring of Reinforcement": {
+            "name": "Pierścień wzmacniający",
+            "description": {
+                "public": "<blockquote><p>Ten stalowy pierścień jest zawsze chłodny w dotyku i sprawia wrażenie cięższej niż można by się spodziewać po jego wąskiej obręczy. </p></blockquote><p>Pierścień ten zapewnia premię do obrony <strong>pancerza</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Pancerza</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Pancerza</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Pancerza</strong></p></li></ul>",
+                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+            }
+        },
+        "Rope": {
+            "name": "Lina",
+            "description": {
+                "public": "<p>Lina o długości 30 stóp, wykonana z włókien roślinnych, która może być używana do wspinaczki lub wielu innych celów.</p>"
+            }
+        },
+        "Rope Ladder": {
+            "name": "Drabina linowa",
+            "description": {
+                "public": "<p>25 stóp drewnianych listew i wiązanej liny, połączonych razem i zwiniętych w wygodne urządzenie do wspinaczki. Po zamocowaniu na jednym końcu znacznie zmniejsza ryzyko upadku osób wspinających się.</p>"
+            }
+        },
+        "Round Shield": {
+            "name": "Okrągła tarcza",
+            "description": {
+                "public": "<p>Okrągła metalowa tarcza o średnicy prawie dwóch stóp, stanowiąca podstawowe uzbrojenie obronne piechoty nieposiadającej specjalistycznego wyszkolenia w walce z użyciem tarczy.</p>"
+            }
+        },
+        "Sai": {
+            "name": "Sai",
+            "description": {
+                "public": "<p>Sai to broń w kształcie trójzębu z tępymi zębami i ostrym trzonkiem. Jest to narzędzie precyzyjne i zapewniające kontrolę, służące do blokowania ostrzy i zadawania ciosów z dyscyplinowaną furią.</p>"
+            }
+        },
+        "Scale Mail": {
+            "name": "Zbroja łuskowa",
+            "description": {
+                "public": "<p>Złożona z nakładających się na siebie metalowych płytek, przyszytych lub przynitowanych do skórzanego lub materiałowego podkładu, kolczuga przypomina smoczą skórę i dobrze chroni przed cięciami i pchnięciami – choć jest hałaśliwa i nieelastyczna.</p>"
+            }
+        },
+        "Scimitar": {
+            "name": "Bułat",
+            "description": {
+                "public": "<p>Dzięki szerokiemu, zakrzywionemu ostrzu i zabójczemu łukowi, szabla ta tańczy na polu bitwy, przecinając wrogów eleganckimi, zamaszystymi ciosami.</p>"
+            }
+        },
+        "Scrivener's Portable Workbench": {
+            "name": "Przenośny warsztat skryby",
+            "description": {
+                "public": "<p>Drewniane pudełko owinięte skórą, niewiele większe od zwykłej książki. Zawiera pędzle kaligraficzne i końcówki piór, igłę i nici, a także miejsce do przechowywania fiolki z atramentem oddzielnie od złożonego papieru. Po otwarciu pudełko można rozłożyć, aby służyło jako płaska powierzchnia do pisania.</p>"
+            }
+        },
+        "Scrivener's Toolkit": {
+            "name": "Zestaw narzędzi skryby",
+            "description": {
+                "public": "<p>Skórzana torba podróżna z drewna. Zawiera woskowaną torebkę na dokumenty, która chroni je przed wilgocią, paczkę lakieru do pieczęci, kilka piór i atramentów oraz płaską drewnianą deskę, która służy jako powierzchnia do pisania.</p>"
+            }
+        },
+        "Shortbow": {
+            "name": "Krótki łuk",
+            "description": {
+                "public": "<p>Kompaktowy i szybki w użyciu łuk krótki doskonale sprawdza się w szybkiej strzelaninie z bliskiej odległości i potyczkach, dlatego jest ulubioną bronią zwiadowców, myśliwych i szybkich najeźdźców.</p>"
+            }
+        },
+        "Shortsword": {
+            "name": "Krótki miecz",
+            "description": {
+                "public": "<p>Krótki miecz to broń o prostym ostrzu, która jest zwinna w posługiwaniu się nią i pozwala na szybkie uderzenia w walce wręcz. Posiada jelec idealny do parowania nadchodzących ciosów.</p>"
+            }
+        },
+        "Shovel": {
+            "name": "Łopata",
+            "description": {
+                "public": "<p>Powszechnie stosowane narzędzie dwuręczne służące do kopania ziemi i kamieni.</p>"
+            }
+        },
+        "Skull Fetish": {
+            "name": "Fetysz czaszki",
+            "description": {
+                "public": "<p>Ten makabryczny talizman przywołuje strach i energię śmierci, aby wspomóc rzucanie zaklęć lub dotknąć wrogów niszczącym wpływem.</p>"
+            }
+        },
+        "Sling": {
+            "name": "Proca",
+            "description": {
+                "public": "<p>Prosta na pierwszy rzut oka linka lub skórzana taśma służąca do rzucania kamieniami z dużą prędkością – proca jest jedną z najstarszych broni w historii. Wymaga wprawy, ale w rękach doświadczonego użytkownika jest zabójcza.</p>"
+            }
+        },
+        "Smith's Portable Forge": {
+            "name": "Przenośna kuźnia",
+            "description": {
+                "public": "<p>Gruby, wyłożony gliną, szczelny żelazny garnek z otworem do zamocowania ręcznego miecha i małym otworem do wkładania metalu, który ma być podgrzany. Zestaw miecha i małego kowadła. To ciężkie urządzenie pozwala kowalowi wykonywać swoją pracę w podróży, choć do jego transportu niezbędna jest spora siła. Nadaje się do wytwarzania większości popularnych metalowych narzędzi i broni, ale nie wystarcza do wykonywania prac wysokiej jakości.</p>"
+            }
+        },
+        "Smith's Toolkit": {
+            "name": "Zestaw narzędzi kowala",
+            "description": {
+                "public": "<p>Skórzana torba podróżna z drewnianym dnem. Zawiera szydła, szczypce, złom i małe kowadło, a także miejsce do przechowywania kawałków złomu.</p>"
+            }
+        },
+        "Soap": {
+            "name": "Mydło",
+            "description": {
+                "public": "<p>Kostka zwykłego mydła używanego do higieny osobistej. Każda kostka wystarcza na około 20 użyć.</p>"
+            }
+        },
+        "Spear": {
+            "name": "Włócznia",
+            "description": {
+                "public": "<p>Włócznia, broń dalekiego zasięgu i rytmu, ma długie drzewce zakończone stalowym ostrzem, idealne do utrzymania linii lub rzucania z zabójczą siłą zza ściany tarcz.</p>"
+            }
+        },
+        "Spell Scroll (Legendary)": {
+            "name": "Zwój zaklęcia (legendarny)",
+            "description": {
+                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Czytanie zwoju",
+                    "description": "<p>Przeczytaj ten zwój zaklęcia, aby tymczasowo uzyskać wiedzę na temat jego składników magicznych na 10 minut.</p><p>W danym momencie możesz mieć aktywny tylko jeden efekt zwoju zaklęcia. Przeczytanie innego zwoju zastępuje bieżący efekt.</p>",
+                    "effects": [
+                        {
+                            "name": "Czytanie zwoju"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Major)": {
+            "name": "Zwój zaklęcia (znaczący)",
+            "description": {
+                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Czytanie zwoju",
+                    "description": "<p>Przeczytaj ten zwój zaklęcia, aby tymczasowo uzyskać wiedzę na temat jego składników magicznych na 10 minut.</p><p>W danym momencie możesz mieć aktywny tylko jeden efekt zwoju zaklęcia. Przeczytanie innego zwoju zastępuje bieżący efekt.</p>",
+                    "effects": [
+                        {
+                            "name": "Czytanie zwoju"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Minor)": {
+            "name": "Zwój zaklęcia (niewielki)",
+            "description": {
+                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+            },
+            "actions": {
+                "Read Scroll": {
+                    "name": "Czytanie zwoju",
+                    "description": "<p>Przeczytaj ten zwój zaklęcia, aby tymczasowo uzyskać wiedzę na temat jego składników magicznych na 10 minut.</p><p>W danym momencie możesz mieć aktywny tylko jeden efekt zwoju zaklęcia. Przeczytanie innego zwoju zastępuje bieżący efekt.</p>",
+                    "effects": [
+                        {
+                            "name": "Czytanie zwoju"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spellband": {
+            "name": "Pierścień zaklęć",
+            "description": {
+                "public": "<p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p>"
+            },
+            "actions": {
+                "Spellband": {
+                    "name": "Pierścień zaklęć",
+                    "description": "<p>W sytuacjach zagrożenia możesz pobrać dodatkową rezerwę <strong>Skupienia</strong> z tego pierścienia. Ilość przywróconego Skupienia zależy od premii zaklinania pierścienia. </p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>4 punkty Skupienia</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>8 punktów Skupienia</strong></p></li></ul>"
+                }
+            }
+        },
+        "Spiked Greatclub": {
+            "name": "Wielka maczuga z kolcami",
+            "description": {
+                "public": "<p>Sękata, ciężka drewniana broń została wyposażona w ostre, wystające kolce, dzięki czemu jest jeszcze bardziej groźna i brutalna w zadawanych ciosach, kosztem swojej nadmiernej masy.</p>"
+            }
+        },
+        "Spiked Knuckles": {
+            "name": "Kolczaste kastety",
+            "description": {
+                "public": "<p>Brutalne połączenie broni do walki wręcz i narzędzia do przebijania, kolczaste kastety zamieniają każdy cios w okaleczające uderzenie, idealne dla awanturników, którzy chcą, aby ich pięści wywoływały krwawienie i strach.</p>"
+            }
+        },
+        "Splint Mail": {
+            "name": "Napierśnik",
+            "description": {
+                "public": "<p>Warstwa pionowych metalowych pasków przynitowanych do podłoża ze skóry lub kolczugi, napierśnik zapewnia silną ochronę kończyn, ale kosztem pewnej elastyczności.</p>"
+            }
+        },
+        "Spyglass": {
+            "name": "Luneta",
+            "description": {
+                "public": "<p>Ręczny teleskop wykonany z mosiądzu i drewna, wyposażony w wypolerowane soczewki szklane. Służy do powiększania odległych obiektów.</p>"
+            }
+        },
+        "Steel-Jaw Trap": {
+            "name": "Wnyki szczękowe",
+            "description": {
+                "public": "<p>Wyjątkowo okrutna i ostra pułapka mechaniczna, zaprojektowana, by unieruchamiać i zabijać nieostrożnych. Ząbkowana stalowa obręcz zatrzaskuje się gwałtownie, gdy istota nastąpi na płytę naciskową w jej centrum.</p>"
+            },
+            "actions": {
+                "Arm Steel-Jaw Trap": {
+                    "name": "Zastawianie wnyków",
+                    "description": "<p>Zastawienie pułapki tworzy niebezpieczne zagrożenie, które zadaje poważne obrażenia w razie aktywacji. Mechanizm musi zostać przytwierdzony ciężkim łańcuchem do nieruchomego obiektu, takiego jak drzewo lub wbity w ziemię klin. Pułapka obejmuje obszar o promieniu 2 stóp.</p>"
+                },
+                "Trigger Steel-Jaw Trap": {
+                    "name": "Aktywacja wnyków",
+                    "description": "<p>W momencie wyzwolenia pułapki, istota, która ją zastawiła, wykonuje atak umiejętnością <strong>Dzikiej przyrody</strong> przeciwko obronie na <strong>Refleks</strong> pojedynczego celu. Jeśli atak zakończy się sukcesem, zadaje on obrażenia kłute i nakłada stan @Condition[restrained]. Obrażenia bazowe zależą od jakości wykonania pułapki.</p><ul><li><p><strong>Tandetna jakość</strong> - 1 obrażeń</p></li><li><p><strong>Standardowa jakość</strong> - 2 obrażenia</p></li><li><p><strong>Dobra jakość</strong> - 4 obrażeń</p></li><li><p><strong>Wybitna jakość</strong> - 8 obrażeń</p></li><li><p><strong>Mistrzowska jakość</strong> - 16 obrażeń</p></li></ul><p></p>",
+                    "effects": [
+                        {
+                            "name": "Pułapka z metalowymi szczękami"
+                        }
+                    ]
+                }
+            }
+        },
+        "Stiletto": {
+            "name": "Stiletto",
+            "description": {
+                "public": "<p>Cienki, zwężający się i przeznaczony do przebijania, stiletto jest bronią zabójcy — zaprojektowany tak, aby wślizgnąć się między żebra lub szczeliny w zbroi i nie pozostawić prawie żadnego śladu.</p>"
+            }
+        },
+        "Studded Leather Armor": {
+            "name": "Ćwiekowana zbroja skórzana",
+            "description": {
+                "public": "<p>Podstawa wykonana ze skóry wzmocnionej małymi metalowymi ćwiekami lub nitowanymi płytkami. Ta zbroja zapewnia równowagę między mobilnością a umiarkowaną ochroną przed cięciami.</p>"
+            }
+        },
+        "Tailor's Portable Workbench": {
+            "name": "Przenośny warsztat krawiecki",
+            "description": {
+                "public": "<p>Płytkie drewniane pudełko oprawione w skórę, zawierające szpulki nici, odpowiednie igły i szpilki, nóż do skórowania, nóż hakowy, przebijaki, szydła i znaki odpowiednie do pracy z tkaninami i skórą podczas podróży. Po rozpięciu można je złożyć, tworząc płaską powierzchnię roboczą.</p>"
+            }
+        },
+        "Tailor's Toolkit": {
+            "name": "Zestaw narzędzi krawieckich",
+            "description": {
+                "public": "<p>Skórzana drewniana torba zawierająca szpulki nici, odpowiednie igły i szpilki, nóż do skórowania oraz szydła, przydatne do pracy z tkaniną i skórą.</p>"
+            }
+        },
+        "Tent (caravan)": {
+            "name": "Namiot (karawana)",
+            "description": {
+                "public": "<p>Ogromny składany lub zwijany arkusz do budowy tymczasowego schronienia, odpowiedni dla maksymalnie dwunastu osób. Zawiera liny, kołki i sześć składanych prętów poprzecznych, które należy złożyć przed rozciągnięciem arkusza.</p>"
+            }
+        },
+        "Tent (large)": {
+            "name": "Namiot (duży)",
+            "description": {
+                "public": "<p>Duży składany lub zwijany arkusz do budowy tymczasowego schronienia, odpowiedni dla maksymalnie sześciu osób. Zawiera liny, kołki i składaną poprzeczkę do zamocowania w środkowej części.</p>"
+            }
+        },
+        "Tent (small)": {
+            "name": "Namiot (mały)",
+            "description": {
+                "public": "<p>Składany lub zwijany arkusz do budowy tymczasowego schronienia, odpowiedni dla jednej lub dwóch osób. Zawiera liny, kołki i składaną poprzeczkę do zamocowania w środkowej części.</p>"
+            }
+        },
+        "Torch": {
+            "name": "Pochodnia",
+            "description": {
+                "public": "<p>Warstwy nasączone olejem przymocowane wokół końca pręta wykonanego z kości lub innego niepalnego materiału, niedrogie, choć mało wydajne, tymczasowe źródło światła. Każda pochodnia może palić się przez godzinę, po czym nie nadaje się już do użytku.</p>"
+            }
+        },
+        "Tower Shield": {
+            "name": "Pawęż",
+            "description": {
+                "public": "<p>Ogromna, prostokątna ściana z drewna i metalu, pawęż zamienia swojego nosiciela w chodzącą fortecę, idealną do utrzymywania wąskich przejść — ale kosztem szybkości i widoczności.</p>"
+            }
+        },
+        "Travel Jug": {
+            "name": "Kufel podróżny",
+            "description": {
+                "public": "<p>Gliniany dzbanek z korkiem, owinięty skórą, który można przymocować do paska lub na zewnątrz plecaka, aby zapewnić wygodę użytkowania. Pomieści 1 litr płynu.</p>"
+            }
+        },
+        "War Hammer": {
+            "name": "Młot bojowy",
+            "description": {
+                "public": "<p>Młot bojowy, stworzony do miażdżenia tarcz i rozbijania osłon, posiada ciężką, tępo zakończoną głowicę zamontowaną na wzmocnionym trzonku, siejąc spustoszenie w rękach tych, którzy przedkładają siłę nad finezję.</p>"
+            }
+        },
+        "War Lance": {
+            "name": "Bojowa kopia",
+            "description": {
+                "public": "<p>Zaprojektowana do walki konnej, kopia bojowa jest długą, zwężającą się bronią służącą do rozbijania zbroi dzięki pędowi szarżującego rumaka. Jej trzonek jest wzmocniony, aby zapewnić niszczycielskie uderzenie.</p>"
+            }
+        },
+        "Weather Clothing": {
+            "name": "Ubranie na każdą pogodę",
+            "description": {
+                "public": "<p>Zestaw ubrań zaprojektowany w celu ochrony użytkownika przed niekorzystnymi warunkami pogodowymi, takimi jak ekstremalne temperatury, wiatr lub wilgotność.</p>"
+            }
+        },
+        "Wetskin": {
+            "name": "Bukłak",
+            "description": {
+                "public": "<p>Skórzany bukłak, który można przymocować do paska lub na zewnątrz plecaka, co zapewnia wygodę użytkowania. Pomieści 0,5 litra płynu.</p>"
+            }
+        },
+        "Whistle": {
+            "name": "Gwizdek",
+            "description": {
+                "public": "<p>Instrument wykonany z rzeźbionego drewna lub kości, który po dmuchnięciu wydaje pojedynczy, przenikliwy dźwięk słyszalny z dużej odległości. Często używany przez myśliwych i rybaków do sygnalizowania sobie nawzajem obecności na pustkowiu lub morzu.</p>"
+            }
+        }
+    },
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
+    }
+}
