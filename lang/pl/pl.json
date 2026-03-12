@@ -687,6 +687,7 @@
 "ACTION.WarningMaximumRange": "Wybrany cel znajduje się dalej niż maksymalny zasięg {max} stóp.",
 "ACTION.WarningMisconfiguredSummon": "Akcja {action} nie ma poprawnie skonfigurowanego celu Przywołania.",
 "ACTION.WarningNoAbility": "{actor} nie ma wartości {ability}, dlatego nie może wykonać {action}.",
+"ACTION.WarningSilenced": "Nie możesz użyć tej akcji, gdy jesteś Wyciszony.",
 "ACTION.WarningUnimplementedTarget": "Automatyzacja dla typu celu {type} dla akcji {name} nie jest jeszcze obsługiwana, należy ręcznie wybrać odpowiednie tokeny.",
 
 "ACTION.EFFECTS": {
@@ -710,6 +711,10 @@
 
 "ACTION.TagAfterStrike": "Po uderzeniu",
 "ACTION.TagAfterStrikeTooltip": "Akcja ta może zostać wykonana wyłącznie bezpośrednio po podstawowym ataku, który nie zakończył się krytycznym chybieniem.",
+"ACTION.TagVocal": "Wokalny",
+"ACTION.TagVocalTooltip": "Ta akcja wymaga od użytkownika mówienia lub wydawania dźwięków.",
+"ACTION.TagAuditory": "Słuchowy",
+"ACTION.TagAuditoryTooltip": "Aby ta akcja zadziałała, jej cele muszą być w stanie słyszeć.",
 "ACTION.TagConsume": "Zużywanie",
 "ACTION.TagConsumeTooltip": "Ta akcja wymaga użycia określonego przedmiotu eksploatacyjnego.",
 "ACTION.TagDeadly": "Morderczy",
@@ -1010,7 +1015,7 @@
   "CATEGORIES": {
     "Ammunition": "Amunicja",
     "Bomb": "Bomba",
-    "Flask": "Kolba",
+    "Flask": "Fiolka",
     "Kit": "Zestaw",
     "Other": "Inne",
     "Scroll": "Zwój zaklęcia",
@@ -1380,16 +1385,16 @@
   }
 },
 
-"ITEM.EnchantmentMundane": "Przeciętny",
-"ITEM.EnchantmentMinor": "Niewielki",
-"ITEM.EnchantmentMajor": "Znaczący",
-"ITEM.EnchantmentLegendary": "Legendarny",
+"ITEM.EnchantmentMundane": "Przeciętne",
+"ITEM.EnchantmentMinor": "Niewielkie",
+"ITEM.EnchantmentMajor": "Znaczące",
+"ITEM.EnchantmentLegendary": "Legendarne",
 
-"ITEM.QualityShoddy": "Tandetny",
-"ITEM.QualityStandard": "Standardowy",
-"ITEM.QualityFine": "Dobry",
-"ITEM.QualitySuperior": "Wybitny",
-"ITEM.QualityMasterwork": "Arcydzieło",
+"ITEM.QualityShoddy": "Tandetna",
+"ITEM.QualityStandard": "Standardowa",
+"ITEM.QualityFine": "Dobra",
+"ITEM.QualitySuperior": "Wybitna",
+"ITEM.QualityMasterwork": "Mistrzowska",
 
 "KEYBINDINGS.ConfirmAction": "Potwierdź akcję",
 "KEYBINDINGS.ConfirmActionHint": "Potwierdź akcje zarejestrowane w ciągu ostatnich 60 sekund w kolejności, w jakiej zostały wykonane.",
@@ -1474,7 +1479,7 @@
     "Enchanting": "Zaklęty glif",
     "Fletching": "Projekt strzał",
     "Jewelcraft": "Wykres jubilerski",
-    "Glyphweaving": "Arkanum splotu glifów",
+    "Glyphweaving": "Arkanum tkania glifów",
     "Smithing": "Schemat kowalski",
     "Tailoring": "Wzór krawiecki"
   },
@@ -1613,7 +1618,7 @@
     "performance": "Występy",
     "smithing": "Kowalstwo",
     "tailoring": "Krawiectwo",
-    "fletching": "Opierzanie strzał",
+    "fletching": "Brzechwiarstwo",
     "jewelcraft": "Szlifierstwo",
     "glyphweaving": "Tkanie glifów",
     "alchemy": "Alchemia",
@@ -2020,7 +2025,7 @@
 "TOOL": {
   "CATEGORIES": {
     "Crafting": "Zestaw rzemieślniczy",
-    "Implement": "Wdrożenie"
+    "Implement": "Przyrząd"
   },
   "FIELDS": {
     "skills": {
