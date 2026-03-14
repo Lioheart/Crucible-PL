@@ -1113,7 +1113,7 @@
   "Willpower": "{base} + ((Wytrzymałość + Prezencja) / 4)",
   "Reflex": "{base} + ((Zręczność + Intelekt) / 4)",
   "Wounds": "{base} + (Rany / 10)",
-  "Madness": "{base} + (Szaleństwo / 10)"
+  "Madness": "{base} + (Obłęd / 10)"
 },
 
 "DICE.DIFFICULTIES": {
