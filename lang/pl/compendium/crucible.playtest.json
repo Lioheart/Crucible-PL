@@ -1879,7 +1879,7 @@
                         },
                         "Wildspeaker": {
                             "name": "Dziki mówca",
-                            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dzikiej przyrody.</p>",
+                            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dziczy.</p>",
                             "actions": {
                                 "Wildspeak": {
                                     "name": "Język dzikich zwierząt",
@@ -2051,7 +2051,7 @@
                         },
                         "Wildspeaker": {
                             "name": "Dziki mówca",
-                            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dzikiej przyrody.</p>",
+                            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dziczy.</p>",
                             "actions": {
                                 "Wildspeak": {
                                     "name": "Język dzikich zwierząt",
