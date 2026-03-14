@@ -470,7 +470,7 @@
       "header": "Talenty pasywne"
     },
     "SIGNATURE": {
-      "header": "Talenty popisowe"
+      "header": "Talenty charakterystyczne"
     },
     "SPELL": {
       "header": "Talenty czaroznastwa"
@@ -729,7 +729,7 @@
 "ACTION.TagEmpoweredTooltip": "Ta akcja jest potężna i zadaje dodatkowe obrażenia, zapewniając +2 do obrażeń w przypadku sukcesu.",
 "ACTION.TagAccurate": "Dokładny",
 "ACTION.TagAccurateTooltip": "Ta akcja jest szczególnie celna. Wykonując tę akcję, zyskujesz 2 dodatkowe korzyści.",
-"ACTION.TagFinesse": "Finezja",
+"ACTION.TagFinesse": "Finezyjny",
 "ACTION.TagFinesseTooltip": "Wykonanie tej akcji wymaga pewnej zręczności. Musisz dzierżyć broń, której skuteczność zależy od Zręczności.",
 "ACTION.TagFlanking": "Flankowanie",
 "ACTION.TagFlankingTooltip": "Ta akcja może być wykonana tylko wobec flankowanego celu lub nieświadomego zagrożenia.",
@@ -761,7 +761,7 @@
 "ACTION.TagOneHandTooltip": "Ta akcja wymaga użycia broni jednoręcznej.",
 "ACTION.TagProjectile": "Miotany",
 "ACTION.TagProjectileTooltip": "Ta akcja wymaga użycia broni miotającej.",
-"ACTION.TagRallying": "Otrząśnięcie",
+"ACTION.TagRallying": "Mobilizacja",
 "ACTION.TagRallyingTooltip": "Ta akcja zapewnia przywrócenie poprzez sprawdzenie progu Obłędu sojusznika.",
 "ACTION.TagRanged": "Dystansowy",
 "ACTION.TagRangedTooltip": "Wykonanie tej akcji wymaga użycia broni dystansowej.",
@@ -775,8 +775,8 @@
 "ACTION.TagShieldTooltip": "Wykonanie tej akcji wymaga użycia tarczy.",
 "ACTION.TagSpell": "Zaklęcie",
 "ACTION.TagSpellTooltip": "Ta akcja wymaga znajomości używania magii.",
-"ACTION.TagComposed": "Zaklęcie złożone",
-"ACTION.TagComposedTooltip": "Ta akcja jest zaklęciem złożonym.",
+"ACTION.TagComposed": "Zaklęcie skomponowane",
+"ACTION.TagComposedTooltip": "Ta akcja jest zaklęciem skomponowanym.",
 "ACTION.TagSkill": "Umiejętność",
 "ACTION.TagSkillTooltip": "Ta akcja wymaga wykonania celowego lub przeciwstawnego testu umiejętności.",
 "ACTION.TagSummon": "Przywołany",
@@ -1180,7 +1180,7 @@
     "Asleep": "Uśpiony",
     "Blind": "Oślepiony",
     "Broken": "Załamany",
-    "Burrowing": "Zakopany",
+    "Burrowing": "Kopiące",
     "Dead": "Martwy",
     "Deaf": "Ogłuszony",
     "Diseased": "Zarażony",
@@ -1194,7 +1194,7 @@
     "Guarded": "Strzeżony",
     "Hastened": "Przyśpieszony",
     "Incapacitated": "Obezwładniony",
-    "Insane": "Szalony",
+    "Insane": "Obłąkany",
     "Invisible": "Niewidzialny",
     "Invulnerable": "Niezniszczalny",
     "Stunned": "Oszołomiony",
@@ -1217,10 +1217,10 @@
     "Decaying": "Gnijący",
     "Entropy": "Entropiczny",
     "Irradiated": "Napromieniowany",
-    "Mending": "Naprawiony",
+    "Mending": "Regenerujący",
     "Inspired": "Zainspirowany",
     "Poisoned": "Zatruty",
-    "Shocked": "Wstrząśnięty"
+    "Shocked": "Porażony"
   }
 },
 
@@ -1607,8 +1607,8 @@
     "athletics": "Atletyka",
     "awareness": "Świadomość",
     "stealth": "Skradanie",
-    "wilderness": "Dzika przyroda",
-    "arcana": "Arkana",
+    "wilderness": "Dzicz",
+    "arcana": "Arkany",
     "medicine": "Medycyna",
     "science": "Nauka",
     "society": "Społeczeństwo",
@@ -1618,9 +1618,9 @@
     "performance": "Występy",
     "smithing": "Kowalstwo",
     "tailoring": "Krawiectwo",
-    "fletching": "Brzechwiarstwo",
+    "fletching": "Łuczarstwa",
     "jewelcraft": "Szlifierstwo",
-    "glyphweaving": "Tkanie glifów",
+    "glyphweaving": "Glifotwórstwo",
     "alchemy": "Alchemia",
     "cooking": "Gotowanie",
     "enchanting": "Zaklinanie"
@@ -1639,7 +1639,7 @@
       "hint": "Posiadasz formalne wykształcenie lub praktyczne doświadczenie w zakresie podstawowych zastosowań tej umiejętności."
     },
     "APPRENTICE": {
-      "label": "Praktykant",
+      "label": "Czeladnik",
       "hint": "Doskonaliłeś i szlifowałeś techniki tej umiejętności, osiągając wysoki poziom kompetencji funkcjonalnych."
     },
     "SPECIALIST": {
@@ -1891,7 +1891,7 @@
   },
   "WARNINGS": {
     "AlreadyOwned": "Już posiadasz {name} i nie możesz dodać go po raz drugi.",
-    "Banned": "W tym węźle lub na tym poziomie nie można nabyć dodatkowych talentów popisowych.",
+    "Banned": "W tym węźle lub na tym poziomie nie można nabyć dodatkowych talentów charakterystycznych.",
     "CannotAfford": "Nie masz wystarczającej liczby Punktów Talentu, aby nabyć {name} za {cost} punktów.",
     "CannotUse": "Nie możesz użyć tego talentu.",
     "Inaccessible": "Nie możesz zdobyć \"{name}\", ponieważ nie odblokowałeś tego węzła drzewka talentów.",
@@ -2093,7 +2093,7 @@
     "OversizedTooltip": "Ten przedmiot jest zbyt duży lub nieporęczny, co uniemożliwia szybkie działanie. Podczas noszenia tego przedmiotu otrzymujesz +2 zguby do inicjatywy.",
     "Parrying": "Odparowywanie",
     "ParryingTooltip": "Ta broń zapewnia premię do obrony Parowania.",
-    "Reach": "Zasięg",
+    "Reach": "Zasięgowa",
     "ReachTooltip": "Ta broń zapewnia większy niż normalnie zasięg skuteczny. Możesz wykonywać podstawowe ataki uderzeniowe z dwukrotnie większej od normalnej odległości.",
     "Reload": "Przeładowanie",
     "ReloadTooltip": "Aby przeprowadzić atak, broń ta wymaga przeładowania. Gdy broń nie jest załadowana, wszelkie działania z jej użyciem kosztują +1 Punkt Akcji.",
