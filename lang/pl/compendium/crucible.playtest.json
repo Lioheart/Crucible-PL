@@ -137,9 +137,9 @@
                     }
                 },
                 "Anvil": {
-                    "name": "Kowadło",
+                    "name": "Anvil",
                     "tokenName": {
-                        "name": "Kowadło"
+                        "name": "Anvil"
                     },
                     "items": {
                         "Heavy Hides": {
@@ -225,9 +225,9 @@
                     }
                 },
                 "Hammer": {
-                    "name": "Młot",
+                    "name": "Hammer",
                     "tokenName": {
-                        "name": "Młot"
+                        "name": "Hammer"
                     },
                     "items": {
                         "Hand Axe": {
