@@ -1021,7 +1021,7 @@
                 },
                 "Trigger Steel-Jaw Trap": {
                     "name": "Aktywacja wnyków",
-                    "description": "<p>W momencie wyzwolenia pułapki, istota, która ją zastawiła, wykonuje atak umiejętnością <strong>Dzikiej przyrody</strong> przeciwko obronie na <strong>Refleks</strong> pojedynczego celu. Jeśli atak zakończy się sukcesem, zadaje on obrażenia kłute i nakłada stan @Condition[restrained]. Obrażenia bazowe zależą od jakości wykonania pułapki.</p><ul><li><p><strong>Tandetna jakość</strong> - 1 obrażeń</p></li><li><p><strong>Standardowa jakość</strong> - 2 obrażenia</p></li><li><p><strong>Dobra jakość</strong> - 4 obrażeń</p></li><li><p><strong>Wybitna jakość</strong> - 8 obrażeń</p></li><li><p><strong>Mistrzowska jakość</strong> - 16 obrażeń</p></li></ul><p></p>",
+                    "description": "<p>W momencie wyzwolenia pułapki, istota, która ją zastawiła, wykonuje atak umiejętnością <strong>Dziczy</strong> przeciwko obronie na <strong>Refleks</strong> pojedynczego celu. Jeśli atak zakończy się sukcesem, zadaje on obrażenia kłute i nakłada stan @Condition[restrained]. Obrażenia bazowe zależą od jakości wykonania pułapki.</p><ul><li><p><strong>Tandetna jakość</strong> - 1 obrażeń</p></li><li><p><strong>Standardowa jakość</strong> - 2 obrażenia</p></li><li><p><strong>Dobra jakość</strong> - 4 obrażeń</p></li><li><p><strong>Wybitna jakość</strong> - 8 obrażeń</p></li><li><p><strong>Mistrzowska jakość</strong> - 16 obrażeń</p></li></ul><p></p>",
                     "effects": [
                         {
                             "name": "Pułapka z metalowymi szczękami"
