@@ -520,7 +520,7 @@
             "name": "Przywoływacz"
         },
         "Conserve Effort": {
-            "name": "Oszczędność wysiłku"
+            "name": "Oszczędzanie wysiłku"
         },
         "Counter Evade": {
             "name": "Kontr-unik",
@@ -1442,7 +1442,7 @@
                     "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Conserve Effort": {
-                    "name": "Oszczędność wysiłku",
+                    "name": "Oszczędzanie wysiłku",
                     "description": "<p>Znajdujesz równowagę i skupienie, oszczędzając siły podczas walki. Jeśli zakończysz swoją <strong>Turę</strong> z niewykorzystaną Akcją, zyskujesz <strong>+1 Skupienia</strong>.</p>"
                 },
                 "Healer": {
