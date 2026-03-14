@@ -1886,6 +1886,9 @@
                     "description": "<p>You attempt to physically restrain or subdue an opponent. Perform a <strong>Athletics</strong> skill attack against an adjacent target. If successful, both you and your target are @Condition[restrained] for 1 Round.</p>",
                     "effects": [
                         {
+                            "name": "Grappled"
+                        },
+                        {
                             "name": "Grappling"
                         }
                     ]

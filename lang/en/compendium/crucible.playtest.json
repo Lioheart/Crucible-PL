@@ -63,13 +63,16 @@
             },
             "macros": {
                 "Recover": {
-                    "name": "Recover"
+                    "name": "Recover",
+                    "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
                 },
                 "Toggle Talent Tree": {
-                    "name": "Toggle Talent Tree"
+                    "name": "Toggle Talent Tree",
+                    "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
                 },
                 "Full Rest": {
-                    "name": "Full Rest"
+                    "name": "Full Rest",
+                    "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
                 }
             },
             "actors": {

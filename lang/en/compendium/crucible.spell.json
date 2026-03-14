@@ -211,10 +211,10 @@
         }
     },
     "mapping": {
-        "description": "system.description",
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
-        }
+        },
+        "description": "system.description"
     }
 }
