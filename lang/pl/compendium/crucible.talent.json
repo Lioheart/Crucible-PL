@@ -530,7 +530,7 @@
             }
         },
         "Dread Lord": {
-            "name": "Władca Strachu",
+            "name": "Władca Grozy",
             "description": "<p>Na polu bitwy emanujesz przerażającą aurą, która wystawia na próbę morale pobliskich wrogów, którzy cię widzą, łamiąc determinację tych o słabej woli.</p>",
             "actions": {
                 "Formidable Presence": {
