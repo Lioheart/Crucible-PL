@@ -96,19 +96,19 @@
         },
         "Arcana Adept": {
             "name": "Adept arkanów",
-            "description": "<p>Otrzymujesz rangę <strong>Znawca</strong> w umiejętności <strong>Arkana</strong>, zapewniającą <strong>premię +2 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Znawca</strong> w umiejętności <strong>Arkany</strong>, zapewniającą <strong>premię +2 do umiejętności</strong>.</p>"
         },
         "Arcana Journeyman": {
             "name": "Czeladnik arkan",
-            "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Arkana</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Arkany</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
         },
         "Arcana Master": {
             "name": "Mistrz arkan",
-            "description": "<p>Otrzymujesz rangę <strong>Mistrz</strong> w umiejętności <strong>Arkana</strong>, zapewniającą <strong>premię +3 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Mistrz</strong> w umiejętności <strong>Arkany</strong>, zapewniającą <strong>premię +3 do umiejętności</strong>.</p>"
         },
         "Arcana Novice": {
             "name": "Nowicjusz arkan",
-            "description": "<p>Twoja edukacja obejmowała podstawy metafizyki i teorii magii, relacje między runami, przeciwstawną naturę porządku i chaosu oraz pobieżne wprowadzenie do istot duchowych, w tym najczęściej znanych deifikowanych i demonizowanych postaci kultu. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Arkana</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Twoja podstawowa znajomość zasad gramatyki magii wystarcza, aby rozpoznać, jakiej mniejszej runy używa zaklęcie lub rytuał, a także gestu (jeśli nie fleksji) użytego w tym celu. Potrafisz rozpoznać, czy dana postać jest pod większym wpływem chaosu, czy porządku, i dostrzec oznaki obecności powszechnych duchów (zarówno mniejszych, jak i większych). Wiesz wystarczająco dużo o zwyczajach religijnych, aby komunikować się z osobami czczącymi konkretnego ducha lub bóstwo bez narażania się na kompromitację.</p>"
+            "description": "<p>Twoja edukacja obejmowała podstawy metafizyki i teorii magii, relacje między runami, przeciwstawną naturę porządku i chaosu oraz pobieżne wprowadzenie do istot duchowych, w tym najczęściej znanych deifikowanych i demonizowanych postaci kultu. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Arkany</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Twoja podstawowa znajomość zasad gramatyki magii wystarcza, aby rozpoznać, jakiej mniejszej runy używa zaklęcie lub rytuał, a także gestu (jeśli nie fleksji) użytego w tym celu. Potrafisz rozpoznać, czy dana postać jest pod większym wpływem chaosu, czy porządku, i dostrzec oznaki obecności powszechnych duchów (zarówno mniejszych, jak i większych). Wiesz wystarczająco dużo o zwyczajach religijnych, aby komunikować się z osobami czczącymi konkretnego ducha lub bóstwo bez narażania się na kompromitację.</p>"
         },
         "Arcane Archer": {
             "name": "Tajemny łucznik",
