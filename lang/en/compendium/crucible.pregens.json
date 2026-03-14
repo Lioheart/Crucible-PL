@@ -23,7 +23,8 @@
             "name": "Agnath",
             "items": {
                 "Splint Mail": {
-                    "name": "Splint Mail"
+                    "name": "Splint Mail",
+                    "description": "<p>A layer of vertical metal strips riveted to a backing of leather or mail, splint armor offers strong limb protection while sacrificing some flexibility.</p>"
                 },
                 "Cadence": {
                     "name": "Cadence",
@@ -76,7 +77,8 @@
                     "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
                 },
                 "Glaive": {
-                    "name": "Glaive"
+                    "name": "Glaive",
+                    "description": "<p>A polearm with a curved, sword-like blade affixed to the end of a long shaft, the glaive sweeps through foes in broad, arcing strikes.</p>"
                 },
                 "Athletics Novice": {
                     "name": "Athletics Novice",
@@ -156,7 +158,8 @@
                     }
                 },
                 "Greatsword": {
-                    "name": "Greatsword"
+                    "name": "Greatsword",
+                    "description": "<p>Longer and heavier than a standard longsword, the greatsword is a two-handed blade meant for powerful sweeping strikes, its length commanding both reach and awe.</p>"
                 }
             },
             "ancestry": {
@@ -235,10 +238,12 @@
             "name": "Belladonna",
             "items": {
                 "Dagger": {
-                    "name": "Dagger"
+                    "name": "Dagger",
+                    "description": "<p>Small, swift, and deadly, the dagger slips between ribs or into gaps in armor with ease, its wicked edge favored by assassins, thieves, and those who prefer a silent kill.</p>"
                 },
                 "Studded Leather Armor": {
-                    "name": "Studded Leather Armor"
+                    "name": "Studded Leather Armor",
+                    "description": "<p>A base of leather reinforced with small metal studs or riveted plates, this armor strikes a balance between mobility and modest protection against slashes.</p>"
                 },
                 "Diversionist": {
                     "name": "Diversionist",
@@ -353,10 +358,12 @@
                     "description": "<p>You are a liar and manipulator, and deception is a skill you've practiced. You gain the <strong>Novice</strong> rank in the <strong>Deception </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to construct basic lies and cons, and the telltale signs that tend to give away poor liars. You can construct a basic forgery for most common documents, but they won't stand up to any measure of close scrutiny.</p>"
                 },
                 "Stiletto": {
-                    "name": "Stiletto"
+                    "name": "Stiletto",
+                    "description": "<p>Thin, tapered, and made for piercing, the stiletto is a killer’s weapon — designed to slide between ribs or gaps in armor and leave barely a trace.</p>"
                 },
                 "Healing Elixir": {
                     "name": "Healing Elixir",
+                    "description": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>",
                     "actions": {
                         "Healing Elixir": {
                             "name": "Healing Elixir",
@@ -366,6 +373,7 @@
                 },
                 "Antitoxin": {
                     "name": "Antitoxin",
+                    "description": "<p>A slender phial that contains a slightly golden-colored liquid. It smells foul, but contains the alchemical agents necessary to neutralize a wide variety of toxins.</p>",
                     "actions": {
                         "Antitoxin": {
                             "name": "Antitoxin",
@@ -375,6 +383,7 @@
                 },
                 "Poison Vial": {
                     "name": "Poison Vial",
+                    "description": "<p>This small vial contains murky liquid that is noticeably thicker than water. It emits a disconcerting scent that evokes a sense of wrongness.</p>",
                     "actions": {
                         "Ingest Poison": {
                             "name": "Ingest Poison",
@@ -620,7 +629,8 @@
             "name": "Duurath",
             "items": {
                 "Scale Mail": {
-                    "name": "Scale Mail"
+                    "name": "Scale Mail",
+                    "description": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
                 },
                 "Intimidator": {
                     "name": "Intimidator",
@@ -789,10 +799,12 @@
                     "description": "<p>You have a fluent education in the use of shields in combat. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Shield </strong>category.</p>"
                 },
                 "Crowbar": {
-                    "name": "Crowbar"
+                    "name": "Crowbar",
+                    "description": "<p>A slightly curved bar of strong metal featuring a hook with a flattened head on one end. Used to apply leverage, prying one object loose of another.</p>"
                 },
                 "Healing Elixir": {
                     "name": "Healing Elixir",
+                    "description": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>",
                     "actions": {
                         "Healing Elixir": {
                             "name": "Healing Elixir",
@@ -801,7 +813,8 @@
                     }
                 },
                 "Expanded Toolbelt": {
-                    "name": "Expanded Toolbelt"
+                    "name": "Expanded Toolbelt",
+                    "description": "<p>An expanded toolbelt in the form of a utility belt, a bandolier, or an array of pockets stitched into your equipment.</p><p>This item provides a number of additional Toolbelt slots according to its quality tier:</p><ul><li><p><strong>Standard</strong>: +1 Toolbelt slot</p></li><li><p><strong>Fine</strong>: +2 Toolbelt slots</p></li><li><p><strong>Superior</strong>: +3 Toolbelt slots</p></li><li><p><strong>Masterwork</strong>: +4 Toolbelt slots</p></li></ul>"
                 },
                 "Rune: Kinesis": {
                     "name": "Rune: Kinesis",
@@ -818,10 +831,12 @@
                     "description": "<p>Your mastery of the arcane makes you more resilient to elemental and spiritual harm. You gain a bonus to <strong>Resistance</strong> equal to half your Wisdom for each Elemental or Spiritual damage type where you know the Arcane Rune attuned to that damage type.</p><p>When you use the <strong>Ward</strong> gesture, the Resistance provided by your Ward also increases by half your Wisdom.</p>"
                 },
                 "Heater Shield": {
-                    "name": "Heater Shield"
+                    "name": "Heater Shield",
+                    "description": "<p>Named for its iron shape resembling the base of a clothes iron, the heater shield offers a balance of coverage and mobility.</p>"
                 },
                 "War Hammer": {
-                    "name": "War Hammer"
+                    "name": "War Hammer",
+                    "description": "<p>Built to crush plate and shatter shields, the war hammer features a heavy, blunt head mounted atop a reinforced haft, delivering ruin in the hands of those who favor power over finesse.</p>"
                 },
                 "Shield Bash": {
                     "name": "Shield Bash",
@@ -852,13 +867,16 @@
             "name": "Eliorwen",
             "items": {
                 "Longbow": {
-                    "name": "Longbow"
+                    "name": "Longbow",
+                    "description": "<p>A tall, self-bow often taller than the archer who draws it, the longbow requires great strength and years of practice to master, sending arrows with deadly force across the battlefield.</p>"
                 },
                 "Scimitar": {
-                    "name": "Scimitar"
+                    "name": "Scimitar",
+                    "description": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
                 },
                 "Studded Leather Armor": {
-                    "name": "Studded Leather Armor"
+                    "name": "Studded Leather Armor",
+                    "description": "<p>A base of leather reinforced with small metal studs or riveted plates, this armor strikes a balance between mobility and modest protection against slashes.</p>"
                 },
                 "Pinning Shot": {
                     "name": "Pinning Shot",
@@ -990,6 +1008,7 @@
                 },
                 "Blast Flask": {
                     "name": "Blast Flask",
+                    "description": "<p>A flask filled with a reddish liquid explodes when it breaks open, creating a small explosive fire that quickly dissipates.</p>\n\n<p></p><p>Primarily used to break apart large pieces of ore, these alchemical flasks pack a concentrated punch. If combined in a large enough quantity, they can also be used to create a chain reaction that results in larger explosions.</p>",
                     "actions": {
                         "Blast Flask": {
                             "name": "Blast Flask",
@@ -1068,13 +1087,16 @@
             "name": "Fizzit",
             "items": {
                 "Ring Mail": {
-                    "name": "Ring Mail"
+                    "name": "Ring Mail",
+                    "description": "<p>Ring mail features metal rings sewn onto a padded base, offering a compromise of less protection than heavier mail options in exchange for greater mobility.</p>"
                 },
                 "Arcane Orb": {
-                    "name": "Arcane Orb"
+                    "name": "Arcane Orb",
+                    "description": "<p>A sphere of crystal or glass that — in the palm of a capable spellcaster — becomes a conduit for their power. It gathers voltaic energy within its orb before blasting a target with electrifying force.</p>"
                 },
                 "Grimoire": {
-                    "name": "Grimoire"
+                    "name": "Grimoire",
+                    "description": "<p>This heavy tome is used as a repository of knowledge as well as an implement for spellcraft. In the hands of an arcane practitioner, it can project concussive blasts of force towards a target.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
@@ -1428,10 +1450,12 @@
             "name": "Kagura",
             "items": {
                 "Ice Staff": {
-                    "name": "Ice Staff"
+                    "name": "Ice Staff",
+                    "description": "<p>This mage staff is a talisman to assist with spellcraft or hurl blasts of frigid ice towards enemies.</p>"
                 },
                 "Scale Mail": {
-                    "name": "Scale Mail"
+                    "name": "Scale Mail",
+                    "description": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
@@ -1497,7 +1521,8 @@
                     }
                 },
                 "Healing Elixir Formula": {
-                    "name": "Healing Elixir Formula"
+                    "name": "Healing Elixir Formula",
+                    "description": "A commonly known recipe for creating a basic healing potion.\n\nYou can turn particular healing herbs found in the wild into a bottled elixir using Alchemists Tools."
                 },
                 "Versatile Translator": {
                     "name": "Versatile Translator",
@@ -1969,10 +1994,12 @@
             "name": "Ulfen",
             "items": {
                 "Scale Mail": {
-                    "name": "Scale Mail"
+                    "name": "Scale Mail",
+                    "description": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
                 },
                 "Greataxe": {
-                    "name": "Greataxe"
+                    "name": "Greataxe",
+                    "description": "<p>A towering weapon with a broad, often double-bladed head, the greataxe is made for delivering devastating cleaves, hewing men and beasts with terrible force.</p>"
                 },
                 "Intimidator": {
                     "name": "Intimidator",
@@ -2150,7 +2177,8 @@
                     }
                 },
                 "Stiletto": {
-                    "name": "Stiletto"
+                    "name": "Stiletto",
+                    "description": "<p>Thin, tapered, and made for piercing, the stiletto is a killer’s weapon — designed to slide between ribs or gaps in armor and leave barely a trace.</p>"
                 },
                 "Adrenaline Surge": {
                     "name": "Adrenaline Surge",
@@ -2240,10 +2268,12 @@
             "name": "Zarajah",
             "items": {
                 "Flame Staff": {
-                    "name": "Flame Staff"
+                    "name": "Flame Staff",
+                    "description": "<p>This mage staff is a talisman to assist with spellcraft or hurl gouts of arcane flame at enemies.</p>"
                 },
                 "Ring Mail": {
-                    "name": "Ring Mail"
+                    "name": "Ring Mail",
+                    "description": "<p>Ring mail features metal rings sewn onto a padded base, offering a compromise of less protection than heavier mail options in exchange for greater mobility.</p>"
                 },
                 "Inspire Heroism": {
                     "name": "Inspire Heroism",
