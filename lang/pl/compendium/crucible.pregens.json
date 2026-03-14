@@ -191,7 +191,7 @@
             "name": "Nowicjusz arkan"
         },
         "Arcane Archer": {
-            "name": "Łucznik arkan"
+            "name": "Tajemny łucznik"
         },
         "Arcane Orb": {
             "name": "Kula arkan"
@@ -876,7 +876,7 @@
                     }
                 },
                 "Arcane Archer": {
-                    "name": "Łucznik arkan",
+                    "name": "Tajemny łucznik",
                     "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
                 },
                 "Weak Points": {
