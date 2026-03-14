@@ -1952,19 +1952,19 @@
         },
         "Wilderness Adept": {
             "name": "Adept dzikiej przyrody",
-            "description": "<p>Otrzymujesz rangę <strong>Znawca</strong> w umiejętności <strong>Dzika przyroda</strong>, zapewniającą <strong>premię +2 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Znawca</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +2 do umiejętności</strong>.</p>"
         },
         "Wilderness Journeyman": {
             "name": "Czeladnik dzikiej przyrody",
-            "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Dzika przyroda</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
         },
         "Wilderness Master": {
             "name": "Mistrz dzikiej przyrody",
-            "description": "<p>Otrzymujesz rangę <strong>Mistrz</strong> w umiejętności <strong>Dzika przyroda</strong>, zapewniającą <strong>premię +3 do umiejętności</strong>.</p>"
+            "description": "<p>Otrzymujesz rangę <strong>Mistrz</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +3 do umiejętności</strong>.</p>"
         },
         "Wilderness Novice": {
             "name": "Nowicjusz dzikiej przyrody",
-            "description": "<p>Przeszedłeś szkolenie z podstaw przetrwania i poruszania się w dziczy. Otrzymujesz rangę <strong>Nowicjusz</strong> w umiejętności <strong>Dzika przyroda</strong>i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności. </p><p>Wiesz, jak znaleźć i zbudować bezpieczne schronienie przed żywiołami, rozniecić ogień, aby się ogrzać, oraz jak zachować chłód w gorącym otoczeniu. Potrafisz znaleźć bezpieczną wodę pitną w większości miejsc oraz rozpoznać rośliny i zwierzęta, które mogą służyć jako bezpieczne źródło pożywienia.</p>"
+            "description": "<p>Przeszedłeś szkolenie z podstaw przetrwania i poruszania się w dziczy. Otrzymujesz rangę <strong>Nowicjusz</strong> w umiejętności <strong>Dzicz</strong>i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności. </p><p>Wiesz, jak znaleźć i zbudować bezpieczne schronienie przed żywiołami, rozniecić ogień, aby się ogrzać, oraz jak zachować chłód w gorącym otoczeniu. Potrafisz znaleźć bezpieczną wodę pitną w większości miejsc oraz rozpoznać rośliny i zwierzęta, które mogą służyć jako bezpieczne źródło pożywienia.</p>"
         },
         "Wildspeaker": {
             "name": "Dziki mówca",
