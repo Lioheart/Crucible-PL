@@ -111,7 +111,7 @@
             "description": "<p>Twoja edukacja obejmowała podstawy metafizyki i teorii magii, relacje między runami, przeciwstawną naturę porządku i chaosu oraz pobieżne wprowadzenie do istot duchowych, w tym najczęściej znanych deifikowanych i demonizowanych postaci kultu. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Arkana</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Twoja podstawowa znajomość zasad gramatyki magii wystarcza, aby rozpoznać, jakiej mniejszej runy używa zaklęcie lub rytuał, a także gestu (jeśli nie fleksji) użytego w tym celu. Potrafisz rozpoznać, czy dana postać jest pod większym wpływem chaosu, czy porządku, i dostrzec oznaki obecności powszechnych duchów (zarówno mniejszych, jak i większych). Wiesz wystarczająco dużo o zwyczajach religijnych, aby komunikować się z osobami czczącymi konkretnego ducha lub bóstwo bez narażania się na kompromitację.</p>"
         },
         "Arcane Archer": {
-            "name": "Łucznik arkan",
+            "name": "Tajemny łucznik",
             "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armored Efficiency": {
