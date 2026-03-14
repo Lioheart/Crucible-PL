@@ -225,9 +225,9 @@
                     }
                 },
                 "Hammer": {
-                    "name": "Hammer",
+                    "name": "Młot",
                     "tokenName": {
-                        "name": "Hammer"
+                        "name": "Młot"
                     },
                     "items": {
                         "Hand Axe": {
