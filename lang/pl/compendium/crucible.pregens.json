@@ -1548,7 +1548,7 @@
                 },
                 "Mender": {
                     "name": "Uzdrowiciel",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Naprawiana trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Uzdrowienia trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
                 },
                 "Arcana Novice": {
                     "name": "Nowicjusz arkan",
