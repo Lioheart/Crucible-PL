@@ -25,8 +25,8 @@ Hooks.once("init", () => {
 
       for (const action of actions) {
         const translation =
-        translations[action.id] ??
-        translations[action.name];
+          translations[action.id] ??
+          translations[action.name];
 
         if (!translation) continue;
 
@@ -67,17 +67,41 @@ Hooks.once("init", () => {
         if (itemTranslation.description) {
           item.system ??= {};
 
+          // tłumaczenie jako obiekt { public, private }
           if (typeof itemTranslation.description === "object" && itemTranslation.description !== null) {
-            item.system.description ??= {};
+            const currentDescription = item.system.description;
 
-            if (itemTranslation.description.public) {
+            // jeśli aktualny description jest stringiem, zamień go na obiekt
+            if (typeof currentDescription === "string") {
+              item.system.description = {
+                public: currentDescription,
+                private: ""
+              };
+            }
+
+            // jeśli description nie istnieje albo jest czymś dziwnym, zainicjalizuj jako obiekt
+            if (
+              !item.system.description ||
+              typeof item.system.description !== "object" ||
+              Array.isArray(item.system.description)
+            ) {
+              item.system.description = {
+                public: "",
+                private: ""
+              };
+            }
+
+            if (itemTranslation.description.public !== undefined) {
               item.system.description.public = itemTranslation.description.public;
             }
 
-            if (itemTranslation.description.private) {
+            if (itemTranslation.description.private !== undefined) {
               item.system.description.private = itemTranslation.description.private;
             }
-          } else {
+          }
+
+          // tłumaczenie jako zwykły string
+          else {
             item.system.description = itemTranslation.description;
           }
         }
