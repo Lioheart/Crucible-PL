@@ -1125,7 +1125,7 @@
             "description": "<p>Posiadasz podstawową wiedzę z zakresu anatomii, fizjologii i medycyny. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Medycyna</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Nauczyłeś się podstaw leczenia typowych ran i chorób oraz prowadzisz listę znanych związków alchemicznych i ziołowych, które można stosować w leczeniu określonych schorzeń. Po krótkim zbadaniu osoby rannej, chorej lub cierpiącej na inne dolegliwości jesteś w stanie postawić podstawową diagnozę i zastosować odpowiednie leczenie.</p>"
         },
         "Mender": {
-            "name": "Naprawiacz",
+            "name": "Uzdrowiciel",
             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Naprawiana trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
         },
         "Mental Fortress": {
