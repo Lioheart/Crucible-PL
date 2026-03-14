@@ -111,7 +111,7 @@
             "description": "<p>Twoja edukacja obejmowała podstawy metafizyki i teorii magii, relacje między runami, przeciwstawną naturę porządku i chaosu oraz pobieżne wprowadzenie do istot duchowych, w tym najczęściej znanych deifikowanych i demonizowanych postaci kultu. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Arkana</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Twoja podstawowa znajomość zasad gramatyki magii wystarcza, aby rozpoznać, jakiej mniejszej runy używa zaklęcie lub rytuał, a także gestu (jeśli nie fleksji) użytego w tym celu. Potrafisz rozpoznać, czy dana postać jest pod większym wpływem chaosu, czy porządku, i dostrzec oznaki obecności powszechnych duchów (zarówno mniejszych, jak i większych). Wiesz wystarczająco dużo o zwyczajach religijnych, aby komunikować się z osobami czczącymi konkretnego ducha lub bóstwo bez narażania się na kompromitację.</p>"
         },
         "Arcane Archer": {
-            "name": "Łucznik arkan",
+            "name": "Tajemny łucznik",
             "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armored Efficiency": {
@@ -290,7 +290,7 @@
             "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
         },
         "Cadence": {
-            "name": "Rytm",
+            "name": "Kadencja",
             "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>Uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
         },
         "Carefree": {
@@ -356,7 +356,7 @@
             "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
         },
         "Conserve Effort": {
-            "name": "Oszczędność wysiłku",
+            "name": "Oszczędzanie wysiłku",
             "description": "<p>Znajdujesz równowagę i skupienie, oszczędzając siły podczas walki. Jeśli zakończysz swoją <strong>Turę</strong> z niewykorzystaną Akcją, zyskujesz <strong>+1 Skupienia</strong>.</p>"
         },
         "Control Proficiency": {
@@ -530,7 +530,7 @@
             }
         },
         "Dread Lord": {
-            "name": "Władca Strachu",
+            "name": "Władca Grozy",
             "description": "<p>Na polu bitwy emanujesz przerażającą aurą, która wystawia na próbę morale pobliskich wrogów, którzy cię widzą, łamiąc determinację tych o słabej woli.</p>",
             "actions": {
                 "Formidable Presence": {
@@ -1125,8 +1125,8 @@
             "description": "<p>Posiadasz podstawową wiedzę z zakresu anatomii, fizjologii i medycyny. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Medycyna</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Nauczyłeś się podstaw leczenia typowych ran i chorób oraz prowadzisz listę znanych związków alchemicznych i ziołowych, które można stosować w leczeniu określonych schorzeń. Po krótkim zbadaniu osoby rannej, chorej lub cierpiącej na inne dolegliwości jesteś w stanie postawić podstawową diagnozę i zastosować odpowiednie leczenie.</p>"
         },
         "Mender": {
-            "name": "Naprawiacz",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Naprawiana trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+            "name": "Uzdrowiciel",
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Uzdrowienia trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Twierdza umysłu",
@@ -1290,11 +1290,11 @@
             "description": "<p>Możesz zastosować Truciznę do broni zadającej obrażenia cięte lub kłute. Zadajesz dodatkowe +2 obrażenia za każdym razem, gdy zadajesz obrażenia Trucizną, a twoje uderzenia powodują stan <strong>Zatrucia</strong> przy Trafieniach krytycznych, które zadają obrażenia Zdrowiu.</p>",
             "actions": {
                 "Poison Blades": {
-                    "name": "Trujące ostrza",
+                    "name": "Zatrute ostrza",
                     "description": "<p>Zręcznie smarujesz ostrza toksycznymi olejami alchemicznymi, które nakładają stan Zatrucia przy Trafieniach krytycznych.</p>",
                     "effects": [
                         {
-                            "name": "Trujące ostrza"
+                            "name": "Zatrute ostrza"
                         }
                     ]
                 }
