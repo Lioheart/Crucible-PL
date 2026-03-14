@@ -303,7 +303,7 @@
             "actions": {
                 "Medicinal Compound": {
                     "name": "Preparat leczniczy",
-                    "description": "<p>Przeszukujesz swoje zapasy medyczne, pośpiesznie łącząc wszystko, co masz pod ręką, aby opatrzyć rany ofiary lub uspokoić jej umysł. Wykonaj <strong>test Medycyny</strong>.</p><p>Próba jest kontrowana przez wyższą z wartości: <strong>progu Leczenia</strong> lub <strong>progu Otrząśnięcia</strong> celu. Jeśli próba się powiedzie, cel natychmiast odzyskuje zarówno Zdrowie, jak i Morale, a także połowę tej wartości na początku każdej z kolejnych 3 tur.</p>",
+                    "description": "<p>Przeszukujesz swoje zapasy medyczne, pośpiesznie łącząc wszystko, co masz pod ręką, aby opatrzyć rany ofiary lub uspokoić jej umysł. Wykonaj <strong>test Medycyny</strong>.</p><p>Próba jest kontrowana przez wyższą z wartości: <strong>progu Leczenia</strong> lub <strong>progu Mobylizacji</strong> celu. Jeśli próba się powiedzie, cel natychmiast odzyskuje zarówno Zdrowie, jak i Morale, a także połowę tej wartości na początku każdej z kolejnych 3 tur.</p>",
                     "effects": [
                         {
                             "name": "Preparat leczniczy"
