@@ -14,7 +14,7 @@
         "Flasks": "Fiolki",
         "Heavy": "Ciężka",
         "Jewelry": "Biżuteria",
-        "Wilderness": "Dzika przyroda",
+        "Wilderness": "Dzicz",
         "Ingredients": "Składniki",
         "Light": "Lekka",
         "Weapons": "Bronie",
@@ -1122,10 +1122,10 @@
         }
     },
     "mapping": {
-        "description": "system.description",
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
-        }
+        },
+        "description": "system.description"
     }
 }
