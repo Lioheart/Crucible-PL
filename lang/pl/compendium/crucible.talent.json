@@ -665,7 +665,7 @@
             }
         },
         "Fletching Journeyman": {
-            "name": "Czeladnik brzechwiarstwa",
+            "name": "Czeladnik łuczarstwa",
             "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie umiejętności Brzechwiarstwa i z czasem możesz opanować bardziej zaawansowane techniki łucznicze oraz opierzania strzał.</p><p>Podstawowe właściwości większości popularnych komponentów opierzania strzał są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby prawidłowo obsługiwać rzadsze schematy i komponenty.</p>"
         },
         "Fletching Novice": {
