@@ -1290,11 +1290,11 @@
             "description": "<p>Możesz zastosować Truciznę do broni zadającej obrażenia cięte lub kłute. Zadajesz dodatkowe +2 obrażenia za każdym razem, gdy zadajesz obrażenia Trucizną, a twoje uderzenia powodują stan <strong>Zatrucia</strong> przy Trafieniach krytycznych, które zadają obrażenia Zdrowiu.</p>",
             "actions": {
                 "Poison Blades": {
-                    "name": "Trujące ostrza",
+                    "name": "Zatrute ostrza",
                     "description": "<p>Zręcznie smarujesz ostrza toksycznymi olejami alchemicznymi, które nakładają stan Zatrucia przy Trafieniach krytycznych.</p>",
                     "effects": [
                         {
-                            "name": "Trujące ostrza"
+                            "name": "Zatrute ostrza"
                         }
                     ]
                 }
