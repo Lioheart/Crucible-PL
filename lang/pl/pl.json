@@ -762,7 +762,7 @@
 "ACTION.TagProjectile": "Miotany",
 "ACTION.TagProjectileTooltip": "Ta akcja wymaga użycia broni miotającej.",
 "ACTION.TagRallying": "Otrząśnięcie",
-"ACTION.TagRallyingTooltip": "Ta akcja zapewnia przywrócenie poprzez sprawdzenie progu Szaleństwa sojusznika.",
+"ACTION.TagRallyingTooltip": "Ta akcja zapewnia przywrócenie poprzez sprawdzenie progu Obłędu sojusznika.",
 "ACTION.TagRanged": "Dystansowy",
 "ACTION.TagRangedTooltip": "Wykonanie tej akcji wymaga użycia broni dystansowej.",
 "ACTION.TagReaction": "Reakcja",
@@ -770,7 +770,7 @@
 "ACTION.TagReload": "Przeładowanie",
 "ACTION.TagReloadTooltip": "Ta akcja powoduje przeładowanie broni dystansowej, która wymaga przeładowania.",
 "ACTION.TagSevere": "Ciężki",
-"ACTION.TagSevereTooltip": "Jeśli cel tej akcji posiada zasoby Ran i Szaleństwa, akcja ta zadaje bezpośrednie obrażenia tym zasobom, niezależnie od jego Zdrowia lub Morale.",
+"ACTION.TagSevereTooltip": "Jeśli cel tej akcji posiada zasoby Ran i Obłędu, akcja ta zadaje bezpośrednie obrażenia tym zasobom, niezależnie od jego Zdrowia lub Morale.",
 "ACTION.TagShield": "Tarcza",
 "ACTION.TagShieldTooltip": "Wykonanie tej akcji wymaga użycia tarczy.",
 "ACTION.TagSpell": "Zaklęcie",
@@ -1107,13 +1107,13 @@
 "DEFENSES.Willpower": "Wola",
 "DEFENSES.Physical": "Fizyczne",
 "DEFENSES.Wounds": "Rany",
-"DEFENSES.Madness": "Szaleństwo",
+"DEFENSES.Madness": "Obłęd",
 "DEFENSES.TOOLTIPS": {
   "Fortitude": "{base} + ((Siła + Mądrość) / 4)",
   "Willpower": "{base} + ((Wytrzymałość + Prezencja) / 4)",
   "Reflex": "{base} + ((Zręczność + Intelekt) / 4)",
   "Wounds": "{base} + (Rany / 10)",
-  "Madness": "{base} + (Szaleństwo / 10)"
+  "Madness": "{base} + (Obłęd / 10)"
 },
 
 "DICE.DIFFICULTIES": {
@@ -1455,7 +1455,7 @@
   "Health": "Zdrowie",
   "Wounds": "Rany",
   "Morale": "Morale",
-  "Madness": "Szaleństwo",
+  "Madness": "Obłęd",
   "Action": "Akcja",
   "Focus": "Skupienie",
   "Heroism": "Heroizm",
