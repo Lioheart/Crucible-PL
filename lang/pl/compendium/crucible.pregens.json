@@ -982,7 +982,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Wstrząśnięty trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
@@ -1215,7 +1215,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Wstrząśnięty trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
                 },
                 "Mesmer": {
                     "name": "Hipnotyk",
