@@ -303,7 +303,7 @@
             "actions": {
                 "Medicinal Compound": {
                     "name": "Preparat leczniczy",
-                    "description": "<p>Przeszukujesz swoje zapasy medyczne, pośpiesznie łącząc wszystko, co masz pod ręką, aby opatrzyć rany ofiary lub uspokoić jej umysł. Wykonaj <strong>test Medycyny</strong>.</p><p>Próba jest kontrowana przez wyższą z wartości: <strong>progu Leczenia</strong> lub <strong>progu Mobylizacji</strong> celu. Jeśli próba się powiedzie, cel natychmiast odzyskuje zarówno Zdrowie, jak i Morale, a także połowę tej wartości na początku każdej z kolejnych 3 tur.</p>",
+                    "description": "<p>Przeszukujesz swoje zapasy medyczne, pośpiesznie łącząc wszystko, co masz pod ręką, aby opatrzyć rany ofiary lub uspokoić jej umysł. Wykonaj <strong>test Medycyny</strong>.</p><p>Próba jest kontrowana przez wyższą z wartości: <strong>progu Leczenia</strong> lub <strong>progu Mobilizacji</strong> celu. Jeśli próba się powiedzie, cel natychmiast odzyskuje zarówno Zdrowie, jak i Morale, a także połowę tej wartości na początku każdej z kolejnych 3 tur.</p>",
                     "effects": [
                         {
                             "name": "Preparat leczniczy"
@@ -1819,7 +1819,7 @@
             "actions": {
                 "Refocus": {
                     "name": "Ponowne skupienie",
-                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Otrząśnięcia</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                 }
             }
         },
