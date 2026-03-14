@@ -1,0 +1,375 @@
+{
+    "label": "Test gry",
+    "entries": {
+        "Playtest 1 - The Ring of Valor": {
+            "name": "Test gry 1 – Pierścień Męstwa",
+            "caption": "Sprawdź swoje umiejętności w Pierścieniu Męstwa, pierwszym dostępnym teście gry Crucible.",
+            "description": "<p><em>Pierścień Męstwa</em> jest przewodnikiem wprowadzającym do rozwoju postaci i mechaniki walki w Crucible, w którym gracze wcielają się w rolę drużyny gladiatorów stawiających czoła serii coraz trudniejszych wyzwań.</p>",
+            "folders": {
+                "Crucible Playtest": "Test gry Crucible",
+                "The Ring of Valor": "Pierścień Męstwa",
+                "Day 1": "Dzień 1",
+                "Day 2": "Dzień 2",
+                "Day 3": "Dzień 3",
+                "Day 4": "Dzień 4",
+                "Day 5": "Dzień 5",
+                "Pregenerated Heroes": "Wstępnie wygenerowani bohaterowie",
+                "Level 1": "Poziom 1",
+                "Level 6": "Poziom 6"
+            },
+            "journals": {
+                "Playtest One: The Ring of Valor": {
+                    "name": "Test gry nr 1: Pierścień Męstwa",
+                    "pages": {
+                        "Introduction": {
+                            "name": "Wprowadzenie",
+                            "text": "<p><strong>Test gry: Pierścień Męstwa </strong>to wprowadzenie do rozwoju postaci oraz mechanik walki w Crucible, które umieszcza graczy w roli drużyny gladiatorów mierzącej się z serią wyzwań na Arenie Pierścienia Męstwa.</p><p>Gracze mogą albo stworzyć własne postacie od podstaw, postępując zgodnie z procesem @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6]{Tworzenie Postaci} (zalecane), albo skorzystać z gotowych postaci na 1. poziomie dostępnych w pakiecie kompendium <strong>Gotowi Bohaterowie</strong>.</p><p>To wyzwanie zostało zaprojektowane i zbalansowane dla drużyny czterech postaci graczy, choć zachęcamy również do testowania z mniejszą lub większą drużyną. Poziom trudności wyzwań można dostosować poprzez manipulowanie poziomem zagrożenia @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Przeciwników}.</p><p>Pierścień Męstwa składa się z sześciu bitew, po jednej każdego dnia, podczas których drużyna staje naprzeciw coraz bardziej niebezpiecznych przeciwników, aż do finałowego starcia z panującymi mistrzami — ostatnią grupą bohaterów, która pokonała arenę. Po każdym starciu drużyna awansuje na kolejny poziom przed następną próbą. Każda bitwa została zaprojektowana tak, aby wprowadzać nowe mechaniki rozgrywki oraz dawać okazję do przetestowania nowych zdolności zdobytych dzięki awansowi na wyższy poziom.</p><h2 class=\"divider\">Przekazywanie opinii</h2><p>Jeśli przetestujesz Crucible i rozegrasz Pierścień Męstwa, prosimy o pomoc poprzez poświęcenie kilku chwil na @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Przekazanie opinii} na kanale <strong>#crucible</strong> naszego społecznościowego serwera Discord.</p><h2 class=\"divider\">W kwestii porażki</h2><p>Zwykle w Crucible porażka — czy to przez <strong>Szaleństwo</strong>, czy przez <strong>Śmierć</strong> — oznaczałaby koniec drogi postaci. Jednak w przypadku tego wstępnego playtestu zalecamy, abyś jako Mistrz Gry przyjął bardziej elastyczne podejście.</p><p>W celu przetestowania systemu i zebrania użytecznych opinii rekomendujemy, aby drużyna, która poniesie porażkę, mogła ponownie spróbować tego samego wyzwania aż do osiągnięcia sukcesu LUB aby mogła przejść do następnego wyzwania niezależnie od wyniku, jeśli któreś z codziennych wyzwań okaże się zbyt trudne do pokonania.</p>"
+                        },
+                        "Day One - The Feral Scramble": {
+                            "name": "Dzień pierwszy — Zdziczałe starcie",
+                            "text": "<p>W wyzwaniu Dnia Pierwszego 4 bohaterów na 1. poziomie staje do walki z watahą rozwścieczonych bestii:</p><ul><li><p>4x @UUID[Actor.tqLT327VnrBXrLtj]{Huiana}<strong> </strong>(Sługus poziomu ½)</p></li><li><p>4x @UUID[Actor.owg68yqumk7KxV9B]{Baizaz}<strong> </strong>(Sługus poziomu ½)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 1 × 4 = 4</p><p><strong>Zagrożenie przeciwników</strong>: ⅓ × 8 = 2.66</p><p><strong>Trudność starcia</strong>: Trudne</p><h2 class=\"divider\">Wprowadzenie</h2><p>Drużyna wychodzi na piasek i znajduje się na dużej arenie otoczonej trybunami wypełnionymi wiwatującym tłumem. Komentator obserwuje wydarzenia z loży górującej nad areną, gdzie zasiada również właściciel areny. Głos komentatora jest wzmacniany magią i niesie się po całej arenie.</p><blockquote><p>Znajdujemy się w pierwszym dniu Wielkiej Wystawy na Arenie Pierścienia Męstwa, a tłum już szaleje! Pierwszy pojedynek dnia zaraz się rozpocznie, a gdy nowicjusze po raz pierwszy stawiają stopę na piasku, publiczność wyraźnie nie może się doczekać, aby zobaczyć, jak sobie poradzą. Rozgardiasz zawsze jest ulubieńcem publiczności — czy nowicjusze przetrwają i zatriumfują w starciu z tymi wygłodniałymi dzikimi bestiami?!</p></blockquote><p>Drużyna otrzymuje polecenie, aby przejść i stanąć na środku areny. Huiana i Baizaz są ustawione po przeciwnych stronach areny w grupach po 4. Gdy drużyna dotrze na środek, następuje chwila budowania napięcia, po czym bestie wyłaniają się z tuneli po wschodniej i zachodniej stronie mapy. Dodaj wszystkich do spotkania <strong>Walki</strong> i rozpocznij starcie, aby rzucić na <strong>Inicjatywę</strong> dla <strong>Rundy 1</strong>.</p><h2 class=\"divider\">Taktyka</h2><p><strong>Huiana</strong> są drapieżnikami polującymi w stadzie i polegają na taktyce oskrzydlania, aby otoczyć i nękać jednego protagonisty, korzystając ze swojego talentu <strong>Stadny łowca</strong>. To wyzwanie stanowi wprowadzenie do mechanik @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.KGXiKFUWrPgb7wsx]{Ruchu i Flankowanie}.</p><p><strong>Baisaz</strong> dysponują potężnym impetem i siłą podczas szarży. Baisaz zaszarżują na cel, używając swojej zdolności <strong>Szarża Kłami</strong>, a następnie wykorzystają ruch lub pozostałą akcję, aby ponownie oddzielić się od celu i przygotować kolejną szarżę.</p><p>Zarówno Huiana, jak i Baisaz są podatne na obrażenia zadawane w ich @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.FmmADsI9qo1uIIT3]{Morale}. Gdy bestie zostaną złamane, uciekną z areny, wycofując się najbliższym tunelem do katakumb poniżej. To pierwsze wyzwanie może posłużyć jako doświadczenie edukacyjne pokazujące, że demoralizowanie przeciwników jest skuteczną drogą do zwycięstwa.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy wszystkie osiem bestii zostanie pokonanych. Tłum jest zadowolony z występu drużyny, a komentator ogłasza, że drużyna powróci jutro na kolejny pojedynek.</p><p>Gdy będziecie gotowi kontynuować, każda postać powinna użyć akcji <strong>Odzyskiwanie</strong>, aby odzyskać utracone zasoby, a wszystkie postacie powinny zdobyć poziom, awansując na poziom 2, aby zmierzyć się z @UUID[.eQdArtcrGi4wobap]{Dzień Drugi — Młot i Kowadło}.</p>"
+                        },
+                        "Day Two - Hammer and Anvil": {
+                            "name": "Dzień Drugi — Młot i Kowadło",
+                            "text": "<p>W wyzwaniu Dnia Drugiego 4 bohaterów na 2. poziomie staje do walki z gladiatorskim duetem Młota i Kowadła (Wyzwanie 9).</p><ul><li><p>@UUID[Actor.XA9W38PGmAs3ZLDa]{Młot} (Elita poziomu 3)</p></li><li><p>@UUID[Actor.KSoJR8uwT5Qzka7p]{Kowadło} (Elita poziomu 3)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 2 × 4 = 8</p><p><strong>Zagrożenie przeciwników</strong>: 4 × 2 = 8</p><p><strong>Trudność starcia</strong>: Śmiertelna</p><h2 class=\"divider\">Wprowadzenie</h2><blockquote><p>„To piękny dzień na Arenie Męstwa i wygląda na to, że czeka nas prawdziwa uczta. Dzisiejszy pojedynek oznacza powrót zabójczego duetu, gigantów areny, straszliwej dwójki: Młota i Kowadła.”</p><p>Zapowiadający przerywa na chwilę, gdy tłum wybucha okrzykami, po czym kontynuuje: „Cóż za powitanie! Wystarczy posłuchać, jak bardzo fani pragną ponownie zobaczyć tę dwójkę w akcji. Zobaczmy, czy nasi nowi pretendenci sprostają wyzwaniu!”</p></blockquote><p>Drużyna otrzymuje polecenie zebrania się przed tunelem po zachodniej stronie areny. Gdy postacie zajmą pozycje, Młot i Kowadło wychodzą z tunelu po przeciwnej, wschodniej stronie i rozpoczyna się walka.</p><h2 class=\"divider\">Taktyka</h2><p>Młot i Kowadło to para przeciwników walczących jako skoordynowany zespół.</p><p>Taktyka <strong>Kowadła</strong> koncentruje się przede wszystkim na zbliżeniu się do przeciwnika i pochwyceniu go, aby stworzyć okazję do ataku dla Młota. Kowadło użyje zdolności <strong>Rzut Młotem</strong>, aby szybko wprowadzić Młota do walki, a następnie wykorzysta <strong>Zapaśnika</strong>, by unieruchamiać wrogów, oraz <strong>Mocne uderzenie</strong>, aby zadawać potężne ciosy.</p><p><strong>Młot</strong> jest wojownikiem nękającym przeciwników, który wchodzi i wychodzi z walki, szukając okazji do wyprowadzenia niszczycielskiej sekwencji ataków dwoma broniami przy użyciu <strong>Gradu ciosów</strong> albo kombinacji <strong>Uderzenie + Uderzenie z drugiej ręki</strong>. Każdego przeciwnika, który spróbuje się wycofać, Młot powstrzyma przy użyciu <strong>Podcinania</strong>.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy zarówno Młot, jak i Kowadło zostaną pokonani. Tłum jest zadowolony z występu drużyny, a komentator ogłasza, że bohaterowie powrócą jutro na kolejny pojedynek.</p><p>Drużyna otrzymuje chwilę na odpoczynek, użycie akcji <strong>Odzyskiwanie</strong> oraz zdobycie poziomu, awansując na poziom 3, aby zmierzyć się z @UUID[.v5EIDeTtHdQ7Wb5J]{Dzień Trzeci — Szkieletowa Armia}.</p>"
+                        },
+                        "Day Three - The Skeletal Army": {
+                            "name": "Dzień Trzeci — Szkieletowa Armia",
+                            "text": "<p>W trzecim wyzwaniu 4 bohaterów na 3. poziomie staje do walki z nekromantą Orivechem i jego armią szkieletów!</p><ul><li><p>@UUID[Actor.JuobjWohGACVeoyn]{Orivech} (Boss poziomu 3)</p><ul><li><p>Przywołany @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Twór Śmierci} (Sługus poziomu 1)</p></li></ul></li><li><p>6x @UUID[Actor.aQkmEcwfImmdUINF]{Szkieletowy Włócznik} (Sługus poziomu 1)</p></li><li><p>6x @UUID[Actor.7jL3UmgXbqxXKClM]{Szkieletowy Łucznik} (Sługus poziomu 1)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 3 × 4 = 12</p><p><strong>Zagrożenie przeciwników</strong>: 6 + (½ × 6) + (½ × 6) = 12</p><p><strong>Trudność starcia</strong>: Śmiertelna</p><h2 class=\"divider\">Wprowadzenie</h2><p>W tym wyzwaniu drużyna otrzymuje polecenie ustawienia się plecami do klifu po północnej stronie areny.</p><blockquote><p>„Witajcie ponownie — wszyscy i każdy z osobna — na Arenie Męstwa w trzecim dniu naszego pasjonującego ciągu prób! Dziś uczcimy rekonstrukcję jednej z historycznych bitew z naszej przeszłości. Garstka odważnych bohaterów, z plecami przy krawędzi otchłani, staje naprzeciw przerażającego nekromanty Orivecha i jego szkieletowej armii!”</p><p>Tłum ryczy z ekscytacji, gdy Orivech i jego szkieletowi sługusi wychodzą południowymi schodami i wkraczają na arenę.</p></blockquote><p>Orivech i szkielety wychodzą z południowego wejścia i ustawiają się w szyku bojowym, zanim rozpocznie się starcie.</p><h2 class=\"divider\">Taktyka</h2><p>Orivech będzie walczył defensywnie i polegał na swoim legionie szkieletów, aby obezwładniać wrogów. Jako przeciwnik typu Boss Orivech posiada <strong>10 Akcji</strong> na rundę i będzie używał fleksji <strong>Skupienie</strong> przy większości zaklęć, aby oszczędzać <strong>Skupienie</strong>, a pozostałe akcje przeznaczy na <strong>Odzyskiwanie Skupienia</strong>.</p><p>Taktyka Orivecha polega na używaniu gestu <strong>Stworzenie</strong>, aby przywoływać kolejne @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Twory Śmierci}. Dzięki talentowi <strong>Przywoływacz</strong> Orivech może utrzymywać jednocześnie do 3 takich sługusów. Gdy zostanie bezpośrednio zagrożony, użyje fleksji <strong>Odepchnięcie</strong>, aby zmusić przeciwników do cofnięcia się.</p><p>Szkieletowi Łucznicy będą używać <strong>Uderzenia</strong>, aby skoncentrować ogień na celu wskazanym przez Orivecha, wykorzystując <strong>Wymijający strzał</strong> do zmiany pozycji. Szkieletowi Włócznicy ruszą naprzód, aby związać walką przeciwników i zablokować im drogę, próbując przewrócić ich przy pomocy <strong>Podcięcia Nóg</strong>.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy Orivech zostanie pokonany. Gdy nekromanta upadnie, jego szkieletowi sługusi rozpadają się w pył wraz z nim. Tłum jest zadowolony z występu drużyny, a komentator ogłasza, że bohaterowie powrócą jutro na kolejny pojedynek.</p><p>Drużyna otrzymuje chwilę na odpoczynek, użycie akcji Odzyskiwanie oraz zdobycie poziomu, awansując na poziom 4. Wszyscy bohaterowie mogą również zwiększyć jakość swoich używanych broni do poziomu <strong>Dobra</strong>. Po odpoczynku ciąg prób trwa dalej w @UUID[.hEpGF7rbNFVUMm86]{Dzień Czwarty — Koy Rent}.</p>"
+                        },
+                        "Day Four - Koy Rent": {
+                            "name": "Dzień Czwarty — Koy Rent",
+                            "text": "<p>W czwartym wyzwaniu 4 bohaterów na 4. poziomie staje do walki z likantropijnym zagrożeniem — Koy Rentem.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Boss poziomu 7)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 4 × 4 = 16</p><p><strong>Zagrożenie przeciwników</strong>: 14</p><p><strong>Trudność starcia</strong>: Trudne</p><h2 class=\"divider\">Wprowadzenie</h2><p>W tym wyzwaniu drużyna gromadzi się po wschodniej stronie Areny.</p><blockquote><p>„Dzisiejszy pojedynek jest wyjątkowy — zobaczymy powrót emerytowanego mistrza w jednodniowym pokazowym starciu! Drodzy widzowie, znacie go, kochacie go, jest tu, jest tam, jest WSZĘDZIE — Koy Rent! Rent opuścił arenę po ciężkiej kontuzji, żegnany owacją publiczności po zwycięskiej walce. Teraz, gdy wraca do gry, wszyscy zastanawiają się: czy ponownie sięgnie po tytuł mistrza, czy też polegnie w starciu z nowymi pretendentami?”</p></blockquote><p>Koy Rent wchodzi na arenę z zachodniego wejścia i natychmiast rozpoczyna atak.</p><h2 class=\"divider\">Taktyka</h2><p>Koy Rent jest niezwykle groźnym wojownikiem. Jako Boss poziomu 7 z dużymi pulami Zdrowia i Morale drużyna ma niewielkie szanse wytrzymać jego napór w bezpośredniej walce wręcz.</p><p>Rent użyje <strong>Dzikiego Wycia</strong>, aby wywołać stan <strong>Przerażenia</strong>, a następnie szybko skróci dystans, wchodząc w walkę wręcz z możliwie największą liczbą przeciwników. Gdy będzie walczył z pojedynczym celem, użyje <strong>Gradu Ciosów</strong>, aby szybko go obezwładnić nieustanną serią ataków pazurami, zadając dodatkowe obrażenia od krwawienia dzięki talentowi <strong>Krwawiciel</strong>.</p><p>Drużyna nie jest w stanie wytrzymać takiego naporu w walce wręcz i będzie musiała dokładnie przemyśleć, w jaki sposób spowolnić Koy Renta.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy Koy Rent zostanie pokonany. Tłum jest zadowolony z występu drużyny, a komentator ogłasza, że bohaterowie powrócą jutro na kolejny pojedynek.</p><p>Drużyna otrzymuje chwilę na odpoczynek, użycie akcji <strong>Odzyskiwanie</strong> oraz zdobycie poziomu, awansując na poziom 5. Wszyscy bohaterowie mogą również zwiększyć jakość swojego pancerza do poziomu <strong>Dobry</strong>. Następnego dnia drużyna powraca, aby zmierzyć się z @UUID[.sISxZXCLNvpjkY02]{Dzień Piąty — Heroldowie Pustki}.</p>"
+                        },
+                        "Day Five - Void Harbingers": {
+                            "name": "Dzień Piąty — Heroldowie Pustki",
+                            "text": "<p>W tym wyzwaniu 4 bohaterów na 5. poziomie staje do walki z trójką Heroldów Pustki:</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Herold Strachu} (Elita poziomu 4)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Herold Zarazy} (Elita poziomu 4)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Herold Szaleństwa} (Elita poziomu 4)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 4 × 5 = 20</p><p><strong>Zagrożenie przeciwników</strong>: 3 × 6 = 18</p><p><strong>Trudność starcia</strong>: Śmiertelna</p><h2 class=\"divider\">Wprowadzenie</h2><blockquote><p>„Dzisiejszej nocy czeka nas prawdziwa ekscytacja, ponieważ przywoływacze sprowadzili nowe wyzwanie z krain znajdujących się poza mroczną zasłoną! Panie i panowie — z najciemniejszych zakamarków i liminalnych przestrzeni poza granicą rzeczywistości — witajcie na Arenie Męstwa: Heroldowie Pustki!”</p></blockquote><h2 class=\"divider\">Taktyka</h2><p><strong>Herold Strachu</strong> jest mobilnym drapieżnikiem żywiącym się przerażonymi myślami. Będzie używał <strong>Eterycznego Przesunięcia</strong>, aby swobodnie poruszać się po polu walki, oraz <strong>Magicznej Emanacji</strong>, aby wywoływać strach wśród grup przeciwników. Gdy odizoluje przestraszonego wroga, wykona <strong>Uderzenie</strong> swoją Psychiczną Paszczą.</p><p><strong>Herold Zarazy</strong> jest nosicielem choroby, który wywołuje stan <strong>Zarażenia</strong> przy użyciu zdolności <strong>Cios Zarazy</strong>. Ten Herold posiada również zdolności rzucania zaklęć, które wykorzysta do dalszego osłabiania życia i morale przeciwników, atakując grupy wrogów gestem <strong>Impuls</strong> albo pojedyncze cele przy użyciu <strong>Wpływu</strong>.</p><p><strong>Herold Szaleństwa</strong> jest psychicznym drapieżnikiem, który najpierw zbliży się do walki wręcz, a następnie użyje zdolności <strong>Rozszarpanie Umysłu</strong> przeciwko grupom przeciwników albo <strong>Pochłonięcie Myśli</strong> wobec pojedynczego wroga.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy wszyscy trzej Heroldowie zostaną pokonani. Tłum jest zadowolony z występu drużyny, a komentator ogłasza, że bohaterowie powrócą jutro na kolejny pojedynek.</p><p>Drużyna otrzymuje chwilę na odpoczynek, użycie akcji Odzyskiwanie oraz zdobycie poziomu, awansując na poziom 6. Wszyscy bohaterowie mogą również zwiększyć jakość swojego pancerza do poziomu <strong>Dobra</strong>. Następnego dnia drużyna powraca, aby zmierzyć się z @UUID[.UxIXSvvJCdqx2Tar]{Dzień Szósty — Lustrzany Pojedynek}.</p>"
+                        },
+                        "Day Six - Mirror Match": {
+                            "name": "Dzień Szósty — Lustrzany Pojedynek",
+                            "text": "<p>W tym finałowym wyzwaniu 4 bohaterów na 6. poziomie staje twarzą w twarz z rywalizującą drużyną poszukiwaczy przygód, złożoną z 4 bohaterów na 6. poziomie.</p><ul><li><p>@UUID[Actor.iLUfMcYjAbZFY4CJ]{Duurath} (Poziom 6)</p></li><li><p>@UUID[Actor.0crVYYsPvV9KDEJ2]{Belladonna} (Poziom 6)</p></li><li><p>@UUID[Actor.2lvTCCOj4dnBI774]{Eliorwen} (Poziom 6)</p></li><li><p>@UUID[Actor.Il4NDaNBdHNcjJ9d]{Kagura} (Poziom 6)</p></li></ul><p><strong>Zagrożenie protagonistów</strong>: 4 × 6 = 24</p><p><strong>Zagrożenie przeciwników</strong>: 4 × 6 = 24</p><p><strong>Trudność starcia</strong>: Śmiertelna</p><h2 class=\"divider\">Wprowadzenie</h2><blockquote><p>„Cóż, cóż… wasi bohaterowie udowodnili swoją wartość w starciu ze wszystkimi groźnymi przeciwnikami, których ta arena miała do zaoferowania. Nadszedł więc czas, aby zmierzyli się z legendarnymi weteranami i mistrzami z poprzednich zawodów. Przygotujcie się na pojedynek mistrzów!”</p></blockquote><p>To szczególnie trudne wyzwanie, ponieważ cała czwórka przeciwnych bohaterów jest indywidualnie zoptymalizowana i świetnie współpracuje jako drużyna.</p><h2 class=\"divider\">Taktyka</h2><p>Każdy z przeciwników w tym wyzwaniu funkcjonuje jak bohaterski protagonista, posiadający własny zestaw talentów, akcji i wyposażenia.</p><h4>Duurath</h4><p><strong>Duurath</strong> jest niebezpiecznym wojownikiem walczącym w zwarciu, o wysokim <strong>Zaangażowaniu</strong>, silnej obronie fizycznej oraz charakterystycznym talencie <strong>Władca Grozy</strong>, który demoralizuje i przeraża wrogów. Duurath skraca dystans do przeciwników przy użyciu <strong>Szarży Tarczą</strong> i unieruchamia ich dzięki <strong>Kadencji</strong>, aby zadawać wysokie obrażenia, albo wykorzystuje <strong>Kontratak</strong>, aby odpowiedzieć ciosem podczas blokowania nadchodzących uderzeń. Defensywnie Duurath może użyć <strong>Kinetycznej Bariery</strong>, aby chronić się przed wybranym rodzajem obrażeń fizycznych.</p><h4>Belladonna</h4><p><strong>Belladonna</strong> jest przebiegłą i trudną do uchwycenia wojowniczką walczącą w zwarciu, posiadającą talent <strong>Truciciel</strong>. Na początku walki aktywuje <strong>Zatrute Ostrza</strong>. Będzie używać <strong>Odwracania uwagi</strong> przeciwko wrogim czarującym, aby osłabiać ich Skupienie, oraz <strong>Medycyny Bojowej</strong>, aby przywracać zdrowie swoim sojusznikom. Belladonna będzie wyszukiwać bardziej podatnych przeciwników, zbliżając się do walki wręcz przy użyciu <strong>Przewrotu</strong>, jeśli będzie to konieczne, oraz <strong>Gradu Ciosów</strong>, aby szybko zadawać obrażenia i nakładać zatrucie.</p><h4>Eliorwen</h4><p><strong>Eliorwen</strong> jest śmiercionośną łuczniczką, która dzięki talentowi <strong>Tajemny Łucznik</strong> wzmacnia strzały ze swojego długiego łuku zaklęciami błyskawic. Eliorwen zidentyfikuje niebezpiecznego przeciwnika i oznaczy go przy użyciu <strong>Naznaczenia Celu</strong>, aby obniżyć jego obronę wobec niej samej i jej sojuszników. Następnie użyje <strong>Precyzyjnego Strzału</strong> w połączeniu z obniżonym kosztem <strong>Strzały Elektryzującej</strong>, aby zadawać stałe obrażenia z dystansu.</p><h4>Kagura</h4><p><strong>Kagura</strong> jest wszechstronną postacią wspierającą, zdolną leczyć zarówno ciało, jak i umysł swoich sojuszników. Będzie rzucać runę <strong>Życia</strong>, używając gestów <strong>Wpływ</strong>, <strong>Impuls</strong> lub <strong>Promień</strong>, aby wywołać dodatkowe leczenie dzięki swojemu talentowi <strong>Uzdrowiciel</strong>. Kagura potrafi utrzymywać leczenie niemal bez końca dzięki przemyślanemu wykorzystaniu fleksji <strong>Kompozycja</strong> oraz <strong>Oszczędzania Wysiłku</strong>. Kagura unika bezpośredniej konfrontacji i zamiast tego wycofuje się z walki, szukając ochrony u swoich sojuszników.</p><h2 class=\"divider\">Awans</h2><p>Walka kończy się, gdy wszyscy czterej przeciwnicy zostaną pokonani. Tłum jest zachwycony występem drużyny i ogłasza ich wiecznymi mistrzami Areny Męstwa. Na ten moment nie zaplanowano kolejnych wydarzeń na Arenie Męstwa, jednak jeśli chcecie kontynuować testy, zajrzyjcie do @UUID[.aNlzMnfUkwpLrSox]{Dalsze Wyzwania}, aby improwizować nowe starcia dla drużyny.</p>"
+                        },
+                        "Further Challenges": {
+                            "name": "Dalsze wyzwania",
+                            "text": "<p>Dziękujemy za ukończenie <strong>Testów Crucible</strong>. Mamy nadzieję, że Ty i Twoi gracze dobrze bawiliście się podczas testowania systemu. Jeśli chcecie dalej sprawdzać jego możliwości, rekomendujemy następujące wyzwania:</p><ol><li><p>Powtórzcie wyzwanie @UUID[.UxIXSvvJCdqx2Tar]{Dzień Szósty — Lustrzany Pojedynek}, ale z innymi kombinacjami gotowych postaci na 6. poziomie jako przeciwnikami.</p></li><li><p>Stwórzcie własnych @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Przeciwników}, testując wstępny system Taksonomii i Archetypów.</p></li></ol><p>Prosimy również o poświęcenie chwili na @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Przekazanie opinii}, co pomoże nam dalej rozwijać i udoskonalać ten nowy system gry fabularnej.</p>"
+                        }
+                    }
+                }
+            },
+            "scenes": {
+                "Arena of Valor": {
+                    "name": "Arena Waleczności"
+                }
+            },
+            "macros": {
+                "Recover": {
+                    "name": "Odzyskiwanie"
+                },
+                "Toggle Talent Tree": {
+                    "name": "Przełącz drzewko talentów"
+                },
+                "Full Rest": {
+                    "name": "Pełny odpoczynek"
+                }
+            },
+            "actors": {
+                "Baizaz": {
+                    "name": "Baizaz",
+                    "tokenName": {
+                        "name": "Baizaz"
+                    },
+                    "archetype": {
+                        "name": "Bawół",
+                        "description": "<p>Bestie, które walczą, wykorzystując swoją masę, pęd i ostre kły.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Dzik",
+                        "description": "<p>Ssaki o grubej skórze, niebezpiecznych kłach i potężnym, nisko osadzonym środku ciężkości.</p>"
+                    }
+                },
+                "Huiana": {
+                    "name": "Huiana",
+                    "tokenName": {
+                        "name": "Huiana"
+                    },
+                    "archetype": {
+                        "name": "Członek stada",
+                        "description": "Zwierzęta polujące w stadach."
+                    },
+                    "taxonomy": {
+                        "name": "Hiena",
+                        "description": "Ssaki z rodziny hien. Hieny są mięsożernymi drapieżnikami polującymi w stadach, wyposażonymi w potężne szyje i szczęki."
+                    }
+                },
+                "Anvil": {
+                    "name": "Anvil",
+                    "tokenName": {
+                        "name": "Anvil"
+                    },
+                    "archetype": {
+                        "name": "Zapaśnik",
+                        "description": "Wojownicy, którzy specjalizują się w fizycznym obezwładnianiu przeciwników i narażaniu ich na dalsze ataki."
+                    },
+                    "taxonomy": {
+                        "name": "Ogr",
+                        "description": "<p>Potężni olbrzymi, znani ze swojej brutalnej siły i bezpośredniego podejścia do rozwiązywania problemów.</p>"
+                    }
+                },
+                "Hammer": {
+                    "name": "Hammer",
+                    "tokenName": {
+                        "name": "Hammer"
+                    },
+                    "archetype": {
+                        "name": "Harcownik",
+                        "description": "Nieustępliwy i zdeterminowany wojownik walczący w zwarciu, który wykorzystuje połączenie zwinności i siły, aby pokonać przeciwników."
+                    },
+                    "taxonomy": {
+                        "name": "Orcze",
+                        "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
+                    }
+                },
+                "Orivech": {
+                    "name": "Orivech",
+                    "tokenName": {
+                        "name": "Orivech"
+                    },
+                    "archetype": {
+                        "name": "Okultysta",
+                        "description": "Użytkownicy magii, którzy praktykują czary, wykorzystując siły z innego świata i nadprzyrodzone."
+                    },
+                    "taxonomy": {
+                        "name": "Ludzkie",
+                        "description": "<p>Znaleziony wśród niezliczonych warunków i odległych miejsc, urodziłeś się jako człowiek zdolny do ciągłej adaptacji. Wysoki lub niski, szczupły, umięśniony lub krępy – Twój wygląd fizyczny jest niezwykle zróżnicowany. Ludzie są najbardziej znani ze swojej genetycznej predyspozycji do determinacji, a tradycje napędzają ich upartą wolę przetrwania.</p>"
+                    }
+                },
+                "Skeletal Archer": {
+                    "name": "Łucznik szkielet",
+                    "tokenName": {
+                        "name": "Łucznik szkielet"
+                    },
+                    "archetype": {
+                        "name": "Łucznik",
+                        "description": "Wojownicy walczący na odległość, którzy przeszli odpowiednie szkolenie, używają łuków."
+                    },
+                    "taxonomy": {
+                        "name": "Szkielet",
+                        "description": "<p>Nieumarli mieszkańcy z kości i ścięgien.</p>"
+                    }
+                },
+                "Skeletal Spearman": {
+                    "name": "Włócznik szkielet",
+                    "tokenName": {
+                        "name": "Włócznik szkielet"
+                    },
+                    "archetype": {
+                        "name": "Wojownik",
+                        "description": "Wykwalifikowani wojownicy walczący w zwarciu, biegli w posługiwaniu się bronią jednoręczną, tarczą i ciężką zbroją."
+                    },
+                    "taxonomy": {
+                        "name": "Szkielet",
+                        "description": "<p>Nieumarli mieszkańcy z kości i ścięgien.</p>"
+                    }
+                },
+                "Koy Rent": {
+                    "name": "Koy Rent",
+                    "tokenName": {
+                        "name": "Koy Rent"
+                    },
+                    "archetype": {
+                        "name": "Berserker",
+                        "description": "Wojownik napędzany gniewem, który preferuje ataki obiema rękami przy użyciu ciężkiej broni."
+                    },
+                    "taxonomy": {
+                        "name": "Wilkołak",
+                        "description": "<p>Likantropiczni zmiennokształtni, którzy chodzą jako ludzie, ale przyjmują wilczą postać.</p>"
+                    }
+                },
+                "Harbinger of Disease": {
+                    "name": "Herold zarazy",
+                    "tokenName": {
+                        "name": "Herold zarazy"
+                    },
+                    "archetype": {
+                        "name": "Nosiciel plagi",
+                        "description": "<p>Nosiciele zarazy i rozkładu.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Herold",
+                        "description": "<p>Istoty z innego świata, pochodzące z pustki poza granicami.</p>"
+                    }
+                },
+                "Harbinger of Fear": {
+                    "name": "Herold strachu",
+                    "tokenName": {
+                        "name": "Herold strachu"
+                    },
+                    "archetype": {
+                        "name": "Podżegacz strachu",
+                        "description": "<p>Nosiciele terroru i rozpaczy.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Herold",
+                        "description": "<p>Istoty z innego świata, pochodzące z pustki poza granicami.</p>"
+                    }
+                },
+                "Harbinger of Madness": {
+                    "name": "Herold szaleństwa",
+                    "tokenName": {
+                        "name": "Herold szaleństwa"
+                    },
+                    "archetype": {
+                        "name": "Wypaczacz umysłu",
+                        "description": "Potężna istota, która niszczy zdrowie psychiczne tych, którzy ją widzą."
+                    },
+                    "taxonomy": {
+                        "name": "Herold",
+                        "description": "<p>Istoty z innego świata, pochodzące z pustki poza granicami.</p>"
+                    }
+                },
+                "Zarajah": {
+                    "name": "Zarajah",
+                    "tokenName": {
+                        "name": "Zarajah"
+                    },
+                    "ancestry": {
+                        "name": "Diabelne",
+                        "description": "<p>Urodziłeś się z nieoczekiwaną magiczną władzą nad swoim stworzeniem. Twój wygląd fizyczny nosi znamiona, które przesądni ludzie kojarzą z istotami z innych wymiarów – szkarłatna skóra, nieskuteczne skrzydła lub rogi, gadzie oczy. Twoja niechęć do światła i nadprzyrodzona odporność na ogień nie przekonują ludzi, by przestali uważać cię za prawdziwego diabła.</p>"
+                    },
+                    "background": {
+                        "name": "Wykonawca",
+                        "description": "Byłeś wędrownym artystą estradowym. Nauczyłeś się czuć swobodnie podczas różnych imprez towarzyskich, jak grać przed publicznością, upiększać szczegóły swojego występu, aby wywołać określone reakcje emocjonalne."
+                    }
+                },
+                "Agnath": {
+                    "name": "Agnath",
+                    "tokenName": {
+                        "name": "Agnath"
+                    },
+                    "ancestry": {
+                        "name": "Orcze",
+                        "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
+                    },
+                    "background": {
+                        "name": "Żołnierz",
+                        "description": "<p>Byłeś szeregowym członkiem jakiejś organizacji wojskowej. Dyscyplina sprawiła, że przetrwałeś i podkreśliła znaczenie okazywania siły i dominacji nad innymi, a lata spędzone na koniu lub w marszu nauczyły cię, jak radzić sobie w każdym terenie.</p>"
+                    }
+                },
+                "Belladonna": {
+                    "name": "Belladonna",
+                    "tokenName": {
+                        "name": "Belladonna"
+                    },
+                    "ancestry": {
+                        "name": "Ludzkie",
+                        "description": "<p>Znaleziony wśród niezliczonych warunków i odległych miejsc, urodziłeś się jako człowiek zdolny do ciągłej adaptacji. Wysoki lub niski, szczupły, umięśniony lub krępy – Twój wygląd fizyczny jest niezwykle zróżnicowany. Ludzie są najbardziej znani ze swojej genetycznej predyspozycji do determinacji, a tradycje napędzają ich upartą wolę przetrwania.</p>"
+                    },
+                    "background": {
+                        "name": "Ulicznik",
+                        "description": "<p>Niewielu uczy się przetrwać tak jak ty. Twoja edukacja była surowa i oparta na nieufności. Nauczyłeś się obserwować innych, wypatrując oznak niebezpieczeństwa lub nielojalności, unikać zwracania na siebie uwagi, szukać resztek jedzenia na ulicach rozległych miast.</p>"
+                    }
+                },
+                "Duurath": {
+                    "name": "Duurath",
+                    "tokenName": {
+                        "name": "Duurath"
+                    },
+                    "ancestry": {
+                        "name": "Krasnoludzkie",
+                        "description": "<p>Podobnie jak twoi rodzice przed tobą, urodziłeś się z niezłomną wytrzymałością krasnoludów. Twoja krępa budowa ciała i krzepka sylwetka są cechami charakterystycznymi dla ludu zrodzonego z ziemi i kamienia. Odziedziczyłeś fizyczną wytrzymałość, ponieważ w twojej piersi bije serce z kamienia.</p>"
+                    },
+                    "background": {
+                        "name": "Konstabl",
+                        "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
+                    }
+                },
+                "Eliorwen": {
+                    "name": "Eliorwen",
+                    "tokenName": {
+                        "name": "Eliorwen"
+                    },
+                    "ancestry": {
+                        "name": "Elfickie",
+                        "description": "<p>Pełen wdzięku w ruchach i szybki w myśleniu, urodziłeś się jako długowieczny elf. Twoja smukła i zwinna sylwetka oraz wyrzeźbione rysy twarzy są cechami odziedziczonymi po ludziach, dla których elegancja jest sposobem na życie. Twoja skłonność do szybkiego myślenia i precyzyjnych ruchów jest wynikiem ewolucji trwającej setki lat tradycji.</p>"
+                    },
+                    "background": {
+                        "name": "Wędrowiec",
+                        "description": "<p>Twoje życie upływało w ciągłej wędrówce. Nie ma dla Ciebie nic przyjemniejszego niż uczucie jazdy wozem lub na wierzchowcu, obserwowanie nieznanego nieba powoli przesuwającego się nad głową. Nauczyłeś się zwracać baczną uwagę na otoczenie i jego potrzeby, dbać o stworzenia, na których polegasz, i radzić sobie z tym, co uda Ci się znaleźć.</p>"
+                    }
+                },
+                "Fizzit": {
+                    "name": "Fizzit",
+                    "tokenName": {
+                        "name": "Fizzit"
+                    },
+                    "ancestry": {
+                        "name": "Gnomie",
+                        "description": "<p>Twoje narodziny były okazją do hucznych uroczystości. Twoje drobne ciało i delikatne rysy twarzy idą w parze z niemal nadprzyrodzoną skłonnością do odkrywania. Tradycje twojego ludu opierają się na radości życia oraz znaczeniu szybkiego myślenia i działania.</p>"
+                    },
+                    "background": {
+                        "name": "Naukowiec",
+                        "description": "<p>Zawsze najlepiej czułeś się w bibliotece lub sali lekcyjnej. Twoje studia skupiały się na odkrywaniu tajemnic otaczającego Cię świata i niewiele jest przedmiotów teoretycznych, których jeszcze nie znasz.</p>"
+                    }
+                },
+                "Kagura": {
+                    "name": "Kagura",
+                    "tokenName": {
+                        "name": "Kagura"
+                    },
+                    "ancestry": {
+                        "name": "Gigancie",
+                        "description": "<p>Siły żywiołów czuwały nad twoimi narodzinami, obdarzając cię nadprzyrodzoną energią. Twoja potężna sylwetka i muskularna budowa ciała często sprawiają, że inni uważają cię za bezmyślną masę mięśni, ale twój lud znany jest przede wszystkim ze swojej fizycznej wytrzymałości i głębokiej wiedzy. Odziedziczyłeś siłę gór.</p>"
+                    },
+                    "background": {
+                        "name": "Lekarz",
+                        "description": "<p>Byłeś uzdrowicielem lub pracownikiem służby zdrowia. Część swojego życia poświęciłeś na naukę medycyny i masz zdolność dostrzegania chorób u innych. Wiesz, jak leczyć rany i choroby oraz jak rozpoznawać ich przyczyny.</p>"
+                    }
+                },
+                "Ulfen": {
+                    "name": "Ulfen",
+                    "tokenName": {
+                        "name": "Ulfen"
+                    },
+                    "ancestry": {
+                        "name": "Ludzkie",
+                        "description": "<p>Znaleziony wśród niezliczonych warunków i odległych miejsc, urodziłeś się jako człowiek zdolny do ciągłej adaptacji. Wysoki lub niski, szczupły, umięśniony lub krępy – Twój wygląd fizyczny jest niezwykle zróżnicowany. Ludzie są najbardziej znani ze swojej genetycznej predyspozycji do determinacji, a tradycje napędzają ich upartą wolę przetrwania.</p>"
+                    },
+                    "background": {
+                        "name": "Konstabl",
+                        "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
+                    }
+                }
+            }
+        }
+    },
+    "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        },
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "nested_object_converter"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "nested_object_converter"
+        },
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "nested_object_converter"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "nested_object_converter"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "nested_object_converter"
+        }
+    }
+}
