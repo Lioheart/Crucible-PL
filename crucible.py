@@ -8,85 +8,127 @@ from urllib.request import urlretrieve
 import plyvel
 import requests
 
+CAPTION_ACTOR_MAPPING = {
+    "tokenName": {
+        "path": "prototypeToken.name",
+        "converter": "nested_object_converter"
+    },
+    "items": {
+        "path": "items",
+        "converter": "embedded_items_converter"
+    },
+    "actions": {
+        "path": "system.actions",
+        "converter": "actions_converter"
+    },
+    "ancestry": {
+        "path": "system.details.ancestry",
+        "converter": "embedded_object_with_actions_converter"
+    },
+    "background": {
+        "path": "system.details.background",
+        "converter": "embedded_object_with_actions_converter"
+    },
+    "biography": {
+        "path": "system.details.biography",
+        "converter": "embedded_biography_converter"
+    },
+    "archetype": {
+        "path": "system.details.archetype",
+        "converter": "embedded_object_with_actions_converter"
+    },
+    "taxonomy": {
+        "path": "system.details.taxonomy",
+        "converter": "embedded_object_with_actions_converter"
+    }
+}
 
-def create_version_directory(version):
-    if os.path.exists(version):
-        print(f'Katalog {version} istnieje, pomijam tworzenie.')
+def create_version_directory(version: str) -> bool:
+    folder_path = pathlib.Path(version).resolve()
+
+    if folder_path.exists():
+        print(f'Katalog {version} istnieje, czyszczę jego zawartość.')
+
+        if not folder_path.is_dir():
+            print(f"Ścieżka {folder_path} nie jest folderem lub nie istnieje.")
+            return False
+
+        for item in folder_path.iterdir():
+            try:
+                if item.is_file() or item.is_symlink():
+                    item.unlink()
+                elif item.is_dir():
+                    shutil.rmtree(item)
+                print(f"Usunięto: {item.name}")
+            except Exception as e:
+                print(f"Nie udało się usunąć {item.name}: {e}")
+
+        print(f"\nFolder {folder_path.name} jest teraz pusty.")
         return False
-    else:
-        print(f'Tworzę katalog {version}')
-        os.makedirs(version)
-        return True
 
-def download_and_extract_zip(zip_url, zip_filename, extract_folder_zip):
-    response = requests.get(zip_url)
+    print(f'Tworzę katalog {version}')
+    folder_path.mkdir(parents=True, exist_ok=True)
+    return True
+
+
+def download_and_extract_zip(zip_url: str, zip_filename: str, extract_folder_zip: str) -> None:
+    response = requests.get(zip_url, timeout=60)
+    response.raise_for_status()
 
     with open(zip_filename, 'wb') as zip_file:
         zip_file.write(response.content)
 
     with zipfile.ZipFile(zip_filename, 'r') as zip_file:
         zip_file.extractall(extract_folder_zip)
-        print('Pobrano i rozpakowano plik .zip')
 
-def read_leveldb_to_json(leveldb_path, output_json_path):
-    def list_subfolders(directory):
+    print('Pobrano i rozpakowano plik .zip')
+
+
+def read_leveldb_to_json(leveldb_path: str, output_json_path: str) -> None:
+    def list_subfolders(directory: str):
         try:
-            # Lista folderów w katalogu
-            subfolders = [f.name for f in os.scandir(directory) if f.is_dir()]
-
-            # Zwróć nazwy folderów, jeśli istnieją
-            if subfolders:
-                return subfolders
-            else:
-                return "Brak folderów w katalogu"
+            return [f.name for f in os.scandir(directory) if f.is_dir()]
         except Exception as error:
-            raise f"Wystąpił błąd list_subfolders: {error}"
+            raise RuntimeError(f"Wystąpił błąd list_subfolders: {error}") from error
 
-    folders_list = list_subfolders(leveldb_path.replace('\\','/'))
-    for sub_folders in folders_list:
-        output_path = rf'{output_json_path}\{sub_folders}.json'
-        output_folder = rf'{output_json_path.split("\\")[0]}\packs\{sub_folders}'.replace('\\','/')
+    folders_list = list_subfolders(leveldb_path.replace('\\', '/'))
 
-        # Ensure the output folder exists
-        output_file = output_path.replace('\\','/')
-        output_dir = output_json_path.replace('\\','/')
-        os.makedirs(output_dir, exist_ok=True)
+    for sub_folder in folders_list:
+        output_file = os.path.join(output_json_path, f"{sub_folder}.json").replace('\\', '/')
+        output_folder = os.path.join(leveldb_path, sub_folder).replace('\\', '/')
+        os.makedirs(output_json_path, exist_ok=True)
 
+        db = None
         try:
-            # Otwórz bazę danych LevelDB
             db = plyvel.DB(output_folder, create_if_missing=False)
-
-            # Stwórz pustą listę na dane
             data = []
 
-            # Iteruj przez wszystkie klucze i wartości w bazie danych
             for key, value in db:
                 try:
                     value_str = value.decode('utf-8', errors='ignore')
-                    # Jeśli wartość to poprawny JSON, konwertujemy ją do obiektu
                     try:
                         value_data = json.loads(value_str)
                     except json.JSONDecodeError:
-                        value_data = {"name": value_str}  # Jeśli to nie JSON, utwórz obiekt z kluczem "name"
+                        value_data = {"name": value_str}
 
-                    # Dodaj tylko wartość do listy
                     data.append(value_data)
                 except Exception as e:
                     print(f"Błąd dekodowania dla klucza {key}: {e}")
-                    continue
 
-            # Zapisz dane do pliku JSON jako listę
             with open(output_file, 'w', encoding='utf-8') as json_file:
                 json.dump(data, json_file, ensure_ascii=False, indent=4)
 
             print(f"Dane zostały zapisane do {output_file}")
+
         except Exception as e:
-            raise f"Wystąpił błąd read_leveldb_to_json: {e}"
+            raise RuntimeError(f"Wystąpił błąd read_leveldb_to_json dla {output_folder}: {e}") from e
         finally:
-            db.close()
+            if db is not None:
+                db.close()
+
 
 def sort_entries(input_dict):
-    if "entries" in input_dict:
+    if "entries" in input_dict and isinstance(input_dict["entries"], dict):
         input_dict["entries"] = dict(sorted(input_dict["entries"].items()))
 
     for key, value in input_dict.items():
@@ -97,33 +139,26 @@ def sort_entries(input_dict):
 
 
 def remove_empty_keys(data_dict):
-    """
-    Usuwa puste klucze w słowniku i usuwa 'name', jeśli 'pages' jest pusty.
-    Proces powtarza się aż do wyeliminowania wszystkich pustych kluczy.
-
-    :param data_dict: Słownik wejściowy
-    :return: Oczyszczony słownik
-    """
     def clean_dict_once(d):
-        """
-        Jednokrotne przejście przez słownik w celu usunięcia pustych kluczy.
-        """
         cleaned = {}
         for key, value in d.items():
-            if isinstance(value, dict):  # Jeśli wartość to słownik, oczyść go rekurencyjnie
+            if isinstance(value, dict):
                 value = clean_dict_once(value)
-            if key == "pages" and not value:  # Jeśli "pages" jest pusty
-                continue  # Usuń klucz "pages"
+
+            if key == "pages" and not value:
+                continue
+
             if key == "name" and "pages" in d and not d["pages"]:
-                continue  # Usuń klucz "name", jeśli "pages" jest pusty
-            if value not in (None, {}, [], ""):  # Usuń inne puste wartości
+                continue
+
+            if value not in (None, {}, [], ""):
                 cleaned[key] = value
+
         return cleaned
 
     previous = None
     current = data_dict
 
-    # Iteruj, aż słownik przestanie się zmieniać
     while previous != current:
         previous = current
         current = clean_dict_once(previous)
@@ -131,290 +166,748 @@ def remove_empty_keys(data_dict):
     return current
 
 
-def process_files(folders, version):
+def ensure_actions_mapping(transifex_dict: dict) -> None:
+    transifex_dict.setdefault("mapping", {})
+    transifex_dict["mapping"]["actions"] = {
+        "path": "system.actions",
+        "converter": "actions_converter"
+    }
+
+
+def add_actions(entry_dict: dict, new_data: dict, default_name: str, transifex_dict: dict) -> None:
+    actions = new_data.get("system", {}).get("actions", [])
+    if not actions:
+        return
+
+    ensure_actions_mapping(transifex_dict)
+    entry_dict.setdefault("actions", {})
+
+    for action in actions:
+        action_name = (action.get("name") or default_name).strip()
+        entry_dict["actions"].setdefault(action_name, {})
+        entry_dict["actions"][action_name]["name"] = action_name
+        entry_dict["actions"][action_name]["condition"] = action.get("condition") or ""
+        entry_dict["actions"][action_name]["description"] = action.get("description") or ""
+
+        effects = action.get("effects", [])
+        if effects:
+            entry_dict["actions"][action_name]["effects"] = []
+
+            for effect in effects:
+                effect_name = (effect.get("name") or action_name).strip()
+                entry_dict["actions"][action_name]["effects"].append({
+                    "name": effect_name
+                })
+
+
+def build_id_index(data: list[dict]) -> dict:
+    index = {}
+    for obj in data:
+        if isinstance(obj, dict) and obj.get("_id"):
+            index[obj["_id"]] = obj
+    return index
+
+
+def extract_description(record: dict) -> str:
+    if not isinstance(record, dict):
+        return ""
+
+    # 1. Najpierw typowy Crucible item/actor embedded description
+    system_description = record.get("system", {}).get("description")
+    if isinstance(system_description, dict):
+        public_desc = (system_description.get("public") or "").strip()
+        private_desc = (system_description.get("private") or "").strip()
+
+        if public_desc and private_desc:
+            return f"{public_desc}\n\n{private_desc}"
+        if public_desc:
+            return public_desc
+        if private_desc:
+            return private_desc
+
+    # 2. Prostsze opisy stringowe
+    candidates = [
+        record.get("system", {}).get("description"),
+        record.get("description"),
+        record.get("system", {}).get("details", {}).get("description"),
+    ]
+
+    for value in candidates:
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+
+    # 3. Biography jako fallback, tylko jeśli naprawdę chcesz ją traktować jako opis
+    biography = record.get("system", {}).get("details", {}).get("biography")
+    if isinstance(biography, dict):
+        public_bio = (biography.get("public") or "").strip()
+        private_bio = (biography.get("private") or "").strip()
+
+        if public_bio and private_bio:
+            return f"{public_bio}\n\n{private_bio}"
+        if public_bio:
+            return public_bio
+        if private_bio:
+            return private_bio
+
+    return ""
+
+
+def ensure_nested_mapping(transifex_dict: dict, key: str, path: str, converter: str) -> None:
+    transifex_dict.setdefault("mapping", {})
+    transifex_dict["mapping"][key] = {
+        "path": path,
+        "converter": converter
+    }
+
+
+def add_actions_from_record(target_entry: dict, source_record: dict, fallback_name: str, transifex_dict: dict) -> None:
+    actions = source_record.get("system", {}).get("actions", [])
+    if not actions:
+        return
+
+    ensure_actions_mapping(transifex_dict)
+    target_entry.setdefault("actions", {})
+
+    for action in actions:
+        action_name = (action.get("name") or fallback_name).strip()
+        if not action_name:
+            continue
+
+        target_entry["actions"].setdefault(action_name, {})
+        target_entry["actions"][action_name]["name"] = action_name
+        target_entry["actions"][action_name]["condition"] = action.get("condition") or ""
+        target_entry["actions"][action_name]["description"] = action.get("description") or ""
+
+        effects = action.get("effects", [])
+        if effects:
+            target_entry["actions"][action_name]["effects"] = []
+            for effect in effects:
+                effect_name = (effect.get("name") or action_name).strip()
+                target_entry["actions"][action_name]["effects"].append({
+                    "name": effect_name
+                })
+
+
+def resolve_reference(ref_id: str, id_index: dict) -> dict | None:
+    if not ref_id or not isinstance(ref_id, str):
+        return None
+    return id_index.get(ref_id)
+
+
+def resolve_reference_list(ref_list, id_index: dict) -> list[dict]:
+    resolved = []
+    if isinstance(ref_list, list):
+        for ref_id in ref_list:
+            record = resolve_reference(ref_id, id_index)
+            if record:
+                resolved.append(record)
+    elif isinstance(ref_list, str):
+        record = resolve_reference(ref_list, id_index)
+        if record:
+            resolved.append(record)
+    return resolved
+
+
+def fill_translated_object_from_record(target_obj: dict, source_record: dict, transifex_dict: dict) -> None:
+    source_name = (source_record.get("name") or "").strip()
+    if source_name:
+        target_obj["name"] = source_name
+
+    description = extract_description(source_record)
+    if description:
+        target_obj["description"] = description
+
+    # Akcje obiektu referencyjnego, np. ancestry/background/archetype/item
+    add_actions_from_record(
+        target_entry=target_obj,
+        source_record=source_record,
+        fallback_name=source_name or "action",
+        transifex_dict=transifex_dict
+    )
+
+
+def populate_reference_bucket(
+    parent_entry: dict,
+    bucket_name: str,
+    source_value,
+    id_index: dict,
+    transifex_dict: dict
+) -> None:
+    resolved_records = resolve_reference_list(source_value, id_index)
+    if not resolved_records:
+        return
+
+    parent_entry.setdefault(bucket_name, {})
+
+    for record in resolved_records:
+        record_name = (record.get("name") or "").strip()
+        if not record_name:
+            continue
+
+        parent_entry[bucket_name].setdefault(record_name, {})
+        fill_translated_object_from_record(
+            target_obj=parent_entry[bucket_name][record_name],
+            source_record=record,
+            transifex_dict=transifex_dict
+        )
+
+
+def populate_single_reference_object(
+    parent_entry: dict,
+    field_name: str,
+    source_value,
+    id_index: dict,
+    transifex_dict: dict
+) -> None:
+    record = None
+
+    if isinstance(source_value, str):
+        record = resolve_reference(source_value, id_index)
+    elif isinstance(source_value, dict) and source_value.get("_id"):
+        record = resolve_reference(source_value["_id"], id_index)
+
+    if not record:
+        return
+
+    parent_entry.setdefault(field_name, {})
+    fill_translated_object_from_record(
+        target_obj=parent_entry[field_name],
+        source_record=record,
+        transifex_dict=transifex_dict
+    )
+
+
+def populate_prototype_fields(
+    entry: dict,
+    new_data: dict,
+    id_index: dict,
+    transifex_dict: dict,
+    items_source=None
+) -> None:
+    mapping_data = {
+        "items": ("items", "adventure_items_converter"),
+        "actions": ("system.actions", "actions_converter"),
+        "ancestry": ("system.details.ancestry", "nested_object_converter"),
+        "background": ("system.details.background", "nested_object_converter"),
+        "biography": ("system.details.biography", "nested_object_converter"),
+        "archetype": ("system.details.archetype", "nested_object_converter"),
+        "taxonomy": ("system.details.taxonomy", "nested_object_converter"),
+    }
+
+    transifex_dict.setdefault("mapping", {})
+    for key, (path, conv) in mapping_data.items():
+        transifex_dict["mapping"][key] = {
+            "path": path,
+            "converter": conv
+        }
+
+    # actions bezpośrednio na rekordzie
+    add_actions_from_record(
+        target_entry=entry,
+        source_record=new_data,
+        fallback_name=entry.get("name", "action"),
+        transifex_dict=transifex_dict
+    )
+
+    # items: źródło zależne od typu danych
+    if items_source is None:
+        items_source = new_data.get("items", [])
+
+    populate_reference_bucket(
+        parent_entry=entry,
+        bucket_name="items",
+        source_value=items_source,
+        id_index=id_index,
+        transifex_dict=transifex_dict
+    )
+
+    # ancestry/background/biography/archetype/taxonomy
+    details = new_data.get("system", {}).get("details", {})
+
+    for field_name in ["ancestry", "background", "biography", "archetype", "taxonomy"]:
+        source_value = details.get(field_name)
+
+        record = None
+        if isinstance(source_value, str):
+            record = resolve_reference(source_value, id_index)
+        elif isinstance(source_value, dict):
+            if source_value.get("_id"):
+                record = resolve_reference(source_value["_id"], id_index)
+            else:
+                record = source_value
+
+        if not record:
+            continue
+
+        entry.setdefault(field_name, {})
+        fill_translated_object_from_record(
+            target_obj=entry[field_name],
+            source_record=record,
+            transifex_dict=transifex_dict
+        )
+
+def populate_actor_like_prototype(
+    actor_entry: dict,
+    actor_data: dict,
+    id_index: dict,
+    transifex_dict: dict
+) -> None:
+    actor_name = (actor_data.get("name") or "").strip()
+    if actor_name:
+        actor_entry["name"] = actor_name
+
+    prototype = actor_data.get("prototypeToken", {})
+    token_name = prototype.get("name")
+    if token_name not in (None, ""):
+        actor_entry["tokenName"] = {"name": token_name}
+
+    populate_prototype_fields(
+        entry=actor_entry,
+        new_data=actor_data,
+        id_index=id_index,
+        transifex_dict=transifex_dict,
+        items_source=prototype.get("items", [])
+    )
+
+def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
+    transifex_dict.setdefault("mapping", {})
+
+    transifex_dict["mapping"]["tokenName"] = {
+        "path": "prototypeToken.name",
+        "converter": "nested_object_converter"
+    }
+    transifex_dict["mapping"]["items"] = {
+        "path": "items",
+        "converter": "embedded_items_converter"
+    }
+    transifex_dict["mapping"]["actions"] = {
+        "path": "system.actions",
+        "converter": "actions_converter"
+    }
+
+    for key in ["ancestry", "background", "archetype", "taxonomy"]:
+        transifex_dict["mapping"][key] = {
+            "path": f"system.details.{key}",
+            "converter": "embedded_object_with_actions_converter"
+        }
+
+    transifex_dict["mapping"]["biography"] = {
+        "path": "system.details.biography",
+        "converter": "embedded_biography_converter"
+    }
+
+def populate_caption_actor(
+    actor_entry: dict,
+    actor_data: dict,
+    transifex_dict: dict
+) -> None:
+    actor_name = (actor_data.get("name") or "").strip()
+    if actor_name:
+        actor_entry["name"] = actor_name
+
+    prototype = actor_data.get("prototypeToken", {})
+    token_name = prototype.get("name")
+    if token_name not in (None, ""):
+        actor_entry["tokenName"] = {"name": token_name}
+
+    # actions bezpośrednio na aktorze
+    add_actions_from_record(
+        target_entry=actor_entry,
+        source_record=actor_data,
+        fallback_name=actor_name or "action",
+        transifex_dict=transifex_dict
+    )
+
+    # items są osadzone bezpośrednio w actor_data["items"]
+    items = actor_data.get("items", [])
+    if items and isinstance(items, list):
+        actor_entry.setdefault("items", {})
+        ensure_caption_actor_mapping(transifex_dict)
+
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+
+            item_name = (item.get("name") or "").strip()
+            if not item_name:
+                continue
+
+            actor_entry["items"].setdefault(item_name, {})
+            actor_entry["items"][item_name]["name"] = item_name
+
+            item_description = extract_description(item)
+            if item_description:
+                actor_entry["items"][item_name]["description"] = item_description
+
+            add_actions_from_record(
+                target_entry=actor_entry["items"][item_name],
+                source_record=item,
+                fallback_name=item_name,
+                transifex_dict=transifex_dict
+            )
+
+    details = actor_data.get("system", {}).get("details", {})
+
+    for field_name in ["ancestry", "background", "archetype", "taxonomy"]:
+        obj = details.get(field_name)
+        if not isinstance(obj, dict):
+            continue
+
+        actor_entry.setdefault(field_name, {})
+
+        obj_name = (obj.get("name") or "").strip()
+        if obj_name:
+            actor_entry[field_name]["name"] = obj_name
+
+        obj_description = extract_description(obj)
+        if obj_description:
+            actor_entry[field_name]["description"] = obj_description
+
+        add_actions_from_record(
+            target_entry=actor_entry[field_name],
+            source_record=obj,
+            fallback_name=obj_name or field_name,
+            transifex_dict=transifex_dict
+        )
+
+    biography = details.get("biography")
+    if isinstance(biography, dict):
+        actor_entry.setdefault("biography", {})
+        for key, value in biography.items():
+            if isinstance(value, str) and value.strip():
+                actor_entry["biography"][key] = value.strip()
+
+def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
+    transifex_dict.setdefault("mapping", {})
+    transifex_dict["mapping"]["items"] = {
+        "path": "items",
+        "converter": "embedded_items_converter"
+    }
+
+    transifex_dict["mapping"]["actions"] = {
+        "path": "system.actions",
+        "converter": "actions_converter"
+    }
+
+    for key in ["ancestry", "background", "archetype", "taxonomy"]:
+        transifex_dict["mapping"][key] = {
+            "path": f"system.details.{key}",
+            "converter": "embedded_object_with_actions_converter"
+        }
+
+    transifex_dict["mapping"]["biography"] = {
+        "path": "system.details.biography",
+        "converter": "embedded_biography_converter"
+    }
+
+    transifex_dict["mapping"]["tokenName"] = {
+        "path": "prototypeToken.name",
+        "converter": "nested_object_converter"
+    }
+
+def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+    entry["caption"] = new_data.get("caption", "")
+    entry["description"] = new_data.get("description", "")
+
+    # Foldery
+    if "folders" in new_data and isinstance(new_data["folders"], list):
+        entry.setdefault("folders", {})
+        for folder in new_data["folders"]:
+            folder_name = (folder.get("name") or "").strip()
+            if folder_name:
+                entry["folders"][folder_name] = folder_name
+
+    # Dzienniki
+    if "journal" in new_data and isinstance(new_data["journal"], list):
+        entry.setdefault("journals", {})
+        for journal in new_data["journal"]:
+            journal_name = (journal.get("name") or "").strip()
+            if not journal_name:
+                continue
+
+            entry["journals"].setdefault(journal_name, {})
+            entry["journals"][journal_name]["name"] = journal_name
+            entry["journals"][journal_name].setdefault("pages", {})
+
+            for page in journal.get("pages", []):
+                page_name = (page.get("name") or "").strip()
+                if not page_name:
+                    continue
+
+                entry["journals"][journal_name]["pages"].setdefault(page_name, {})
+                entry["journals"][journal_name]["pages"][page_name]["name"] = page_name
+                entry["journals"][journal_name]["pages"][page_name]["text"] = (
+                    " ".join(page.get("text", {}).get("content", "").split())
+                )
+
+    # Sceny
+    if "scenes" in new_data and isinstance(new_data["scenes"], list):
+        entry.setdefault("scenes", {})
+        for scene in new_data["scenes"]:
+            scene_name = (scene.get("name") or "").strip()
+            if not scene_name:
+                continue
+
+            entry["scenes"].setdefault(scene_name, {})
+            entry["scenes"][scene_name]["name"] = scene_name
+            entry["scenes"][scene_name].setdefault("notes", {})
+
+            for note in scene.get("notes", []):
+                note_text = (note.get("text") or "").strip()
+                if note_text:
+                    entry["scenes"][scene_name]["notes"][note_text] = note_text
+
+    # Makra
+    if "macros" in new_data and isinstance(new_data["macros"], list):
+        entry.setdefault("macros", {})
+        for macro in new_data["macros"]:
+            macro_name = (macro.get("name") or "").strip()
+            if not macro_name:
+                continue
+
+            entry["macros"].setdefault(macro_name, {})
+            entry["macros"][macro_name]["name"] = macro_name
+
+            # if macro.get("command") not in (None, ""):
+            #     entry["macros"][macro_name]["command"] = macro.get("command")
+
+    # Tabele
+    if "tables" in new_data and isinstance(new_data["tables"], list):
+        entry.setdefault("tables", {})
+        for table in new_data["tables"]:
+            table_name = (table.get("name") or "").strip()
+            if not table_name:
+                continue
+
+            entry["tables"].setdefault(table_name, {})
+            entry["tables"][table_name]["name"] = table_name
+            entry["tables"][table_name]["description"] = table.get("description", "")
+            entry["tables"][table_name].setdefault("results", {})
+
+            for result in table.get("results", []):
+                range_data = result.get("range", [])
+                if isinstance(range_data, list) and len(range_data) >= 2:
+                    result_name = f'{range_data[0]}-{range_data[1]}'
+                else:
+                    result_name = "unknown"
+
+                entry["tables"][table_name]["results"][result_name] = result.get("text", "")
+
+    # Przedmioty
+    if "items" in new_data and isinstance(new_data["items"], list):
+        entry.setdefault("items", {})
+        for item in new_data["items"]:
+            item_name = (item.get("name") or "").strip()
+            if not item_name:
+                continue
+
+            entry["items"].setdefault(item_name, {})
+            entry["items"][item_name]["name"] = item_name
+
+    # Playlisty
+    if "playlists" in new_data and isinstance(new_data["playlists"], list):
+        entry.setdefault("playlists", {})
+        for playlist in new_data["playlists"]:
+            playlist_name = (playlist.get("name") or "").strip()
+            if not playlist_name:
+                continue
+
+            entry["playlists"].setdefault(playlist_name, {})
+            entry["playlists"][playlist_name]["name"] = playlist_name
+            entry["playlists"][playlist_name]["description"] = playlist.get("description")
+            entry["playlists"][playlist_name].setdefault("sounds", {})
+
+            for sound in playlist.get("sounds", []):
+                sound_name = (sound.get("name") or "").strip()
+                if not sound_name:
+                    continue
+
+                entry["playlists"][playlist_name]["sounds"].setdefault(sound_name, {})
+                entry["playlists"][playlist_name]["sounds"][sound_name]["name"] = sound_name
+                entry["playlists"][playlist_name]["sounds"][sound_name]["description"] = sound.get("description")
+
+    # Aktorzy
+    if "actors" in new_data and isinstance(new_data["actors"], list):
+        entry.setdefault("actors", {})
+        for actor in new_data["actors"]:
+            actor_name = (actor.get("name") or "").strip()
+            if not actor_name:
+                continue
+
+            entry["actors"].setdefault(actor_name, {})
+            populate_caption_actor(
+                actor_entry=entry["actors"][actor_name],
+                actor_data=actor,
+                transifex_dict=transifex_dict
+            )
+
+def process_files(folders: str, version: str) -> None:
     dict_key = []
+
     for root, dirs, files in os.walk(folders):
         for file in files:
-            if file.endswith(".json"):
-                file_path = os.path.join(root, file)
-                print('Oryginalny plik:', file)
-                with open(file_path, 'r', encoding='utf-8') as json_file:
-                    data = json.load(json_file)
+            if not file.endswith(".json"):
+                continue
 
-                try:
-                    compendium = data[0]
-                except (KeyError, AttributeError) as e:
-                    compendium = data
+            file_path = os.path.join(root, file)
+            print('Oryginalny plik:', file)
 
-                keys = compendium.keys()
-                print('Klucze pliku JSON:', list(keys))
+            with open(file_path, 'r', encoding='utf-8') as json_file:
+                data = json.load(json_file)
 
-                new_name = fr'{version}/crucible.{file.split('.')[0]}.json'
-                # try:
-                #     name = compendium['_stats']['systemId'] # Nazwa pobierana z plików, na razie nie używane
-                # except KeyError:
-                #     print('BŁĄD!!!')
-                print('Nowy plik:', new_name)
-                print()
+            if not isinstance(data, list):
+                print(f"Pomijam {file}: plik nie zawiera listy rekordów.")
+                continue
 
-                if pathlib.Path(f'{root}/{file.split(".")[0]}_folders.json').is_file():
-                    transifex_dict = {
-                        "label": file.split('.')[0].title(),
-                        "folders": {},
-                        "entries": {},
-                        "mapping": {}
-                    }
+            id_index = build_id_index(data)
 
-                    with open(f'{root}/{file.split(".")[0]}_folders.json', 'r', encoding='utf-8') as json_file:
-                        data_folder = json.load(json_file)
+            try:
+                compendium = data[0]
+            except (KeyError, AttributeError, IndexError, TypeError):
+                compendium = data
 
-                    for new_data in data_folder:
-                        name = new_data["name"].strip()
-                        transifex_dict["folders"].update({name: name})
+            if not isinstance(compendium, dict):
+                print(f"Pomijam {file}: nieprawidłowy format danych.")
+                continue
 
-                elif 'color' in keys or 'folder' in keys:
-                    transifex_dict = {
-                        "label": file.split('.')[0].title(),
-                        "folders": {},
-                        "entries": {},
-                        "mapping": {}
-                    }
-                else:
-                    transifex_dict = {
-                        "label": file.split('.')[0].title(),
-                        "entries": {},
-                        "mapping": {}
-                    }
+            keys = compendium.keys()
+            print('Klucze pliku JSON:', list(keys))
 
-                flag = []
-                for new_data in data:
-                    name = new_data["name"].strip()
+            pack_name = file.split('.')[0]
+            new_name = f'{version}/crucible.{pack_name}.json'
+            print('Nowy plik:', new_name)
+            print()
 
-                    # Dla folderów - DZIAŁA
-                    if 'folder' in new_data.keys() and 'color' in new_data.keys():
-                        transifex_dict["folders"].update({name: name})
-                        continue
+            folder_json_path = pathlib.Path(root) / f'{pack_name}_folders.json'
 
-                    # Dla Kompendium z nazwami
-                    elif 'name' in keys:
-                        transifex_dict["entries"].update({name: {}})
-                        transifex_dict["entries"][name].update({"name": name})
+            if folder_json_path.is_file():
+                transifex_dict = {
+                    "label": pack_name.title(),
+                    "folders": {},
+                    "entries": {},
+                    "mapping": {}
+                }
 
-                    # Dla Przygód
-                    if 'caption' in keys:
-                        transifex_dict["entries"][name].update({"caption": new_data["caption"]})
-                        transifex_dict["entries"][name].update({"description": new_data["description"]})
+                with open(folder_json_path, 'r', encoding='utf-8') as json_file:
+                    data_folder = json.load(json_file)
 
-                        # Foldery
-                        if 'folders' in keys:
-                            transifex_dict["entries"][name].update({"folders": {}})
-                            for folder in new_data["folders"]:
-                                if 'folders' in keys:
-                                    transifex_dict["entries"][name]["folders"].update({folder['name']: folder['name']})
+                for new_data in data_folder:
+                    name = (new_data.get("name") or "").strip()
+                    if name:
+                        transifex_dict["folders"][name] = name
 
-                        # Dzienniki
-                        if 'journal' in keys:
-                            transifex_dict["entries"][name.strip()].update({"journals": {}})
-                            for journal in new_data["journal"]:
-                                transifex_dict["entries"][name]["journals"].update({journal["name"]: {}})
-                                transifex_dict["entries"][name]["journals"][journal["name"].strip()].update(
-                                    {"name": journal["name"]})
-                                transifex_dict["entries"][name]["journals"][journal["name"]].update({"pages": {}})
-                                for pages in journal["pages"]:
-                                    transifex_dict["entries"][name]["journals"][journal["name"]]["pages"].update(
-                                        {pages["name"].strip(): {}})
-                                    transifex_dict["entries"][name]["journals"][journal["name"]]["pages"][
-                                        pages["name"].strip()].update({"name": pages["name"].strip()})
-                                    transifex_dict["entries"][name]["journals"][journal["name"]]["pages"][
-                                        pages["name"].strip()].update(
-                                        {"text": " ".join(pages["text"].get("content", "").split())})
-                        # Sceny
-                        if 'scenes' in keys:
-                            transifex_dict["entries"][name].update({"scenes": {}})
-                            for scene in new_data["scenes"]:
-                                transifex_dict["entries"][name]["scenes"].update({scene["name"]: {}})
-                                transifex_dict["entries"][name]["scenes"][scene["name"]].update({"name": scene["name"]})
-                                transifex_dict["entries"][name]["scenes"][scene["name"]].update({"notes": {}})
-                                for note in scene["notes"]:
-                                    transifex_dict["entries"][name]["scenes"][scene["name"]]["notes"].update(
-                                        {note["text"]: note["text"]})
+            elif 'color' in keys or 'folder' in keys:
+                transifex_dict = {
+                    "label": pack_name.title(),
+                    "folders": {},
+                    "entries": {},
+                    "mapping": {}
+                }
+            else:
+                transifex_dict = {
+                    "label": pack_name.title(),
+                    "entries": {},
+                    "mapping": {}
+                }
 
-                        # Makra
-                        if 'macros' in keys:
-                            transifex_dict["entries"][name].update({"macros": {}})
-                            for macro in new_data["macros"]:
-                                transifex_dict["entries"][name]["macros"].update({macro["name"]: {}})
-                                transifex_dict["entries"][name]["macros"][macro["name"]].update(
-                                    {"name": macro["name"]})
+            flag = []
 
-                        # Tabele
-                        if 'tables' in keys:
-                            transifex_dict["entries"][name].update({"tables": {}})
-                            for table in new_data["tables"]:
-                                transifex_dict["entries"][name]["tables"].update({table["name"]: {}})
-                                transifex_dict["entries"][name]["tables"][table["name"]].update(
-                                    {"name": table["name"]})
-                                transifex_dict["entries"][name]["tables"][table["name"]].update(
-                                    {"description": table["description"]})
-                                transifex_dict["entries"][name]["tables"][table["name"]].update({"results": {}})
-                                for result in table['results']:
-                                    result_name = f'{result["range"][0]}-{result["range"][1]}'
-                                    transifex_dict["entries"][name]["tables"][table["name"]]['results'].update(
-                                        {result_name: result['text']})
+            for new_data in data:
+                if not isinstance(new_data, dict):
+                    continue
 
-                        # Przedmioty
-                        if 'items' in keys:
-                            transifex_dict["entries"][name].update({"items": {}})
-                            for item in new_data["items"]:
-                                transifex_dict["entries"][name]["items"].update({item["name"]: {}})
-                                transifex_dict["entries"][name]["items"][item["name"]].update(
-                                    {"name": item["name"]})
+                name = (new_data.get("name") or "").strip()
+                if not name:
+                    continue
 
-                        # Playlisty
-                        if 'playlists' in keys:
-                            transifex_dict["entries"][name].update({"playlists": {}})
-                            for playlist in new_data["playlists"]:
-                                transifex_dict["entries"][name]["playlists"].update({playlist["name"]: {}})
-                                transifex_dict["entries"][name]["playlists"][playlist["name"]].update(
-                                    {"name": playlist["name"]})
-                                transifex_dict["entries"][name]["playlists"][playlist["name"]].update(
-                                    {"description": playlist.get("description")})
-                                transifex_dict["entries"][name]["playlists"][playlist["name"]].update(
-                                    {"sounds": {}})
-                                for sound in playlist["sounds"]:
-                                    transifex_dict["entries"][name]["playlists"][playlist["name"]][
-                                        "sounds"].update(
-                                        {sound["name"]: {}})
-                                    transifex_dict["entries"][name]["playlists"][playlist["name"]]["sounds"][
-                                        sound["name"]].update({"name": sound["name"]})
-                                    transifex_dict["entries"][name]["playlists"][playlist["name"]]["sounds"][
-                                        sound["name"]].update({"description": sound.get("description")})
+                # foldery
+                if 'folder' in new_data and 'color' in new_data:
+                    transifex_dict.setdefault("folders", {})
+                    transifex_dict["folders"][name] = name
+                    continue
 
-                        # Aktorzy
-                        if 'actors' in keys:
-                            transifex_dict["entries"][name].update({"actors": {}})
-                            for actor in new_data["actors"]:
-                                transifex_dict["entries"][name]["actors"].update({actor["name"]: {}})
-                                transifex_dict["entries"][name]["actors"][actor["name"]].update({"name": actor["name"]})
-                                transifex_dict["entries"][name]["actors"][actor["name"]].update({"tokenName": {}})
-                                transifex_dict["entries"][name]["actors"][actor["name"]]["tokenName"].update({"name": actor["prototypeToken"]["name"]})
+                transifex_dict["entries"].setdefault(name, {})
+                entry = transifex_dict["entries"][name]
+                entry["name"] = name
 
-                    # Dla Kompendium z opisami
-                    if 'prototypeToken' not in keys and file.split('.')[0] not in ['rules', 'weapon']:
-                        if 'caption' not in keys:
-                            flag.append('description')
-                        try:
-                            transifex_dict["entries"][name].update({"description": new_data["system"]["description"]})
-                        except KeyError:
-                            transifex_dict["entries"][name].update({"description": new_data["description"]})
+                # Rekordy przygód / playtestów
+                if 'caption' in keys:
+                    populate_caption_entry(entry, new_data, id_index, transifex_dict)
 
-                    if 'description' in flag and 'caption' not in keys:
-                        transifex_dict['mapping'].update(
-                            {
-                                "description": "system.description"
-                            }
-                        )
+                # zwykłe opisy
+                if 'prototypeToken' not in keys and pack_name not in ['rules', 'weapon']:
+                    if 'caption' not in keys:
+                        flag.append('description')
 
-                    # Dla Makr
-                    if 'command' in keys:
-                        transifex_dict["entries"].update({name: {}})
-                        transifex_dict["entries"][name].update({"name": name})
+                    description = new_data.get("system", {}).get("description")
+                    if description is None:
+                        description = new_data.get("description", "")
 
-                    # Dla talentów
-                    if file in ['talent.json', 'adversary-talents.json', 'spell.json']:
-                        transifex_dict["mapping"].update({"actions": {}})
-                        transifex_dict["mapping"]["actions"].update({"path": "system.actions"})
-                        transifex_dict["mapping"]["actions"].update({"converter": "actions_converter"})
-                        transifex_dict["entries"][name].update({"actions": {}})
-                        if new_data.get("system", {}).get("actions"):
-                            for action in new_data["system"]["actions"]:
-                                action["name"] = action.get("name") or name
-                                transifex_dict["entries"][name]["actions"].update({action["name"]: {}})
-                                transifex_dict["entries"][name]["actions"][action["name"]].update({"name": action["name"]})
-                                transifex_dict["entries"][name]["actions"][action["name"]].update({"condition": action.get("condition") or ""})
-                                transifex_dict["entries"][name]["actions"][action["name"]].update({"description": action.get("description") or ""})
-                                if action.get("effects"):
-                                    transifex_dict["entries"][name]["actions"][action["name"]].update({"effects": []})
-                                    transifex_dict["entries"][name]["actions"][action["name"]]["effects"].append({})
-                                    for effect in action.get("effects"):
-                                        effect["name"] = effect.get("name") or action["name"]
-                                        transifex_dict["entries"][name]["actions"][action["name"]]["effects"][0].update({"name": effect["name"]})
+                    if description:
+                        entry["description"] = description
 
+                    add_actions_from_record(entry, new_data, name, transifex_dict)
 
-                    # Dla Dzienników
-                    if file.split('.')[0] == 'rules':
-                        transifex_dict["entries"].update({name: {}})
-                        transifex_dict["entries"][name].update({"name": name})
-                        transifex_dict["entries"][name].update({"pages": {}})
-                        try: # Obejscie na umiejętności Crucible #TODO: do przetłumaczenia
-                            for result in new_data['pages']:
-                                for pages in data:
-                                    try:
-                                        if result == pages['_id']:
-                                            transifex_dict["entries"][name]['pages'].update({pages['name']: {}})
-                                            transifex_dict["entries"][name]['pages'][pages['name']].update({"name": pages['name']})
-                                            transifex_dict["entries"][name]['pages'][pages['name']].update(
-                                                {"text": pages['text']['content']})
-                                    except KeyError:
-                                        pass
-                        except KeyError:
-                            pass
+                if 'description' in flag and 'caption' not in keys:
+                    transifex_dict['mapping']["description"] = "system.description"
 
-                    # elif 'permission' in keys:
-                    #     transifex_dict["entries"].update({name: {}})
-                    #     transifex_dict["entries"][name].update({"name": name})
-                    #     transifex_dict["entries"][name].update({"pages": {}})
-                    #     transifex_dict["entries"][name]['pages'].update({name: {}})
-                    #     transifex_dict["entries"][name]['pages'][name].update({"name": name})
-                    #     try:
-                    #         transifex_dict["entries"][name]['pages'][name].update({"text": new_data['content']})
-                    #     except KeyError:
-                    #         del transifex_dict["entries"][name]['pages']
-                    #         try:
-                    #             transifex_dict["entries"][name].update({"description": new_data['data']['description']['value']})
-                    #         except KeyError:
-                    #             transifex_dict["entries"][name].update(
-                    #                 {"description": new_data['system']['description']['value']})
-                    #
-                    # # Dla tabel
-                    # elif 'displayRoll' in keys:
-                    #     transifex_dict["entries"].update({name: {}})
-                    #     transifex_dict["entries"][name].update({"name": name})
-                    #     transifex_dict["entries"][name].update({"description": new_data['description']})
-                    #     transifex_dict["entries"][name].update({"results": {}})
-                    #     for result in new_data['results']:
-                    #         result_name = f'{result["range"][0]}-{result["range"][1]}'
-                    #         transifex_dict["entries"][name]['results'].update({result_name: result['text']})
+                # SPECJALNA OBSŁUGA prototypeToken
+                if 'prototypeToken' in keys:
+                    populate_prototype_fields(
+                        entry=entry,
+                        new_data=new_data,
+                        id_index=id_index,
+                        transifex_dict=transifex_dict
+                    )
 
-                transifex_dict = remove_empty_keys(transifex_dict)
-                transifex_dict = sort_entries(transifex_dict)
+                # rules zostawiasz jak było
+                if pack_name == 'rules':
+                    transifex_dict["entries"].setdefault(name, {})
+                    transifex_dict["entries"][name]["name"] = name
+                    transifex_dict["entries"][name].setdefault("pages", {})
 
-                with open(new_name, "w", encoding='utf-8') as outfile:
-                    json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
+                    try:
+                        for result in new_data.get('pages', []):
+                            for page_obj in data:
+                                try:
+                                    if result == page_obj.get('_id'):
+                                        page_name = page_obj.get('name', '').strip()
+                                        if not page_name:
+                                            continue
 
-                dict_key.append(f'{compendium.keys()}')
+                                        transifex_dict["entries"][name]['pages'].setdefault(page_name, {})
+                                        transifex_dict["entries"][name]['pages'][page_name]["name"] = page_name
+                                        transifex_dict["entries"][name]['pages'][page_name]["text"] = (
+                                            page_obj.get('text', {}).get('content', '')
+                                        )
+                                except AttributeError:
+                                    pass
+                    except Exception:
+                        pass
 
-def copy_en_json(version_crucible):
+            transifex_dict = remove_empty_keys(transifex_dict)
+            transifex_dict = sort_entries(transifex_dict)
+
+            with open(new_name, "w", encoding='utf-8') as outfile:
+                json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
+
+            dict_key.append(f'{compendium.keys()}')
+
+def copy_en_json(version_crucible: str) -> None:
     source_file = os.path.join("pack_crucible", "lang", "en.json")
     destination_dir = version_crucible
     destination_file = os.path.join(destination_dir, "en.json")
 
-    # Upewnij się, że katalog docelowy istnieje
     os.makedirs(destination_dir, exist_ok=True)
-
-    # Skopiuj plik
     shutil.copy2(source_file, destination_file)
     print(f"Skopiowano: {source_file} -> {destination_file}")
 
-def move_json_files(version_crucible):
+
+def move_json_files(version_crucible: str) -> None:
     base_path = pathlib.Path(version_crucible).resolve()
     target_path = base_path / "compendium"
-
-    # 1. Utwórz folder docelowy, jeśli nie istnieje
     target_path.mkdir(parents=True, exist_ok=True)
 
-    # 2. Szukanie tylko plików z rozszerzeniem .json
-    # glob("*.json") wybiera tylko pliki JSON w bieżącym folderze
     json_files = list(base_path.glob("*.json"))
 
     if not json_files:
@@ -423,25 +916,27 @@ def move_json_files(version_crucible):
 
     for file_path in json_files:
         try:
-            # Przenoszenie pliku
             shutil.move(str(file_path), str(target_path / file_path.name))
             print(f"Pomyślnie przeniesiono: {file_path.name}")
         except Exception as e:
             print(f"Błąd przy pliku {file_path.name}: {e}")
 
-if __name__ == '__main__':
-    # Crucible
-    # Ścieżka do pliku Crucible
 
+if __name__ == '__main__':
     crucible_url = "https://github.com/foundryvtt/crucible/releases/latest/download/system.json"
 
     path_crucible, headers_crucible = urlretrieve(crucible_url, 'crucible.json')
-    version_crucible = 'crucible_' + json.loads(open('crucible.json', 'r', encoding='utf-8').read())["version"]
+
+    with open('crucible.json', 'r', encoding='utf-8') as f:
+        crucible_meta = json.load(f)
+
+    version_crucible = 'crucible_' + crucible_meta["version"]
     zip_crucible_filename = "system.zip"
-    zip_crucible = json.loads(open('crucible.json', 'r', encoding='utf-8').read())["download"]
+    zip_crucible = crucible_meta["download"]
     extract_folder = 'pack_crucible'
+
     print()
-    print("*** Wersja Crucible: ", version_crucible, " ***")
+    print("*** Wersja Crucible:", version_crucible, "***")
 
     if create_version_directory(version_crucible):
         download_and_extract_zip(zip_crucible, zip_crucible_filename, extract_folder)
@@ -449,14 +944,10 @@ if __name__ == '__main__':
         with zipfile.ZipFile(zip_crucible_filename, 'r') as zip_ref:
             zip_ref.extractall(extract_folder)
 
-    # Konwersja z db na json
-    read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+    read_leveldb_to_json(os.path.join(extract_folder, 'packs'), os.path.join(extract_folder, 'output'))
     print()
 
-    # === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-
-    # Utworzenie plików do tłumaczenia
-    folder = r'pack_crucible/output'
+    folder = os.path.join('pack_crucible', 'output')
     process_files(folder, version_crucible)
     move_json_files(version_crucible)
     copy_en_json(version_crucible)
