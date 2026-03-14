@@ -780,11 +780,11 @@
             "description": "<p>Raz na rundę możesz wykonać Reakcję, która obejmuje atak, nie zużywający żadnego punktu Skupienia.</p>"
         },
         "Glyphweaving Journeyman": {
-            "name": "Czeladnik tkania glifów",
+            "name": "Czeladnik glifotwórstwa",
             "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie nauk runicznych i przy wystarczającej ilości czasu jesteś w stanie wykonać niektóre z bardziej zaawansowanych procesów tworzenia glifów.</p><p>Podstawowe właściwości najczęściej spotykanych glifów i ich fraz są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby poznać rzadkie ideogramy i ich składniki.</p>"
         },
         "Glyphweaving Novice": {
-            "name": "Nowicjusz tkania glifów",
+            "name": "Nowicjusz glifotwórstwa",
             "description": "<p>Przeszedłeś szkolenie z podstaw tworzenia glifów i potrafisz pracować z większością popularnych glifów i rycin.</p><p>Nadal musisz korzystać z receptur i książek, aby zidentyfikować poszczególne glify i ich właściwości.</p>"
         },
         "Hamstring": {
