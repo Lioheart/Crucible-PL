@@ -356,7 +356,7 @@
             "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
         },
         "Conserve Effort": {
-            "name": "Oszczędność wysiłku",
+            "name": "Oszczędzanie wysiłku",
             "description": "<p>Znajdujesz równowagę i skupienie, oszczędzając siły podczas walki. Jeśli zakończysz swoją <strong>Turę</strong> z niewykorzystaną Akcją, zyskujesz <strong>+1 Skupienia</strong>.</p>"
         },
         "Control Proficiency": {
