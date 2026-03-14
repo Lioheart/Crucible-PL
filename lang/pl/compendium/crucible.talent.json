@@ -71,7 +71,7 @@
             "actions": {
                 "Alchemical Resolve": {
                     "name": "Alchemiczna determinacja",
-                    "description": "<p>Szybko podnosisz Morale sojusznika znajdującego się w odległości do 4 stóp, stosując opary. Wykonaj test <strong>Medycyny</strong> przeciwko <strong>Progowi Szaleństwa</strong> celu. Pomyślny test przywraca <strong>Morale</strong>.</p>"
+                    "description": "<p>Szybko podnosisz Morale sojusznika znajdującego się w odległości do 4 stóp, stosując opary. Wykonaj test <strong>Medycyny</strong> przeciwko <strong>Progowi Obłędu</strong> celu. Pomyślny test przywraca <strong>Morale</strong>.</p>"
                 }
             }
         },
@@ -115,7 +115,7 @@
             "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armored Efficiency": {
-            "name": "Efektywność opancerzenia",
+            "name": "Sprawność w pancerzu",
             "description": "<p>Jesteś wyszkolony w noszeniu najcięższych rodzajów pancerzy, zachowując jednocześnie mobilność. Możesz wykonać jedną akcję Ruchu za darmo na Turę, nosząc Ciężki pancerz.</p>"
         },
         "Armored Shell": {
@@ -295,7 +295,7 @@
         },
         "Carefree": {
             "name": "Beztroski",
-            "description": "<p>Potrafisz oddzielać i ignorować niepowodzenia, co zapewnia Ci niezwykłą zdolność do regeneracji po utracie Morale.</p>\n<p>Twój <strong>Próg Szaleństwa</strong> zostaje zmniejszony o 1, co sprawia, że łatwiej cię wyleczyć.</p>"
+            "description": "<p>Potrafisz oddzielać i ignorować niepowodzenia, co zapewnia Ci niezwykłą zdolność do regeneracji po utracie Morale.</p>\n<p>Twój <strong>Próg Obłędu</strong> zostaje zmniejszony o 1, co sprawia, że łatwiej cię wyleczyć.</p>"
         },
         "Chirurgeon": {
             "name": "Chirurg",
@@ -318,7 +318,7 @@
             "actions": {
                 "Clarify Intent": {
                     "name": "Wyjaśnienie intencji",
-                    "description": "<p>Wyjaśniasz swoje zamiary sojusznikowi znajdującemu się w odległości do 12 stóp. Wykonaj atak przy użyciu umiejętności <strong>Dyplomacji</strong> przeciwko Progowi Szaleństwa sojusznika. Jeśli atak się powiedzie, sojusznik zyskuje +1 do <strong>Skupienia</strong> i +1 <strong>Korzyści</strong> do akcji wykonanych w następnej rundzie.</p>",
+                    "description": "<p>Wyjaśniasz swoje zamiary sojusznikowi znajdującemu się w odległości do 12 stóp. Wykonaj atak przy użyciu umiejętności <strong>Dyplomacji</strong> przeciwko Progowi Obłędu sojusznika. Jeśli atak się powiedzie, sojusznik zyskuje +1 do <strong>Skupienia</strong> i +1 <strong>Korzyści</strong> do akcji wykonanych w następnej rundzie.</p>",
                     "effects": [
                         {
                             "name": "Wyjaśnienie intencji"
@@ -455,6 +455,10 @@
                     "description": "<p>Kiedy zrobisz <strong>Unik</strong> przed atakiem wręcz, możesz zużyć punkty <strong>Skupienia</strong>, żeby wykonać przewrót defensywny, przesuwając się o wartość swojego <strong>Rozmiaru</strong> w dowolnym kierunku.</p>"
                 }
             }
+        },
+        "Deft Grip": {
+            "name": "Zręczny chwyt",
+            "description": "Twoje posługiwanie się bronią jest płynne i precyzyjne. Możesz wykonywać akcje wymagające wolnej ręki, nawet gdy dzierżysz dwuręczną broń dystansową."
         },
         "Demolitionist": {
             "name": "Burzyciel",
@@ -661,11 +665,11 @@
             }
         },
         "Fletching Journeyman": {
-            "name": "Czeladnik opierzania strzał",
-            "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie umiejętności tworzenia piór strzał i z czasem możesz opanować bardziej zaawansowane techniki łucznicze.</p><p>Podstawowe właściwości większości popularnych komponentów opierzania strzał są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby prawidłowo obsługiwać rzadsze schematy i komponenty.</p>"
+            "name": "Czeladnik brzechwiarstwa",
+            "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie umiejętności Brzechwiarstwa i z czasem możesz opanować bardziej zaawansowane techniki łucznicze oraz opierzania strzał.</p><p>Podstawowe właściwości większości popularnych komponentów opierzania strzał są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby prawidłowo obsługiwać rzadsze schematy i komponenty.</p>"
         },
         "Fletching Novice": {
-            "name": "Nowicjusz opierzania strzał",
+            "name": "Nowicjusz brzechwiarstwa",
             "description": "<p>Przeszedłeś szkolenie z podstaw opierzania strzał i potrafisz posługiwać się większością popularnych rodzajów łuków oraz amunicją do nich.</p><p>Nadal musisz korzystać ze schematów i książek, aby zidentyfikować przydatne materiały i ich właściwości.</p>"
         },
         "Flurry": {
@@ -1569,7 +1573,7 @@
         },
         "Shapeshifter": {
             "name": "Zmiennokształtny",
-            "description": "<p>Posiadasz nadprzyrodzoną zdolność przekształcania swojego ciała w postacie bestii.</p><p>Przechodzisz transformację, w wyniku której przybierasz postać znanej ci bestii, której poziom jest równy połowie twojego poziomu lub niższy. Podczas transformacji posiadasz dokładnie takie same atrybuty i zdolności jak wybrana bestia.</p><p>Twój ekwipunek zostaje w magiczny sposób wcielony w przybraną przez ciebie postać, jednak podczas transformacji nie czerpiesz z tego żadnych korzyści.</p><p>Jeśli twoja bestialska postać zostanie unieruchomiona, powracasz do swojej normalnej postaci, a wszelkie nadwyżki obrażeń zamieniają się w Rany. Jeśli twoje Morale zostanie złamane podczas przebywania w postaci bestii, twoja transformacja kończy się, a wszelkie nadwyżki obrażeń zamieniają się w Szaleństwo.</p>",
+            "description": "<p>Posiadasz nadprzyrodzoną zdolność przekształcania swojego ciała w postacie bestii.</p><p>Przechodzisz transformację, w wyniku której przybierasz postać znanej ci bestii, której poziom jest równy połowie twojego poziomu lub niższy. Podczas transformacji posiadasz dokładnie takie same atrybuty i zdolności jak wybrana bestia.</p><p>Twój ekwipunek zostaje w magiczny sposób wcielony w przybraną przez ciebie postać, jednak podczas transformacji nie czerpiesz z tego żadnych korzyści.</p><p>Jeśli twoja bestialska postać zostanie unieruchomiona, powracasz do swojej normalnej postaci, a wszelkie nadwyżki obrażeń zamieniają się w Rany. Jeśli twoje Morale zostanie złamane podczas przebywania w postaci bestii, twoja transformacja kończy się, a wszelkie nadwyżki obrażeń zamieniają się w Obłęd.</p>",
             "actions": {
                 "Beast Shape": {
                     "name": "Postać bestii",
@@ -1668,7 +1672,7 @@
             "actions": {
                 "Soothe": {
                     "name": "Uspokojenie",
-                    "description": "<p>Wykonujesz uspokajający werset, który przynosi korzyści wszystkim sojusznikom, którzy mogą cię dostrzec w promieniu 12 stóp. Wykonaj <strong>test Występów</strong> w stosunku do Progu Szaleństwa każdego sojusznika. W przypadku powodzenia Morale każdego sojusznika zostaje przywrócone.</p>"
+                    "description": "<p>Wykonujesz uspokajający werset, który przynosi korzyści wszystkim sojusznikom, którzy mogą cię dostrzec w promieniu 12 stóp. Wykonaj <strong>test Występów</strong> w stosunku do Progu Obłędu każdego sojusznika. W przypadku powodzenia Morale każdego sojusznika zostaje przywrócone.</p>"
                 }
             }
         },
@@ -1883,6 +1887,9 @@
                     "effects": [
                         {
                             "name": "Pochwycony"
+                        },
+                        {
+                            "name": "Pochwycenie"
                         }
                     ]
                 }
