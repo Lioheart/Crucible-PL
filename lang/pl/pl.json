@@ -1891,7 +1891,7 @@
   },
   "WARNINGS": {
     "AlreadyOwned": "Już posiadasz {name} i nie możesz dodać go po raz drugi.",
-    "Banned": "W tym węźle lub na tym poziomie nie można nabyć dodatkowych talentów charakterystyczne.",
+    "Banned": "W tym węźle lub na tym poziomie nie można nabyć dodatkowych talentów charakterystycznych.",
     "CannotAfford": "Nie masz wystarczającej liczby Punktów Talentu, aby nabyć {name} za {cost} punktów.",
     "CannotUse": "Nie możesz użyć tego talentu.",
     "Inaccessible": "Nie możesz zdobyć \"{name}\", ponieważ nie odblokowałeś tego węzła drzewka talentów.",
