@@ -14,6 +14,8 @@ Hooks.once("init", () => {
     type: Boolean,
     default: false,
     config: true,
+    restricted: true,
+    requiresReload: true,
   });
 
   game.babele.registerConverters({
