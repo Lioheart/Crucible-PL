@@ -10,10 +10,10 @@ Hooks.once("init", () => {
   game.settings.register("lang-pl-crucible", "dual-language-names", {
     name: "Wyświetl nazwy po polsku i angielsku",
     hint: "Oprócz nazwy polskiej wyświetlaj nazwę oryginalną (o ile się różni).",
-                         scope: "world",
-                         type: Boolean,
-                         default: true,
-                           config: true,
+    scope: "world",
+    type: Boolean,
+    default: false,
+    config: true,
   });
 
   game.babele.registerConverters({

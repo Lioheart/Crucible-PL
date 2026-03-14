@@ -6,19 +6,3 @@
 .crucible {
     --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
 }
-
-.crucible.sheet .sheet-header .title input {
-    height: 35px;
-}
-
-.original-name {
-    font-style: italic;
-    margin: -4px 0;
-    padding: 0 0.2rem;
-    user-select: text;
-    -webkit-user-select: text;
-}
-
-.crucible.sheet .sheet-header .title {
-    margin-bottom: 2px;
-}

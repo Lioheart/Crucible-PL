@@ -1,16 +1,32 @@
 const crucibleItemSheets = [
     "CrucibleAncestryItemSheet",
-    "CrucibleBackgroundItemSheet",
-    "CrucibleTalentItemSheet",
-    "CrucibleSpellItemSheet",
-    "CrucibleTaxonomyItemSheet",
-    "CrucibleAccessoryItemSheet",
-    "CrucibleLootItemSheet",
-    "CrucibleArmorItemSheet",
-    "CrucibleConsumableItemSheet",
-    "CrucibleToolItemSheet",
-    "CrucibleWeaponItemSheet"
+"CrucibleBackgroundItemSheet",
+"CrucibleTalentItemSheet",
+"CrucibleSpellItemSheet",
+"CrucibleTaxonomyItemSheet",
+"CrucibleAccessoryItemSheet",
+"CrucibleLootItemSheet",
+"CrucibleArmorItemSheet",
+"CrucibleConsumableItemSheet",
+"CrucibleToolItemSheet",
+"CrucibleWeaponItemSheet"
 ];
+
+// ładowanie CSS tylko gdy opcja jest włączona
+Hooks.once("ready", () => {
+
+    if (!game.settings.get("lang-pl-crucible", "dual-language-names")) return;
+
+    const id = "lang-pl-crucible-original-name-css";
+    if (document.getElementById(id)) return;
+
+    const link = document.createElement("link");
+    link.id = id;
+    link.rel = "stylesheet";
+    link.href = "modules/lang-pl-crucible/styles/original-name.css";
+
+    document.head.appendChild(link);
+});
 
 crucibleItemSheets.forEach(sheet => {
     Hooks.on(`render${sheet}`, (app, html) => addOriginalNameCrucible(app, html));
@@ -18,12 +34,10 @@ crucibleItemSheets.forEach(sheet => {
 
 async function addOriginalNameCrucible(app, html) {
 
-    // opcja w settings
     if (!game.settings.get("lang-pl-crucible", "dual-language-names")) return;
 
-    const document = app.document;
-
-    const originalName = document?.flags?.babele?.originalName;
+    const documentData = app.document;
+    const originalName = documentData?.flags?.babele?.originalName;
     if (!originalName) return;
 
     const root = html instanceof HTMLElement ? html : html[0];
@@ -39,13 +53,13 @@ async function addOriginalNameCrucible(app, html) {
 
     if (originalName === translatedName) return;
 
-    // unikamy duplikatu
     if (root.querySelector(".original-name")) return;
 
     const engNameHtml = `
-    <div class="original-name" style="font-size:0.9em; opacity:0.8;">
+    <div class="original-name">
     ${originalName}
-    </div>`;
+    </div>
+    `;
 
     title.insertAdjacentHTML("afterend", engNameHtml);
 }
