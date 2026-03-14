@@ -666,10 +666,10 @@
         },
         "Fletching Journeyman": {
             "name": "Czeladnik łuczarstwa",
-            "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie umiejętności Brzechwiarstwa i z czasem możesz opanować bardziej zaawansowane techniki łucznicze oraz opierzania strzał.</p><p>Podstawowe właściwości większości popularnych komponentów opierzania strzał są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby prawidłowo obsługiwać rzadsze schematy i komponenty.</p>"
+            "description": "<p>Posiadasz profesjonalne doświadczenie w zakresie umiejętności Łuczarstwa i z czasem możesz opanować bardziej zaawansowane techniki łucznicze oraz opierzania strzał.</p><p>Podstawowe właściwości większości popularnych komponentów opierzania strzał są łatwe do zapamiętania bez pomocy materiałów źródłowych, ale nadal potrzebujesz książek, aby prawidłowo obsługiwać rzadsze schematy i komponenty.</p>"
         },
         "Fletching Novice": {
-            "name": "Nowicjusz brzechwiarstwa",
+            "name": "Nowicjusz łuczarstwa",
             "description": "<p>Przeszedłeś szkolenie z podstaw opierzania strzał i potrafisz posługiwać się większością popularnych rodzajów łuków oraz amunicją do nich.</p><p>Nadal musisz korzystać ze schematów i książek, aby zidentyfikować przydatne materiały i ich właściwości.</p>"
         },
         "Flurry": {
