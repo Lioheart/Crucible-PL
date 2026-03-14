@@ -26,7 +26,7 @@
                     "name": "Napierśnik"
                 },
                 "Cadence": {
-                    "name": "Rytm",
+                    "name": "Kadencja",
                     "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>Uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
                 },
                 "Gesture: Arrow": {
@@ -505,7 +505,7 @@
             "name": "Bastion"
         },
         "Cadence": {
-            "name": "Rytm"
+            "name": "Kadencja"
         },
         "Cleave": {
             "name": "Rozłupanie",
