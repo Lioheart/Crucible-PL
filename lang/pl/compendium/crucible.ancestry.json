@@ -6,11 +6,11 @@
             "description": "<p>Urodziłeś się z nieoczekiwaną magiczną władzą nad swoim stworzeniem. Twój wygląd fizyczny nosi znamiona, które przesądni ludzie kojarzą z istotami z innych wymiarów – szkarłatna skóra, nieskuteczne skrzydła lub rogi, gadzie oczy. Twoja niechęć do światła i nadprzyrodzona odporność na ogień nie przekonują ludzi, by przestali uważać cię za prawdziwego diabła.</p>"
         },
         "Dwarven": {
-            "name": "Krasnoludzkie",
+            "name": "Krasnolud",
             "description": "<p>Podobnie jak twoi rodzice przed tobą, urodziłeś się z niezłomną wytrzymałością krasnoludów. Twoja krępa budowa ciała i krzepka sylwetka są cechami charakterystycznymi dla ludu zrodzonego z ziemi i kamienia. Odziedziczyłeś fizyczną wytrzymałość, ponieważ w twojej piersi bije serce z kamienia.</p>"
         },
         "Elvish": {
-            "name": "Elfickie",
+            "name": "Elf",
             "description": "<p>Pełen wdzięku w ruchach i szybki w myśleniu, urodziłeś się jako długowieczny elf. Twoja smukła i zwinna sylwetka oraz wyrzeźbione rysy twarzy są cechami odziedziczonymi po ludziach, dla których elegancja jest sposobem na życie. Twoja skłonność do szybkiego myślenia i precyzyjnych ruchów jest wynikiem ewolucji trwającej setki lat tradycji.</p>"
         },
         "Giantkin": {
