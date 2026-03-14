@@ -1951,24 +1951,24 @@
             "description": "Wykrywasz okazje do uderzenia w słabe punkty przeciwnika. Atakując cel, który jest <strong>Nieświadomy</strong>, <strong>Flankowany</strong> lub <strong>Odsłonięty</strong> przy użyciu broni Finezyjnej, zyskujesz +2 do obrażeń za każde Uderzenie."
         },
         "Wilderness Adept": {
-            "name": "Adept dzikiej przyrody",
+            "name": "Adept dziczy",
             "description": "<p>Otrzymujesz rangę <strong>Znawca</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +2 do umiejętności</strong>.</p>"
         },
         "Wilderness Journeyman": {
-            "name": "Czeladnik dzikiej przyrody",
+            "name": "Czeladnik dziczy",
             "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
         },
         "Wilderness Master": {
-            "name": "Mistrz dzikiej przyrody",
+            "name": "Mistrz dziczy",
             "description": "<p>Otrzymujesz rangę <strong>Mistrz</strong> w umiejętności <strong>Dzicz</strong>, zapewniającą <strong>premię +3 do umiejętności</strong>.</p>"
         },
         "Wilderness Novice": {
-            "name": "Nowicjusz dzikiej przyrody",
+            "name": "Nowicjusz dziczy",
             "description": "<p>Przeszedłeś szkolenie z podstaw przetrwania i poruszania się w dziczy. Otrzymujesz rangę <strong>Nowicjusz</strong> w umiejętności <strong>Dzicz</strong>i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności. </p><p>Wiesz, jak znaleźć i zbudować bezpieczne schronienie przed żywiołami, rozniecić ogień, aby się ogrzać, oraz jak zachować chłód w gorącym otoczeniu. Potrafisz znaleźć bezpieczną wodę pitną w większości miejsc oraz rozpoznać rośliny i zwierzęta, które mogą służyć jako bezpieczne źródło pożywienia.</p>"
         },
         "Wildspeaker": {
             "name": "Dziki mówca",
-            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dzikiej przyrody.</p>",
+            "description": "<p>Masz nadprzyrodzoną umiejętność komunikowania się ze zwierzętami. Dzięki mowie ciała i dźwiękom potrafisz interpretować i porozumiewać się w języku dziczy.</p>",
             "actions": {
                 "Wildspeak": {
                     "name": "Język dzikich zwierząt",
