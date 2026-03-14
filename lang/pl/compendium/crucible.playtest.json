@@ -137,16 +137,18 @@
                     }
                 },
                 "Anvil": {
-                    "name": "Anvil",
+                    "name": "Kowadło",
                     "tokenName": {
-                        "name": "Anvil"
+                        "name": "Kowadło"
                     },
                     "items": {
                         "Heavy Hides": {
-                            "name": "Utwardzona skórznia"
+                            "name": "Utwardzona skórznia",
+                            "description": "<p>Te wytrzymałe zbroje, wykonane z twardych skór wielkich zwierząt lub potworów, są noszone przez myśliwych i dzikich ludzi, zapewniając trwałą, ale prymitywną ochronę w terenie.</p>"
                         },
                         "Greatclub": {
-                            "name": "Wielka maczuga"
+                            "name": "Wielka maczuga",
+                            "description": "<p>Gruby kawałek ciężkiego drewna, czasem nabity żelaznymi kolcami, wielka maczuga jest prymitywną, ale budzącą grozę bronią, niebezpieczną nawet w rękach niedoświadczonego użytkownika.</p>"
                         },
                         "Powerful Physique": {
                             "name": "Potężna sylwetka",
@@ -225,16 +227,18 @@
                     }
                 },
                 "Hammer": {
-                    "name": "Hammer",
+                    "name": "Młot",
                     "tokenName": {
-                        "name": "Hammer"
+                        "name": "Młot"
                     },
                     "items": {
                         "Hand Axe": {
-                            "name": "Topór ręczny"
+                            "name": "Topór ręczny",
+                            "description": "<p>Kompaktowy i zabójczy topór ręczny to jednoręczne narzędzie z krótkim trzonkiem i ostrym ostrzem, idealne do rzucania lub walki w zwarciu, gdzie szybkość przeważa nad zasięgiem.</p>"
                         },
                         "Scale Mail": {
-                            "name": "Zbroja łuskowa"
+                            "name": "Zbroja łuskowa",
+                            "description": "<p>Złożona z nakładających się na siebie metalowych płytek, przyszytych lub przynitowanych do skórzanego lub materiałowego podkładu, kolczuga przypomina smoczą skórę i dobrze chroni przed cięciami i pchnięciami – choć jest hałaśliwa i nieelastyczna.</p>"
                         },
                         "Skirmisher": {
                             "name": "Harcownik",
@@ -286,7 +290,8 @@
                             }
                         },
                         "Bastard Sword": {
-                            "name": "Miecz półtoraręczny"
+                            "name": "Miecz półtoraręczny",
+                            "description": "<p>Miecz bękarci, znany również jako miecz półtoraręczny, jest wszechstronną bronią o prostym, obosiecznym ostrzu o długości około 1 metra. Broń ta została wykuta tak, aby zapewnić zarówno zwinność podczas walki jedną ręką, jak i siłę podczas walki dwoma rękami.</p>"
                         }
                     },
                     "archetype": {
@@ -305,10 +310,12 @@
                     },
                     "items": {
                         "Skull Fetish": {
-                            "name": "Fetysz czaszki"
+                            "name": "Fetysz czaszki",
+                            "description": "<p>Ten makabryczny talizman przywołuje strach i energię śmierci, aby wspomóc rzucanie zaklęć lub dotknąć wrogów niszczącym wpływem.</p>"
                         },
                         "Studded Leather Armor": {
-                            "name": "Ćwiekowana zbroja skórzana"
+                            "name": "Ćwiekowana zbroja skórzana",
+                            "description": "<p>Podstawa wykonana ze skóry wzmocnionej małymi metalowymi ćwiekami lub nitowanymi płytkami. Ta zbroja zapewnia równowagę między mobilnością a umiarkowaną ochroną przed cięciami.</p>"
                         },
                         "Gesture: Influence": {
                             "name": "Gest: Wpływ",
@@ -390,7 +397,8 @@
                             }
                         },
                         "Grimoire": {
-                            "name": "Grimuar"
+                            "name": "Grimuar",
+                            "description": "<p>Ta ciężka księga służy jako skarbnica wiedzy, a także narzędzie do rzucania zaklęć. W rękach praktykującego magię może ona wywoływać potężne uderzenia mocy w kierunku celu.</p>"
                         }
                     },
                     "archetype": {
@@ -412,7 +420,8 @@
                             "name": "Pancerz śmierci"
                         },
                         "Shortbow": {
-                            "name": "Krótki łuk"
+                            "name": "Krótki łuk",
+                            "description": "<p>Kompaktowy i szybki w użyciu łuk krótki doskonale sprawdza się w szybkiej strzelaninie z bliskiej odległości i potyczkach, dlatego jest ulubioną bronią zwiadowców, myśliwych i szybkich najeźdźców.</p>"
                         },
                         "Precision Shot": {
                             "name": "Precyzyjny strzał",
@@ -458,7 +467,8 @@
                             "name": "Pancerz śmierci"
                         },
                         "Spear": {
-                            "name": "Włócznia"
+                            "name": "Włócznia",
+                            "description": "<p>Włócznia, broń dalekiego zasięgu i rytmu, ma długie drzewce zakończone stalowym ostrzem, idealne do utrzymania linii lub rzucania z zabójczą siłą zza ściany tarcz.</p>"
                         },
                         "Bulwark": {
                             "name": "Bastion",
@@ -644,7 +654,8 @@
                             "name": "Pazury"
                         },
                         "Void Chitin": {
-                            "name": "Chityna pustki"
+                            "name": "Chityna pustki",
+                            "description": "<p>Kilka pustych chitynowych miejsc.</p>"
                         },
                         "Pestilent Lash": {
                             "name": "Cios zarazy",
@@ -713,7 +724,8 @@
                             "name": "Psychiczna paszcza"
                         },
                         "Void Chitin": {
-                            "name": "Chityna pustki"
+                            "name": "Chityna pustki",
+                            "description": "<p>Kilka pustych chitynowych miejsc.</p>"
                         },
                         "Eldritch Emanation": {
                             "name": "Magiczna emanacja",
@@ -760,7 +772,8 @@
                             "name": "Nieuchwytne wici"
                         },
                         "Void Chitin": {
-                            "name": "Chityna pustki"
+                            "name": "Chityna pustki",
+                            "description": "<p>Kilka pustych chitynowych miejsc.</p>"
                         },
                         "Devour Thoughts": {
                             "name": "Pochłonięcie myśli",
@@ -809,10 +822,12 @@
                     },
                     "items": {
                         "Flame Staff": {
-                            "name": "Kostur ognia"
+                            "name": "Kostur ognia",
+                            "description": "<p>Ta magiczna laska jest talizmanem pomagającym w rzucaniu zaklęć lub rzucaniu na wrogów strumieniami magicznego ognia.</p>"
                         },
                         "Ring Mail": {
-                            "name": "Kolczuga pierścieniowa"
+                            "name": "Kolczuga pierścieniowa",
+                            "description": "<p>Kolczuga pierścieniowa składa się z metalowych pierścieni przyszytych do wyściełanej podstawy, zapewniając mniejszą ochronę niż cięższe rodzaje kolczugi, ale w zamian za to większą swobodę ruchów.</p>"
                         },
                         "Inspire Heroism": {
                             "name": "Inspiracja heroizmu",
@@ -960,7 +975,8 @@
                     },
                     "items": {
                         "Splint Mail": {
-                            "name": "Napierśnik"
+                            "name": "Napierśnik",
+                            "description": "<p>Warstwa pionowych metalowych pasków przynitowanych do podłoża ze skóry lub kolczugi, napierśnik zapewnia silną ochronę kończyn, ale kosztem pewnej elastyczności.</p>"
                         },
                         "Cadence": {
                             "name": "Kadencja",
@@ -1013,7 +1029,8 @@
                             "description": "<p>Twoja niezwykła wytrzymałość daje ci nadprzyrodzoną zdolność do szybkiego wyleczenia się z ran. Na początku swojej tury, jeśli nie jesteś osłabiony, zyskujesz +1 do <strong>Zdrowia</strong>.</p>"
                         },
                         "Glaive": {
-                            "name": "Glewia"
+                            "name": "Glewia",
+                            "description": "<p>Glewia to broń drzewcowa z zakrzywionym ostrzem przypominającym miecz, zamocowanym na końcu długiego trzonka. Służy do wykonywania szerokich, łukowatych ciosów, które przecinają wrogów.</p>"
                         },
                         "Athletics Novice": {
                             "name": "Nowicjusz atletyki",
@@ -1093,7 +1110,8 @@
                             }
                         },
                         "Greatsword": {
-                            "name": "Wielki miecz"
+                            "name": "Wielki miecz",
+                            "description": "<p>Dłuższy i cięższy od standardowego miecza długiego, wielki miecz jest bronią dwuręczną przeznaczoną do wykonywania potężnych zamachów, a jego długość zapewnia zarówno zasięg, jak i budzi respekt.</p>"
                         }
                     },
                     "ancestry": {
@@ -1115,10 +1133,12 @@
                     },
                     "items": {
                         "Dagger": {
-                            "name": "Sztylet"
+                            "name": "Sztylet",
+                            "description": "<p>Mały, szybki i zabójczy sztylet z łatwością wbija się między żebra lub w szczeliny w pancerzu. Jego ostre ostrze jest ulubioną bronią zabójców, złodziei i tych, którzy preferują ciche zabójstwa.</p>"
                         },
                         "Studded Leather Armor": {
-                            "name": "Ćwiekowana zbroja skórzana"
+                            "name": "Ćwiekowana zbroja skórzana",
+                            "description": "<p>Podstawa wykonana ze skóry wzmocnionej małymi metalowymi ćwiekami lub nitowanymi płytkami. Ta zbroja zapewnia równowagę między mobilnością a umiarkowaną ochroną przed cięciami.</p>"
                         },
                         "Diversionist": {
                             "name": "Dywersant",
@@ -1233,10 +1253,12 @@
                             "description": "<p>Jesteś kłamcą i manipulatorem, a oszustwo to umiejętność, którą ćwiczyłeś. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Oszustwo</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Wiesz, jak tworzyć proste kłamstwa i oszustwa, a także znasz charakterystyczne oznaki, które zdradzają kiepskich kłamców. Potrafisz stworzyć proste fałszerstwo większości popularnych dokumentów, ale nie przejdą one żadnej dokładnej kontroli.</p>"
                         },
                         "Stiletto": {
-                            "name": "Stiletto"
+                            "name": "Stiletto",
+                            "description": "<p>Cienki, zwężający się i przeznaczony do przebijania, stiletto jest bronią zabójcy — zaprojektowany tak, aby wślizgnąć się między żebra lub szczeliny w zbroi i nie pozostawić prawie żadnego śladu.</p>"
                         },
                         "Healing Elixir": {
                             "name": "Eliksir leczenia",
+                            "description": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>",
                             "actions": {
                                 "Healing Elixir": {
                                     "name": "Eliksir leczenia",
@@ -1246,6 +1268,7 @@
                         },
                         "Antitoxin": {
                             "name": "Antytoksyna",
+                            "description": "<p>Smukła fiolka zawierająca lekko złocistą ciecz. Pachnie nieprzyjemnie, ale zawiera środki alchemiczne niezbędne do neutralizacji wielu różnych toksyn.</p>",
                             "actions": {
                                 "Antitoxin": {
                                     "name": "Antytoksyna",
@@ -1255,6 +1278,7 @@
                         },
                         "Poison Vial": {
                             "name": "Fiolka z trucizną",
+                            "description": "<p>Ta mała fiolka zawiera mętną ciecz, która jest wyraźnie gęstsza od wody. Wydziela niepokojący zapach, który wywołuje poczucie niepokoju.</p>",
                             "actions": {
                                 "Ingest Poison": {
                                     "name": "Spożycie trucizny",
@@ -1351,7 +1375,8 @@
                     },
                     "items": {
                         "Scale Mail": {
-                            "name": "Zbroja łuskowa"
+                            "name": "Zbroja łuskowa",
+                            "description": "<p>Złożona z nakładających się na siebie metalowych płytek, przyszytych lub przynitowanych do skórzanego lub materiałowego podkładu, kolczuga przypomina smoczą skórę i dobrze chroni przed cięciami i pchnięciami – choć jest hałaśliwa i nieelastyczna.</p>"
                         },
                         "Intimidator": {
                             "name": "Zastraszacz",
@@ -1509,10 +1534,12 @@
                             "description": "<p>Posiadasz biegłą znajomość posługiwania się tarczami w walce. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Tarcza</strong>.</p>"
                         },
                         "Crowbar": {
-                            "name": "Łom"
+                            "name": "Łom",
+                            "description": "<p>Lekko wygięty pręt z mocnego metalu, zakończony hakiem z płaską główką. Służy do wywierania nacisku, aby oddzielić jeden przedmiot od drugiego.</p>"
                         },
                         "Healing Elixir": {
                             "name": "Eliksir leczenia",
+                            "description": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>",
                             "actions": {
                                 "Healing Elixir": {
                                     "name": "Eliksir leczenia",
@@ -1521,7 +1548,8 @@
                             }
                         },
                         "Expanded Toolbelt": {
-                            "name": "Rozszerzony pas narzędziowy"
+                            "name": "Rozszerzony pas narzędziowy",
+                            "description": "<p>Rozszerzony pas narzędziowy w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca na pasie narzędziowym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce na pasie narzędziowym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca na pasie narzędziowym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca na pasie narzędziowym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca na pasie narzędziowym</p></li></ul>"
                         },
                         "Rune: Kinesis": {
                             "name": "Runa: Kinetyka",
@@ -1538,10 +1566,12 @@
                             "description": "<p>Twoja biegłość w sztuce tajemnej sprawia, że jesteś bardziej odporny na obrażenia elementalne i duchowe. Otrzymujesz premię do <strong>Odporności</strong> równą połowie twojej Mądrości za każdy rodzaj obrażeń żywiołowych lub duchowych, dla których znasz Rune Arkan dostosowaną do tego rodzaju obrażeń.</p><p>Kiedy używasz gestu <strong>Ochrona</strong>, Odporność zapewniana przez twoją Ochronę również wzrasta o połowę twojej Mądrości.</p>"
                         },
                         "Heater Shield": {
-                            "name": "Tarcza herbowa"
+                            "name": "Tarcza herbowa",
+                            "description": "<p>Nazwana tak ze względu na swój kształt przypominający herb, tarcza herbowa zapewnia równowagę między pokryciem a mobilnością.</p>"
                         },
                         "War Hammer": {
-                            "name": "Młot bojowy"
+                            "name": "Młot bojowy",
+                            "description": "<p>Młot bojowy, stworzony do miażdżenia tarcz i rozbijania osłon, posiada ciężką, tępo zakończoną głowicę zamontowaną na wzmocnionym trzonku, siejąc spustoszenie w rękach tych, którzy przedkładają siłę nad finezję.</p>"
                         },
                         "Shield Charge": {
                             "name": "Szarża tarczą",
@@ -1588,13 +1618,16 @@
                     },
                     "items": {
                         "Longbow": {
-                            "name": "Długi łuk"
+                            "name": "Długi łuk",
+                            "description": "<p>Wysoki łuk prosty, często wyższy od łucznika, który go naciąga, wymaga ogromnej siły i lat praktyki, aby opanować sztukę strzelania z niego, wysyłając strzały z zabójczą siłą na pole bitwy.</p>"
                         },
                         "Scimitar": {
-                            "name": "Bułat"
+                            "name": "Bułat",
+                            "description": "<p>Dzięki szerokiemu, zakrzywionemu ostrzu i zabójczemu łukowi, szabla ta tańczy na polu bitwy, przecinając wrogów eleganckimi, zamaszystymi ciosami.</p>"
                         },
                         "Studded Leather Armor": {
-                            "name": "Ćwiekowana zbroja skórzana"
+                            "name": "Ćwiekowana zbroja skórzana",
+                            "description": "<p>Podstawa wykonana ze skóry wzmocnionej małymi metalowymi ćwiekami lub nitowanymi płytkami. Ta zbroja zapewnia równowagę między mobilnością a umiarkowaną ochroną przed cięciami.</p>"
                         },
                         "Pinning Shot": {
                             "name": "Strzał przyszpilający",
@@ -1726,6 +1759,7 @@
                         },
                         "Blast Flask": {
                             "name": "Kolba wybuchowa",
+                            "description": "<p>Flaszka wypełniona czerwonawym płynem eksploduje po pęknięciu, tworząc niewielki wybuchowy ogień, który szybko się rozprasza.</p>\n\n<p></p><p>Te flaszki alchemiczne, używane głównie do rozbijania dużych kawałków rudy, mają ogromną moc. Po połączeniu w wystarczająco dużej ilości mogą również służyć do wywołania reakcji łańcuchowej, która powoduje większe eksplozje.</p>",
                             "actions": {
                                 "Blast Flask": {
                                     "name": "Kolba wybuchowa",
@@ -1777,13 +1811,16 @@
                     },
                     "items": {
                         "Ring Mail": {
-                            "name": "Kolczuga pierścieniowa"
+                            "name": "Kolczuga pierścieniowa",
+                            "description": "<p>Kolczuga pierścieniowa składa się z metalowych pierścieni przyszytych do wyściełanej podstawy, zapewniając mniejszą ochronę niż cięższe rodzaje kolczugi, ale w zamian za to większą swobodę ruchów.</p>"
                         },
                         "Arcane Orb": {
-                            "name": "Kula arkan"
+                            "name": "Kula arkan",
+                            "description": "<p>Kula z kryształu lub szkła, która w dłoni utalentowanego czarodzieja staje się przewodnikiem jego mocy. Gromadzi energię elektryczną w swojej kuli, a następnie uderza w cel z elektryzującą siłą.</p>"
                         },
                         "Grimoire": {
-                            "name": "Grimuar"
+                            "name": "Grimuar",
+                            "description": "<p>Ta ciężka księga służy jako skarbnica wiedzy, a także narzędzie do rzucania zaklęć. W rękach praktykującego magię może ona wywoływać potężne uderzenia mocy w kierunku celu.</p>"
                         },
                         "Intuit Weakness": {
                             "name": "Intuicja słabości",
@@ -1952,10 +1989,12 @@
                     },
                     "items": {
                         "Ice Staff": {
-                            "name": "Kostur lodu"
+                            "name": "Kostur lodu",
+                            "description": "<p>Ta magiczna laska jest talizmanem, który pomaga w rzucaniu zaklęć lub wystrzeliwaniu lodowych pocisków w kierunku wrogów.</p>"
                         },
                         "Scale Mail": {
-                            "name": "Zbroja łuskowa"
+                            "name": "Zbroja łuskowa",
+                            "description": "<p>Złożona z nakładających się na siebie metalowych płytek, przyszytych lub przynitowanych do skórzanego lub materiałowego podkładu, kolczuga przypomina smoczą skórę i dobrze chroni przed cięciami i pchnięciami – choć jest hałaśliwa i nieelastyczna.</p>"
                         },
                         "Gesture: Influence": {
                             "name": "Gest: Wpływ",
@@ -2021,7 +2060,8 @@
                             }
                         },
                         "Healing Elixir Formula": {
-                            "name": "Formuła eliksiru leczenia"
+                            "name": "Formuła eliksiru leczenia",
+                            "description": "Powszechnie znany przepis na stworzenie podstawowego eliksiru leczniczego.\n\nZa pomocą Narzędzi Alchemicznych można przekształcić określone zioła lecznicze znalezione w naturze w butelkowany eliksir."
                         },
                         "Versatile Translator": {
                             "name": "Wszechstronny tłumacz",
@@ -2111,10 +2151,12 @@
                     },
                     "items": {
                         "Scale Mail": {
-                            "name": "Zbroja łuskowa"
+                            "name": "Zbroja łuskowa",
+                            "description": "<p>Złożona z nakładających się na siebie metalowych płytek, przyszytych lub przynitowanych do skórzanego lub materiałowego podkładu, kolczuga przypomina smoczą skórę i dobrze chroni przed cięciami i pchnięciami – choć jest hałaśliwa i nieelastyczna.</p>"
                         },
                         "Greataxe": {
-                            "name": "Wielki topór"
+                            "name": "Wielki topór",
+                            "description": "<p>Wielki topór to potężna broń z szerokim, często podwójnym ostrzem, stworzona do zadawania niszczycielskich ciosów, siekających ludzi i zwierzęta z ogromną siłą. </p>"
                         },
                         "Intimidator": {
                             "name": "Zastraszacz",
@@ -2292,7 +2334,8 @@
                             }
                         },
                         "Stiletto": {
-                            "name": "Stiletto"
+                            "name": "Stiletto",
+                            "description": "<p>Cienki, zwężający się i przeznaczony do przebijania, stiletto jest bronią zabójcy — zaprojektowany tak, aby wślizgnąć się między żebra lub szczeliny w zbroi i nie pozostawić prawie żadnego śladu.</p>"
                         },
                         "Adrenaline Surge": {
                             "name": "Przypływ adrenaliny",
@@ -2326,6 +2369,10 @@
         }
     },
     "mapping": {
+        "tokenName": {
+            "path": "prototypeToken.name",
+            "converter": "nested_object_converter"
+        },
         "items": {
             "path": "items",
             "converter": "embedded_items_converter"
@@ -2353,10 +2400,6 @@
         "biography": {
             "path": "system.details.biography",
             "converter": "embedded_biography_converter"
-        },
-        "tokenName": {
-            "path": "prototypeToken.name",
-            "converter": "nested_object_converter"
         }
     }
 }
