@@ -63,16 +63,13 @@
             },
             "macros": {
                 "Recover": {
-                    "name": "Recover",
-                    "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
+                    "name": "Recover"
                 },
                 "Toggle Talent Tree": {
-                    "name": "Toggle Talent Tree",
-                    "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
+                    "name": "Toggle Talent Tree"
                 },
                 "Full Rest": {
-                    "name": "Full Rest",
-                    "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
+                    "name": "Full Rest"
                 }
             },
             "actors": {
@@ -80,117 +77,299 @@
                     "name": "Baizaz",
                     "tokenName": {
                         "name": "Baizaz"
+                    },
+                    "archetype": {
+                        "name": "Tusker",
+                        "description": "<p>Beasts that fight using their own mass, momentum, and sharpened tusks.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Boar",
+                        "description": "<p>Mammals with thick hide, dangerous tusks, and a powerful low-seated center of mass.</p>"
                     }
                 },
                 "Huiana": {
                     "name": "Huiana",
                     "tokenName": {
                         "name": "Huiana"
+                    },
+                    "archetype": {
+                        "name": "Pack Member",
+                        "description": "Beasts that hunt in packs."
+                    },
+                    "taxonomy": {
+                        "name": "Hyena",
+                        "description": "Mammals from the hyena family. Hyenas are carnivorous pack hunters with powerful necks and jaws."
                     }
                 },
                 "Anvil": {
                     "name": "Anvil",
                     "tokenName": {
                         "name": "Anvil"
+                    },
+                    "archetype": {
+                        "name": "Grappler",
+                        "description": "Fighters who specialize in physically restraining their adversaries and rendering them susceptible to further attacks."
+                    },
+                    "taxonomy": {
+                        "name": "Ogre",
+                        "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
                     }
                 },
                 "Hammer": {
                     "name": "Hammer",
                     "tokenName": {
                         "name": "Hammer"
+                    },
+                    "archetype": {
+                        "name": "Skirmisher",
+                        "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+                    },
+                    "taxonomy": {
+                        "name": "Orcish",
+                        "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
                     }
                 },
                 "Orivech": {
                     "name": "Orivech",
                     "tokenName": {
                         "name": "Orivech"
+                    },
+                    "archetype": {
+                        "name": "Occultist",
+                        "description": "Magic users who practice spellcraft using otherworldly and eldritch forces."
+                    },
+                    "taxonomy": {
+                        "name": "Human",
+                        "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
                     }
                 },
                 "Skeletal Archer": {
                     "name": "Skeletal Archer",
                     "tokenName": {
                         "name": "Skeletal Archer"
+                    },
+                    "archetype": {
+                        "name": "Archer",
+                        "description": "Ranged combatants with training is the use of bows."
+                    },
+                    "taxonomy": {
+                        "name": "Skeleton",
+                        "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
                     }
                 },
                 "Skeletal Spearman": {
                     "name": "Skeletal Spearman",
                     "tokenName": {
                         "name": "Skeletal Spearman"
+                    },
+                    "archetype": {
+                        "name": "Fighter",
+                        "description": "Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor."
+                    },
+                    "taxonomy": {
+                        "name": "Skeleton",
+                        "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
                     }
                 },
                 "Koy Rent": {
                     "name": "Koy Rent",
                     "tokenName": {
                         "name": "Koy Rent"
+                    },
+                    "archetype": {
+                        "name": "Berserker",
+                        "description": "A rage-fueled warrior which prefers two-handed attacks using Heavy weapons."
+                    },
+                    "taxonomy": {
+                        "name": "Werewolf",
+                        "description": "<p>Lycanthropic shapeshifters who walk as men but take wolven form.</p>"
                     }
                 },
                 "Harbinger of Disease": {
                     "name": "Harbinger of Disease",
                     "tokenName": {
                         "name": "Harbinger of Disease"
+                    },
+                    "archetype": {
+                        "name": "Plaguebearer",
+                        "description": "<p>Bringers of pestilence and decay.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Harbinger",
+                        "description": "<p>Otherworldly beings from the void beyond.</p>"
                     }
                 },
                 "Harbinger of Fear": {
                     "name": "Harbinger of Fear",
                     "tokenName": {
                         "name": "Harbinger of Fear"
+                    },
+                    "archetype": {
+                        "name": "Fearmonger",
+                        "description": "<p>Bringers of terror and despair.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Harbinger",
+                        "description": "<p>Otherworldly beings from the void beyond.</p>"
                     }
                 },
                 "Harbinger of Madness": {
                     "name": "Harbinger of Madness",
                     "tokenName": {
                         "name": "Harbinger of Madness"
+                    },
+                    "archetype": {
+                        "name": "Mindwarper",
+                        "description": "A hulking creature that destroys the sanity of those which behold it."
+                    },
+                    "taxonomy": {
+                        "name": "Harbinger",
+                        "description": "<p>Otherworldly beings from the void beyond.</p>"
                     }
                 },
                 "Zarajah": {
                     "name": "Zarajah",
                     "tokenName": {
                         "name": "Zarajah"
+                    },
+                    "ancestry": {
+                        "name": "Devilkin",
+                        "description": "<p>You were born with unexpected magical influence over your creation. Your physical appearance shows tell-tale signs that the superstitious associate with planar beings- crimson flesh, ineffective wings or horns, reptilian eyes. Your dislike of light and preternatural resistance to fire does little to dissuade people from thinking you are an actual devil.</p>"
+                    },
+                    "background": {
+                        "name": "Performer",
+                        "description": "You were a travelling entertainer. You learned to be comfortable attending a variety of social functions, how to play to your audience, embellishing details of your performance to evoke particular emotional responses."
                     }
                 },
                 "Agnath": {
                     "name": "Agnath",
                     "tokenName": {
                         "name": "Agnath"
+                    },
+                    "ancestry": {
+                        "name": "Orcish",
+                        "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
+                    },
+                    "background": {
+                        "name": "Soldier",
+                        "description": "<p>You were a rank-and-file member of a military organization of some variety. Discipline made you a survivor and emphasized the importance of demonstrating strength and dominance over others, and years on horseback or marching taught you how to handle all manner of terrain.</p>"
                     }
                 },
                 "Belladonna": {
                     "name": "Belladonna",
                     "tokenName": {
                         "name": "Belladonna"
+                    },
+                    "ancestry": {
+                        "name": "Human",
+                        "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
+                    },
+                    "background": {
+                        "name": "Urchin",
+                        "description": "<p>Few learn to survive the way you did. Yours was a harsh education in distrust. You learned to watch others for the telltale signs of danger or disloyalty, to avoid the attention of others, scavenging for scraps of food on the streets of some urban sprawl.</p>"
                     }
                 },
                 "Duurath": {
                     "name": "Duurath",
                     "tokenName": {
                         "name": "Duurath"
+                    },
+                    "ancestry": {
+                        "name": "Dwarven",
+                        "description": "<p>Like your parents before you, you were born with the enduring fortitude of the Dwarves. Your stout stature and burly physical appearance are the hallmarks of a people born of earth and stone. A legacy of physical resilience is yours to inherit, for in your breast beats a heart of stone.</p>"
+                    },
+                    "background": {
+                        "name": "Constable",
+                        "description": "<p>You were part of a law enforcement organization. You learned how to remain vigilant to your surroundings, work within complex social structures, and affect an imposing presence.</p>"
                     }
                 },
                 "Eliorwen": {
                     "name": "Eliorwen",
                     "tokenName": {
                         "name": "Eliorwen"
+                    },
+                    "ancestry": {
+                        "name": "Elvish",
+                        "description": "<p>Graceful in movement and swift in thought, you were born a long-lived elf. Your slight and nimble frame and sculpted features are the inherited traits of a people for whom elegance is a way of life. Your predisposition toward quick-thinking and precise movement the evolutionary results of hundreds of years of tradition.</p>"
+                    },
+                    "background": {
+                        "name": "Wanderer",
+                        "description": "<p>Yours has been an itinerant life. You enjoy nothing more than the feeling of a cart or mount below you, watching some foreign sky slowly pass above you. You learned to pay careful attention to your surroundings and their needs, to tend the creatures on which you rely, and to make do with what you can find.</p>"
                     }
                 },
                 "Fizzit": {
                     "name": "Fizzit",
                     "tokenName": {
                         "name": "Fizzit"
+                    },
+                    "ancestry": {
+                        "name": "Gnome",
+                        "description": "<p>Yours was a birth of exuberant celebration. Your diminutive body and delicate features are paired with an almost supernatural propensity for discovery. The traditions of your people embrace a lust for life and the importance of quick-thinking and quick-action.</p>"
+                    },
+                    "background": {
+                        "name": "Scholar",
+                        "description": "<p>You were always most at home in a library or classroom. Your studies focused on unravelling the mysteries of the world around you, and there are few theoretical subjects with which you are not already familiar.</p>"
                     }
                 },
                 "Kagura": {
                     "name": "Kagura",
                     "tokenName": {
                         "name": "Kagura"
+                    },
+                    "ancestry": {
+                        "name": "Giantkin",
+                        "description": "<p>Elemental forces presided over your birth, instilling you with supernatural vigor. Your large frame and muscular build often lead others to believe you are an unthinking mass of muscle, but yours is a people known most for their physical resilience and the deep well of their knowledge. You have inherited the strength of mountains.</p>"
+                    },
+                    "background": {
+                        "name": "Physician",
+                        "description": "<p>You were a healer or medical professional of some variety. You have spent a portion of your life learning medical science, and you have a propensity for noticing illness in others. You know how to treat wounds, diseases, and how to identify their sources.</p>"
                     }
                 },
                 "Ulfen": {
                     "name": "Ulfen",
                     "tokenName": {
                         "name": "Ulfen"
+                    },
+                    "ancestry": {
+                        "name": "Human",
+                        "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
+                    },
+                    "background": {
+                        "name": "Constable",
+                        "description": "<p>You were part of a law enforcement organization. You learned how to remain vigilant to your surroundings, work within complex social structures, and affect an imposing presence.</p>"
                     }
                 }
             }
+        }
+    },
+    "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        },
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "nested_object_converter"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "nested_object_converter"
+        },
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "nested_object_converter"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "nested_object_converter"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "nested_object_converter"
         }
     }
 }
