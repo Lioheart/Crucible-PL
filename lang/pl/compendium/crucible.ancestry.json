@@ -2,35 +2,35 @@
     "label": "Pochodzenie",
     "entries": {
         "Devilkin": {
-            "name": "Diabelne",
+            "name": "Diablęcy potomek",
             "description": "<p>Urodziłeś się z nieoczekiwaną magiczną władzą nad swoim stworzeniem. Twój wygląd fizyczny nosi znamiona, które przesądni ludzie kojarzą z istotami z innych wymiarów – szkarłatna skóra, nieskuteczne skrzydła lub rogi, gadzie oczy. Twoja niechęć do światła i nadprzyrodzona odporność na ogień nie przekonują ludzi, by przestali uważać cię za prawdziwego diabła.</p>"
         },
         "Dwarven": {
-            "name": "Krasnoludzkie",
+            "name": "Krasnolud",
             "description": "<p>Podobnie jak twoi rodzice przed tobą, urodziłeś się z niezłomną wytrzymałością krasnoludów. Twoja krępa budowa ciała i krzepka sylwetka są cechami charakterystycznymi dla ludu zrodzonego z ziemi i kamienia. Odziedziczyłeś fizyczną wytrzymałość, ponieważ w twojej piersi bije serce z kamienia.</p>"
         },
         "Elvish": {
-            "name": "Elfickie",
+            "name": "Elf",
             "description": "<p>Pełen wdzięku w ruchach i szybki w myśleniu, urodziłeś się jako długowieczny elf. Twoja smukła i zwinna sylwetka oraz wyrzeźbione rysy twarzy są cechami odziedziczonymi po ludziach, dla których elegancja jest sposobem na życie. Twoja skłonność do szybkiego myślenia i precyzyjnych ruchów jest wynikiem ewolucji trwającej setki lat tradycji.</p>"
         },
         "Giantkin": {
-            "name": "Gigancie",
+            "name": "Potomek olbrzymów",
             "description": "<p>Siły żywiołów czuwały nad twoimi narodzinami, obdarzając cię nadprzyrodzoną energią. Twoja potężna sylwetka i muskularna budowa ciała często sprawiają, że inni uważają cię za bezmyślną masę mięśni, ale twój lud znany jest przede wszystkim ze swojej fizycznej wytrzymałości i głębokiej wiedzy. Odziedziczyłeś siłę gór.</p>"
         },
         "Gnome": {
-            "name": "Gnomie",
+            "name": "Gnom",
             "description": "<p>Twoje narodziny były okazją do hucznych uroczystości. Twoje drobne ciało i delikatne rysy twarzy idą w parze z niemal nadprzyrodzoną skłonnością do odkrywania. Tradycje twojego ludu opierają się na radości życia oraz znaczeniu szybkiego myślenia i działania.</p>"
         },
         "Halfling": {
-            "name": "Niziołcze",
+            "name": "Niziołek",
             "description": "<p>Wychowywałeś się w żłobku w otoczeniu innych półludzi. Twoja liliputowska postura, grube, owłosione stopy oraz szybkość umysłu i ciała to cechy, z których najbardziej znany jest twój lud. Twój lud to lud, dla którego edukacja i tradycja mają nadrzędne znaczenie.</p>"
         },
         "Human": {
-            "name": "Ludzkie",
+            "name": "Człowiek",
             "description": "<p>Znaleziony wśród niezliczonych warunków i odległych miejsc, urodziłeś się jako człowiek zdolny do ciągłej adaptacji. Wysoki lub niski, szczupły, umięśniony lub krępy – Twój wygląd fizyczny jest niezwykle zróżnicowany. Ludzie są najbardziej znani ze swojej genetycznej predyspozycji do determinacji, a tradycje napędzają ich upartą wolę przetrwania.</p>"
         },
         "Orcish": {
-            "name": "Orcze",
+            "name": "Ork",
             "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
         }
     },
