@@ -1107,7 +1107,7 @@
 "DEFENSES.Willpower": "Wola",
 "DEFENSES.Physical": "Fizyczne",
 "DEFENSES.Wounds": "Rany",
-"DEFENSES.Madness": "Szaleństwo",
+"DEFENSES.Madness": "Obłęd",
 "DEFENSES.TOOLTIPS": {
   "Fortitude": "{base} + ((Siła + Mądrość) / 4)",
   "Willpower": "{base} + ((Wytrzymałość + Prezencja) / 4)",
@@ -1455,7 +1455,7 @@
   "Health": "Zdrowie",
   "Wounds": "Rany",
   "Morale": "Morale",
-  "Madness": "Szaleństwo",
+  "Madness": "Obłęd",
   "Action": "Akcja",
   "Focus": "Skupienie",
   "Heroism": "Heroizm",
