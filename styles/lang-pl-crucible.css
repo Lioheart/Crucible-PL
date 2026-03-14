@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "IM FELL DW Pica PRO";
+    src: url('../static/fonts/FePIrm27C.otf');
+}
+
+.crucible {
+    --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
+}
+
 .crucible.sheet .sheet-header .title input {
     height: 35px;
 }
