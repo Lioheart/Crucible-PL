@@ -309,7 +309,7 @@
                         "description": "Nieustępliwy i zdeterminowany wojownik walczący w zwarciu, który wykorzystuje połączenie zwinności i siły, aby pokonać przeciwników."
                     },
                     "taxonomy": {
-                        "name": "Orcze",
+                        "name": "Ork",
                         "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
                     }
                 },
@@ -1151,7 +1151,7 @@
                         }
                     },
                     "ancestry": {
-                        "name": "Orcze",
+                        "name": "Ork",
                         "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
                     },
                     "background": {
