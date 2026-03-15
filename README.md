@@ -7,7 +7,8 @@ Ten repozytorium zawiera nieoficjalne, stworzone przez społeczność tłumaczen
 
 Oryginalny projekt podlega ciągłym zmianom, dlatego też pełne, statyczne tłumaczenie nie miałoby obecnie większego sensu. Niniejsza praca ma na celu zapewnienie funkcjonalnej podstawy dla polskojęzycznych graczy i prowadzących, kładąc nacisk na najbardziej stabilne elementy systemu.
 
-**Link do oryginalnego systemu:** [https://github.com/foundryvtt/crucible](https://github.com/foundryvtt/crucible)
+**Link do repozytorium systemu:** [https://github.com/foundryvtt/crucible](https://github.com/foundryvtt/crucible)
+**Link do oryginalnego systemu:** [https://foundryvtt.com/packages/crucible/](https://foundryvtt.com/packages/crucible/)
 
 ---
 
