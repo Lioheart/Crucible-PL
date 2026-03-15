@@ -1696,6 +1696,19 @@
                                 "public": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest ochrony skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                             }
                         },
+                        "Body Block": {
+                            "name": "Blok ciałem",
+                            "description": {
+                                "public": "Pochylasz się, aby wykonać atak, który w innym przypadku zostałby zablokowany przez twój pancerz, zamieniając jego wynik na Blok."
+                            },
+                            "actions": {
+                                "Body Block": {
+                                    "name": "Blok ciałem",
+                                    "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Otarcie.",
+                                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Otarcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
+                                }
+                            }
+                        },
                         "Counter Strike": {
                             "name": "Kontratak",
                             "description": {
@@ -1911,18 +1924,6 @@
                             "name": "Młot bojowy",
                             "description": {
                                 "public": "<p>Młot bojowy, stworzony do miażdżenia tarcz i rozbijania osłon, posiada ciężką, tępo zakończoną głowicę zamontowaną na wzmocnionym trzonku, siejąc spustoszenie w rękach tych, którzy przedkładają siłę nad finezję.</p>"
-                            }
-                        },
-                        "Shield Charge": {
-                            "name": "Szarża tarczą",
-                            "description": {
-                                "public": "<p>Technika obronna, w której pędzisz do przodu, uderzając i odpychając przeciwników ze swojej drogi. Pędzisz do 20 stóp w linii prostej i wykonujesz <strong>Uderzenie</strong> tarczą w każdego kolejnego przeciwnika na swojej drodze.</p>"
-                            },
-                            "actions": {
-                                "Shield Charge": {
-                                    "name": "Szarża tarczą",
-                                    "description": "<p>Pędzisz do przodu w linii prostej, przechodząc przez przestrzeń wszystkich napotkanych stworzeń i wykonując <strong>Uderzenie </strong>przeciwko każdemu kolejnemu przeciwnikowi. Każde stworzenie, które otrzymało <strong>Trafienie krytyczne</strong> w wyniku ataku, może zostać zepchnięte do wybranej przez ciebie sąsiedniej przestrzeni. Nie możesz zakończyć szarży w tej samej przestrzeni, co inne stworzenie.</p>"
-                                }
                             }
                         },
                         "Shield Bash": {
