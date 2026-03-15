@@ -309,7 +309,7 @@
                     "text": "<p>Stworzenie dotknięte <strong>Entropią</strong> otrzymuje obrażenia <strong>Pustki</strong> do <strong>Zdrowia</strong> na początku każdej tury i jest również traktowane jako <strong>Przerażone</strong>.</p>"
                 },
                 "Burrowing": {
-                    "name": "Kopiące",
+                    "name": "Kopiący",
                     "text": "<p>Stworzenie, które jest całkowicie zanurzone w ziemi, jest <strong>Kopiące</strong>. Podczas gdy jest <strong>Kopiące</strong>, stworzenie nie może widzieć ani być widziane przy użyciu percepcji opartej na świetle.</p>"
                 }
             }
