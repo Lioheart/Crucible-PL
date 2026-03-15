@@ -4,8 +4,8 @@
   "description": "Polskie tłumaczenie do Crucible",
   "version": "vDev",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
+    "minimum": "14",
+    "verified": "14"
   },
   "esmodules": [
     "babele-register.js",

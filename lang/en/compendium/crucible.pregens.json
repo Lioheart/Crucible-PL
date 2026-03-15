@@ -49,7 +49,7 @@
                 "Strong Grip": {
                     "name": "Strong Grip",
                     "description": {
-                        "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+                        "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
                     }
                 },
                 "Gesture: Strike": {
@@ -2378,7 +2378,7 @@
                 "Strong Grip": {
                     "name": "Strong Grip",
                     "description": {
-                        "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+                        "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
                     }
                 },
                 "Blood Frenzy": {

@@ -190,7 +190,7 @@
                         "Strong Grip": {
                             "name": "Strong Grip",
                             "description": {
-                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
                             }
                         },
                         "Hammer Toss": {
@@ -1183,7 +1183,7 @@
                         "Strong Grip": {
                             "name": "Strong Grip",
                             "description": {
-                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
                             }
                         },
                         "Gesture: Strike": {
@@ -1696,6 +1696,19 @@
                                 "public": "<p>You shape the arcane power of a Rune into a protective barrier used to shield yourself from harm.</p><p>The Ward gesture scales using <strong>Toughness</strong> and provides <strong>+6 Resistance</strong> against the damage type of the Rune used in the spell. This resistance lasts for <strong>1 Round</strong> and you may only have a single Ward at a time. Casting another spell using the Ward gesture replaces your prior Ward. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                             }
                         },
+                        "Body Block": {
+                            "name": "Body Block",
+                            "description": {
+                                "public": "You lean into an attack which was otherwise defended with your Armor, converting its result into a Block instead."
+                            },
+                            "actions": {
+                                "Body Block": {
+                                    "name": "Body Block",
+                                    "condition": "You defend against a melee attack with your Armor or as a Glance.",
+                                    "description": "<p>An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.</p>"
+                                }
+                            }
+                        },
                         "Counter Strike": {
                             "name": "Counter Strike",
                             "description": {
@@ -1911,18 +1924,6 @@
                             "name": "War Hammer",
                             "description": {
                                 "public": "<p>Built to crush plate and shatter shields, the war hammer features a heavy, blunt head mounted atop a reinforced haft, delivering ruin in the hands of those who favor power over finesse.</p>"
-                            }
-                        },
-                        "Shield Charge": {
-                            "name": "Shield Charge",
-                            "description": {
-                                "public": "<p>A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 20 feet in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path.</p>"
-                            },
-                            "actions": {
-                                "Shield Charge": {
-                                    "name": "Shield Charge",
-                                    "description": "<p>You charge forward in a straight line, passing through the space of any creatures you encounter and making a <strong>Strike </strong>against each successive foe. Any creature <strong>Critically Hit</strong> by the attack may be pushed into an adjacent space of your choosing. You may not end your charge in the same space as another creature.</p>"
-                                }
                             }
                         },
                         "Shield Bash": {
@@ -2717,7 +2718,7 @@
                         "Strong Grip": {
                             "name": "Strong Grip",
                             "description": {
-                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+                                "public": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
                             }
                         },
                         "Blood Frenzy": {

@@ -1,59 +1,52 @@
 async function fixTokenNames() {
-  console.log("Rozpoczynam synchronizację nazw tokenów...");
+  // Tylko GM powinien mieć możliwość masowej edycji
+  if (!game.user.isGM) return ui.notifications.error("Tylko Mistrz Gry może to zrobić!");
 
-  // Iterujemy po wszystkich scenach w grze
-  for (const scene of game.scenes.contents) {
+  for (const scene of game.scenes) {
     const updates = [];
-    console.log(`Sprawdzam scenę: ${scene.name}`);
-
-    // Iteracja po wszystkich tokenach w scenie
+    
     for (const token of scene.tokens) {
-      const actor = game.actors.get(token.actorId);
+      // Pobieramy aktora bezpośrednio z dokumentu tokena
+      const actor = token.actor; 
+      if (!actor) continue;
 
-      if (!actor) {
-        console.log(`Brak aktora dla tokena ${token.name} (token ID: ${token.id}) na scenie ${scene.name}`);
-        continue;
-      }
-
-      // Ustawiamy oczekiwaną nazwę tokena na nazwę aktora
-      const correctName = actor.name;
-
-      // Logowanie nazw i porównanie
-      console.log(`Token: ${token.name} | Aktor: ${actor.name} | Oczekiwana nazwa: ${correctName}`);
-
-      // Jeśli nazwa tokena różni się od oczekiwanej nazwy, aktualizujemy
-      if (token.name !== correctName) {
-        console.log(`Aktualizuję token ${token.name} na nazwę: ${correctName}`);
-        updates.push({ _id: token.id, name: correctName });
+      if (token.name !== actor.name) {
+        updates.push({ _id: token.id, name: actor.name });
       }
     }
 
-    // Jeśli są jakieś tokeny do zaktualizowania, wykonaj aktualizację
     if (updates.length > 0) {
-      console.log(`Aktualizuję ${updates.length} tokenów w scenie "${scene.name}"`);
       await scene.updateEmbeddedDocuments("Token", updates);
-    } else {
-      console.log(`Brak zmian w tokenach na scenie ${scene.name}`);
+      console.log(`Zaktualizowano ${updates.length} tokenów na scenie: ${scene.name}`);
     }
   }
-
-  console.log("Synchronizacja nazw tokenów zakończona.");
+  ui.notifications.info("Synchronizacja zakończona pomyślnie.");
 }
 
-Hooks.on("renderCompendiumDirectory", (app, html) => {
-  const root = html[0] ?? html; // obsługa v12 i v13
-  const footer = root.querySelector(".directory-footer");
+function addFixTokenButton(html) {
+  // Nie pokazuj przycisku, jeśli użytkownik nie jest GM
+  if (!game.user.isGM) return;
 
-  if (!footer) return;
+  const root = html[0] ?? html;
+  const footer = root.querySelector(".directory-footer");
+  if (!footer || footer.querySelector(".fix-tokens-btn")) return;
 
   const button = document.createElement("button");
+  button.classList.add("fix-tokens-btn");
   button.innerHTML = `<i class="fas fa-sync-alt"></i> Popraw nazwy tokenów`;
-  button.addEventListener("click", async () => {
-    ui.notifications.info("Aktualizuję nazwy tokenów...");
-    await fixTokenNames(); // <-- Twoja funkcja
-    ui.notifications.info("Nazwy tokenów zaktualizowane.");
+  button.dataset.tooltip = "Synchronizuje nazwy WSZYSTKICH tokenów na WSZYSTKICH scenach z nazwami ich aktorów.";
+  button.dataset.tooltipDirection = "UP";
+
+  button.addEventListener("click", async (event) => {
+    event.preventDefault();
+    // Wyłączenie przycisku na czas pracy, aby uniknąć spamu kliknięć
+    button.disabled = true;
+    await fixTokenNames();
+    button.disabled = false;
   });
 
   footer.appendChild(button);
-});
+}
 
+Hooks.on("renderCompendiumDirectory", (app, html) => addFixTokenButton(html));
+Hooks.on("renderActorDirectory", (app, html) => addFixTokenButton(html));
