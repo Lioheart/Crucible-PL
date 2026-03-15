@@ -40,33 +40,23 @@
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": {
-                        "public": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
-                    }
+                    "description": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": {
-                        "public": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
-                    }
+                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
                 },
                 "Acid Absorption": {
                     "name": "Absorpcja kwasu",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w środowiskach kwaśnych. Jego odporność na <strong>Kwas</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w środowiskach kwaśnych. Jego odporność na <strong>Kwas</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -83,21 +73,15 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": {
-                        "public": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
-                    }
+                    "description": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
                 },
                 "Acid Absorption": {
                     "name": "Absorpcja kwasu",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w środowiskach kwaśnych. Jego odporność na <strong>Kwas</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w środowiskach kwaśnych. Jego odporność na <strong>Kwas</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -107,9 +91,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": {
-                        "public": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
-                    }
+                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
                 }
             },
             "archetype": {
@@ -144,15 +126,11 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": {
-                        "public": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
-                    }
+                    "description": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -162,15 +140,11 @@
                 },
                 "Fire Absorption": {
                     "name": "Absorpcja ognia",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
                 }
             },
             "archetype": {
@@ -187,21 +161,15 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": {
-                        "public": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
-                    }
+                    "description": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
                 },
                 "Fire Absorption": {
                     "name": "Absorpcja ognia",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -211,9 +179,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": {
-                        "public": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
-                    }
+                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
                 }
             },
             "archetype": {
@@ -239,33 +205,23 @@
                 },
                 "Rune: Frost": {
                     "name": "Runa: Mróz",
-                    "description": {
-                        "public": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
-                    }
+                    "description": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": {
-                        "public": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
-                    }
+                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
                 },
                 "Cold Absorption": {
                     "name": "Absorpcja zimna",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": {
-                        "public": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
-                    }
+                    "description": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": {
-                        "public": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>"
-                    },
+                    "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
@@ -275,15 +231,11 @@
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -300,27 +252,19 @@
             "items": {
                 "Cold Absorption": {
                     "name": "Absorpcja zimna",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": {
-                        "public": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
-                    }
+                    "description": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Rune: Frost": {
                     "name": "Runa: Mróz",
-                    "description": {
-                        "public": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
-                    }
+                    "description": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
                 },
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": {
-                        "public": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>"
-                    },
+                    "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
@@ -330,9 +274,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -342,9 +284,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": {
-                        "public": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
-                    }
+                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
                 }
             },
             "archetype": {
@@ -385,21 +325,15 @@
                 },
                 "Rune: Death": {
                     "name": "Runa: Śmierć",
-                    "description": {
-                        "public": "Uczysz się Runy Śmierci, która pozwala ci manipulować nieświętą mocą."
-                    }
+                    "description": "Uczysz się Runy Śmierci, która pozwala ci manipulować nieświętą mocą."
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
                 }
             },
             "archetype": {
@@ -437,33 +371,23 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Strzała",
-                    "description": {
-                        "public": "<p>Uczysz się gestu Strzały, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
-                    }
+                    "description": "<p>Uczysz się gestu Strzały, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
-                    "description": {
-                        "public": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
-                    }
+                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -480,21 +404,15 @@
             "items": {
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
-                    "description": {
-                        "public": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
-                    }
+                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
-                    "description": {
-                        "public": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
-                    }
+                    "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": {
-                        "public": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
-                    }
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Voltaic Claw": {
                     "name": "Elektryczny pazur"
@@ -504,9 +422,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": {
-                        "public": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
-                    }
+                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
                 }
             },
             "archetype": {
