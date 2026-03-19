@@ -1630,7 +1630,7 @@
                         },
                         "Runewarden": {
                             "name": "Strażnik run",
-                            "description": "<p>Twoja biegłość w sztuce tajemnej sprawia, że jesteś bardziej odporny na obrażenia elementalne i duchowe. Otrzymujesz premię do <strong>Odporności</strong> równą połowie twojej Mądrości za każdy rodzaj obrażeń żywiołowych lub duchowych, dla których znasz Rune Arkan dostosowaną do tego rodzaju obrażeń.</p><p>Kiedy używasz gestu <strong>Ochrona</strong>, Odporność zapewniana przez twoją Ochronę również wzrasta o połowę twojej Mądrości.</p>"
+                            "description": "<p>Twoja biegłość w sztuce tajemnej sprawia, że jesteś bardziej odporny na obrażenia elementarne i duchowe. Otrzymujesz premię do <strong>Odporności</strong> równą połowie twojej Mądrości za każdy rodzaj obrażeń żywiołowych lub duchowych, dla których znasz Runę Arkan dostosowaną do tego rodzaju obrażeń.</p><p>Kiedy używasz gestu <strong>Glif</strong>, Odporność zapewniana przez twoją Ochronę również wzrasta o połowę twojej Mądrości.</p>"
                         },
                         "Heater Shield": {
                             "name": "Tarcza herbowa",
