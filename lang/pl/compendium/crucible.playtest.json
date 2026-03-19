@@ -344,7 +344,7 @@
                             "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest tworzenia skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
                         },
                         "Gesture: Arrow": {
-                            "name": "Gest: Strzała",
+                            "name": "Gest: Grot",
                             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                         },
                         "Conjurer": {
@@ -909,7 +909,7 @@
                             }
                         },
                         "Gesture: Arrow": {
-                            "name": "Gest: Strzała",
+                            "name": "Gest: Grot",
                             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                         },
                         "War Mage": {
@@ -1015,7 +1015,7 @@
                             "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>Uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
                         },
                         "Gesture: Arrow": {
-                            "name": "Gest: Strzała",
+                            "name": "Gest: Grot",
                             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                         },
                         "Spellblade": {
@@ -1713,7 +1713,7 @@
                         },
                         "Arcane Archer": {
                             "name": "Tajemny łucznik",
-                            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+                            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
                         },
                         "Weak Points": {
                             "name": "Słabe punkty",
@@ -1739,8 +1739,8 @@
                             "description": "<p>Jesteś ekspertem w strzelaniu z broni dystansowej, jednocześnie unikając ataków wroga. Po wykonaniu ataku bronią dystansową zyskujesz dodatkowy ruch równy połowie swojej wartości <strong>Biegu</strong>.</p>"
                         },
                         "Gesture: Arrow": {
-                            "name": "Gest: Strzała",
-                            "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                            "name": "Gest: Grot",
+                            "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                         },
                         "Precision Shot": {
                             "name": "Precyzyjny strzał",
@@ -1909,7 +1909,7 @@
                             }
                         },
                         "Gesture: Arrow": {
-                            "name": "Gest: Strzała",
+                            "name": "Gest: Grot",
                             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                         },
                         "Gesture: Create": {
