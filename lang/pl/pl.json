@@ -484,7 +484,7 @@
       "Blind": "Oślepiony",
       "Broken": "Załamany",
       "Burning": "Płonący",
-      "Burrowing": "Kopiące",
+      "Burrowing": "Kopiący",
       "Confused": "Skonfundowany",
       "Corroding": "Korodujący",
       "Dead": "Martwy",
@@ -1878,7 +1878,7 @@
     "Iconic": "Zaklęcie ikoniczne",
     "IconicPl": "Zaklęcia ikoniczne",
     "NameFormatAdj": "{rune} {gesture}",
-    "NameFormatNoun": "{gesture} z {rune}"
+    "NameFormatNoun": "{gesture} z runą {rune}"
   },
   "TALENT": {
     "ACTIONS": {
