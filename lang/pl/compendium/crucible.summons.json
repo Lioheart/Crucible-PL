@@ -1,7 +1,7 @@
 {
     "label": "Przywołania",
     "folders": {
-        "Gesture: Create": "Gest: Tworzenie",
+        "Gesture: Create": "Gest: Kształt",
         "Gesture: Conjure": "Gest: Wywołanie"
     },
     "entries": {
@@ -297,7 +297,7 @@
             }
         },
         "Gesture: Arrow": {
-            "name": "Gest: Strzała"
+            "name": "Gest: Grot"
         },
         "Gesture: Aspect": {
             "name": "Gest: Aspekt"
@@ -370,8 +370,8 @@
                     "name": "Ziemski pazur"
                 },
                 "Gesture: Arrow": {
-                    "name": "Gest: Strzała",
-                    "description": "<p>Uczysz się gestu Strzały, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "name": "Gest: Grot",
+                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
