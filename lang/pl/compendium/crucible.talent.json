@@ -712,7 +712,7 @@
             }
         },
         "Gesture: Arrow": {
-            "name": "Gest: Strzała",
+            "name": "Gest: Grot",
             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
         },
         "Gesture: Aspect": {
@@ -737,7 +737,7 @@
         },
         "Gesture: Create": {
             "name": "Gest: Tworzenie",
-            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest tworzenia skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
+            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
         },
         "Gesture: Fan": {
             "name": "Gest: Wachlarz",
@@ -772,7 +772,7 @@
             "description": "<p>Kierujesz tajemniczą moc runy w gwałtowną falę energii, która wyrywa się z miejsca, w którym się znajdujesz. </p><p>Gest Wzrostu skaluje się wraz z <strong>Mądrością</strong> i tworzy linię o szerokości 10 stóp i długości 15 stóp, wychodzącą od rzucającego zaklęcie, zadającą <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga użycia <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> oraz <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów.</p>"
         },
         "Gesture: Ward": {
-            "name": "Gest: Ochrona",
+            "name": "Gest: Glif",
             "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest ochrony skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
         },
         "Gladiator": {
@@ -1520,7 +1520,7 @@
         },
         "Runewarden": {
             "name": "Strażnik run",
-            "description": "<p>Twoja biegłość w sztuce tajemnej sprawia, że jesteś bardziej odporny na obrażenia elementalne i duchowe. Otrzymujesz premię do <strong>Odporności</strong> równą połowie twojej Mądrości za każdy rodzaj obrażeń żywiołowych lub duchowych, dla których znasz Rune Arkan dostosowaną do tego rodzaju obrażeń.</p><p>Kiedy używasz gestu <strong>Ochrona</strong>, Odporność zapewniana przez twoją Ochronę również wzrasta o połowę twojej Mądrości.</p>"
+            "description": "<p>Twoja biegłość w sztuce tajemnej sprawia, że jesteś bardziej odporny na obrażenia elementarne i duchowe. Otrzymujesz premię do <strong>Odporności</strong> równą połowie twojej Mądrości za każdy rodzaj obrażeń żywiołowych lub duchowych, dla których znasz Runę Arkan dostosowaną do tego rodzaju obrażeń.</p><p>Kiedy używasz gestu <strong>Glif</strong>, Odporność zapewniana przez twoją Ochronę również wzrasta o połowę twojej Mądrości.</p>"
         },
         "Ruthless Momentum": {
             "name": "Bezlitosny pęd",
