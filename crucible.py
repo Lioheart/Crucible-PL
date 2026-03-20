@@ -251,6 +251,98 @@ def extract_description(record: dict) -> str:
 
     return ""
 
+def extract_description_value(record: dict):
+    """
+    Zwraca description w oryginalnym formacie:
+    - dict {"public": "...", "private": "..."} jeśli źródło ma taki format
+    - string jeśli źródło ma zwykły tekst
+    - "" jeśli brak opisu
+    """
+    if not isinstance(record, dict):
+        return ""
+
+    system_description = record.get("system", {}).get("description")
+
+    # 1. Format obiektowy: {"public": "...", "private": "..."}
+    if isinstance(system_description, dict):
+        result = {}
+
+        public_desc = system_description.get("public")
+        private_desc = system_description.get("private")
+
+        if isinstance(public_desc, str) and public_desc.strip():
+            result["public"] = public_desc.strip()
+        if isinstance(private_desc, str) and private_desc.strip():
+            result["private"] = private_desc.strip()
+
+        if result:
+            return result
+
+    # 2. Format tekstowy
+    if isinstance(system_description, str) and system_description.strip():
+        return system_description.strip()
+
+    # 3. Fallback na description w korzeniu
+    plain_description = record.get("description")
+
+    if isinstance(plain_description, dict):
+        result = {}
+
+        public_desc = plain_description.get("public")
+        private_desc = plain_description.get("private")
+
+        if isinstance(public_desc, str) and public_desc.strip():
+            result["public"] = public_desc.strip()
+        if isinstance(private_desc, str) and private_desc.strip():
+            result["private"] = private_desc.strip()
+
+        if result:
+            return result
+
+    if isinstance(plain_description, str) and plain_description.strip():
+        return plain_description.strip()
+
+    return ""
+
+
+def extract_description_text(record: dict) -> str:
+    """
+    Zwraca opis jako tekst tam, gdzie wynik ma być płaski.
+    """
+    description_value = extract_description_value(record)
+
+    if isinstance(description_value, str):
+        return description_value
+
+    if isinstance(description_value, dict):
+        public_desc = (description_value.get("public") or "").strip()
+        private_desc = (description_value.get("private") or "").strip()
+
+        if public_desc and private_desc:
+            return f"{public_desc}\n\n{private_desc}"
+        if public_desc:
+            return public_desc
+        if private_desc:
+            return private_desc
+
+    details_description = record.get("system", {}).get("details", {}).get("description")
+    if isinstance(details_description, str) and details_description.strip():
+        return details_description.strip()
+
+    biography = record.get("system", {}).get("details", {}).get("biography")
+    if isinstance(biography, dict):
+        public_bio = (biography.get("public") or "").strip()
+        private_bio = (biography.get("private") or "").strip()
+
+        if public_bio and private_bio:
+            return f"{public_bio}\n\n{private_bio}"
+        if public_bio:
+            return public_bio
+        if private_bio:
+            return private_bio
+
+    return ""
+
 
 def ensure_nested_mapping(transifex_dict: dict, key: str, path: str, converter: str) -> None:
     transifex_dict.setdefault("mapping", {})
@@ -308,16 +400,25 @@ def resolve_reference_list(ref_list, id_index: dict) -> list[dict]:
     return resolved
 
 
-def fill_translated_object_from_record(target_obj: dict, source_record: dict, transifex_dict: dict) -> None:
+def fill_translated_object_from_record(
+    target_obj: dict,
+    source_record: dict,
+    transifex_dict: dict,
+    preserve_description_shape: bool = False
+) -> None:
     source_name = (source_record.get("name") or "").strip()
     if source_name:
         target_obj["name"] = source_name
 
-    description = extract_description(source_record)
-    if description:
-        target_obj["description"] = description
+    if preserve_description_shape:
+        description_value = extract_description_value(source_record)
+        if description_value not in ("", {}, None):
+            target_obj["description"] = description_value
+    else:
+        description_text = extract_description_text(source_record)
+        if description_text:
+            target_obj["description"] = description_text
 
-    # Akcje obiektu referencyjnego, np. ancestry/background/archetype/item
     add_actions_from_record(
         target_entry=target_obj,
         source_record=source_record,
@@ -345,10 +446,16 @@ def populate_reference_bucket(
             continue
 
         parent_entry[bucket_name].setdefault(record_name, {})
+
+        # Dla items zachowujemy oryginalny format description:
+        # string albo {"public", "private"}
+        preserve_description_shape = bucket_name == "items"
+
         fill_translated_object_from_record(
             target_obj=parent_entry[bucket_name][record_name],
             source_record=record,
-            transifex_dict=transifex_dict
+            transifex_dict=transifex_dict,
+            preserve_description_shape=preserve_description_shape
         )
 
 
@@ -535,8 +642,8 @@ def populate_caption_actor(
             actor_entry["items"].setdefault(item_name, {})
             actor_entry["items"][item_name]["name"] = item_name
 
-            item_description = extract_description(item)
-            if item_description:
+            item_description = extract_description_value(item)
+            if item_description not in ("", {}, None):
                 actor_entry["items"][item_name]["description"] = item_description
 
             add_actions_from_record(
@@ -741,6 +848,56 @@ def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transife
                 transifex_dict=transifex_dict
             )
 
+def ensure_rules_mapping(transifex_dict: dict) -> None:
+    transifex_dict.setdefault("mapping", {})
+    transifex_dict["mapping"]["categories"] = {
+        "path": "categories",
+        "converter": "categories_converter"
+    }
+
+
+def populate_rules_entry(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+    ensure_rules_mapping(transifex_dict)
+
+    entry["name"] = (new_data.get("name") or "").strip()
+
+    # Categories: kluczowane po _id, jak w Crucible-FR
+    category_ids = new_data.get("categories", [])
+    if isinstance(category_ids, list) and category_ids:
+        entry.setdefault("categories", {})
+        for category_id in category_ids:
+            category_obj = id_index.get(category_id)
+            if not isinstance(category_obj, dict):
+                continue
+
+            category_name = (category_obj.get("name") or "").strip()
+            if not category_name:
+                continue
+
+            entry["categories"].setdefault(category_id, {})
+            entry["categories"][category_id]["name"] = category_name
+
+    # Pages: kluczowane po nazwie strony
+    page_ids = new_data.get("pages", [])
+    if isinstance(page_ids, list) and page_ids:
+        entry.setdefault("pages", {})
+        for page_id in page_ids:
+            page_obj = id_index.get(page_id)
+            if not isinstance(page_obj, dict):
+                continue
+
+            page_name = (page_obj.get("name") or "").strip()
+            if not page_name:
+                continue
+
+            text_content = page_obj.get("text", {}).get("content", "")
+            if not isinstance(text_content, str):
+                text_content = ""
+
+            entry["pages"].setdefault(page_name, {})
+            entry["pages"][page_name]["name"] = page_name
+            entry["pages"][page_name]["text"] = text_content
+
 def process_files(folders: str, version: str) -> None:
     dict_key = []
 
@@ -826,6 +983,19 @@ def process_files(folders: str, version: str) -> None:
                     transifex_dict["folders"][name] = name
                     continue
 
+                # Specjalna obsługa rules - tylko rekordy z pages są entry
+                if pack_name == 'rules':
+                    # foldery rules są już łapane wyżej przez color+folder
+                    # pomijamy rekordy kategorii i stron
+                    if not isinstance(new_data.get("pages"), list):
+                        continue
+
+                    transifex_dict["entries"].setdefault(name, {})
+                    entry = transifex_dict["entries"][name]
+                    populate_rules_entry(entry, new_data, id_index, transifex_dict)
+                    continue
+
+                # Dla pozostałych pakietów tworzymy zwykły entry
                 transifex_dict["entries"].setdefault(name, {})
                 entry = transifex_dict["entries"][name]
                 entry["name"] = name
@@ -835,7 +1005,7 @@ def process_files(folders: str, version: str) -> None:
                     populate_caption_entry(entry, new_data, id_index, transifex_dict)
 
                 # zwykłe opisy
-                if 'prototypeToken' not in keys and pack_name not in ['rules', 'weapon']:
+                if 'prototypeToken' not in keys and pack_name not in ['weapon']:
                     if 'caption' not in keys:
                         flag.append('description')
 
@@ -859,31 +1029,6 @@ def process_files(folders: str, version: str) -> None:
                         id_index=id_index,
                         transifex_dict=transifex_dict
                     )
-
-                # rules zostawiasz jak było
-                if pack_name == 'rules':
-                    transifex_dict["entries"].setdefault(name, {})
-                    transifex_dict["entries"][name]["name"] = name
-                    transifex_dict["entries"][name].setdefault("pages", {})
-
-                    try:
-                        for result in new_data.get('pages', []):
-                            for page_obj in data:
-                                try:
-                                    if result == page_obj.get('_id'):
-                                        page_name = page_obj.get('name', '').strip()
-                                        if not page_name:
-                                            continue
-
-                                        transifex_dict["entries"][name]['pages'].setdefault(page_name, {})
-                                        transifex_dict["entries"][name]['pages'][page_name]["name"] = page_name
-                                        transifex_dict["entries"][name]['pages'][page_name]["text"] = (
-                                            page_obj.get('text', {}).get('content', '')
-                                        )
-                                except AttributeError:
-                                    pass
-                    except Exception:
-                        pass
 
             transifex_dict = remove_empty_keys(transifex_dict)
             transifex_dict = sort_entries(transifex_dict)
