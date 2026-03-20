@@ -143,6 +143,32 @@
         },
         "Conditions": {
             "name": "Stany",
+            "categories": {
+                "fO2oboVFGaNDqh8K": {
+                    "name": "Zdrowie"
+                },
+                "84aHmNQvMBk7qXMZ": {
+                    "name": "Morale"
+                },
+                "BuMJalJaEUNCX29d": {
+                    "name": "Ruch"
+                },
+                "J59YYFEcyNdGNrGQ": {
+                    "name": "Akcje"
+                },
+                "rpL70eBEekWih461": {
+                    "name": "Obrażenia w czasie"
+                },
+                "5rP6WfVYTY7yZlqe": {
+                    "name": "Przegląd"
+                },
+                "SIxXwOOANW4yoN1D": {
+                    "name": "Obrony"
+                },
+                "NJl3nJduFtxh3ijV": {
+                    "name": "Percepcja"
+                }
+            },
             "pages": {
                 "Conditions Overview": {
                     "name": "Przegląd stanów",
@@ -312,36 +338,18 @@
                     "name": "Kopiący",
                     "text": "<p>Stworzenie, które jest całkowicie zanurzone w ziemi, jest <strong>Kopiące</strong>. Podczas gdy jest <strong>Kopiące</strong>, stworzenie nie może widzieć ani być widziane przy użyciu percepcji opartej na świetle.</p>"
                 }
-            },
-            "categories": {
-                "Health": {
-                    "name": "Zdrowie"
-                },
-                "Morale": {
-                    "name": "Morale"
-                },
-                "Movement": {
-                    "name": "Ruch"
-                },
-                "Actions": {
-                    "name": "Akcje"
-                },
-                "Damage Over Time": {
-                    "name": "Obrażenia w czasie"
-                },
-                "Overview": {
-                    "name": "Przegląd"
-                },
-                "Defenses": {
-                    "name": "Obrony"
-                },
-                "Perception": {
-                    "name": "Percepcja"
-                }
             }
         },
         "Crafting": {
             "name": "Rzemiosło",
+            "categories": {
+                "UaoYAtq1fyu6uiPf": {
+                    "name": "Umiejętności rzemieślnicze"
+                },
+                "UbGiQAlGSH8iwZhE": {
+                    "name": "Rzemiosło"
+                }
+            },
             "pages": {
                 "Alchemy": {
                     "name": "Alchemia",
@@ -390,14 +398,6 @@
                 "Tradeskills Overview": {
                     "name": "Przegląd umiejętności rzemieślniczych",
                     "text": "<p></p><p><strong>Rzemiosło</strong> w Crucible jest wykonywane przy użyciu zestawu <strong>Rzemiosł</strong>, które – podobnie jak przygodowe @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Umiejętności} – są rozwijanymi elementami tożsamości twojej postaci, zdobywanymi poprzez rozwój @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talentów} oraz gromadzenie wiedzy w postaci @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schematów}.</p><section class=\"construction\"><p>System rzemiosła w Crucible znajduje się obecnie na wczesnym etapie rozwoju. Zasady opisane tutaj mogą ulec zmianie, a wiele szczegółów może nie być jeszcze ukończonych. Prosimy traktować te informacje jako zapowiedź nadchodzących rozwiązań.</p></section><section class=\"gameplay\"><p>Nie jest wymagane, aby jakakolwiek postać inwestowała w opanowanie rzemiosła, jednak zazwyczaj zaleca się wybranie przynajmniej jednego rzemiosła do rozwijania, aby w pełni cieszyć się rozgrywką w Crucible — szczególnie jeśli gra ma formę długiej kampanii.</p></section><p>Informacje w tym dzienniku opisują każde z rzemiosł, sposób definiowania i zdobywania schematów oraz działanie procesu rzemiosła przy użyciu schematu do przekształcania składników wejściowych w wytworzone przedmioty.</p><h2 class=\"divider\">Tabela rzemiosł</h2><table><tbody><tr><th><p>Umiejętność</p></th><th><p>Główny atrybut</p></th><th><p>Drugorzędny atrybut</p></th><th><p>Ogólne zastosowanie</p></th></tr><tr><td><p>@UUID[.alchemy000000000]{Alchemia}</p></td><td><p>Intelekt</p></td><td><p>Wytrzymałość</p></td><td><p>Mikstury, eliksiry, oleje i maści</p></td></tr><tr><td><p>@UUID[.cooking000000000]{Gotowanie}</p></td><td><p>Mądrość</p></td><td><p>Wytrzymałość</p></td><td><p>Jedzenie i napoje</p></td></tr><tr><td><p>@UUID[.enchanting000000]{Zaklinanie}</p></td><td><p>Intelekt</p></td><td><p>Prezencja</p></td><td><p>Nakładanie run na wyposażenie</p></td></tr><tr><td><p>@UUID[.fletching0000000]{Łuczarstwo}</p></td><td><p>Siła</p></td><td><p>Mądrość</p></td><td><p>Łuki, kostury i amunicja</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]{Jubilerstwo}</p></td><td><p>Mądrość</p></td><td><p>Siła</p></td><td><p>Biżuteria i inne akcesoria</p></td></tr><tr><td><p>@UUID[.glyphweaving0000]{Glifotwórstwo}</p></td><td><p>Prezencja</p></td><td><p>Zręczność</p></td><td><p>Runy używane do zaklinania</p></td></tr><tr><td><p>@UUID[.smithing00000000]{Kowalstwo}</p></td><td><p>Siła</p></td><td><p>Intelekt</p></td><td><p>Metalowa broń i zbroje</p></td></tr><tr><td><p>@UUID[.tailoring0000000]{Krawiectwo}</p></td><td><p>Zręczność</p></td><td><p>Prezencja</p></td><td><p>Odzież i lekka zbroja</p></td></tr></tbody></table>"
-                }
-            },
-            "categories": {
-                "Tradeskills": {
-                    "name": "Umiejętności rzemieślnicze"
-                },
-                "Crafting": {
-                    "name": "Rzemiosło"
                 }
             }
         },
@@ -488,6 +488,12 @@
                     "text": "<p>Podobnie jak w przypadku każdego systemu gry w Foundry Virtual Tabletop, moduły mogą ulepszać i rozszerzać jakość doświadczenia rozgrywki. Prosimy jednak, aby testerzy pierwszego playtestu Crucible uruchamiali system w środowisku z niewielką liczbą modułów. Pozwoli to upewnić się, że wasze doświadczenia oraz przekazywane opinie dotyczą bezpośrednio funkcjonalności systemu Crucible. Wasze opinie z playtestu będą dla nas bardziej użyteczne, jeśli będziecie korzystać z mniejszej liczby zainstalowanych modułów.</p><h2 class=\"divider\">Ember</h2><p>Znacznie więcej treści do Crucible jest dostępnych w naszym autorskim świecie oraz epickiej przygodzie <a href=\"https://foundryvtt.com/ember\">Ember</a>, która obecnie znajduje się w fazie testów Kickstarter Beta. Ember jest dostępny w przedsprzedaży i będzie zawierał rozbudowaną kampanię dla Crucible obejmującą kilka lat rozgrywki, prowadząc drużynę od poziomu postaci 1 do 12 (lub wyżej).</p><figure><img class=\"noborder\" src=\"systems/crucible/assets/banners/ember-banner.webp\" /><figcaption>Ember, obecnie w fazie testów Beta, będzie docelowym sposobem doświadczenia systemu gry Crucible.</figcaption></figure><h2 class=\"divider\">Dice So Nice</h2><p>System gry Crucible został zaprojektowany z myślą o wykorzystaniu modułu <a href=\"https://foundryvtt.com/packages/dice-so-nice/\" target=\"_blank\">Dice So Nice</a>. Podczas rzutów Crucible wykorzystuje funkcje tego modułu, aby nadać pozytywny efekt poświaty rzutom zawierającym Korzyści oraz negatywny efekt poświaty rzutom zawierającym Zguby.</p><figure><img class=\"noborder\" src=\"systems/crucible/assets/banners/dsn-banner.webp\" /><figcaption>Zdecydowanie zalecamy korzystanie z Dice So Nice podczas gry w Crucible.</figcaption></figure>"
                 }
             }
+        }
+    },
+    "mapping": {
+        "categories": {
+            "path": "categories",
+            "converter": "categories_converter"
         }
     }
 }
