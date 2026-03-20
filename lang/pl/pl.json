@@ -484,7 +484,7 @@
       "Blind": "Oślepiony",
       "Broken": "Załamany",
       "Burning": "Płonący",
-      "Burrowing": "Kopiące",
+      "Burrowing": "Kopiący",
       "Confused": "Skonfundowany",
       "Corroding": "Korodujący",
       "Dead": "Martwy",
@@ -1776,7 +1776,7 @@
       }
     },
     "GESTURES": {
-      "Arrow": "Strzała",
+      "Arrow": "Grot",
       "Aspect": "Aspekt",
       "Aura": "Aura",
       "Blast": "Wybuch",
@@ -1789,10 +1789,10 @@
       "Ray": "Promień",
       "Sense": "Zmysł",
       "Step": "Krok",
-      "Strike": "Uderzenie",
+      "Strike": "Cios",
       "Surge": "Wzrost",
       "Touch": "Dotyk",
-      "Ward": "Ochrona"
+      "Ward": "Glif"
     },
     "INFLECTIONS": {
       "Compose": "Kompozycja",
@@ -1878,7 +1878,7 @@
     "Iconic": "Zaklęcie ikoniczne",
     "IconicPl": "Zaklęcia ikoniczne",
     "NameFormatAdj": "{rune} {gesture}",
-    "NameFormatNoun": "{gesture} z {rune}"
+    "NameFormatNoun": "{gesture} z runą {rune}"
   },
   "TALENT": {
     "ACTIONS": {
