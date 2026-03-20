@@ -143,6 +143,32 @@
         },
         "Conditions": {
             "name": "Conditions",
+            "categories": {
+                "fO2oboVFGaNDqh8K": {
+                    "name": "Health"
+                },
+                "84aHmNQvMBk7qXMZ": {
+                    "name": "Morale"
+                },
+                "BuMJalJaEUNCX29d": {
+                    "name": "Movement"
+                },
+                "J59YYFEcyNdGNrGQ": {
+                    "name": "Actions"
+                },
+                "rpL70eBEekWih461": {
+                    "name": "Damage Over Time"
+                },
+                "5rP6WfVYTY7yZlqe": {
+                    "name": "Overview"
+                },
+                "SIxXwOOANW4yoN1D": {
+                    "name": "Defenses"
+                },
+                "NJl3nJduFtxh3ijV": {
+                    "name": "Perception"
+                }
+            },
             "pages": {
                 "Conditions Overview": {
                     "name": "Conditions Overview",
@@ -312,36 +338,18 @@
                     "name": "Burrowing",
                     "text": "<p>A creature that is submerged entirely within the ground is <strong>Burrowing</strong>. While Burrowing, a creature cannot see or be seen using light-based perception.</p>"
                 }
-            },
-            "categories": {
-                "Health": {
-                    "name": "Health"
-                },
-                "Morale": {
-                    "name": "Morale"
-                },
-                "Movement": {
-                    "name": "Movement"
-                },
-                "Actions": {
-                    "name": "Actions"
-                },
-                "Damage Over Time": {
-                    "name": "Damage Over Time"
-                },
-                "Overview": {
-                    "name": "Overview"
-                },
-                "Defenses": {
-                    "name": "Defenses"
-                },
-                "Perception": {
-                    "name": "Perception"
-                }
             }
         },
         "Crafting": {
             "name": "Crafting",
+            "categories": {
+                "UaoYAtq1fyu6uiPf": {
+                    "name": "Tradeskills"
+                },
+                "UbGiQAlGSH8iwZhE": {
+                    "name": "Crafting"
+                }
+            },
             "pages": {
                 "Alchemy": {
                     "name": "Alchemy",
@@ -390,14 +398,6 @@
                 "Tradeskills Overview": {
                     "name": "Tradeskills Overview",
                     "text": "<p></p><p><strong>Crafting</strong> in Crucible is performed using a set of <strong>Tradeskills</strong> which, similar to adventuring @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Skills}, are invested aspects of your character's identity obtained through @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talent} progression and through the accumulation of knowledge in the form of @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schematics}.</p><section class=\"construction\"><p>Crucible's crafting system is currently in early development, rules written here are subject to change and many details may not yet be finished. Please consider these details a preview of things to come.</p></section><section class=\"gameplay\"><p>It is not required for any character to invest into mastery of a tradeskill, however it is generally recommended to select at least one tradeskill to pursue in order to enjoy a well-rounded experience playing Crucible, particularly if your game is a long-form campaign.</p></section><p>The information in this journal describes each of the tradeskills, how schematics are defined and obtained, and how the crafting process functions when using a schematic to turn input ingredients into produced items.</p><h2 class=\"divider\">Tradeskills Table</h2><table><tbody><tr><th><p>Skill</p></th><th><p>Primary Ability</p></th><th><p>Secondary Ability</p></th><th><p>General Usage</p></th></tr><tr><td><p>@UUID[.alchemy000000000]</p></td><td><p>Intellect</p></td><td><p>Toughness</p></td><td><p>Potions, elixirs, oils, and salves</p></td></tr><tr><td><p>@UUID[.cooking000000000]</p></td><td><p>Wisdom</p></td><td><p>Toughness</p></td><td><p>Food and drink</p></td></tr><tr><td><p>@UUID[.enchanting000000]</p></td><td><p>Intellect</p></td><td><p>Presence</p></td><td><p>Applying Runes to equipment</p></td></tr><tr><td><p>@UUID[.fletching0000000]</p></td><td><p>Strength</p></td><td><p>Wisdom</p></td><td><p>Bows, staves, and ammunition</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]</p></td><td><p>Wisdom</p></td><td><p>Strength</p></td><td><p>Jewelry and other accessories</p></td></tr><tr><td><p>@UUID[.glyphweaving0000]</p></td><td><p>Presence</p></td><td><p>Dexterity</p></td><td><p>Runes used to enchant</p></td></tr><tr><td><p>@UUID[.smithing00000000]</p></td><td><p>Strength</p></td><td><p>Intellect</p></td><td><p>Metal arms and armor</p></td></tr><tr><td><p>@UUID[.tailoring0000000]</p></td><td><p>Dexterity</p></td><td><p>Presence</p></td><td><p>Clothing and light armor</p></td></tr></tbody></table>"
-                }
-            },
-            "categories": {
-                "Tradeskills": {
-                    "name": "Tradeskills"
-                },
-                "Crafting": {
-                    "name": "Crafting"
                 }
             }
         },
@@ -488,6 +488,12 @@
                     "text": "<p>As with any game system in Foundry Virtual Tabletop, Modules can enhance and augment the quality of gameplay experience. We do, however, request that testers of the initial Crucible Playtest try out the game system in a module-light environment in order to ensure that your experience and your feedback is appropriate and specific to the functionality of the Crucible system. Your playtest feedback will be more useful to us if you have fewer modules installed.</p><h2 class=\"divider\">Ember</h2><p>There is far more Crucible content available as part of our original setting and epic adventure <a href=\"https://foundryvtt.com/ember\">Ember</a>, which is now in Kickstarter Beta testing phase. Ember is available for pre-order, and will contain an immense campaign for Crucible spanning several years of gameplay taking your party from character level 1 to 12 (or beyond).</p><figure><img class=\"noborder\" src=\"systems/crucible/assets/banners/ember-banner.webp\" /><figcaption>Ember, currently in Beta testing, will be the definite way to experience the Crucible game system.</figcaption></figure><h2 class=\"divider\">Dice So Nice</h2><p>The Crucible game system is designed with use of the <a href=\"https://foundryvtt.com/packages/dice-so-nice/\" target=\"_blank\">Dice So Nice</a> module in mind. When rolling, Crucible leverages the features of Dice So Nice to give a positive glow effect to any roll which contain Boons, and similarly a negative glow effect to any rolls which have Banes.</p><figure><img class=\"noborder\" src=\"systems/crucible/assets/banners/dsn-banner.webp\" /><figcaption>We strongly recommend the use of Dice So Nice when playing Crucible.</figcaption></figure>"
                 }
             }
+        }
+    },
+    "mapping": {
+        "categories": {
+            "path": "categories",
+            "converter": "categories_converter"
         }
     }
 }
