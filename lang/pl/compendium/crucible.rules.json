@@ -312,6 +312,32 @@
                     "name": "Kopiący",
                     "text": "<p>Stworzenie, które jest całkowicie zanurzone w ziemi, jest <strong>Kopiące</strong>. Podczas gdy jest <strong>Kopiące</strong>, stworzenie nie może widzieć ani być widziane przy użyciu percepcji opartej na świetle.</p>"
                 }
+            },
+            "categories": {
+                "Health": {
+                    "name": "Zdrowie"
+                },
+                "Morale": {
+                    "name": "Morale"
+                },
+                "Movement": {
+                    "name": "Ruch"
+                },
+                "Actions": {
+                    "name": "Akcje"
+                },
+                "Damage Over Time": {
+                    "name": "Obrażenia w czasie"
+                },
+                "Overview": {
+                    "name": "Przegląd"
+                },
+                "Defenses": {
+                    "name": "Obrony"
+                },
+                "Perception": {
+                    "name": "Percepcja"
+                }
             }
         },
         "Crafting": {
@@ -364,6 +390,14 @@
                 "Tradeskills Overview": {
                     "name": "Przegląd umiejętności rzemieślniczych",
                     "text": "<p></p><p><strong>Rzemiosło</strong> w Crucible jest wykonywane przy użyciu zestawu <strong>Rzemiosł</strong>, które – podobnie jak przygodowe @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Umiejętności} – są rozwijanymi elementami tożsamości twojej postaci, zdobywanymi poprzez rozwój @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talentów} oraz gromadzenie wiedzy w postaci @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schematów}.</p><section class=\"construction\"><p>System rzemiosła w Crucible znajduje się obecnie na wczesnym etapie rozwoju. Zasady opisane tutaj mogą ulec zmianie, a wiele szczegółów może nie być jeszcze ukończonych. Prosimy traktować te informacje jako zapowiedź nadchodzących rozwiązań.</p></section><section class=\"gameplay\"><p>Nie jest wymagane, aby jakakolwiek postać inwestowała w opanowanie rzemiosła, jednak zazwyczaj zaleca się wybranie przynajmniej jednego rzemiosła do rozwijania, aby w pełni cieszyć się rozgrywką w Crucible — szczególnie jeśli gra ma formę długiej kampanii.</p></section><p>Informacje w tym dzienniku opisują każde z rzemiosł, sposób definiowania i zdobywania schematów oraz działanie procesu rzemiosła przy użyciu schematu do przekształcania składników wejściowych w wytworzone przedmioty.</p><h2 class=\"divider\">Tabela rzemiosł</h2><table><tbody><tr><th><p>Umiejętność</p></th><th><p>Główny atrybut</p></th><th><p>Drugorzędny atrybut</p></th><th><p>Ogólne zastosowanie</p></th></tr><tr><td><p>@UUID[.alchemy000000000]{Alchemia}</p></td><td><p>Intelekt</p></td><td><p>Wytrzymałość</p></td><td><p>Mikstury, eliksiry, oleje i maści</p></td></tr><tr><td><p>@UUID[.cooking000000000]{Gotowanie}</p></td><td><p>Mądrość</p></td><td><p>Wytrzymałość</p></td><td><p>Jedzenie i napoje</p></td></tr><tr><td><p>@UUID[.enchanting000000]{Zaklinanie}</p></td><td><p>Intelekt</p></td><td><p>Prezencja</p></td><td><p>Nakładanie run na wyposażenie</p></td></tr><tr><td><p>@UUID[.fletching0000000]{Łuczarstwo}</p></td><td><p>Siła</p></td><td><p>Mądrość</p></td><td><p>Łuki, kostury i amunicja</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]{Jubilerstwo}</p></td><td><p>Mądrość</p></td><td><p>Siła</p></td><td><p>Biżuteria i inne akcesoria</p></td></tr><tr><td><p>@UUID[.glyphweaving0000]{Glifotwórstwo}</p></td><td><p>Prezencja</p></td><td><p>Zręczność</p></td><td><p>Runy używane do zaklinania</p></td></tr><tr><td><p>@UUID[.smithing00000000]{Kowalstwo}</p></td><td><p>Siła</p></td><td><p>Intelekt</p></td><td><p>Metalowa broń i zbroje</p></td></tr><tr><td><p>@UUID[.tailoring0000000]{Krawiectwo}</p></td><td><p>Zręczność</p></td><td><p>Prezencja</p></td><td><p>Odzież i lekka zbroja</p></td></tr></tbody></table>"
+                }
+            },
+            "categories": {
+                "Tradeskills": {
+                    "name": "Umiejętności rzemieślnicze"
+                },
+                "Crafting": {
+                    "name": "Rzemiosło"
                 }
             }
         },
