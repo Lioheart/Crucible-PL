@@ -98,7 +98,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażeni..</p>"
+                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -787,7 +787,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażeni..</p>"
+                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -1411,7 +1411,7 @@
             "actions": {
                 "Heavy Strike": {
                     "name": "Mocne uderzenie",
-                    "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażeni..</p>"
+                    "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                 }
             }
         },
@@ -2206,7 +2206,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażeni..</p>"
+                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
