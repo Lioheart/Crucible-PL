@@ -20,3 +20,6 @@ Oryginalny projekt podlega ciągłym zmianom, dlatego też pełne, statyczne tł
 ### Współpraca
 
 To tłumaczenie jest wynikiem wspólnego wysiłku społeczności. Jeśli chcesz wnieść swój wkład, nie wahaj się zaproponować zmian lub skontaktować się z nami. Twoja pomoc jest nieoceniona dla rozwoju polskiej społeczności Crucible!
+
+#### Notka prawna:
+_Ten moduł jest nieoficjalnym tłumaczeniem systemu Crucible. System Crucible oraz powiązane z nim znaki towarowe są własnością Foundry Gaming LLC. Treści zawarte w tłumaczeniu są udostępniane zgodnie z zasadami tworzenia treści przez społeczność Foundry VTT._
