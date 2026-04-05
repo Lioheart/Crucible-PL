@@ -1,3 +1,7 @@
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Lioheart/Crucible-PL/latest/total)
+![GitHub Release](https://img.shields.io/github/v/release/Lioheart/Crucible-PL)
+![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/lang-pl-crucible&colorB=4aa94a)
+
 # Nieoficjalne tłumaczenie gry Crucible na język polski
 <p align="center">
   <img width="424" height="320" alt="crucible-pl" src="https://github.com/Lioheart/Crucible-PL/blob/main/static/crucible-pl.webp" />
