@@ -143,3 +143,7 @@ Hooks.once("init", () => {
 
   });
 });
+
+Hooks.once("babele.ready", async () => {
+  await game.documentIndex.index();
+});
