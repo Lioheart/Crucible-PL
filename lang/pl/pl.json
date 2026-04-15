@@ -250,13 +250,13 @@
       "Deadly": "Morderczy",
       "DeadlyTooltip": "Ta akcja może wyrządzić ogromne szkody, zwiększając mnożnik obrażeń za wszelkie zadane obrażenia o x1.",
       "Difficult": "Trudny",
-      "DifficultTooltip": "Wykonanie tej akcji jest skomplikowane lub trudne. Podczas próby wykonania tej akcji otrzymujesz 2 dodatkowe zguby.",
+      "DifficultTooltip": "Wykonanie tej akcji jest skomplikowane lub trudne. Podczas próby wykonania tej akcji otrzymujesz 1 dodatkową zgubę.",
       "Disarm": "Rozbrojenie",
       "DisarmTooltip": "Jeśli akcja się powiedzie, spowoduje to upuszczenie broni przez cel.",
       "DualWield": "Walka dwoma broniami",
       "DualWieldTooltip": "Aby wykonać tę akcję, należy posługiwać się dwiema oddzielnymi broniami lub być całkowicie nieuzbrojonym.",
       "Empowered": "Wzmocniony",
-      "EmpoweredTooltip": "Ta akcja jest potężna i zadaje dodatkowe obrażenia, zapewniając +2 do obrażeń w przypadku sukcesu.",
+      "EmpoweredTooltip": "Ta akcja jest potężna i zadaje dodatkowe obrażenia, zapewniając +6 do obrażeń w przypadku sukcesu.",
       "Finesse": "Finezyjne",
       "FinesseTooltip": "Wykonanie tej akcji wymaga pewnej zręczności. Musisz dzierżyć broń, której skuteczność zależy od Zręczności.",
       "Flanking": "Flankowanie",
@@ -326,6 +326,8 @@
       "Summon": "Przywołany",
       "SummonTooltip": "Ta akcja przywołuje, wzywa lub w inny sposób tworzy bojownika, który dołącza do starcia.",
       "TargetTooltip": "Typ celu, odległość i liczba, które mają zastosowanie do tej akcji.",
+      "Talisman": "Talizman",
+      "TalismanTooltip": "Aby wykonać tę akcję, należy dzierżyć broń-talizman.",
       "Thrown": "Rzucana",
       "ThrownTooltip": "Ta akcja polega na wykonaniu ataku bronią rzucaną.",
       "TwoHanded": "Dwuręczny",
@@ -337,7 +339,7 @@
       "Vocal": "Wokalny",
       "VocalTooltip": "Ta akcja wymaga od użytkownika mówienia lub wydawania dźwięków.",
       "Weakened": "Osłabiony",
-      "WeakenedTooltip": "Ta akcja jest słabsza od normalnych ataków i ma premię -2 do obrażeń."
+      "WeakenedTooltip": "Ta akcja jest słabsza od normalnych ataków i ma premię -6 do obrażeń."
     },
     "TAG_CATEGORIES": {
       "Attack": "Atak",
@@ -357,6 +359,7 @@
       "Action": "Tagi akcji",
       "Activation": "Tagi aktywacyjne",
       "Context": "Tagi kontekstowe",
+      "Target": "Tagi celu",
       "TargetLimit": "Limit {limit}"
     },
     "TARGET_SCOPES": {
@@ -389,6 +392,12 @@
         "DELAY": {
           "AlreadyDelayed": "W tej rundzie walki nie możesz już więcej opóźniać swojej tury.",
           "WrongTurn": "Z akcji Opóźnienie można skorzystać wyłącznie w swojej turze podczas walki."
+        },
+        "INTERPOSE": {
+          "AllyMustBeTarget": "Wybrany sojusznik musi być celem ostatniego ataku.",
+          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub otarł się o twojego sojusznika.",
+          "RequiresStrike": "Wtrącenie wymaga, aby ostatnią akcją było uderzenie bronią.",
+          "SingleTarget": "Wtrącenie może być użyte tylko przeciwko atakowi skierowanemu na pojedynczy cel."
         }
       },
       "BadStatus": "Nie możesz wykonać {action} w trakcie trwania {status}.",
@@ -463,6 +472,7 @@
     "RequiresMovement": "Zanim będzie można wykonać tę akcję, należy zaplanować trasę przemieszczania się.",
     "RequiresRegion": "Aby móc skorzystać z tej akcji, musisz najpierw umieścić strefę.",
     "SkillCheck": "Test umiejętności {skill}",
+    "SkillCheckGeneric": "Test umiejętności",
     "StandardCheck": "Standardowy test",
     "Targets": "Cele",
     "TemplateTargets": "Cele szablonu",
@@ -542,6 +552,18 @@
       "TalentTreeOpen": "Otwórz drzewko talentów",
       "ToggleTree": "Przełącz drzewko talentów"
     },
+    "ADVERSARY": {
+      "ACTIONS": {
+        "DecreaseLevel": "Zmniejsz poziom",
+        "IncreaseLevel": "Zwiększ poziom"
+      },
+      "THREAT_RANKS": {
+        "Boss": "Boss",
+        "Elite": "Elitarny",
+        "Minion": "Sługus",
+        "Normal": "Normalny"
+      }
+    },
     "CREATION": {
       "AbandonContent": "Zrezygnować z tworzenia postaci i zamknąć kreator?",
       "AbandonTitle": "Porzucić proces tworzenia postaci?",
@@ -560,6 +582,7 @@
       "EquipmentType": "Typ przedmiotu",
       "Exit": "Wyjście",
       "ExitHint": "Wyjście z tworzenia",
+      "NameRequired": "Aby zakończyć tworzenie postaci, musisz podać jej imię.",
       "Restart": "Uruchom ponownie",
       "RestartContent": "Odrzucić postęp tworzenia i zacząć od początku?",
       "RestartHint": "Ponowne uruchomienie tworzenia",
@@ -689,6 +712,8 @@
       }
     },
     "LABELS": {
+      "BackgroundKnowledgeTooltip": "Dostęp do tego zakresu wiedzy wynika z Twojej przeszłości.",
+      "BackgroundLanguageTooltip": "Ten język otrzymujesz dzięki swojej przeszłości.",
       "Capacity": "Udźwig",
       "Currency": "Monety",
       "CurrentCapacity": "Aktualny udźwig",
@@ -697,6 +722,7 @@
       "Knowledge": "Obszary wiedzy",
       "KnowledgeHint": "Poznaj kilka obszarów wiedzy ze swojej Przeszłości lub edytuj swojego bohatera, aby je zdobyć.",
       "Languages": "Znane języki",
+      "LanguagesHint": "Naucz się kilku języków dzięki swojej przeszłości lub zmodyfikuj swojego bohatera, aby je zdobyć.",
       "OverCapacity": "Nadmierny udźwig"
     },
     "SECTIONS": {
@@ -795,20 +821,54 @@
     "StrideSpecific": "Bieg {stride}",
     "VulnerabilitySpecific": "Podatność: {vulnerability}"
   },
+  "AFFIX": {
+    "FIELDS": {
+      "adjective": {
+        "label": "Przymiotnik",
+        "hint": "Opcjonalny przymiotnik stosowany podczas tworzenia nazwy przedmiotu."
+      },
+      "affixType": {
+        "label": "Typ afiksu",
+        "hint": "Afiksy muszą być albo przedrostkami, albo przyrostkami."
+      },
+      "identifier": {
+        "label": "Identyfikator",
+        "hint": "Unikalny identyfikator tekstowy dla tego afiksu (maksymalnie 16 znaków), używany do deklarowania funkcji uchwytu oraz do określania identyfikatorów afiksów po zastosowaniu ich do przedmiotu."
+      },
+      "itemTypes": {
+        "label": "Typy przedmiotu",
+        "hint": "Do jakich typów przedmiotów można zastosować ten afiks. Jeśli nie zaznaczono żadnych konkretnych typów, dopuszczalne są wszystkie typy przedmiotów."
+      },
+      "tier": {
+        "label": "Stopień",
+        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przedrostka lub przyrostka.",
+        "min": {
+          "label": "Minimalny stopień"
+        },
+        "max": {
+          "label": "Maksymalny stopień"
+        },
+        "value": {
+          "label": "Stopień afiksu",
+          "hint": "Stopień tego afiksu zastosowany do przedmiotu."
+        }
+      }
+    },
+    "ConfigIdentity": "Identyfikacja afiksu",
+    "ConfigTier": "Konfiguracja stopnia",
+    "TierRestriction": "Zakres stopnia",
+    "Prefixes": "Przedrostki",
+    "Suffixes": "Przyrostki",
+    "TierDisplay": "Stopień {value} / {max}",
+    "TypePrefix": "Przedrostek",
+    "TypeSuffix": "Przyrostek"
+  },
   "ADVANCEMENT": {
     "ExpectedLevel": "Oczekiwany poziom",
     "Level": "Poziom",
     "MilestoneAward": "Nagroda za postępy w realizacji kamieni milowych ",
     "MilestoneTooltip": "{progress} w realizacji {required} kamieni milowych do następnego poziomu",
     "Progress": "Postępy w realizacji kamieni milowych"
-  },
-  "ADVERSARY": {
-    "THREAT_RANKS": {
-      "Boss": "Boss",
-      "Elite": "Elitarny",
-      "Minion": "Sługus",
-      "Normal": "Normalny"
-    }
   },
   "ANCESTRY": {
     "FIELDS": {
@@ -1175,7 +1235,9 @@
   },
   "CRUCIBLE": {
     "SHEETS": {
+      "Accessory": "Karta akcesoriów Crucible",
       "Adversary": "Karta przeciwnika Crucible",
+      "Affix": "Karta afiksów Crucible",
       "Ancestry": "Karta pochodzenia Crucible",
       "Archetype": "Karta archetypu Crucible",
       "Armor": "Karta pancerza Crucible",
@@ -1266,6 +1328,26 @@
       "Moderate": "Umiarkowany",
       "Trivial": "Trywialny"
     },
+    "SKILLS": {
+      "AddSkill": "Dodaj umiejętność",
+      "CustomizeSkills": "Dostosuj umiejętności"
+    },
+    "GROUP_CHECK": {
+      "Title": "Grupowy test umiejętności",
+      "DialogTitle": "Test na {skill}: {name}",
+      "NoUserForActor": "Nie znaleziono żadnego aktywnego użytkownika dla: {name}",
+      "STATUSES": {
+        "Complete": "Zakończ",
+        "Pending": "W toku",
+        "Aborted": "Przerwano",
+        "Skipped": "Pominięto"
+      },
+      "Resend": "Wyślij ponownie",
+      "RollOnBehalf": "Rzuć w imieniu",
+      "Skip": "Pomiń aktora",
+      "ResetPending": "Resetuj do statusu W toku",
+      "RequiresGM": "Tylko Mistrz Gry może zainicjować testy grupowe."
+    },
     "REQUESTS": {
       "AddParty": "Dodaj drużynę",
       "AnyActor": "Dowolny aktor",
@@ -1319,6 +1401,10 @@
         "label": "Etap flankowania"
       }
     }
+  },
+  "HOOKS": {
+    "NoModuleHooks": "Dla tego identyfikatora nie zarejestrowano żadnych uchwytów modułów.",
+    "ToggleSource": "Zmień źródło"
   },
   "ITEM": {
     "ACTIONS": {
@@ -1397,10 +1483,17 @@
       "Parry": "Parowanie {parry}",
       "Range": "Zasięg {range}",
       "Stackable": "Grupowalna",
-      "Unequipped": "Nie wyposażony"
+      "Unequipped": "Nie wyposażony",
+      "Unique": "Unikalny"
     },
     "SHEET": {
       "Details": "Szczegóły przedmiotu",
+      "NoAffixCapacity": "Jakość tego przedmiotu jest zbyt niska, by można było do niego dołączyć afiksy. Ulepsz go do jakości Dobrej lub wyższej.",
+      "NoAffixCapacityTitle": "Zaklinanie niemożliwe",
+      "NoAffixes": "Przeciągnij afiks z kompendium afiksów, aby go zastosować.",
+      "UniqueItemTitle": "Unikatowy przedmiot",
+      "UniqueItemNoAffixes": "Ten przedmiot jest unikalny i nie można go wzbogacić o afiksy. Jego właściwości magiczne są określane przez uchwyty modułów.",
+      "EnchantmentDerivedHint": "Stopień zaklinania wynika z łącznego stopnia zastosowanych afiksów.",
       "Equipment": "Szczegóły wyposażenia",
       "EquipmentDrop": "Dodaj wyposażenie początkowe, przeciągając i upuszczając przedmioty w tym obszarze.",
       "EquipmentRemove": "Usuń wyposażenie",
@@ -1416,6 +1509,7 @@
     },
     "TABS": {
       "Actions": "Akcje",
+      "Affixes": "Afiksy",
       "Configuration": "Konfiguracja",
       "Description": "Opis",
       "Equipment": "Wyposażenie",
@@ -1427,7 +1521,22 @@
     "WARNINGS": {
       "HookAlreadyExists": "{item} zawiera już deklarację funkcji dla uchwytu „{hook}”.",
       "InvalidIdentifier": "Nieprawidłowa wartość identyfikatora Crucible „{id}”, która musi być alfanumeryczna i nie może zawierać spacji ani znaków specjalnych",
-      "NotTalent": "Upuszczony dokument musi być talentem."
+      "NotTalent": "Upuszczony dokument musi być talentem.",
+      "QualityReductionBlocked": "Nie można obniżyć jakości {name}, ponieważ zawiera on afiksy wymagające obecnej pojemności.",
+      "UniqueWithAffixes": "Nie można oznaczyć {name} jako unikalnego, ponieważ zawiera afiksy. Najpierw usuń wszystkie afiksy.",
+      "LootDropError": "Nie udało się utworzyć łupu \"{name}\". {reason}"
+    },
+    "RANDOMIZE": {
+      "Title": "Losuj zaklęty przedmiot",
+      "Flavor": "Losuj przedmiot: {type}",
+      "PriceMin": "Cena minimalna",
+      "PriceMax": "Cena maksymalna",
+      "BaseItem": "Przedmiot podstawowy",
+      "ItemTypes": "Typy przedmiotu",
+      "Quality": "Stopień jakości",
+      "QualityAny": "Cokolwiek",
+      "Generate": "Generuj",
+      "GMOnly": "Tylko Mistrz Gry może generować losowe przedmioty."
     },
     "EnchantmentLegendary": "Legendarne",
     "EnchantmentMajor": "Znaczące",
@@ -1579,17 +1688,22 @@
     "SHEET": {
       "Components": "Komponenty",
       "InputAdd": "Dodaj grupę wejściową",
-      "InputDrop": "Usuń przedmiot wejściowy",
+      "InputDrop": "Upuść przedmiot wejściowy",
       "InputRemove": "Usuń grupę wejściową",
       "Inputs": "Dane wejściowe",
+      "ItemRemove": "Usuń przedmiot wejściowy",
       "OutputAdd": "Dodaj grupę wyjściową",
-      "OutputDrop": "Usuń przedmiot wyjściowy",
+      "OutputDrop": "Upuść przedmiot wyjściowy",
       "OutputRemove": "Usuń grupę wyjściową",
       "Outputs": "Dane wyjściowe"
     }
   },
   "SETTINGS": {
     "COMPENDIUM_SOURCES": {
+      "affix": {
+        "hint": "Które zestawy będą wykorzystywane jako źródła afiksów przedmiotów do zaklinania.",
+        "label": "Źródła afiksów"
+      },
       "ancestry": {
         "hint": "Które pakiety będą wykorzystywane jako źródła pochodzenia podczas tworzenia postaci.",
         "label": "Źródła pochodzenia"
@@ -1893,7 +2007,8 @@
       "PurchaseNode": "Wydaj punkt talentu, aby kupić pusty węzeł \"{node}\"?",
       "PurchaseNodeReverse": "Usunąć punkt wydany na pusty węzeł \"{node}\"?",
       "PurchaseNodeTitle": "Nabyć węzeł Talentu?",
-      "PurchaseTitle": "Nabyty talent: {name}"
+      "PurchaseTitle": "Nabyty talent: {name}",
+      "Reset": "Resetuj"
     },
     "FIELDS": {
       "actions": {
@@ -2008,6 +2123,7 @@
       "Humanoid": "Humanoid",
       "Monstrosity": "Potworność",
       "Ooze": "Śluz",
+      "Plant": "Umieść",
       "Outsider": "Obcy",
       "Undead": "Nieumarły"
     },
@@ -2133,7 +2249,8 @@
   },
   "TYPES": {
     "ActiveEffect": {
-      "flanked": "Aktywny efekt flankowania"
+      "affix": "Afiks",
+      "flanked": "Flankowany"
     },
     "Actor": {
       "adversary": "Przeciwnik",
