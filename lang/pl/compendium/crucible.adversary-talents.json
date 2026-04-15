@@ -60,6 +60,14 @@
             "name": "Amorficzny",
             "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego <strong>Biegu</strong>. Otrzymuje premię do <strong>Uniku</strong> równą połowie swojej wartości <strong>Wytrzymałości</strong>i jest odporny na stan @Condition[restrained].</p>"
         },
+        "Aquatic Breathing": {
+            "name": "Oddychanie pod wodą",
+            "description": "<p>@ref[actor.name]{Ta istota} może oddychać wyłącznie pod wodą.</p>"
+        },
+        "Aqueous Camouflage": {
+            "name": "Kamuflaż wodny",
+            "description": "<p>Gdy @ref[actor.name]{ta istota} jest całkowicie zanurzona w wodzie lub innym płynie, otrzymuje @Advantage[2] do testów <strong>Skradania się</strong>.</p>"
+        },
         "Aqueous Transmission": {
             "name": "Transmisja wodna",
             "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
@@ -236,6 +244,21 @@
                 "Multiply": {
                     "name": "Wielokrotność",
                     "description": "<p>Komórki szlamu szybko się namnażają wraz z rozwojem stworzenia. Jego <strong>Rozmiar</strong> zwiększa się o 1, a <strong>Zdrowie</strong> wzrasta o wartość jego <strong>Wytrzymałości</strong>.</p>"
+                }
+            }
+        },
+        "Natural Invisibility": {
+            "name": "Naturalna niewidzialność",
+            "description": "<p>Dzięki pewnej naturalnej lub tajemniczej właściwości swojego organizmu @ref[actor.name]{ta istota} posiada zdolność do całkowitej niewidzialności.</p>",
+            "actions": {
+                "Natural Invisibility": {
+                    "name": "Naturalna niewidzialność",
+                    "description": "<p>Zyskujesz stan @Condition[invisible] i nie można cię wykryć za pomocą zmysłu wzroku. Nie można cię bezpośrednio wybrać jako cel żadnej akcji. Efekt ten trwa przez 10 minut lub do momentu wykonania dowolnej akcji innej niż <strong>Ruch</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Naturalna niewidzialność"
+                        }
+                    ]
                 }
             }
         },
@@ -440,6 +463,21 @@
         "Sunlight Weakness": {
             "name": "Wrażliwość na światło słoneczne",
             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
+        },
+        "Swallow": {
+            "name": "Połykanie",
+            "description": "<p>@Ref[actor.name]{Ta istota} potrafi połknąć w całości istoty mniejsze od siebie, choć akcja ta może dotyczyć tylko jednej istoty naraz.</p>",
+            "actions": {
+                "Swallow": {
+                    "name": "Połykanie",
+                    "description": "<p>Połykasz wybranego wroga, skutecznie wyłączając go z walki. Połknięty przeciwnik otrzymuje statusy @Condition[blinded] i @Condition[restrained] do momentu uwolnienia.</p><p>Jeśli odniesiesz <strong>poważne</strong> obrażenia, zostaniesz <strong>Ranny</strong> lub znajdziesz się w stanie @Condition[incapacitated], zwracasz połknięte stworzenie.</p>",
+                    "effects": [
+                        {
+                            "name": "Połykanie"
+                        }
+                    ]
+                }
+            }
         },
         "Swooping Strike": {
             "name": "Atak z powietrza",
