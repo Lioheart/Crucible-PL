@@ -50,6 +50,10 @@
         "Projectile": "Projectile"
     },
     "entries": {
+        "Adrenaline": {
+            "name": "Adrenaline",
+            "description": "<p>Pain sharpens your concentration. Once per round, when you sustain <strong>Health</strong> damage from an attack, you gain <strong>+1 Focus</strong>.</p>"
+        },
         "Adrenaline Surge": {
             "name": "Adrenaline Surge",
             "description": "<p>You can draw upon exceptional reserves of physical strength to meet challenges imposed on your body.</p>",
@@ -114,9 +118,23 @@
             "name": "Arcane Archer",
             "description": "<p>Your skill with archery can shape your spellcraft, partially substituting for the somatic gestures of traditional spellcasting.</p><p>While using a <strong>Projectile </strong>weapon as your mainhand weapon, you ignore the free-hand requirement for casting spells using the <strong>Arrow</strong> gesture and the range of those spells becomes your weapon range.</p><p>Immediately after performing a <strong>Strike</strong> with a projectile weapon, you may cast a spell with its <strong>Action</strong> cost reduced by 1.</p>"
         },
+        "Armor Crusher": {
+            "name": "Armor Crusher",
+            "description": "<p>You have mastered the art of striking armored opponents with such force that the armor itself becomes a weapon against them.</p>",
+            "actions": {
+                "Armor Crusher": {
+                    "name": "Armor Crusher",
+                    "description": "<p>You make an unarmed <strong>Strike</strong> against a nearby enemy. If the attack results in a <strong>Glancing Blow</strong>, you spend <strong>1 Focus</strong> if possible to deal bonus damage equal to your <strong>Toughness</strong> score.</p>"
+                }
+            }
+        },
         "Armored Efficiency": {
             "name": "Armored Efficiency",
             "description": "<p>You are trained in wearing the heaviest types of armor while still retaining mobility. You are able to use a free Movement action once per Turn while wearing Heavy armor.</p>"
+        },
+        "Armored Instinct": {
+            "name": "Armored Instinct",
+            "description": "<p>You instinctively angle your body to absorb the brunt of deflected blows. When an attack against you results in a <strong>Glancing Blow</strong>, you gain <strong>+1 Resistance</strong> against the damage dealt.</p>"
         },
         "Armored Shell": {
             "name": "Armored Shell",
@@ -216,6 +234,10 @@
         "Battle Focus": {
             "name": "Battle Focus",
             "description": "You find focus and calm within the thrill of battle. When you achieve a <strong>Critical Hit</strong> that deals damage to Health or Morale you gain +1 Focus. This benefit may occur at most once per Round."
+        },
+        "Battle-Worn": {
+            "name": "Battle-Worn",
+            "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the <strong>Rest</strong> action, you recover additional <strong>Wounds</strong> equal to half your <strong>Toughness</strong> score (rounded down).</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated. Apply the additional wounds recovery manually when resting.</p>"
         },
         "Beastmaster": {
             "name": "Beastmaster",
@@ -456,6 +478,10 @@
                 }
             }
         },
+        "Defiant Will": {
+            "name": "Defiant Will",
+            "description": "<p>As your body weakens, your mind hardens. You gain bonus <strong>Willpower</strong> defense equal to your <strong>Toughness</strong> score scaled by the proportion of <strong>Health</strong> you have lost.</p>"
+        },
         "Deft Grip": {
             "name": "Deft Grip",
             "description": "Your grasp of your weaponry is fluid and precise. You can perform Actions which require a free hand while wielding a two-handed ranged weapon."
@@ -558,8 +584,8 @@
             "name": "Dustbinder",
             "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
         },
-        "Earth  Proficiency": {
-            "name": "Earth  Proficiency",
+        "Earth Proficiency": {
+            "name": "Earth Proficiency",
             "description": "<p>You have fluency in weaving spellcraft using the Rune of Earth. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Mould</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Enchanting Journeyman": {
@@ -569,6 +595,10 @@
         "Enchanting Novice": {
             "name": "Enchanting Novice",
             "description": "<p>You have received training in the fundamentals of Enchantment and are capable of working with most common charms and enchantments.</p><p>You still need to reference recipes and books to identify sympathetic materials and their properties.</p>"
+        },
+        "Evasive Armor": {
+            "name": "Evasive Armor",
+            "description": "<p>You are fast enough to lean into blows and take them on your armor's strongest points. Any <strong>Reflex</strong> defense in excess of your <strong>Physical</strong> defense is added as bonus <strong>Armor</strong>.</p>"
         },
         "Evasive Shot": {
             "name": "Evasive Shot",
@@ -802,6 +832,21 @@
                 }
             }
         },
+        "Headbutt": {
+            "name": "Headbutt",
+            "description": "<p>You can deliver a brutal close-range strike with your head that catches opponents off-guard.</p>",
+            "actions": {
+                "Headbutt": {
+                    "name": "Headbutt",
+                    "description": "<p>Make an unarmed <strong>Strike</strong> against the <strong>Fortitude</strong> defense of an adjacent enemy. If your <strong>Initiative</strong> is superior to that of your target, you gain <strong>+1 Boon</strong> to this attack.</p><p>The attack is <strong>Difficult</strong> and only deals <strong>Weakened</strong> damage, but if successful it inflicts the @Condition[staggered] for one round.</p><p>This action always uses an Unarmed weapon, even if your weapon slots are otherwise occupied.</p>",
+                    "effects": [
+                        {
+                            "name": "Headbutt"
+                        }
+                    ]
+                }
+            }
+        },
         "Healer": {
             "name": "Healer",
             "description": "<p>You are unparalleled at manipulating vital arcana to treat injuries. You learn <strong>Rune: Life</strong> if you do not already know it. When healing allies using the Rune of Life you gain <strong>+2 Boons</strong> to your roll.</p>",
@@ -842,6 +887,10 @@
         "Illusion Proficiency": {
             "name": "Illusion Proficiency",
             "description": "<p>You have fluency in weaving spellcraft using the Rune of Illusion. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Seeming </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+        },
+        "Impenetrable Guard": {
+            "name": "Impenetrable Guard",
+            "description": "<p>Your defenses frustrate attackers who struggle to find a gap in your guard. When an enemy's <strong>Strike</strong> against you results in a <strong>Block</strong> or <strong>Glancing Blow</strong>, that enemy suffers <strong>1 Bane</strong> on their next Strike against you.</p>"
         },
         "Impetus": {
             "name": "Impetus",
@@ -936,6 +985,16 @@
                 }
             }
         },
+        "Interpose": {
+            "name": "Interpose",
+            "description": "<p>You are willing to throw yourself into harm's way to protect your allies, subjecting yourself to danger in their stead.</p>",
+            "actions": {
+                "Interpose": {
+                    "name": "Interpose",
+                    "description": "<p>As a <strong>Reaction</strong> when an adjacent ally is hit or glanced by a single-target attack that targeted their <strong>Physical Defense</strong>, you may Interpose to become the target of that attack instead.</p><p>The attack is negated and the attack is re-evaluated against your own <strong>Physical Defense</strong> using the same dice rolls from the original attack. The consequences of the attack are resolved according to this new result with you as its target.</p>"
+                }
+            }
+        },
         "Interrupting Throw": {
             "name": "Interrupting Throw",
             "description": "<p>You are alert and prepared to use your equipped weapon to interrupt enemy spellcraft.</p>",
@@ -986,6 +1045,10 @@
         "Iramancer": {
             "name": "Iramancer",
             "description": "Your feats of arcana are fueled by anger. While Enraged you may still spend Focus and you deal 2 additional damage to all spell attacks."
+        },
+        "Iron Resolve": {
+            "name": "Iron Resolve",
+            "description": "<p>Your physical resilience makes you too tough to be deeply affected by a powerful blow. The critical success threshold for <strong>Strikes</strong> against you is increased by +1, making you harder to critically hit.</p>"
         },
         "Irrepressible Spirit": {
             "name": "Irrepressible Spirit",
@@ -1063,7 +1126,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Lunge",
-                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
+                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a weapon which scales using <strong>Dexterity</strong> against a single target, with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
                 }
             }
         },
@@ -1173,6 +1236,10 @@
         "Necromancer": {
             "name": "Necromancer",
             "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals your <strong>Intellect</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
+        },
+        "Never Yield": {
+            "name": "Never Yield",
+            "description": "<p>Your determination refuses to let your body's limits slow you down. While <strong>Weakened</strong>, your action point penalty is reduced from -2 to -1.</p>"
         },
         "Nosferatu": {
             "name": "Nosferatu",
@@ -1400,7 +1467,7 @@
         },
         "Rune: Control": {
             "name": "Rune: Control",
-            "description": "<p>The orderly force of discipline and permanence. The Control rune governs thought, reason, and persistence.</p><p>The Control rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Psychic</strong> damage to <strong>Morale</strong>. It is opposed by the chaotic rune of <strong>Kinesis</strong>.</p>",
+            "description": "<p>The orderly force of discipline and permanence. The Control rune governs thought, reason, and persistence.</p><p>The Control rune scales using <strong>Wisdom</strong>, targets <strong>Willpower</strong>, and deals <strong>Psychic</strong> damage to <strong>Morale</strong>. It is opposed by the chaotic rune of <strong>Kinesis</strong>.</p>",
             "actions": {
                 "Motivate": {
                     "name": "Motivate",
@@ -1430,7 +1497,7 @@
         },
         "Rune: Flame": {
             "name": "Rune: Flame",
-            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
             "actions": {
                 "Enkindle": {
                     "name": "Enkindle",
@@ -1948,7 +2015,7 @@
         },
         "Weak Points": {
             "name": "Weak Points",
-            "description": "You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is <strong>Unaware</strong>, <strong>Flanked</strong>, or <strong>Exposed</strong> using Finesse weaponry, you gain +2 damage to any Strike."
+            "description": "<p>You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is @Condition[unaware], @Condition[flanked], or @Condition[exposed] using a weapon which scales with <strong>Dexterity</strong>, you gain +2 damage to any Strike.</p>"
         },
         "Wilderness Adept": {
             "name": "Wilderness Adept",

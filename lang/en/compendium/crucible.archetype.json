@@ -64,6 +64,10 @@
             "name": "Fighter",
             "description": "Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor."
         },
+        "Geomancer": {
+            "name": "Geomancer",
+            "description": "<p>Mages that specialize in the runes of Earth and Flame.</p>"
+        },
         "Grappler": {
             "name": "Grappler",
             "description": "Fighters who specialize in physically restraining their adversaries and rendering them susceptible to further attacks."
@@ -71,6 +75,10 @@
         "Guardian Beast": {
             "name": "Guardian Beast",
             "description": "<p>Beasts that serve as guardians, standing watch over places or people to whom they are unwaveringly loyal.</p>"
+        },
+        "Herd Beast": {
+            "name": "Herd Beast",
+            "description": "<p>Cattle, beasts of burden, and other prey animals that congregate in herds.</p>"
         },
         "Justiciar": {
             "name": "Justiciar",

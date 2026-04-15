@@ -61,17 +61,6 @@
                     "name": "Arena of Valor"
                 }
             },
-            "macros": {
-                "Recover": {
-                    "name": "Recover"
-                },
-                "Toggle Talent Tree": {
-                    "name": "Toggle Talent Tree"
-                },
-                "Full Rest": {
-                    "name": "Full Rest"
-                }
-            },
             "actors": {
                 "Baizaz": {
                     "name": "Baizaz",
@@ -519,7 +508,7 @@
                             "actions": {
                                 "Lunge": {
                                     "name": "Lunge",
-                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
+                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a weapon which scales using <strong>Dexterity</strong> against a single target, with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
                                 }
                             }
                         }
@@ -884,7 +873,7 @@
                             "actions": {
                                 "Lunge": {
                                     "name": "Lunge",
-                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
+                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a weapon which scales using <strong>Dexterity</strong> against a single target, with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
                                 }
                             }
                         },
@@ -900,7 +889,7 @@
                         },
                         "Rune: Flame": {
                             "name": "Rune: Flame",
-                            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+                            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
                             "actions": {
                                 "Enkindle": {
                                     "name": "Enkindle",
@@ -1135,7 +1124,7 @@
                         },
                         "Rune: Flame": {
                             "name": "Rune: Flame",
-                            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+                            "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
                             "actions": {
                                 "Enkindle": {
                                     "name": "Enkindle",
@@ -1190,16 +1179,6 @@
                                 }
                             }
                         },
-                        "Dual Wield": {
-                            "name": "Dual Wield",
-                            "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
-                            "actions": {
-                                "Offhand Strike": {
-                                    "name": "Offhand Strike",
-                                    "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
-                                }
-                            }
-                        },
                         "Flurry": {
                             "name": "Flurry",
                             "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
@@ -1248,17 +1227,6 @@
                             "name": "Skirmisher",
                             "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you.</p>"
                         },
-                        "Backstab": {
-                            "name": "Backstab",
-                            "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>",
-                            "actions": {
-                                "Backstab": {
-                                    "name": "Backstab",
-                                    "condition": "You are attacking a target with the Flanked condition.",
-                                    "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
-                                }
-                            }
-                        },
                         "Impetus": {
                             "name": "Impetus",
                             "description": "<p>You are gifted at exploiting the slowness with which others think. If you are first in Initiative order during a round of Combat, you gain +1 current and maximum Action.</p>"
@@ -1269,7 +1237,7 @@
                             "actions": {
                                 "Lunge": {
                                     "name": "Lunge",
-                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
+                                    "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a weapon which scales using <strong>Dexterity</strong> against a single target, with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
                                 }
                             }
                         },
@@ -1402,6 +1370,27 @@
                         "Awareness Novice": {
                             "name": "Awareness Novice",
                             "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
+                        },
+                        "Dual Wield": {
+                            "name": "Dual Wield",
+                            "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+                            "actions": {
+                                "Offhand Strike": {
+                                    "name": "Offhand Strike",
+                                    "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                                }
+                            }
+                        },
+                        "Backstab": {
+                            "name": "Backstab",
+                            "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>",
+                            "actions": {
+                                "Backstab": {
+                                    "name": "Backstab",
+                                    "condition": "You are attacking a target with the Flanked condition.",
+                                    "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
+                                }
+                            }
                         }
                     },
                     "ancestry": {
@@ -1644,6 +1633,12 @@
                                 "public": "<p>Built to crush plate and shatter shields, the war hammer features a heavy, blunt head mounted atop a reinforced haft, delivering ruin in the hands of those who favor power over finesse.</p>"
                             }
                         },
+                        "Heavy Crossbow": {
+                            "name": "Heavy Crossbow",
+                            "description": {
+                                "public": "<p>A powerful, steel-limbed crossbow requiring a crank or lever to draw, it delivers devastating bolts capable of punching through armor or pinning enemies to walls.</p>"
+                            }
+                        },
                         "Shield Bash": {
                             "name": "Shield Bash",
                             "description": "<p>You are practiced at fighting with shield, using it to slam into and imbalance your foes.</p>",
@@ -1717,7 +1712,7 @@
                         },
                         "Weak Points": {
                             "name": "Weak Points",
-                            "description": "You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is <strong>Unaware</strong>, <strong>Flanked</strong>, or <strong>Exposed</strong> using Finesse weaponry, you gain +2 damage to any Strike."
+                            "description": "<p>You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is @Condition[unaware], @Condition[flanked], or @Condition[exposed] using a weapon which scales with <strong>Dexterity</strong>, you gain +2 damage to any Strike.</p>"
                         },
                         "Mark Prey": {
                             "name": "Mark Prey",
@@ -2044,6 +2039,12 @@
                         "Gesture: Conjure": {
                             "name": "Gesture: Conjure",
                             "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a <strong>Flame Visitor</strong>.</p>"
+                        },
+                        "Stiletto": {
+                            "name": "Stiletto",
+                            "description": {
+                                "public": "<p>Thin, tapered, and made for piercing, the stiletto is a killer’s weapon — designed to slide between ribs or gaps in armor and leave barely a trace.</p>"
+                            }
                         }
                     },
                     "ancestry": {
@@ -2452,6 +2453,12 @@
                     },
                     "biography": {
                         "public": "<p>Ulfen is a fierce warrior who fights with a two-handed greataxe, favoring heavy blows that do significant damage or hit multiple targets. Ulfen aspires to obtain the <strong>Berserker </strong>signature talent.</p>"
+                    }
+                },
+                "Party": {
+                    "name": "Party",
+                    "tokenName": {
+                        "name": "Party"
                     }
                 }
             }

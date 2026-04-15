@@ -60,6 +60,14 @@
             "name": "Amorphous",
             "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to half its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
         },
+        "Aquatic Breathing": {
+            "name": "Aquatic Breathing",
+            "description": "<p>@ref[actor.name]{This creature} can only breathe underwater.</p>"
+        },
+        "Aqueous Camouflage": {
+            "name": "Aqueous Camouflage",
+            "description": "<p>While fully submerged in water or liquids, @ref[actor.name]{this creature} has @Advantage[2] on <strong>Stealth</strong> checks.</p>"
+        },
         "Aqueous Transmission": {
             "name": "Aqueous Transmission",
             "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
@@ -236,6 +244,21 @@
                 "Multiply": {
                     "name": "Multiply",
                     "description": "<p>The ooze's cells rapidly multiply as the creature grows. Its <strong>Size</strong> increases by 1 and its <strong>Health</strong> increases by its <strong>Toughness</strong> value.</p>"
+                }
+            }
+        },
+        "Natural Invisibility": {
+            "name": "Natural Invisibility",
+            "description": "<p>By some organic or arcane aspect of its physiology, @ref[actor.name]{this creature] possesses the ability to become completely invisible.</p>",
+            "actions": {
+                "Natural Invisibility": {
+                    "name": "Natural Invisibility",
+                    "description": "<p>You become @Condition[invisible] and cannot be detected using sight-based perception. You cannot be directly targeted by any action. This effect remains active for 10 minutes or until any non-<strong>Movement</strong> action is taken.</p>",
+                    "effects": [
+                        {
+                            "name": "Natural Invisibility"
+                        }
+                    ]
                 }
             }
         },
@@ -440,6 +463,21 @@
         "Sunlight Weakness": {
             "name": "Sunlight Weakness",
             "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+        },
+        "Swallow": {
+            "name": "Swallow",
+            "description": "<p>@Ref[actor.name]{This creature} has the capability of swallowing creatures smaller than them whole, though only one creature may be affected by this action at a time.</p>",
+            "actions": {
+                "Swallow": {
+                    "name": "Swallow",
+                    "description": "<p>You swallow a target enemy, effectively removing that foe from combat. The swallowed target is @Condition[blinded] and @Condition[restrained] until released.</p><p>If you take <strong>Severe</strong> damage, are <strong>Wounded</strong>, or are rendered @Condition[incapacitated] you regurgitate the swallowed creature.</p>",
+                    "effects": [
+                        {
+                            "name": "Swallow"
+                        }
+                    ]
+                }
+            }
         },
         "Swooping Strike": {
             "name": "Swooping Strike",
