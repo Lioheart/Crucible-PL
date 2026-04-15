@@ -1,0 +1,20 @@
+{
+    "label": "Makra",
+    "entries": {
+        "Configure Group Check": {
+            "name": "Konfiguracja testu grupowego"
+        },
+        "Randomize Item": {
+            "name": "Losuj przedmiot"
+        },
+        "Recover": {
+            "name": "Odzyskiwanie"
+        },
+        "Rest": {
+            "name": "Odpoczynek"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
