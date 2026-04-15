@@ -64,6 +64,10 @@
             "name": "Wojownik",
             "description": "Wykwalifikowani wojownicy walczący w zwarciu, biegli w posługiwaniu się bronią jednoręczną, tarczą i ciężką zbroją."
         },
+        "Geomancer": {
+            "name": "Geomanta",
+            "description": "<p>Magowie specjalizujący się w runach Ziemi i Ognia.</p>"
+        },
         "Grappler": {
             "name": "Zapaśnik",
             "description": "Wojownicy, którzy specjalizują się w fizycznym obezwładnianiu przeciwników i narażaniu ich na dalsze ataki."
@@ -71,6 +75,10 @@
         "Guardian Beast": {
             "name": "Strażnik bestii",
             "description": "<p>Bestie pełniące rolę strażników, czuwające nad miejscami lub ludźmi, którym są niezachwianie lojalne.</p>"
+        },
+        "Herd Beast": {
+            "name": "Stadna bestia",
+            "description": "<p>Bydło, zwierzęta juczne i inne zwierzęta łowne, które gromadzą się w stadach.</p>"
         },
         "Justiciar": {
             "name": "Justycjariusz",
