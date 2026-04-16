@@ -153,7 +153,7 @@
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu Intelektu, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
+                    "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
                     "actions": {
                         "Enkindle": {
                             "name": "Rozpalanie",
@@ -265,16 +265,6 @@
                         }
                     }
                 },
-                "Dual Wield": {
-                    "name": "Walka dwoma broniami",
-                    "description": "<p>Jesteś biegły w walce dwoma broniami jednocześnie. Potrafisz łączyć ataki, aby uderzać szybciej niż byłoby to możliwe przy użyciu jednej broni.</p>",
-                    "actions": {
-                        "Offhand Strike": {
-                            "name": "Uderzenie z drugiej ręki",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>Uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
-                        }
-                    }
-                },
                 "Flurry": {
                     "name": "Grad ciosów",
                     "description": "<p>Technika walki wykorzystująca dwie bronie do pokonania pojedynczego celu za pomocą nieustannej serii ataków.</p>",
@@ -323,17 +313,6 @@
                     "name": "Harcownik",
                     "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
                 },
-                "Backstab": {
-                    "name": "Cios w plecy",
-                    "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów flankowanego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
-                    "actions": {
-                        "Backstab": {
-                            "name": "Cios w plecy",
-                            "condition": "Atakujesz cel ze stanem Flankowany.",
-                            "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
-                        }
-                    }
-                },
                 "Impetus": {
                     "name": "Impet",
                     "description": "<p>Masz talent do wykorzystywania powolności myślenia innych. Jeśli jesteś pierwszy w kolejności inicjatywy podczas rundy walki, zyskujesz +1 do aktualnej i maksymalnej liczby Akcji.</p>"
@@ -344,7 +323,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> bronią <strong>Finezyjną</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -477,6 +456,27 @@
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
                     "description": "<p>Zostałeś przeszkolony w zakresie podstaw świadomości sytuacyjnej i potrafisz dostrzegać ważne szczegóły dotyczące swojego otoczenia. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Świadomość</strong> i nie jesteś już uważany za osobę <strong>Niewyszkoloną</strong> w tej umiejętności.</p><p>Wiesz, że po wejściu do pomieszczenia należy sprawdzić wyjścia oraz szukać ukrytej broni, pułapek i innych zagrożeń. Wiesz, jak rozpoznać, że ktoś cię śledzi, i jak przeszukiwać typowe kryjówki.</p>"
+                },
+                "Dual Wield": {
+                    "name": "Walka dwoma broniami",
+                    "description": "<p>Jesteś biegły w walce dwoma broniami jednocześnie. Potrafisz łączyć ataki, aby uderzać szybciej niż byłoby to możliwe przy użyciu jednej broni.</p>",
+                    "actions": {
+                        "Offhand Strike": {
+                            "name": "Uderzenie z drugiej ręki",
+                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>Uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                        }
+                    }
+                },
+                "Backstab": {
+                    "name": "Cios w plecy",
+                    "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów flankowanego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
+                    "actions": {
+                        "Backstab": {
+                            "name": "Cios w plecy",
+                            "condition": "Atakujesz cel ze stanem Flankowany.",
+                            "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                        }
+                    }
                 }
             },
             "ancestry": {
@@ -868,6 +868,12 @@
                         "public": "<p>Młot bojowy, stworzony do miażdżenia tarcz i rozbijania osłon, posiada ciężką, tępo zakończoną głowicę zamontowaną na wzmocnionym trzonku, siejąc spustoszenie w rękach tych, którzy przedkładają siłę nad finezję.</p>"
                     }
                 },
+                "Heavy Crossbow": {
+                    "name": "Ciężka kusza",
+                    "description": {
+                        "public": "<p>Potężna kusza o stalowych ramionach, wymagająca użycia korby lub dźwigni do naciągnięcia cięciwy, wystrzeliwuje niszczycielskie bełty, które są w stanie przebić zbroję lub przygwoździć wrogów do ścian.</p>"
+                    }
+                },
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
                     "description": "<p>Jesteś wprawiony w walce z tarczą, używając jej do uderzania przeciwników i wytrącania ich z równowagi.</p>",
@@ -935,7 +941,7 @@
                 },
                 "Weak Points": {
                     "name": "Słabe punkty",
-                    "description": "Wykrywasz okazje do uderzenia w słabe punkty przeciwnika. Atakując cel, który jest <strong>Nieświadomy</strong>, <strong>Flankowany</strong> lub <strong>Odsłonięty</strong> przy użyciu broni Finezyjnej, zyskujesz +2 do obrażeń za każde Uderzenie."
+                    "description": "<p>Wykrywasz okazje do uderzenia w słabe punkty wroga. Atakując cel, który znajduje się w stanie @Condition[unaware], @Condition[flanked] lub @Condition[exposed], przy użyciu broni, której siła zależy od <strong>Zręczności</strong>, zyskujesz +2 do obrażeń zadawanych każdym ciosem.</p>"
                 },
                 "Mark Prey": {
                     "name": "Naznaczenie celu",
@@ -1289,6 +1295,12 @@
                 "Gesture: Conjure": {
                     "name": "Gest: Wywołanie",
                     "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Gościa</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Gość jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Gość przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Gościa. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Gościa. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Gościa. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego gościa</strong>.</p>"
+                },
+                "Stiletto": {
+                    "name": "Stiletto",
+                    "description": {
+                        "public": "<p>Cienki, zwężający się i przeznaczony do przebijania, stiletto jest bronią zabójcy — zaprojektowany tak, aby wślizgnąć się między żebra lub szczeliny w zbroi i nie pozostawić prawie żadnego śladu.</p>"
+                    }
                 }
             },
             "ancestry": {
@@ -1402,6 +1414,9 @@
         },
         "Heater Shield": {
             "name": "Tarcza herbowa"
+        },
+        "Heavy Crossbow": {
+            "name": "Ciężka kusza"
         },
         "Heavy Weapon Proficiency": {
             "name": "Biegłość w posługiwaniu się ciężką bronią"
@@ -1665,7 +1680,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Wykrok",
-                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> bronią <strong>Finezyjną</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                 }
             }
         },
@@ -2362,7 +2377,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> bronią <strong>Finezyjną</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -2378,7 +2393,7 @@
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu Intelektu, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
+                    "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
                     "actions": {
                         "Enkindle": {
                             "name": "Rozpalanie",
