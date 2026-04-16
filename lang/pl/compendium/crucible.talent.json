@@ -50,6 +50,10 @@
         "Projectile": "Miotany"
     },
     "entries": {
+        "Adrenaline": {
+            "name": "Adrenalina",
+            "description": "<p>Ból wyostrza twoją koncentrację. Raz na rundę, gdy otrzymasz obrażenia <strong>Zdrowia</strong> w wyniku ataku, zyskujesz <strong>+1 Skupienia</strong>.</p>"
+        },
         "Adrenaline Surge": {
             "name": "Przypływ adrenaliny",
             "description": "<p>Możesz czerpać z wyjątkowych rezerw siły fizycznej, aby sprostać wyzwaniom stawianym Twojemu ciału.</p>",
@@ -114,9 +118,23 @@
             "name": "Tajemny łucznik",
             "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
+        "Armor Crusher": {
+            "name": "Niszczyciel zbroi",
+            "description": "<p>Opanowałeś sztukę zadawania ciosów opancerzonym przeciwnikom z taką siłą, że sama zbroja staje się dla nich zagrożeniem.</p>",
+            "actions": {
+                "Armor Crusher": {
+                    "name": "Niszczyciel zbroi",
+                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Otarcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                }
+            }
+        },
         "Armored Efficiency": {
             "name": "Sprawność w pancerzu",
             "description": "<p>Jesteś wyszkolony w noszeniu najcięższych rodzajów pancerzy, zachowując jednocześnie mobilność. Możesz wykonać jedną akcję Ruchu za darmo na Turę, nosząc Ciężki pancerz.</p>"
+        },
+        "Armored Instinct": {
+            "name": "Pancerny instynkt",
+            "description": "<p>Instynktownie przechylasz ciało, aby złagodzić siłę odbitych ciosów. Gdy atak skierowany przeciwko tobie spowodowałby <strong>Otarcie</strong>, zyskujesz <strong>+1 do odporności</strong> na zadane obrażenia.</p>"
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
@@ -216,6 +234,10 @@
         "Battle Focus": {
             "name": "Skupienie w walce",
             "description": "W ferworze walki odnajdujesz skupienie i spokój. Kiedy zadajesz <strong>Trafienie krytyczne</strong>, które powoduje obrażenia Zdrowia lub Morale, zyskujesz +1 do Skupienia. Ta korzyść może wystąpić maksymalnie raz na Rundę."
+        },
+        "Battle-Worn": {
+            "name": "Wyczerpany walką",
+            "description": "<p>Twoje ciało przetrwało tak wiele obrażeń, że nauczyło się regenerować z niezwykłą skutecznością. Kiedy wykonujesz akcję <strong>Odpoczynek</strong>, odzyskujesz dodatkowe <strong>Rany</strong> równe połowie twojej wartości <strong>Wytrzymałości</strong> (zaokrąglonej w dół).</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent nie jest jeszcze zautomatyzowany. Dodatkowe wyleczenie ran należy zastosować ręcznie podczas odpoczynku.</p>"
         },
         "Beastmaster": {
             "name": "Władca bestii",
@@ -456,6 +478,10 @@
                 }
             }
         },
+        "Defiant Will": {
+            "name": "Nieugięta wola",
+            "description": "<p>W miarę jak twoje ciało słabnie, twój umysł staje się silniejszy. Otrzymujesz premię do <strong>Woli</strong> równą twojej wartości <strong>Wytrzymałości</strong>, przeliczoną proporcjonalnie do utraconego <strong>Zdrowia</strong>.</p>"
+        },
         "Deft Grip": {
             "name": "Zręczny chwyt",
             "description": "Twoje posługiwanie się bronią jest płynne i precyzyjne. Możesz wykonywać akcje wymagające wolnej ręki, nawet gdy dzierżysz dwuręczną broń dystansową."
@@ -558,7 +584,7 @@
             "name": "Zaklinacz pyłu",
             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
         },
-        "Earth  Proficiency": {
+        "Earth Proficiency": {
             "name": "Biegłość ziemi",
             "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Ziemi. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Formowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
@@ -569,6 +595,10 @@
         "Enchanting Novice": {
             "name": "Nowicjusz zaklinania",
             "description": "<p>Przeszedłeś szkolenie z podstaw zaklinania i potrafisz posługiwać się większością popularnych zaklęć i uroków.</p><p>Nadal musisz korzystać z przepisów i książek, aby zidentyfikować odpowiednie materiały i ich właściwości.</p>"
+        },
+        "Evasive Armor": {
+            "name": "Unikowa zbroja",
+            "description": "<p>Jesteś na tyle szybki, że potrafisz pochylać się, by przyjmować ciosy w najsilniejsze punkty swojej zbroi. Wszelka obrona <strong>Refleksu</strong>, która przewyższa twoją obronę <strong>Fizyczną</strong>, jest dodawana jako premia do <strong>Pancerza</strong>.</p>"
         },
         "Evasive Shot": {
             "name": "Wymijający strzał",
@@ -802,6 +832,21 @@
                 }
             }
         },
+        "Headbutt": {
+            "name": "Uderzenie głową",
+            "description": "<p>Możesz zadać brutalny atak głową z bliskiej odległości, który zaskoczy przeciwników.</p>",
+            "actions": {
+                "Headbutt": {
+                    "name": "Uderzenie głową",
+                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 korzyść</strong> do tego ataku. </p><p>Atak jest <strong>trudny</strong> i zadaje jedynie <strong>osłabione</strong> obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
+                    "effects": [
+                        {
+                            "name": "Uderzenie głową"
+                        }
+                    ]
+                }
+            }
+        },
         "Healer": {
             "name": "Uzdrowiciel",
             "description": "<p>Nie masz sobie równych w manipulowaniu arkanami życia w celu leczenia obrażeń. Jeśli jeszcze tego nie znasz, uczysz się <strong>Runy: Życie</strong>. Podczas leczenia sojuszników za pomocą Runy Życia otrzymujesz <strong>+2 Korzyści</strong> do rzutu.</p>",
@@ -842,6 +887,10 @@
         "Illusion Proficiency": {
             "name": "Biegłość iluzji",
             "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Iluzji. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Pozorność</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+        },
+        "Impenetrable Guard": {
+            "name": "Niezłomny strażnik",
+            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Otarcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
         },
         "Impetus": {
             "name": "Impet",
@@ -936,6 +985,16 @@
                 }
             }
         },
+        "Interpose": {
+            "name": "Wtrącenie",
+            "description": "<p>Jesteś gotów narazić się na niebezpieczeństwo, by chronić swoich sojuszników, przyjmując na siebie zagrożenie zamiast nich.</p>",
+            "actions": {
+                "Interpose": {
+                    "name": "Wtrącenie",
+                    "description": "<p>W ramach <strong>Reakcji</strong>, gdy sąsiadujący sojusznik zostanie trafiony lub otrzyma otarcie w wyniku ataku na pojedynczy cel, który był wymierzony w jego <strong>Obronę fizyczną</strong>, możesz wkroczyć między was, aby stać się celem tego ataku.</p><p>Atak zostaje unieważniony i jest ponownie oceniany w stosunku do twojej <strong>Obrony fizycznej</strong> przy użyciu tych samych rzutów kostką, co w przypadku pierwotnego ataku. Konsekwencje ataku są rozstrzygane zgodnie z tym nowym wynikiem, przy czym to ty jesteś jego celem.</p>"
+                }
+            }
+        },
         "Interrupting Throw": {
             "name": "Przerywanie rzutu",
             "description": "<p>Jesteś czujny i gotowy do użycia swojej broni, aby przerwać rzucanie zaklęć przez wroga.</p>",
@@ -986,6 +1045,10 @@
         "Iramancer": {
             "name": "Gniewomanta",
             "description": "Twoje wyczyny związane z magią są napędzane gniewem. Podczas Wściekłości nadal możesz wydawać Punkty Skupienia i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym."
+        },
+        "Iron Resolve": {
+            "name": "Żelazna determinacja",
+            "description": "<p>Twoja wytrzymałość fizyczna sprawia, że jesteś zbyt odporny, by potężny cios wywarł na tobie znaczący wpływ. Próg krytycznego trafienia dla <strong>ataków</strong> wymierzonych w ciebie wzrasta o +1, co sprawia, że trudniej cię trafić krytycznie.</p>"
         },
         "Irrepressible Spirit": {
             "name": "Nieposkromiony duch",
@@ -1063,7 +1126,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Wykrok",
-                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> bronią <strong>Finezyjną</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                 }
             }
         },
@@ -1173,6 +1236,10 @@
         "Necromancer": {
             "name": "Nekromanta",
             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
+        },
+        "Never Yield": {
+            "name": "Nigdy nie odpuszczać",
+            "description": "<p>Twoja determinacja nie pozwala, by ograniczenia fizyczne spowolniły cię. Gdy jesteś <strong>osłabiony</strong>, twoja kara do punktów akcji zmniejsza się z -2 do -1.</p>"
         },
         "Nosferatu": {
             "name": "Nosferatu",
@@ -1400,7 +1467,7 @@
         },
         "Rune: Control": {
             "name": "Runa: Kontrola",
-            "description": "<p>Uporządkowana siła dyscypliny i trwałości. Runa Kontroli rządzi myślami, rozumem i wytrwałością.</p><p>Runa Kontroli skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej chaotyczna runa <strong>Kinetyki</strong>.</p>",
+            "description": "<p>Uporządkowana siła dyscypliny i trwałości. Runa Kontroli rządzi myślami, rozumem i wytrwałością.</p><p>Runa Kontroli skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej chaotyczna runa <strong>Kinetyki</strong>.</p>",
             "actions": {
                 "Motivate": {
                     "name": "Motywowanie",
@@ -1430,7 +1497,7 @@
         },
         "Rune: Flame": {
             "name": "Runa: Płomień",
-            "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu Intelektu, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
+            "description": "<p>Chaotyczna siła energii żywiołów i energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem.</p><p>Runa Płomienia skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Ogniem</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Mrozu</strong>.</p>",
             "actions": {
                 "Enkindle": {
                     "name": "Rozpalanie",
@@ -1948,7 +2015,7 @@
         },
         "Weak Points": {
             "name": "Słabe punkty",
-            "description": "Wykrywasz okazje do uderzenia w słabe punkty przeciwnika. Atakując cel, który jest <strong>Nieświadomy</strong>, <strong>Flankowany</strong> lub <strong>Odsłonięty</strong> przy użyciu broni Finezyjnej, zyskujesz +2 do obrażeń za każde Uderzenie."
+            "description": "<p>Wykrywasz okazje do uderzenia w słabe punkty wroga. Atakując cel, który znajduje się w stanie @Condition[unaware], @Condition[flanked] lub @Condition[exposed], przy użyciu broni, której siła zależy od <strong>Zręczności</strong>, zyskujesz +2 do obrażeń zadawanych każdym ciosem.</p>"
         },
         "Wilderness Adept": {
             "name": "Adept dziczy",
