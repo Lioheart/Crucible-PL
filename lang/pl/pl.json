@@ -1903,7 +1903,7 @@
       "Ray": "Promień",
       "Sense": "Zmysł",
       "Step": "Krok",
-      "Strike": "Cios",
+      "Strike": "Uderzenie",
       "Surge": "Wzrost",
       "Touch": "Dotyk",
       "Ward": "Glif"
@@ -2123,8 +2123,8 @@
       "Humanoid": "Humanoid",
       "Monstrosity": "Potworność",
       "Ooze": "Śluz",
-      "Plant": "Umieść",
-      "Outsider": "Obcy",
+      "Plant": "Roślina",
+      "Outsider": "Zewnętrzny",
       "Undead": "Nieumarły"
     },
     "FIELDS": {
