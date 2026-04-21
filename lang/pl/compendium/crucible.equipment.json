@@ -7,6 +7,7 @@
         "Implements": "Przyrządy",
         "Bombs": "Bomby",
         "Other": "Inne",
+        "Unarmored": "Nieopancerzony",
         "Clothing": "Ubranie",
         "Ranged": "Dystansowy",
         "Armor": "Pancerz",
@@ -60,11 +61,18 @@
                 "public": "<p>Drewniane pudełko owinięte skórą, zawierające kamienny moździerz i tłuczek, miejsce na kilka zakorkowanych fiolek, drewnianą łyżkę oraz małą składaną żelazną ramę i mały mosiężny garnek do mieszania składników nad ogniem.</p>"
             }
         },
+        "Amulet": {
+            "name": "Amulet",
+            "description": {
+                "public": "<p>Skromny amulet na prostym sznurku, czekający na dotyk wprawnego czarodzieja.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
+            }
+        },
         "Amulet of Nimbleness": {
             "name": "Amulet zwinności",
             "description": {
-                "public": "<blockquote><p>Ten kolorowy naszyjnik zawiera kamienny amulet, który świeci runą, emitującą słabe iskry elektryczne. Trzymając go, odczuwasz surrealistyczne wrażenie, że świat wokół ciebie nieco zwalnia.</p></blockquote><p>Amulet ten zapewnia premię do obrony <strong>Refleksu</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Refleksu</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Refleksu</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Refleksu</strong></p></li></ul>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako amulet, ale może to być dowolny rodzaj akcesorium, np. pierścień, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+                "public": "<blockquote><p>Ten naszyjnik w jaskrawych kolorach zawiera kamienny amulet, który świeci runą, w której słabo iskrzy się elektryczny rezonans. Trzymając go, odczuwasz surrealistyczne wrażenie, jakby otaczający cię świat nieco zwolnił.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do obrony <strong>Refleksu</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład amuletu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a amulet ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
             }
         },
         "Antitoxin": {
@@ -103,6 +111,13 @@
                 "public": "<p>Ciężka broń z ostrzem w kształcie półksiężyca, stworzona do przecinania zarówno zbroi, jak i kości. Jej trzonek nosi ślady niezliczonych uderzeń. Broń tę można trzymać jedną lub dwiema rękami. </p>"
             }
         },
+        "Belt": {
+            "name": "Pas",
+            "description": {
+                "public": "<p>Prosty skórzany pasek z metalową klamrą.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
+            }
+        },
         "Blanket": {
             "name": "Koc",
             "description": {
@@ -126,6 +141,13 @@
             "name": "Książka",
             "description": {
                 "public": "<p>Książka oprawiona w płótno lub skórę, pokryta drewnem.</p>"
+            }
+        },
+        "Bracer": {
+            "name": "Karwasz",
+            "description": {
+                "public": "<p>Solidny skórzany karwasz chroniący przedramię.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
             }
         },
         "Brigandine": {
@@ -190,7 +212,8 @@
         "Charm of Tenacity": {
             "name": "Amulet wytrwałości",
             "description": {
-                "public": "<blockquote><p>Ten naszyjnik pokryty amuletami wygląda na rustykalny, ale po bliższym przyjrzeniu się można dostrzec delikatne wykończenie, które charakteryzuje jego wykonanie. Trzymając go, czujesz, jak Twój oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten amulet zapewnia premię do obrony <strong>Wytrwałości</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Wytrwałości</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Wytrwałości</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Wytrwałości</strong></p></li></ul>"
+                "public": "<blockquote><p>Ten naszyjnik z zawieszkami wygląda na rustykalny, ale po bliższym przyjrzeniu się dostrzega się w nim delikatne rzemiosło. Trzymając go w dłoni, czujesz, jak oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten zaklęty talizman zapewnia premię do <strong>Wytrzymałości</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
             }
         },
         "Chirurgeon's Toolkit": {
@@ -228,22 +251,18 @@
                 "public": "<p>Noszone na rękach niczym drugi zestaw szponów, broń pazurowa – czy to stalowe przedłużenia, czy potworne wyroby z kości – rozdziera i rozrywa dzikimi, szybkimi cięciami.</p>"
             }
         },
+        "Cloak": {
+            "name": "Płaszcz",
+            "description": {
+                "public": "<p>Prosty płaszcz podróżny z niebarwionej wełny.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
+            }
+        },
         "Cloak of Kindly Visage": {
             "name": "Płaszcz życzliwego oblicza",
             "description": {
-                "public": "<p>Niepozorna czarna peleryna, która wydaje się pasować do niemal każdego stroju.</p><p></p>",
-                "private": "<p>Po wyposażeniu i <strong>zainwestowaniu</strong> użytkownik otrzymuje akcję <strong>Życzliwe oblicze</strong> oraz premię do wszystkich testów Dyplomacji w zależności od poziomu Zaklinania przedmiotu.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>+1 Korzyść</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>+2 Korzyści</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>+3 Korzyści</strong></p></li></ul>"
-            },
-            "actions": {
-                "Kindly Visage": {
-                    "name": "Życzliwe oblicze",
-                    "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam płaszcz nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji płaszcz nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
-                    "effects": [
-                        {
-                            "name": "Życzliwe oblicze"
-                        }
-                    ]
-                }
+                "public": "<blockquote><p>Niepozorny czarny płaszcz, który wydaje się pasować niemal do każdego stroju.</p></blockquote><p>Ten zaklęty płaszcz zapewnia premię do rzutów na <strong>Dyplomację</strong> oraz umożliwia przyjęcie iluzorycznego <strong>Przebrania</strong>.</p>",
+                "private": "<p>Ten przedmiot przedstawiono jako przykład Dobrej jakości płaszcza z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00] i przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000].</p>"
             }
         },
         "Club": {
@@ -255,7 +274,7 @@
         "Common Clothing": {
             "name": "Zwykłe ubrania",
             "description": {
-                "public": "<p>Koszulę, spodnie, bieliznę, skarpety i buty lub trzewiki odpowiednie do wykonywania prac fizycznych lub podróży nie można nosić wraz z pancerzem.</p>"
+                "public": "<p>Koszula, spodnie, bielizna, skarpety oraz buty lub trzewiki odpowiednie do prac fizycznych lub podróży.</p>"
             }
         },
         "Cook's Toolkit": {
@@ -288,10 +307,33 @@
                 "public": "<p>Kompaktowa broń rurowa przeznaczona do cichego wystrzeliwania małych, często zatrutych pocisków. Dmuchawka jest ulubioną bronią zabójców, treserów bestii i tajemniczych alchemików.</p>"
             }
         },
+        "Determination": {
+            "name": "Determinacji",
+            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Diplomacy": {
+            "name": "Dyplomacji",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
         "Disarming Toolkit": {
             "name": "Zestaw narzędzi do rozbrajania",
             "description": {
                 "public": "<p>Mała skórzana torebka zawierająca zestaw szczypiec, nożyc, szydełek i zestaw składanych metalowych prętów, które można ze sobą skręcić. Przeznaczona do rozbrajania lub uruchamiania sideł, linek pułapkowych, płyt naciskowych i innych popularnych pułapek.</p>"
+            }
+        },
+        "Disguise": {
+            "name": "Przebrania",
+            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "actions": {
+                "Disguise": {
+                    "name": "Przebranie",
+                    "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
+                    "effects": [
+                        {
+                            "name": "Przebranie"
+                        }
+                    ]
+                }
             }
         },
         "Dress Clothing": {
@@ -311,6 +353,10 @@
             "description": {
                 "public": "<p>Skórzana torba z drewnianym wykończeniem. Zawiera świece rytualne, małą miskę na ofiary, paczki kadzideł i proszkowe odczynniki oraz materiałową matę do wykorzystania jako powierzchnia robocza.</p>"
             }
+        },
+        "Evasion": {
+            "name": "Unikania",
+            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
         },
         "Expanded Toolbelt": {
             "name": "Rozszerzony pas narzędziowy",
@@ -342,10 +388,30 @@
                 "public": "<p>Skórzany kołczan z zamykaną końcówką, zawierający uchwyt montażowy, strug, szczotki i małą przędzarkę do nawijania plecionych sznurków. Po otwarciu rozkłada się na matę, która może służyć jako płaska powierzchnia robocza.</p>"
             }
         },
+        "Focusing": {
+            "name": "Skupienia",
+            "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+            "actions": {
+                "Replenish Focus": {
+                    "name": "Odnowienie skupienia",
+                    "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                }
+            }
+        },
         "Glaive": {
             "name": "Glewia",
             "description": {
                 "public": "<p>Glewia to broń drzewcowa z zakrzywionym ostrzem przypominającym miecz, zamocowanym na końcu długiego trzonka. Służy do wykonywania szerokich, łukowatych ciosów, które przecinają wrogów.</p>"
+            }
+        },
+        "Gliding": {
+            "name": "Szybowania",
+            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+            "actions": {
+                "Gliding": {
+                    "name": "Szybowanie",
+                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
+                }
             }
         },
         "Glue": {
@@ -503,6 +569,13 @@
                 "public": "<p>Te wytrzymałe zbroje, wykonane z twardych skór wielkich zwierząt lub potworów, są noszone przez myśliwych i dzikich ludzi, zapewniając trwałą, ale prymitywną ochronę w terenie.</p>"
             }
         },
+        "Helm": {
+            "name": "Hełm",
+            "description": {
+                "public": "<p>Prosty hełm z odkrytą twarzą, wykonany z utwardzonej skóry.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
+            }
+        },
         "Holy Symbol": {
             "name": "Święty symbol",
             "description": {
@@ -594,11 +667,15 @@
                 "public": "<p>Długi miecz to obosieczne ostrze, które dzierży się obiema rękami, aby zapewnić równowagę i siłę. Zazwyczaj posiada duży jelec służący do parowania ciosów.</p>"
             }
         },
+        "Luminary": {
+            "name": "Świetlistości",
+            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
         "Luminary Band": {
-            "name": "Pierścień świetlny",
+            "name": "Obręcz świetlistości",
             "description": {
-                "public": "<p>Misternie grawerowany złoty pierścień, który otacza eliptyczny, błyszczący pomarańczowy kamień szlachetny.</p><p>Po założeniu i <strong>zainwestowaniu</strong> pierścień ten zapewnia korzyści przy rzucaniu dowolnego złożonego zaklęcia zawierającego <strong>Fleksję</strong>.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>+1 Korzyść</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>+2 Korzyści</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>+3 Korzyści</strong></p></li></ul>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+                "public": "<blockquote><p>Misternie grawerowany złoty pierścień oplatający eliptyczny, lśniący pomarańczowy klejnot.</p></blockquote><p>Ta zaczarowana obręcz zapewnia korzyści do <strong>Skomponowanych</strong> akcji zawierających <strong>Fleksję</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład obręczy Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a obręcz tą można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
             }
         },
         "Lyre": {
@@ -624,6 +701,27 @@
             "description": {
                 "public": "<p>Mała mosiężna moneta z szeroką, uśmiechniętą twarzą i małymi czerwonymi oczami z granatu. Moneta jest wybita specyficzną sekwencją symboli, które łączą ją z inną monetą, umożliwiając dwóm posiadaczom komunikację na duże odległości. </p><p>Jeśli trzymasz monetę i mówisz do niej, natychmiast łączy się ona z monetą siostrzaną i zaczyna głośno mówić, przekazując to, co mówisz, oraz odpowiedź. Połączenie trwa do 1 minuty, po czym zostaje przerwane. Każda moneta może być użyta raz podczas długiego odpoczynku.</p><p>Moneta może być użyta 5 razy, po czym jej magia zanika i staje się prawie bezwartościowa.</p>"
             }
+        },
+        "Net": {
+            "name": "Sieć",
+            "description": {
+                "public": "<p>Te gęsto splecione włókna zostały wzmocnione z myślą o zastosowaniu w walce, aby unieruchamiać i oplatać nawet najgroźniejszych przeciwników, czyniąc ich bezbronnymi.</p>"
+            },
+            "actions": {
+                "Throw Net": {
+                    "name": "Rzut siecią",
+                    "description": "<p>Cel złapany w rzuconą sieć staje się @Condition[restrained], dopóki nie uda mu się uwolnić.</p>",
+                    "effects": [
+                        {
+                            "name": "W sieci"
+                        }
+                    ]
+                }
+            }
+        },
+        "Nimbleness": {
+            "name": "Zwinności",
+            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
         },
         "Padded Armor": {
             "name": "Przeszywalnica",
@@ -667,8 +765,8 @@
         "Periapt of Determination": {
             "name": "Amulet determinacji",
             "description": {
-                "public": "<blockquote><p>Elegancki srebrny amulet z niebieskimi klejnotami daje Ci poczucie niezłomności, gdy go trzymasz, gotowy stawić czoła każdemu wyzwaniu.</p></blockquote><p>Amulet ten zapewnia premię do obrony <strong>Woli</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Woli</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Woli</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Woli</strong></p></li></ul>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako amulet, ale może to być dowolny rodzaj akcesorium, np. pierścień, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+                "public": "<blockquote><p>Pełen gracji srebrny amulet osadzony niebieskimi klejnotami napełnia cię poczuciem niezłomności, gdy ściskasz go w dłoni, gotów stawić czoła każdemu wyzwaniu.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do <strong>Woli</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład wisiorka Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.determination000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a wisiorek ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
             }
         },
         "Pickaxe": {
@@ -775,6 +873,10 @@
                 "public": "<p>Szczególnie ostre ostrze używane do golenia lub, w niektórych przypadkach, do zabiegów chirurgicznych.</p>"
             }
         },
+        "Reinforcement": {
+            "name": "Wzmocnienia",
+            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
         "Repair Kit (smith)": {
             "name": "Zestaw naprawczy (kowalski)",
             "description": {
@@ -787,6 +889,13 @@
                 "public": "<p>Skórzana torba zawierająca nożyczki, igły, ramkę tkacką oraz zestaw małych kawałków materiału, skóry, nici i sznurka. Może służyć do naprawy odzieży i skórzanej zbroi oraz akcesoriów.</p>"
             }
         },
+        "Ring": {
+            "name": "Pierścień",
+            "description": {
+                "public": "<p>Prosty, pozbawiony ozdób pierścień z pospolitego metalu.</p>",
+                "private": "<p>Jest to podstawowy szablon akcesorium przeznaczony do ulepszania jakości i zaklinania z afiksami.</p>"
+            }
+        },
         "Ring Mail": {
             "name": "Kolczuga pierścieniowa",
             "description": {
@@ -796,28 +905,22 @@
         "Ring of Evasion": {
             "name": "Pierścień uników",
             "description": {
-                "public": "<blockquote><p>Ten elegancki, ozdobiony pierścień jest nieco śliski i trudny do uchwycenia. Podczas trzymania wibruje niemal niezauważalnie.</p></blockquote><p>Pierścień ten zapewnia premię do obrony <strong>Unik</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Uniku</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Uniku</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Uniku</strong></p></li></ul>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+                "public": "<blockquote><p>Ten elegancki, zdobiony pierścień wydaje się lekko śliski i trudny do uchwycenia. Trzymany w dłoni niemal niezauważalnie wibruje.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Uniku</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
             }
         },
         "Ring of Gliding": {
             "name": "Pierścień szybowania",
             "description": {
-                "public": "<p>Elegancka obrączka z jasnoniebieskiej stali, ozdobiona spiralnym wzorem, który sprawia wrażenie, jakby nieustannie powoli obracała się na palcu osoby noszącej.</p><p>Pierścień ten może być instynktownie aktywowany przez osobę noszącą podczas swobodnego spadania, aby zapewnić jej pełne gracji i kontrolowane opadanie.</p>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
-            },
-            "actions": {
-                "Ring of Gliding": {
-                    "name": "Pierścień szybowania",
-                    "description": "<p>Jeżeli użyjesz go podczas <strong>spadania</strong>, możesz przesunąć się w bok o określoną liczbę pól od początkowej pozycji podczas szybowania.</p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>1 stopa</strong> na każde <strong>20 stóp</strong> spadania. </p></li><li><p><strong>Wybitne</strong> zaklinanie: <strong>2 stopy</strong> na każde <strong>20 stóp</strong> spadania.</p></li><li><p><strong>Mistrzowskie</strong> zaklinanie: <strong>4 stopy</strong> na każde <strong>20 stóp</strong> spadania.</p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu ani nie stajesz się @Condition[prone].</p>"
-                }
+                "public": "<blockquote><p>Obręcz z eleganckiej, jasnoniebieskiej stali, której spiralny wzór sprawia wrażenie, jakby nieustannie powoli obracała się na palcu swojego właściciela.</p></blockquote><p>Ten zaczarowany pierścień zapewnia zdolność szybowania na boki podczas upadku.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
             }
         },
         "Ring of Reinforcement": {
             "name": "Pierścień wzmacniający",
             "description": {
-                "public": "<blockquote><p>Ten stalowy pierścień jest zawsze chłodny w dotyku i sprawia wrażenie cięższej niż można by się spodziewać po jego wąskiej obręczy. </p></blockquote><p>Pierścień ten zapewnia premię do obrony <strong>pancerza</strong> równą minimalnej wartości premii za <strong>Jakość</strong> i <strong>Zaklinanie</strong>.</p><ul><li><p><strong>Dobra</strong> jakość i <strong>Niewielkie</strong> zaklinanie: <strong>+1 do Pancerza</strong></p></li><li><p><strong>Wybitna</strong> jakość i <strong>Znaczące</strong> zaklinanie: <strong>+2 do Pancerza</strong></p></li><li><p><strong>Mistrzowska</strong> jakość i <strong>Legendarne</strong> zaklinanie: <strong>+3 do Pancerza</strong></p></li></ul>",
-                "private": "<p>Ten przedmiot jest przedstawiony jako pierścień, ale może to być dowolny rodzaj akcesorium, np. amulet, płaszcz, karwasze lub inny rodzaj drobiazgu.</p>"
+                "public": "<blockquote><p>Ten stalowy pierścień jest stale chłodny w dotyku i sprawia wrażenie cięższego, niż można by się spodziewać po jego wąskiej obręczy.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Pancerza</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
             }
         },
         "Rope": {
@@ -922,10 +1025,10 @@
                 "public": "<p>Włócznia, broń dalekiego zasięgu i rytmu, ma długie drzewce zakończone stalowym ostrzem, idealne do utrzymania linii lub rzucania z zabójczą siłą zza ściany tarcz.</p>"
             }
         },
-        "Spell Scroll (Legendary)": {
-            "name": "Zwój zaklęcia (legendarny)",
+        "Spell Scroll (Fine)": {
+            "name": "Zwój zaklęcia (dobry)",
             "description": {
-                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+                "public": "<p>Zwój zaklęć to specjalny arkusz welinu lub pergaminu, na którym starannie umieszczono glify jednego lub więcej komponentów czaroznawstwa. Aktywacja tego zwoju tymczasowo obdarza jego czytelnika głęboką znajomością tych komponentów, jak gdyby znał je od lat.</p><p>Liczba komponentów czaroznawstwa, które może zawierać zwój, zależy od jakości jego wykonania.</p><ul><li><p><strong>Dobry</strong>: Może zawierać jeden komponent czaroznawstwa</p></li><li><p><strong>Wybitny</strong>: Może zawierać dwa komponenty czaroznawstwa</p></li><li><p><strong>Mistrzowska</strong>: Może zawierać trzy komponenty czaroznawstwa</p></li></ul>"
             },
             "actions": {
                 "Read Scroll": {
@@ -939,10 +1042,10 @@
                 }
             }
         },
-        "Spell Scroll (Major)": {
-            "name": "Zwój zaklęcia (znaczący)",
+        "Spell Scroll (Masterwork)": {
+            "name": "Zwój zaklęcia (mistrzowski)",
             "description": {
-                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+                "public": "<p>Zwój zaklęć to specjalny arkusz welinu lub pergaminu, na którym starannie umieszczono glify jednego lub więcej komponentów czaroznawstwa. Aktywacja tego zwoju tymczasowo obdarza jego czytelnika głęboką znajomością tych komponentów, jak gdyby znał je od lat.</p><p>Liczba komponentów czaroznawstwa, które może zawierać zwój, zależy od jakości jego wykonania.</p><ul><li><p><strong>Dobry</strong>: Może zawierać jeden komponent czaroznawstwa</p></li><li><p><strong>Wybitny</strong>: Może zawierać dwa komponenty czaroznawstwa</p></li><li><p><strong>Mistrzowska</strong>: Może zawierać trzy komponenty czaroznawstwa</p></li></ul>"
             },
             "actions": {
                 "Read Scroll": {
@@ -956,10 +1059,10 @@
                 }
             }
         },
-        "Spell Scroll (Minor)": {
-            "name": "Zwój zaklęcia (niewielki)",
+        "Spell Scroll (Superior)": {
+            "name": "Zwój zaklęcia (wybitny)",
             "description": {
-                "public": "<p>Zwoje zaklęć to specjalistyczne kawałki pergaminu lub skóry, na których starannie wyryto symbole jednego lub kilku elementów zaklęć. Aktywacja zwoju zaklęć tymczasowo nadaje czytającemu głęboką znajomość tych elementów, tak jakby znał je od lat.</p><p>Zwoje zaklęć dzielą się na trzy poziomy, w zależności od poziomu Zaklinania. Bardziej potężne zwoje mogą jednocześnie zawierać większą liczbę elementów zaklęć.</p><ul><li><p><strong>Niewielkie</strong>: mogą zawierać jeden składnik zaklęcia</p></li><li><p><strong>Znaczące</strong>: mogą zawierać dwa składniki zaklęcia</p></li><li><p><strong>Legendarne</strong>: mogą zawierać trzy składniki zaklęcia</p></li></ul>"
+                "public": "<p>Zwój zaklęć to specjalny arkusz welinu lub pergaminu, na którym starannie umieszczono glify jednego lub więcej komponentów czaroznawstwa. Aktywacja tego zwoju tymczasowo obdarza jego czytelnika głęboką znajomością tych komponentów, jak gdyby znał je od lat.</p><p>Liczba komponentów czaroznawstwa, które może zawierać zwój, zależy od jakości jego wykonania.</p><ul><li><p><strong>Dobry</strong>: Może zawierać jeden komponent czaroznawstwa</p></li><li><p><strong>Wybitny</strong>: Może zawierać dwa komponenty czaroznawstwa</p></li><li><p><strong>Mistrzowska</strong>: Może zawierać trzy komponenty czaroznawstwa</p></li></ul>"
             },
             "actions": {
                 "Read Scroll": {
@@ -976,13 +1079,8 @@
         "Spellband": {
             "name": "Pierścień zaklęć",
             "description": {
-                "public": "<p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p>"
-            },
-            "actions": {
-                "Spellband": {
-                    "name": "Pierścień zaklęć",
-                    "description": "<p>W sytuacjach zagrożenia możesz pobrać dodatkową rezerwę <strong>Skupienia</strong> z tego pierścienia. Ilość przywróconego Skupienia zależy od premii zaklinania pierścienia. </p><ul><li><p><strong>Niewielkie</strong> zaklinanie: <strong>4 punkty Skupienia</strong></p></li><li><p><strong>Znaczące</strong> zaklinanie: <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Legendarne</strong> zaklinanie: <strong>8 punktów Skupienia</strong></p></li></ul>"
-                }
+                "public": "<blockquote><p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p></blockquote><p>Ten zaczarowany pierścień pozwala w trudnych chwilach wykorzystać dodatkowy zapas <strong>Skupienia</strong>.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
             }
         },
         "Spiked Greatclub": {
@@ -1053,6 +1151,10 @@
             "description": {
                 "public": "<p>Skórzana drewniana torba zawierająca szpulki nici, odpowiednie igły i szpilki, nóż do skórowania oraz szydła, przydatne do pracy z tkaniną i skórą.</p>"
             }
+        },
+        "Tenacity": {
+            "name": "Uporu",
+            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
         },
         "Tent (caravan)": {
             "name": "Namiot (karawana)",
