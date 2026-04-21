@@ -1,0 +1,551 @@
+{
+    "label": "Afiksy",
+    "folders": {
+        "Suffixes": "Przyrostki",
+        "Defenses": "Obrony",
+        "Potency": "Moce",
+        "Weapons": "Bronie",
+        "Spellcraft": "Czaroznastwo",
+        "Movement": "Ruch",
+        "Prefixes": "Przedrostki",
+        "Bonuses": "Premiowe",
+        "Conversion": "Konwersja",
+        "Skills": "Umiejętności",
+        "Runes": "Runy",
+        "Creature Bane": "Tworzące Zgubę",
+        "Gestures": "Gesty",
+        "Resources": "Zasoby",
+        "Damage": "Obrażenia",
+        "Resistances": "Odporności"
+    },
+    "entries": {
+        "Acid Conversion": {
+            "name": "Konwersji kwasu",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Kwas</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Kwas</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Acid Damage": {
+            "name": "Obrażeń od kwasu",
+            "description": "<p>Dodaje obrażenia typu <strong>Kwas</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kwas</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kwas</strong>.</p>"
+        },
+        "Acid Resistance": {
+            "name": "Odporności na kwas",
+            "description": "<p>Zwiększa odporność na <strong>Kwas</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Activating": {
+            "name": "Aktywacji",
+            "description": "<p>Zapewnia <strong>Akcję odnowienia</strong>, pozwalającą posiadaczowi odzyskać <strong>Akcję</strong> w chwilach zagrożenia. Ilość odzyskanej wartości skaluje się wraz ze <strong>Stopniem</strong> tego przedrostka.</p>",
+            "actions": {
+                "Replenish Action": {
+                    "name": "Akcja odnowienia",
+                    "description": "<p>W chwilach zagrożenia możesz skorzystać z dodatkowej rezerwy <strong>Akcji</strong> z tego przedmiotu. Ilość odzyskanej Akcji zależy od <strong>Stopnia</strong> tego afiksu.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 Akcja</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>2 Akcje</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>3 Akcje</strong></p></li></ul>"
+                }
+            }
+        },
+        "Arcana": {
+            "name": "Arkan",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Arkana</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Arrow Spellcraft": {
+            "name": "Czaroznastwa strzały",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Strzała</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Strzała</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Aspect Spellcraft": {
+            "name": "Czaroznastwa aspektu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Aspekt</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Aspekt</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Athletics": {
+            "name": "Atletyki",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Atletyki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Aura Spellcraft": {
+            "name": "Czaroznastwa aury",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Aura</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Aura</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Awareness": {
+            "name": "Świadomości",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Świadomości</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Beast Bane": {
+            "name": "Zguby bestii",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Bestia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Blast Spellcraft": {
+            "name": "Czaroznastwa wybuchu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wybuch</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wybuch</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Bludgeoning Damage": {
+            "name": "Obrażeń obuchowych",
+            "description": "<p>Dodaje obrażenia typu <strong>Obuchowe</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Obuchowe</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Obuchowe</strong> obrażenia.</p>"
+        },
+        "Bludgeoning Resistance": {
+            "name": "Odporności na obuchowe obrażenia",
+            "description": "<p>Zwiększa odporność na <strong>Obuchowe</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Celestial Bane": {
+            "name": "Zguby niebian",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Niebianin</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Cold Conversion": {
+            "name": "Konwersji zimna",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zimno</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zimno</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Cold Damage": {
+            "name": "Obrażeń od zimna",
+            "description": "<p>Dodaje obrażenia typu <strong>Zimno</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zimno</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zimno</strong>.</p>"
+        },
+        "Cold Resistance": {
+            "name": "Odporności na zimno",
+            "description": "<p>Zwiększa odporność na <strong>Zimno</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Cone Spellcraft": {
+            "name": "Czaroznastwa stożka",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Stożek</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Stożek</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Conjure Spellcraft": {
+            "name": "Czaroznastwa wywołania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wywołanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wywołanie</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Construct Bane": {
+            "name": "Zguby konstruktów",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Konstrukt</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Control Potency": {
+            "name": "Mocy kontroli",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kontroli</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Control Spellcraft": {
+            "name": "Czaroznastwa kontroli",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Kontroli</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Kontroli</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Corruption Conversion": {
+            "name": "Konwersji zepsucia",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zepsucie</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zepsucie</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Corruption Damage": {
+            "name": "Obrażeń od zepsucia",
+            "description": "<p>Dodaje obrażenia typu <strong>Zepsucie</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zepsucie</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zepsucie</strong>.</p>"
+        },
+        "Corruption Resistance": {
+            "name": "Odporności na zepsucie",
+            "description": "<p>Zwiększa odporność na <strong>Zepsucie</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Create Spellcraft": {
+            "name": "Czaroznastwa kształtu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Kształt</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Kształt</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Death Potency": {
+            "name": "Mocy śmierci",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Śmierci</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Death Spellcraft": {
+            "name": "Czaroznastwa śmierci",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Śmierci</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Śmierci</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Deception": {
+            "name": "Oszustwa",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Oszustwa</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Deflection": {
+            "name": "Odparcia",
+            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Determination": {
+            "name": "Determinacji",
+            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Diplomacy": {
+            "name": "Dyplomacji",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Disguise": {
+            "name": "Przebrania",
+            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "actions": {
+                "Disguise": {
+                    "name": "Przebranie",
+                    "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
+                    "effects": [
+                        {
+                            "name": "Przebranie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Dragon Bane": {
+            "name": "Zguby smoków",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Smok</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Earth Elemental Bane": {
+            "name": "Zguby żywiołaków ziemi",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ziemi</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Earth Potency": {
+            "name": "Mocy ziemi",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Ziemi</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Earth Spellcraft": {
+            "name": "Czaroznastwa ziemi",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Ziemi</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Ziemi</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Electricity Conversion": {
+            "name": "Konwersji elektryczności",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Elektryczność</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Elektryczność</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Electricity Damage": {
+            "name": "Obrażeń od elektryczności",
+            "description": "<p>Dodaje obrażenia typu <strong>Elektryczność</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Elektryczność</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Elektryczność</strong>.</p>"
+        },
+        "Electricity Resistance": {
+            "name": "Odporności na elektryczność",
+            "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Evasion": {
+            "name": "Unikania",
+            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Fan Spellcraft": {
+            "name": "Czaroznastwa wachlarza",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wachlarz</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wachlarz</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Fey Bane": {
+            "name": "Zguby fey",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Fire Conversion": {
+            "name": "Konwersji ognia",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Ogień</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Ogień</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Fire Damage": {
+            "name": "Obrażenia od ognia",
+            "description": "<p>Dodaje obrażenia typu <strong>Ogień</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Ogień</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Ogień</strong>.</p>"
+        },
+        "Fire Elemental Bane": {
+            "name": "Zguby żywiołaków ognia",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ognia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Fire Resistance": {
+            "name": "Odporności na ogień",
+            "description": "<p>Zwiększa odporność na <strong>Ogień</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Flame Potency": {
+            "name": "Mocy płomienia",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Płomienia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Flame Spellcraft": {
+            "name": "Czaroznastwa płomienia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Płomienia</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Płomienia</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Focusing": {
+            "name": "Skupienia",
+            "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego afiksu.</p>",
+            "actions": {
+                "Replenish Focus": {
+                    "name": "Odnowienie skupienia",
+                    "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                }
+            }
+        },
+        "Frost Elemental Bane": {
+            "name": "Zguby żywiołaków mrozu",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak mrozu</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Frost Potency": {
+            "name": "Mocy mrozu",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Mrozu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Frost Spellcraft": {
+            "name": "Czaroznastwa mrozu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Mrozu</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Mrozu</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Giant Bane": {
+            "name": "Zguby olbrzymów",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Olbrzym</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Gliding": {
+            "name": "Szybowania",
+            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+            "actions": {
+                "Gliding": {
+                    "name": "Szybowanie",
+                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
+                }
+            }
+        },
+        "Guarding": {
+            "name": "Ochrony",
+            "description": "<p>Zwiększa <strong>Blok</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Hale": {
+            "name": "Krzepy",
+            "description": "<p>Zwiększa maksymalne <strong>Zdrowie</strong> o 6 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Illumination Potency": {
+            "name": "Mocy światłości",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Światłości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Illumination Spellcraft": {
+            "name": "Czaroznastwa światłości",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Światłości</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Światłości</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Illusion Potency": {
+            "name": "Mocy iluzji",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Iluzji</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Illusion Spellcraft": {
+            "name": "Czaroznastwa iluzji",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Iluzji</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Iluzji</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Influence Spellcraft": {
+            "name": "Czaroznastwa wpływu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wpływ</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wpływ</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Intimidation": {
+            "name": "Zastraszania",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Zastraszania</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Keen": {
+            "name": "Ostrości",
+            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>"
+        },
+        "Kinesis Potency": {
+            "name": "Mocy kinetyki",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kinetyki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Kinesis Spellcraft": {
+            "name": "Czaroznastwa kinetyki",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Kinetyki</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Kinetyki</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Life Potency": {
+            "name": "Mocy życia",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Życia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Life Spellcraft": {
+            "name": "Czaroznastwa życia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Życia</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Życia</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Lightning Potency": {
+            "name": "Mocy błyskawic",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Błyskawic</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Lightning Spellcraft": {
+            "name": "Czaroznastwa błyskawic",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Błyskawic</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Błyskawic</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Luminary": {
+            "name": "Świetlistości",
+            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka. Tylko jeden afiks może zapewniać tę korzyść.</p>"
+        },
+        "Medicine": {
+            "name": "Medycyny",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Medycyny</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Mending": {
+            "name": "Regeneracji",
+            "description": "<p>Obniża próg <strong>Ran</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie ran noszącego.</p>"
+        },
+        "Monstrosity Bane": {
+            "name": "Zguby potworności",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Nimbleness": {
+            "name": "Zwinności",
+            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Nonchalant": {
+            "name": "Niewzruszenia",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Morale</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Oblivion Potency": {
+            "name": "Mocy nicości",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Nicości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Oblivion Spellcraft": {
+            "name": "Czaroznastwa nicości",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Nicości</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Nicości</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Ooze Bane": {
+            "name": "Zguby śluzów",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Śluz</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Outsider Bane": {
+            "name": "Zguby zewnętrznych",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Zewnętrzny</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Performance": {
+            "name": "Występów",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Występów</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Piercing Damage": {
+            "name": "Obrażeń kłutych",
+            "description": "<p>Dodaje obrażenia typu <strong>Kłute</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kłute</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kłute</strong> obrażenia.</p>"
+        },
+        "Piercing Resistance": {
+            "name": "Odporności na kłute obrażenia",
+            "description": "<p>Zwiększa odporność na <strong>Kłute</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Plant Bane": {
+            "name": "Zguby roślin",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Roślina</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Poison Conversion": {
+            "name": "Konwersji trucizny",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Trucizna</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Truciznę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Poison Damage": {
+            "name": "Obrażeń od trucizny",
+            "description": "<p>Dodaje obrażenia typu <strong>Trucizna</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Trucizna</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Truciznę</strong>.</p>"
+        },
+        "Poison Resistance": {
+            "name": "Odporności na truciznę",
+            "description": "<p>Zwiększa odporność na <strong>Truciznę</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Potency": {
+            "name": "Mocy",
+            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>"
+        },
+        "Psychic Conversion": {
+            "name": "Konwersji obrażeń psychicznych",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Psychiczne</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Psychiczne</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Psychic Damage": {
+            "name": "Obrażeń psychicznych",
+            "description": "<p>Dodaje obrażenia typu <strong>Psychiczne</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Psychiczne</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Psychiczne</strong> obrażenia.</p>"
+        },
+        "Psychic Resistance": {
+            "name": "Odporności na psychiczne obrażenia",
+            "description": "<p>Zwiększa odporność na <strong>Psychiczne</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Pulse Spellcraft": {
+            "name": "Czaroznastwa impulsu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Impuls</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Impuls</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Radiant Conversion": {
+            "name": "Konwersji świetlistych obrażeń",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Świetliste</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Świetliste</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Radiant Damage": {
+            "name": "Obrażeń świetlistych",
+            "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>"
+        },
+        "Radiant Resistance": {
+            "name": "Odporności na świetliste obrażenia",
+            "description": "<p>Zwiększa odporność na <strong>Świetliste</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Rallying": {
+            "name": "Mobilizacji",
+            "description": "<p>Obniża próg <strong>Obłędu</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie obłędu noszącego.</p>"
+        },
+        "Ray Spellcraft": {
+            "name": "Czaroznastwa promienia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Promień</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Promień</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Reach": {
+            "name": "Zasięgu",
+            "description": "<p>Zwiększa efektywny zasięg tej broni. Broń do walki wręcz otrzymuje <strong>+1 do zasięgu na Stopień</strong>. Broń dystansowa otrzymuje <strong>+10 do zasięgu na Stopień</strong>.</p>"
+        },
+        "Reinforcement": {
+            "name": "Wzmocnienia",
+            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Reliable": {
+            "name": "Niezawodności",
+            "description": "<p>Obniża <strong>Próg Krytycznej Porażki</strong> dla rzutów ataku wykonywanych tą bronią. Próg zmniejsza się o <strong>1 na Stopień</strong>.</p>"
+        },
+        "Returning": {
+            "name": "Powracania",
+            "description": "<p>Broń rzucana z tym afiksem magicznie wraca do ręki użytkownika po każdym ataku, co pozwala rzucać nią ponownie bez konieczności jej odzyskiwania.</p>"
+        },
+        "Science": {
+            "name": "Nauki",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Nauki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Sense Spellcraft": {
+            "name": "Czaroznastwa zmysłu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Zmysł</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Zmysł</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Slashing Damage": {
+            "name": "Obrażeń ciętych",
+            "description": "<p>Dodaje obrażenia typu <strong>Cięte</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Cięte</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Cięte</strong> obrażenia.</p>"
+        },
+        "Slashing Resistance": {
+            "name": "Odporności na cięte obrażenia",
+            "description": "<p>Zwiększa odporność na <strong>Cięte</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Society": {
+            "name": "Społeczeństwa",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Społeczeństwa</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Soul Potency": {
+            "name": "Mocy duszy",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Duszy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Soul Spellcraft": {
+            "name": "Czaroznastwa duszy",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Duszy</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Duszy</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>"
+        },
+        "Spirited": {
+            "name": "Natchnienia",
+            "description": "<p>Zwiększa maksymalne <strong>Morale</strong> o 6 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Stealth": {
+            "name": "Skradania",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Skradania</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Step Spellcraft": {
+            "name": "Czaroznastwa kroku",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Krok</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Krok</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Storm Elemental Bane": {
+            "name": "Zguby żywiołaków burzy",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak burzy</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Strike Spellcraft": {
+            "name": "Czaroznastwa uderzenia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Uderzenie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Uderzenie</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Surge Spellcraft": {
+            "name": "Czaroznastwa wzrostu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wzrost</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wzrost</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Tenacity": {
+            "name": "Uporu",
+            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+        },
+        "Undead Bane": {
+            "name": "Zguby nieumarłych",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Nieumarły</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>"
+        },
+        "Unshakeable": {
+            "name": "Niewzruszenia",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Void Conversion": {
+            "name": "Konwersji pustki",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Pustka</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Pustkę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>"
+        },
+        "Void Damage": {
+            "name": "Obrażeń od pustki",
+            "description": "<p>Dodaje obrażenia typu <strong>Pustka</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Pustka</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Pustkę</strong>.</p>"
+        },
+        "Void Resistance": {
+            "name": "Odporności na pustkę",
+            "description": "<p>Zwiększa odporność na <strong>Pustkę</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        },
+        "Ward Spellcraft": {
+            "name": "Czaroznastwa glifu",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Glif</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Glif</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>"
+        },
+        "Wilderness": {
+            "name": "Dziczy",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dziczy</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
+    }
+}
