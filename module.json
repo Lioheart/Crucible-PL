@@ -21,7 +21,9 @@
       {
         "id": "crucible",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+          "verified": "0.9.1"
+        }
       }
     ],
     "requires": [
