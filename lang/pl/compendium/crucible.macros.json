@@ -13,8 +13,5 @@
         "Rest": {
             "name": "Odpoczynek"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }
