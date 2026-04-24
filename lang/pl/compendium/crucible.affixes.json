@@ -666,7 +666,7 @@
     },
     "mapping": {
         "adjective": "system.adjective",
-        "description": "system.description",
+        "description": "description",
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
