@@ -237,3 +237,6 @@ Hooks.once("babele.init", (babele) => {
     categories_converter: categoriesConverter
   });
 });
+Hooks.once("babele.ready", async () => {
+  await game.documentIndex.index();
+});
