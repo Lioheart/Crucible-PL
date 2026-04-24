@@ -1238,7 +1238,15 @@
             "path": "system.actions",
             "converter": "actions_converter"
         },
-        "description": "system.description",
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private"
+            }
+        },
         "adjective": "system.adjective"
     }
 }

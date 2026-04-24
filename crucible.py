@@ -43,6 +43,7 @@ CAPTION_ACTOR_MAPPING = {
     }
 }
 
+
 def create_version_directory(version: str) -> bool:
     folder_path = pathlib.Path(version).resolve()
 
@@ -251,6 +252,7 @@ def extract_description(record: dict) -> str:
 
     return ""
 
+
 def extract_description_value(record: dict):
     """
     Zwraca description w oryginalnym formacie:
@@ -353,11 +355,11 @@ def ensure_nested_mapping(transifex_dict: dict, key: str, path: str, converter: 
 
 
 def add_actions_from_record(
-    target_entry: dict,
-    source_record: dict,
-    fallback_name: str,
-    transifex_dict: dict,
-    add_mapping: bool = True
+        target_entry: dict,
+        source_record: dict,
+        fallback_name: str,
+        transifex_dict: dict,
+        add_mapping: bool = True
 ) -> None:
     actions = source_record.get("system", {}).get("actions", [])
     if not actions:
@@ -408,10 +410,10 @@ def resolve_reference_list(ref_list, id_index: dict) -> list[dict]:
 
 
 def fill_translated_object_from_record(
-    target_obj: dict,
-    source_record: dict,
-    transifex_dict: dict,
-    preserve_description_shape: bool = False
+        target_obj: dict,
+        source_record: dict,
+        transifex_dict: dict,
+        preserve_description_shape: bool = False
 ) -> None:
     source_name = (source_record.get("name") or "").strip()
     if source_name:
@@ -435,11 +437,11 @@ def fill_translated_object_from_record(
 
 
 def populate_reference_bucket(
-    parent_entry: dict,
-    bucket_name: str,
-    source_value,
-    id_index: dict,
-    transifex_dict: dict
+        parent_entry: dict,
+        bucket_name: str,
+        source_value,
+        id_index: dict,
+        transifex_dict: dict
 ) -> None:
     resolved_records = resolve_reference_list(source_value, id_index)
     if not resolved_records:
@@ -467,11 +469,11 @@ def populate_reference_bucket(
 
 
 def populate_single_reference_object(
-    parent_entry: dict,
-    field_name: str,
-    source_value,
-    id_index: dict,
-    transifex_dict: dict
+        parent_entry: dict,
+        field_name: str,
+        source_value,
+        id_index: dict,
+        transifex_dict: dict
 ) -> None:
     record = None
 
@@ -492,11 +494,11 @@ def populate_single_reference_object(
 
 
 def populate_prototype_fields(
-    entry: dict,
-    new_data: dict,
-    id_index: dict,
-    transifex_dict: dict,
-    items_source=None
+        entry: dict,
+        new_data: dict,
+        id_index: dict,
+        transifex_dict: dict,
+        items_source=None
 ) -> None:
     mapping_data = {
         "items": ("items", "adventure_items_converter"),
@@ -560,11 +562,12 @@ def populate_prototype_fields(
             transifex_dict=transifex_dict
         )
 
+
 def populate_actor_like_prototype(
-    actor_entry: dict,
-    actor_data: dict,
-    id_index: dict,
-    transifex_dict: dict
+        actor_entry: dict,
+        actor_data: dict,
+        id_index: dict,
+        transifex_dict: dict
 ) -> None:
     actor_name = (actor_data.get("name") or "").strip()
     if actor_name:
@@ -582,6 +585,7 @@ def populate_actor_like_prototype(
         transifex_dict=transifex_dict,
         items_source=prototype.get("items", [])
     )
+
 
 def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
     transifex_dict.setdefault("mapping", {})
@@ -628,9 +632,9 @@ def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
 
 
 def populate_caption_actor(
-    actor_entry: dict,
-    actor_data: dict,
-    transifex_dict: dict
+        actor_entry: dict,
+        actor_data: dict,
+        transifex_dict: dict
 ) -> None:
     actor_name = (actor_data.get("name") or "").strip()
     if actor_name:
@@ -713,6 +717,7 @@ def populate_caption_actor(
             if isinstance(value, str) and value.strip():
                 actor_entry["biography"][key] = value.strip()
 
+
 def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
     transifex_dict.setdefault("mapping", {})
     transifex_dict["mapping"]["items"] = {
@@ -740,6 +745,7 @@ def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
         "path": "prototypeToken.name",
         "converter": "nested_object_converter"
     }
+
 
 def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
     entry["caption"] = new_data.get("caption", "")
@@ -877,6 +883,7 @@ def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transife
                 transifex_dict=transifex_dict
             )
 
+
 def ensure_rules_mapping(transifex_dict: dict) -> None:
     transifex_dict.setdefault("mapping", {})
     transifex_dict["mapping"]["categories"] = {
@@ -926,6 +933,7 @@ def populate_rules_entry(entry: dict, new_data: dict, id_index: dict, transifex_
             entry["pages"].setdefault(page_name, {})
             entry["pages"][page_name]["name"] = page_name
             entry["pages"][page_name]["text"] = text_content
+
 
 def process_files(folders: str, version: str) -> None:
     dict_key = []
@@ -1053,7 +1061,54 @@ def process_files(folders: str, version: str) -> None:
                     add_actions_from_record(entry, new_data, name, transifex_dict)
 
                 if 'description' in flag and 'caption' not in keys:
-                    transifex_dict['mapping']["description"] = "system.description"
+                    has_structured_description = any(
+                        isinstance(item, dict)
+                        and (
+                                (
+                                        isinstance(item.get("system", {}).get("description"), dict)
+                                        and (
+                                                "public" in item.get("system", {}).get("description", {})
+                                                or "private" in item.get("system", {}).get("description", {})
+                                        )
+                                )
+                                or (
+                                        isinstance(item.get("description"), dict)
+                                        and (
+                                                "public" in item.get("description", {})
+                                                or "private" in item.get("description", {})
+                                        )
+                                )
+                        )
+                        for item in data
+                    )
+
+                    has_system_description = any(
+                        isinstance(item, dict)
+                        and isinstance(item.get("system"), dict)
+                        and "description" in item["system"]
+                        for item in data
+                    )
+
+                    has_root_description = any(
+                        isinstance(item, dict)
+                        and "description" in item
+                        for item in data
+                    )
+
+                    if has_structured_description:
+                        transifex_dict["mapping"]["description"] = {
+                            "path": "system.description",
+                            "converter": "structured",
+                            "cardinality": "one",
+                            "mapping": {
+                                "public": "public",
+                                "private": "private"
+                            }
+                        }
+                    elif has_system_description:
+                        transifex_dict["mapping"]["description"] = "system.description"
+                    elif has_root_description:
+                        transifex_dict["mapping"]["description"] = "description"
 
                 # SPECJALNA OBSŁUGA prototypeToken
                 if 'prototypeToken' in keys:
@@ -1071,6 +1126,7 @@ def process_files(folders: str, version: str) -> None:
                 json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
 
             dict_key.append(f'{compendium.keys()}')
+
 
 def copy_en_json(version_crucible: str) -> None:
     source_file = os.path.join("pack_crucible", "lang", "en.json")

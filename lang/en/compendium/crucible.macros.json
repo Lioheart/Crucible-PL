@@ -13,8 +13,5 @@
         "Rest": {
             "name": "Rest"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }
