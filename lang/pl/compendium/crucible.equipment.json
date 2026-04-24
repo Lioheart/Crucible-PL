@@ -272,7 +272,7 @@
             }
         },
         "Common Clothing": {
-            "name": "Zwykłe ubrania",
+            "name": "Zwykłe ubranie",
             "description": {
                 "public": "<p>Koszula, spodnie, bielizna, skarpety oraz buty lub trzewiki odpowiednie do prac fizycznych lub podróży.</p>"
             }
@@ -309,11 +309,13 @@
         },
         "Determination": {
             "name": "Determinacji",
-            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "adjective": "Determinacji"
         },
         "Diplomacy": {
-            "name": "Dyplomacji",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>"
+            "name": "Dyplomacja",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "adjective": "Dyplomacji"
         },
         "Disarming Toolkit": {
             "name": "Zestaw narzędzi do rozbrajania",
@@ -324,6 +326,7 @@
         "Disguise": {
             "name": "Przebrania",
             "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "adjective": "Przebranie",
             "actions": {
                 "Disguise": {
                     "name": "Przebranie",
@@ -337,7 +340,7 @@
             }
         },
         "Dress Clothing": {
-            "name": "Eleganckie ubrania",
+            "name": "Eleganckie ubranie",
             "description": {
                 "public": "<p>Królewski zestaw eleganckich szat, odpowiedni do udziału w uroczystościach i wydarzeniach towarzyskich, zawiera płaszcz lub suknię, chustkę lub krawat, elegancką koszulę lub gorset, kamizelkę lub gorset, spodnie lub halkę, pasek lub szelki, pończochy i eleganckie buty.</p>"
             }
@@ -356,7 +359,8 @@
         },
         "Evasion": {
             "name": "Unikania",
-            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "adjective": "Unikania"
         },
         "Expanded Toolbelt": {
             "name": "Rozszerzony pas narzędziowy",
@@ -391,6 +395,7 @@
         "Focusing": {
             "name": "Skupienia",
             "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+            "adjective": "Skupienia",
             "actions": {
                 "Replenish Focus": {
                     "name": "Odnowienie skupienia",
@@ -407,6 +412,7 @@
         "Gliding": {
             "name": "Szybowania",
             "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+            "adjective": "Szybowania",
             "actions": {
                 "Gliding": {
                     "name": "Szybowanie",
@@ -669,7 +675,8 @@
         },
         "Luminary": {
             "name": "Świetlistości",
-            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>"
+            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "adjective": "Świetlistości"
         },
         "Luminary Band": {
             "name": "Obręcz świetlistości",
@@ -721,7 +728,8 @@
         },
         "Nimbleness": {
             "name": "Zwinności",
-            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "adjective": "Zwinności"
         },
         "Padded Armor": {
             "name": "Przeszywalnica",
@@ -875,7 +883,8 @@
         },
         "Reinforcement": {
             "name": "Wzmocnienia",
-            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "adjective": "Wzmocnienia"
         },
         "Repair Kit (smith)": {
             "name": "Zestaw naprawczy (kowalski)",
@@ -1154,7 +1163,8 @@
         },
         "Tenacity": {
             "name": "Uporu",
-            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>"
+            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "adjective": "Uporu"
         },
         "Tent (caravan)": {
             "name": "Namiot (karawana)",
@@ -1228,6 +1238,7 @@
             "path": "system.actions",
             "converter": "actions_converter"
         },
-        "description": "system.description"
+        "description": "system.description",
+        "adjective": "system.adjective"
     }
 }
