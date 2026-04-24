@@ -21,19 +21,23 @@
     "entries": {
         "Acid Conversion": {
             "name": "Acid Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Acid</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Acid</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Acid</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Acid</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Caustic"
         },
         "Acid Damage": {
             "name": "Acid Damage",
-            "description": "<p>Add <strong>Acid</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Acid</strong>, checked against the target's <strong>Acid</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Acid</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Acid</strong>, checked against the target's <strong>Acid</strong> resistance separately.</p>",
+            "adjective": "Corrosion"
         },
         "Acid Resistance": {
             "name": "Acid Resistance",
-            "description": "<p>Increase <strong>Acid</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Acid</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Acid-Warding"
         },
         "Activating": {
             "name": "Activating",
             "description": "<p>Grants the <strong>Replenish Action</strong> action, allowing the bearer to restore <strong>Action</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Activating",
             "actions": {
                 "Replenish Action": {
                     "name": "Replenish Action",
@@ -43,123 +47,153 @@
         },
         "Arcana": {
             "name": "Arcana",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Arcana</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Arcana</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Arcane"
         },
         "Arrow Spellcraft": {
             "name": "Arrow Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Arrow</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Arrow</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Arrow</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Arrow</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Arrow"
         },
         "Aspect Spellcraft": {
             "name": "Aspect Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Aspect</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Aspect</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Aspect</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Aspect</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Aspect"
         },
         "Athletics": {
             "name": "Athletics",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Athletics</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Athletics</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Athletic"
         },
         "Aura Spellcraft": {
             "name": "Aura Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Aura</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Aura</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Aura</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Aura</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Aura"
         },
         "Awareness": {
             "name": "Awareness",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Awareness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Awareness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Perceptive"
         },
         "Beast Bane": {
             "name": "Beast Bane",
-            "description": "<p>This weapon is especially effective against <strong>Beast</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Beast</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Beast-Bane"
         },
         "Blast Spellcraft": {
             "name": "Blast Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Blast</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Blast</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Blast</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Blast</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Blast"
         },
         "Bludgeoning Damage": {
             "name": "Bludgeoning Damage",
-            "description": "<p>Add <strong>Bludgeoning</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Bludgeoning</strong>, checked against the target's <strong>Bludgeoning</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Bludgeoning</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Bludgeoning</strong>, checked against the target's <strong>Bludgeoning</strong> resistance separately.</p>",
+            "adjective": "Impact"
         },
         "Bludgeoning Resistance": {
             "name": "Bludgeoning Resistance",
-            "description": "<p>Increase <strong>Bludgeoning</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Bludgeoning</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Bludgeon-Warding"
         },
         "Celestial Bane": {
             "name": "Celestial Bane",
-            "description": "<p>This weapon is especially effective against <strong>Celestial</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Celestial</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Celestial-Bane"
         },
         "Cold Conversion": {
             "name": "Cold Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Cold</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Cold</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Cold</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Cold</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Freezing"
         },
         "Cold Damage": {
             "name": "Cold Damage",
-            "description": "<p>Add <strong>Cold</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Cold</strong>, checked against the target's <strong>Cold</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Cold</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Cold</strong>, checked against the target's <strong>Cold</strong> resistance separately.</p>",
+            "adjective": "Frost"
         },
         "Cold Resistance": {
             "name": "Cold Resistance",
-            "description": "<p>Increase <strong>Cold</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Cold</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Frost-Warding"
         },
         "Cone Spellcraft": {
             "name": "Cone Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Cone</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Cone</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Cone</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Cone</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Cone"
         },
         "Conjure Spellcraft": {
             "name": "Conjure Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Conjure</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Conjure</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Conjure</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Conjure</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Conjure"
         },
         "Construct Bane": {
             "name": "Construct Bane",
-            "description": "<p>This weapon is especially effective against <strong>Construct</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Construct</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Construct-Bane"
         },
         "Control Potency": {
             "name": "Control Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Control</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Control</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Control Potency"
         },
         "Control Spellcraft": {
             "name": "Control Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Control</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Control</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Control</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Control</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Control-Runic"
         },
         "Corruption Conversion": {
             "name": "Corruption Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Corruption</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Corruption</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Corruption</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Corruption</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Corrupting"
         },
         "Corruption Damage": {
             "name": "Corruption Damage",
-            "description": "<p>Add <strong>Corruption</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Corruption</strong>, checked against the target's <strong>Corruption</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Corruption</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Corruption</strong>, checked against the target's <strong>Corruption</strong> resistance separately.</p>",
+            "adjective": "Corruption"
         },
         "Corruption Resistance": {
             "name": "Corruption Resistance",
-            "description": "<p>Increase <strong>Corruption</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Corruption</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Corruption-Warding"
         },
         "Create Spellcraft": {
             "name": "Create Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Create</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Create</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Create</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Create</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Create"
         },
         "Death Potency": {
             "name": "Death Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Death</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Death</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Death Potency"
         },
         "Death Spellcraft": {
             "name": "Death Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Death</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Death</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Death</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Death</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Death-Runic"
         },
         "Deception": {
             "name": "Deception",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Deception</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Deception</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Deceptive"
         },
         "Deflection": {
             "name": "Deflection",
-            "description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Deflection"
         },
         "Determination": {
             "name": "Determination",
-            "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Determination"
         },
         "Diplomacy": {
             "name": "Diplomacy",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Diplomatic"
         },
         "Disguise": {
             "name": "Disguise",
             "description": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
+            "adjective": "Disguise",
             "actions": {
                 "Disguise": {
                     "name": "Disguise",
@@ -174,71 +208,88 @@
         },
         "Dragon Bane": {
             "name": "Dragon Bane",
-            "description": "<p>This weapon is especially effective against <strong>Dragon</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Dragon</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Dragon-Bane"
         },
         "Earth Elemental Bane": {
             "name": "Earth Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Earth Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Earth Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Earth-Bane"
         },
         "Earth Potency": {
             "name": "Earth Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Earth</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Earth</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Earth Potency"
         },
         "Earth Spellcraft": {
             "name": "Earth Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Earth</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Earth</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Earth</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Earth</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Earth-Runic"
         },
         "Electricity Conversion": {
             "name": "Electricity Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Electricity</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Electricity</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Electricity</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Electricity</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Shocking"
         },
         "Electricity Damage": {
             "name": "Electricity Damage",
-            "description": "<p>Add <strong>Electricity</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Electricity</strong>, checked against the target's <strong>Electricity</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Electricity</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Electricity</strong>, checked against the target's <strong>Electricity</strong> resistance separately.</p>",
+            "adjective": "Lightning"
         },
         "Electricity Resistance": {
             "name": "Electricity Resistance",
-            "description": "<p>Increase <strong>Electricity</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Electricity</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Lightning-Warding"
         },
         "Evasion": {
             "name": "Evasion",
-            "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Evasion"
         },
         "Fan Spellcraft": {
             "name": "Fan Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Fan</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Fan</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Fan</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Fan</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Fan"
         },
         "Fey Bane": {
             "name": "Fey Bane",
-            "description": "<p>This weapon is especially effective against <strong>Fey</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Fey</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Fey-Bane"
         },
         "Fire Conversion": {
             "name": "Fire Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Fire</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Fire</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Fire</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Fire</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Flaming"
         },
         "Fire Damage": {
             "name": "Fire Damage",
-            "description": "<p>Add <strong>Fire</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Fire</strong>, checked against the target's <strong>Fire</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Fire</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Fire</strong>, checked against the target's <strong>Fire</strong> resistance separately.</p>",
+            "adjective": "Flame"
         },
         "Fire Elemental Bane": {
             "name": "Fire Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Fire Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Fire Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Fire-Bane"
         },
         "Fire Resistance": {
             "name": "Fire Resistance",
-            "description": "<p>Increase <strong>Fire</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Fire</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Flame-Warding"
         },
         "Flame Potency": {
             "name": "Flame Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Flame</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Flame</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Flame Potency"
         },
         "Flame Spellcraft": {
             "name": "Flame Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Flame</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Flame</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Flame</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Flame</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Flame-Runic"
         },
         "Focusing": {
             "name": "Focusing",
             "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
+            "adjective": "Focusing",
             "actions": {
                 "Replenish Focus": {
                     "name": "Replenish Focus",
@@ -248,23 +299,28 @@
         },
         "Frost Elemental Bane": {
             "name": "Frost Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Frost Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Frost Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Frost-Bane"
         },
         "Frost Potency": {
             "name": "Frost Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Frost</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Frost</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Frost Potency"
         },
         "Frost Spellcraft": {
             "name": "Frost Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Frost</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Frost</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Frost</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Frost</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Frost-Runic"
         },
         "Giant Bane": {
             "name": "Giant Bane",
-            "description": "<p>This weapon is especially effective against <strong>Giant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Giant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Giant-Bane"
         },
         "Gliding": {
             "name": "Gliding",
             "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Gliding",
             "actions": {
                 "Gliding": {
                     "name": "Gliding",
@@ -274,274 +330,342 @@
         },
         "Guarding": {
             "name": "Guarding",
-            "description": "<p>Increase <strong>Block</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Block</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Guarding"
         },
         "Hale": {
             "name": "Hale",
-            "description": "<p>Increase maximum <strong>Health</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase maximum <strong>Health</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Hale"
         },
         "Illumination Potency": {
             "name": "Illumination Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Illumination</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Illumination</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Illumination Potency"
         },
         "Illumination Spellcraft": {
             "name": "Illumination Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Illumination</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illumination</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Illumination</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illumination</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Illumination-Runic"
         },
         "Illusion Potency": {
             "name": "Illusion Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Illusion</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Illusion</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Illusion Potency"
         },
         "Illusion Spellcraft": {
             "name": "Illusion Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Illusion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illusion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Illusion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illusion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Illusion-Runic"
         },
         "Influence Spellcraft": {
             "name": "Influence Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Influence</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Influence</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Influence</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Influence</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Influence"
         },
         "Intimidation": {
             "name": "Intimidation",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Intimidation</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Intimidation</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Intimidating"
         },
         "Keen": {
             "name": "Keen",
-            "description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+            "description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>",
+            "adjective": "Keen"
         },
         "Kinesis Potency": {
             "name": "Kinesis Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Kinesis</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Kinesis</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Kinesis Potency"
         },
         "Kinesis Spellcraft": {
             "name": "Kinesis Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Kinesis</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Kinesis</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Kinesis</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Kinesis</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Kinesis-Runic"
         },
         "Life Potency": {
             "name": "Life Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Life</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Life</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Life Potency"
         },
         "Life Spellcraft": {
             "name": "Life Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Life</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Life</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Life</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Life</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Life-Runic"
         },
         "Lightning Potency": {
             "name": "Lightning Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Lightning</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Lightning</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Lightning Potency"
         },
         "Lightning Spellcraft": {
             "name": "Lightning Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Lightning</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Lightning</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Lightning</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Lightning</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Lightning-Runic"
         },
         "Luminary": {
             "name": "Luminary",
-            "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one Affix can provide this benefit.</p>"
+            "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one Affix can provide this benefit.</p>",
+            "adjective": "Luminary"
         },
         "Medicine": {
             "name": "Medicine",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Medicine</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Medicine</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Medicinal"
         },
         "Mending": {
             "name": "Mending",
-            "description": "<p>Reduce the <strong>Wounds</strong> defense threshold by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from wounds.</p>"
+            "description": "<p>Reduce the <strong>Wounds</strong> defense threshold by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from wounds.</p>",
+            "adjective": "Mending"
         },
         "Monstrosity Bane": {
             "name": "Monstrosity Bane",
-            "description": "<p>This weapon is especially effective against <strong>Monstrosity</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Monstrosity</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Monstrosity-Bane"
         },
         "Nimbleness": {
             "name": "Nimbleness",
-            "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Nimbleness"
         },
         "Nonchalant": {
             "name": "Nonchalant",
-            "description": "<p>Strikes against your <strong>Morale</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Strikes against your <strong>Morale</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Nonchalant"
         },
         "Oblivion Potency": {
             "name": "Oblivion Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Oblivion</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Oblivion</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Oblivion Potency"
         },
         "Oblivion Spellcraft": {
             "name": "Oblivion Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Oblivion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Oblivion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Oblivion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Oblivion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Oblivion-Runic"
         },
         "Ooze Bane": {
             "name": "Ooze Bane",
-            "description": "<p>This weapon is especially effective against <strong>Ooze</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Ooze</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Ooze-Bane"
         },
         "Outsider Bane": {
             "name": "Outsider Bane",
-            "description": "<p>This weapon is especially effective against <strong>Outsider</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Outsider</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Outsider-Bane"
         },
         "Performance": {
             "name": "Performance",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Performance</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Performance</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Performative"
         },
         "Piercing Damage": {
             "name": "Piercing Damage",
-            "description": "<p>Add <strong>Piercing</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Piercing</strong>, checked against the target's <strong>Piercing</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Piercing</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Piercing</strong>, checked against the target's <strong>Piercing</strong> resistance separately.</p>",
+            "adjective": "Piercing"
         },
         "Piercing Resistance": {
             "name": "Piercing Resistance",
-            "description": "<p>Increase <strong>Piercing</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Piercing</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Pierce-Warding"
         },
         "Plant Bane": {
             "name": "Plant Bane",
-            "description": "<p>This weapon is especially effective against <strong>Plant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Plant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Plant-Bane"
         },
         "Poison Conversion": {
             "name": "Poison Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Venomous"
         },
         "Poison Damage": {
             "name": "Poison Damage",
-            "description": "<p>Add <strong>Poison</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Poison</strong>, checked against the target's <strong>Poison</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Poison</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Poison</strong>, checked against the target's <strong>Poison</strong> resistance separately.</p>",
+            "adjective": "Venom"
         },
         "Poison Resistance": {
             "name": "Poison Resistance",
-            "description": "<p>Increase <strong>Poison</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Poison</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Poison-Warding"
         },
         "Potency": {
             "name": "Potency",
-            "description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+            "description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>",
+            "adjective": "Power"
         },
         "Psychic Conversion": {
             "name": "Psychic Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Psychic</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Psychic</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Psychic</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Psychic</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Tormenting"
         },
         "Psychic Damage": {
             "name": "Psychic Damage",
-            "description": "<p>Add <strong>Psychic</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Psychic</strong>, checked against the target's <strong>Psychic</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Psychic</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Psychic</strong>, checked against the target's <strong>Psychic</strong> resistance separately.</p>",
+            "adjective": "Anguish"
         },
         "Psychic Resistance": {
             "name": "Psychic Resistance",
-            "description": "<p>Increase <strong>Psychic</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Psychic</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Psyche-Warding"
         },
         "Pulse Spellcraft": {
             "name": "Pulse Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Pulse</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Pulse</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Pulse</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Pulse</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Pulse"
         },
         "Radiant Conversion": {
             "name": "Radiant Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Radiant</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Radiant</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Radiant</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Radiant</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Radiant"
         },
         "Radiant Damage": {
             "name": "Radiant Damage",
-            "description": "<p>Add <strong>Radiant</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Radiant</strong>, checked against the target's <strong>Radiant</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Radiant</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Radiant</strong>, checked against the target's <strong>Radiant</strong> resistance separately.</p>",
+            "adjective": "Radiance"
         },
         "Radiant Resistance": {
             "name": "Radiant Resistance",
-            "description": "<p>Increase <strong>Radiant</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Radiant</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Radiance-Warding"
         },
         "Rallying": {
             "name": "Rallying",
-            "description": "<p>Reduce the <strong>Madness</strong> defense threshold by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from madness.</p>"
+            "description": "<p>Reduce the <strong>Madness</strong> defense threshold by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from madness.</p>",
+            "adjective": "Rallying"
         },
         "Ray Spellcraft": {
             "name": "Ray Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Ray</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Ray</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Ray</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Ray</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Ray"
         },
         "Reach": {
             "name": "Reach",
-            "description": "<p>Extends the effective range of this weapon. Melee weapons gain <strong>+1 range per Tier</strong>. Ranged weapons gain <strong>+10 range per Tier</strong>.</p>"
+            "description": "<p>Extends the effective range of this weapon. Melee weapons gain <strong>+1 range per Tier</strong>. Ranged weapons gain <strong>+10 range per Tier</strong>.</p>",
+            "adjective": "Reaching"
         },
         "Reinforcement": {
             "name": "Reinforcement",
-            "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Reinforcement"
         },
         "Reliable": {
             "name": "Reliable",
-            "description": "<p>Reduces the <strong>Critical Failure Threshold</strong> for attack rolls made with this weapon. The threshold decreases by <strong>1 per Tier</strong>.</p>"
+            "description": "<p>Reduces the <strong>Critical Failure Threshold</strong> for attack rolls made with this weapon. The threshold decreases by <strong>1 per Tier</strong>.</p>",
+            "adjective": "Reliable"
         },
         "Returning": {
             "name": "Returning",
-            "description": "<p>A thrown weapon with this affix magically returns to the wielder's hand after each attack, allowing it to be thrown again without needing to retrieve it.</p>"
+            "description": "<p>A thrown weapon with this affix magically returns to the wielder's hand after each attack, allowing it to be thrown again without needing to retrieve it.</p>",
+            "adjective": "Returning"
         },
         "Science": {
             "name": "Science",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Science</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Science</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Scientific"
         },
         "Sense Spellcraft": {
             "name": "Sense Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Sense</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Sense</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Sense</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Sense</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Sense"
         },
         "Slashing Damage": {
             "name": "Slashing Damage",
-            "description": "<p>Add <strong>Slashing</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Slashing</strong>, checked against the target's <strong>Slashing</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Slashing</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Slashing</strong>, checked against the target's <strong>Slashing</strong> resistance separately.</p>",
+            "adjective": "Rending"
         },
         "Slashing Resistance": {
             "name": "Slashing Resistance",
-            "description": "<p>Increase <strong>Slashing</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Slashing</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Slash-Warding"
         },
         "Society": {
             "name": "Society",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Society</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Society</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Sociable"
         },
         "Soul Potency": {
             "name": "Soul Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Soul</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Soul</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Soul Potency"
         },
         "Soul Spellcraft": {
             "name": "Soul Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Soul</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Soul</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Soul</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Soul</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Soul-Runic"
         },
         "Spirited": {
             "name": "Spirited",
-            "description": "<p>Increase maximum <strong>Morale</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase maximum <strong>Morale</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Spirited"
         },
         "Stealth": {
             "name": "Stealth",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Stealth</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Stealth</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Stealthy"
         },
         "Step Spellcraft": {
             "name": "Step Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Step</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Step</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Step</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Step</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Step"
         },
         "Storm Elemental Bane": {
             "name": "Storm Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Storm Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Storm Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Storm-Bane"
         },
         "Strike Spellcraft": {
             "name": "Strike Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Strike</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Strike</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Strike</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Strike</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Strike"
         },
         "Surge Spellcraft": {
             "name": "Surge Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Surge</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Surge</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Surge</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Surge</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Surge"
         },
         "Tenacity": {
             "name": "Tenacity",
-            "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>"
+            "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Tenacity"
         },
         "Undead Bane": {
             "name": "Undead Bane",
-            "description": "<p>This weapon is especially effective against <strong>Undead</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>This weapon is especially effective against <strong>Undead</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Undead-Bane"
         },
         "Unshakeable": {
             "name": "Unshakeable",
-            "description": "<p>Strikes against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Strikes against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Unshakeable"
         },
         "Void Conversion": {
             "name": "Void Conversion",
-            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Void</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Void</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+            "description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Void</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Void</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>",
+            "adjective": "Voidal"
         },
         "Void Damage": {
             "name": "Void Damage",
-            "description": "<p>Add <strong>Void</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Void</strong>, checked against the target's <strong>Void</strong> resistance separately.</p>"
+            "description": "<p>Add <strong>Void</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Void</strong>, checked against the target's <strong>Void</strong> resistance separately.</p>",
+            "adjective": "Oblivion"
         },
         "Void Resistance": {
             "name": "Void Resistance",
-            "description": "<p>Increase <strong>Void</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase <strong>Void</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Void-Warding"
         },
         "Ward Spellcraft": {
             "name": "Ward Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Ward</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Ward</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>"
+            "description": "<p>This item is imbued with the essence of <strong>Ward</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Ward</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
+            "adjective": "Ward"
         },
         "Wilderness": {
             "name": "Wilderness",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Wilderness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>"
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Wilderness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "adjective": "Survivalist"
         }
     },
     "mapping": {
+        "adjective": "system.adjective",
         "description": "system.description",
         "actions": {
             "path": "system.actions",
