@@ -352,12 +352,19 @@ def ensure_nested_mapping(transifex_dict: dict, key: str, path: str, converter: 
     }
 
 
-def add_actions_from_record(target_entry: dict, source_record: dict, fallback_name: str, transifex_dict: dict) -> None:
+def add_actions_from_record(
+    target_entry: dict,
+    source_record: dict,
+    fallback_name: str,
+    transifex_dict: dict,
+    add_mapping: bool = True
+) -> None:
     actions = source_record.get("system", {}).get("actions", [])
     if not actions:
         return
 
-    ensure_actions_mapping(transifex_dict)
+    if add_mapping:
+        ensure_actions_mapping(transifex_dict)
     target_entry.setdefault("actions", {})
 
     for action in actions:
@@ -578,30 +585,47 @@ def populate_actor_like_prototype(
 
 def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
     transifex_dict.setdefault("mapping", {})
-
-    transifex_dict["mapping"]["tokenName"] = {
-        "path": "prototypeToken.name",
-        "converter": "nested_object_converter"
-    }
-    transifex_dict["mapping"]["items"] = {
-        "path": "items",
-        "converter": "embedded_items_converter"
-    }
-    transifex_dict["mapping"]["actions"] = {
-        "path": "system.actions",
-        "converter": "actions_converter"
-    }
-
-    for key in ["ancestry", "background", "archetype", "taxonomy"]:
-        transifex_dict["mapping"][key] = {
-            "path": f"system.details.{key}",
-            "converter": "embedded_object_with_actions_converter"
+    transifex_dict["mapping"]["actors"] = {
+        "path": "actors",
+        "converter": "document",
+        "documentType": "Actor",
+        "cardinality": "many",
+        "mapping": {
+            "tokenName": {
+                "path": "prototypeToken.name",
+                "converter": "name"
+            },
+            "items": {
+                "path": "items",
+                "converter": "embedded_items_converter"
+            },
+            "actions": {
+                "path": "system.actions",
+                "converter": "actions_converter"
+            },
+            "ancestry": {
+                "path": "system.details.ancestry",
+                "converter": "embedded_object_with_actions_converter"
+            },
+            "background": {
+                "path": "system.details.background",
+                "converter": "embedded_object_with_actions_converter"
+            },
+            "archetype": {
+                "path": "system.details.archetype",
+                "converter": "embedded_object_with_actions_converter"
+            },
+            "taxonomy": {
+                "path": "system.details.taxonomy",
+                "converter": "embedded_object_with_actions_converter"
+            },
+            "biography": {
+                "path": "system.details.biography",
+                "converter": "embedded_biography_converter"
+            }
         }
-
-    transifex_dict["mapping"]["biography"] = {
-        "path": "system.details.biography",
-        "converter": "embedded_biography_converter"
     }
+
 
 def populate_caption_actor(
     actor_entry: dict,
@@ -612,17 +636,20 @@ def populate_caption_actor(
     if actor_name:
         actor_entry["name"] = actor_name
 
+    ensure_caption_actor_mapping(transifex_dict)
+
     prototype = actor_data.get("prototypeToken", {})
     token_name = prototype.get("name")
-    if token_name not in (None, ""):
-        actor_entry["tokenName"] = {"name": token_name}
+    if isinstance(token_name, str) and token_name.strip():
+        actor_entry["tokenName"] = token_name.strip()
 
     # actions bezpośrednio na aktorze
     add_actions_from_record(
         target_entry=actor_entry,
         source_record=actor_data,
         fallback_name=actor_name or "action",
-        transifex_dict=transifex_dict
+        transifex_dict=transifex_dict,
+        add_mapping=False
     )
 
     # items są osadzone bezpośrednio w actor_data["items"]
@@ -650,7 +677,8 @@ def populate_caption_actor(
                 target_entry=actor_entry["items"][item_name],
                 source_record=item,
                 fallback_name=item_name,
-                transifex_dict=transifex_dict
+                transifex_dict=transifex_dict,
+                add_mapping=False
             )
 
     details = actor_data.get("system", {}).get("details", {})
@@ -674,7 +702,8 @@ def populate_caption_actor(
             target_entry=actor_entry[field_name],
             source_record=obj,
             fallback_name=obj_name or field_name,
-            transifex_dict=transifex_dict
+            transifex_dict=transifex_dict,
+            add_mapping=False
         )
 
     biography = details.get("biography")
@@ -1015,6 +1044,11 @@ def process_files(folders: str, version: str) -> None:
 
                     if description:
                         entry["description"] = description
+
+                    adjective = new_data.get("system", {}).get("adjective")
+                    if isinstance(adjective, str) and adjective.strip():
+                        entry["adjective"] = adjective.strip()
+                        transifex_dict["mapping"]["adjective"] = "system.adjective"
 
                     add_actions_from_record(entry, new_data, name, transifex_dict)
 
