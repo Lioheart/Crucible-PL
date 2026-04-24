@@ -64,9 +64,7 @@
             "actors": {
                 "Baizaz": {
                     "name": "Baizaz",
-                    "tokenName": {
-                        "name": "Baizaz"
-                    },
+                    "tokenName": "Baizaz",
                     "items": {
                         "Heavy Hide": {
                             "name": "Heavy Hide"
@@ -101,9 +99,7 @@
                 },
                 "Huiana": {
                     "name": "Huiana",
-                    "tokenName": {
-                        "name": "Huiana"
-                    },
+                    "tokenName": "Huiana",
                     "items": {
                         "Bite": {
                             "name": "Bite"
@@ -127,9 +123,7 @@
                 },
                 "Anvil": {
                     "name": "Anvil",
-                    "tokenName": {
-                        "name": "Anvil"
-                    },
+                    "tokenName": "Anvil",
                     "items": {
                         "Heavy Hides": {
                             "name": "Heavy Hides",
@@ -221,9 +215,7 @@
                 },
                 "Hammer": {
                     "name": "Hammer",
-                    "tokenName": {
-                        "name": "Hammer"
-                    },
+                    "tokenName": "Hammer",
                     "items": {
                         "Hand Axe": {
                             "name": "Hand Axe",
@@ -304,9 +296,7 @@
                 },
                 "Orivech": {
                     "name": "Orivech",
-                    "tokenName": {
-                        "name": "Orivech"
-                    },
+                    "tokenName": "Orivech",
                     "items": {
                         "Skull Fetish": {
                             "name": "Skull Fetish",
@@ -417,9 +407,7 @@
                 },
                 "Skeletal Archer": {
                     "name": "Skeletal Archer",
-                    "tokenName": {
-                        "name": "Skeletal Archer"
-                    },
+                    "tokenName": "Skeletal Archer",
                     "items": {
                         "Deathly Armor": {
                             "name": "Deathly Armor"
@@ -466,9 +454,7 @@
                 },
                 "Skeletal Spearman": {
                     "name": "Skeletal Spearman",
-                    "tokenName": {
-                        "name": "Skeletal Spearman"
-                    },
+                    "tokenName": "Skeletal Spearman",
                     "items": {
                         "Deathly Armor": {
                             "name": "Deathly Armor"
@@ -524,9 +510,7 @@
                 },
                 "Koy Rent": {
                     "name": "Koy Rent",
-                    "tokenName": {
-                        "name": "Koy Rent"
-                    },
+                    "tokenName": "Koy Rent",
                     "items": {
                         "Thick Fur": {
                             "name": "Thick Fur"
@@ -652,9 +636,7 @@
                 },
                 "Harbinger of Disease": {
                     "name": "Harbinger of Disease",
-                    "tokenName": {
-                        "name": "Harbinger of Disease"
-                    },
+                    "tokenName": "Harbinger of Disease",
                     "items": {
                         "Pestilent Tongue": {
                             "name": "Pestilent Tongue"
@@ -727,9 +709,7 @@
                 },
                 "Harbinger of Fear": {
                     "name": "Harbinger of Fear",
-                    "tokenName": {
-                        "name": "Harbinger of Fear"
-                    },
+                    "tokenName": "Harbinger of Fear",
                     "items": {
                         "Psychic Maw": {
                             "name": "Psychic Maw"
@@ -777,9 +757,7 @@
                 },
                 "Harbinger of Madness": {
                     "name": "Harbinger of Madness",
-                    "tokenName": {
-                        "name": "Harbinger of Madness"
-                    },
+                    "tokenName": "Harbinger of Madness",
                     "items": {
                         "Inchoate Tendrils": {
                             "name": "Inchoate Tendrils"
@@ -832,9 +810,7 @@
                 },
                 "Zarajah": {
                     "name": "Zarajah",
-                    "tokenName": {
-                        "name": "Zarajah"
-                    },
+                    "tokenName": "Zarajah",
                     "items": {
                         "Flame Staff": {
                             "name": "Flame Staff",
@@ -989,9 +965,7 @@
                 },
                 "Agnath": {
                     "name": "Agnath",
-                    "tokenName": {
-                        "name": "Agnath"
-                    },
+                    "tokenName": "Agnath",
                     "items": {
                         "Splint Mail": {
                             "name": "Splint Mail",
@@ -1153,9 +1127,7 @@
                 },
                 "Belladonna": {
                     "name": "Belladonna",
-                    "tokenName": {
-                        "name": "Belladonna"
-                    },
+                    "tokenName": "Belladonna",
                     "items": {
                         "Dagger": {
                             "name": "Dagger",
@@ -1407,9 +1379,7 @@
                 },
                 "Duurath": {
                     "name": "Duurath",
-                    "tokenName": {
-                        "name": "Duurath"
-                    },
+                    "tokenName": "Duurath",
                     "items": {
                         "Scale Mail": {
                             "name": "Scale Mail",
@@ -1669,9 +1639,7 @@
                 },
                 "Eliorwen": {
                     "name": "Eliorwen",
-                    "tokenName": {
-                        "name": "Eliorwen"
-                    },
+                    "tokenName": "Eliorwen",
                     "items": {
                         "Longbow": {
                             "name": "Longbow",
@@ -1871,9 +1839,7 @@
                 },
                 "Fizzit": {
                     "name": "Fizzit",
-                    "tokenName": {
-                        "name": "Fizzit"
-                    },
+                    "tokenName": "Fizzit",
                     "items": {
                         "Ring Mail": {
                             "name": "Ring Mail",
@@ -2061,9 +2027,7 @@
                 },
                 "Kagura": {
                     "name": "Kagura",
-                    "tokenName": {
-                        "name": "Kagura"
-                    },
+                    "tokenName": "Kagura",
                     "items": {
                         "Ice Staff": {
                             "name": "Ice Staff",
@@ -2230,9 +2194,7 @@
                 },
                 "Ulfen": {
                     "name": "Ulfen",
-                    "tokenName": {
-                        "name": "Ulfen"
-                    },
+                    "tokenName": "Ulfen",
                     "items": {
                         "Scale Mail": {
                             "name": "Scale Mail",
@@ -2457,45 +2419,51 @@
                 },
                 "Party": {
                     "name": "Party",
-                    "tokenName": {
-                        "name": "Party"
-                    }
+                    "tokenName": "Party"
                 }
             }
         }
     },
     "mapping": {
-        "tokenName": {
-            "path": "prototypeToken.name",
-            "converter": "nested_object_converter"
-        },
-        "items": {
-            "path": "items",
-            "converter": "embedded_items_converter"
-        },
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "ancestry": {
-            "path": "system.details.ancestry",
-            "converter": "embedded_object_with_actions_converter"
-        },
-        "background": {
-            "path": "system.details.background",
-            "converter": "embedded_object_with_actions_converter"
-        },
-        "archetype": {
-            "path": "system.details.archetype",
-            "converter": "embedded_object_with_actions_converter"
-        },
-        "taxonomy": {
-            "path": "system.details.taxonomy",
-            "converter": "embedded_object_with_actions_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "embedded_biography_converter"
+        "actors": {
+            "path": "actors",
+            "converter": "document",
+            "documentType": "Actor",
+            "cardinality": "many",
+            "mapping": {
+                "tokenName": {
+                    "path": "prototypeToken.name",
+                    "converter": "name"
+                },
+                "items": {
+                    "path": "items",
+                    "converter": "embedded_items_converter"
+                },
+                "actions": {
+                    "path": "system.actions",
+                    "converter": "actions_converter"
+                },
+                "ancestry": {
+                    "path": "system.details.ancestry",
+                    "converter": "embedded_object_with_actions_converter"
+                },
+                "background": {
+                    "path": "system.details.background",
+                    "converter": "embedded_object_with_actions_converter"
+                },
+                "archetype": {
+                    "path": "system.details.archetype",
+                    "converter": "embedded_object_with_actions_converter"
+                },
+                "taxonomy": {
+                    "path": "system.details.taxonomy",
+                    "converter": "embedded_object_with_actions_converter"
+                },
+                "biography": {
+                    "path": "system.details.biography",
+                    "converter": "embedded_biography_converter"
+                }
+            }
         }
     }
 }
