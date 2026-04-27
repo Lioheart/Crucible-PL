@@ -1063,7 +1063,7 @@
     },
     "TOOLTIPS": {
       "Currency": "Nagroda pieniężna",
-      "Milestone": "Nagroda kamieni milowych"
+      "Milestone": "Nagroda w postaci kamieni milowych"
     },
     "WARNINGS": {
       "CannotAfford": "Następujący aktorzy nie mogą sobie pozwolić na koszt tego wzbogacacza: {actors}",
