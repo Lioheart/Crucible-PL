@@ -934,6 +934,50 @@ def populate_rules_entry(entry: dict, new_data: dict, id_index: dict, transifex_
             entry["pages"][page_name]["name"] = page_name
             entry["pages"][page_name]["text"] = text_content
 
+def populate_embedded_affixes(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+    effect_ids = new_data.get("effects", [])
+    if not isinstance(effect_ids, list) or not effect_ids:
+        return
+
+    affixes = {}
+
+    for effect_id in effect_ids:
+        affix = id_index.get(effect_id)
+        if not isinstance(affix, dict) or affix.get("type") != "affix":
+            continue
+
+        affix_name = (affix.get("name") or "").strip()
+        if not affix_name:
+            continue
+
+        affix_entry = {
+            "name": affix_name
+        }
+
+        description = affix.get("description")
+        if isinstance(description, str) and description.strip():
+            affix_entry["description"] = description.strip()
+
+        adjective = affix.get("system", {}).get("adjective")
+        if isinstance(adjective, str) and adjective.strip():
+            affix_entry["adjective"] = adjective.strip()
+
+        add_actions_from_record(
+            target_entry=affix_entry,
+            source_record=affix,
+            fallback_name=affix_name,
+            transifex_dict=transifex_dict,
+            add_mapping=False
+        )
+
+        affixes[affix_name] = affix_entry
+
+    if affixes:
+        entry["affixes"] = affixes
+        transifex_dict["mapping"]["affixes"] = {
+            "path": "effects",
+            "converter": "embedded_affixes_converter"
+        }
 
 def process_files(folders: str, version: str) -> None:
     dict_key = []
@@ -1020,6 +1064,9 @@ def process_files(folders: str, version: str) -> None:
                     transifex_dict["folders"][name] = name
                     continue
 
+                if pack_name == "equipment" and new_data.get("type") == "affix":
+                    continue
+
                 # Specjalna obsługa rules - tylko rekordy z pages są entry
                 if pack_name == 'rules':
                     # foldery rules są już łapane wyżej przez color+folder
@@ -1052,6 +1099,9 @@ def process_files(folders: str, version: str) -> None:
 
                     if description:
                         entry["description"] = description
+
+                    if pack_name == "equipment":
+                        populate_embedded_affixes(entry, new_data, id_index, transifex_dict)
 
                     adjective = new_data.get("system", {}).get("adjective")
                     if isinstance(adjective, str) and adjective.strip():
