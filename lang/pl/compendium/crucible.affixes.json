@@ -52,7 +52,7 @@
         },
         "Arrow Spellcraft": {
             "name": "Czaroznastwo strzały",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Strzała</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Strzała</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Grot</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Grot</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
             "adjective": "Grotu"
         },
         "Aspect Spellcraft": {
@@ -192,7 +192,7 @@
         },
         "Disguise": {
             "name": "Przebrania",
-            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "description": "<p>Zapewnia akcję <strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
             "adjective": "Przebrania",
             "actions": {
                 "Disguise": {
@@ -619,9 +619,9 @@
             "adjective": "Uderzenia"
         },
         "Surge Spellcraft": {
-            "name": "Czaroznastwo wzrostu",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wzrost</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wzrost</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
-            "adjective": "Wzrostu"
+            "name": "Czaroznastwo fali",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Fala</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Fala</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
+            "adjective": "Fali"
         },
         "Tenacity": {
             "name": "Uporu",
