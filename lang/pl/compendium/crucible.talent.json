@@ -288,7 +288,7 @@
                 "Body Block": {
                     "name": "Blok ciałem",
                     "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
-                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Otarcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
+                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
                 }
             }
         },
@@ -890,7 +890,7 @@
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
-            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Otarcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
+            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
         },
         "Impetus": {
             "name": "Impet",
