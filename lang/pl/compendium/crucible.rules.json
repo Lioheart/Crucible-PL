@@ -208,7 +208,7 @@
                 },
                 "Enraged": {
                     "name": "Wściekły",
-                    "text": "<p>Gdy stworzenie jest <strong>Wściekłe</strong>, działa lekkomyślnie i gorzej się broni. Obrony Bkolu i Parowania stworzenia będącego <strong>Wściekłym</strong> stają się równe zero, a stworzenie to nie może wydawać Skupienia.</p>"
+                    "text": "<p>Gdy stworzenie jest <strong>Wściekłe</strong>, działa lekkomyślnie i gorzej się broni. Obrony Bloku i Parowania stworzenia będącego <strong>Wściekłym</strong> stają się równe zero, a stworzenie to nie może wydawać Skupienia.</p>"
                 },
                 "Exposed": {
                     "name": "Odsłonięty",
