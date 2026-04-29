@@ -2,7 +2,7 @@
     "label": "Talent",
     "folders": {
         "Shield": "Tarcza",
-        "Toolbelt": "Pas narzędziowy",
+        "Toolbelt": "Pas podręczny",
         "Skills": "Umiejętności",
         "Two-Handed": "Dwuręczny",
         "Morale": "Morale",
@@ -116,7 +116,7 @@
         },
         "Arcane Archer": {
             "name": "Tajemny łucznik",
-            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Strzała</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armor Crusher": {
             "name": "Niszczyciel zbroi",
@@ -124,7 +124,7 @@
             "actions": {
                 "Armor Crusher": {
                     "name": "Niszczyciel zbroi",
-                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Otarcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -134,7 +134,7 @@
         },
         "Armored Instinct": {
             "name": "Pancerny instynkt",
-            "description": "<p>Instynktownie przechylasz ciało, aby złagodzić siłę odbitych ciosów. Gdy atak skierowany przeciwko tobie spowodowałby <strong>Otarcie</strong>, zyskujesz <strong>+1 do odporności</strong> na zadane obrażenia.</p>"
+            "description": "<p>Instynktownie przechylasz ciało, aby złagodzić siłę odbitych ciosów. Gdy atak skierowany przeciwko tobie spowodowałby <strong>Draśnięcie</strong>, zyskujesz <strong>+1 do odporności</strong> na zadane obrażenia.</p>"
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
@@ -287,8 +287,8 @@
             "actions": {
                 "Body Block": {
                     "name": "Blok ciałem",
-                    "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Otarcie.",
-                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Otarcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
+                    "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
+                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
                 }
             }
         },
@@ -743,7 +743,7 @@
         },
         "Gesture: Arrow": {
             "name": "Gest: Grot",
-            "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Strzała wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+            "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
         },
         "Gesture: Aspect": {
             "name": "Gest: Aspekt",
@@ -798,8 +798,8 @@
             "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
         },
         "Gesture: Surge": {
-            "name": "Gest: Wzrost",
-            "description": "<p>Kierujesz tajemniczą moc runy w gwałtowną falę energii, która wyrywa się z miejsca, w którym się znajdujesz. </p><p>Gest Wzrostu skaluje się wraz z <strong>Mądrością</strong> i tworzy linię o szerokości 10 stóp i długości 15 stóp, wychodzącą od rzucającego zaklęcie, zadającą <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga użycia <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> oraz <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów.</p>"
+            "name": "Gest: Fala",
+            "description": "<p>Kierujesz tajemniczą moc runy w gwałtowną falę energii, która wyrywa się z miejsca, w którym się znajdujesz. </p><p>Gest Fali skaluje się wraz z <strong>Mądrością</strong> i tworzy linię o szerokości 10 stóp i długości 15 stóp, wychodzącą od rzucającego zaklęcie, zadającą <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga użycia <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> oraz <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów.</p>"
         },
         "Gesture: Ward": {
             "name": "Gest: Glif",
@@ -867,7 +867,7 @@
             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
         },
         "Heavy Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią ciężką",
+            "name": "Szkolenie z broni ciężkiej",
             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
             "actions": {
                 "Heavy Strike": {
@@ -890,7 +890,7 @@
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
-            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Otarcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
+            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
         },
         "Impetus": {
             "name": "Impet",
@@ -991,7 +991,7 @@
             "actions": {
                 "Interpose": {
                     "name": "Wtrącenie",
-                    "description": "<p>W ramach <strong>Reakcji</strong>, gdy sąsiadujący sojusznik zostanie trafiony lub otrzyma otarcie w wyniku ataku na pojedynczy cel, który był wymierzony w jego <strong>Obronę fizyczną</strong>, możesz wkroczyć między was, aby stać się celem tego ataku.</p><p>Atak zostaje unieważniony i jest ponownie oceniany w stosunku do twojej <strong>Obrony fizycznej</strong> przy użyciu tych samych rzutów kostką, co w przypadku pierwotnego ataku. Konsekwencje ataku są rozstrzygane zgodnie z tym nowym wynikiem, przy czym to ty jesteś jego celem.</p>"
+                    "description": "<p>W ramach <strong>Reakcji</strong>, gdy sąsiadujący sojusznik zostanie trafiony lub otrzyma draśnięcie w wyniku ataku na pojedynczy cel, który był wymierzony w jego <strong>Obronę fizyczną</strong>, możesz wkroczyć między was, aby stać się celem tego ataku.</p><p>Atak zostaje unieważniony i jest ponownie oceniany w stosunku do twojej <strong>Obrony fizycznej</strong> przy użyciu tych samych rzutów kostką, co w przypadku pierwotnego ataku. Konsekwencje ataku są rozstrzygane zgodnie z tym nowym wynikiem, przy czym to ty jesteś jego celem.</p>"
                 }
             }
         },
@@ -1121,7 +1121,7 @@
             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Lekką</strong> i <strong>Wyważoną</strong>.</p>"
         },
         "Light Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią lekką",
+            "name": "Szkolenie z broni lekkiej",
             "description": "<p>Wiesz, jak płynnie posługiwać się bronią lekką, wykazując się dużą zwinnością i gracją w walce. Jesteś <strong>Wyszkolony</strong> w posługiwaniu się wszystkimi rodzajami broni z kategorii broni <strong>Lekkiej</strong> i <strong>Wyważonej</strong>.</p>",
             "actions": {
                 "Lunge": {
@@ -1162,7 +1162,7 @@
             "description": "<p>Posiadasz biegłą znajomość obsługi kusz, broni palnej i innych rodzajów broni mechanicznej. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>premię +1 do umiejętności</strong> w kategorii broni <strong>Mechanicznej</strong>.</p>"
         },
         "Mechanical Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią mechaniczną",
+            "name": "Szkolenie z broni mechanicznej",
             "description": "<p>Znasz się na konstrukcji i obsłudze kusz, broni palnej i innych podobnych rodzajów uzbrojenia. Posiadasz <strong>Wyszkolenie</strong> w zakresie broni z kategorii <strong>Mechanicznej</strong>.</p>",
             "actions": {
                 "Rapid Reload": {
@@ -1224,7 +1224,7 @@
             "description": "<p>Płynnie posługujesz się naturalną bronią ciała. Otrzymujesz rangę <strong>Specjalisty</strong> oraz premię <strong>+1 do umiejętności</strong> z bronią z kategorii <strong>Naturalna</strong>.</p>"
         },
         "Natural Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią naturalną",
+            "name": "Szkolenie z broni naturalnej",
             "description": "<p>Posiadasz rozbudowaną znajomość wykorzystywania cech własnego ciała jako naturalnej broni, w tym pazurów, szczęk, ogonów lub innych mechanizmów samoobrony. Jesteś <strong>Wyszkolony</strong> w posługiwaniu się bronią z kategorii <strong>Naturalnej</strong>.</p>",
             "actions": {
                 "Wild Strike": {
@@ -1398,7 +1398,7 @@
             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
         },
         "Projectile Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią miotaną",
+            "name": "Szkolenie z broni miotanej",
             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
             "actions": {
                 "Quick Draw": {
@@ -1527,7 +1527,7 @@
         },
         "Rune: Illusion": {
             "name": "Runa: Iluzja",
-            "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje obronę <strong>Woli</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
+            "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
             "actions": {
                 "Seeming": {
                     "name": "Pozorność",
@@ -1547,7 +1547,7 @@
         },
         "Rune: Life": {
             "name": "Runa: Życie",
-            "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong> lub zadaje obrażenia <strong>Trucizną</strong>, którym przeciwdziała <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
+            "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong> lub zadaje obrażenia <strong>Trucizną</strong>, którym przeciwstawia się <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
             "actions": {
                 "Bloom": {
                     "name": "Kwitnienie",
@@ -1567,7 +1567,7 @@
         },
         "Rune: Oblivion": {
             "name": "Runa: Nicość",
-            "description": "<p>Chaotyczna siła niszczenia i unicestwiania istnienia. Runa Nicości rządzi rozkładem materii lub dekoherencją ducha.</p><p>Runa Nicości skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Pustki</strong> <strong>Morale</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Duszy</strong>.</p>",
+            "description": "<p>Chaotyczna siła niszczenia i unicestwiania istnienia. Runa Nicości rządzi rozkładem materii lub dekoherencją ducha.</p><p>Runa Nicości skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia od <strong>Pustki</strong> <strong>Morale</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Duszy</strong>.</p>",
             "actions": {
                 "Erase": {
                     "name": "Wymazanie",
@@ -1672,7 +1672,7 @@
             "description": "<p>Posiadasz biegłą znajomość posługiwania się tarczami w walce. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Tarcza</strong>.</p>"
         },
         "Shield Combat Training": {
-            "name": "Szkolenie z walki z użyciem tarczy",
+            "name": "Szkolenie z walki tarczą",
             "description": "<p>Jesteś wprawiony w walce z tarczą, używając jej do uderzania przeciwników i wytrącania ich z równowagi. Masz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Tarcza</strong>.</p>",
             "actions": {
                 "Shield Bash": {
@@ -1881,7 +1881,7 @@
             "description": "<p>Posiadasz biegłą wiedzę na temat używania talizmanów, kul, ognisk lub innych podobnych broni. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Talizmanów</strong>.</p>"
         },
         "Talisman Weapon Training": {
-            "name": "Szkolenie z posługiwania się talizmanami",
+            "name": "Szkolenie z talizmanów",
             "description": "<p>Rozumiesz tajemnicze zastosowanie talizmanów, kul, ognisk lub innych podobnych narzędzi służących do kierowania magią lub wzmacniania zaklęć. Posiadasz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Talizmanów</strong>.</p>",
             "actions": {
                 "Refocus": {
