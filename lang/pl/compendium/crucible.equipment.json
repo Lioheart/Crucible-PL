@@ -363,9 +363,9 @@
             "adjective": "Unikania"
         },
         "Expanded Toolbelt": {
-            "name": "Rozszerzony pas podręczny",
+            "name": "Rozszerzony pas narzędziowy",
             "description": {
-                "public": "<p>Rozszerzony pas podręczny w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca w pasie podręcznym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce w pasie podręcznym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca w pasie podręcznym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca w pasie podręcznym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca w pasie podręcznym</p></li></ul>"
+                "public": "<p>Rozszerzony pas narzędziowy w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca na pasie narzędziowym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce na pasie narzędziowym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca na pasie narzędziowym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca na pasie narzędziowym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca na pasie narzędziowym</p></li></ul>"
             }
         },
         "Firestarter": {
