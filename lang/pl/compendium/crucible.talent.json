@@ -124,7 +124,7 @@
             "actions": {
                 "Armor Crusher": {
                     "name": "Niszczyciel zbroi",
-                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Otarcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -134,7 +134,7 @@
         },
         "Armored Instinct": {
             "name": "Pancerny instynkt",
-            "description": "<p>Instynktownie przechylasz ciało, aby złagodzić siłę odbitych ciosów. Gdy atak skierowany przeciwko tobie spowodowałby <strong>Otarcie</strong>, zyskujesz <strong>+1 do odporności</strong> na zadane obrażenia.</p>"
+            "description": "<p>Instynktownie przechylasz ciało, aby złagodzić siłę odbitych ciosów. Gdy atak skierowany przeciwko tobie spowodowałby <strong>Draśnięcie</strong>, zyskujesz <strong>+1 do odporności</strong> na zadane obrażenia.</p>"
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
