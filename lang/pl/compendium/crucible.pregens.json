@@ -524,7 +524,7 @@
                 "Body Block": {
                     "name": "Blok ciałem",
                     "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
-                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Otarcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
+                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
                 }
             }
         },
@@ -683,7 +683,7 @@
                         "Body Block": {
                             "name": "Blok ciałem",
                             "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
-                            "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Otarcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
+                            "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
                         }
                     }
                 },
