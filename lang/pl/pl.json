@@ -332,7 +332,7 @@
       "ThrownTooltip": "Ta akcja polega na wykonaniu ataku bronią rzucaną.",
       "TwoHanded": "Dwuręczny",
       "TwoHandedTooltip": "Wykonanie tej akcji wymaga użycia broni dwuręcznej.",
-      "Unarmed": "Nieuzbrojona",
+      "Unarmed": "Nieuzbrojony",
       "UnarmedTooltip": "Aby wykonać tę akcję, musisz być całkowicie nieuzbrojony.",
       "Unarmored": "Nieopancerzony",
       "UnarmoredTooltip": "Aby wykonać tę akcję, musisz być nieopancerzony.",
@@ -386,7 +386,7 @@
       "SPECIFIC": {
         "BODY_BLOCK": {
           "AlreadyConfirmed": "Atak na Ciebie został już potwierdzony i nie można go już zablokować.",
-          "InvalidOutcome": "Z Bloku ciałem możesz skorzystać tylko wtedy, gdy atak skierowany przeciwko tobie został zablokowany przez Pancerz lub Otarcie.",
+          "InvalidOutcome": "Z Bloku ciałem możesz skorzystać tylko wtedy, gdy atak skierowany przeciwko tobie został zablokowany przez Pancerz lub Draśnięcie.",
           "MeleeOnly": "Ze zdolności Bloku ciałem można skorzystać wyłącznie w odpowiedzi na nadchodzący atak wręcz."
         },
         "DELAY": {
@@ -395,7 +395,7 @@
         },
         "INTERPOSE": {
           "AllyMustBeTarget": "Wybrany sojusznik musi być celem ostatniego ataku.",
-          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub otarł się o twojego sojusznika.",
+          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub drasnął twojego sojusznika.",
           "RequiresStrike": "Wtrącenie wymaga, aby ostatnią akcją było uderzenie bronią.",
           "SingleTarget": "Wtrącenie może być użyte tylko przeciwko atakowi skierowanemu na pojedynczy cel."
         }
@@ -757,7 +757,7 @@
       },
       "TOOLBELT": {
         "empty": "Wyposaż się w maksymalnie {slots} narzędzi lub materiałów eksploatacyjnych z Plecaka, przełączając ikonę tarczy.",
-        "header": "Pas narzędziowy"
+        "header": "Pas podręczny"
       },
       "TRAINING": {
         "header": "Talenty szkoleniowe"
@@ -1021,7 +1021,7 @@
       "Armor": "Pancerz",
       "Block": "Blok",
       "Dodge": "Unik",
-      "Glance": "Otarcie",
+      "Glance": "Draśnięcie",
       "Hit": "Trafienie",
       "Miss": "Chybienie",
       "Parry": "Parowanie",
@@ -1063,7 +1063,7 @@
     },
     "TOOLTIPS": {
       "Currency": "Nagroda pieniężna",
-      "Milestone": "Nagroda kamieni milowych"
+      "Milestone": "Nagroda w postaci kamieni milowych"
     },
     "WARNINGS": {
       "CannotAfford": "Następujący aktorzy nie mogą sobie pozwolić na koszt tego wzbogacacza: {actors}",
@@ -1904,7 +1904,7 @@
       "Sense": "Zmysł",
       "Step": "Krok",
       "Strike": "Uderzenie",
-      "Surge": "Wzrost",
+      "Surge": "Fala",
       "Touch": "Dotyk",
       "Ward": "Glif"
     },
@@ -2315,7 +2315,7 @@
       "ShieldLight": "Lekka tarcza",
       "Simple": "Prosta",
       "Talisman": "Talizman",
-      "Unarmed": "Nieuzbrojona"
+      "Unarmed": "Nieuzbrojony"
     },
     "FIELDS": {
       "damageType": {
