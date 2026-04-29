@@ -433,7 +433,7 @@
                             "description": "<p>Jesteś ekspertem w strzelaniu z broni dystansowej, jednocześnie unikając ataków wroga. Po wykonaniu ataku bronią dystansową zyskujesz dodatkowy ruch równy połowie swojej wartości <strong>Biegu</strong>.</p>"
                         },
                         "Projectile Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią miotaną",
+                            "name": "Szkolenie z broni miotanej",
                             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
                             "actions": {
                                 "Quick Draw": {
@@ -489,7 +489,7 @@
                             }
                         },
                         "Light Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią lekką",
+                            "name": "Szkolenie z broni lekkiej",
                             "description": "<p>Wiesz, jak płynnie posługiwać się bronią lekką, wykazując się dużą zwinnością i gracją w walce. Jesteś <strong>Wyszkolony</strong> w posługiwaniu się wszystkimi rodzajami broni z kategorii broni <strong>Lekkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Lunge": {
@@ -615,7 +615,7 @@
                             }
                         },
                         "Heavy Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią ciężką",
+                            "name": "Szkolenie z broni ciężkiej",
                             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Heavy Strike": {
