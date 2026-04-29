@@ -2081,7 +2081,7 @@
                             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
                         },
                         "Talisman Weapon Training": {
-                            "name": "Szkolenie z posługiwania się talizmanami",
+                            "name": "Szkolenie z talizmanów",
                             "description": "<p>Rozumiesz tajemnicze zastosowanie talizmanów, kul, ognisk lub innych podobnych narzędzi służących do kierowania magią lub wzmacniania zaklęć. Posiadasz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Talizmanów</strong>.</p>",
                             "actions": {
                                 "Refocus": {
@@ -2352,7 +2352,7 @@
                             }
                         },
                         "Heavy Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią ciężką",
+                            "name": "Szkolenie z broni ciężkiej",
                             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Heavy Strike": {
