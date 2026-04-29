@@ -1398,7 +1398,7 @@
             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
         },
         "Projectile Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią miotaną",
+            "name": "Szkolenie z broni miotanej",
             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
             "actions": {
                 "Quick Draw": {
@@ -1672,7 +1672,7 @@
             "description": "<p>Posiadasz biegłą znajomość posługiwania się tarczami w walce. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Tarcza</strong>.</p>"
         },
         "Shield Combat Training": {
-            "name": "Szkolenie z walki z użyciem tarczy",
+            "name": "Szkolenie z walki tarczą",
             "description": "<p>Jesteś wprawiony w walce z tarczą, używając jej do uderzania przeciwników i wytrącania ich z równowagi. Masz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Tarcza</strong>.</p>",
             "actions": {
                 "Shield Bash": {
@@ -1881,7 +1881,7 @@
             "description": "<p>Posiadasz biegłą wiedzę na temat używania talizmanów, kul, ognisk lub innych podobnych broni. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Talizmanów</strong>.</p>"
         },
         "Talisman Weapon Training": {
-            "name": "Szkolenie z posługiwania się talizmanami",
+            "name": "Szkolenie z talizmanów",
             "description": "<p>Rozumiesz tajemnicze zastosowanie talizmanów, kul, ognisk lub innych podobnych narzędzi służących do kierowania magią lub wzmacniania zaklęć. Posiadasz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Talizmanów</strong>.</p>",
             "actions": {
                 "Refocus": {
