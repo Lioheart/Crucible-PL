@@ -991,7 +991,7 @@
             "actions": {
                 "Interpose": {
                     "name": "Wtrącenie",
-                    "description": "<p>W ramach <strong>Reakcji</strong>, gdy sąsiadujący sojusznik zostanie trafiony lub otrzyma otarcie w wyniku ataku na pojedynczy cel, który był wymierzony w jego <strong>Obronę fizyczną</strong>, możesz wkroczyć między was, aby stać się celem tego ataku.</p><p>Atak zostaje unieważniony i jest ponownie oceniany w stosunku do twojej <strong>Obrony fizycznej</strong> przy użyciu tych samych rzutów kostką, co w przypadku pierwotnego ataku. Konsekwencje ataku są rozstrzygane zgodnie z tym nowym wynikiem, przy czym to ty jesteś jego celem.</p>"
+                    "description": "<p>W ramach <strong>Reakcji</strong>, gdy sąsiadujący sojusznik zostanie trafiony lub otrzyma draśnięcie w wyniku ataku na pojedynczy cel, który był wymierzony w jego <strong>Obronę fizyczną</strong>, możesz wkroczyć między was, aby stać się celem tego ataku.</p><p>Atak zostaje unieważniony i jest ponownie oceniany w stosunku do twojej <strong>Obrony fizycznej</strong> przy użyciu tych samych rzutów kostką, co w przypadku pierwotnego ataku. Konsekwencje ataku są rozstrzygane zgodnie z tym nowym wynikiem, przy czym to ty jesteś jego celem.</p>"
                 }
             }
         },
