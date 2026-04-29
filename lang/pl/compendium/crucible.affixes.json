@@ -619,8 +619,8 @@
             "adjective": "Uderzenia"
         },
         "Surge Spellcraft": {
-            "name": "Czaroznastwo wzrostu",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Wzrost</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Wzrost</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
+            "name": "Czaroznastwo fali",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Fala</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Fala</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
             "adjective": "Wzrostu"
         },
         "Tenacity": {
