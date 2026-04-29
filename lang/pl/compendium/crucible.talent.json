@@ -799,7 +799,7 @@
         },
         "Gesture: Surge": {
             "name": "Gest: Fala",
-            "description": "<p>Kierujesz tajemniczą moc runy w gwałtowną falę energii, która wyrywa się z miejsca, w którym się znajdujesz. </p><p>Gest Wzrostu skaluje się wraz z <strong>Mądrością</strong> i tworzy linię o szerokości 10 stóp i długości 15 stóp, wychodzącą od rzucającego zaklęcie, zadającą <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga użycia <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> oraz <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów.</p>"
+            "description": "<p>Kierujesz tajemniczą moc runy w gwałtowną falę energii, która wyrywa się z miejsca, w którym się znajdujesz. </p><p>Gest Fali skaluje się wraz z <strong>Mądrością</strong> i tworzy linię o szerokości 10 stóp i długości 15 stóp, wychodzącą od rzucającego zaklęcie, zadającą <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga użycia <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> oraz <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów.</p>"
         },
         "Gesture: Ward": {
             "name": "Gest: Glif",
