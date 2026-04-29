@@ -73,6 +73,13 @@
             "description": {
                 "public": "<blockquote><p>This brightly colored necklace holds a stone amulet that glows with a rune that crackles faintly with electrical resonance. While holding it you have the surreal sensation of the world around you slowing down ever so slightly.</p></blockquote><p>This enchanted amulet provides a bonus to <strong>Reflex</strong> defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Amulet with the @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Nimbleness} suffix.</p><p>This affix can be applied to any armor or accessory and this amulet could be further enchanted with a Tier 1 prefix.</p>"
+            },
+            "affixes": {
+                "Nimbleness": {
+                    "name": "Nimbleness",
+                    "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "adjective": "Nimbleness"
+                }
             }
         },
         "Antitoxin": {
@@ -214,6 +221,13 @@
             "description": {
                 "public": "<blockquote><p>This charm-covered necklace looks rustic, but upon close inspection you notice a delicate craft imbued within its workmanship. While holding it you feel your breaths deepen and the minor aches within your muscles dissipate.</p></blockquote><p>This enchanted charm provides a bonus to <strong>Fortitude</strong> defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Charm with the @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Tenacity} suffix.</p><p>This affix can be applied to any armor or accessory and this charm could be further enchanted with a Tier 1 prefix.</p>"
+            },
+            "affixes": {
+                "Tenacity": {
+                    "name": "Tenacity",
+                    "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
+                    "adjective": "Tenacity"
+                }
             }
         },
         "Chirurgeon's Toolkit": {
@@ -263,6 +277,29 @@
             "description": {
                 "public": "<blockquote><p>A nondescript black cloak that seems as if it would match with almost any outfit.</p></blockquote><p>This enchanted cloak provides an enchantment bonus to <strong>Diplomacy</strong> skill checks and grants the ability to assume an illusory <strong>Disguise</strong>.</p>",
                 "private": "<p>This item is presented as an example of a Fine Cloak with the @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomacy} prefix and the @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Disguise} suffix.</p>"
+            },
+            "affixes": {
+                "Disguise": {
+                    "name": "Disguise",
+                    "description": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
+                    "adjective": "Disguise",
+                    "actions": {
+                        "Disguise": {
+                            "name": "Disguise",
+                            "description": "<p>You assume an illusory appearance once per rest which alters your appearance as well as your attire. The illusion cannot alter your ancestry, but can change other aspects of your anatomy including your apparent gender. The item itself does not change in appearance and remains visible.</p><p>The illusion persists indefinitely and can be dismissed at-will. Once activated, this item cannot produce another illusion in this way until 24 hours have passed.</p>",
+                            "effects": [
+                                {
+                                    "name": "Disguise"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Diplomacy": {
+                    "name": "Diplomacy",
+                    "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Diplomatic"
+                }
             }
         },
         "Club": {
@@ -307,36 +344,10 @@
                 "public": "<p>A compact, tubular weapon designed to silently launch small, often poisoned projectiles, the dart gun is favored by assassins, beast handlers, and shadowy alchemists.</p>"
             }
         },
-        "Determination": {
-            "name": "Determination",
-            "affixDescription": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Determination"
-        },
-        "Diplomacy": {
-            "name": "Diplomacy",
-            "affixDescription": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
-            "adjective": "Diplomatic"
-        },
         "Disarming Toolkit": {
             "name": "Disarming Toolkit",
             "description": {
                 "public": "<p>A small leather pouch containing a set of pliers, cutters, awls and a set of collapsible metal rods that can be screwed together. Designed for the purposes of disarming or triggering snares, tripwires, pressure plates, and other common traps.</p>"
-            }
-        },
-        "Disguise": {
-            "name": "Disguise",
-            "affixDescription": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
-            "adjective": "Disguise",
-            "actions": {
-                "Disguise": {
-                    "name": "Disguise",
-                    "description": "<p>You assume an illusory appearance once per rest which alters your appearance as well as your attire. The illusion cannot alter your ancestry, but can change other aspects of your anatomy including your apparent gender. The item itself does not change in appearance and remains visible.</p><p>The illusion persists indefinitely and can be dismissed at-will. Once activated, this item cannot produce another illusion in this way until 24 hours have passed.</p>",
-                    "effects": [
-                        {
-                            "name": "Disguise"
-                        }
-                    ]
-                }
             }
         },
         "Dress Clothing": {
@@ -356,11 +367,6 @@
             "description": {
                 "public": "<p>A leather-bound wooden kitbag. Contains ritual candles, a small offering bowl, incense packets and powdered reagents, and a cloth mat to use as a work surface.</p>"
             }
-        },
-        "Evasion": {
-            "name": "Evasion",
-            "affixDescription": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Evasion"
         },
         "Expanded Toolbelt": {
             "name": "Expanded Toolbelt",
@@ -392,32 +398,10 @@
                 "public": "<p>A leather-bound quiver with sealable end, containing a mountable vice, spoke shave, brushes and a small spinner for winding braided string. If unlatched it unfolds into a mat that can serve as a flat work surface.</p>"
             }
         },
-        "Focusing": {
-            "name": "Focusing",
-            "affixDescription": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
-            "adjective": "Focusing",
-            "actions": {
-                "Replenish Focus": {
-                    "name": "Replenish Focus",
-                    "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
-                }
-            }
-        },
         "Glaive": {
             "name": "Glaive",
             "description": {
                 "public": "<p>A polearm with a curved, sword-like blade affixed to the end of a long shaft, the glaive sweeps through foes in broad, arcing strikes.</p>"
-            }
-        },
-        "Gliding": {
-            "name": "Gliding",
-            "affixDescription": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
-            "adjective": "Gliding",
-            "actions": {
-                "Gliding": {
-                    "name": "Gliding",
-                    "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
-                }
             }
         },
         "Glue": {
@@ -673,16 +657,18 @@
                 "public": "<p>The longsword is a double-edged blade wielded with two hands for balance and strength, usually featuring a large crossguard used for parrying blows.</p>"
             }
         },
-        "Luminary": {
-            "name": "Luminary",
-            "affixDescription": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix.</p>",
-            "adjective": "Luminary"
-        },
         "Luminary Band": {
             "name": "Luminary Band",
             "description": {
                 "public": "<blockquote><p>An intricately engraved golden ring that wraps around an elliptical glinting orange gemstone.</p></blockquote><p>This enchanted band provides boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>.</p>",
                 "private": "<p>This item is presented as an example of a Fine Band with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Luminary} prefix.</p><p>This affix can be applied to any accessory and this band could be further enchanted with a Tier 1 suffix.</p>"
+            },
+            "affixes": {
+                "Luminary": {
+                    "name": "Luminary",
+                    "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Luminary"
+                }
             }
         },
         "Lyre": {
@@ -725,11 +711,6 @@
                     ]
                 }
             }
-        },
-        "Nimbleness": {
-            "name": "Nimbleness",
-            "affixDescription": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Nimbleness"
         },
         "Padded Armor": {
             "name": "Padded Armor",
@@ -775,6 +756,13 @@
             "description": {
                 "public": "<blockquote><p>A graceful silver amulet embedded with blue jewels imbues you with a feeling of steadfastness while you clutch it, prepared to weather any challenge.</p></blockquote><p>This enchanted periapt provides a bonus to <strong>Willpower</strong> defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Periapt with the @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Determination} suffix.</p><p>This affix can be applied to any armor or accessory and this periapt could be further enchanted with a Tier 1 prefix.</p>"
+            },
+            "affixes": {
+                "Determination": {
+                    "name": "Determination",
+                    "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "adjective": "Determination"
+                }
             }
         },
         "Pickaxe": {
@@ -881,11 +869,6 @@
                 "public": "<p>A particularly sharp blade used for shaving or, in some cases, surgery.</p>"
             }
         },
-        "Reinforcement": {
-            "name": "Reinforcement",
-            "affixDescription": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Reinforcement"
-        },
         "Repair Kit (smith)": {
             "name": "Repair Kit (smith)",
             "description": {
@@ -916,6 +899,13 @@
             "description": {
                 "public": "<blockquote><p>This elegant ornamented ring feels slightly slick and difficult to grasp. While held it vibrates almost imperceptibly.</p></blockquote><p>This enchanted ring provides a bonus to <strong>Dodge</strong> defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Evasion} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
+            },
+            "affixes": {
+                "Evasion": {
+                    "name": "Evasion",
+                    "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "adjective": "Evasion"
+                }
             }
         },
         "Ring of Gliding": {
@@ -923,6 +913,19 @@
             "description": {
                 "public": "<blockquote><p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p></blockquote><p>This enchanted ring grants the ability to glide laterally during a fall.</p>",
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
+            },
+            "affixes": {
+                "Gliding": {
+                    "name": "Gliding",
+                    "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Gliding",
+                    "actions": {
+                        "Gliding": {
+                            "name": "Gliding",
+                            "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+                        }
+                    }
+                }
             }
         },
         "Ring of Reinforcement": {
@@ -930,6 +933,13 @@
             "description": {
                 "public": "<blockquote><p>This steel ring feels permanently cool to the touch and gives the sensation of weighing more than expected given its narrow band.</p></blockquote><p>This enchanted ring provides a bonus to <strong>Armor</strong> defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Reinforcement} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
+            },
+            "affixes": {
+                "Reinforcement": {
+                    "name": "Reinforcement",
+                    "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "adjective": "Reinforcement"
+                }
             }
         },
         "Rope": {
@@ -1090,6 +1100,19 @@
             "description": {
                 "public": "<blockquote><p>This ring made of an opaque stone that has been carefully carved with graceful, sweeping layers evoking an ancient aesthetic. The ring serves as a powerful spellcasting focus for the <strong>Invested</strong> wearer.</p></blockquote><p>This enchanted ring grants the ability to withdraw an additional reserve of <strong>Focus</strong> in moments of duress.</p>",
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Reserved Focus} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
+            },
+            "affixes": {
+                "Focusing": {
+                    "name": "Focusing",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Focusing",
+                    "actions": {
+                        "Replenish Focus": {
+                            "name": "Replenish Focus",
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
+                        }
+                    }
+                }
             }
         },
         "Spiked Greatclub": {
@@ -1160,11 +1183,6 @@
             "description": {
                 "public": "<p>A leather-bound wooden kitbag containing spools for thread, suitable needles and pins, a skinning knife awls, suitable for working with cloth and leather.</p>"
             }
-        },
-        "Tenacity": {
-            "name": "Tenacity",
-            "affixDescription": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Tenacity"
         },
         "Tent (caravan)": {
             "name": "Tent (caravan)",
@@ -1247,7 +1265,9 @@
                 "private": "private"
             }
         },
-        "affixDescription": "description",
-        "adjective": "system.adjective"
+        "affixes": {
+            "path": "effects",
+            "converter": "embedded_affixes_converter"
+        }
     }
 }
