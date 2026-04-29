@@ -1273,7 +1273,7 @@
                     "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Iluzji. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[confused] przy Trafieniach krytycznych.</p><p>Efekt Skonfundowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> i nakłada stan @Condition[disoriented].</p>"
                 },
                 "Talisman Weapon Training": {
-                    "name": "Szkolenie z posługiwania się talizmanami",
+                    "name": "Szkolenie z talizmanów",
                     "description": "<p>Rozumiesz tajemnicze zastosowanie talizmanów, kul, ognisk lub innych podobnych narzędzi służących do kierowania magią lub wzmacniania zaklęć. Posiadasz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Talizmanów</strong>.</p>",
                     "actions": {
                         "Refocus": {
@@ -1422,7 +1422,7 @@
             "name": "Biegłość w posługiwaniu się ciężką bronią"
         },
         "Heavy Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią ciężką",
+            "name": "Szkolenie z broni ciężkiej",
             "actions": {
                 "Heavy Strike": {
                     "name": "Mocne uderzenie",
