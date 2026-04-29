@@ -1032,7 +1032,7 @@
                 },
                 "Rune: Illusion": {
                     "name": "Runa: Iluzja",
-                    "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje obronę <strong>Woli</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
+                    "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
                     "actions": {
                         "Seeming": {
                             "name": "Pozorność",
@@ -1256,7 +1256,7 @@
                 },
                 "Rune: Illusion": {
                     "name": "Runa: Iluzja",
-                    "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje obronę <strong>Woli</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
+                    "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
                     "actions": {
                         "Seeming": {
                             "name": "Pozorność",
