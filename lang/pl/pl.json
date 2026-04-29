@@ -386,7 +386,7 @@
       "SPECIFIC": {
         "BODY_BLOCK": {
           "AlreadyConfirmed": "Atak na Ciebie został już potwierdzony i nie można go już zablokować.",
-          "InvalidOutcome": "Z Bloku ciałem możesz skorzystać tylko wtedy, gdy atak skierowany przeciwko tobie został zablokowany przez Pancerz lub Otarcie.",
+          "InvalidOutcome": "Z Bloku ciałem możesz skorzystać tylko wtedy, gdy atak skierowany przeciwko tobie został zablokowany przez Pancerz lub Draśnięcie.",
           "MeleeOnly": "Ze zdolności Bloku ciałem można skorzystać wyłącznie w odpowiedzi na nadchodzący atak wręcz."
         },
         "DELAY": {
