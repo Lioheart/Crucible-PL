@@ -1952,7 +1952,7 @@
             "name": "Biegłość w walce tarczą"
         },
         "Shield Combat Training": {
-            "name": "Szkolenie z walki z użyciem tarczy",
+            "name": "Szkolenie z walki tarczą",
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
@@ -2034,7 +2034,7 @@
             }
         },
         "Talisman Weapon Training": {
-            "name": "Szkolenie z posługiwania się talizmanami",
+            "name": "Szkolenie z talizmanów",
             "actions": {
                 "Refocus": {
                     "name": "Ponowne skupienie",
