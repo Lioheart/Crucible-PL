@@ -52,7 +52,7 @@
         },
         "Arrow Spellcraft": {
             "name": "Czaroznastwo strzały",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Strzała</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Strzała</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Grot</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Grot</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
             "adjective": "Grotu"
         },
         "Aspect Spellcraft": {
