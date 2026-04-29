@@ -73,6 +73,13 @@
             "description": {
                 "public": "<blockquote><p>Ten naszyjnik w jaskrawych kolorach zawiera kamienny amulet, który świeci runą, w której słabo iskrzy się elektryczny rezonans. Trzymając go, odczuwasz surrealistyczne wrażenie, jakby otaczający cię świat nieco zwolnił.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do obrony <strong>Refleksu</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład amuletu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a amulet ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Nimbleness": {
+                    "name": "Zwinności",
+                    "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "adjective": "Zwinności"
+                }
             }
         },
         "Antitoxin": {
@@ -214,6 +221,13 @@
             "description": {
                 "public": "<blockquote><p>Ten naszyjnik z zawieszkami wygląda na rustykalny, ale po bliższym przyjrzeniu się dostrzega się w nim delikatne rzemiosło. Trzymając go w dłoni, czujesz, jak oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten zaklęty talizman zapewnia premię do <strong>Wytrzymałości</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Tenacity": {
+                    "name": "Uporu",
+                    "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "adjective": "Uporu"
+                }
             }
         },
         "Chirurgeon's Toolkit": {
@@ -263,6 +277,29 @@
             "description": {
                 "public": "<blockquote><p>Niepozorny czarny płaszcz, który wydaje się pasować niemal do każdego stroju.</p></blockquote><p>Ten zaklęty płaszcz zapewnia premię do rzutów na <strong>Dyplomację</strong> oraz umożliwia przyjęcie iluzorycznego <strong>Przebrania</strong>.</p>",
                 "private": "<p>Ten przedmiot przedstawiono jako przykład Dobrej jakości płaszcza z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00] i przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000].</p>"
+            },
+            "affixes": {
+                "Disguise": {
+                    "name": "Przebrania",
+                    "description": "<p>Zapewnia akcję <strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+                    "adjective": "Przebrania",
+                    "actions": {
+                        "Disguise": {
+                            "name": "Przebranie",
+                            "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
+                            "effects": [
+                                {
+                                    "name": "Przebranie"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Diplomacy": {
+                    "name": "Dyplomacja",
+                    "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+                    "adjective": "Dyplomacji"
+                }
             }
         },
         "Club": {
@@ -307,36 +344,10 @@
                 "public": "<p>Kompaktowa broń rurowa przeznaczona do cichego wystrzeliwania małych, często zatrutych pocisków. Dmuchawka jest ulubioną bronią zabójców, treserów bestii i tajemniczych alchemików.</p>"
             }
         },
-        "Determination": {
-            "name": "Determinacji",
-            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
-            "adjective": "Determinacji"
-        },
-        "Diplomacy": {
-            "name": "Dyplomacja",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
-            "adjective": "Dyplomacji"
-        },
         "Disarming Toolkit": {
             "name": "Zestaw narzędzi do rozbrajania",
             "description": {
                 "public": "<p>Mała skórzana torebka zawierająca zestaw szczypiec, nożyc, szydełek i zestaw składanych metalowych prętów, które można ze sobą skręcić. Przeznaczona do rozbrajania lub uruchamiania sideł, linek pułapkowych, płyt naciskowych i innych popularnych pułapek.</p>"
-            }
-        },
-        "Disguise": {
-            "name": "Przebrania",
-            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
-            "adjective": "Przebranie",
-            "actions": {
-                "Disguise": {
-                    "name": "Przebranie",
-                    "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
-                    "effects": [
-                        {
-                            "name": "Przebranie"
-                        }
-                    ]
-                }
             }
         },
         "Dress Clothing": {
@@ -357,15 +368,10 @@
                 "public": "<p>Skórzana torba z drewnianym wykończeniem. Zawiera świece rytualne, małą miskę na ofiary, paczki kadzideł i proszkowe odczynniki oraz materiałową matę do wykorzystania jako powierzchnia robocza.</p>"
             }
         },
-        "Evasion": {
-            "name": "Unikania",
-            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
-            "adjective": "Unikania"
-        },
         "Expanded Toolbelt": {
-            "name": "Rozszerzony pas narzędziowy",
+            "name": "Rozszerzony pas podręczny",
             "description": {
-                "public": "<p>Rozszerzony pas narzędziowy w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca na pasie narzędziowym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce na pasie narzędziowym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca na pasie narzędziowym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca na pasie narzędziowym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca na pasie narzędziowym</p></li></ul>"
+                "public": "<p>Rozszerzony pas podręczny w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca w pasie podręcznym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce w pasie podręcznym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca w pasie podręcznym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca w pasie podręcznym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca w pasie podręcznym</p></li></ul>"
             }
         },
         "Firestarter": {
@@ -392,32 +398,10 @@
                 "public": "<p>Skórzany kołczan z zamykaną końcówką, zawierający uchwyt montażowy, strug, szczotki i małą przędzarkę do nawijania plecionych sznurków. Po otwarciu rozkłada się na matę, która może służyć jako płaska powierzchnia robocza.</p>"
             }
         },
-        "Focusing": {
-            "name": "Skupienia",
-            "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
-            "adjective": "Skupienia",
-            "actions": {
-                "Replenish Focus": {
-                    "name": "Odnowienie skupienia",
-                    "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
-                }
-            }
-        },
         "Glaive": {
             "name": "Glewia",
             "description": {
                 "public": "<p>Glewia to broń drzewcowa z zakrzywionym ostrzem przypominającym miecz, zamocowanym na końcu długiego trzonka. Służy do wykonywania szerokich, łukowatych ciosów, które przecinają wrogów.</p>"
-            }
-        },
-        "Gliding": {
-            "name": "Szybowania",
-            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
-            "adjective": "Szybowania",
-            "actions": {
-                "Gliding": {
-                    "name": "Szybowanie",
-                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
-                }
             }
         },
         "Glue": {
@@ -673,16 +657,18 @@
                 "public": "<p>Długi miecz to obosieczne ostrze, które dzierży się obiema rękami, aby zapewnić równowagę i siłę. Zazwyczaj posiada duży jelec służący do parowania ciosów.</p>"
             }
         },
-        "Luminary": {
-            "name": "Świetlistości",
-            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
-            "adjective": "Świetlistości"
-        },
         "Luminary Band": {
             "name": "Obręcz świetlistości",
             "description": {
                 "public": "<blockquote><p>Misternie grawerowany złoty pierścień oplatający eliptyczny, lśniący pomarańczowy klejnot.</p></blockquote><p>Ta zaczarowana obręcz zapewnia korzyści do <strong>Skomponowanych</strong> akcji zawierających <strong>Fleksję</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład obręczy Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a obręcz tą można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Luminary": {
+                    "name": "Świetlistości",
+                    "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
+                    "adjective": "Świetlistości"
+                }
             }
         },
         "Lyre": {
@@ -725,11 +711,6 @@
                     ]
                 }
             }
-        },
-        "Nimbleness": {
-            "name": "Zwinności",
-            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
-            "adjective": "Zwinności"
         },
         "Padded Armor": {
             "name": "Przeszywalnica",
@@ -775,6 +756,13 @@
             "description": {
                 "public": "<blockquote><p>Pełen gracji srebrny amulet osadzony niebieskimi klejnotami napełnia cię poczuciem niezłomności, gdy ściskasz go w dłoni, gotów stawić czoła każdemu wyzwaniu.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do <strong>Woli</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład wisiorka Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.determination000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a wisiorek ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Determination": {
+                    "name": "Determinacji",
+                    "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "adjective": "Determinacji"
+                }
             }
         },
         "Pickaxe": {
@@ -881,11 +869,6 @@
                 "public": "<p>Szczególnie ostre ostrze używane do golenia lub, w niektórych przypadkach, do zabiegów chirurgicznych.</p>"
             }
         },
-        "Reinforcement": {
-            "name": "Wzmocnienia",
-            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
-            "adjective": "Wzmocnienia"
-        },
         "Repair Kit (smith)": {
             "name": "Zestaw naprawczy (kowalski)",
             "description": {
@@ -916,6 +899,13 @@
             "description": {
                 "public": "<blockquote><p>Ten elegancki, zdobiony pierścień wydaje się lekko śliski i trudny do uchwycenia. Trzymany w dłoni niemal niezauważalnie wibruje.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Uniku</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Evasion": {
+                    "name": "Unikania",
+                    "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "adjective": "Unikania"
+                }
             }
         },
         "Ring of Gliding": {
@@ -923,6 +913,19 @@
             "description": {
                 "public": "<blockquote><p>Obręcz z eleganckiej, jasnoniebieskiej stali, której spiralny wzór sprawia wrażenie, jakby nieustannie powoli obracała się na palcu swojego właściciela.</p></blockquote><p>Ten zaczarowany pierścień zapewnia zdolność szybowania na boki podczas upadku.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Gliding": {
+                    "name": "Szybowania",
+                    "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+                    "adjective": "Szybowania",
+                    "actions": {
+                        "Gliding": {
+                            "name": "Szybowanie",
+                            "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
+                        }
+                    }
+                }
             }
         },
         "Ring of Reinforcement": {
@@ -930,6 +933,13 @@
             "description": {
                 "public": "<blockquote><p>Ten stalowy pierścień jest stale chłodny w dotyku i sprawia wrażenie cięższego, niż można by się spodziewać po jego wąskiej obręczy.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Pancerza</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Reinforcement": {
+                    "name": "Wzmocnienia",
+                    "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "adjective": "Wzmocnienia"
+                }
             }
         },
         "Rope": {
@@ -1090,6 +1100,19 @@
             "description": {
                 "public": "<blockquote><p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p></blockquote><p>Ten zaczarowany pierścień pozwala w trudnych chwilach wykorzystać dodatkowy zapas <strong>Skupienia</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Focusing": {
+                    "name": "Skupienia",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+                    "adjective": "Skupienia",
+                    "actions": {
+                        "Replenish Focus": {
+                            "name": "Odnowienie skupienia",
+                            "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                        }
+                    }
+                }
             }
         },
         "Spiked Greatclub": {
@@ -1160,11 +1183,6 @@
             "description": {
                 "public": "<p>Skórzana drewniana torba zawierająca szpulki nici, odpowiednie igły i szpilki, nóż do skórowania oraz szydła, przydatne do pracy z tkaniną i skórą.</p>"
             }
-        },
-        "Tenacity": {
-            "name": "Uporu",
-            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
-            "adjective": "Uporu"
         },
         "Tent (caravan)": {
             "name": "Namiot (karawana)",
@@ -1247,6 +1265,9 @@
                 "private": "private"
             }
         },
-        "adjective": "system.adjective"
+        "affixes": {
+            "path": "effects",
+            "converter": "embedded_affixes_converter"
+        }
     }
 }
