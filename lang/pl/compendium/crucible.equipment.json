@@ -309,12 +309,12 @@
         },
         "Determination": {
             "name": "Determinacji",
-            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
             "adjective": "Determinacji"
         },
         "Diplomacy": {
             "name": "Dyplomacja",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
             "adjective": "Dyplomacji"
         },
         "Disarming Toolkit": {
@@ -325,7 +325,7 @@
         },
         "Disguise": {
             "name": "Przebrania",
-            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "affixDescription": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
             "adjective": "Przebranie",
             "actions": {
                 "Disguise": {
@@ -359,13 +359,13 @@
         },
         "Evasion": {
             "name": "Unikania",
-            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
             "adjective": "Unikania"
         },
         "Expanded Toolbelt": {
-            "name": "Rozszerzony pas narzędziowy",
+            "name": "Rozszerzony pas podręczny",
             "description": {
-                "public": "<p>Rozszerzony pas narzędziowy w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca na pasie narzędziowym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce na pasie narzędziowym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca na pasie narzędziowym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca na pasie narzędziowym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca na pasie narzędziowym</p></li></ul>"
+                "public": "<p>Rozszerzony pas podręczny w formie pasa wielofunkcyjnego, bandolieru lub zestawu kieszeni przyszytych do wyposażenia.</p><p>Ten przedmiot zapewnia dodatkowe miejsca w pasie podręcznym w zależności od poziomu jakości:</p><ul><li><p><strong>Standardowa jakość</strong>: +1 miejsce w pasie podręcznym</p></li><li><p><strong>Dobra jakość</strong>: +2 miejsca w pasie podręcznym</p></li><li><p><strong>Wybitna jakość</strong>: +3 miejsca w pasie podręcznym</p></li><li><p><strong>Mistrzowska jakość</strong>: +4 miejsca w pasie podręcznym</p></li></ul>"
             }
         },
         "Firestarter": {
@@ -394,7 +394,7 @@
         },
         "Focusing": {
             "name": "Skupienia",
-            "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+            "affixDescription": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
             "adjective": "Skupienia",
             "actions": {
                 "Replenish Focus": {
@@ -411,7 +411,7 @@
         },
         "Gliding": {
             "name": "Szybowania",
-            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+            "affixDescription": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
             "adjective": "Szybowania",
             "actions": {
                 "Gliding": {
@@ -675,7 +675,7 @@
         },
         "Luminary": {
             "name": "Świetlistości",
-            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "affixDescription": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
             "adjective": "Świetlistości"
         },
         "Luminary Band": {
@@ -728,7 +728,7 @@
         },
         "Nimbleness": {
             "name": "Zwinności",
-            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
             "adjective": "Zwinności"
         },
         "Padded Armor": {
@@ -883,7 +883,7 @@
         },
         "Reinforcement": {
             "name": "Wzmocnienia",
-            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
             "adjective": "Wzmocnienia"
         },
         "Repair Kit (smith)": {
@@ -1163,7 +1163,7 @@
         },
         "Tenacity": {
             "name": "Uporu",
-            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "affixDescription": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
             "adjective": "Uporu"
         },
         "Tent (caravan)": {
@@ -1247,6 +1247,7 @@
                 "private": "private"
             }
         },
+        "affixDescription": "description",
         "adjective": "system.adjective"
     }
 }
