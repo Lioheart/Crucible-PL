@@ -2216,7 +2216,7 @@
                     }
                 },
                 "Heavy Weapon Training": {
-                    "name": "Szkolenie z posługiwania się bronią ciężką",
+                    "name": "Szkolenie z broni ciężkiej",
                     "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                     "actions": {
                         "Heavy Strike": {
@@ -2372,7 +2372,7 @@
                     "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Light Weapon Training": {
-                    "name": "Szkolenie z posługiwania się bronią lekką",
+                    "name": "Szkolenie z broni lekkiej",
                     "description": "<p>Wiesz, jak płynnie posługiwać się bronią lekką, wykazując się dużą zwinnością i gracją w walce. Jesteś <strong>Wyszkolony</strong> w posługiwaniu się wszystkimi rodzajami broni z kategorii broni <strong>Lekkiej</strong> i <strong>Wyważonej</strong>.</p>",
                     "actions": {
                         "Lunge": {
