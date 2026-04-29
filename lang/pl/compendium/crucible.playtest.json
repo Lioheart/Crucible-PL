@@ -176,7 +176,7 @@
                             }
                         },
                         "Heavy Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią ciężką",
+                            "name": "Szkolenie z broni ciężkiej",
                             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Heavy Strike": {
@@ -259,7 +259,7 @@
                             }
                         },
                         "Heavy Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią ciężką",
+                            "name": "Szkolenie z broni ciężkiej",
                             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Heavy Strike": {
