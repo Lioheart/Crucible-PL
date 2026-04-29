@@ -1188,7 +1188,7 @@
                     }
                 },
                 "Mechanical Weapon Training": {
-                    "name": "Szkolenie z posługiwania się bronią mechaniczną",
+                    "name": "Szkolenie z broni mechanicznej",
                     "description": "<p>Znasz się na konstrukcji i obsłudze kusz, broni palnej i innych podobnych rodzajów uzbrojenia. Posiadasz <strong>Wyszkolenie</strong> w zakresie broni z kategorii <strong>Mechanicznej</strong>.</p>",
                     "actions": {
                         "Rapid Reload": {
