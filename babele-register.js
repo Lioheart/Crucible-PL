@@ -226,6 +226,55 @@ Hooks.once("babele.init", (babele) => {
     return categories;
   };
 
+  const embeddedAffixesConverter = (effects, translations) => {
+    if (!effects || !translations) return effects;
+
+    const arr = asArray(effects);
+
+    for (const [index, effect] of arr.entries()) {
+      if (!effect || typeof effect !== "object") continue;
+
+      const translation = findTranslation(effect, translations, index);
+      if (!translation || typeof translation !== "object") continue;
+
+      if (translation.name !== undefined) effect.name = translation.name;
+      if (translation.label !== undefined) effect.label = translation.label;
+
+      if (translation.description !== undefined) {
+        effect.description = translation.description;
+        effect.system ??= {};
+        effect.system.description = translation.description;
+      }
+
+      if (translation.adjective !== undefined) {
+        effect.system ??= {};
+        effect.system.adjective = translation.adjective;
+      }
+
+      if (translation.actions !== undefined) {
+        if (effect.system?.actions) {
+          actionsConverter(effect.system.actions, translation.actions);
+        }
+
+        if (effect.actions) {
+          actionsConverter(effect.actions, translation.actions);
+        }
+      }
+
+      if (translation.effects !== undefined) {
+        if (effect.effects) {
+          embeddedEffectsConverter(effect.effects, translation.effects);
+        }
+
+        if (effect.system?.effects) {
+          embeddedEffectsConverter(effect.system.effects, translation.effects);
+        }
+      }
+    }
+
+    return effects;
+  };
+
   babele.registerConverters({
     actions_converter: actionsConverter,
     adventure_items_converter: embeddedItemsConverter,
@@ -234,7 +283,8 @@ Hooks.once("babele.init", (babele) => {
     embedded_object_with_actions_converter: embeddedObjectWithActionsConverter,
     embedded_biography_converter: embeddedBiographyConverter,
     nested_object_converter: nestedObjectConverter,
-    categories_converter: categoriesConverter
+    categories_converter: categoriesConverter,
+    embedded_affixes_converter: embeddedAffixesConverter
   });
 });
 Hooks.once("babele.ready", async () => {
