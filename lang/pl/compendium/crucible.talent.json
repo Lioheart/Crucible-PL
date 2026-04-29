@@ -1224,7 +1224,7 @@
             "description": "<p>Płynnie posługujesz się naturalną bronią ciała. Otrzymujesz rangę <strong>Specjalisty</strong> oraz premię <strong>+1 do umiejętności</strong> z bronią z kategorii <strong>Naturalna</strong>.</p>"
         },
         "Natural Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią naturalną",
+            "name": "Szkolenie z broni naturalnej",
             "description": "<p>Posiadasz rozbudowaną znajomość wykorzystywania cech własnego ciała jako naturalnej broni, w tym pazurów, szczęk, ogonów lub innych mechanizmów samoobrony. Jesteś <strong>Wyszkolony</strong> w posługiwaniu się bronią z kategorii <strong>Naturalnej</strong>.</p>",
             "actions": {
                 "Wild Strike": {
