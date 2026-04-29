@@ -1811,7 +1811,7 @@
                             }
                         },
                         "Projectile Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią miotaną",
+                            "name": "Szkolenie z broni miotanej",
                             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
                             "actions": {
                                 "Quick Draw": {
@@ -1973,7 +1973,7 @@
                             }
                         },
                         "Talisman Weapon Training": {
-                            "name": "Szkolenie z posługiwania się talizmanami",
+                            "name": "Szkolenie z talizmanów",
                             "description": "<p>Rozumiesz tajemnicze zastosowanie talizmanów, kul, ognisk lub innych podobnych narzędzi służących do kierowania magią lub wzmacniania zaklęć. Posiadasz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Talizmanów</strong>.</p>",
                             "actions": {
                                 "Refocus": {
@@ -1983,7 +1983,7 @@
                             }
                         },
                         "Mechanical Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią mechaniczną",
+                            "name": "Szkolenie z broni mechanicznej",
                             "description": "<p>Znasz się na konstrukcji i obsłudze kusz, broni palnej i innych podobnych rodzajów uzbrojenia. Posiadasz <strong>Wyszkolenie</strong> w zakresie broni z kategorii <strong>Mechanicznej</strong>.</p>",
                             "actions": {
                                 "Rapid Reload": {
