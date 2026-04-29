@@ -621,7 +621,7 @@
         "Surge Spellcraft": {
             "name": "Czaroznastwo fali",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Fala</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Fala</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
-            "adjective": "Wzrostu"
+            "adjective": "Fali"
         },
         "Tenacity": {
             "name": "Uporu",
