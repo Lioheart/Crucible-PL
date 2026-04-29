@@ -93,7 +93,7 @@
                     "description": "<p>Rozumiesz podstawowe zasady działania gróźb i przymusu w celu osiągnięcia pożądanych rezultatów. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Zastraszanie</strong> i nie jesteś już uważany za osobę <strong>Niewyszkoloną</strong> w tej umiejętności.</p><p>Wiesz, jak wykorzystać proste przejawy przemocy lub jawne groźby, aby skłonić innych do podążania za tobą, ale nie jesteś zbyt taktowny.</p>"
                 },
                 "Heavy Weapon Training": {
-                    "name": "Szkolenie z posługiwania się bronią ciężką",
+                    "name": "Szkolenie z broni ciężkiej",
                     "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                     "actions": {
                         "Heavy Strike": {
