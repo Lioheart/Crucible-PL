@@ -1705,7 +1705,7 @@
             }
         },
         "Mechanical Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią mechaniczną",
+            "name": "Szkolenie z broni mechanicznej",
             "actions": {
                 "Rapid Reload": {
                     "name": "Szybkie przeładowanie",
@@ -1791,7 +1791,7 @@
             "name": "Biegłość w posługiwaniu się bronią miotaną"
         },
         "Projectile Weapon Training": {
-            "name": "Szkolenie z posługiwania się bronią miotaną",
+            "name": "Szkolenie z broni miotanej",
             "actions": {
                 "Quick Draw": {
                     "name": "Szybkie dobycie",
