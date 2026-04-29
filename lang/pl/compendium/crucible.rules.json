@@ -369,7 +369,7 @@
                 },
                 "Jewelcraft": {
                     "name": "Szlifierstwo",
-                    "text": "<p><strong>Jubilerstwo</strong> to sztuka łączenia ozdobnych metali i rzadkich krystalicznych minerałów w celu tworzenia pierścieni, bransolet i naszyjników, a także osadzania dekoracyjnych (a potencjalnie również magicznych) klejnotów w tych i innych elementach wyposażenia.</p><h2>Talenty</h2><p>Następujące talenty są dostępne, aby reprezentować wyszkolenie w Jubilerstwie:</p><p></p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftNovice]</p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftJourne]</p>"
+                    "text": "<p><strong>Szlifierstwo</strong> to sztuka łączenia ozdobnych metali i rzadkich krystalicznych minerałów w celu tworzenia pierścieni, bransolet i naszyjników, a także osadzania dekoracyjnych (a potencjalnie również magicznych) klejnotów w tych i innych elementach wyposażenia.</p><h2>Talenty</h2><p>Następujące talenty są dostępne, aby reprezentować wyszkolenie w Szlifierstwie:</p><p></p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftNovice]</p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftJourne]</p>"
                 },
                 "Glyphweaving": {
                     "name": "Glifotwórstwo",
