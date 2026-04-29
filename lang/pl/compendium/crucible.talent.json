@@ -1527,7 +1527,7 @@
         },
         "Rune: Illusion": {
             "name": "Runa: Iluzja",
-            "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje obronę <strong>Woli</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
+            "description": "<p>Chaotyczna siła podstępu i kaprysu. Runa iluzji rządzi magicznymi przejawami fałszu lub wprowadzania w błąd.</p><p>Runa Iluzji skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Psychiczne</strong> <strong>Morale</strong>. Przeciwstawia się jej uporządkowana runa <strong>Światłości</strong>.</p>",
             "actions": {
                 "Seeming": {
                     "name": "Pozorność",
@@ -1567,7 +1567,7 @@
         },
         "Rune: Oblivion": {
             "name": "Runa: Nicość",
-            "description": "<p>Chaotyczna siła niszczenia i unicestwiania istnienia. Runa Nicości rządzi rozkładem materii lub dekoherencją ducha.</p><p>Runa Nicości skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia <strong>Pustki</strong> <strong>Morale</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Duszy</strong>.</p>",
+            "description": "<p>Chaotyczna siła niszczenia i unicestwiania istnienia. Runa Nicości rządzi rozkładem materii lub dekoherencją ducha.</p><p>Runa Nicości skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia od <strong>Pustki</strong> <strong>Morale</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Duszy</strong>.</p>",
             "actions": {
                 "Erase": {
                     "name": "Wymazanie",
