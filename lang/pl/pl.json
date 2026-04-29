@@ -395,7 +395,7 @@
         },
         "INTERPOSE": {
           "AllyMustBeTarget": "Wybrany sojusznik musi być celem ostatniego ataku.",
-          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub otarł się o twojego sojusznika.",
+          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub drasnął twojego sojusznika.",
           "RequiresStrike": "Wtrącenie wymaga, aby ostatnią akcją było uderzenie bronią.",
           "SingleTarget": "Wtrącenie może być użyte tylko przeciwko atakowi skierowanemu na pojedynczy cel."
         }
@@ -1021,7 +1021,7 @@
       "Armor": "Pancerz",
       "Block": "Blok",
       "Dodge": "Unik",
-      "Glance": "Otarcie",
+      "Glance": "Draśnięcie",
       "Hit": "Trafienie",
       "Miss": "Chybienie",
       "Parry": "Parowanie",
