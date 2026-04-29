@@ -3,6 +3,15 @@
     src: url('../static/fonts/FePIrm27C.otf');
 }
 
+@font-face {
+    font-family: "DroidSerif";
+    src: url('../static/fonts/DroidSerif-Regular.ttf');
+}
+
+body {
+    --font-serif: "DroidSerif", "Amiri", serif;
+}
+
 .crucible {
     --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
 }

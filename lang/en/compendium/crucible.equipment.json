@@ -309,12 +309,12 @@
         },
         "Determination": {
             "name": "Determination",
-            "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "affixDescription": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Determination"
         },
         "Diplomacy": {
             "name": "Diplomacy",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "affixDescription": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Diplomatic"
         },
         "Disarming Toolkit": {
@@ -325,7 +325,7 @@
         },
         "Disguise": {
             "name": "Disguise",
-            "description": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
+            "affixDescription": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
             "adjective": "Disguise",
             "actions": {
                 "Disguise": {
@@ -359,7 +359,7 @@
         },
         "Evasion": {
             "name": "Evasion",
-            "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "affixDescription": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Evasion"
         },
         "Expanded Toolbelt": {
@@ -394,7 +394,7 @@
         },
         "Focusing": {
             "name": "Focusing",
-            "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+            "affixDescription": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Focusing",
             "actions": {
                 "Replenish Focus": {
@@ -411,7 +411,7 @@
         },
         "Gliding": {
             "name": "Gliding",
-            "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
+            "affixDescription": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Gliding",
             "actions": {
                 "Gliding": {
@@ -675,7 +675,7 @@
         },
         "Luminary": {
             "name": "Luminary",
-            "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix.</p>",
+            "affixDescription": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Luminary"
         },
         "Luminary Band": {
@@ -728,7 +728,7 @@
         },
         "Nimbleness": {
             "name": "Nimbleness",
-            "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "affixDescription": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Nimbleness"
         },
         "Padded Armor": {
@@ -883,7 +883,7 @@
         },
         "Reinforcement": {
             "name": "Reinforcement",
-            "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "affixDescription": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Reinforcement"
         },
         "Repair Kit (smith)": {
@@ -1163,7 +1163,7 @@
         },
         "Tenacity": {
             "name": "Tenacity",
-            "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
+            "affixDescription": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Tenacity"
         },
         "Tent (caravan)": {
@@ -1247,6 +1247,7 @@
                 "private": "private"
             }
         },
+        "affixDescription": "description",
         "adjective": "system.adjective"
     }
 }
