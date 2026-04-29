@@ -217,7 +217,7 @@
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
@@ -256,7 +256,7 @@
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": "<p> @ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Rune: Frost": {
                     "name": "Runa: Mróz",
