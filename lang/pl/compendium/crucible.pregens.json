@@ -1072,7 +1072,7 @@
                     }
                 },
                 "Projectile Weapon Training": {
-                    "name": "Szkolenie z posługiwania się bronią miotaną",
+                    "name": "Szkolenie z broni miotanej",
                     "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
                     "actions": {
                         "Quick Draw": {
