@@ -1517,7 +1517,7 @@
                             "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Ochrony</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Ochrony, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
                         },
                         "Heavy Weapon Training": {
-                            "name": "Szkolenie z posługiwania się bronią ciężką",
+                            "name": "Szkolenie z broni ciężkiej",
                             "description": "<p>Wiesz, jak używać ciężkiej broni, aby zadawać potężne ciosy, wkładając całą swoją siłę w każde uderzenie. Jesteś <strong>Wyszkolony</strong> we wszystkich rodzajach broni z kategorii <strong>Ciężkiej</strong> i <strong>Wyważonej</strong>.</p>",
                             "actions": {
                                 "Heavy Strike": {
@@ -1535,7 +1535,7 @@
                             "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan <strong>Strzeżony</strong> i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
                         },
                         "Shield Combat Training": {
-                            "name": "Szkolenie z walki z użyciem tarczy",
+                            "name": "Szkolenie z walki tarczą",
                             "description": "<p>Jesteś wprawiony w walce z tarczą, używając jej do uderzania przeciwników i wytrącania ich z równowagi. Masz <strong>Wyszkolenie</strong> w posługiwaniu się bronią z kategorii <strong>Tarcza</strong>.</p>",
                             "actions": {
                                 "Shield Bash": {
