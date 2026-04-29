@@ -192,7 +192,7 @@
         },
         "Disguise": {
             "name": "Przebrania",
-            "description": "<p>Zapewnia akcję<strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
+            "description": "<p>Zapewnia akcję <strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
             "adjective": "Przebrania",
             "actions": {
                 "Disguise": {
