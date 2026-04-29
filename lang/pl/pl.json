@@ -332,7 +332,7 @@
       "ThrownTooltip": "Ta akcja polega na wykonaniu ataku bronią rzucaną.",
       "TwoHanded": "Dwuręczny",
       "TwoHandedTooltip": "Wykonanie tej akcji wymaga użycia broni dwuręcznej.",
-      "Unarmed": "Nieuzbrojona",
+      "Unarmed": "Nieuzbrojony",
       "UnarmedTooltip": "Aby wykonać tę akcję, musisz być całkowicie nieuzbrojony.",
       "Unarmored": "Nieopancerzony",
       "UnarmoredTooltip": "Aby wykonać tę akcję, musisz być nieopancerzony.",
@@ -2315,7 +2315,7 @@
       "ShieldLight": "Lekka tarcza",
       "Simple": "Prosta",
       "Talisman": "Talizman",
-      "Unarmed": "Nieuzbrojona"
+      "Unarmed": "Nieuzbrojony"
     },
     "FIELDS": {
       "damageType": {
