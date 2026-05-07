@@ -5,6 +5,7 @@
         "Accessories": "Accessories",
         "Melee (1h)": "Melee (1h)",
         "Implements": "Implements",
+        "Trinket": "Trinket",
         "Bombs": "Bombs",
         "Other": "Other",
         "Unarmored": "Unarmored",
@@ -26,6 +27,7 @@
         "Toxins": "Toxins",
         "Unarmed": "Unarmed",
         "Melee (2h)": "Melee (2h)",
+        "Summons": "Summons",
         "Adventuring Gear": "Adventuring Gear",
         "Shields": "Shields",
         "Talisman": "Talisman",
@@ -350,10 +352,34 @@
                 "public": "<p>A small leather pouch containing a set of pliers, cutters, awls and a set of collapsible metal rods that can be screwed together. Designed for the purposes of disarming or triggering snares, tripwires, pressure plates, and other common traps.</p>"
             }
         },
+        "Disguise Toolkit": {
+            "name": "Disguise Toolkit",
+            "description": {
+                "public": "<p>A leather-bound wooden kitbag containing a hand mirror, carefully sorted pieces of cloth, cosmetics, dyes, wigs, false facial hair, jewelry, skin-safe adhesives and other costuming supplies designed to help a person mask their appearance.</p>"
+            }
+        },
         "Dress Clothing": {
             "name": "Dress Clothing",
             "description": {
                 "public": "<p>A regal set of fine vestments fit for attending celebrations and high society functions, includes an overcoat or dress, kerchief or necktie, a fine shirt or corset, a vest or bodice, trousers or petticoat, belt or braces, stockings and fine shoes.</p>"
+            }
+        },
+        "Electrocharge Ampoule": {
+            "name": "Electrocharge Ampoule",
+            "description": {
+                "public": "<p>A sealed glass tube filled with a yellow liquid explodes when it breaks open, creating a sudden electrical discharge.</p>",
+                "private": "<p></p><p>Primarily used to power small electromechanical machines for short periods of time, these alchemical containers are somewhat unstable and react poorly when their contents are exposed to air, making them useful if unpredictable improvised explosives. If combined in a large enough quantity in the correct way, they can also be used to power more significant devices and discharge even more electrical energy.</p>"
+            },
+            "actions": {
+                "Electrocharge Ampoule": {
+                    "name": "Electrocharge Ampoule",
+                    "description": "<p>You throw the @ref[name], dealing weakened <strong>Electricity </strong>damage to all enemies in the radius of the discharge and leaving them briefly @Condition[staggered]. The radius of the <strong>Discharge</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Electrocharge Ampoule"
+                        }
+                    ]
+                }
             }
         },
         "Enchanter's Portable Workbench": {
@@ -396,6 +422,81 @@
             "name": "Fletcher's Toolkit",
             "description": {
                 "public": "<p>A leather-bound quiver with sealable end, containing a mountable vice, spoke shave, brushes and a small spinner for winding braided string. If unlatched it unfolds into a mat that can serve as a flat work surface.</p>"
+            }
+        },
+        "Focusing Pearl": {
+            "name": "Focusing Pearl",
+            "description": {
+                "public": "<blockquote><p>A small, vibrant blue pearl that feels refreshingly cool to the touch regardless of ambient temperature.</p></blockquote><p>This enchanted pearl grants its bearer the <strong>Replenish Focus</strong> action, providing an additional reserve of <strong>Focus</strong> that can be drawn upon in moments of duress.</p>",
+                "private": "<p>This item is presented as an example of a Fine Pearl with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this pearl could be further enchanted with a Tier 1 suffix.</p>"
+            },
+            "affixes": {
+                "Focusing": {
+                    "name": "Focusing",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Focusing",
+                    "actions": {
+                        "Replenish Focus": {
+                            "name": "Replenish Focus",
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
+                        }
+                    }
+                }
+            }
+        },
+        "Frostdrop Phial": {
+            "name": "Frostdrop Phial",
+            "description": {
+                "public": "<p>A suspension of white crystal inside a blue liquid contained within a sealed glass container. Its contents rapidly evaporate when exposed to air, creating a small blast of freezing liquid that coats nearby matter in an icy film.</p>",
+                "private": "<p></p><p>Primarily used to rapidly cool metallurgical compounds in advanced smithing, these alchemical phials can be quite dangerous to living tissue if exposed for a long period of time.</p>"
+            },
+            "actions": {
+                "Frostdrop Flask": {
+                    "name": "Frostdrop Flask",
+                    "description": "<p>You throw the @ref[name], dealing weakened <strong>Cold </strong>damage to all enemies in the radius of the explosion and causing them to be @Condition[slowed] briefly. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Frostdrop Flask"
+                        }
+                    ]
+                }
+            }
+        },
+        "Gem Of Conjured Flame": {
+            "name": "Gem Of Conjured Flame",
+            "description": {
+                "public": "<p>A multifaceted, rough-cut gem imbued with elemental energies. When thrown, this gem shatters and conjures an elemental spirit under the control of the individual that shattered it. Its quality determines the level of elemental summoned.</p>"
+            },
+            "actions": {
+                "Summon Flame Elemental": {
+                    "name": "Summon Flame Elemental",
+                    "description": "<p>The @ref[name] shatters in a burst of flame, leaving in its place a fiery elemental. Elementals summoned by this gem remain for 6 Rounds (1 minute).</p><ul><li><p><strong>Shoddy - </strong>No elemental is summoned</p></li><li><p><strong>Standard </strong>- Mote</p></li><li><p><strong>Fine</strong> - Sprite</p></li><li><p><strong>Superior</strong> - Visitor</p></li><li><p><strong>Masterwork - </strong>Wanderer</p></li></ul>"
+                }
+            }
+        },
+        "Gem of Illumination": {
+            "name": "Gem of Illumination",
+            "description": {
+                "public": "<blockquote><p>This carefully faceted gemstone glows faintly with warm light, and feels warm to the touch.</p></blockquote><p>This enchanted gem grants its bearer the <strong>Activate Illumination</strong> action, shedding an otherworldly light in a wide radius until dismissed.</p>",
+                "private": "<p>This item is presented as an example of a Fine Gem with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Luminous} prefix.</p><p>This affix can be applied to any accessory and this gem could be further enchanted with a Tier 1 suffix.</p>"
+            },
+            "affixes": {
+                "Luminous": {
+                    "name": "Luminous",
+                    "description": "<p>Grants the <strong>Activate Illumination</strong> action, allowing the bearer to shed an otherworldly light. The radius of light scales with the <strong>Tier</strong> of this affix.</p>",
+                    "adjective": "Luminous",
+                    "actions": {
+                        "Activate Illumination": {
+                            "name": "Activate Illumination",
+                            "description": "<p>You speak the command word and the @ref[name] kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim</p></li></ul> <p>The light persists until you dismiss the effect or remove the item.</p>",
+                            "effects": [
+                                {
+                                    "name": "Luminous"
+                                }
+                            ]
+                        }
+                    }
+                }
             }
         },
         "Glaive": {
@@ -631,6 +732,23 @@
             "name": "Lantern",
             "description": {
                 "public": "<p>An oil-burning or magically illuminated lantern that sheds bright light in a 20 foot radius and dim light in a 40 foot radius.</p>"
+            },
+            "actions": {
+                "Light Lantern": {
+                    "name": "Light Lantern",
+                    "description": "<p>You ignite the @ref[name], producing steady illumination in a wide radius. This action consumes one unit of @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Lantern Oil} from your inventory; the burn duration depends on the quality of the oil consumed:</p><ul><li><p><strong>Shoddy</strong> - 1 hour</p></li><li><p><strong>Standard</strong> - 4 hours</p></li><li><p><strong>Fine</strong> - 12 hours</p></li><li><p><strong>Superior</strong> - 24 hours</p></li><li><p><strong>Masterwork</strong> - 48 hours</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Lantern"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lantern Oil": {
+            "name": "Lantern Oil",
+            "description": {
+                "public": "<p>A small flask of refined fuel oil. One unit of Lantern Oil is consumed to ignite a @UUID[Compendium.crucible.equipment.Item.lantern000000000]{Lantern}; the burn duration depends on the quality of the oil:</p><ul><li><p><strong>Shoddy</strong> - 1 hour</p></li><li><p><strong>Standard</strong> - 4 hours</p></li><li><p><strong>Fine</strong> - 12 hours</p></li><li><p><strong>Superior</strong> - 24 hours</p></li><li><p><strong>Masterwork</strong> - 48 hours</p></li></ul>"
             }
         },
         "Leather Armor": {
@@ -707,6 +825,23 @@
                     "effects": [
                         {
                             "name": "Netted"
+                        }
+                    ]
+                }
+            }
+        },
+        "Omniglot Decoction": {
+            "name": "Omniglot Decoction",
+            "description": {
+                "public": "<p>A surprisingly thin liquid that tastes earthy and herbal.</p>"
+            },
+            "actions": {
+                "Omniglot Decoction": {
+                    "name": "Omniglot Decoction",
+                    "description": "<p>When consumed, this decoction affords the drinker the fascinating ability to read, speak, and comprehend languages. Its quality determines the duration of the effect:</p><ul><li><p><strong>Shoddy</strong> - 10 minutes</p></li><li><p><strong>Standard</strong> - 1 hour</p></li><li><p><strong>Fine</strong> - 4 hours</p></li><li><p><strong>Superior</strong> - 12 hours</p></li><li><p><strong>Masterwork</strong> - 24 hours</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Omniglot Decoction"
                         }
                     ]
                 }
@@ -1206,6 +1341,17 @@
             "name": "Torch",
             "description": {
                 "public": "<p>Layered oil-soaked affixed around the end of a rod made of bone or another non-flammable material, an inexpensive, if inefficient, temporary lightsource. Each torch can burned for one hour before it can no longer be used.</p>"
+            },
+            "actions": {
+                "Light Torch": {
+                    "name": "Light Torch",
+                    "description": "<p>You ignite the @ref[name], producing flickering illumination in a wide radius for one hour. The torch is consumed by this action and cannot be used again, but its light remains until it burns out.</p>",
+                    "effects": [
+                        {
+                            "name": "Torch"
+                        }
+                    ]
+                }
             }
         },
         "Tower Shield": {

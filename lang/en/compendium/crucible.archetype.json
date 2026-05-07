@@ -88,6 +88,10 @@
             "name": "Lawkeeper",
             "description": "<p>Constables, detectives, investigators, and other officers of the law who are responsible for keeping the peace and hunting down those who break it.</p>"
         },
+        "Lightweaver": {
+            "name": "Lightweaver",
+            "description": "<p>Mages that specialize in the runes of Illumination and Fire.</p>"
+        },
         "Mage": {
             "name": "Mage",
             "description": "A magic user which wields flame and electricity in battle."
@@ -135,6 +139,10 @@
         "Spellblade": {
             "name": "Spellblade",
             "description": "<p>Spellblades are magically empowered warriors who weave spellcraft into their weapon attacks to create devastating strikes.</p>"
+        },
+        "Swarm": {
+            "name": "Swarm",
+            "description": "<p>This adversary represents multiple creatures that move as a single swarming entity, overwhelming opposition with sheer numbers.</p>"
         },
         "Swashbuckler": {
             "name": "Swashbuckler",

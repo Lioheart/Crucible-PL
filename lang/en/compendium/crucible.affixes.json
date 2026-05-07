@@ -15,6 +15,7 @@
         "Creature Bane": "Creature Bane",
         "Gestures": "Gestures",
         "Resources": "Resources",
+        "Senses": "Senses",
         "Damage": "Damage",
         "Resistances": "Resistances"
     },
@@ -407,6 +408,22 @@
             "name": "Luminary",
             "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one Affix can provide this benefit.</p>",
             "adjective": "Luminary"
+        },
+        "Luminous": {
+            "name": "Luminous",
+            "description": "<p>Grants the <strong>Activate Illumination</strong> action, allowing the bearer to shed an otherworldly light. The radius of light scales with the <strong>Tier</strong> of this affix.</p>",
+            "adjective": "Luminous",
+            "actions": {
+                "Activate Illumination": {
+                    "name": "Activate Illumination",
+                    "description": "<p>You speak the command word and the @ref[item.name]{item} kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim light.</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim light.</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim light.</p></li></ul><p>The light persists until you dismiss the effect or remove the item.</p>",
+                    "effects": [
+                        {
+                            "name": "Luminous"
+                        }
+                    ]
+                }
+            }
         },
         "Medicine": {
             "name": "Medicine",

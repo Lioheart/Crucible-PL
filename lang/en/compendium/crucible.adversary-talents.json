@@ -3,7 +3,7 @@
     "folders": {
         "Ooze": "Ooze",
         "Charge": "Charge",
-        "Passive": "Passive",
+        "Form": "Form",
         "Bites": "Bites",
         "Claws": "Claws",
         "Construct": "Construct",
@@ -70,11 +70,11 @@
         },
         "Aqueous Transmission": {
             "name": "Aqueous Transmission",
-            "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
+            "description": "<p>The @ref[actor.name]{creature} is able to move instantaneously through water.</p>",
             "actions": {
                 "Aqueous Transmission": {
                     "name": "Aqueous Transmission",
-                    "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                    "description": "<p>When the @ref[actor.name]{creature} is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                 }
             }
         },
@@ -89,6 +89,22 @@
         "Bonded Mind": {
             "name": "Bonded Mind",
             "description": "<p>The mind of a @ref[actor.name]{creature} with this talent is inextricably bound to other members of its group. It is capable of instantaneous telepathic communication with any other @ref[actor.taxonomy.name]{creature of its taxonomy} within 60 feet.</p>"
+        },
+        "Burnout": {
+            "name": "Burnout",
+            "description": "<p>Steam-powered constructs store dangerous amounts of superheated steam within their bodies that, if not discharged safely, can cause serious injury.</p>",
+            "actions": {
+                "Burnout": {
+                    "name": "Burnout",
+                    "condition": "The @ref[actor.name]{construct} is Wounded",
+                    "description": "<p>The @ref[actor.name]{construct} ruptures, spilling forth a blast of flame and smoke, attacking the <strong>Reflex</strong> of each target within the radius and dealing <strong>Fire</strong> damage. Those who take damage from this attack are @Condition[blinded] for 3 turns.</p>",
+                    "effects": [
+                        {
+                            "name": "Burnout"
+                        }
+                    ]
+                }
+            }
         },
         "Burrower": {
             "name": "Burrower",
@@ -131,9 +147,29 @@
                 }
             }
         },
+        "Corrupting Death Burst": {
+            "name": "Corrupting Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of corrupting energy.</p>",
+            "actions": {
+                "Corrupting Death Burst": {
+                    "name": "Corrupting Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of spores that deal <strong>Corruption</strong> damage, attacking the <strong>Fortitude</strong> defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[decaying] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Corrupting Death Burst"
+                        }
+                    ]
+                }
+            }
+        },
         "Corruption Absorption": {
             "name": "Corruption Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of Death magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Echolocation": {
+            "name": "Echolocation",
+            "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p><h3 class=\"divider\">Under Development</h3><p>This should eventually be handled with a specialized<strong> Detection Mode</strong> added to tokens which have this talent.</p>"
         },
         "Electricity Absorption": {
             "name": "Electricity Absorption",
@@ -202,6 +238,21 @@
         "Immutable Form": {
             "name": "Immutable Form",
             "description": "<p>The @ref[actor.name] is immune to any spell or effect which alters its physical form.</p>"
+        },
+        "Lightning Burst": {
+            "name": "Lightning Burst",
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel powerful voltaic blast.</p>",
+            "actions": {
+                "Lightning Burst": {
+                    "name": "Lightning Burst",
+                    "description": "<p>The @ref[actor.name]{creature} expels a blast of lighting in a 15 foot blast, attacking the <strong>Reflex</strong> of each target within that range and and dealing <strong>Electricity</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[shocked] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Lightning Burst"
+                        }
+                    ]
+                }
+            }
         },
         "Lightning Spit": {
             "name": "Lightning Spit",
@@ -341,7 +392,12 @@
                 "Radiant Death Burst": {
                     "name": "Radiant Death Burst",
                     "condition": "The creature becomes Dead.",
-                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Radiant</strong> energy which attacks the <strong>Fortitude</strong> defense of all nearby creatures that fail to resist the effect.</p>"
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Radiant</strong> energy which attacks the <strong>Fortitude</strong> defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[irradiated] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Radiant Death Burst"
+                        }
+                    ]
                 }
             }
         },
@@ -450,6 +506,21 @@
                 }
             }
         },
+        "Steam Vent": {
+            "name": "Steam Vent",
+            "description": "<p>Steam-powered constructs store dangerous amounts of superheated steam within their bodies that, if not discharged safely, can cause serious injury.</p>",
+            "actions": {
+                "Steam Vent": {
+                    "name": "Steam Vent",
+                    "description": "<p>Superheated steam bursts forth from inside the steam-powered construct in a burst of searing damage, knocking back those standing too close and leaving them @Condition[prone] .</p>",
+                    "effects": [
+                        {
+                            "name": "Steam Vent"
+                        }
+                    ]
+                }
+            }
+        },
         "Subdivide": {
             "name": "Subdivide",
             "description": "<p>The @ref[actor.name]{ooze} can divide itself into multiple parts, each an independent copy of the original.</p>",
@@ -478,6 +549,10 @@
                     ]
                 }
             }
+        },
+        "Swarm": {
+            "name": "Swarm",
+            "description": "<p>This adversary is a group of many identical creatures that operate as a single swarming throng of foes.</p><ul><li><p>Maximum <strong>Health</strong> is doubled.</p></li><li><p>Against any single-target source of damage, the swarm gains additional <strong>Resistance</strong> equal to its <strong>Toughness</strong>.</p></li><li><p>The swarm's <strong>Size</strong> decreases as its Health is depleted until reaching a minimum Size of 2.</p></li></ul>"
         },
         "Swooping Strike": {
             "name": "Swooping Strike",
@@ -511,7 +586,7 @@
         },
         "Thermal Vision": {
             "name": "Thermal Vision",
-            "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures which are warm-blooded or otherwise emit heat up to 60 feet away as long as they are not behind total cover and you are not Blinded or Incapacitated. A creature detected using this Thermal Vision is treated as visible for the purposes of actions which require you to see your target.</p><p></p>"
+            "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures whose bodily temperature deviates from ambient norms.</p><p>This allows detection of creatures whose body temperatures are <strong>Gelid</strong>, <strong>Cool</strong>, <strong>Warm</strong>, or <strong>Boiling</strong> up to 60 feet away as long as they are not behind total cover and as long as the @ref[actor.name]{creature} is not @Condition[blinded] or @Condition[incapacitated]. A creature detected in this way is treated as visible for the purposes of Actions which require sight.</p>"
         },
         "Thrash": {
             "name": "Thrash",

@@ -211,7 +211,7 @@
                 "Backstab": {
                     "name": "Backstab",
                     "condition": "You are attacking a target with the Flanked condition.",
-                    "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
+                    "description": "<p>You <strong>Strike</strong> with your weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
                 }
             }
         },
@@ -221,8 +221,8 @@
             "actions": {
                 "Laughing Matter": {
                     "name": "Laughing Matter",
-                    "condition": "An enemy fails to affect you or any ally with an attack.",
-                    "description": "<p>When an enemy uses an attack that fails to affect you or any ally, you construct a cutting jest or pantomime which makes a fool of their feeble effort.</p><p>You make an <strong>Performance</strong> skill attack against the target's <strong>Fortitude</strong>, dealing <strong>Psychic</strong> damage to <strong>Morale</strong> upon a success. Furthermore, upon a success, the target suffers 1 <strong>Bane</strong> to all rolls until the start of their next turn.</p><p>The target must be able to see and understand you to be affected by this ability.</p>",
+                    "condition": "An enemy's attack fails to deal any damage or cause any effect to you or any ally.",
+                    "description": "<p>When an enemy's attack fails to deal any damage or cause any effect to you or any ally, you construct a cutting jest or pantomime which makes a fool of their feeble effort.</p><p>You make an <strong>Performance</strong> skill attack against the target's <strong>Fortitude</strong>, dealing <strong>Psychic</strong> damage to <strong>Morale</strong> upon a success. Furthermore, upon a success, the target suffers 1 <strong>Bane</strong> to all rolls until the start of their next turn.</p><p>The target must be able to see and understand you to be affected by this ability.</p>",
                     "effects": [
                         {
                             "name": "Laughing Matter"
@@ -237,7 +237,7 @@
         },
         "Battle-Worn": {
             "name": "Battle-Worn",
-            "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the <strong>Rest</strong> action, you recover additional <strong>Wounds</strong> equal to half your <strong>Toughness</strong> score (rounded down).</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated. Apply the additional wounds recovery manually when resting.</p>"
+            "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the <strong>Rest</strong> action, you recover additional <strong>Wounds</strong> equal to half your <strong>Toughness</strong> score (rounded down).</p>"
         },
         "Beastmaster": {
             "name": "Beastmaster",
