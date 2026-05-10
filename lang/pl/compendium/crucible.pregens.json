@@ -2226,7 +2226,7 @@
                     }
                 },
                 "Heavy Weapon Proficiency": {
-                    "name": "Biegłość w posługiwaniu się ciężką bronią",
+                    "name": "Biegłość w broni ciężkiej",
                     "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
                 },
                 "Thick Skin": {
