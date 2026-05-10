@@ -211,7 +211,7 @@
                 "Backstab": {
                     "name": "Cios w plecy",
                     "condition": "Atakujesz cel ze stanem Flankowany.",
-                    "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                    "description": "<p><strong>Uderzasz</strong> bronią we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                 }
             }
         },
@@ -221,8 +221,8 @@
             "actions": {
                 "Laughing Matter": {
                     "name": "Powód do śmiechu",
-                    "condition": "Wróg nie może zaatakować ciebie ani żadnego z twoich sojuszników.",
-                    "description": "<p>Kiedy wróg używa ataku, który nie ma wpływu na ciebie ani żadnego sojusznika, tworzysz sarkastyczny żart lub pantomimę, która ośmiesza jego słabe wysiłki.</p><p>Wykonujesz atak używając umiejętności <strong>Występy</strong> przeciwko <strong>Wytrwałości</strong> celu, zadając obrażenia <strong>psychiczne</strong> <strong>Morale</strong> w przypadku sukcesu. Ponadto, w przypadku sukcesu, cel otrzymuje 1 <strong>Zgubę</strong> do wszystkich rzutów do początku swojej następnej tury.</p><p>Aby ta umiejętność zadziałała, cel musi cię widzieć i rozumieć.</p>",
+                    "condition": "Atak wroga nie zadaje żadnych obrażeń ani nie wywołuje żadnych skutków ani u ciebie, ani u żadnego sojusznika.",
+                    "description": "<p>Gdy atak wroga nie zadaje żadnych obrażeń ani nie wywołuje żadnego efektu u ciebie lub twoich sojuszników, wymyślasz złośliwą ripostę lub gest, który ośmiesza jego marne wysiłki.</p><p>Wykonujesz atak używając umiejętności <strong>Występy</strong> przeciwko <strong>Wytrwałości</strong> celu, zadając obrażenia <strong>psychiczne</strong> <strong>Morale</strong> w przypadku sukcesu. Ponadto, w przypadku sukcesu, cel otrzymuje 1 <strong>Zgubę</strong> do wszystkich rzutów do początku swojej następnej tury.</p><p>Aby ta umiejętność zadziałała, cel musi cię widzieć i rozumieć.</p>",
                     "effects": [
                         {
                             "name": "Powód do śmiechu"
@@ -237,7 +237,7 @@
         },
         "Battle-Worn": {
             "name": "Wyczerpany walką",
-            "description": "<p>Twoje ciało przetrwało tak wiele obrażeń, że nauczyło się regenerować z niezwykłą skutecznością. Kiedy wykonujesz akcję <strong>Odpoczynek</strong>, odzyskujesz dodatkowe <strong>Rany</strong> równe połowie twojej wartości <strong>Wytrzymałości</strong> (zaokrąglonej w dół).</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent nie jest jeszcze zautomatyzowany. Dodatkowe wyleczenie ran należy zastosować ręcznie podczas odpoczynku.</p>"
+            "description": "<p>Twoje ciało przetrwało tak wiele obrażeń, że nauczyło się regenerować z niezwykłą skutecznością. Kiedy wykonujesz akcję <strong>Odpoczynek</strong>, odzyskujesz dodatkowe <strong>Rany</strong> równe połowie twojej wartości <strong>Wytrzymałości</strong> (zaokrąglonej w dół).</p>"
         },
         "Beastmaster": {
             "name": "Władca bestii",
@@ -863,7 +863,7 @@
             }
         },
         "Heavy Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się ciężką bronią",
+            "name": "Biegłość w broni ciężkiej",
             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
         },
         "Heavy Weapon Training": {
@@ -1117,7 +1117,7 @@
             "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kwitnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Light Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się lekką bronią",
+            "name": "Biegłość w broni lekkiej",
             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Lekką</strong> i <strong>Wyważoną</strong>.</p>"
         },
         "Light Weapon Training": {
@@ -1158,7 +1158,7 @@
             "description": "Wytrenowałeś swoje ciało, aby stało się niebezpieczną bronią. Twoje gołe pięści są traktowane jako broń dobrej jakości, co zwiększa ich obrażenia o +1."
         },
         "Mechanical Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się bronią mechaniczną",
+            "name": "Biegłość w broni mechanicznej",
             "description": "<p>Posiadasz biegłą znajomość obsługi kusz, broni palnej i innych rodzajów broni mechanicznej. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>premię +1 do umiejętności</strong> w kategorii broni <strong>Mechanicznej</strong>.</p>"
         },
         "Mechanical Weapon Training": {
@@ -1220,7 +1220,7 @@
             }
         },
         "Natural Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się bronią naturalną",
+            "name": "Biegłość w broni naturalnej",
             "description": "<p>Płynnie posługujesz się naturalną bronią ciała. Otrzymujesz rangę <strong>Specjalisty</strong> oraz premię <strong>+1 do umiejętności</strong> z bronią z kategorii <strong>Naturalna</strong>.</p>"
         },
         "Natural Weapon Training": {
@@ -1394,7 +1394,7 @@
             "description": "Twoja szybkość umysłu i ciała są równie imponujące. Otrzymujesz +2 Korzyści do wszystkich testów Inicjatywy."
         },
         "Projectile Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się bronią miotaną",
+            "name": "Biegłość w broni miotanej",
             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
         },
         "Projectile Weapon Training": {
@@ -1877,7 +1877,7 @@
             "description": "<p>Przeszedłeś szkolenie z podstaw krawiectwa i potrafisz pracować z większością popularnych tkanin i wykrojów.</p><p>Nadal musisz korzystać z wzorów i książek, aby rozpoznawać tkaniny, skóry i ich właściwości.</p>"
         },
         "Talisman Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się talizmanami",
+            "name": "Biegłość w talizmanach",
             "description": "<p>Posiadasz biegłą wiedzę na temat używania talizmanów, kul, ognisk lub innych podobnych broni. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Talizmanów</strong>.</p>"
         },
         "Talisman Weapon Training": {

@@ -43,8 +43,12 @@
         "Name": "Obrona"
       },
       "Delay": {
-        "Description": "Opóźniasz swoją akcję do późniejszego momentu rundy walki. Wybierz Inicjatywę między 1 a wartością Inicjatywy walczącego po tobie. Będziesz działać zgodnie z tą nową wartością Inicjatywy. Możesz opóźnić swoją turę tylko raz na rundę.",
+        "Description": "Możesz opóźnić swoją akcję do późniejszego momentu rundy walki. Wybierz wartość inicjatywy z przedziału od 1 do wartości o jeden mniejszą od twojej aktualnej inicjatywy. Będziesz działać zgodnie z tą nową wartością inicjatywy, a jeśli inni uczestnicy walki mają taką samą wartość, będziesz działać przed nimi. Możesz opóźnić swoją turę tylko raz na rundę.",
         "Name": "Opóźnienie"
+      },
+      "Investiture": {
+        "Description": "Poświęć czas poza walką na dostrojenie się do wyposażonych przedmiotów magicznych, dzięki czemu przejdą one w stan „Zainwestowane”.",
+        "Name": "Inwestowanie"
       },
       "Move": {
         "Description": "Przesuń się o określoną odległość, zużywając ilość Akcji zależną od twojego Biegu i rodzaju użytej akcji ruchu.",
@@ -71,7 +75,7 @@
         "Name": "Uderzenie"
       },
       "ThrowWeapon": {
-        "Description": "Rzuć swoją bronią do walki wręcz, aby przeprowadzić Uderzenie na pobliskiego przeciwnika. Atak otrzymuje +2 do <strong>Zguby</strong>, a broń zostaje <strong>Upuszczona</strong>.",
+        "Description": "Rzuć wyposażoną bronią białą, aby zaatakować najbliższy cel. Broń zostaje <strong>upuszczona</strong>, a atak otrzymuje +2 <strong>Zgub</strong>, jeśli broń nie posiada właściwości <strong>rzucana</strong>.",
         "Name": "Rzucenie bronią"
       }
     },
@@ -218,6 +222,11 @@
     "SHEET": {
       "Title": "Akcja"
     },
+    "SUMMARY": {
+      "Investiture": "Inwestowanie",
+      "ItemInvested": "Zainwestowano",
+      "ItemDivested": "Zbycie"
+    },
     "TABS": {
       "Description": "Opis",
       "Effects": "Efekty",
@@ -240,8 +249,14 @@
       "ConsumeTooltip": "Ta akcja wymaga użycia określonego przedmiotu eksploatacyjnego.",
       "CostAction": "{action}A",
       "CostFocus": "{focus}S",
-      "CostHand.one": "{hands} Ręka",
-      "CostHand.other": "{hands} Rąk",
+      "CostHand": {
+        "zero": "{hands} Rąk",
+        "one": "{hands} Ręka",
+        "two": "{hands} Ręce",
+        "few": "{hands} Ręce",
+        "many": "{hands} Rąk",
+        "other": "{hands} Rąk"
+      },
       "CostHealth": "{health}PŻ",
       "CostHeroism": "{heroism}H",
       "CostTooltip": "Koszt Punktów Akcji lub Punktów Skupienia potrzebnych do wykonania tej akcji.",
@@ -370,6 +385,7 @@
       "Self": "Osobisty"
     },
     "TARGET_TYPES": {
+      "Aura": "Aury",
       "Blast": "Wybuch",
       "Cone": "Stożek",
       "Fan": "Wachlarz",
@@ -400,19 +416,28 @@
           "SingleTarget": "Wtrącenie może być użyte tylko przeciwko atakowi skierowanemu na pojedynczy cel."
         }
       },
+      "AuraNoToken": "Nie możesz wykonać akcji typu „Aura” bez posiadania tokenu na scenie!",
       "BadStatus": "Nie możesz wykonać {action} w trakcie trwania {status}.",
       "CannotAffordCost": "{name} nie ma wystarczających {resource}, aby wykonać {action}!",
-      "CannotAffordHands.one": "{name} musi mieć {hands} wolną rękę, aby wykonać {action}!",
-      "CannotAffordHands.other": "{name} musi mieć {hands} wolnych rąk, aby wykonać {action}!",
+      "CannotAffordHands": {
+        "zero": "{name} musi mieć {hands} wolnych rąk, aby wykonać {action}!",
+        "one": "{name} musi mieć {hands} wolną rękę, aby wykonać {action}!",
+        "two": "{name} musi mieć {hands} wolne ręce, aby wykonać {action}!",
+        "few": "{name} musi mieć {hands} wolne ręce, aby wykonać {action}!",
+        "many": "{name} musi mieć {hands} wolnych rąk, aby wykonać {action}!",
+        "other": "{name} musi mieć {hands} wolnych rąk, aby wykonać {action}!"
+      },
       "CannotAffordMove": "{name} nie ma wystarczającej ilości akcji, aby pokonać tę odległość, która wymaga {cost}A!",
       "CannotSpendAction": "{name} nie może wykonać akcji, ponieważ jest Obezwładniony!",
       "CannotSpendFocus": "{name} nie może wydawać punktów skupienia, ponieważ obecnie ma status {status}!",
       "CannotTargetSelf": "Nie możesz użyć tej akcji przeciwko sobie!",
       "CannotThrow": "Nie możesz rzucać tą bronią.",
-      "CannotUse": "{name} nie spełnia warunków koniecznych do skorzystania z {action}: {reason}",
+      "CannotUse": "{name} nie spełnia warunków wstępnych wymaganych do wykonania {action}.",
+      "CannotUseReason": "{name} nie spełnia warunków koniecznych do skorzystania z {action}: {reason}",
       "DirectMovementOnly": "Ta akcja wymaga bezpośredniej ścieżki ruchu bez punktów pośrednich.",
       "IncorrectTargets": "Możesz wyznaczyć maksymalnie {number} celów {type} dla {action}!",
       "InvalidTarget": "Musisz wyznaczyć co najmniej jeden cel {type} dla {action}!",
+      "InvalidTargetsGeneric": "Nieprawidłowe cele dla tej akcji!",
       "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym Ataku, który nie zakończył się krytyczną porażką.",
       "MaximumRange": "Wybrany cel znajduje się dalej niż maksymalny zasięg {max} stóp.",
       "MinimumRange": "Wybrany cel znajduje się bliżej niż minimalny zasięg {min} stóp.",
@@ -431,6 +456,7 @@
       "NonCombat": "Nie możesz wykonać {action} podczas walki.",
       "NoReloadRequired": "Twoja broń nie wymaga przeładowania",
       "NotFlanked": "{action} wymaga flankowanego celu. Cel „{target}” nie jest flankowany.",
+      "NoViewedScene": "Aby wykonać tę akcję, konieczne jest wyświetlenie sceny.",
       "ReactionUnaware": "Nie możesz użyć reakcji, gdy jesteś Nieświadomy!",
       "RequiresMelee": "Aby wykonać tę akcję, musisz mieć wyposażoną broń do walki wręcz.",
       "RequiresNatural": "Ta akcja wymaga użycia broni naturalnej.",
@@ -452,7 +478,7 @@
     "ChooseWeaponHint": "Możesz wybrać broń, której użyjesz do wykonania tej akcji.",
     "Condition": "Warunek",
     "Confirmed": "Potwierdzone",
-    "DelayHint": "Wybierz wartość inicjatywy od 1 do {maximum}, gdy chcesz wykonać akcję.",
+    "DelayHint": "Wybierz wartość inicjatywy z przedziału od 1 do {maximum}, przy której chcesz wykonać akcję. Informacje na temat tego, jak opóźniona inicjatywa wpływa na rozstrzyganie remisów, znajdziesz pod adresem @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Inicjatywa i kolejność tur}.",
     "DelayLabel": "Opóźniona inicjatywa",
     "DelayTitle": "Opóźnienie tury",
     "DurationRounds": "{value}R",
@@ -530,6 +556,7 @@
       "Slowed": "Spowolniony",
       "Staggered": "Chwiejny",
       "Stunned": "Oszołomiony",
+      "Suffocating": "Duszący",
       "Unaware": "Nieświadomy",
       "Weakened": "Osłabiony"
     }
@@ -688,9 +715,13 @@
         "members": {
           "actor.label": "ID aktora",
           "label": "Członkowie grupy",
+          "quantity.label": "Ilość aktorów",
+          "zero": "Członków",
           "one": "Członek",
-          "other": "Członkowie",
-          "quantity.label": "Ilość aktorów"
+          "two": "Członków",
+          "few": "Członków",
+          "many": "Członków",
+          "other": "Członków"
         },
         "movement": {
           "air.label": "Prędkość w powietrzu",
@@ -890,8 +921,13 @@
         "hint": "Identyfikator ciągu znaków używany do jednoznacznego odwoływania się do tego Pochodzenia w tagach, działaniach lub innych elementach interfejsu użytkownika. Identyfikator ten musi być alfanumeryczny, bez spacji i znaków specjalnych.",
         "label": "Identyfikator"
       },
+      "characteristics": {
+        "label": "Charakterystyka pochodzenia",
+        "temperature.hint": "Temperatura ciała tego pochodzenia jest domyślnie neutralna.",
+        "temperature.label": "Temperatura ciała"
+      },
       "movement": {
-        "label": "Ruch i postura",
+        "label": "Ruch",
         "size": {
           "hint": "Rozmiar tego pochodzenia w jednostkach siatki.",
           "label": "Rozmiar"
@@ -933,7 +969,9 @@
       "Browse": "Przeglądaj pochodzenia",
       "Choose": "Wybierz pochodzenie",
       "Clear": "Wyczyść pochodzenie",
-      "Identity": "Tożsamość"
+      "Identity": "Tożsamość",
+      "Physiology": "Fizjologia",
+      "TemperatureBlank": "Wartość domyślna ({temperature})"
     },
     "WARNINGS": {
       "Abilities": "Podstawowe i dodatkowe atrybuty dla Pochodzenia nie mogą być takie same.",
@@ -1044,11 +1082,15 @@
       "GroupRevoke": "Odwołano {number} {label} grupie {name} oraz następującym członkom:",
       "Identifier": "Identyfikator",
       "IdentifierHint": "Unikalny identyfikator nagrody za osiągnięcie kamienia milowego musi być slugiem (bez spacji i znaków specjalnych).",
-      "one": "Kamień milowy",
-      "other": "Kamienie milowe",
       "Recipients": "Osoby, które osiągnęły kamień milowy",
       "RecipientsHint": "Wyznacz jednego lub więcej bohaterów, którzy otrzymają ten kamień milowy.",
-      "Revoke": "Odwołać kamienie milowe"
+      "Revoke": "Odwołać kamienie milowe",
+      "zero": "Kamieni milowych",
+      "one": "Kamień milowy",
+      "two": "Kamienie milowe",
+      "few": "Kamienie milowe",
+      "many": "Kamieni milowych",
+      "other": "Kamieni milowych"
     },
     "SUMMARIES": {
       "TABLE": {
@@ -1224,13 +1266,26 @@
     },
     "USES": {
       "Of": "z",
-      "TagMax.one": "{value} Użycie",
-      "TagMax.other": "{value} Użycia",
-      "TagPartial.one": "{value}/{max} Użycie",
-      "TagPartial.other": "{value}/{max} Użyć"
+      "TagMax": {
+        "zero": "{value} Użyć",
+        "one": "{value} Użycie",
+        "two": "{value} Użycia",
+        "few": "{value} Użycia",
+        "many": "{value} Użyć",
+        "other": "{value} Użyć"
+      },
+      "TagPartial": {
+        "zero": "{value}/{max} Użyć",
+        "one": "{value}/{max} Użycie",
+        "two": "{value}/{max} Użycia",
+        "few": "{value}/{max} Użycia",
+        "many": "{value}/{max} Użyć",
+        "other": "{value}/{max} Użyć"
+      }
     }
   },
   "CONTROLS": {
+    "CrucibleForcedMovement": "Wymuszony ruch",
     "VisualizeFlanking": "Wizualizacja flankowania"
   },
   "CRUCIBLE": {
@@ -1310,12 +1365,15 @@
     "Block": "Blok",
     "Dodge": "Unik",
     "Fortitude": "Wytrwałość",
-    "Madness": "Obłęd",
+    "Madness": "Próg mobilizacji",
     "Parry": "Parowanie",
     "Physical": "Fizyczne",
     "Reflex": "Refleks",
     "Willpower": "Wola",
-    "Wounds": "Rany"
+    "Wounds": "Próg uzdrawiania"
+  },
+  "DETECTION_MODES": {
+    "ThermalVision": "Widzenie termiczne"
   },
   "DICE": {
     "DIFFICULTIES": {
@@ -1361,10 +1419,22 @@
     },
     "Ability": "Atrybut",
     "AbilityBonus": "Premia atrybutu",
-    "Banes.one": "Zguba",
-    "Banes.other": "Zguby",
-    "Boons.one": "Korzyść",
-    "Boons.other": "Korzyści",
+    "Banes": {
+      "zero": "Zgub",
+      "one": "Zguba",
+      "two": "Zguby",
+      "few": "Zguby",
+      "many": "Zgub",
+      "other": "Zguby"
+    },
+    "Boons": {
+      "zero": "Korzyści",
+      "one": "Korzyść",
+      "two": "Korzyści",
+      "few": "Korzyści",
+      "many": "Korzyści",
+      "other": "Korzyści"
+    },
     "CircumstanceBonus": "Premia okolicznościowa",
     "Confirm": "Potwierdź",
     "Damage": "Obrażenia",
@@ -1404,7 +1474,36 @@
   },
   "HOOKS": {
     "NoModuleHooks": "Dla tego identyfikatora nie zarejestrowano żadnych uchwytów modułów.",
-    "ToggleSource": "Zmień źródło"
+    "ToggleSource": "Zmień źródło",
+    "WARNINGS": {
+      "GemConjuredFlameShoddy": "Klejnot wywołanego płomienia tandetnej jakości nie pozwala przywołać żadnego żywiołaka.",
+      "NoLanternOil": "Aby zapalić latarnię, musisz mieć w ekwipunku butelkę oleju do latarni.",
+      "RestRecoverIncapacitated": "Nie możesz Odpoczywać ani używać Odzyskiwanie, gdy jesteś Martwy lub Obłąkany."
+    }
+  },
+  "HAZARD": {
+    "Hazard": "Zagrożenie",
+    "UseHazard": "Użycie zagrożenia",
+    "WindowTitle": "Zagrożenie: {name}",
+    "CONFIG": {
+      "Title": "Konfiguracja zagrożenia",
+      "Name": "Nazwa",
+      "Danger": "Poziom zagrożenia",
+      "Defense": "Obrona przed atakiem",
+      "Damage": "Typ obrażeń",
+      "Tags": "Tagi akcji"
+    },
+    "TARGETS": {
+      "Title": "Cele objęte działaniem",
+      "Hint": "Umieść tu tokeny lub aktorów lub kliknij przycisk drużyny, aby dodać członków drużyny.",
+      "Add": "Dodaj cel",
+      "Remove": "Usuń cel",
+      "Clear": "Wyczyść wszystko",
+      "Party": "Dodaj drużynę"
+    },
+    "WARNINGS": {
+      "GMOnly": "Tylko MG może konfigurować i rzucać kostką w sytuacjach zagrożenia."
+    }
   },
   "ITEM": {
     "ACTIONS": {
@@ -1546,7 +1645,8 @@
     "QualityMasterwork": "Mistrzowska",
     "QualityShoddy": "Tandetna",
     "QualityStandard": "Standardowa",
-    "QualitySuperior": "Wybitna"
+    "QualitySuperior": "Wybitna",
+    "QuantityNone": "Brak"
   },
   "KEYBINDINGS": {
     "ConfirmAction": "Potwierdź akcję",
@@ -1978,8 +2078,14 @@
     "WARNINGS": {
       "BindArmamentAlreadyBound": "broń jest już przypisana",
       "BindArmamentNoMainhand": "brak broni głównej",
-      "CannotAffordHands.one": "Zaklęcie {action} wymaga {hands} wolnej ręki, aby je rzucić.",
-      "CannotAffordHands.other": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić.",
+      "CannotAffordHands": {
+        "zero": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić.",
+        "one": "Zaklęcie {action} wymaga {hands} wolnej ręki, aby je rzucić.",
+        "two": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić.",
+        "few": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić.",
+        "many": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić.",
+        "other": "Zaklęcie {action} wymaga {hands} wolnych rąk, aby je rzucić."
+      },
       "CannotUseNotComposed": "Nie można rzucić zaklęcia, które nie zostało jeszcze w pełni skomponowane.",
       "CannotUseSilenced": "Nie można używać Fleksji podczas Wyciszenia.",
       "IconicAlreadyKnown": "Aktor {actor} zna już ikoniczne zaklęcie {spell}.",
@@ -2058,10 +2164,22 @@
       "Register": "Zarejestruj funkcję uchwytu"
     },
     "LABELS": {
-      "Points.one": "Punkt",
-      "Points.other": "Punkty",
-      "Talents.one": "Talent",
-      "Talents.other": "Talenty"
+      "Points": {
+        "zero": "Punktów",
+        "one": "Punkt",
+        "two": "Punkty",
+        "few": "Punkty",
+        "many": "Punktów",
+        "other": "Punktów"
+      },
+      "Talents": {
+        "zero": "Talentów",
+        "one": "Talent",
+        "two": "Talenty",
+        "few": "Talenty",
+        "many": "Talentów",
+        "other": "Talentów"
+      }
     },
     "NODES": {
       "Attack": "Atak",
@@ -2139,7 +2257,9 @@
       "characteristics": {
         "equipment.label": "Może używać wyposażenia",
         "label": "Charakterystyka taksonomii",
-        "spells.label": "Może rzucać zaklęcia"
+        "spells.label": "Może rzucać zaklęcia",
+        "temperature.hint": "Temperatura ciała stworzeń należących do tej taksonomii. Jeśli pole pozostanie puste, domyślnie zostanie przyjęta temperatura wybranej kategorii stworzeń.",
+        "temperature.label": "Temperatura ciała"
       },
       "identifier": {
         "hint": "Identyfikator ciągu znaków używany do jednoznacznego odwoływania się do tej taksonomii w tagach, akcjach lub innych elementach interfejsu użytkownika. Identyfikator ten musi być alfanumeryczny, bez spacji i znaków specjalnych.",
@@ -2173,12 +2293,20 @@
       "Choose": "Wybierz taksonomię",
       "Clear": "Wyczyść taksonomię",
       "Physiology": "Fizjologia",
-      "Stature": "Wzrost taksonomiczny"
+      "Stature": "Wzrost taksonomiczny",
+      "TemperatureBlank": "Wartość domyślna ({temperature})"
     },
     "WARNINGS": {
       "InvalidAbilities": "Suma początkowych wartości atrybutów musi wynosić 12. Obecnie {sum}",
       "InvalidResistances": "Suma współczynników skalowania odporności musi wynosić zero. Obecnie {sum}"
     }
+  },
+  "TEMPERATURE_TIERS": {
+    "Boiling": "Upalny",
+    "Warm": "Ciepły",
+    "Neutral": "Neutralna",
+    "Cool": "Chłodny",
+    "Gelid": "Lodowaty"
   },
   "TOKEN": {
     "LABELS": {
@@ -2225,6 +2353,10 @@
           "description": "Przesuń się o odległość równą Twojej wartości atrybutu Bieg na każdą Akcję.",
           "label": "Marsz"
         }
+      },
+      "COST": {
+        "Forced": "Wymuszony",
+        "Impossible": "Niemożliwy"
       }
     }
   },

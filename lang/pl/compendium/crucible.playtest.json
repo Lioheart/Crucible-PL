@@ -319,7 +319,7 @@
                             "description": "<p>Wzmocnij zaklęcie, poświęcając więcej czasu na jego utworzenie, w zamian za co zmniejszysz koszty innych zasobów. Fleksja Kompozycja zmniejsza koszt <strong>Skupienia</strong> zaklęcia o 1, zwiększając w zamian jego koszt <strong>Akcji</strong> o 1.</p>"
                         },
                         "Gesture: Create": {
-                            "name": "Gest: Kształt",
+                            "name": "Gest: Tworzenie",
                             "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
                         },
                         "Gesture: Arrow": {
@@ -570,7 +570,7 @@
                             }
                         },
                         "Natural Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się bronią naturalną",
+                            "name": "Biegłość w broni naturalnej",
                             "description": "<p>Płynnie posługujesz się naturalną bronią ciała. Otrzymujesz rangę <strong>Specjalisty</strong> oraz premię <strong>+1 do umiejętności</strong> z bronią z kategorii <strong>Naturalna</strong>.</p>"
                         },
                         "Berserker": {
@@ -1060,7 +1060,7 @@
                             "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Atletyka</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
                         },
                         "Heavy Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się ciężką bronią",
+                            "name": "Biegłość w broni ciężkiej",
                             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
                         },
                         "Sundering Strike": {
@@ -1336,7 +1336,7 @@
                             }
                         },
                         "Light Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się lekką bronią",
+                            "name": "Biegłość w broni lekkiej",
                             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Lekką</strong> i <strong>Wyważoną</strong>.</p>"
                         },
                         "Awareness Novice": {
@@ -1740,7 +1740,7 @@
                             }
                         },
                         "Projectile Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się bronią miotaną",
+                            "name": "Biegłość w broni miotanej",
                             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
                         },
                         "Gesture: Step": {
@@ -1796,7 +1796,7 @@
                             "actions": {
                                 "Blast Flask": {
                                     "name": "Kolba wybuchowa",
-                                    "description": "<p>Podpalamasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                                 }
                             }
                         },
@@ -2362,7 +2362,7 @@
                             }
                         },
                         "Heavy Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się ciężką bronią",
+                            "name": "Biegłość w broni ciężkiej",
                             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
                         },
                         "Thick Skin": {

@@ -15,6 +15,7 @@
         "Creature Bane": "Tworzące Zgubę",
         "Gestures": "Gesty",
         "Resources": "Zasoby",
+        "Senses": "Zmysły",
         "Damage": "Obrażenia",
         "Resistances": "Odporności"
     },
@@ -407,6 +408,22 @@
             "name": "Świetlistości",
             "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka. Tylko jeden afiks może zapewniać tę korzyść.</p>",
             "adjective": "Świetlistości"
+        },
+        "Luminous": {
+            "name": "Świetlisty",
+            "description": "<p>Zapewnia akcję <strong>Aktywacja iluminacji</strong>, pozwalające posiadaczowi rozjaśnić otoczenie nieziemskim światłem. Zasięg światła zależy od <strong>stopnia</strong> tego afiksu.</p>",
+            "adjective": "Świetlistości",
+            "actions": {
+                "Activate Illumination": {
+                    "name": "Aktywacja iluminacji",
+                    "description": "<p>Wypowiadasz słowo-komendę, a @ref[item.name]{przedmiot} rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przedrostka, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
+                    "effects": [
+                        {
+                            "name": "Świetlisty"
+                        }
+                    ]
+                }
+            }
         },
         "Medicine": {
             "name": "Medycyna",

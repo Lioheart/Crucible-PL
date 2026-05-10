@@ -5,6 +5,7 @@
         "Accessories": "Akcesoria",
         "Melee (1h)": "Walka wręcz (1r)",
         "Implements": "Przyrządy",
+        "Trinket": "Błyskotka",
         "Bombs": "Bomby",
         "Other": "Inne",
         "Unarmored": "Nieopancerzony",
@@ -26,6 +27,7 @@
         "Toxins": "Toksyny",
         "Unarmed": "Nieuzbrojony",
         "Melee (2h)": "Walka wręcz (2r)",
+        "Summons": "Przywołania",
         "Adventuring Gear": "Sprzęt poszukiwaczy przygód",
         "Shields": "Tarcze",
         "Talisman": "Talizman",
@@ -140,7 +142,7 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
-                    "description": "<p>Podpalamasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                 }
             }
         },
@@ -350,10 +352,34 @@
                 "public": "<p>Mała skórzana torebka zawierająca zestaw szczypiec, nożyc, szydełek i zestaw składanych metalowych prętów, które można ze sobą skręcić. Przeznaczona do rozbrajania lub uruchamiania sideł, linek pułapkowych, płyt naciskowych i innych popularnych pułapek.</p>"
             }
         },
+        "Disguise Toolkit": {
+            "name": "Zestaw narzędzi do przebrania",
+            "description": {
+                "public": "<p>Drewniana torba podróżna w skórzanej oprawie, zawierająca lusterko ręczne, starannie wyselekcjonowane kawałki tkanin, kosmetyki, barwniki, peruki, sztuczne zarosty, biżuterię, kleje bezpieczne dla skóry oraz inne akcesoria kostiumowe, które mają pomóc w zmianie wyglądu.</p>"
+            }
+        },
         "Dress Clothing": {
             "name": "Eleganckie ubranie",
             "description": {
                 "public": "<p>Królewski zestaw eleganckich szat, odpowiedni do udziału w uroczystościach i wydarzeniach towarzyskich, zawiera płaszcz lub suknię, chustkę lub krawat, elegancką koszulę lub gorset, kamizelkę lub gorset, spodnie lub halkę, pasek lub szelki, pończochy i eleganckie buty.</p>"
+            }
+        },
+        "Electrocharge Ampoule": {
+            "name": "Ampułka z ładunkiem elektrycznym",
+            "description": {
+                "public": "<p>Zamknięta szklana rurka wypełniona żółtym płynem eksploduje po pęknięciu, powodując nagły wyładowanie elektryczne.</p>",
+                "private": "<p>Zastosowane głównie do zasilania niewielkich urządzeń elektromechanicznych przez krótki czas, te alchemiczne pojemniki są dość niestabilne i reagują niekorzystnie pod wpływem powietrza, co sprawia, że nadają się na nieprzewidywalne improwizowane ładunki wybuchowe. Jeśli połączy się je w odpowiedniej ilości i we właściwy sposób, można je również wykorzystać do zasilania większych urządzeń i wyzwolenia jeszcze większej ilości energii elektrycznej.</p>"
+            },
+            "actions": {
+                "Electrocharge Ampoule": {
+                    "name": "Ampułka z ładunkiem elektrycznym",
+                    "description": "<p>Rzucasz @ref[name], zadając osłabione <strong>obrażenia elektryczne</strong> wszystkim wrogom w promieniu wyładowania i powodując u nich krótkotrwały stan @Condition[staggered]. Promień <strong>wyładowania</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Ampułka z ładunkiem elektrycznym"
+                        }
+                    ]
+                }
             }
         },
         "Enchanter's Portable Workbench": {
@@ -396,6 +422,81 @@
             "name": "Zestaw narzędzi brzechwiarza",
             "description": {
                 "public": "<p>Skórzany kołczan z zamykaną końcówką, zawierający uchwyt montażowy, strug, szczotki i małą przędzarkę do nawijania plecionych sznurków. Po otwarciu rozkłada się na matę, która może służyć jako płaska powierzchnia robocza.</p>"
+            }
+        },
+        "Focusing Pearl": {
+            "name": "Perła skupienia",
+            "description": {
+                "public": "<blockquote><p>Mała, intensywnie niebieska perła, która w dotyku daje uczucie orzeźwiającego chłodu niezależnie od temperatury otoczenia.</p></blockquote><p>Ta zaklęta perła zapewnia posiadaczowi zdolność <strong>Odnowienie skupienia</strong>, dając dodatkowy zapas <strong>Skupienia</strong>, z którego można skorzystać w trudnych chwilach.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład perły Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a perła ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Focusing": {
+                    "name": "Skupienia",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+                    "adjective": "Skupienia",
+                    "actions": {
+                        "Replenish Focus": {
+                            "name": "Odnowienie skupienia",
+                            "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                        }
+                    }
+                }
+            }
+        },
+        "Frostdrop Phial": {
+            "name": "Fiolka ze szronem",
+            "description": {
+                "public": "<p>Zawiesina białych kryształków w niebieskiej cieczy zamkniętej w szklanym pojemniku. Po wystawieniu na działanie powietrza zawartość szybko odparowuje, tworząc niewielki strumień lodowatej cieczy, który pokrywa otaczające przedmioty lodową warstwą.</p>",
+                "private": "<p>Fiołki alchemiczne, stosowane głównie do szybkiego schładzania związków metalurgicznych w zaawansowanym kowalstwie, mogą stanowić poważne zagrożenie dla żywej tkanki w przypadku długotrwałego kontaktu.</p>"
+            },
+            "actions": {
+                "Frostdrop Flask": {
+                    "name": "Kolba ze szronem",
+                    "description": "<p>Rzucasz @ref[name], zadając osłabione <strong>obrażenia od zimna</strong> wszystkim wrogom w promieniu wybuchu i powodując, że na krótko zostaną oni @Condition[slowed]. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Kolba ze szronem"
+                        }
+                    ]
+                }
+            }
+        },
+        "Gem Of Conjured Flame": {
+            "name": "Klejnot wywołanego płomienia",
+            "description": {
+                "public": "<p>Wszechstronny, surowo oszlifowany klejnot nasycony energiami żywiołów. Po rzuceniu klejnot ten rozbija się i przywołuje ducha żywiołu, który pozostaje pod kontrolą osoby, która go rozbiła. Jego jakość decyduje o poziomie przywołanego żywiołaka.</p>"
+            },
+            "actions": {
+                "Summon Flame Elemental": {
+                    "name": "Przywołanie żywiołaka ognia",
+                    "description": "<p>@ref[name] rozbija się w wybuchu płomieni, pozostawiając po sobie ognistego żywiołaka. Żywiołaki przywołane przez ten klejnot pozostają w grze przez 6 rund (1 minutę).</p><ul><li><p><strong>andetna jakość - </strong>Żaden żywiołak nie zostaje przywołany</p></li><li><p><strong>Standardowa jakość</strong>- Cząstka żywiołów</p></li><li><p><strong>Dobra jakość</strong> - Duch żywiołów</p></li><li><p><strong>Wybitna jakość</strong> - Gość żywiołów</p></li><li><p><strong>Mistrzowska jakość - </strong>Wędrowiec żywiołów</p></li></ul>"
+                }
+            }
+        },
+        "Gem of Illumination": {
+            "name": "Klejnot iluminacji",
+            "description": {
+                "public": "<blockquote><p>Ten starannie oszlifowany kamień szlachetny emituje delikatną, ciepłą poświatę i jest ciepły w dotyku.</p></blockquote><p>Ten zaklęty klejnot zapewnia posiadaczowi zdolność <strong>Aktywacja iluminacji</strong>, rozlewając nieziemskie światło w szerokim promieniu, dopóki nie zostanie wyłączone.</p>",
+                "private": "<p>Ten przedmiot stanowi przykład klejnotu Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a klejnot ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+            },
+            "affixes": {
+                "Luminous": {
+                    "name": "Świetlisty",
+                    "description": "<p>Zapewnia akcję <strong>Aktywacja iluminacji</strong>, pozwalające posiadaczowi rozjaśnić otoczenie nieziemskim światłem. Zasięg światła zależy od <strong>stopnia</strong> tego afiksu.</p>",
+                    "adjective": "Świetlistości",
+                    "actions": {
+                        "Activate Illumination": {
+                            "name": "Aktywacja iluminacji",
+                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przedrostka, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
+                            "effects": [
+                                {
+                                    "name": "Świetlisty"
+                                }
+                            ]
+                        }
+                    }
+                }
             }
         },
         "Glaive": {
@@ -631,6 +732,23 @@
             "name": "Latarnia",
             "description": {
                 "public": "<p>Latarnia opalana olejem lub magicznie oświetlona, która rzuca jasne światło w promieniu 20 stóp i słabe światło w promieniu 40 stóp.</p>"
+            },
+            "actions": {
+                "Light Lantern": {
+                    "name": "Zapalenie latarnii",
+                    "description": "<p>Rozpalasz @ref[name], zapewniając stałe oświetlenie w szerokim promieniu. Czynność ta zużywa jedną jednostkę @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{oleju do latarni} z ekwipunku; czas palenia zależy od jakości zużytego oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Latarnia"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lantern Oil": {
+            "name": "Olej do latarni",
+            "description": {
+                "public": "<p>Mała butelka rafinowanego oleju opałowego. Jedna jednostka oleju do latarni zużywana jest do zapalenia @UUID[Compendium.crucible.equipment.Item.lantern000000000]{latarnii}; czas palenia zależy od jakości oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>"
             }
         },
         "Leather Armor": {
@@ -707,6 +825,23 @@
                     "effects": [
                         {
                             "name": "W sieci"
+                        }
+                    ]
+                }
+            }
+        },
+        "Omniglot Decoction": {
+            "name": "Wywar wszechmowy",
+            "description": {
+                "public": "<p>Niezwykle lekki napój o ziemistym i ziołowym smaku.</p>"
+            },
+            "actions": {
+                "Omniglot Decoction": {
+                    "name": "Wywar wszechmowy",
+                    "description": "<p>Po spożyciu wywar ten zapewnia pijącego fascynującą zdolność czytania, mówienia i rozumienia języków. Jego jakość decyduje o czasie trwania efektu:</p><ul><li><p><strong>Tandetna jakość</strong> - 10 minut</p></li><li><p><strong>Standardowa jakość</strong> - 1 godzina</p></li><li><p><strong>Dobra jakość</strong> - 4 godziny</p></li><li><p><strong>Wybitna jakość</strong> - 12 godzin</p></li><li><p><strong>Mistrzowska jakość</strong> - 24 godziny</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Wywar wszechmowy"
                         }
                     ]
                 }
@@ -1206,6 +1341,17 @@
             "name": "Pochodnia",
             "description": {
                 "public": "<p>Warstwy nasączone olejem przymocowane wokół końca pręta wykonanego z kości lub innego niepalnego materiału, niedrogie, choć mało wydajne, tymczasowe źródło światła. Każda pochodnia może palić się przez godzinę, po czym nie nadaje się już do użytku.</p>"
+            },
+            "actions": {
+                "Light Torch": {
+                    "name": "Zapalenie pochodni",
+                    "description": "<p>Rozpalasz @ref[name], tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
+                    "effects": [
+                        {
+                            "name": "Pochodnia"
+                        }
+                    ]
+                }
             }
         },
         "Tower Shield": {

@@ -88,6 +88,10 @@
             "name": "Strażnik prawa",
             "description": "<p>Funkcjonariusze policji, detektywi, śledczy i inni przedstawiciele organów ścigania odpowiedzialni za utrzymanie porządku publicznego i ściganie osób, które go naruszają.</p>"
         },
+        "Lightweaver": {
+            "name": "Tkacz światła",
+            "description": "<p>Magowie specjalizujący się w runach Światłości i Ognia.</p>"
+        },
         "Mage": {
             "name": "Mag",
             "description": "Mag, który w walce posługuje się ogniem i elektrycznością."
@@ -135,6 +139,10 @@
         "Spellblade": {
             "name": "Zaklęte ostrze",
             "description": "<p>Zaklęte ostrza to magicznie wzmocnieni wojownicy, którzy wykorzystują sztukę czarów w swoich atakach bronią, aby zadawać niszczycielskie ciosy.</p>"
+        },
+        "Swarm": {
+            "name": "Rój",
+            "description": "<p>Ten przeciwnik składa się z wielu stworzeń, które poruszają się jako jeden rój, przytłaczając przeciwników samą liczebnością.</p>"
         },
         "Swashbuckler": {
             "name": "Zawadiaka",
