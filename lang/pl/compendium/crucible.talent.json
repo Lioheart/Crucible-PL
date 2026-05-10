@@ -211,7 +211,7 @@
                 "Backstab": {
                     "name": "Cios w plecy",
                     "condition": "Atakujesz cel ze stanem Flankowany.",
-                    "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                    "description": "<p><strong>Uderzasz</strong> bronią we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                 }
             }
         },
@@ -221,8 +221,8 @@
             "actions": {
                 "Laughing Matter": {
                     "name": "Powód do śmiechu",
-                    "condition": "Wróg nie może zaatakować ciebie ani żadnego z twoich sojuszników.",
-                    "description": "<p>Kiedy wróg używa ataku, który nie ma wpływu na ciebie ani żadnego sojusznika, tworzysz sarkastyczny żart lub pantomimę, która ośmiesza jego słabe wysiłki.</p><p>Wykonujesz atak używając umiejętności <strong>Występy</strong> przeciwko <strong>Wytrwałości</strong> celu, zadając obrażenia <strong>psychiczne</strong> <strong>Morale</strong> w przypadku sukcesu. Ponadto, w przypadku sukcesu, cel otrzymuje 1 <strong>Zgubę</strong> do wszystkich rzutów do początku swojej następnej tury.</p><p>Aby ta umiejętność zadziałała, cel musi cię widzieć i rozumieć.</p>",
+                    "condition": "Atak wroga nie zadaje żadnych obrażeń ani nie wywołuje żadnych skutków ani u ciebie, ani u żadnego sojusznika.",
+                    "description": "<p>Gdy atak wroga nie zadaje żadnych obrażeń ani nie wywołuje żadnego efektu u ciebie lub twoich sojuszników, wymyślasz złośliwą ripostę lub gest, który ośmiesza jego marne wysiłki.</p><p>Wykonujesz atak używając umiejętności <strong>Występy</strong> przeciwko <strong>Wytrwałości</strong> celu, zadając obrażenia <strong>psychiczne</strong> <strong>Morale</strong> w przypadku sukcesu. Ponadto, w przypadku sukcesu, cel otrzymuje 1 <strong>Zgubę</strong> do wszystkich rzutów do początku swojej następnej tury.</p><p>Aby ta umiejętność zadziałała, cel musi cię widzieć i rozumieć.</p>",
                     "effects": [
                         {
                             "name": "Powód do śmiechu"
@@ -237,7 +237,7 @@
         },
         "Battle-Worn": {
             "name": "Wyczerpany walką",
-            "description": "<p>Twoje ciało przetrwało tak wiele obrażeń, że nauczyło się regenerować z niezwykłą skutecznością. Kiedy wykonujesz akcję <strong>Odpoczynek</strong>, odzyskujesz dodatkowe <strong>Rany</strong> równe połowie twojej wartości <strong>Wytrzymałości</strong> (zaokrąglonej w dół).</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent nie jest jeszcze zautomatyzowany. Dodatkowe wyleczenie ran należy zastosować ręcznie podczas odpoczynku.</p>"
+            "description": "<p>Twoje ciało przetrwało tak wiele obrażeń, że nauczyło się regenerować z niezwykłą skutecznością. Kiedy wykonujesz akcję <strong>Odpoczynek</strong>, odzyskujesz dodatkowe <strong>Rany</strong> równe połowie twojej wartości <strong>Wytrzymałości</strong> (zaokrąglonej w dół).</p>"
         },
         "Beastmaster": {
             "name": "Władca bestii",
