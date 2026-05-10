@@ -1877,7 +1877,7 @@
             "description": "<p>Przeszedłeś szkolenie z podstaw krawiectwa i potrafisz pracować z większością popularnych tkanin i wykrojów.</p><p>Nadal musisz korzystać z wzorów i książek, aby rozpoznawać tkaniny, skóry i ich właściwości.</p>"
         },
         "Talisman Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się talizmanami",
+            "name": "Biegłość w talizmanach",
             "description": "<p>Posiadasz biegłą wiedzę na temat używania talizmanów, kul, ognisk lub innych podobnych broni. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Talizmanów</strong>.</p>"
         },
         "Talisman Weapon Training": {
