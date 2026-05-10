@@ -570,7 +570,7 @@
                             }
                         },
                         "Natural Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się bronią naturalną",
+                            "name": "Biegłość w broni naturalnej",
                             "description": "<p>Płynnie posługujesz się naturalną bronią ciała. Otrzymujesz rangę <strong>Specjalisty</strong> oraz premię <strong>+1 do umiejętności</strong> z bronią z kategorii <strong>Naturalna</strong>.</p>"
                         },
                         "Berserker": {
@@ -1060,7 +1060,7 @@
                             "description": "<p>Otrzymujesz rangę <strong>Specjalista</strong> w umiejętności <strong>Atletyka</strong>, zapewniającą <strong>premię +1 do umiejętności</strong>.</p>"
                         },
                         "Heavy Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się ciężką bronią",
+                            "name": "Biegłość w broni ciężkiej",
                             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Prostą</strong>, <strong>Ciężką</strong> i <strong>Wyważoną</strong>.</p>"
                         },
                         "Sundering Strike": {
