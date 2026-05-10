@@ -25,6 +25,10 @@
             "name": "Pajęczak",
             "description": "<p>Zwierzęta z rodziny pajęczaków, które tkają sieci, aby łapać i polować na małe stworzenia lub owady. Pajęczaki są zazwyczaj zręczne i cierpliwe, ale niektóre gatunki preferują siłę lub agresję.</p><ul><li><p><strong>Rozmiar</strong>: zmienny</p></li><li><p><strong>Bieg</strong>: zmienny</p></li></ul>"
         },
+        "Automaton": {
+            "name": "Automat",
+            "description": "<p>Konstrukcje zaprojektowane jako odpowiedniki humanoidów, służące do wykonywania prostych zadań fizycznych.</p>"
+        },
         "Boar": {
             "name": "Dzik",
             "description": "<p>Ssaki o grubej skórze, niebezpiecznych kłach i potężnym, nisko osadzonym środku ciężkości.</p>"
@@ -32,6 +36,10 @@
         "Crystal Spider": {
             "name": "Pająk kryształowy",
             "description": "<p>Pajęczak złożony z lub pokryty refrakcyjnymi płytkami krystalicznymi i formacjami.</p>"
+        },
+        "Deep Behemoth": {
+            "name": "Wielki behemot",
+            "description": "<p>Ogromne podziemne drapieżniki będące gigantycznymi potworami, które grasują w najgłębszych jaskiniach.</p>"
         },
         "Drake": {
             "name": "Smoczydło",
