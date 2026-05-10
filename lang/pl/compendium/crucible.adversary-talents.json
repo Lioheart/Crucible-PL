@@ -3,7 +3,7 @@
     "folders": {
         "Ooze": "Śluz",
         "Charge": "Szarża",
-        "Passive": "Pasywne",
+        "Form": "Kształt",
         "Bites": "Ugryzienia",
         "Claws": "Pazury",
         "Construct": "Konstrukt",
@@ -70,11 +70,11 @@
         },
         "Aqueous Transmission": {
             "name": "Transmisja wodna",
-            "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie poruszać się błyskawicznie w wodzie.</p>",
             "actions": {
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                 }
             }
         },
@@ -89,6 +89,22 @@
         "Bonded Mind": {
             "name": "Połączone umysły",
             "description": "<p>Umysł @ref[actor.name]{Stworzenie} posiadającego ten talent jest nierozerwalnie związany z innymi członkami swojej grupy. Jest on zdolny do natychmiastowej komunikacji telepatycznej z każdym innym @ref[actor.taxonomy.name]{stworzeniem tej samej taksonomii} w promieniu 60 stóp.</p>"
+        },
+        "Burnout": {
+            "name": "Wypalenie",
+            "description": "<p>Konstrukcje napędzane parą gromadzą w swoich wnętrzach niebezpieczne ilości przegrzanej pary, która – jeśli nie zostanie bezpiecznie uwolniona – może spowodować poważne obrażenia.</p>",
+            "actions": {
+                "Burnout": {
+                    "name": "Wypalenie",
+                    "condition": "@ref[actor.name]{Konstrukt} jest ranny",
+                    "description": "<p>@ref[actor.name]{Konstrukt} pęka, wyrzucając strumień płomieni i dymu, atakując <strong>Refleks</strong> każdego celu w promieniu i zadając obrażenia <strong>od ognia</strong>. Ci, którzy otrzymają obrażenia od tego ataku, są @Condition[blinded] przez 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Wypalenie"
+                        }
+                    ]
+                }
+            }
         },
         "Burrower": {
             "name": "Kopacz",
@@ -131,9 +147,29 @@
                 }
             }
         },
+        "Corrupting Death Burst": {
+            "name": "Niszczycielska fala śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę energii zepsucia.</p>",
+            "actions": {
+                "Corrupting Death Burst": {
+                    "name": "Niszczycielska fala śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} uzyska stan @Condition[dead], eksploduje, wyrzucając chmurę zarodników, które zadają obrażenia <strong>od rozkładu</strong>, atakując <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakładając na nie stan @Condition[decaying] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Niszczycielska fala śmierci"
+                        }
+                    ]
+                }
+            }
+        },
         "Corruption Absorption": {
             "name": "Absorpcja zepsucia",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii śmierci. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Echolocation": {
+            "name": "Echolokacja",
+            "description": "<p>@ref[actor.name]{To stworzenie} postrzega świat poprzez emitowanie impulsów dźwiękowych, które precyzyjnie wykrywają kształty, co pozwala mu zlokalizować poruszające się lub w inny sposób emitujące dźwięk stworzenia w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną. Jeśli stworzenie jest w stanie @Condition[deafened], nie może korzystać z tego zmysłu. </p><p>Stworzenie wykryte za pomocą @ref[name] jest traktowane jako widoczne dla celów akcji, które wymagają widzenia celu.</p><h3 class=\"divider\">W trakcie opracowywania</h3><p>Powinno to ostatecznie zostać rozwiązane za pomocą specjalnego<strong> trybu wykrywania</strong> dodanego do tokenów posiadających tę zdolność.</p>"
         },
         "Electricity Absorption": {
             "name": "Absorpcja elektryczności",
@@ -202,6 +238,21 @@
         "Immutable Form": {
             "name": "Niezmienna postać",
             "description": "<p>@ref[actor.name] jest odporny na wszelkie zaklęcia i efekty, które zmieniają jego fizyczną postać.</p>"
+        },
+        "Lightning Burst": {
+            "name": "Wybuch błyskawicy",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi wytworzyć i wystrzelić potężny wybuch energii elektrycznej.</p>",
+            "actions": {
+                "Lightning Burst": {
+                    "name": "Wybuch błyskawicy",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wystrzeliwuje błyskawicę o zasięgu 15 stóp, atakując <strong>Refleks</strong> każdego celu znajdującego się w tym zasięgu i zadając <strong>obrażenia od elektryczności</strong>.</p><p>W przypadku <strong>trafienia krytycznego</strong> atak powoduje stan @Condition[shocked] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Wybuch błyskawicy"
+                        }
+                    ]
+                }
+            }
         },
         "Lightning Spit": {
             "name": "Plucie błyskawicą",
@@ -341,7 +392,12 @@
                 "Radiant Death Burst": {
                     "name": "Świetlisty wybuch śmierci",
                     "condition": "Stworzenie staje się martwe.",
-                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} stanie się @Condition[dead], eksploduje impulsem <strong>Świetlistej</strong> energii, który atakuje obronę <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, które nie zdołają oprzeć się temu efektowi.</p>"
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha impulsem energii <strong>Świetlistej</strong>, który atakuje <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[irradiated] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Świetlisty wybuch śmierci"
+                        }
+                    ]
                 }
             }
         },
@@ -450,6 +506,21 @@
                 }
             }
         },
+        "Steam Vent": {
+            "name": "Odpowietrznik",
+            "description": "<p>Konstrukcje napędzane parą gromadzą w swoich wnętrzach niebezpieczne ilości przegrzanej pary, która – jeśli nie zostanie bezpiecznie uwolniona – może spowodować poważne obrażenia.</p>",
+            "actions": {
+                "Steam Vent": {
+                    "name": "Odpowietrznik",
+                    "description": "<p>Z wnętrza napędzanej parą konstrukcji wyrywa się przegrzana para, zadając potężne obrażenia, odrzucając stojących zbyt blisko i pozostawiając ich w stanie @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Odpowietrznik"
+                        }
+                    ]
+                }
+            }
+        },
         "Subdivide": {
             "name": "Podział",
             "description": "<p>@ref[actor.name]{Śluz} może podzielić się na wiele części, z których każda jest niezależną kopią oryginału.</p>",
@@ -478,6 +549,10 @@
                     ]
                 }
             }
+        },
+        "Swarm": {
+            "name": "Rój",
+            "description": "<p>Ten przeciwnik to grupa wielu identycznych stworzeń, które działają jako jeden rojący się tłum wrogów.</p><ul><li><p>Maksymalne<strong>Zdrowie</strong> zostaje podwojone.</p></li><li><p>Wobec każdego źródła obrażeń skierowanego na pojedynczy cel, rój zyskuje dodatkową <strong>Odporność</strong> równą jego <strong>Wytrzymałości</strong>.</p></li><li><p><strong>Rozmiar</strong> roju zmniejsza się wraz z wyczerpywaniem się jego Zdrowia, aż do osiągnięcia minimalnego Rozmiaru wynoszącego 2.</p></li></ul> "
         },
         "Swooping Strike": {
             "name": "Atak z powietrza",
@@ -511,7 +586,7 @@
         },
         "Thermal Vision": {
             "name": "Widzenie termiczne",
-            "description": "<p>@ref[actor.name]{Stworzenie} postrzega świat poprzez różnice temperatur z dużą precyzją, co pozwala mu zlokalizować stworzenia stałocieplne lub emitujące ciepło w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną, a postać nie jest Oślepiona lub Obezwładniona. Stworzenie wykryte za pomocą tego widzenia termicznego jest traktowane jako widoczne dla celów działań wymagających widzenia celu.</p><p></p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} precyzyjnie postrzega otoczenie na podstawie różnic temperatur, co pozwala jej lokalizować istoty, których temperatura ciała odbiega od norm otoczenia. </p><p>Pozwala to na wykrycie stworzeń, których temperatura ciała jest <strong>Lodowata</strong>, <strong>Chłodna</strong>, <strong>Ciepła</strong> lub <strong>Upalna</strong> w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną i o ile @ref[actor.name]{stworzenie} nie jest w stanie @Condition[blinded] lub @Condition[incapacitated]. Stworzenie wykryte w ten sposób jest traktowane jako widoczne dla celów akcji wymagających wzroku.</p>"
         },
         "Thrash": {
             "name": "Szarpanina",
