@@ -1336,7 +1336,7 @@
                             }
                         },
                         "Light Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się lekką bronią",
+                            "name": "Biegłość w broni lekkiej",
                             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Lekką</strong> i <strong>Wyważoną</strong>.</p>"
                         },
                         "Awareness Novice": {
@@ -1740,7 +1740,7 @@
                             }
                         },
                         "Projectile Weapon Proficiency": {
-                            "name": "Biegłość w posługiwaniu się bronią miotaną",
+                            "name": "Biegłość w broni miotanej",
                             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
                         },
                         "Gesture: Step": {
