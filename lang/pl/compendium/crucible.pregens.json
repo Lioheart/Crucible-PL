@@ -1673,7 +1673,7 @@
             "name": "Mniejsza regeneracja"
         },
         "Light Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się lekką bronią"
+            "name": "Biegłość w broni lekkiej"
         },
         "Light Weapon Training": {
             "name": "Szkolenie z broni lekkiej",
@@ -1788,7 +1788,7 @@
             "name": "Nadprzyrodzony instynkt"
         },
         "Projectile Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się bronią miotaną"
+            "name": "Biegłość w broni miotanej"
         },
         "Projectile Weapon Training": {
             "name": "Szkolenie z broni miotanej",
