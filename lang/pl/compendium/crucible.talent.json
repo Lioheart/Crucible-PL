@@ -1117,7 +1117,7 @@
             "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kwitnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Light Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się lekką bronią",
+            "name": "Biegłość w broni lekkiej",
             "description": "<p>Posiadasz doskonałą znajomość posługiwania się bronią bojową. Otrzymujesz rangę <strong>Specjalisty</strong> i premię <strong>+1 do umiejętności</strong> posługiwania się bronią <strong>Lekką</strong> i <strong>Wyważoną</strong>.</p>"
         },
         "Light Weapon Training": {
@@ -1158,7 +1158,7 @@
             "description": "Wytrenowałeś swoje ciało, aby stało się niebezpieczną bronią. Twoje gołe pięści są traktowane jako broń dobrej jakości, co zwiększa ich obrażenia o +1."
         },
         "Mechanical Weapon Proficiency": {
-            "name": "Biegłość w posługiwaniu się bronią mechaniczną",
+            "name": "Biegłość w broni mechanicznej",
             "description": "<p>Posiadasz biegłą znajomość obsługi kusz, broni palnej i innych rodzajów broni mechanicznej. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>premię +1 do umiejętności</strong> w kategorii broni <strong>Mechanicznej</strong>.</p>"
         },
         "Mechanical Weapon Training": {
