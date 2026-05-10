@@ -4,6 +4,9 @@
         "Configure Group Check": {
             "name": "Konfiguracja testu grupowego"
         },
+        "Configure Hazard": {
+            "name": "Konfiguracja zagrożenia"
+        },
         "Randomize Item": {
             "name": "Losuj przedmiot"
         },
