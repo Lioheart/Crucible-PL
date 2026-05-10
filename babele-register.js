@@ -287,6 +287,3 @@ Hooks.once("babele.init", (babele) => {
     embedded_affixes_converter: embeddedAffixesConverter
   });
 });
-Hooks.once("babele.ready", async () => {
-  await game.documentIndex.index();
-});
