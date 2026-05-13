@@ -439,6 +439,7 @@
       "InvalidTarget": "Musisz wyznaczyć co najmniej jeden cel {type} dla {action}!",
       "InvalidTargetsGeneric": "Nieprawidłowe cele dla tej akcji!",
       "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym Ataku, który nie zakończył się krytyczną porażką.",
+      "LastNotMeleeCrit": "Możesz wykonać {action} wyłącznie bezpośrednio po ataku wręcz, który zakończył się trafieniem krytycznym.",
       "MaximumRange": "Wybrany cel znajduje się dalej niż maksymalny zasięg {max} stóp.",
       "MinimumRange": "Wybrany cel znajduje się bliżej niż minimalny zasięg {min} stóp.",
       "MinimumSize": "Aby wykonać {action}, musisz mieć co najmniej rozmiar {size}",
@@ -545,6 +546,7 @@
       "Invisible": "Niewidzialny",
       "Invulnerable": "Niezniszczalny",
       "Irradiated": "Napromieniowany",
+      "Limitless": "Nieograniczony",
       "Mending": "Regenerujący",
       "Mute": "Wyciszony",
       "Paralyzed": "Sparaliżowany",
@@ -737,6 +739,26 @@
         "recover": "Odzyskiwanie",
         "rest": "Odpoczynek"
       },
+      "REST": {
+        "FIELDS": {
+          "allowInterruption": {
+            "label": "Zezwól na przerwanie",
+            "hint": "Jeśli opcja ta jest zaznaczona, odpoczynek może zostać przerwany przez skonfigurowane zdarzenia w grze."
+          },
+          "hours": {
+            "label": "Czas odpoczynku",
+            "hint": "Czas, który upłynie, jeśli odpoczynek nie zostanie przerwany."
+          },
+          "participants": {
+            "label": "Postacie odpoczywające",
+            "hint": "Każda wybrana postać wykona akcję Odpoczynku."
+          }
+        },
+        "Confirm": "Rozpocznij odpoczynek",
+        "ContinuationHint": "Ten odpoczynek jest kontynuacją poprzedniego, który został przerwany. Wykonano {hoursCompleted} z {hoursRequired} godzin.",
+        "Interrupted": "Twój odpoczynek został przerwany po {hours} godzinach!",
+        "Title": "Potwierdź odpoczynek grupowy"
+      },
       "WARNINGS": {
         "NoAddSelf": "Nie możesz dodać własnej grupy!",
         "NotWorldActor": "Można dodać tylko jeden obiekt typu Aktor świata"
@@ -902,6 +924,9 @@
     "Progress": "Postępy w realizacji kamieni milowych"
   },
   "ANCESTRY": {
+    "SECTIONS": {
+      "Traits": "Cechy"
+    },
     "FIELDS": {
       "abilities": {
         "label": "Wartości atrybutów",
@@ -1040,8 +1065,11 @@
     },
     "PROPERTIES": {
       "Bulky": "Nieporęczny",
+      "BulkyTooltip": "Zbroja typu <strong>Nieporęczny</strong> jest nieporęczna w użyciu i powoduje obniżenie wszystkich rzutów na inicjatywę o +2 Zguby.",
       "Natural": "Naturalny",
-      "Noisy": "Hałaśliwy"
+      "NaturalTooltip": "Naturalna zbroja stanowi część istoty, która ją „nosi”. Zazwyczaj nie można jej zdjąć.",
+      "Noisy": "Hałaśliwy",
+      "NoisyTooltip": "Zbroja o właściwości <strong>Hałaśliwy</strong> utrudnia poruszanie się bezszelestnie."
     },
     "SHEET": {
       "ArmorBonus": "Premia do pancerza",
@@ -1257,6 +1285,10 @@
         "value.label": "Wartość"
       }
     },
+    "PROPERTIES": {
+      "Thrown": "Rzucana",
+      "ThrownTooltip":"Ten materiał eksploatacyjny jest przeznaczony do wyrzucenia."
+    },
     "SCROLL": {
       "ComponentBudget": "Ten zwój może zapewnić do {budget} magicznych komponentów. Wybierz, jakie składniki zapewnia ten zwój.",
       "ComponentBudgetError": "Ten zwój może zawierać tylko {budget} magicznych komponentów, ale dostarczono {total} składników.",
@@ -1373,6 +1405,7 @@
     "Wounds": "Próg uzdrawiania"
   },
   "DETECTION_MODES": {
+    "SenseCreature": "Wyczuwanie stworzeń",
     "ThermalVision": "Widzenie termiczne"
   },
   "DICE": {
@@ -1400,6 +1433,7 @@
         "Aborted": "Przerwano",
         "Skipped": "Pominięto"
       },
+      "AggregateDetail": "Wymagane {required}",
       "Resend": "Wyślij ponownie",
       "RollOnBehalf": "Rzuć w imieniu",
       "Skip": "Pomiń aktora",
@@ -1518,6 +1552,10 @@
       "RecoverAllTitle": "Odzyskaj upuszczone przedmioty",
       "RecoverDetail": "Odzyskaj upuszczony {item}",
       "UnEquip": "Zdejmij wyposażenie {typeLabel}"
+    },
+    "COMPOSED_NAME": {
+      "Prefix": "{name} {prefixes}",
+      "Suffix": "{name} {suffixes}"
     },
     "FIELDS": {
       "actions": {
@@ -1700,6 +1738,34 @@
       "Treasure": "Skarb"
     }
   },
+  "REGION_BEHAVIORS": {
+    "HAZARD": {
+      "FIELDS": {
+        "danger": {
+          "label": "Poziom zagrożenia"
+        },
+        "defenseType": {
+          "label": "Typ obrony"
+        },
+        "damageType": {
+          "label": "Typ obrażeń"
+        },
+        "resource": {
+          "label": "Docelowe zasoby"
+        },
+        "tags": {
+          "label": "Tagi zagrożenia"
+        },
+        "name": {
+          "label": "Nazwa"
+        },
+        "promptGM": {
+          "hint": "Jeśli warunek jest spełniony, MG otrzyma okno dialogowe rzutu, w przeciwnym razie rzut zostanie wykonany automatycznie.",
+          "label": "Działanie MG"
+        }
+      }
+    }
+  },
   "RESOURCES": {
     "TOOLTIPS": {
       "Action": "6 + Premia akcji",
@@ -1796,6 +1862,11 @@
       "OutputDrop": "Upuść przedmiot wyjściowy",
       "OutputRemove": "Usuń grupę wyjściową",
       "Outputs": "Dane wyjściowe"
+    }
+  },
+  "SCENE": {
+    "WARNINGS": {
+      "MicrogridUnavailable": "Scena „{name}” jest skonfigurowana jako kwadratowa siatka z odległościami podanymi w stopach, ale nie może korzystać z mikrosiatki Crucible. Odległość w siatce musi wynosić 5 stóp (obecnie {distance}), a rozmiar siatki musi być wielokrotnością 5 pikseli (obecnie {size} pikseli)."
     }
   },
   "SETTINGS": {
@@ -2406,6 +2477,9 @@
     },
     "JournalEntryPage": {
       "skill": "Umiejętność Crucible"
+    },
+    "RegionBehavior": {
+      "crucible.hazard": "Zagrożenie Crucible"
     }
   },
   "WALKTHROUGH": {
