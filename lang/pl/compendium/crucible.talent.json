@@ -787,7 +787,7 @@
         },
         "Gesture: Sense": {
             "name": "Gest: Zmysł",
-            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul><h3 class=\"divider\">Uwagi z testów</h3><p>Nie ma automatycznego działania dla zmysłu, który jest tymczasowo przyznawany przez to zaklęcie, ale takie automatyczne działanie może zostać zapewnione w przyszłości poprzez tryb wykrywania, który tymczasowo ujawnia zaklęciu stworzenia odpowiedniego typu, podczas gdy zaklęcie jest utrzymywane.</p>"
+            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
         },
         "Gesture: Step": {
             "name": "Gest: Krok",
@@ -1547,7 +1547,7 @@
         },
         "Rune: Life": {
             "name": "Runa: Życie",
-            "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong> lub zadaje obrażenia <strong>Trucizną</strong>, którym przeciwstawia się <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
+            "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong>. W szczególnych okolicznościach może służyć do zadawania obrażeń od <strong>Trucizny</strong>, którym przeciwstawia się <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
             "actions": {
                 "Bloom": {
                     "name": "Kwitnienie",
@@ -1577,7 +1577,7 @@
         },
         "Rune: Soul": {
             "name": "Runa: Dusza",
-            "description": "<p>Uporządkowana siła tworzenia i duchowa esencja. Runa Duszy rządzi podstawowym procesem przechodzenia dusz przez życie i śmierć oraz odnosi się do kwestii mądrości, osobowości i zdrowia psychicznego.</p><p>Runa Duszy skaluje się przy użyciu <strong>Prezencji</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Morale</strong> lub zadaje obrażenia <strong>Psychiczne</strong>, którym przeciwstawia się <strong>Wola</strong>. Przeciwstawia się jej chaotyczna runa <strong>Nicości</strong>.</p>",
+            "description": "<p>Uporządkowana siła tworzenia i duchowa esencja. Runa Duszy rządzi podstawowym procesem przechodzenia dusz przez życie i śmierć oraz odnosi się do kwestii mądrości, osobowości i zdrowia psychicznego.</p><p>Runa Duszy skaluje się przy użyciu <strong>Prezencji</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Morale</strong>. W szczególnych okolicznościach może służyć do zadawania obrażeń <strong>Psychicznych</strong>, którym przeciwstawia się <strong>Wola</strong>. Przeciwstawia się jej chaotyczna runa <strong>Nicości</strong>.</p>",
             "actions": {
                 "Evoke": {
                     "name": "Wywoływanie",
@@ -1932,7 +1932,7 @@
             "actions": {
                 "Twinned Shot": {
                     "name": "Podwójny strzał",
-                    "description": "<p>Korzystając z tej <strong>Trudnej</strong> techniki, wystrzeliwujesz jednocześnie dwa pociski, wykonując dwa <strong>Uderzenia</strong> w ten sam cel.</p>"
+                    "description": "<p>Skupiasz się, by naciągnąć łuk i wystrzelić dwa pociski jednocześnie, wykonując dwa <strong>uderzenia</strong> w ten sam cel.</p>"
                 }
             }
         },
