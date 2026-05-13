@@ -37,10 +37,6 @@
             "name": "Crystal Spider",
             "description": "<p>Arachnid comprised of or encrusted in refractive crystalline plates and formations.</p>"
         },
-        "Deep Behemoth": {
-            "name": "Deep Behemoth",
-            "description": "<p>Colossal subterranean apex predators, hulking monstrosities that thunder in the deepest caverns.</p>"
-        },
         "Drake": {
             "name": "Drake",
             "description": "<p>Serpentine creatures which are lesser kin of dragons. Drakes generally live and hunt in packs, unlike more solitary full dragons. Drakes range from younger and smaller varieties often called \"Drakelings\" to huge specimens sometimes referred to as \"Ultra Drakes\".</p><p>Observed size variations include:</p><ul><li><p><strong>Drakeling</strong>: Size 3, Stride 10</p></li><li><p><strong>Drake</strong>: Size 6, Stride 16</p></li><li><p><strong>Ultra Drake</strong>: Size 9, Stride 12</p></li></ul><p>Different types of Drakes feature a different range of damage resistances and vulnerabilities depending on their sub-species.</p>"

@@ -40,6 +40,10 @@
             "name": "Commonfolk",
             "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
         },
+        "Deep Behemoth": {
+            "name": "Deep Behemoth",
+            "description": "<p>Colossal subterranean apex predators, hulking monstrosities that thunder in the deepest caverns.</p>"
+        },
         "Drakeling": {
             "name": "Drakeling",
             "description": "<p>Smaller or younger drakes which are individually undersized, but dangerous as stalkers who hunt in packs.</p>"

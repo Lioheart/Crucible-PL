@@ -10,7 +10,6 @@
   },
   "esmodules": [
     "babele-register.js",
-    "src/fix-token-names.js",
     "src/original-name.js"
   ],
   "styles": [
@@ -22,7 +21,7 @@
         "id": "crucible",
         "type": "system",
         "compatibility": {
-          "verified": "0.9.1"
+          "verified": "0.9.3"
         }
       }
     ],
