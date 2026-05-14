@@ -488,7 +488,7 @@
                     "actions": {
                         "Activate Illumination": {
                             "name": "Aktywacja iluminacji",
-                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przedrostka, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
+                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
                             "effects": [
                                 {
                                     "name": "Świetlisty"
