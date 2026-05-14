@@ -647,12 +647,12 @@
         },
         "Undead Bane": {
             "name": "Zguba nieumarłych",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Nieumarły</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Nieumarły</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby nieumarłych"
         },
         "Unshakeable": {
             "name": "Niewzruszenia",
-            "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Niewzruszenia"
         },
         "Void Conversion": {
