@@ -478,7 +478,7 @@
             "name": "Klejnot iluminacji",
             "description": {
                 "public": "<blockquote><p>Ten starannie oszlifowany kamień szlachetny emituje delikatną, ciepłą poświatę i jest ciepły w dotyku.</p></blockquote><p>Ten zaklęty klejnot zapewnia posiadaczowi zdolność <strong>Aktywacja iluminacji</strong>, rozlewając nieziemskie światło w szerokim promieniu, dopóki nie zostanie wyłączone.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład klejnotu Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a klejnot ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład klejnotu Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a klejnot ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
             "affixes": {
                 "Luminous": {
