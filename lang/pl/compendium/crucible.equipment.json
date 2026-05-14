@@ -1072,7 +1072,7 @@
             "affixes": {
                 "Reinforcement": {
                     "name": "Wzmocnienia",
-                    "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
                     "adjective": "Wzmocnienia"
                 }
             }
