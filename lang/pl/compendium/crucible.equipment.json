@@ -784,7 +784,7 @@
             "affixes": {
                 "Luminary": {
                     "name": "Świetlistości",
-                    "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka.</p>",
+                    "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I.</p>",
                     "adjective": "Świetlistości"
                 }
             }
