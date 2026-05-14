@@ -895,7 +895,7 @@
             "affixes": {
                 "Determination": {
                     "name": "Determinacji",
-                    "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
                     "adjective": "Determinacji"
                 }
             }
@@ -1038,7 +1038,7 @@
             "affixes": {
                 "Evasion": {
                     "name": "Unikania",
-                    "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+                    "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
                     "adjective": "Unikania"
                 }
             }
