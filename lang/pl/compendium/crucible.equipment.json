@@ -74,7 +74,7 @@
             "name": "Amulet zwinności",
             "description": {
                 "public": "<blockquote><p>Ten naszyjnik w jaskrawych kolorach zawiera kamienny amulet, który świeci runą, w której słabo iskrzy się elektryczny rezonans. Trzymając go, odczuwasz surrealistyczne wrażenie, jakby otaczający cię świat nieco zwolnił.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do obrony <strong>Refleksu</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład amuletu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a amulet ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład amuletu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a amulet ten można dodatkowo zakląć przyrostkem I stopnia 1.</p>"
             },
             "affixes": {
                 "Nimbleness": {
@@ -222,7 +222,7 @@
             "name": "Amulet wytrwałości",
             "description": {
                 "public": "<blockquote><p>Ten naszyjnik z zawieszkami wygląda na rustykalny, ale po bliższym przyjrzeniu się dostrzega się w nim delikatne rzemiosło. Trzymając go w dłoni, czujesz, jak oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten zaklęty talizman zapewnia premię do <strong>Wytrzymałości</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przyrostkem I stopnia 1.</p>"
             },
             "affixes": {
                 "Tenacity": {
