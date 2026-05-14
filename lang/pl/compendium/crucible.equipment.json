@@ -222,7 +222,7 @@
             "name": "Amulet wytrwałości",
             "description": {
                 "public": "<blockquote><p>Ten naszyjnik z zawieszkami wygląda na rustykalny, ale po bliższym przyjrzeniu się dostrzega się w nim delikatne rzemiosło. Trzymając go w dłoni, czujesz, jak oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten zaklęty talizman zapewnia premię do <strong>Wytrzymałości</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
             "affixes": {
                 "Tenacity": {
