@@ -27,7 +27,7 @@
         },
         "Acid Damage": {
             "name": "Obrażeń od kwasu",
-            "description": "<p>Dodaje obrażenia typu <strong>Kwas</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kwas</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kwas</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Kwas</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kwas</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kwas</strong>.</p>",
             "adjective": "Korozji"
         },
         "Acid Resistance": {
@@ -88,7 +88,7 @@
         },
         "Bludgeoning Damage": {
             "name": "Obrażeń obuchowych",
-            "description": "<p>Dodaje obrażenia typu <strong>Obuchowe</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Obuchowe</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Obuchowe</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Obuchowe</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Obuchowe</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Obuchowe</strong> obrażenia.</p>",
             "adjective": "Wstrząsu"
         },
         "Bludgeoning Resistance": {
