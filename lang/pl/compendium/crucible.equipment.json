@@ -1033,7 +1033,7 @@
             "name": "Pierścień uników",
             "description": {
                 "public": "<blockquote><p>Ten elegancki, zdobiony pierścień wydaje się lekko śliski i trudny do uchwycenia. Trzymany w dłoni niemal niezauważalnie wibruje.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Uniku</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
             "affixes": {
                 "Evasion": {
