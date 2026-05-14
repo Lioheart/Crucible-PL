@@ -894,7 +894,7 @@
       },
       "tier": {
         "label": "Stopień",
-        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przedrostka lub przyrostka.",
+        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przyrostka I lub przyrostka II.",
         "min": {
           "label": "Minimalny stopień"
         },
