@@ -300,7 +300,7 @@
         },
         "Frost Elemental Bane": {
             "name": "Zguba żywiołaków mrozu",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak mrozu</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak mrozu</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby mrozu"
         },
         "Frost Potency": {
