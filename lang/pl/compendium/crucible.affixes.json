@@ -305,7 +305,7 @@
         },
         "Frost Potency": {
             "name": "Mocy mrozu",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Mrozu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Mrozu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy mrozu"
         },
         "Frost Spellcraft": {
@@ -331,7 +331,7 @@
         },
         "Guarding": {
             "name": "Ochrony",
-            "description": "<p>Zwiększa <strong>Blok</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Blok</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Ochrony"
         },
         "Hale": {
