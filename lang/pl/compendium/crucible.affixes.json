@@ -93,7 +93,7 @@
         },
         "Bludgeoning Resistance": {
             "name": "Odporność na obuchowe obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Obuchowe</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Obuchowe</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. obuchowymi"
         },
         "Celestial Bane": {
