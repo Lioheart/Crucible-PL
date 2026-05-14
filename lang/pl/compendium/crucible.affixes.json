@@ -662,7 +662,7 @@
         },
         "Void Damage": {
             "name": "Obrażeń od pustki",
-            "description": "<p>Dodaje obrażenia typu <strong>Pustka</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Pustka</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Pustkę</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Pustka</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Pustka</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Pustkę</strong>.</p>",
             "adjective": "Nicości"
         },
         "Void Resistance": {
