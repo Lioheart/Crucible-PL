@@ -517,7 +517,7 @@
         },
         "Psychic Damage": {
             "name": "Obrażeń psychicznych",
-            "description": "<p>Dodaje obrażenia typu <strong>Psychiczne</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Psychiczne</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Psychiczne</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Psychiczne</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Psychiczne</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Psychiczne</strong> obrażenia.</p>",
             "adjective": "Udręki"
         },
         "Psychic Resistance": {
@@ -537,7 +537,7 @@
         },
         "Radiant Damage": {
             "name": "Obrażeń świetlistych",
-            "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>",
             "adjective": "Świetlistości"
         },
         "Radiant Resistance": {
@@ -562,7 +562,7 @@
         },
         "Reinforcement": {
             "name": "Wzmocnienia",
-            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Wzmocnienia"
         },
         "Reliable": {
