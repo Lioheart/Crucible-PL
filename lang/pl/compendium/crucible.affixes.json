@@ -587,7 +587,7 @@
         },
         "Slashing Damage": {
             "name": "Obrażeń ciętych",
-            "description": "<p>Dodaje obrażenia typu <strong>Cięte</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Cięte</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Cięte</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Cięte</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Cięte</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Cięte</strong> obrażenia.</p>",
             "adjective": "Rozdzierania"
         },
         "Slashing Resistance": {
@@ -602,7 +602,7 @@
         },
         "Soul Potency": {
             "name": "Mocy duszy",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Duszy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Duszy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy duszy"
         },
         "Soul Spellcraft": {
@@ -642,7 +642,7 @@
         },
         "Tenacity": {
             "name": "Uporu",
-            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Uporu"
         },
         "Undead Bane": {
