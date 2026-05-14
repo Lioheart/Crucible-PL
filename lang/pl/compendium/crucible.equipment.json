@@ -1234,12 +1234,12 @@
             "name": "Pierścień zaklęć",
             "description": {
                 "public": "<blockquote><p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p></blockquote><p>Ten zaczarowany pierścień pozwala w trudnych chwilach wykorzystać dodatkowy zapas <strong>Skupienia</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
             "affixes": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
                         "Replenish Focus": {
