@@ -37,7 +37,7 @@
         },
         "Activating": {
             "name": "Aktywacja",
-            "description": "<p>Zapewnia <strong>Akcję odnowienia</strong>, pozwalającą posiadaczowi odzyskać <strong>Akcję</strong> w chwilach zagrożenia. Ilość odzyskanej wartości skaluje się wraz ze <strong>Stopniem</strong> tego przedrostka.</p>",
+            "description": "<p>Zapewnia <strong>Akcję odnowienia</strong>, pozwalającą posiadaczowi odzyskać <strong>Akcję</strong> w chwilach zagrożenia. Ilość odzyskanej wartości skaluje się wraz ze <strong>Stopniem</strong> tego przyrostka I.</p>",
             "adjective": "Aktywacji",
             "actions": {
                 "Replenish Action": {
@@ -48,7 +48,7 @@
         },
         "Arcana": {
             "name": "Arkany",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Arkana</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Arkana</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Arkan"
         },
         "Arrow Spellcraft": {
