@@ -219,7 +219,7 @@
         },
         "Earth Potency": {
             "name": "Mocy ziemi",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Ziemi</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Ziemi</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy ziemi"
         },
         "Earth Spellcraft": {
@@ -234,7 +234,7 @@
         },
         "Electricity Damage": {
             "name": "Obrażeń od elektryczności",
-            "description": "<p>Dodaje obrażenia typu <strong>Elektryczność</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Elektryczność</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Elektryczność</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Elektryczność</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Elektryczność</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Elektryczność</strong>.</p>",
             "adjective": "Błyskawicy"
         },
         "Electricity Resistance": {
@@ -244,7 +244,7 @@
         },
         "Evasion": {
             "name": "Unikania",
-            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Unikania"
         },
         "Fan Spellcraft": {
