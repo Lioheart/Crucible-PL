@@ -108,7 +108,7 @@
         },
         "Cold Damage": {
             "name": "Obrażeń od zimna",
-            "description": "<p>Dodaje obrażenia typu <strong>Zimno</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zimno</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zimno</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Zimno</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zimno</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zimno</strong>.</p>",
             "adjective": "Mrozu"
         },
         "Cold Resistance": {
@@ -133,7 +133,7 @@
         },
         "Control Potency": {
             "name": "Mocy kontroli",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kontroli</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kontroli</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy kontroli"
         },
         "Control Spellcraft": {
@@ -148,7 +148,7 @@
         },
         "Corruption Damage": {
             "name": "Obrażeń od zepsucia",
-            "description": "<p>Dodaje obrażenia typu <strong>Zepsucie</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zepsucie</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zepsucie</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Zepsucie</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zepsucie</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zepsucie</strong>.</p>",
             "adjective": "Zepsucia"
         },
         "Corruption Resistance": {
@@ -163,7 +163,7 @@
         },
         "Death Potency": {
             "name": "Mocy śmierci",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Śmierci</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Śmierci</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy śmierci"
         },
         "Death Spellcraft": {
