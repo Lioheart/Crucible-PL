@@ -178,12 +178,12 @@
         },
         "Deflection": {
             "name": "Odparcia",
-            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Odparcia"
         },
         "Determination": {
             "name": "Determinacji",
-            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Determinacji"
         },
         "Diplomacy": {
