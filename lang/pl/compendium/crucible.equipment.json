@@ -1067,7 +1067,7 @@
             "name": "Pierścień wzmacniający",
             "description": {
                 "public": "<blockquote><p>Ten stalowy pierścień jest stale chłodny w dotyku i sprawia wrażenie cięższego, niż można by się spodziewać po jego wąskiej obręczy.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Pancerza</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
             "affixes": {
                 "Reinforcement": {
