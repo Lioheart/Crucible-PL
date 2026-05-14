@@ -882,7 +882,7 @@
       },
       "affixType": {
         "label": "Typ afiksu",
-        "hint": "Afiksy muszą być albo przedrostkami, albo przyrostkami."
+        "hint": "Afiksy muszą być albo przyrostkami I, albo przyrostkami II."
       },
       "identifier": {
         "label": "Identyfikator",
