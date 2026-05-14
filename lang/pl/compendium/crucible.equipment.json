@@ -428,7 +428,7 @@
             "name": "Perła skupienia",
             "description": {
                 "public": "<blockquote><p>Mała, intensywnie niebieska perła, która w dotyku daje uczucie orzeźwiającego chłodu niezależnie od temperatury otoczenia.</p></blockquote><p>Ta zaklęta perła zapewnia posiadaczowi zdolność <strong>Odnowienie skupienia</strong>, dając dodatkowy zapas <strong>Skupienia</strong>, z którego można skorzystać w trudnych chwilach.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład perły Dobrej jakości z przedrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten przedrostek można zastosować do dowolnego elementu akcesorium, a perła ten można dodatkowo zakląć przyrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład perły Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a perła ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
             "affixes": {
                 "Focusing": {
