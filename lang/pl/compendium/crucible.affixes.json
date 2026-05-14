@@ -667,7 +667,7 @@
         },
         "Void Resistance": {
             "name": "Odporność na pustkę",
-            "description": "<p>Zwiększa odporność na <strong>Pustkę</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Pustkę</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed pustką"
         },
         "Ward Spellcraft": {
@@ -677,7 +677,7 @@
         },
         "Wilderness": {
             "name": "Dzicz",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dziczy</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dziczy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Dziczy"
         }
     },
