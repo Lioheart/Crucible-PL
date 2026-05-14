@@ -542,12 +542,12 @@
         },
         "Radiant Resistance": {
             "name": "Odporność na świetliste obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Świetliste</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Świetliste</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. świetlistymi"
         },
         "Rallying": {
             "name": "Mobilizacji",
-            "description": "<p>Obniża próg <strong>Obłędu</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie obłędu noszącego.</p>",
+            "description": "<p>Obniża próg <strong>Obłędu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I, ułatwiając leczenie obłędu noszącego.</p>",
             "adjective": "Mobilizacji"
         },
         "Ray Spellcraft": {
