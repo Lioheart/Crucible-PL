@@ -482,12 +482,12 @@
         },
         "Piercing Resistance": {
             "name": "Odporność na kłute obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Kłute</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Kłute</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. kłutymi"
         },
         "Plant Bane": {
             "name": "Zguba roślin",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Roślina</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Roślina</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby roślin"
         },
         "Poison Conversion": {
