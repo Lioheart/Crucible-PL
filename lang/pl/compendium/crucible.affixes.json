@@ -63,7 +63,7 @@
         },
         "Athletics": {
             "name": "Atletyka",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Atletyki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Atletyki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Atletyki"
         },
         "Aura Spellcraft": {
@@ -73,7 +73,7 @@
         },
         "Awareness": {
             "name": "Świadomość",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Świadomości</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Świadomości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Percepcji"
         },
         "Beast Bane": {
