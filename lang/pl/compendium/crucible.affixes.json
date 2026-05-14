@@ -577,7 +577,7 @@
         },
         "Science": {
             "name": "Nauka",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Nauki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Nauki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Nauki"
         },
         "Sense Spellcraft": {
@@ -592,12 +592,12 @@
         },
         "Slashing Resistance": {
             "name": "Odporność na cięte obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Cięte</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Cięte</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. ciętymi"
         },
         "Society": {
             "name": "Społeczeństwo",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Społeczeństwa</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Społeczeństwa</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Społeczeństwa"
         },
         "Soul Potency": {
