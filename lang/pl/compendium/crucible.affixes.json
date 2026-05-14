@@ -143,7 +143,7 @@
         },
         "Corruption Conversion": {
             "name": "Konwersja zepsucia",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zepsucie</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zepsucie</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zepsucie</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zepsucie</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Rozkładu"
         },
         "Corruption Damage": {
@@ -153,7 +153,7 @@
         },
         "Corruption Resistance": {
             "name": "Odporność na zepsucie",
-            "description": "<p>Zwiększa odporność na <strong>Zepsucie</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Zepsucie</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed zepsuciem"
         },
         "Create Spellcraft": {
