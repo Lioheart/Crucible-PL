@@ -239,7 +239,7 @@
         },
         "Electricity Resistance": {
             "name": "Odporność na elektryczność",
-            "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed elektrycznością"
         },
         "Evasion": {
@@ -254,7 +254,7 @@
         },
         "Fey Bane": {
             "name": "Zguba fey",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby fey"
         },
         "Fire Conversion": {
