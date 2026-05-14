@@ -910,10 +910,10 @@
     "ConfigIdentity": "Identyfikacja afiksu",
     "ConfigTier": "Konfiguracja stopnia",
     "TierRestriction": "Zakres stopnia",
-    "Prefixes": "Przedrostki",
+    "Prefixes": "Przyrostki I",
     "Suffixes": "Przyrostki",
     "TierDisplay": "Stopień {value} / {max}",
-    "TypePrefix": "Przedrostek",
+    "TypePrefix": "Przyrostek I",
     "TypeSuffix": "Przyrostek"
   },
   "ADVANCEMENT": {
