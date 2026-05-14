@@ -911,10 +911,10 @@
     "ConfigTier": "Konfiguracja stopnia",
     "TierRestriction": "Zakres stopnia",
     "Prefixes": "Przyrostki I",
-    "Suffixes": "Przyrostki",
+    "Suffixes": "Przyrostki II",
     "TierDisplay": "Stopień {value} / {max}",
     "TypePrefix": "Przyrostek I",
-    "TypeSuffix": "Przyrostek"
+    "TypeSuffix": "Przyrostek II"
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Oczekiwany poziom",
