@@ -890,7 +890,7 @@
             "name": "Amulet determinacji",
             "description": {
                 "public": "<blockquote><p>Pełen gracji srebrny amulet osadzony niebieskimi klejnotami napełnia cię poczuciem niezłomności, gdy ściskasz go w dłoni, gotów stawić czoła każdemu wyzwaniu.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do <strong>Woli</strong>.</p>",
-                "private": "<p>Ten przedmiot stanowi przykład wisiorka Dobrej jakości z przyrostkiem @UUID[Compendium.crucible.affixes.ActiveEffect.determination000].</p><p>Ten przyrostek można zastosować do dowolnego elementu zbroi lub akcesorium, a wisiorek ten można dodatkowo zakląć przedrostkiem stopnia 1.</p>"
+                "private": "<p>Ten przedmiot stanowi przykład wisiorka Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.determination000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a wisiorek ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
             "affixes": {
                 "Determination": {
