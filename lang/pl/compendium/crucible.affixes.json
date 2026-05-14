@@ -432,12 +432,12 @@
         },
         "Mending": {
             "name": "Regeneracji",
-            "description": "<p>Obniża próg <strong>Ran</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie ran noszącego.</p>",
+            "description": "<p>Obniża próg <strong>Ran</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I, ułatwiając leczenie ran noszącego.</p>",
             "adjective": "Regeneracji"
         },
         "Monstrosity Bane": {
             "name": "Zguba potworności",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby potworności"
         },
         "Nimbleness": {
@@ -447,7 +447,7 @@
         },
         "Nonchalant": {
             "name": "Niewzruszenia",
-            "description": "<p>Uderzenia przeciwko twojemu <strong>Morale</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Morale</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Niewzruszenia"
         },
         "Oblivion Potency": {
