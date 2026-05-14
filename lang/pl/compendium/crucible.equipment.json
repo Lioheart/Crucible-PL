@@ -433,7 +433,7 @@
             "affixes": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przedrostka.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
                         "Replenish Focus": {
