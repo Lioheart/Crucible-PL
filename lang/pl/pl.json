@@ -2375,7 +2375,7 @@
   "TEMPERATURE_TIERS": {
     "Boiling": "Upalny",
     "Warm": "Ciepły",
-    "Neutral": "Neutralna",
+    "Neutral": "Neutralny",
     "Cool": "Chłodny",
     "Gelid": "Lodowaty"
   },
