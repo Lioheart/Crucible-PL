@@ -1,6 +1,6 @@
 {
   "id": "lang-pl-crucible",
-  "title": "Polskie tłumaczenie Crucible",
+  "title": "Polskia wersja Crucible",
   "description": "Polskie tłumaczenie do Crucible",
   "version": "vDev",
   "compatibility": {
@@ -13,7 +13,8 @@
     "src/original-name.js"
   ],
   "styles": [
-    "styles/lang-pl-crucible.css"
+    "styles/lang-pl-crucible.css",
+    "styles/original-name.css"
   ],
   "relationships": {
     "systems": [

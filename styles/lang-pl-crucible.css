@@ -18,10 +18,10 @@ body {
 
 # Poprawa wyświetlania w seksji grupy
 .crucible .labeled-hex h4 {
-    top: -0.6rem;
+    top: -0.6rem !important;
 }
 
 # Poprawa wyświetlania w seksji grupy
 .crucible .labeled-hex .footer {
-    bottom: -1rem;
+    bottom: -1rem !important;
 }
