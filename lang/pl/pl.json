@@ -1676,9 +1676,9 @@
       "GMOnly": "Tylko Mistrz Gry może generować losowe przedmioty."
     },
     "EnchantmentLegendary": "Legendarny",
-    "EnchantmentMajor": "Znaczący",
-    "EnchantmentMinor": "Niewielki",
-    "EnchantmentMundane": "Przeciętny",
+    "EnchantmentMajor": "Znaczące",
+    "EnchantmentMinor": "Niewielkie",
+    "EnchantmentMundane": "Przeciętne",
     "QualityFine": "Dobra",
     "QualityMasterwork": "Mistrzowska",
     "QualityShoddy": "Tandetna",
