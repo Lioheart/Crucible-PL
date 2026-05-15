@@ -169,7 +169,7 @@
         },
         "Echolocation": {
             "name": "Echolocation",
-            "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p><h3 class=\"divider\">Under Development</h3><p>This should eventually be handled with a specialized<strong> Detection Mode</strong> added to tokens which have this talent.</p>"
+            "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p>"
         },
         "Electricity Absorption": {
             "name": "Electricity Absorption",

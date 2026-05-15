@@ -1405,6 +1405,7 @@
     "Wounds": "Healing Threshold"
   },
   "DETECTION_MODES": {
+    "Echolocation": "Echolocation",
     "SenseCreature": "Sense Creature",
     "ThermalVision": "Thermal Vision"
   },
@@ -1516,6 +1517,8 @@
     }
   },
   "HAZARD": {
+    "DefaultActor": "Environment",
+    "DefaultName": "Environmental Hazard",
     "Hazard": "Hazard",
     "UseHazard": "Use Hazard",
     "WindowTitle": "Hazard: {name}",
