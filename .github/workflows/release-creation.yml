@@ -24,7 +24,7 @@ jobs:
           jq \
             --arg version "$VERSION" \
             --arg url "https://github.com/$REPOSITORY" \
-            --arg manifest "https://github.com/$REPOSITORY/releases/latest/download/module.json" \
+            --arg manifest "https://github.com/$REPOSITORY/releases/latest/$RELEASE_TAG/module.json" \
             --arg download "https://github.com/$REPOSITORY/releases/download/$RELEASE_TAG/module.zip" \
             '.version = $version
              | .url = $url
