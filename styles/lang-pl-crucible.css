@@ -16,12 +16,10 @@ body {
     --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
 }
 
-# Poprawa wyświetlania w seksji grupy
 .crucible .labeled-hex h4 {
-    top: -0.6rem !important;
+    top: -0.6rem;
 }
 
-# Poprawa wyświetlania w seksji grupy
 .crucible .labeled-hex .footer {
-    bottom: -1rem !important;
+    bottom: -1rem;
 }
