@@ -882,7 +882,7 @@
       },
       "affixType": {
         "label": "Typ afiksu",
-        "hint": "Afiksy muszą być albo przyrostkami I, albo przyrostkami II."
+        "hint": "Afiksy muszą być albo przedrostkami, albo przyrostkami."
       },
       "identifier": {
         "label": "Identyfikator",
@@ -894,7 +894,7 @@
       },
       "tier": {
         "label": "Stopień",
-        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przyrostka I lub przyrostka II.",
+        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przedrostka lub przyrostka.",
         "min": {
           "label": "Minimalny stopień"
         },
@@ -910,11 +910,11 @@
     "ConfigIdentity": "Identyfikacja afiksu",
     "ConfigTier": "Konfiguracja stopnia",
     "TierRestriction": "Zakres stopnia",
-    "Prefixes": "Przyrostki I",
-    "Suffixes": "Przyrostki II",
+    "Prefixes": "Przedrostki",
+    "Suffixes": "Przyrostki",
     "TierDisplay": "Stopień {value} / {max}",
-    "TypePrefix": "Przyrostek I",
-    "TypeSuffix": "Przyrostek II"
+    "TypePrefix": "Przedrostek",
+    "TypeSuffix": "Przyrostek"
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Oczekiwany poziom",
@@ -1937,7 +1937,7 @@
       "deception": "Oszustwo",
       "diplomacy": "Dyplomacja",
       "enchanting": "Zaklinanie",
-      "fletching": "Łuczarstwo",
+      "fletching": "Łuczarstwa",
       "glyphweaving": "Glifotwórstwo",
       "intimidation": "Zastraszanie",
       "jewelcraft": "Szlifierstwo",
@@ -2375,7 +2375,7 @@
   "TEMPERATURE_TIERS": {
     "Boiling": "Upalny",
     "Warm": "Ciepły",
-    "Neutral": "Neutralny",
+    "Neutral": "Neutralna",
     "Cool": "Chłodny",
     "Gelid": "Lodowaty"
   },
