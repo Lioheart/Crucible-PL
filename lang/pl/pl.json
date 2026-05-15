@@ -882,7 +882,7 @@
       },
       "affixType": {
         "label": "Typ afiksu",
-        "hint": "Afiksy muszą być albo przedrostkami, albo przyrostkami."
+        "hint": "Afiksy muszą być albo przyrostkami I, albo przyrostkami II."
       },
       "identifier": {
         "label": "Identyfikator",
@@ -894,7 +894,7 @@
       },
       "tier": {
         "label": "Stopień",
-        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przedrostka lub przyrostka.",
+        "hint": "Dopuszczalny zakres stopni mocy dla tego afiksu. Każdy stopień zużywa jeden punkt pojemności przyrostka I lub przyrostka II.",
         "min": {
           "label": "Minimalny stopień"
         },
@@ -910,11 +910,11 @@
     "ConfigIdentity": "Identyfikacja afiksu",
     "ConfigTier": "Konfiguracja stopnia",
     "TierRestriction": "Zakres stopnia",
-    "Prefixes": "Przedrostki",
-    "Suffixes": "Przyrostki",
+    "Prefixes": "Przyrostki I",
+    "Suffixes": "Przyrostki II",
     "TierDisplay": "Stopień {value} / {max}",
-    "TypePrefix": "Przedrostek",
-    "TypeSuffix": "Przyrostek"
+    "TypePrefix": "Przyrostek I",
+    "TypeSuffix": "Przyrostek II"
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Oczekiwany poziom",
@@ -1405,6 +1405,7 @@
     "Wounds": "Próg uzdrawiania"
   },
   "DETECTION_MODES": {
+    "Echolocation": "Echolokacja",
     "SenseCreature": "Wyczuwanie stworzeń",
     "ThermalVision": "Widzenie termiczne"
   },
@@ -1516,6 +1517,8 @@
     }
   },
   "HAZARD": {
+    "DefaultActor": "Środowisko",
+    "DefaultName": "Zagrożenie środowiskowe",
     "Hazard": "Zagrożenie",
     "UseHazard": "Użycie zagrożenia",
     "WindowTitle": "Zagrożenie: {name}",
@@ -1937,7 +1940,7 @@
       "deception": "Oszustwo",
       "diplomacy": "Dyplomacja",
       "enchanting": "Zaklinanie",
-      "fletching": "Łuczarstwa",
+      "fletching": "Łuczarstwo",
       "glyphweaving": "Glifotwórstwo",
       "intimidation": "Zastraszanie",
       "jewelcraft": "Szlifierstwo",
@@ -2375,7 +2378,7 @@
   "TEMPERATURE_TIERS": {
     "Boiling": "Upalny",
     "Warm": "Ciepły",
-    "Neutral": "Neutralna",
+    "Neutral": "Neutralny",
     "Cool": "Chłodny",
     "Gelid": "Lodowaty"
   },
