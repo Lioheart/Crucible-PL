@@ -1,13 +1,13 @@
 {
     "label": "Afiksy",
     "folders": {
-        "Suffixes": "Przyrostki",
+        "Suffixes": "Przyrostki II",
         "Defenses": "Obrony",
         "Potency": "Moce",
         "Weapons": "Bronie",
         "Spellcraft": "Czaroznastwo",
         "Movement": "Ruch",
-        "Prefixes": "Przedrostki",
+        "Prefixes": "Przyrostki I",
         "Bonuses": "Premiowe",
         "Conversion": "Konwersja",
         "Skills": "Umiejętności",
@@ -22,22 +22,22 @@
     "entries": {
         "Acid Conversion": {
             "name": "Konwersja kwasu",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Kwas</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Kwas</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Kwas</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Kwas</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Kwasu"
         },
         "Acid Damage": {
             "name": "Obrażeń od kwasu",
-            "description": "<p>Dodaje obrażenia typu <strong>Kwas</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kwas</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kwas</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Kwas</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kwas</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kwas</strong>.</p>",
             "adjective": "Korozji"
         },
         "Acid Resistance": {
             "name": "Odporność na kwas",
-            "description": "<p>Zwiększa odporność na <strong>Kwas</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Kwas</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed kwasem"
         },
         "Activating": {
             "name": "Aktywacja",
-            "description": "<p>Zapewnia <strong>Akcję odnowienia</strong>, pozwalającą posiadaczowi odzyskać <strong>Akcję</strong> w chwilach zagrożenia. Ilość odzyskanej wartości skaluje się wraz ze <strong>Stopniem</strong> tego przedrostka.</p>",
+            "description": "<p>Zapewnia <strong>Akcję odnowienia</strong>, pozwalającą posiadaczowi odzyskać <strong>Akcję</strong> w chwilach zagrożenia. Ilość odzyskanej wartości skaluje się wraz ze <strong>Stopniem</strong> tego przyrostka I.</p>",
             "adjective": "Aktywacji",
             "actions": {
                 "Replenish Action": {
@@ -48,7 +48,7 @@
         },
         "Arcana": {
             "name": "Arkany",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Arkana</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Arkana</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Arkan"
         },
         "Arrow Spellcraft": {
@@ -63,7 +63,7 @@
         },
         "Athletics": {
             "name": "Atletyka",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Atletyki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Atletyki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Atletyki"
         },
         "Aura Spellcraft": {
@@ -73,12 +73,12 @@
         },
         "Awareness": {
             "name": "Świadomość",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Świadomości</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Świadomości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Percepcji"
         },
         "Beast Bane": {
             "name": "Zguba bestii",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Bestia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Bestia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby bestii"
         },
         "Blast Spellcraft": {
@@ -88,32 +88,32 @@
         },
         "Bludgeoning Damage": {
             "name": "Obrażeń obuchowych",
-            "description": "<p>Dodaje obrażenia typu <strong>Obuchowe</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Obuchowe</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Obuchowe</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Obuchowe</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Obuchowe</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Obuchowe</strong> obrażenia.</p>",
             "adjective": "Wstrząsu"
         },
         "Bludgeoning Resistance": {
             "name": "Odporność na obuchowe obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Obuchowe</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Obuchowe</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. obuchowymi"
         },
         "Celestial Bane": {
             "name": "Zguba niebian",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Niebianin</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Niebianin</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby niebian"
         },
         "Cold Conversion": {
             "name": "Konwersja zimna",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zimno</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zimno</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zimno</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zimno</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Zamrożenia"
         },
         "Cold Damage": {
             "name": "Obrażeń od zimna",
-            "description": "<p>Dodaje obrażenia typu <strong>Zimno</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zimno</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zimno</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Zimno</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zimno</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zimno</strong>.</p>",
             "adjective": "Mrozu"
         },
         "Cold Resistance": {
             "name": "Odporność na zimno",
-            "description": "<p>Zwiększa odporność na <strong>Zimno</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Zimno</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed mrozem"
         },
         "Cone Spellcraft": {
@@ -128,12 +128,12 @@
         },
         "Construct Bane": {
             "name": "Zguba konstruktów",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Konstrukt</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Konstrukt</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby konstruktów"
         },
         "Control Potency": {
             "name": "Mocy kontroli",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kontroli</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kontroli</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy kontroli"
         },
         "Control Spellcraft": {
@@ -143,17 +143,17 @@
         },
         "Corruption Conversion": {
             "name": "Konwersja zepsucia",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zepsucie</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zepsucie</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Zepsucie</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Zepsucie</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Rozkładu"
         },
         "Corruption Damage": {
             "name": "Obrażeń od zepsucia",
-            "description": "<p>Dodaje obrażenia typu <strong>Zepsucie</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zepsucie</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zepsucie</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Zepsucie</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Zepsucie</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Zepsucie</strong>.</p>",
             "adjective": "Zepsucia"
         },
         "Corruption Resistance": {
             "name": "Odporność na zepsucie",
-            "description": "<p>Zwiększa odporność na <strong>Zepsucie</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Zepsucie</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed zepsuciem"
         },
         "Create Spellcraft": {
@@ -163,7 +163,7 @@
         },
         "Death Potency": {
             "name": "Mocy śmierci",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Śmierci</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Śmierci</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy śmierci"
         },
         "Death Spellcraft": {
@@ -173,22 +173,22 @@
         },
         "Deception": {
             "name": "Oszustwo",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Oszustwa</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Oszustwa</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Oszustwa"
         },
         "Deflection": {
             "name": "Odparcia",
-            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Odparcia"
         },
         "Determination": {
             "name": "Determinacji",
-            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Determinacji"
         },
         "Diplomacy": {
             "name": "Dyplomacja",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Dyplomacji"
         },
         "Disguise": {
@@ -209,17 +209,17 @@
         },
         "Dragon Bane": {
             "name": "Zguba smoków",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Smok</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Smok</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby smoków"
         },
         "Earth Elemental Bane": {
             "name": "Zguba żywiołaków ziemi",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ziemi</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ziemi</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby bestii"
         },
         "Earth Potency": {
             "name": "Mocy ziemi",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Ziemi</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Ziemi</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy ziemi"
         },
         "Earth Spellcraft": {
@@ -229,22 +229,22 @@
         },
         "Electricity Conversion": {
             "name": "Konwersja elektryczności",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Elektryczność</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Elektryczność</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Elektryczność</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Elektryczność</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Porażenia"
         },
         "Electricity Damage": {
             "name": "Obrażeń od elektryczności",
-            "description": "<p>Dodaje obrażenia typu <strong>Elektryczność</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Elektryczność</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Elektryczność</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Elektryczność</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Elektryczność</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Elektryczność</strong>.</p>",
             "adjective": "Błyskawicy"
         },
         "Electricity Resistance": {
             "name": "Odporność na elektryczność",
-            "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed elektrycznością"
         },
         "Evasion": {
             "name": "Unikania",
-            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Unikania"
         },
         "Fan Spellcraft": {
@@ -254,32 +254,32 @@
         },
         "Fey Bane": {
             "name": "Zguba fey",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby fey"
         },
         "Fire Conversion": {
             "name": "Konwersja ognia",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Ogień</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Ogień</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Ogień</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Ogień</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Płonięcia"
         },
         "Fire Damage": {
             "name": "Obrażenia od ognia",
-            "description": "<p>Dodaje obrażenia typu <strong>Ogień</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Ogień</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Ogień</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Ogień</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Ogień</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Ogień</strong>.</p>",
             "adjective": "Płomienia"
         },
         "Fire Elemental Bane": {
             "name": "Zguba żywiołaków ognia",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ognia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ognia</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby ognia"
         },
         "Fire Resistance": {
             "name": "Odporność na ogień",
-            "description": "<p>Zwiększa odporność na <strong>Ogień</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Ogień</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed płomieniami"
         },
         "Flame Potency": {
             "name": "Mocy płomienia",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Płomienia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Płomienia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy płomienia"
         },
         "Flame Spellcraft": {
@@ -294,18 +294,18 @@
             "actions": {
                 "Replenish Focus": {
                     "name": "Odnowienie skupienia",
-                    "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przedrostka. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                    "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                 }
             }
         },
         "Frost Elemental Bane": {
             "name": "Zguba żywiołaków mrozu",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak mrozu</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak mrozu</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby mrozu"
         },
         "Frost Potency": {
             "name": "Mocy mrozu",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Mrozu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Mrozu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy mrozu"
         },
         "Frost Spellcraft": {
@@ -315,33 +315,33 @@
         },
         "Giant Bane": {
             "name": "Zguba olbrzymów",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Olbrzym</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Olbrzym</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby olbrzymów"
         },
         "Gliding": {
             "name": "Szybowania",
-            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego prefiksu.</p>",
+            "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
             "adjective": "Szybowania",
             "actions": {
                 "Gliding": {
                     "name": "Szybowanie",
-                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
+                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
                 }
             }
         },
         "Guarding": {
             "name": "Ochrony",
-            "description": "<p>Zwiększa <strong>Blok</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Blok</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Ochrony"
         },
         "Hale": {
             "name": "Krzepy",
-            "description": "<p>Zwiększa maksymalne <strong>Zdrowie</strong> o 6 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa maksymalne <strong>Zdrowie</strong> o 6 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Krzepy"
         },
         "Illumination Potency": {
             "name": "Mocy światłości",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Światłości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Światłości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy światłości"
         },
         "Illumination Spellcraft": {
@@ -351,7 +351,7 @@
         },
         "Illusion Potency": {
             "name": "Mocy iluzji",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Iluzji</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Iluzji</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy iluzji"
         },
         "Illusion Spellcraft": {
@@ -366,7 +366,7 @@
         },
         "Intimidation": {
             "name": "Zastraszanie",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Zastraszania</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Zastraszania</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Zastraszania"
         },
         "Keen": {
@@ -376,7 +376,7 @@
         },
         "Kinesis Potency": {
             "name": "Mocy kinetyki",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kinetyki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Kinetyki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy kinetyki"
         },
         "Kinesis Spellcraft": {
@@ -386,7 +386,7 @@
         },
         "Life Potency": {
             "name": "Mocy życia",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Życia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Życia</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy życia"
         },
         "Life Spellcraft": {
@@ -396,7 +396,7 @@
         },
         "Lightning Potency": {
             "name": "Mocy błyskawic",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Błyskawic</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Błyskawic</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy błyskawic"
         },
         "Lightning Spellcraft": {
@@ -406,7 +406,7 @@
         },
         "Luminary": {
             "name": "Świetlistości",
-            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przedrostka. Tylko jeden afiks może zapewniać tę korzyść.</p>",
+            "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I. Tylko jeden afiks może zapewniać tę korzyść.</p>",
             "adjective": "Świetlistości"
         },
         "Luminous": {
@@ -416,7 +416,7 @@
             "actions": {
                 "Activate Illumination": {
                     "name": "Aktywacja iluminacji",
-                    "description": "<p>Wypowiadasz słowo-komendę, a @ref[item.name]{przedmiot} rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przedrostka, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
+                    "description": "<p>Wypowiadasz słowo-komendę, a @ref[item.name]{przedmiot} rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
                     "effects": [
                         {
                             "name": "Świetlisty"
@@ -427,32 +427,32 @@
         },
         "Medicine": {
             "name": "Medycyna",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Medycyny</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Medycyny</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Medycyny"
         },
         "Mending": {
             "name": "Regeneracji",
-            "description": "<p>Obniża próg <strong>Ran</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie ran noszącego.</p>",
+            "description": "<p>Obniża próg <strong>Ran</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I, ułatwiając leczenie ran noszącego.</p>",
             "adjective": "Regeneracji"
         },
         "Monstrosity Bane": {
             "name": "Zguba potworności",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby potworności"
         },
         "Nimbleness": {
             "name": "Zwinności",
-            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Zwinności"
         },
         "Nonchalant": {
             "name": "Niewzruszenia",
-            "description": "<p>Uderzenia przeciwko twojemu <strong>Morale</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Morale</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Niewzruszenia"
         },
         "Oblivion Potency": {
             "name": "Mocy nicości",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Nicości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Nicości</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy nicości"
         },
         "Oblivion Spellcraft": {
@@ -462,47 +462,47 @@
         },
         "Ooze Bane": {
             "name": "Zguba śluzów",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Śluz</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Śluz</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby śluzów"
         },
         "Outsider Bane": {
             "name": "Zguba zewnętrznych",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Zewnętrzny</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Zewnętrzny</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby zewnętrznych"
         },
         "Performance": {
             "name": "Występy",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Występów</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Występów</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Występów"
         },
         "Piercing Damage": {
             "name": "Obrażeń kłutych",
-            "description": "<p>Dodaje obrażenia typu <strong>Kłute</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kłute</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kłute</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Kłute</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Kłute</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Kłute</strong> obrażenia.</p>",
             "adjective": "Kłutych obr."
         },
         "Piercing Resistance": {
             "name": "Odporność na kłute obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Kłute</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Kłute</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. kłutymi"
         },
         "Plant Bane": {
             "name": "Zguba roślin",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Roślina</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Roślina</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby roślin"
         },
         "Poison Conversion": {
             "name": "Konwersja trucizny",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Trucizna</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Truciznę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Trucizna</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Truciznę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Jadowitości"
         },
         "Poison Damage": {
             "name": "Obrażeń od trucizny",
-            "description": "<p>Dodaje obrażenia typu <strong>Trucizna</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Trucizna</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Truciznę</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Trucizna</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Trucizna</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Truciznę</strong>.</p>",
             "adjective": "Jadu"
         },
         "Poison Resistance": {
             "name": "Odporność na truciznę",
-            "description": "<p>Zwiększa odporność na <strong>Truciznę</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Truciznę</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed trucizną"
         },
         "Potency": {
@@ -512,17 +512,17 @@
         },
         "Psychic Conversion": {
             "name": "Konwersja obrażeń psychicznych",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Psychiczne</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Psychiczne</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Psychiczne</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Psychiczne</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Dręczenia"
         },
         "Psychic Damage": {
             "name": "Obrażeń psychicznych",
-            "description": "<p>Dodaje obrażenia typu <strong>Psychiczne</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Psychiczne</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Psychiczne</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Psychiczne</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Psychiczne</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Psychiczne</strong> obrażenia.</p>",
             "adjective": "Udręki"
         },
         "Psychic Resistance": {
             "name": "Odporność na psychiczne obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Psychiczne</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Psychiczne</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. psychicznymi"
         },
         "Pulse Spellcraft": {
@@ -532,22 +532,22 @@
         },
         "Radiant Conversion": {
             "name": "Konwersja świetlistych obrażeń",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Świetliste</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Świetliste</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Świetliste</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Świetliste</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Świetlistych obr."
         },
         "Radiant Damage": {
             "name": "Obrażeń świetlistych",
-            "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>",
             "adjective": "Świetlistości"
         },
         "Radiant Resistance": {
             "name": "Odporność na świetliste obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Świetliste</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Świetliste</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. świetlistymi"
         },
         "Rallying": {
             "name": "Mobilizacji",
-            "description": "<p>Obniża próg <strong>Obłędu</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka, ułatwiając leczenie obłędu noszącego.</p>",
+            "description": "<p>Obniża próg <strong>Obłędu</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I, ułatwiając leczenie obłędu noszącego.</p>",
             "adjective": "Mobilizacji"
         },
         "Ray Spellcraft": {
@@ -562,7 +562,7 @@
         },
         "Reinforcement": {
             "name": "Wzmocnienia",
-            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Wzmocnienia"
         },
         "Reliable": {
@@ -577,7 +577,7 @@
         },
         "Science": {
             "name": "Nauka",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Nauki</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Nauki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Nauki"
         },
         "Sense Spellcraft": {
@@ -587,22 +587,22 @@
         },
         "Slashing Damage": {
             "name": "Obrażeń ciętych",
-            "description": "<p>Dodaje obrażenia typu <strong>Cięte</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Cięte</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Cięte</strong> obrażenia.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Cięte</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Cięte</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Cięte</strong> obrażenia.</p>",
             "adjective": "Rozdzierania"
         },
         "Slashing Resistance": {
             "name": "Odporność na cięte obrażenia",
-            "description": "<p>Zwiększa odporność na <strong>Cięte</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Cięte</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. ciętymi"
         },
         "Society": {
             "name": "Społeczeństwo",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Społeczeństwa</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Społeczeństwa</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Społeczeństwa"
         },
         "Soul Potency": {
             "name": "Mocy duszy",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Duszy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Duszy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Mocy duszy"
         },
         "Soul Spellcraft": {
@@ -612,12 +612,12 @@
         },
         "Spirited": {
             "name": "Natchnienia",
-            "description": "<p>Zwiększa maksymalne <strong>Morale</strong> o 6 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa maksymalne <strong>Morale</strong> o 6 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Natchnienia"
         },
         "Stealth": {
             "name": "Skradanie",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Skradania</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Skradania</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Skradania"
         },
         "Step Spellcraft": {
@@ -627,7 +627,7 @@
         },
         "Storm Elemental Bane": {
             "name": "Zguba żywiołaków burzy",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak burzy</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak burzy</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby burzy"
         },
         "Strike Spellcraft": {
@@ -642,32 +642,32 @@
         },
         "Tenacity": {
             "name": "Uporu",
-            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka.</p>",
+            "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Uporu"
         },
         "Undead Bane": {
             "name": "Zguba nieumarłych",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Nieumarły</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przedrostka.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Nieumarły</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby nieumarłych"
         },
         "Unshakeable": {
             "name": "Niewzruszenia",
-            "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Niewzruszenia"
         },
         "Void Conversion": {
             "name": "Konwersja pustki",
-            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Pustka</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przedrostka.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Pustkę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Pustka</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Pustkę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
             "adjective": "Próżni"
         },
         "Void Damage": {
             "name": "Obrażeń od pustki",
-            "description": "<p>Dodaje obrażenia typu <strong>Pustka</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Pustka</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Pustkę</strong>.</p>",
+            "description": "<p>Dodaje obrażenia typu <strong>Pustka</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Pustka</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Pustkę</strong>.</p>",
             "adjective": "Nicości"
         },
         "Void Resistance": {
             "name": "Odporność na pustkę",
-            "description": "<p>Zwiększa odporność na <strong>Pustkę</strong> o 3 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa odporność na <strong>Pustkę</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed pustką"
         },
         "Ward Spellcraft": {
@@ -677,7 +677,7 @@
         },
         "Wilderness": {
             "name": "Dzicz",
-            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dziczy</strong> o 1 za każdy <strong>Stopień</strong> tego przedrostka.</p>",
+            "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dziczy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Dziczy"
         }
     },
