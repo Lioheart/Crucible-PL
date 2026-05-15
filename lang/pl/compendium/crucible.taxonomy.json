@@ -37,10 +37,6 @@
             "name": "Pająk kryształowy",
             "description": "<p>Pajęczak złożony z lub pokryty refrakcyjnymi płytkami krystalicznymi i formacjami.</p>"
         },
-        "Deep Behemoth": {
-            "name": "Wielki behemot",
-            "description": "<p>Ogromne podziemne drapieżniki będące gigantycznymi potworami, które grasują w najgłębszych jaskiniach.</p>"
-        },
         "Drake": {
             "name": "Smoczydło",
             "description": "<p>Wężowe stworzenia, które są mniejszymi krewnymi smoków. Smoczydła zazwyczaj żyją i polują w stadach, w przeciwieństwie do bardziej samotniczych pełnoprawnych smoków. Smoczydła występują w różnych odmianach, od młodszych i mniejszych, często nazywanych \"smoczątkami\", po ogromne okazy, czasami określane jako \"ultra smoki\"</p><p>Zaobserwowane różnice wielkości obejmują:</p><ul><li><p><strong>Smoczątko</strong>: Rozmiar 3, Bieg 10</p></li><li><p><strong>Smoczydło</strong>: Rozmiar 6, Bieg 16</p></li><li><p><strong>Ultra Smok</strong>: Rozmiar 9, Bieg 12</p></li></ul><p>Różne typy smoczydł charakteryzują się różnym zakresem odporności na obrażenia i podatności na uszkodzenia w zależności od podgatunku.</p>"

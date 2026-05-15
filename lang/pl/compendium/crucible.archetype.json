@@ -40,6 +40,10 @@
             "name": "Pospólstwo",
             "description": "<p>Zwykli obywatele świata, którzy nie posiadają żadnych wyjątkowych umiejętności ani zdolności przydatnych w przygodach.</p>"
         },
+        "Deep Behemoth": {
+            "name": "Wielki behemot",
+            "description": "<p>Ogromne podziemne drapieżniki będące gigantycznymi potworami, które grasują w najgłębszych jaskiniach.</p>"
+        },
         "Drakeling": {
             "name": "Smoczątko",
             "description": "<p>Mniejsze lub młodsze smoczydła, które indywidualnie są zbyt małe, ale stanowią zagrożenie jako łowcy polujący w stadach.</p>"
