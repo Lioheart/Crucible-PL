@@ -533,7 +533,13 @@
         },
         "Sunlight Weakness": {
             "name": "Sunlight Weakness",
-            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+            "effects": [
+                {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+                }
+            ]
         },
         "Swallow": {
             "name": "Swallow",
@@ -664,6 +670,10 @@
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "embeddedEffectsConverter"
         }
     }
 }

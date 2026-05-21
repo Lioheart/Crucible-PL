@@ -979,6 +979,48 @@ def populate_embedded_affixes(entry: dict, new_data: dict, id_index: dict, trans
             "converter": "embedded_affixes_converter"
         }
 
+def populate_embedded_effects_from_ids(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+    effect_refs = new_data.get("effects", [])
+    if not isinstance(effect_refs, list) or not effect_refs:
+        return
+
+    embedded_effects = []
+
+    for effect_ref in effect_refs:
+        if isinstance(effect_ref, dict):
+            effect_obj = effect_ref
+        elif isinstance(effect_ref, str):
+            effect_obj = id_index.get(effect_ref)
+        else:
+            continue
+
+        if not isinstance(effect_obj, dict):
+            continue
+
+        effect_entry = {}
+
+        effect_name = (effect_obj.get("name") or "").strip()
+        if effect_name:
+            effect_entry["name"] = effect_name
+
+        effect_label = (effect_obj.get("label") or "").strip()
+        if effect_label:
+            effect_entry["label"] = effect_label
+
+        effect_description = effect_obj.get("description")
+        if isinstance(effect_description, str) and effect_description.strip():
+            effect_entry["description"] = effect_description.strip()
+
+        if effect_entry:
+            embedded_effects.append(effect_entry)
+
+    if embedded_effects:
+        entry["effects"] = embedded_effects
+        transifex_dict["mapping"]["effects"] = {
+            "path": "effects",
+            "converter": "embeddedEffectsConverter"
+        }
+
 def process_files(folders: str, version: str) -> None:
     dict_key = []
 
@@ -1100,6 +1142,9 @@ def process_files(folders: str, version: str) -> None:
                     if description:
                         entry["description"] = description
 
+                    if pack_name != "equipment":
+                        populate_embedded_effects_from_ids(entry, new_data, id_index, transifex_dict)
+
                     if pack_name == "equipment":
                         populate_embedded_affixes(entry, new_data, id_index, transifex_dict)
 
@@ -1208,8 +1253,8 @@ def move_json_files(version_crucible: str) -> None:
 
 
 if __name__ == '__main__':
-    crucible_url = "https://github.com/foundryvtt/crucible/releases/latest/download/system.json"
-
+    # crucible_url = "https://github.com/foundryvtt/crucible/releases/latest/download/system.json"
+    crucible_url = "https://github.com/foundryvtt/crucible/releases/download/release-0.9.4/system.json"
     path_crucible, headers_crucible = urlretrieve(crucible_url, 'crucible.json')
 
     with open('crucible.json', 'r', encoding='utf-8') as f:
