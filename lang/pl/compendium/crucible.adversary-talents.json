@@ -533,7 +533,13 @@
         },
         "Sunlight Weakness": {
             "name": "Wrażliwość na światło słoneczne",
-            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
+            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
+            "effects": [
+                {
+                    "name": "Wrażliwość na światło słoneczne",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
+                }
+            ]
         },
         "Swallow": {
             "name": "Połykanie",
@@ -664,6 +670,10 @@
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "embeddedEffectsConverter"
         }
     }
 }
