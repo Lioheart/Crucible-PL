@@ -375,6 +375,7 @@ def add_actions_from_record(
             continue
 
         target_entry["actions"].setdefault(action_name, {})
+        action_id = (action.get("id") or action.get("_id") or "").strip()
         target_entry["actions"][action_name]["name"] = action_name
         target_entry["actions"][action_name]["condition"] = action.get("condition") or ""
         target_entry["actions"][action_name]["description"] = action.get("description") or ""
@@ -934,14 +935,55 @@ def populate_rules_entry(entry: dict, new_data: dict, id_index: dict, transifex_
             entry["pages"][page_name]["name"] = page_name
             entry["pages"][page_name]["text"] = text_content
 
+def add_actions_from_record_by_id(target_entry: dict, source_record: dict) -> None:
+    actions = source_record.get("system", {}).get("actions", [])
+    if not isinstance(actions, list) or not actions:
+        return
+
+    target_entry.setdefault("actions", {})
+
+    for action in actions:
+        if not isinstance(action, dict):
+            continue
+
+        action_id = (action.get("id") or "").strip()
+        if not action_id:
+            continue
+
+        action_entry = {}
+
+        action_name = action.get("name")
+        if isinstance(action_name, str) and action_name.strip():
+            action_entry["name"] = action_name.strip()
+
+        action_description = action.get("description")
+        if isinstance(action_description, str) and action_description.strip():
+            action_entry["description"] = action_description.strip()
+
+        action_condition = action.get("condition")
+        if isinstance(action_condition, str):
+            action_entry["condition"] = action_condition
+
+        if action_entry:
+            target_entry["actions"][action_id] = action_entry
+
+
 def populate_embedded_affixes(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+    """
+    Equipment trzyma affiksy w polu effects jako listę _id.
+    W pliku tłumaczenia zostawiamy też klucz effects, bo Babele dostaje właśnie
+    document.effects i converter może wtedy tłumaczyć każdy ActiveEffect in-place.
+    """
     effect_ids = new_data.get("effects", [])
     if not isinstance(effect_ids, list) or not effect_ids:
         return
 
-    affixes = {}
+    effects = {}
 
     for effect_id in effect_ids:
+        if not isinstance(effect_id, str):
+            continue
+
         affix = id_index.get(effect_id)
         if not isinstance(affix, dict) or affix.get("type") != "affix":
             continue
@@ -950,33 +992,29 @@ def populate_embedded_affixes(entry: dict, new_data: dict, id_index: dict, trans
         if not affix_name:
             continue
 
-        affix_entry = {
-            "name": affix_name
-        }
+        effect_entry = {"name": affix_name}
+
+        label = affix.get("label")
+        if isinstance(label, str) and label.strip():
+            effect_entry["label"] = label.strip()
 
         description = affix.get("description")
         if isinstance(description, str) and description.strip():
-            affix_entry["description"] = description.strip()
+            effect_entry["description"] = description.strip()
 
         adjective = affix.get("system", {}).get("adjective")
         if isinstance(adjective, str) and adjective.strip():
-            affix_entry["adjective"] = adjective.strip()
+            effect_entry["adjective"] = adjective.strip()
 
-        add_actions_from_record(
-            target_entry=affix_entry,
-            source_record=affix,
-            fallback_name=affix_name,
-            transifex_dict=transifex_dict,
-            add_mapping=False
-        )
+        add_actions_from_record_by_id(effect_entry, affix)
 
-        affixes[affix_name] = affix_entry
+        effects[affix_name] = effect_entry
 
-    if affixes:
-        entry["affixes"] = affixes
-        transifex_dict["mapping"]["affixes"] = {
+    if effects:
+        entry["effects"] = effects
+        transifex_dict["mapping"]["effects"] = {
             "path": "effects",
-            "converter": "embedded_affixes_converter"
+            "converter": "itemEffectsConverter"
         }
 
 def populate_embedded_effects_from_ids(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:

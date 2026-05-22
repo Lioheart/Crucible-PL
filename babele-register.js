@@ -30,17 +30,62 @@ Hooks.once("babele.init", (babele) => {
     return [];
   };
 
+  const stripTierSuffix = (value) => {
+    if (typeof value !== "string") return value;
+    return value.replace(/\s+(I|II|III|IV|V|VI|VII|VIII|IX|X|[1-9][0-9]*)$/i, "").trim();
+  };
+
+  const normalizeKey = (value) => {
+    if (typeof value !== "string") return null;
+    const stripped = stripTierSuffix(value).trim();
+    return stripped || null;
+  };
+
+  const collectLookupKeys = (source) => {
+    if (!source || typeof source !== "object") return [];
+    const raw = [
+      source.id,
+      source._id,
+      source.name,
+      source.label,
+      source.system?.identifier,
+      source.system?.id,
+      source.system?.slug
+    ];
+
+    const keys = [];
+    for (const value of raw) {
+      const normalized = normalizeKey(value);
+      if (normalized && !keys.includes(normalized)) keys.push(normalized);
+    }
+    return keys;
+  };
+
+  const translationMatches = (entry, key) => {
+    if (!entry || typeof entry !== "object") return false;
+
+    const raw = [
+      entry.id,
+      entry._id,
+      entry.name,
+      entry.label,
+      entry.identifier,
+      entry.system?.identifier,
+      entry.system?.id,
+      entry.system?.slug
+    ];
+
+    return raw.some((value) => normalizeKey(value) === key);
+  };
+
   const findTranslation = (source, translations, index = -1) => {
     if (!source || !translations) return null;
 
-    const keys = [source.id, source._id, source.name, source.label].filter(Boolean);
+    const keys = collectLookupKeys(source);
 
     if (Array.isArray(translations)) {
       for (const key of keys) {
-        const found = translations.find((entry) =>
-          entry && typeof entry === "object" &&
-          (entry.id === key || entry._id === key || entry.name === key || entry.label === key)
-        );
+        const found = translations.find((entry) => translationMatches(entry, key));
         if (found) return found;
       }
       return translations[index] ?? null;
@@ -49,6 +94,16 @@ Hooks.once("babele.init", (babele) => {
     if (typeof translations === "object") {
       for (const key of keys) {
         if (translations[key]) return translations[key];
+      }
+
+      for (const key of keys) {
+        const found = Object.values(translations).find((entry) => translationMatches(entry, key));
+        if (found) return found;
+      }
+
+      if (index >= 0) {
+        const fallback = Object.values(translations)[index];
+        if (fallback && typeof fallback === "object") return fallback;
       }
     }
 
@@ -82,6 +137,10 @@ Hooks.once("babele.init", (babele) => {
     }
 
     return effects;
+  };
+
+  const embeddedAffixesConverter = (effects, translations) => {
+    return itemEffectsConverter(effects, translations);
   };
 
   const actionsConverter = (actions, translations) => {
@@ -118,6 +177,52 @@ Hooks.once("babele.init", (babele) => {
     }
 
     return actions;
+  };
+
+  const itemEffectsConverter = (effects, translations) => {
+    if (!effects || !translations) return effects;
+
+    const arr = asArray(effects);
+    for (const [index, effect] of arr.entries()) {
+      if (!effect || typeof effect !== "object") continue;
+
+      const translation = findTranslation(effect, translations, index);
+      if (!translation || typeof translation !== "object") continue;
+
+      if (translation.name !== undefined) effect.name = translation.name;
+      if (translation.label !== undefined) effect.label = translation.label;
+
+      if (translation.description !== undefined) {
+        effect.description = translation.description;
+        effect.system ??= {};
+        effect.system.description = translation.description;
+      }
+
+      if (translation.adjective !== undefined) {
+        effect.system ??= {};
+        effect.system.adjective = translation.adjective;
+      }
+
+      if (translation.actions !== undefined) {
+        if (effect.system?.actions) {
+          effect.system.actions = actionsConverter(effect.system.actions, translation.actions);
+        }
+        if (effect.actions) {
+          effect.actions = actionsConverter(effect.actions, translation.actions);
+        }
+      }
+
+      if (translation.effects !== undefined) {
+        if (effect.effects) {
+          effect.effects = embeddedEffectsConverter(effect.effects, translation.effects);
+        }
+        if (effect.system?.effects) {
+          effect.system.effects = embeddedEffectsConverter(effect.system.effects, translation.effects);
+        }
+      }
+    }
+
+    return effects;
   };
 
   const embeddedItemsConverter = (items, translations) => {
@@ -158,7 +263,7 @@ Hooks.once("babele.init", (babele) => {
       }
 
       if (itemTranslation.effects && item.effects) {
-        item.effects = embeddedEffectsConverter(item.effects, itemTranslation.effects);
+        item.effects = itemEffectsConverter(item.effects, itemTranslation.effects);
       }
     }
 
@@ -179,6 +284,14 @@ Hooks.once("babele.init", (babele) => {
         obj.actions = actionsConverter(obj.actions, translations.actions);
       } else if (obj.system?.actions) {
         obj.system.actions = actionsConverter(obj.system.actions, translations.actions);
+      }
+    }
+
+    if (translations.effects) {
+      if (obj.effects) {
+        obj.effects = itemEffectsConverter(obj.effects, translations.effects);
+      } else if (obj.system?.effects) {
+        obj.system.effects = itemEffectsConverter(obj.system.effects, translations.effects);
       }
     }
 
@@ -226,64 +339,18 @@ Hooks.once("babele.init", (babele) => {
     return categories;
   };
 
-  const embeddedAffixesConverter = (effects, translations) => {
-    if (!effects || !translations) return effects;
-
-    const arr = asArray(effects);
-
-    for (const [index, effect] of arr.entries()) {
-      if (!effect || typeof effect !== "object") continue;
-
-      const translation = findTranslation(effect, translations, index);
-      if (!translation || typeof translation !== "object") continue;
-
-      if (translation.name !== undefined) effect.name = translation.name;
-      if (translation.label !== undefined) effect.label = translation.label;
-
-      if (translation.description !== undefined) {
-        effect.description = translation.description;
-        effect.system ??= {};
-        effect.system.description = translation.description;
-      }
-
-      if (translation.adjective !== undefined) {
-        effect.system ??= {};
-        effect.system.adjective = translation.adjective;
-      }
-
-      if (translation.actions !== undefined) {
-        if (effect.system?.actions) {
-          actionsConverter(effect.system.actions, translation.actions);
-        }
-
-        if (effect.actions) {
-          actionsConverter(effect.actions, translation.actions);
-        }
-      }
-
-      if (translation.effects !== undefined) {
-        if (effect.effects) {
-          embeddedEffectsConverter(effect.effects, translation.effects);
-        }
-
-        if (effect.system?.effects) {
-          embeddedEffectsConverter(effect.system.effects, translation.effects);
-        }
-      }
-    }
-
-    return effects;
-  };
-
   babele.registerConverters({
     actions_converter: actionsConverter,
     adventure_items_converter: embeddedItemsConverter,
     embedded_items_converter: embeddedItemsConverter,
     embedded_effects_converter: embeddedEffectsConverter,
+    embeddedEffectsConverter: embeddedEffectsConverter,
+    item_effects_converter: itemEffectsConverter,
+    itemEffectsConverter: itemEffectsConverter,
+    embedded_affixes_converter: embeddedAffixesConverter,
     embedded_object_with_actions_converter: embeddedObjectWithActionsConverter,
     embedded_biography_converter: embeddedBiographyConverter,
     nested_object_converter: nestedObjectConverter,
-    categories_converter: categoriesConverter,
-    embedded_affixes_converter: embeddedAffixesConverter
+    categories_converter: categoriesConverter
   });
 });
