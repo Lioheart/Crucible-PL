@@ -76,7 +76,7 @@
                 "public": "<blockquote><p>Ten naszyjnik w jaskrawych kolorach zawiera kamienny amulet, który świeci runą, w której słabo iskrzy się elektryczny rezonans. Trzymając go, odczuwasz surrealistyczne wrażenie, jakby otaczający cię świat nieco zwolnił.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do obrony <strong>Refleksu</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład amuletu Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a amulet ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Nimbleness": {
                     "name": "Zwinności",
                     "description": "<p>Zwiększa <strong>Refleks</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -224,7 +224,7 @@
                 "public": "<blockquote><p>Ten naszyjnik z zawieszkami wygląda na rustykalny, ale po bliższym przyjrzeniu się dostrzega się w nim delikatne rzemiosło. Trzymając go w dłoni, czujesz, jak oddech staje się głębszy, a drobne bóle mięśni ustępują.</p></blockquote><p>Ten zaklęty talizman zapewnia premię do <strong>Wytrzymałości</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład talizmanu Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a talizman ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Tenacity": {
                     "name": "Uporu",
                     "description": "<p>Zwiększa <strong>Wytrwałość</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -280,20 +280,15 @@
                 "public": "<blockquote><p>Niepozorny czarny płaszcz, który wydaje się pasować niemal do każdego stroju.</p></blockquote><p>Ten zaklęty płaszcz zapewnia premię do rzutów na <strong>Dyplomację</strong> oraz umożliwia przyjęcie iluzorycznego <strong>Przebrania</strong>.</p>",
                 "private": "<p>Ten przedmiot przedstawiono jako przykład Dobrej jakości płaszcza z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00] i przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000].</p>"
             },
-            "affixes": {
+            "effects": {
                 "Disguise": {
-                    "name": "Przebrania",
+                    "name": "Przebranie",
                     "description": "<p>Zapewnia akcję <strong>Przebranie</strong>, umożliwiające posiadaczowi przybranie iluzorycznego wyglądu raz na każdy odpoczynek.</p>",
-                    "adjective": "Przebrania",
+                    "adjective": "Przebranie",
                     "actions": {
-                        "Disguise": {
+                        "affixDisguise": {
                             "name": "Przebranie",
-                            "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>",
-                            "effects": [
-                                {
-                                    "name": "Przebranie"
-                                }
-                            ]
+                            "description": "<p>Raz na odpoczynek przybierasz iluzoryczną postać, która zmienia Twój wygląd oraz ubiór. Iluzja nie może zmienić Twojego pochodzenia, ale może zmienić inne aspekty Twojej anatomii, w tym widoczną płeć. Sam przedmiot nie zmienia wyglądu i pozostaje widoczny.</p><p>Iluzja utrzymuje się przez czas nieokreślony i może zostać zniesiona w dowolnym momencie. Po aktywacji przedmiot nie może wytworzyć kolejnej iluzji w ten sposób przez 24 godziny.</p>"
                         }
                     }
                 },
@@ -430,13 +425,13 @@
                 "public": "<blockquote><p>Mała, intensywnie niebieska perła, która w dotyku daje uczucie orzeźwiającego chłodu niezależnie od temperatury otoczenia.</p></blockquote><p>Ta zaklęta perła zapewnia posiadaczowi zdolność <strong>Odnowienie skupienia</strong>, dając dodatkowy zapas <strong>Skupienia</strong>, z którego można skorzystać w trudnych chwilach.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład perły Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a perła ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Focusing": {
                     "name": "Skupienia",
                     "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "Replenish Focus": {
+                        "affixFocus": {
                             "name": "Odnowienie skupienia",
                             "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
@@ -480,20 +475,15 @@
                 "public": "<blockquote><p>Ten starannie oszlifowany kamień szlachetny emituje delikatną, ciepłą poświatę i jest ciepły w dotyku.</p></blockquote><p>Ten zaklęty klejnot zapewnia posiadaczowi zdolność <strong>Aktywacja iluminacji</strong>, rozlewając nieziemskie światło w szerokim promieniu, dopóki nie zostanie wyłączone.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład klejnotu Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a klejnot ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Luminous": {
-                    "name": "Świetlisty",
+                    "name": "Świetlistości",
                     "description": "<p>Zapewnia akcję <strong>Aktywacja iluminacji</strong>, pozwalające posiadaczowi rozjaśnić otoczenie nieziemskim światłem. Zasięg światła zależy od <strong>stopnia</strong> tego afiksu.</p>",
                     "adjective": "Świetlistości",
                     "actions": {
-                        "Activate Illumination": {
+                        "affixLuminous": {
                             "name": "Aktywacja iluminacji",
-                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>",
-                            "effects": [
-                                {
-                                    "name": "Świetlisty"
-                                }
-                            ]
+                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>"
                         }
                     }
                 }
@@ -781,7 +771,7 @@
                 "public": "<blockquote><p>Misternie grawerowany złoty pierścień oplatający eliptyczny, lśniący pomarańczowy klejnot.</p></blockquote><p>Ta zaczarowana obręcz zapewnia korzyści do <strong>Skomponowanych</strong> akcji zawierających <strong>Fleksję</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład obręczy Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a obręcz tą można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Luminary": {
                     "name": "Świetlistości",
                     "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I.</p>",
@@ -892,7 +882,7 @@
                 "public": "<blockquote><p>Pełen gracji srebrny amulet osadzony niebieskimi klejnotami napełnia cię poczuciem niezłomności, gdy ściskasz go w dłoni, gotów stawić czoła każdemu wyzwaniu.</p></blockquote><p>Ten zaczarowany amulet zapewnia premię do <strong>Woli</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład wisiorka Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.determination000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a wisiorek ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Determination": {
                     "name": "Determinacji",
                     "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -1035,7 +1025,7 @@
                 "public": "<blockquote><p>Ten elegancki, zdobiony pierścień wydaje się lekko śliski i trudny do uchwycenia. Trzymany w dłoni niemal niezauważalnie wibruje.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Uniku</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Evasion": {
                     "name": "Unikania",
                     "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -1049,13 +1039,13 @@
                 "public": "<blockquote><p>Obręcz z eleganckiej, jasnoniebieskiej stali, której spiralny wzór sprawia wrażenie, jakby nieustannie powoli obracała się na palcu swojego właściciela.</p></blockquote><p>Ten zaczarowany pierścień zapewnia zdolność szybowania na boki podczas upadku.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Gliding": {
-                    "name": "Szybowania",
+                    "name": "Szybowanie",
                     "description": "<p>Zapewnia akcję <strong>Szybowanie</strong>, umożliwiającą posiadaczowi poruszanie się poziomo podczas upadku. Długość szybowania zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
-                    "adjective": "Szybowania",
+                    "adjective": "Szybowanie",
                     "actions": {
-                        "Gliding": {
+                        "gliding": {
                             "name": "Szybowanie",
                             "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
                         }
@@ -1069,7 +1059,7 @@
                 "public": "<blockquote><p>Ten stalowy pierścień jest stale chłodny w dotyku i sprawia wrażenie cięższego, niż można by się spodziewać po jego wąskiej obręczy.</p></blockquote><p>Ten zaczarowany pierścień zapewnia premię do obrony <strong>Pancerza</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem II @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000].</p><p>Ten afiks można zastosować do dowolnego elementu zbroi lub akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem I stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Reinforcement": {
                     "name": "Wzmocnienia",
                     "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -1236,15 +1226,15 @@
                 "public": "<blockquote><p>Ten pierścień wykonany jest z nieprzezroczystego kamienia, który został starannie wyrzeźbiony w pełnych wdzięku, rozległych warstwach przywodzących na myśl starożytną estetykę. Pierścień służy jako potężny przedmiot skupiający moc zaklęć dla osoby, która go nosi <strong>zainwestowany</strong>.</p></blockquote><p>Ten zaczarowany pierścień pozwala w trudnych chwilach wykorzystać dodatkowy zapas <strong>Skupienia</strong>.</p>",
                 "private": "<p>Ten przedmiot stanowi przykład pierścienia Dobrej jakości z przyrostkiem I @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000].</p><p>Ten afiks można zastosować do dowolnego elementu akcesorium, a pierścień ten można dodatkowo zakląć przyrostkiem II stopnia 1.</p>"
             },
-            "affixes": {
+            "effects": {
                 "Focusing": {
                     "name": "Skupienia",
                     "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "Replenish Focus": {
+                        "affixFocus": {
                             "name": "Odnowienie skupienia",
-                            "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostkia I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
+                            "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
                     }
                 }
@@ -1411,9 +1401,9 @@
                 "private": "private"
             }
         },
-        "affixes": {
+        "effects": {
             "path": "effects",
-            "converter": "embedded_affixes_converter"
+            "converter": "itemEffectsConverter"
         }
     }
 }
