@@ -9,7 +9,8 @@ const crucibleItemSheets = [
 "CrucibleArmorItemSheet",
 "CrucibleConsumableItemSheet",
 "CrucibleToolItemSheet",
-"CrucibleWeaponItemSheet"
+"CrucibleWeaponItemSheet",
+"CrucibleAffixEffectSheet"
 ];
 
 // ładowanie CSS tylko gdy opcja jest włączona
