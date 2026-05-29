@@ -39,7 +39,7 @@
         "Name": "Rzucenie zaklęcia"
       },
       "Defend": {
-        "Description": "Koncentrujesz się na unikaniu obrażeń, zwiększając swoją fizyczną obronę. Otrzymujesz stan <strong>Strzeżony</strong> do początku swojej następnej tury.",
+        "Description": "Koncentrujesz się na unikaniu obrażeń, zwiększając swoją fizyczną obronę. Otrzymujesz stan <strong>Defensywa</strong> do początku swojej następnej tury.",
         "Name": "Obrona"
       },
       "Delay": {
