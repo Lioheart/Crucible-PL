@@ -231,7 +231,7 @@
                         },
                         "Skirmisher": {
                             "name": "Harcownik",
-                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
+                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
                         },
                         "Flurry": {
                             "name": "Grad ciosów",
@@ -351,7 +351,7 @@
                                 "Intercept": {
                                     "name": "Przechwycenie",
                                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak wycofujący</strong> przeciwko niemu.</p>"
+                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                                 }
                             }
                         },
@@ -1197,7 +1197,7 @@
                         },
                         "Skirmisher": {
                             "name": "Harcownik",
-                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
+                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
                         },
                         "Impetus": {
                             "name": "Impet",
@@ -1220,7 +1220,7 @@
                                 "Intercept": {
                                     "name": "Przechwycenie",
                                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak wycofujący</strong> przeciwko niemu.</p>"
+                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                                 }
                             }
                         },
@@ -1508,7 +1508,7 @@
                                 "Intercept": {
                                     "name": "Przechwycenie",
                                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak wycofujący</strong> przeciwko niemu.</p>"
+                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                                 }
                             }
                         },
@@ -1749,7 +1749,7 @@
                         },
                         "Skirmisher": {
                             "name": "Harcownik",
-                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
+                            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
                         },
                         "Diversionist": {
                             "name": "Dywersant",
@@ -2314,7 +2314,7 @@
                                 "Intercept": {
                                     "name": "Przechwycenie",
                                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak wycofujący</strong> przeciwko niemu.</p>"
+                                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                                 }
                             }
                         },
