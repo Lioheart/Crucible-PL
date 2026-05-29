@@ -256,7 +256,7 @@
                 },
                 "Guarded": {
                     "name": "Defensywa",
-                    "text": "<p>Niektóre rodzaje terenu lub zdolności mogą tymczasowo wzmocnić obronę stworzenia. Gdy stworzenie jest <strong>Strzeżone</strong>, ataki przeciwko niemu otrzymują +1 <strong>Zguba</strong>.</p>"
+                    "text": "<p>Niektóre rodzaje terenu lub zdolności mogą tymczasowo wzmocnić obronę stworzenia. Gdy stworzenie jest w stanie <strong>Defensywy</strong>, ataki przeciwko niemu otrzymują +1 <strong>Zguba</strong>.</p>"
                 },
                 "Unaware": {
                     "name": "Nieświadomy",
