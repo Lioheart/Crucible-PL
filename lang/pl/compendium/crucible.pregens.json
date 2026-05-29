@@ -469,7 +469,7 @@
                 },
                 "Backstab": {
                     "name": "Cios w plecy",
-                    "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów flankowanego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
+                    "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów oskrzydlonego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
                     "actions": {
                         "Backstab": {
                             "name": "Cios w plecy",
