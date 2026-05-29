@@ -15,11 +15,3 @@ body {
 .crucible {
     --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
 }
-
-.crucible .labeled-hex h4 {
-    top: -0.6rem;
-}
-
-.crucible .labeled-hex .footer {
-    bottom: -1rem;
-}
