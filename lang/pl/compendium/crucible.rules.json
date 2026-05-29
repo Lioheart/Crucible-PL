@@ -255,7 +255,7 @@
                     "text": "<p>Stworzenie, które jest <strong>Zdezorientowane</strong>, ponosi dodatkowy koszt +1 <strong>Skupienia</strong> do wszystkich Akcji wymagających Skupienia.</p>"
                 },
                 "Guarded": {
-                    "name": "Strzeżony",
+                    "name": "Defensywa",
                     "text": "<p>Niektóre rodzaje terenu lub zdolności mogą tymczasowo wzmocnić obronę stworzenia. Gdy stworzenie jest <strong>Strzeżone</strong>, ataki przeciwko niemu otrzymują +1 <strong>Zguba</strong>.</p>"
                 },
                 "Unaware": {
