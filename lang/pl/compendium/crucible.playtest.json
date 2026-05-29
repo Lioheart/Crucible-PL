@@ -2134,7 +2134,7 @@
                             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Duszy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[inspired] przy Trafieniach krytycznych.</p><p>Efekt Zainspirowany trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>przywrócenie</strong> <strong>Morale</strong> równe twojej wartości <strong>Prezencji</strong>.</p>"
                         },
                         "Mender": {
-                            "name": "Uzdrowiciel",
+                            "name": "Znachor",
                             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Regeneracji trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
                         },
                         "Arcana Novice": {
