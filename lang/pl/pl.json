@@ -456,7 +456,7 @@
       "NoConsumableUses": "Przedmiot eksploatacyjny „{item}” nie ma już żadnych pozostałych zastosowań dla akcji „{action}”",
       "NonCombat": "Nie możesz wykonać {action} podczas walki.",
       "NoReloadRequired": "Twoja broń nie wymaga przeładowania",
-      "NotFlanked": "{action} wymaga flankowanego celu. Cel „{target}” nie jest flankowany.",
+      "NotFlanked": "{action} wymaga oskrzydlenia celu. Cel „{target}” nie jest oskrzydlony.",
       "NoViewedScene": "Aby wykonać tę akcję, konieczne jest wyświetlenie sceny.",
       "ReactionUnaware": "Nie możesz użyć reakcji, gdy jesteś Nieświadomy!",
       "RequiresMelee": "Aby wykonać tę akcję, musisz mieć wyposażoną broń do walki wręcz.",
