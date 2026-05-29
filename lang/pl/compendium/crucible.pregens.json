@@ -236,7 +236,7 @@
                 "Backstab": {
                     "name": "Cios w plecy",
                     "condition": "Atakujesz cel ze stanem Oskrzydlenia.",
-                    "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Oskrzydlenie</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                    "description": "<p><strong>Uderzasz</strong> bronią główną w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                 }
             }
         },
