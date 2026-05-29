@@ -437,7 +437,7 @@
                             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
                             "actions": {
                                 "Quick Draw": {
-                                    "name": "Szybkie dobycie",
+                                    "name": "Szybkie naciągnięcie",
                                     "description": "<p>Pod presją możesz stracić szansę na trafienie, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                                 }
                             }
@@ -1815,7 +1815,7 @@
                             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
                             "actions": {
                                 "Quick Draw": {
-                                    "name": "Szybkie dobycie",
+                                    "name": "Szybkie naciągnięcie",
                                     "description": "<p>Pod presją możesz stracić szansę na trafienie, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                                 }
                             }
