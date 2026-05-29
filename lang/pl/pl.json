@@ -1503,7 +1503,7 @@
         "label": "Zaangażowani wrogowie"
       },
       "flanked": {
-        "label": "Etap flankowania"
+        "label": "Etap oskrzydlenia"
       }
     }
   },
@@ -2386,7 +2386,7 @@
     "LABELS": {
       "Enemies": "{enemies} wrogów",
       "Engagement": "Zaangażowanie {engagement}",
-      "Flanked": "Flankowanie {flanked}"
+      "Flanked": "Oskrzydlenie {flanked}"
     },
     "MOVEMENT": {
       "ACTIONS": {
