@@ -1359,8 +1359,8 @@
                             "actions": {
                                 "Backstab": {
                                     "name": "Cios w plecy",
-                                    "condition": "Atakujesz cel ze stanem Flankowany.",
-                                    "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                                    "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
+                                    "description": "<p><strong>Uderzasz</strong> bronią główną we <strong>Oskrzydlenie</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                                 }
                             }
                         }
