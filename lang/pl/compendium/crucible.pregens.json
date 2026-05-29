@@ -734,7 +734,7 @@
                 },
                 "Testudo": {
                     "name": "Testudo",
-                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Strzeżony</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
+                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Defensywa</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
                 },
                 "Hold Fast": {
                     "name": "Nieugiętość",
