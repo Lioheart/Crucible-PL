@@ -675,7 +675,7 @@
             "actions": {
                 "Flaming Arrow": {
                     "name": "Płonąca strzała",
-                    "description": "<p>Tracisz <strong>Wzmocniony</strong> atak dystansowy przy użyciu broni <strong>Miotanej</strong>, która zadaje obrażenia od <strong>Ognia</strong> przy uderzeniu.</p>"
+                    "description": "<p>Wystrzeliwujesz <strong>Wzmocniony</strong> atak dystansowy przy użyciu broni <strong>Miotanej</strong>, która zadaje obrażenia od <strong>Ognia</strong> przy uderzeniu.</p>"
                 }
             }
         },
