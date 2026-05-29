@@ -935,7 +935,7 @@
           "label": "Podstawowy atrybut"
         },
         "secondary": {
-          "hint": "Wybierz dodatkowy atrybut, której wartość początkowa wynosi 2.",
+          "hint": "Wybierz drugorzędny atrybut, której wartość początkowa wynosi 2.",
           "label": "Drugorzędny atrybut"
         }
       },
