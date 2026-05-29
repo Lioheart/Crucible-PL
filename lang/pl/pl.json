@@ -39,7 +39,7 @@
         "Name": "Rzucenie zaklęcia"
       },
       "Defend": {
-        "Description": "Koncentrujesz się na unikaniu obrażeń, zwiększając swoją fizyczną obronę. Otrzymujesz stan <strong>Strzeżony</strong> do początku swojej następnej tury.",
+        "Description": "Koncentrujesz się na unikaniu obrażeń, zwiększając swoją fizyczną obronę. Otrzymujesz stan <strong>Defensywa</strong> do początku swojej następnej tury.",
         "Name": "Obrona"
       },
       "Delay": {
@@ -275,7 +275,7 @@
       "Finesse": "Finezyjne",
       "FinesseTooltip": "Wykonanie tej akcji wymaga pewnej zręczności. Musisz dzierżyć broń, której skuteczność zależy od Zręczności.",
       "Flanking": "Flankowanie",
-      "FlankingTooltip": "Ta akcja może być wykonana tylko wobec flankowanego celu lub nieświadomego zagrożenia.",
+      "FlankingTooltip": "Ta akcja może być wykonana tylko wobec oskrzydlonego celu lub nieświadomego zagrożenia.",
       "Generic": "Ogólny",
       "GenericTooltip": "Akcje, które wykonują ogólny atak bez użycia konkretnego zaklęcia lub broni.",
       "Harmless": "Nieszkodliwy",
@@ -456,7 +456,7 @@
       "NoConsumableUses": "Przedmiot eksploatacyjny „{item}” nie ma już żadnych pozostałych zastosowań dla akcji „{action}”",
       "NonCombat": "Nie możesz wykonać {action} podczas walki.",
       "NoReloadRequired": "Twoja broń nie wymaga przeładowania",
-      "NotFlanked": "{action} wymaga flankowanego celu. Cel „{target}” nie jest flankowany.",
+      "NotFlanked": "{action} wymaga oskrzydlenia celu. Cel „{target}” nie jest oskrzydlony.",
       "NoViewedScene": "Aby wykonać tę akcję, konieczne jest wyświetlenie sceny.",
       "ReactionUnaware": "Nie możesz użyć reakcji, gdy jesteś Nieświadomy!",
       "RequiresMelee": "Aby wykonać tę akcję, musisz mieć wyposażoną broń do walki wręcz.",
@@ -535,10 +535,10 @@
       "Exhausted": "Wyczerpany",
       "Exposed": "Odsłonięty",
       "Fear": "Przerażony",
-      "Flanked": "Flankowany",
+      "Flanked": "Oskrzydlenie",
       "FlankedDescription": "Otaczają cię liczni przeciwnicy, którzy otrzymują dodatkowe Korzyści do swoich ataków!",
       "Freezing": "Zamarzający",
-      "Guarded": "Strzeżony",
+      "Guarded": "Defensywa",
       "Hastened": "Przyśpieszony",
       "Incapacitated": "Obezwładniony",
       "Insane": "Obłąkany",
@@ -935,8 +935,8 @@
           "label": "Podstawowy atrybut"
         },
         "secondary": {
-          "hint": "Wybierz dodatkowy atrybut, której wartość początkowa wynosi 2.",
-          "label": "Dodatkowy atrybut"
+          "hint": "Wybierz drugorzędny atrybut, której wartość początkowa wynosi 2.",
+          "label": "Drugorzędny atrybut"
         }
       },
       "description": {
@@ -1503,7 +1503,7 @@
         "label": "Zaangażowani wrogowie"
       },
       "flanked": {
-        "label": "Etap flankowania"
+        "label": "Etap oskrzydlenia"
       }
     }
   },
@@ -2386,7 +2386,7 @@
     "LABELS": {
       "Enemies": "{enemies} wrogów",
       "Engagement": "Zaangażowanie {engagement}",
-      "Flanked": "Flankowanie {flanked}"
+      "Flanked": "Oskrzydlenie {flanked}"
     },
     "MOVEMENT": {
       "ACTIONS": {
@@ -2456,7 +2456,7 @@
   "TYPES": {
     "ActiveEffect": {
       "affix": "Afiks",
-      "flanked": "Flankowany"
+      "flanked": "Oskrzydlenie"
     },
     "Actor": {
       "adversary": "Przeciwnik",
