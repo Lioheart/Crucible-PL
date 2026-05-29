@@ -109,7 +109,7 @@
                         },
                         "Pack Hunter": {
                             "name": "Stadny łowca",
-                            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Flankowanego</strong> wroga.</p>"
+                            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Oskrzydlonego</strong> wroga.</p>"
                         }
                     },
                     "archetype": {
