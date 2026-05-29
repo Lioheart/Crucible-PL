@@ -138,7 +138,7 @@
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
-            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan <strong>Strzeżony</strong> i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
+            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan <strong>Defensywa</strong> i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
         },
         "Artful Parry": {
             "name": "Zręczna obrona",
@@ -206,12 +206,12 @@
         },
         "Backstab": {
             "name": "Cios w plecy",
-            "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów flankowanego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
+            "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów oskrzydlonego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
             "actions": {
                 "Backstab": {
                     "name": "Cios w plecy",
-                    "condition": "Atakujesz cel ze stanem Flankowany.",
-                    "description": "<p><strong>Uderzasz</strong> bronią we <strong>Flankowany</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                    "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
+                    "description": "<p><strong>Uderzasz</strong> bronią w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                 }
             }
         },
@@ -675,7 +675,7 @@
             "actions": {
                 "Flaming Arrow": {
                     "name": "Płonąca strzała",
-                    "description": "<p>Tracisz <strong>Wzmocniony</strong> atak dystansowy przy użyciu broni <strong>Miotanej</strong>, która zadaje obrażenia od <strong>Ognia</strong> przy uderzeniu.</p>"
+                    "description": "<p>Wystrzeliwujesz <strong>Wzmocniony</strong> atak dystansowy przy użyciu broni <strong>Miotanej</strong>, która zadaje obrażenia od <strong>Ognia</strong> przy uderzeniu.</p>"
                 }
             }
         },
@@ -981,7 +981,7 @@
                 "Intercept": {
                     "name": "Przechwycenie",
                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak wycofujący</strong> przeciwko niemu.</p>"
+                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                 }
             }
         },
@@ -1188,7 +1188,7 @@
             "description": "<p>Posiadasz podstawową wiedzę z zakresu anatomii, fizjologii i medycyny. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Medycyna</strong> i nie jesteś już uważany za <strong>Niewyszkolonego</strong> w tej umiejętności.</p><p>Nauczyłeś się podstaw leczenia typowych ran i chorób oraz prowadzisz listę znanych związków alchemicznych i ziołowych, które można stosować w leczeniu określonych schorzeń. Po krótkim zbadaniu osoby rannej, chorej lub cierpiącej na inne dolegliwości jesteś w stanie postawić podstawową diagnozę i zastosować odpowiednie leczenie.</p>"
         },
         "Mender": {
-            "name": "Uzdrowiciel",
+            "name": "Znachor",
             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Regeneracji trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
         },
         "Mental Fortress": {
@@ -1402,8 +1402,8 @@
             "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
             "actions": {
                 "Quick Draw": {
-                    "name": "Szybkie dobycie",
-                    "description": "<p>Pod presją możesz stracić szansę na trafienie, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                    "name": "Szybkie naciągnięcie",
+                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                 }
             }
         },
@@ -1692,7 +1692,7 @@
         },
         "Skirmisher": {
             "name": "Harcownik",
-            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak wycofujący</strong> skierowane przeciwko tobie.</p>"
+            "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
         },
         "Slipstep": {
             "name": "Zwód",
@@ -1892,7 +1892,7 @@
         },
         "Testudo": {
             "name": "Testudo",
-            "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Strzeżony</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
+            "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Defensywa</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
         },
         "Thick Skin": {
             "name": "Gruba skóra",
