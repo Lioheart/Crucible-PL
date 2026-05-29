@@ -220,7 +220,7 @@
                 },
                 "Flanked": {
                     "name": "Oskrzydlenie",
-                    "text": "<p>Gdy stworzenie jest jednocześnie <strong>Zaangażowane</strong> przez liczbę stworzeń większą niż jego wartość <strong>Zaangażowania</strong>, otrzymuje stan <strong>Oskrzydlenie</strong>. Stan Oskrzydlenie ma kilka kolejnych poziomów liczbowych, zaczynając od Oskrzydlenie 1, gdzie każdy poziom Flankowania zapewnia <strong>+1 Korzyść</strong> do rzutów ataku wręcz wykonywanych przeciwko temu stworzeniu.</p><p>Choć większa liczba Zaangażowanych przeciwników zwiększa poziom Flankowania, obecność sąsiadujących sojuszników, którzy cię wspierają, może zniwelować flankowanie. Sojusznicy dodają swoje własne Zaangażowanie jako premię do twojego, jeśli macie wspólnych przeciwników, z którymi obaj jesteście Zaangażowani.</p>"
+                    "text": "<p>Gdy stworzenie jest jednocześnie <strong>Zaangażowane</strong> przez liczbę stworzeń większą niż jego wartość <strong>Zaangażowania</strong>, otrzymuje stan <strong>Oskrzydlenie</strong>. Stan Oskrzydlenie ma kilka kolejnych poziomów liczbowych, zaczynając od Oskrzydlenie 1, gdzie każdy poziom Oskrzydlenia zapewnia <strong>+1 Korzyść</strong> do rzutów ataku wręcz wykonywanych przeciwko temu stworzeniu.</p><p>Choć większa liczba Zaangażowanych przeciwników zwiększa poziom Oskrzydlenia, obecność sąsiadujących sojuszników, którzy cię wspierają, może zniwelować oskrzydlenie. Sojusznicy dodają swoje własne Zaangażowanie jako premię do twojego, jeśli macie wspólnych przeciwników, z którymi obaj jesteście Zaangażowani.</p>"
                 },
                 "Incapacitated": {
                     "name": "Obezwładniony",
