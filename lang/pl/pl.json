@@ -803,7 +803,7 @@
         "header": "Talenty pasywne"
       },
       "SIGNATURE": {
-        "header": "Talenty charakterystyczne"
+        "header": "Talenty popisowe"
       },
       "SPELL": {
         "header": "Talenty czaroznastwa"
@@ -1318,7 +1318,7 @@
   },
   "CONTROLS": {
     "CrucibleForcedMovement": "Wymuszony ruch",
-    "VisualizeFlanking": "Wizualizacja flankowania"
+    "VisualizeFlanking": "Wizualizacja oskrzydlenia"
   },
   "CRUCIBLE": {
     "SHEETS": {
@@ -1402,7 +1402,7 @@
     "Physical": "Fizyczne",
     "Reflex": "Refleks",
     "Willpower": "Wola",
-    "Wounds": "Próg uzdrawiania"
+    "Wounds": "Próg leczenia"
   },
   "DETECTION_MODES": {
     "Echolocation": "Echolokacja",
@@ -2070,7 +2070,7 @@
       "Blast": "Wybuch",
       "Cone": "Stożek",
       "Conjure": "Przywoływanie",
-      "Create": "Stworzenie",
+      "Create": "Wytwór",
       "Fan": "Wachlarz",
       "Influence": "Wpływ",
       "Pulse": "Impuls",
@@ -2506,7 +2506,7 @@
     "CannotEquipActionCost": "Nie możesz wyposażyć się w broń, ponieważ nie masz dostępnych Punktów Akcji.",
     "CannotEquipInCombat": "Aktor {act} nie może wyposażyć się ani zdjąć {item} podczas walki.",
     "CannotEquipInvalidCategory": "Aktor {actor} nie może używać {item} w miejscu na wyposażenie {type}.",
-    "CannotEquipSlotInUse": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ miejsce na przedmiot {type} jest już zajęte.",
+    "CannotEquipSlotInUse": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ miejsce na przedmiot typu {type} jest już zajęte.",
     "CannotEquipTaxonomy": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ taksonomia \"{taxonomy}\" nie pozwala na używanie wyposażenia.",
     "NoParty": "Musisz mieć skonfigurowaną główną drużynę.",
     "SkillRequireAncestryBackground": "Przed nabyciem rangi Umiejętności należy przypisać zarówno Pochodzenie, jak i Przeszłość."
