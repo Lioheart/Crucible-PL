@@ -328,7 +328,7 @@
                         },
                         "Conjurer": {
                             "name": "Przywoływacz",
-                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
+                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Wytworu, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
                         },
                         "Inflection: Push": {
                             "name": "Fleksja: Pchanie",
