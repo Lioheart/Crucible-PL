@@ -260,7 +260,7 @@
                 "Berserker Rage": {
                     "name": "Szał berserkera",
                     "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajes 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                     "effects": [
                         {
                             "name": "Szał berserkera"
@@ -651,7 +651,7 @@
             "actions": {
                 "Feinting Strike": {
                     "name": "Atak pozorowany",
-                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>Uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do Uderzenia i zadajes dodatkowe <strong>+6 obrażeń</strong>.</p>"
+                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>Uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do Uderzenia i zadajesz dodatkowe <strong>+6 obrażeń</strong>.</p>"
                 }
             }
         },
