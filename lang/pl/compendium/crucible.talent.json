@@ -1968,7 +1968,7 @@
             "actions": {
                 "Unshakeable Poise": {
                     "name": "Niezachwiana równowaga",
-                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoją <strong>Koncentrację</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
+                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoje <strong>Skupienie</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
                 }
             }
         },
