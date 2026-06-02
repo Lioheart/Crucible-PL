@@ -1402,7 +1402,7 @@
     "Physical": "Fizyczne",
     "Reflex": "Refleks",
     "Willpower": "Wola",
-    "Wounds": "Próg uzdrawiania"
+    "Wounds": "Próg leczenia"
   },
   "DETECTION_MODES": {
     "Echolocation": "Echolokacja",
