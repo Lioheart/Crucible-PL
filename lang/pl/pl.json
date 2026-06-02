@@ -2506,7 +2506,7 @@
     "CannotEquipActionCost": "Nie możesz wyposażyć się w broń, ponieważ nie masz dostępnych Punktów Akcji.",
     "CannotEquipInCombat": "Aktor {act} nie może wyposażyć się ani zdjąć {item} podczas walki.",
     "CannotEquipInvalidCategory": "Aktor {actor} nie może używać {item} w miejscu na wyposażenie {type}.",
-    "CannotEquipSlotInUse": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ miejsce na przedmiot {type} jest już zajęte.",
+    "CannotEquipSlotInUse": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ miejsce na przedmiot typu {type} jest już zajęte.",
     "CannotEquipTaxonomy": "Aktor {actor} nie może wyposażyć się w {item}, ponieważ taksonomia \"{taxonomy}\" nie pozwala na używanie wyposażenia.",
     "NoParty": "Musisz mieć skonfigurowaną główną drużynę.",
     "SkillRequireAncestryBackground": "Przed nabyciem rangi Umiejętności należy przypisać zarówno Pochodzenie, jak i Przeszłość."
