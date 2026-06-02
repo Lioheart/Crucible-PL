@@ -260,7 +260,7 @@
                 "Berserker Rage": {
                     "name": "Szał berserkera",
                     "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajes 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                     "effects": [
                         {
                             "name": "Szał berserkera"
@@ -375,7 +375,7 @@
         },
         "Conjurer": {
             "name": "Przywoływacz",
-            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
+            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Wytworu, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
         },
         "Conserve Effort": {
             "name": "Oszczędzanie wysiłku",
@@ -651,7 +651,7 @@
             "actions": {
                 "Feinting Strike": {
                     "name": "Atak pozorowany",
-                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>Uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do Uderzenia i zadajes dodatkowe <strong>+6 obrażeń</strong>.</p>"
+                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>Uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do Uderzenia i zadajesz dodatkowe <strong>+6 obrażeń</strong>.</p>"
                 }
             }
         },
@@ -763,11 +763,11 @@
         },
         "Gesture: Conjure": {
             "name": "Gest: Wywołanie",
-            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Gościa</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Gość jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Gość przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Gościa. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Gościa. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Gościa. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego gościa</strong>.</p>"
+            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego przybysza</strong>.</p>"
         },
         "Gesture: Create": {
             "name": "Gest: Tworzenie",
-            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
+            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ognistego ducha</strong>.</p>"
         },
         "Gesture: Fan": {
             "name": "Gest: Wachlarz",
@@ -1968,7 +1968,7 @@
             "actions": {
                 "Unshakeable Poise": {
                     "name": "Niezachwiana równowaga",
-                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoją <strong>Koncentrację</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
+                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoje <strong>Skupienie</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
                 }
             }
         },
