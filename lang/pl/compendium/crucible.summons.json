@@ -69,7 +69,7 @@
             }
         },
         "Earth Visitor": {
-            "name": "Ziemisty przybysz",
+            "name": "Przybysz ziemi",
             "items": {
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
@@ -157,7 +157,7 @@
             }
         },
         "Flame Visitor": {
-            "name": "Ognisty przybysz",
+            "name": "Przybysz ognia",
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
