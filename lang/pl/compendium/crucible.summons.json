@@ -195,7 +195,7 @@
             "name": "Mroźny pazur"
         },
         "Frost Sprite": {
-            "name": "Mroźny duch",
+            "name": "Duch mrozu",
             "items": {
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -361,7 +361,7 @@
             "name": "Runa: Błyskawica"
         },
         "Storm Sprite": {
-            "name": "Burzowy duch",
+            "name": "Duch burzy",
             "items": {
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
