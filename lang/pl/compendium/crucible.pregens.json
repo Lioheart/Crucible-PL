@@ -59,7 +59,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
+                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                         }
                     }
                 },
@@ -70,13 +70,13 @@
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
                             "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
-                            "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
+                            "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                         }
                     }
                 },
                 "Lesser Regeneration": {
                     "name": "Mniejsza regeneracja",
-                    "description": "<p>Twoja niezwykła wytrzymałość daje ci nadprzyrodzoną zdolność do szybkiego wyleczenia się z ran. Na początku swojej tury, jeśli nie jesteś osłabiony, zyskujesz +1 do <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Twoja niezwykła wytrzymałość daje ci nadprzyrodzoną zdolność do szybkiego wyleczenia się z ran. Na początku swojej tury, jeśli nie jesteś @Condition[weakened], zyskujesz +1 do <strong>Zdrowia</strong>.</p>"
                 },
                 "Glaive": {
                     "name": "Glewia",
@@ -124,7 +124,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -135,7 +135,7 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>1 rundę</strong> i zadaje obrażenia równe Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>3 rundy</strong> i zadaje obrażenia równe połowie Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -217,7 +217,7 @@
                 "Mark For Death": {
                     "name": "Znak śmierci",
                     "condition": "Nie jesteś obserwowany.",
-                    "description": "Poświęcasz 1 minutę na zbadanie stworzenia. Wykonaj test Wiedzy na temat swojego celu. Jeśli test zakończy się sukcesem, dowiesz się, na jakie rodzaje obrażeń cel jest podatny. Twoja minimalna Inicjatywa podczas pierwszej rundy walki staje się o jeden wyższa od Inicjatywy wybranego celu."
+                    "description": "<p>Poświęcasz 1 minutę na zbadanie stworzenia. Wykonaj test Wiedzy na temat swojego celu. Jeśli test zakończy się sukcesem, dowiesz się, na jakie rodzaje obrażeń cel jest podatny. Twoja minimalna Inicjatywa podczas pierwszej rundy walki staje się o jeden wyższa od Inicjatywy wybranego celu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ta akcja nie jest jeszcze zautomatyzowana.</p>"
                 }
             }
         },
@@ -236,7 +236,7 @@
                 "Backstab": {
                     "name": "Cios w plecy",
                     "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
-                    "description": "<p><strong>Uderzasz</strong> bronią główną w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                    "description": "<p><strong>Uderzasz</strong> bronią w cel ze stanem @Condition[flanked], zadając <strong>Mordercze</strong> obrażenia.</p>"
                 }
             }
         },
@@ -277,7 +277,7 @@
                 },
                 "Bloodletter": {
                     "name": "Krwawiciel",
-                    "description": "<p>Twoja precyzja w posługiwaniu się bronią zadającą obrażenia Cięte lub Kłute może spowodować stan Krwawienia przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p><p>Efekt Krwawienia trwa przez 1 rundę i zadaje dodatkowe obrażenia Zdrowia równe twojej wartości Zręczności.</p>"
+                    "description": "<p>Twoja precyzja w posługiwaniu się bronią zadającą obrażenia Cięte lub Kłute może spowodować stan @Condition[bleeding] przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p><p>Efekt @Condition[bleeding] trwa przez 3 rundy i zadaje dodatkowe obrażenia Zdrowia równe twojej wartości Zręczności.</p>"
                 },
                 "Counter Evade": {
                     "name": "Kontr-unik",
@@ -311,7 +311,7 @@
                 },
                 "Skirmisher": {
                     "name": "Harcownik",
-                    "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
+                    "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy @Action[default reactiveStrike] skierowane przeciwko tobie.</p>"
                 },
                 "Impetus": {
                     "name": "Impet",
@@ -329,12 +329,12 @@
                 },
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
+                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
                         }
                     }
                 },
@@ -407,7 +407,7 @@
                     "actions": {
                         "Flash of Steel": {
                             "name": "Błysk stali",
-                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się <strong>Odsłonięty</strong> do początku swojej następnej tury.</p>",
+                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się @Condition[exposed] do początku swojej następnej tury.</p>",
                             "effects": [
                                 {
                                     "name": "Błysk stali"
@@ -429,12 +429,12 @@
                 },
                 "Assassin": {
                     "name": "Zabójca",
-                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde Uderzenie lub Zaklęcie skierowane przeciwko <strong>Nieświadomemu</strong> celowi staje się <strong>Mordercze</strong>.</p><p>Nieświadoma istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w walce.</p>",
+                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>Uderzenie</strong> lub <strong>Zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
                     "actions": {
                         "Mark For Death": {
                             "name": "Znak śmierci",
                             "condition": "Nie jesteś obserwowany.",
-                            "description": "Poświęcasz 1 minutę na zbadanie stworzenia. Wykonaj test Wiedzy na temat swojego celu. Jeśli test zakończy się sukcesem, dowiesz się, na jakie rodzaje obrażeń cel jest podatny. Twoja minimalna Inicjatywa podczas pierwszej rundy walki staje się o jeden wyższa od Inicjatywy wybranego celu."
+                            "description": "<p>Poświęcasz 1 minutę na zbadanie stworzenia. Wykonaj test Wiedzy na temat swojego celu. Jeśli test zakończy się sukcesem, dowiesz się, na jakie rodzaje obrażeń cel jest podatny. Twoja minimalna Inicjatywa podczas pierwszej rundy walki staje się o jeden wyższa od Inicjatywy wybranego celu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ta akcja nie jest jeszcze zautomatyzowana.</p>"
                         }
                     }
                 },
@@ -474,7 +474,7 @@
                         "Backstab": {
                             "name": "Cios w plecy",
                             "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
-                            "description": "<p><strong>Uderzasz</strong> bronią główną w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
+                            "description": "<p><strong>Uderzasz</strong> bronią w cel ze stanem @Condition[flanked], zadając <strong>Mordercze</strong> obrażenia.</p>"
                         }
                     }
                 }
@@ -494,7 +494,7 @@
                 "Berserker Rage": {
                     "name": "Szał berserkera",
                     "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                    "description": "Otrzymujesz stan @Condition[enraged]. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                     "effects": [
                         {
                             "name": "Szał berserkera"
@@ -565,7 +565,7 @@
                 "Counter Riposte": {
                     "name": "Kontr-riposta",
                     "condition": "Parujesz nadchodzący atak wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
+                    "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                 }
             }
         },
@@ -668,7 +668,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty Wytrzymałości jako Zdrowie.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
                         }
                     }
                 },
@@ -734,7 +734,7 @@
                 },
                 "Testudo": {
                     "name": "Testudo",
-                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Defensywa</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
+                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu @Condition[guarded] przeciwko <strong>atakom bronią</strong>, gdy dzierżysz tarczę."
                 },
                 "Hold Fast": {
                     "name": "Nieugiętość",
@@ -768,12 +768,12 @@
                 },
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
+                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
                         }
                     }
                 },
@@ -797,7 +797,7 @@
                 },
                 "Armored Shell": {
                     "name": "Pancerna powłoka",
-                    "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan <strong>Defensywa</strong> i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
+                    "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
                 },
                 "Shield Combat Training": {
                     "name": "Szkolenie z walki tarczą",
@@ -902,12 +902,6 @@
         "Eliorwen": {
             "name": "Eliorwen",
             "items": {
-                "Longbow": {
-                    "name": "Długi łuk",
-                    "description": {
-                        "public": "<p>Wysoki łuk prosty, często wyższy od łucznika, który go naciąga, wymaga ogromnej siły i lat praktyki, aby opanować sztukę strzelania z niego, wysyłając strzały z zabójczą siłą na pole bitwy.</p>"
-                    }
-                },
                 "Scimitar": {
                     "name": "Bułat",
                     "description": {
@@ -926,7 +920,7 @@
                     "actions": {
                         "Pinning Shot": {
                             "name": "Strzał przyszpilający",
-                            "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on <strong>Wstrzymany</strong> do końca swojej następnej tury.</p>",
+                            "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on @Condition[restrained] do końca swojej następnej tury.</p>",
                             "effects": [
                                 {
                                     "name": "Strzał przyszpilający"
@@ -949,7 +943,7 @@
                     "actions": {
                         "Mark Prey": {
                             "name": "Naznaczenie celu",
-                            "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel zostanie <strong>Odsłonięty</strong> na kolejne 3 tury.</p>",
+                            "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                             "effects": [
                                 {
                                     "name": "Oznaczony"
@@ -960,7 +954,13 @@
                 },
                 "Evasive Shot": {
                     "name": "Wymijający strzał",
-                    "description": "<p>Jesteś ekspertem w strzelaniu z broni dystansowej, jednocześnie unikając ataków wroga. Po wykonaniu ataku bronią dystansową zyskujesz dodatkowy ruch równy połowie swojej wartości <strong>Biegu</strong>.</p>"
+                    "description": "<p>Jesteś mistrzem w oddawaniu strzałów z broni dystansowej, jednocześnie unikając ataków wroga.</p>",
+                    "actions": {
+                        "Evasive Shot": {
+                            "name": "Wymijający strzał",
+                            "description": "<p>Po wykonaniu ataku bronią dystansową możesz bezpłatnie przemieścić się o odległość nie większą niż połowa swojego <strong>Biegu</strong>.</p>"
+                        }
+                    }
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
@@ -996,7 +996,7 @@
                     "actions": {
                         "Twinned Shot": {
                             "name": "Podwójny strzał",
-                            "description": "<p>Korzystając z tej <strong>Trudnej</strong> techniki, wystrzeliwujesz jednocześnie dwa pociski, wykonując dwa <strong>Uderzenia</strong> w ten sam cel.</p>"
+                            "description": "<p>Skupiasz się, by naciągnąć łuk i wystrzelić dwa pociski jednocześnie, wykonując dwa <strong>uderzenia</strong> w ten sam cel.</p>"
                         }
                     }
                 },
@@ -1010,7 +1010,7 @@
                 },
                 "Skirmisher": {
                     "name": "Harcownik",
-                    "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy <strong>atak odwetowy</strong> skierowane przeciwko tobie.</p>"
+                    "description": "<p>Jesteś mistrzem w dołączaniu do walki i wycofywaniu się z niej. Kiedy opuszczasz zasięg <strong>Zaangażowania</strong> wroga, przeciwnik ten otrzymuje 2 Zguby za każdy @Action[default reactiveStrike] skierowane przeciwko tobie.</p>"
                 },
                 "Diversionist": {
                     "name": "Dywersant",
@@ -1024,7 +1024,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
@@ -1042,7 +1042,7 @@
                 },
                 "Subtle Extrication": {
                     "name": "Subtelne wyzwolenie",
-                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy <strong>atak wycofujący</strong> skierowany przeciwko tobie jest wykonywany bez 2 Korzyści, które normalnie miałyby zastosowanie do takiego ataku.</p>"
+                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy @Action[default reactiveStrike] skierowany przeciwko tobie jest wykonywany z modyfikatorem <strong>+1 do Zguby</strong>.</p>"
                 },
                 "Focused Anticipation": {
                     "name": "Skupione oczekiwanie",
@@ -1081,6 +1081,12 @@
                         }
                     }
                 },
+                "Shortbow": {
+                    "name": "Krótki łuk",
+                    "description": {
+                        "public": "<p>Kompaktowy i szybki w użyciu łuk krótki doskonale sprawdza się w szybkiej strzelaninie z bliskiej odległości i potyczkach, dlatego jest ulubioną bronią zwiadowców, myśliwych i szybkich najeźdźców.</p>"
+                    }
+                },
                 "Perspicacity": {
                     "name": "Przenikliwość",
                     "description": "<p>Masz lepszy wgląd w aspekty swojego otoczenia. Otrzymujesz +2 Korzyści do wszystkich testów umiejętności <strong>Świadomości</strong>, które nie opierają się na wzroku.</p>"
@@ -1096,15 +1102,20 @@
             }
         },
         "Evasive Shot": {
-            "name": "Wymijający strzał"
+            "name": "Wymijający strzał",
+            "actions": {
+                "Evasive Shot": {
+                    "name": "Wymijający strzał",
+                    "description": "<p>Po wykonaniu ataku bronią dystansową możesz bezpłatnie przemieścić się o odległość nie większą niż połowa swojego <strong>Biegu</strong>.</p>"
+                }
+            }
         },
         "Executioner's Strike": {
             "name": "Atak egzekutora",
             "actions": {
                 "Executioner's Strike": {
                     "name": "Atak egzekutora",
-                    "condition": "Twój cel jest Krwawiący.",
-                    "description": "<p>Wykorzystujesz broń ciężką do wykonania Zabójczego Ciosu. Jeśli atak się powiedzie, przeciwnik otrzymuje stan Krwawiący na 3 rundy, otrzymując dodatkowe obrażenia w każdej rundzie równe twojej wartości Siły.</p>",
+                    "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                     "effects": [
                         {
                             "name": "Atak egzekutora"
@@ -1155,7 +1166,7 @@
                 },
                 "Gesture: Create": {
                     "name": "Gest: Tworzenie",
-                    "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ognistego ducha</strong>.</p>"
+                    "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ducha ognia</strong>.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
@@ -1266,7 +1277,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
                 },
                 "Mesmer": {
                     "name": "Hipnotyk",
@@ -1294,7 +1305,7 @@
                 },
                 "Gesture: Conjure": {
                     "name": "Gest: Wywołanie",
-                    "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego przybysza</strong>.</p>"
+                    "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Przybysza ognia</strong>.</p>"
                 },
                 "Stiletto": {
                     "name": "Stiletto",
@@ -1323,7 +1334,7 @@
             "actions": {
                 "Flash of Steel": {
                     "name": "Błysk stali",
-                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się <strong>Odsłonięty</strong> do początku swojej następnej tury.</p>",
+                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się @Condition[exposed] do początku swojej następnej tury.</p>",
                     "effects": [
                         {
                             "name": "Błysk stali"
@@ -1465,7 +1476,7 @@
                 "Intercept": {
                     "name": "Przechwycenie",
                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
                 }
             }
         },
@@ -1558,7 +1569,7 @@
                 },
                 "Dustbinder": {
                     "name": "Zaklinacz pyłu",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe połowie twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
                 },
                 "Talisman Weapon Training": {
                     "name": "Szkolenie z talizmanów",
@@ -1623,7 +1634,7 @@
                 },
                 "Rune: Soul": {
                     "name": "Runa: Dusza",
-                    "description": "<p>Uporządkowana siła tworzenia i duchowa esencja. Runa Duszy rządzi podstawowym procesem przechodzenia dusz przez życie i śmierć oraz odnosi się do kwestii mądrości, osobowości i zdrowia psychicznego.</p><p>Runa Duszy skaluje się przy użyciu <strong>Prezencji</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Morale</strong> lub zadaje obrażenia <strong>Psychiczne</strong>, którym przeciwstawia się <strong>Wola</strong>. Przeciwstawia się jej chaotyczna runa <strong>Nicości</strong>.</p>",
+                    "description": "<p>Uporządkowana siła tworzenia i duchowa esencja. Runa Duszy rządzi podstawowym procesem przechodzenia dusz przez życie i śmierć oraz odnosi się do kwestii mądrości, osobowości i zdrowia psychicznego.</p><p>Runa Duszy skaluje się przy użyciu <strong>Prezencji</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Morale</strong>. W szczególnych okolicznościach może służyć do zadawania obrażeń <strong>Psychicznych</strong>, którym przeciwstawia się <strong>Wola</strong>. Przeciwstawia się jej chaotyczna runa <strong>Nicości</strong>.</p>",
                     "actions": {
                         "Evoke": {
                             "name": "Wywoływanie",
@@ -1633,7 +1644,7 @@
                 },
                 "Irrepressible Spirit": {
                     "name": "Nieposkromiony duch",
-                    "description": "Twoja wytrwałość daje ci nieposkromionego ducha, który opiera się napadom rozpaczy. Na początku swojej tury, jeśli nie jesteś Załamany, zyskujesz 1 punkt Morale."
+                    "description": "Twoja wytrwałość daje ci nieposkromionego ducha, który opiera się napadom rozpaczy. Na początku swojej tury, jeśli nie masz stanu @Condition[broken], zyskujesz 1 punkt Morale."
                 },
                 "Eye of the Storm": {
                     "name": "Oko cyklonu",
@@ -1651,7 +1662,7 @@
                 },
                 "Rune: Life": {
                     "name": "Runa: Życie",
-                    "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong> lub zadaje obrażenia <strong>Trucizną</strong>, którym przeciwstawia się <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
+                    "description": "<p>Chaotyczna siła tworzenia, odpowiedzialna za materię ożywioną. Runa Życia rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym.</p><p>Runa Życia skaluje się przy użyciu <strong>Mądrości</strong> i zapewnia <strong>Przywrócenie</strong> <strong>Zdrowia</strong>. W szczególnych okolicznościach może służyć do zadawania obrażeń od <strong>Trucizny</strong>, którym przeciwstawia się <strong>Wytrwałość</strong>. Przeciwstawia się jej uporządkowana runa <strong>Śmierci</strong>.</p>",
                     "actions": {
                         "Bloom": {
                             "name": "Kwitnienie",
@@ -1687,15 +1698,12 @@
         "Lightbringer": {
             "name": "Niosący światło"
         },
-        "Longbow": {
-            "name": "Długi łuk"
-        },
         "Mark Prey": {
             "name": "Naznaczenie celu",
             "actions": {
                 "Mark Prey": {
                     "name": "Naznaczenie celu",
-                    "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel zostanie <strong>Odsłonięty</strong> na kolejne 3 tury.</p>",
+                    "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                     "effects": [
                         {
                             "name": "Oznaczony"
@@ -1745,7 +1753,7 @@
             "actions": {
                 "Pinning Shot": {
                     "name": "Strzał przyszpilający",
-                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on <strong>Wstrzymany</strong> do końca swojej następnej tury.</p>",
+                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on @Condition[restrained] do końca swojej następnej tury.</p>",
                     "effects": [
                         {
                             "name": "Strzał przyszpilający"
@@ -1915,7 +1923,7 @@
                 "Ruthless Momentum": {
                     "name": "Bezlitosny pęd",
                     "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
-                    "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
+                    "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                 }
             }
         },
@@ -1930,7 +1938,7 @@
             "actions": {
                 "Second Wind": {
                     "name": "Drugie tchnienie",
-                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty Wytrzymałości jako Zdrowie.</p>"
+                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
                 }
             }
         },
@@ -1967,6 +1975,9 @@
         },
         "Shield Ward": {
             "name": "Tarcza ochronna"
+        },
+        "Shortbow": {
+            "name": "Krótki łuk"
         },
         "Skirmisher": {
             "name": "Harcownik"
@@ -2012,7 +2023,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
@@ -2053,7 +2064,7 @@
             "actions": {
                 "Twinned Shot": {
                     "name": "Podwójny strzał",
-                    "description": "<p>Korzystając z tej <strong>Trudnej</strong> techniki, wystrzeliwujesz jednocześnie dwa pociski, wykonując dwa <strong>Uderzenia</strong> w ten sam cel.</p>"
+                    "description": "<p>Skupiasz się, by naciągnąć łuk i wystrzelić dwa pociski jednocześnie, wykonując dwa <strong>uderzenia</strong> w ten sam cel.</p>"
                 }
             }
         },
@@ -2113,7 +2124,7 @@
                         "Berserker Rage": {
                             "name": "Szał berserkera",
                             "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                            "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                            "description": "Otrzymujesz stan @Condition[enraged]. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                             "effects": [
                                 {
                                     "name": "Szał berserkera"
@@ -2136,8 +2147,7 @@
                     "actions": {
                         "Executioner's Strike": {
                             "name": "Atak egzekutora",
-                            "condition": "Twój cel jest Krwawiący.",
-                            "description": "<p>Wykorzystujesz broń ciężką do wykonania Zabójczego Ciosu. Jeśli atak się powiedzie, przeciwnik otrzymuje stan Krwawiący na 3 rundy, otrzymując dodatkowe obrażenia w każdej rundzie równe twojej wartości Siły.</p>",
+                            "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                             "effects": [
                                 {
                                     "name": "Atak egzekutora"
@@ -2148,7 +2158,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
+                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
                 },
                 "Ruthless Momentum": {
                     "name": "Bezlitosny pęd",
@@ -2157,7 +2167,7 @@
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
                             "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
-                            "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
+                            "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                         }
                     }
                 },
@@ -2167,18 +2177,18 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty Wytrzymałości jako Zdrowie.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
                         }
                     }
                 },
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
+                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
                         }
                     }
                 },
@@ -2206,7 +2216,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -2419,7 +2429,7 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>1 rundę</strong> i zadaje obrażenia równe Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>3 rundy</strong> i zadaje obrażenia równe połowie Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -2431,7 +2441,7 @@
                 },
                 "Strategic Repositioning": {
                     "name": "Strategiczna reorganizacja",
-                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś nieświadomy, możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p>"
+                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś @Condition[unaware], możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
                 },
                 "Lightbringer": {
                     "name": "Niosący światło",
@@ -2447,7 +2457,7 @@
                 },
                 "Iramancer": {
                     "name": "Gniewomanta",
-                    "description": "Twoje wyczyny związane z magią są napędzane gniewem. Podczas Wściekłości nadal możesz wydawać Punkty Skupienia i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym."
+                    "description": "<p>Twoje wyczyny związane z magią są napędzane gniewem. Podczas @Condition[enraged] nadal możesz wydawać <strong>Punkty Skupienia</strong> i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
