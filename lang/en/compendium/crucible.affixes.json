@@ -325,7 +325,7 @@
             "actions": {
                 "Gliding": {
                     "name": "Gliding",
-                    "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+                    "description": "<p>If used while @Condition[falling], you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
                 }
             }
         },

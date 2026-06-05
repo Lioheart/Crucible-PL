@@ -16,6 +16,10 @@
             "name": "Archer",
             "description": "Ranged combatants with training is the use of bows."
         },
+        "Assassin": {
+            "name": "Assassin",
+            "description": "<p>Merciless characters adept at infiltration and ruthless killing.</p>"
+        },
         "Bard": {
             "name": "Bard",
             "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p>"

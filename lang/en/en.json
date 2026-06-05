@@ -46,6 +46,11 @@
         "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and one less than your current Initiative. You will act at this new Initiative value, and if other combatants share that value you will act before them. You may only delay your turn once per round.",
         "Name": "Delay"
       },
+      "Fall": {
+        "Description": "You plummet to the surface beneath you. Falls of 11-30 feet challenge Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
+        "Name": "Fall",
+        "NameDistance": "Fall ({distance} feet)"
+      },
       "Investiture": {
         "Description": "Spend time outside of Combat attuning to your equipped magic items, causing them to enter the Invested state.",
         "Name": "Investiture"
@@ -351,6 +356,8 @@
       "UnarmedTooltip": "This action requires you to be fully unarmed in order to perform.",
       "Unarmored": "Unarmored",
       "UnarmoredTooltip": "This action requires you to be unarmored in order to perform.",
+      "Undetectable": "Undetectable",
+      "UndetectableTooltip": "This action does not trigger conventional notice or magical detection, preserving stealth and invisibility when used.",
       "Vocal": "Vocal",
       "VocalTooltip": "This action requires its user to speak or otherwise vocalize sound.",
       "Weakened": "Weakened",
@@ -400,22 +407,15 @@
     },
     "WARNINGS": {
       "SPECIFIC": {
-        "BODY_BLOCK": {
-          "AlreadyConfirmed": "The attack against you has already been confirmed and can no longer be blocked.",
-          "InvalidOutcome": "You may only use Body Block after an attack against you is defended by Armor or a Glance.",
-          "MeleeOnly": "You may only use Body Block against an incoming melee attack."
-        },
         "DELAY": {
           "AlreadyDelayed": "You may not delay your turn again this combat round.",
           "WrongTurn": "You may only use the Delay action on your own turn in combat."
         },
-        "INTERPOSE": {
-          "AllyMustBeTarget": "The selected ally must be the target of the most recent Strike.",
-          "AttackMissed": "You may only Interpose against an attack that hit or glanced your ally.",
-          "RequiresStrike": "Interpose requires the most recent action to be a weapon Strike.",
-          "SingleTarget": "Interpose can only be used against a single-target Strike."
+        "REVIVE": {
+          "RequiresDead": "Revive requires a Dead target."
         }
       },
+      "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
       "AuraNoToken": "You cannot use an Aura-target action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
       "CannotAffordCost": "{name} has insufficient {resource} to use {action}!",
@@ -447,10 +447,18 @@
       "MissingSummonEffect": "ActiveEffect data must be defined to track the non-permanent summon created by the action \"{action}\"",
       "MovementTooFar": "The planned movement path exceeds the maximum range allowed by this action.",
       "MovementTooShort": "The planned movement path does not meet the minimum range required by this action.",
+      "MustFollowMainhandStrike": "You may only perform the {action} action after a basic Strike action with your mainhand weapon.",
+      "MustFollowMeleeDefense": "You may only perform the {action} action after defending a melee attack with a {defense}.",
+      "MustFollowMeleeKill": "You may only perform the {action} action after incapacitating an enemy with a melee attack.",
+      "MustFollowRanged": "You may only perform the {action} action after a ranged weapon attack.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
+      "MustReactHit": "You may only perform the {action} action in response to an attack that hit or glanced.",
+      "MustReactSingleTarget": "You may only perform the {action} action in response to an action that had a single target.",
+      "MustReactStrike": "You may only perform the {action} action in response to a weapon Strike.",
       "MustReload": "Your weapon requires reloading in order to use this action.",
       "MustScaleDex": "Every weapon used in this action must scale using dexterity.",
       "MustScaleStrength": "Every weapon used in this action must scale using strength.",
+      "MustTargetTarget": "The {action} action may only be used on the target of the most recent action.",
       "NoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
       "NoConsumable": "No consumable Item identified for action \"{action}\"",
       "NoConsumableUses": "Consumable item \"{item}\" has no uses remaining for Action \"{action}\"",
@@ -482,6 +490,7 @@
     "DelayHint": "Choose an Initiative between 1 and {maximum} at which to act. See @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Initiative and Turn Order} for how delayed Initiative interacts with tiebreaking.",
     "DelayLabel": "Delayed Initiative",
     "DelayTitle": "Delay Turn",
+    "DragToHotbar": "Drag to the hotbar to create a Macro for this Action.",
     "DurationRounds": "{value}R",
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
@@ -534,9 +543,11 @@
       "Entropy": "Entropy",
       "Exhausted": "Exhausted",
       "Exposed": "Exposed",
+      "Falling": "Falling",
       "Fear": "Frightened",
       "Flanked": "Flanked",
       "FlankedDescription": "You are flanked by multiple enemies who gain additional Boons to their attacks!",
+      "Flying": "Flying",
       "Freezing": "Freezing",
       "Guarded": "Guarded",
       "Hastened": "Hastened",
@@ -591,7 +602,10 @@
         "Elite": "Elite",
         "Minion": "Minion",
         "Normal": "Normal"
-      }
+      },
+      "NoArchetype": "No Archetype",
+      "NoTaxonomy": "No Taxonomy",
+      "ThreatLevelSpecific": "Threat Level {threat}"
     },
     "CREATION": {
       "AbandonContent": "Discard creation progress and exit the creator?",
@@ -654,7 +668,7 @@
           "base": "Base Engagement",
           "label": "Engagement",
           "labelShort": "Engage",
-          "tooltip": "Number of Enemies Engaged<br>(Size - 2) + Engagement Bonus"
+          "tooltip": "Number of Enemies able to be Engaged<br>(Size - 2) + Engagement Bonus"
         },
         "engagementBonus": {
           "hint": "An additive modifier to base engagement.",
@@ -918,7 +932,10 @@
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Expected Level",
+    "Important": "Important",
     "Level": "Level",
+    "MarkImportant": "Mark as Important",
+    "MarkNotImportant": "Mark not Important",
     "MilestoneAward": "Award Milestones",
     "MilestoneTooltip": "{progress} of {required} milestones until next level",
     "Progress": "Milestone Progress"
@@ -932,11 +949,11 @@
         "label": "Ability Scores",
         "primary": {
           "hint": "Select a primary ability score which begins at 3.",
-          "label": "Primary Ability"
+          "label": "Primary"
         },
         "secondary": {
           "hint": "Select a secondary ability score which begins at 2.",
-          "label": "Secondary Ability"
+          "label": "Secondary"
         }
       },
       "description": {
@@ -1086,6 +1103,7 @@
     "RESULT_TYPES": {
       "Armor": "Armor",
       "Block": "Block",
+      "CriticalHit": "Critical Hit",
       "Dodge": "Dodge",
       "Glance": "Glance",
       "Hit": "Hit",
@@ -1398,11 +1416,13 @@
     "Dodge": "Dodge",
     "Fortitude": "Fortitude",
     "Madness": "Rallying Threshold",
+    "MadnessShort": "Rallying",
     "Parry": "Parry",
     "Physical": "Physical",
     "Reflex": "Reflex",
     "Willpower": "Willpower",
-    "Wounds": "Healing Threshold"
+    "Wounds": "Healing Threshold",
+    "WoundsShort": "Healing"
   },
   "DETECTION_MODES": {
     "Echolocation": "Echolocation",
@@ -1426,6 +1446,7 @@
     },
     "GROUP_CHECK": {
       "Title": "Group Skill Check",
+      "TitleSpecific": "Group {skill} Skill Check",
       "DialogTitle": "{skill} Check: {name}",
       "NoUserForActor": "No active user found for: {name}",
       "STATUSES": {
@@ -1447,6 +1468,7 @@
       "AnyActorHint": "Choose any world Actors.",
       "ChooseTarget": "Choose Target",
       "ClearRequest": "Clear Request",
+      "GroupCheck": "Group Check",
       "Request": "Request",
       "RequestRolls": "Request Rolls",
       "SpecificActors": "Specific Actors",
@@ -1483,16 +1505,19 @@
     "DCAdditionalPassive": "{dcLabel}, Passive",
     "DCAdditionalGroup": "{dcLabel}, Group",
     "DCSpecific": "DC {dc}",
+    "DCTargetSpecific": "{skill} DC Target",
     "DiceTotal": "Dice Total",
     "Enchantment": "Enchantment",
     "EnchantmentBonus": "Enchantment Bonus",
     "Healing": "Healing",
+    "ReplayAnimation": "Replay Animation",
     "Reverse": "Reverse",
     "Roll": "Roll",
     "RollTotal": "Roll Total",
     "SetDifficulty": "Set Difficulty",
     "Skill": "Skill",
-    "SkillBonus": "Skill Bonus"
+    "SkillBonus": "Skill Bonus",
+    "UnknownScore": "???"
   },
   "FLANKED_EFFECT": {
     "FIELDS": {
@@ -1519,7 +1544,12 @@
   "HAZARD": {
     "DefaultActor": "Environment",
     "DefaultName": "Environmental Hazard",
+    "Falling": "Falling",
     "Hazard": "Hazard",
+    "Parenthetical": "{label} ({tags})",
+    "Rank": "Hazard {danger}",
+    "TooltipDamage": "{rank} vs. {defense} dealing {damage} damage to {resource}",
+    "TooltipRestoration": "{rank} vs. {defense} restoring {resource}",
     "UseHazard": "Use Hazard",
     "WindowTitle": "Hazard: {name}",
     "CONFIG": {
@@ -1547,14 +1577,17 @@
       "Create": "Create Item",
       "Delete": "Delete Item",
       "Drop": "Drop Weapon",
+      "DropDetail": "Drop the {item}",
       "Edit": "Edit Item",
       "Equip": "Equip {typeLabel}",
       "EquipDetail": "Equip the {item}",
+      "Read": "Read {item}",
       "Recover": "Recover {typeLabel}",
       "RecoverAllContent": "Pick up all of {actor}'s dropped items?",
       "RecoverAllTitle": "Recover Dropped Items",
       "RecoverDetail": "Recover the dropped {item}",
-      "UnEquip": "Un-equip {typeLabel}"
+      "UnEquip": "Un-equip {typeLabel}",
+      "UnEquipDetail": "Un-equip the {item}"
     },
     "COMPOSED_NAME": {
       "Prefix": "{prefixes} {name}",
@@ -1637,6 +1670,7 @@
       "Equipment": "Equipment Details",
       "EquipmentDrop": "Add starting equipment by dragging and dropping items into this area.",
       "EquipmentRemove": "Remove Equipment",
+      "EquipmentScale": "Automatically scale quality with creature level",
       "ScaledPrice": "Scaled Price",
       "Spellcraft": "Spellcraft",
       "SpellDrop": "Add an iconic spell by dragging and dropping a Spell item into this area.",
@@ -1659,10 +1693,15 @@
       "Talents": "Talents"
     },
     "WARNINGS": {
+      "CombineDifferent": "{item} cannot be combined with {target} because the items are not identical.",
+      "CombineEquipped": "{item} cannot be combined into a stack while it is equipped.",
+      "CombineInvalidTarget": "{item} cannot be combined: the target must be a different item on the same actor.",
+      "CombineQuantity": "Cannot combine {quantity} units of {item} which holds a stack of {available}.",
       "HookAlreadyExists": "{item} already declares a function for the \"{hook}\" hook.",
       "InvalidIdentifier": "Invalid Crucible identifier value \"{id}\" which must be alphanumeric without spaces or special characters",
       "NotTalent": "The dropped document must be a Talent.",
       "QualityReductionBlocked": "Cannot reduce quality of {name} because it has affixes that require the current capacity.",
+      "SplitQuantity": "Cannot split {quantity} from {item} which holds a stack of {available}.",
       "UniqueWithAffixes": "Cannot mark {name} as unique because it has affixes. Remove all affixes first.",
       "LootDropError": "Failed to create loot item \"{name}\". {reason}"
     },
@@ -1910,7 +1949,9 @@
     "CruciblePartyHint": "Configure which which Group Actor is the primary group of protagonists.",
     "CruciblePartyLabel": "Primary Adventuring Party",
     "EnableVFXHint": "Play visual effects animations on the canvas when actions are confirmed.",
-    "EnableVFXName": "Enable Action Visual Effects"
+    "EnableVFXName": "Enable Action Visual Effects",
+    "FlexibleAncestryAbilitiesHint": "When enabled, hero characters may reassign their Ancestry's Primary and Secondary Ability Score bonuses to abilities of their choice during character creation. The Ancestry still contributes the same +2 and +1 starting bonuses; only the abilities receiving them are flexible.",
+    "FlexibleAncestryAbilitiesName": "Flexible Ancestry Ability Bonuses"
   },
   "SKILL": {
     "CATEGORY": {
@@ -2188,6 +2229,8 @@
       "PurchaseNodeReverse": "Remove point spent on empty node \"{node}\"?",
       "PurchaseNodeTitle": "Purchase Talent Node?",
       "PurchaseTitle": "Purchase Talent: {name}",
+      "Remove": "<p>Remove talent <strong>{name}</strong>, reclaiming 1 Talent Point?</p>",
+      "RemoveTitle": "Remove Talent: {name}",
       "Reset": "Reset"
     },
     "FIELDS": {
@@ -2293,10 +2336,14 @@
       "RequiresRuneGesture": "You must know a spellcraft Rune in order to utilize a Gesture.",
       "RequiresRuneInflection": "You must know a spellcraft Rune in order to utilize an Inflection."
     },
+    "Banned": "Banned",
+    "Empty": "Empty",
     "GrantsSpells": "<strong>Iconic Spells:</strong>: {name} grants {spells} Iconic Spell slots.",
+    "Locked": "Locked",
     "NodeSpecific": "{nodeType} Node",
     "PointsAvailable": "Points Available",
-    "Prerequisites": "Prerequisites"
+    "Prerequisites": "Prerequisites",
+    "Tier": "Tier {tier}"
   },
   "TAXONOMY": {
     "CATEGORIES": {
@@ -2335,6 +2382,10 @@
         "temperature.hint": "The body temperature of creatures with this Taxonomy. If left blank, defaults to the temperature of the chosen creature category.",
         "temperature.label": "Body Temperature"
       },
+      "equipment": {
+        "hint": "Configure equipment which creatures of this Taxonomy possess automatically.",
+        "label": "Granted Equipment"
+      },
       "identifier": {
         "hint": "A string identifier used to uniquely reference this Taxonomy in tags, actions, or other UI elements. This identifier must be alphanumeric with no spaces or special characters.",
         "label": "Identifier"
@@ -2371,6 +2422,7 @@
       "TemperatureBlank": "Default ({temperature})"
     },
     "WARNINGS": {
+      "EquipmentNotNatural": "Taxonomy \"{name}\" cannot use equipment that does not have the natural tag.",
       "InvalidAbilities": "The sum of initial ability values must equal 12. Currently {sum}",
       "InvalidResistances": "The sum of resistance scaling values must equal zero. Currently {sum}"
     }
@@ -2390,6 +2442,12 @@
     },
     "MOVEMENT": {
       "ACTIONS": {
+        "blink.label": "Blink",
+        "displace.label": "Teleport",
+        "burrow": {
+          "description": "Tunnel through earth or soft terrain a distance up to half your Stride attribute per Action, passing beneath walls and freely through other creatures. Only creatures with an explicit Burrow speed can use this movement mode.",
+          "label": "Burrow"
+        },
         "climb": {
           "description": "Climb or descend a surface, a distance or elevation up to half your Stride attribute per Action. Creatures with an explicit Climb speed instead use this speed instead of half their Stride.",
           "label": "Climb"
@@ -2397,6 +2455,10 @@
         "crawl": {
           "description": "Move while Prone a distance up to half your Stride attribute per Action.",
           "label": "Crawl"
+        },
+        "fall": {
+          "description": "Gravitational descent toward a supporting surface. Movement cost is always zero.",
+          "label": "Fall"
         },
         "fast": {
           "label": "Hurried"
@@ -2411,6 +2473,10 @@
         },
         "normal": {
           "label": "Normal"
+        },
+        "push": {
+          "description": "Forced displacement applied by an external effect such as a knockback. Movement cost is always zero.",
+          "label": "Push"
         },
         "slow": {
           "label": "Cautious"

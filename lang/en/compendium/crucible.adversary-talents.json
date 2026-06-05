@@ -167,6 +167,17 @@
             "name": "Corruption Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of Death magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
         },
+        "Dying Call": {
+            "name": "Dying Call",
+            "description": "<p>When @ref[actor.name]{this creature} is in the throes of death, it emits one last call, alerting others nearby that it has been killed and calling for vengeance.</p>",
+            "actions": {
+                "Dying Call": {
+                    "name": "Dying Call",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>The @ref[actor.name]{creature} emits a shrill call as a dying act, notifying similar nearby creatures of its death, which are instinctually drawn towards this location.</p>"
+                }
+            }
+        },
         "Echolocation": {
             "name": "Echolocation",
             "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p>"
@@ -284,6 +295,21 @@
                 }
             }
         },
+        "Maddening Shriek": {
+            "name": "Maddening Shriek",
+            "description": "<p>This @ref[actor.name]{creature} is capable of emitting a piercing screech so shrill that it can cause temporary hearing loss in other creatures who perceive it.</p>",
+            "actions": {
+                "Maddening Shriek": {
+                    "name": "Maddening Shriek",
+                    "description": "<p>The @ref[actor.name]{creature} emits a shrill and piercing screech, attacking the <strong>Morale</strong> of all those contained within and afflicting them with the @Condition[deafened] condition for one round.</p>",
+                    "effects": [
+                        {
+                            "name": "Maddening Shriek"
+                        }
+                    ]
+                }
+            }
+        },
         "Magical Sight": {
             "name": "Magical Sight",
             "description": "<p>The @ref[actor.name]{creature} has otherworldly sight that makes it especially aware of dangers or opportunities. It gains +2 <strong>Boons</strong> to any <strong>Awareness</strong> check and can see @Condition[invisible] creatures.</p>"
@@ -360,7 +386,11 @@
         },
         "Pack Hunter": {
             "name": "Pack Hunter",
-            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
+            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a @Condition[flanked] enemy.</p>"
+        },
+        "Polybrachial": {
+            "name": "Polybrachial",
+            "description": "<p>The @ref[actor.name]{creature} has a multitude of arms that it can use to perform actions. It always counts as having two free hands for spellcraft or interaction no matter what items it has equipped.</p>"
         },
         "Pouncing Strike": {
             "name": "Pouncing Strike",
@@ -441,7 +471,7 @@
             "actions": {
                 "Restraining Chomp": {
                     "name": "Restraining Chomp",
-                    "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained</strong> until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
+                    "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also @Condition[restrained] until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
                     "effects": [
                         {
                             "name": "Restraining Chomp"
@@ -502,7 +532,7 @@
             "actions": {
                 "Slippery Escape": {
                     "name": "Slippery Escape",
-                    "description": "<p>The creature uses it slippery form to escape restraints, immediately ending the <strong>Restrained</strong> condition.</p>"
+                    "description": "<p>The creature uses it slippery form to escape restraints, immediately ending the @Condition[restrained] condition.</p>"
                 }
             }
         },
@@ -590,6 +620,22 @@
                 }
             }
         },
+        "Terrifying Presence": {
+            "name": "Terrifying Presence",
+            "description": "<p>Something about the presence of this creature motivates a pure and unbridled fear in those who observe it.</p>",
+            "actions": {
+                "Terrifying Presence": {
+                    "name": "Terrifying Presence",
+                    "condition": "An enemy moves within 20 feet.",
+                    "description": "<p>When an enemy moves within 20 feet of the @ref[actor.name]{creature}, it becomes exposed to the dreadful presence, attacking its <strong>Willpower</strong> and inflicting the @Condition[frightened] condition upon success.</p>",
+                    "effects": [
+                        {
+                            "name": "Terrifying Presence"
+                        }
+                    ]
+                }
+            }
+        },
         "Thermal Vision": {
             "name": "Thermal Vision",
             "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures whose bodily temperature deviates from ambient norms.</p><p>This allows detection of creatures whose body temperatures are <strong>Gelid</strong>, <strong>Cool</strong>, <strong>Warm</strong>, or <strong>Boiling</strong> up to 60 feet away as long as they are not behind total cover and as long as the @ref[actor.name]{creature} is not @Condition[blinded] or @Condition[incapacitated]. A creature detected in this way is treated as visible for the purposes of Actions which require sight.</p>"
@@ -601,7 +647,7 @@
                 "Thrash": {
                     "name": "Thrash",
                     "condition": "The target is Restrained by this creature.",
-                    "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has <strong>Restrained</strong>.</p>"
+                    "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has @Condition[restrained].</p>"
                 }
             }
         },
@@ -626,7 +672,7 @@
             "actions": {
                 "Tusk Charge": {
                     "name": "Tusk Charge",
-                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked Prone.</p>",
+                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Tusk Charge"
