@@ -15,7 +15,7 @@ Hooks.once("babele.init", (babele) => {
     default: false,
     config: true,
     restricted: true,
-    requiresReload: true,
+    requiresReload: false,
   });
 
   const asArray = (collection) => {
