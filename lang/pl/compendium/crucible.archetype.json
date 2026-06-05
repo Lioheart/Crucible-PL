@@ -16,6 +16,10 @@
             "name": "Łucznik",
             "description": "Wojownicy walczący na odległość, którzy przeszli odpowiednie szkolenie, używają łuków."
         },
+        "Assassin": {
+            "name": "Zabójca",
+            "description": "<p>Bezlitosne postacie, mistrzowie infiltracji i bezwzględnego zabijania.</p>"
+        },
         "Bard": {
             "name": "Bard",
             "description": "<p>Praktykujesz ustne i muzyczne tradycje heroicznej opowieści, aby wzbudzić odwagę w swoich sojusznikach, zdemoralizować wrogów i szybko znaleźć niekonwencjonalne rozwiązania problemów.</p>"

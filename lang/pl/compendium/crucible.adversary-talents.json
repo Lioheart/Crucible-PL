@@ -167,6 +167,17 @@
             "name": "Absorpcja zepsucia",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii śmierci. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
         },
+        "Dying Call": {
+            "name": "Ostatni Zew",
+            "description": "<p>Kiedy @ref[actor.name]{ta istota} umiera, wydaje ostatni krzyk, ostrzegając inne stworzenia w pobliżu, że została zabita, i wzywając do zemsty.</p>",
+            "actions": {
+                "Dying Call": {
+                    "name": "Ostatni Zew",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wydaje przed śmiercią przenikliwy krzyk, sygnalizując swoją śmierć pobliskim osobnikom tego samego gatunku, które instynktownie zbiegają się w to miejsce.</p>"
+                }
+            }
+        },
         "Echolocation": {
             "name": "Echolokacja",
             "description": "<p>@ref[actor.name]{To stworzenie} postrzega świat poprzez emitowanie impulsów dźwiękowych, które precyzyjnie wykrywają kształty, co pozwala mu zlokalizować poruszające się lub w inny sposób emitujące dźwięk stworzenia w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną. Jeśli stworzenie jest w stanie @Condition[deafened], nie może korzystać z tego zmysłu. </p><p>Stworzenie wykryte za pomocą @ref[name] jest traktowane jako widoczne dla celów akcji, które wymagają widzenia celu.</p>"
@@ -284,6 +295,21 @@
                 }
             }
         },
+        "Maddening Shriek": {
+            "name": "Obłędny wrzask",
+            "description": "<p>To @ref[actor.name]{stworzenie} potrafi wydać przeszywający skrzek tak przenikliwy, że może spowodować chwilową utratę słuchu u innych stworzeń, które go usłyszą.</p>",
+            "actions": {
+                "Maddening Shriek": {
+                    "name": "Obłędny wrzask",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wydaje przenikliwy, ostry skrzek, który osłabia <strong>Morale</strong> wszystkich znajdujących się w zasięgu i nakłada na nich stan @Condition[deafened] na jedną rundę.</p>",
+                    "effects": [
+                        {
+                            "name": "Obłędny wrzask"
+                        }
+                    ]
+                }
+            }
+        },
         "Magical Sight": {
             "name": "Magiczny wzrok",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność widzenia, dzięki której jest szczególnie wyczulony na niebezpieczeństwa i okazje. Otrzymuje +2 <strong>Korzyści</strong> do wszystkich testów <strong>Świadomości</strong> i może widzieć stworzenia @Condition[invisible].</p>"
@@ -360,7 +386,11 @@
         },
         "Pack Hunter": {
             "name": "Stadny łowca",
-            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Oskrzydlonego</strong> wroga.</p>"
+            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie wroga ze stanem @Condition[flanked].</p>"
+        },
+        "Polybrachial": {
+            "name": "Wieloramienny",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wiele ramion, których może używać do wykonywania różnych akcji. Niezależnie od tego, jakie przedmioty ma na sobie, zawsze uznaje się, że ma dwie wolne ręce do rzucania zaklęć lub interakcji.</p>"
         },
         "Pouncing Strike": {
             "name": "Atak z wyskoku",
@@ -441,7 +471,7 @@
             "actions": {
                 "Restraining Chomp": {
                     "name": "Zaciśnięcie",
-                    "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, zostaje ona również <strong>Wstrzymana</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                    "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, otrzymuje również stan @Condition[restrained], dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
                     "effects": [
                         {
                             "name": "Zaciśnięcie"
@@ -502,7 +532,7 @@
             "actions": {
                 "Slippery Escape": {
                     "name": "Śliska ucieczka",
-                    "description": "<p>Stworzenie wykorzystuje swoją śliską postać, aby uwolnić się z ograniczeń, natychmiast kończąc stan <strong>Wstrzymany</strong>.</p>"
+                    "description": "<p>Stworzenie wykorzystuje swoją śliską postać, aby uwolnić się z ograniczeń, natychmiast kończąc stan @Condition[restrained].</p>"
                 }
             }
         },
@@ -590,6 +620,22 @@
                 }
             }
         },
+        "Terrifying Presence": {
+            "name": "Przerażająca obecność",
+            "description": "<p>Coś w samym wyglądzie tej istoty budzi w obserwujących ją ludziach czysty i niepohamowany strach.</p>",
+            "actions": {
+                "Terrifying Presence": {
+                    "name": "Przerażająca obecność",
+                    "condition": "Wróg przemieszcza się w promieniu 20 stóp.",
+                    "description": "<p>Gdy przeciwnik zbliży się na odległość 20 stóp od @ref[actor.name]{stworzenia}, zostaje on narażony na działanie przerażającej obecności, która atakuje jego <strong>Wolę</strong> i w razie powodzenia nakłada na niego stan @Condition[frightened].</p>",
+                    "effects": [
+                        {
+                            "name": "Przerażająca obecność"
+                        }
+                    ]
+                }
+            }
+        },
         "Thermal Vision": {
             "name": "Widzenie termiczne",
             "description": "<p>@ref[actor.name]{Stworzenie} precyzyjnie postrzega otoczenie na podstawie różnic temperatur, co pozwala jej lokalizować istoty, których temperatura ciała odbiega od norm otoczenia. </p><p>Pozwala to na wykrycie stworzeń, których temperatura ciała jest <strong>Lodowata</strong>, <strong>Chłodna</strong>, <strong>Ciepła</strong> lub <strong>Upalna</strong> w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną i o ile @ref[actor.name]{stworzenie} nie jest w stanie @Condition[blinded] lub @Condition[incapacitated]. Stworzenie wykryte w ten sposób jest traktowane jako widoczne dla celów akcji wymagających wzroku.</p>"
@@ -601,7 +647,7 @@
                 "Thrash": {
                     "name": "Szarpanina",
                     "condition": "Cel jest Wstrzymany przez tę istotę.",
-                    "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
+                    "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, na którym obecnie działa stan @Condition[restrained].</p>"
                 }
             }
         },
@@ -626,7 +672,7 @@
             "actions": {
                 "Tusk Charge": {
                     "name": "Szarża kłami",
-                    "description": "<p>Wykonaj Szarżę w linii prostej i zaatakuj pierwsze napotkane stworzenie. Jeśli atak się powiedzie, cel zostanie Przewrócony.</p>",
+                    "description": "<p>Wykonaj Szarżę w linii prostej i zaatakuj pierwsze napotkane stworzenie. Jeśli atak się powiedzie, cel zostanie @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Szarża kłami"

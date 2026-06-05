@@ -325,7 +325,7 @@
             "actions": {
                 "Gliding": {
                     "name": "Szybowanie",
-                    "description": "<p>Jeśli użyjesz tej zdolności podczas <strong>spadania</strong>, możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
+                    "description": "<p>Jeśli użyjesz tej zdolności podczas stanu @Condition[falling], możesz podczas lotu przesunąć się na bok o określoną liczbę pól od swojego początkowego położenia. Odległość szybowania zależy od <strong>stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> <strong>1 stopa</strong> na każde 20 stóp opadania. </p></li><li><p><strong>Poziom 2:</strong> <strong>2 stopy</strong> na każde 20 stóp opadania.</p></li><li><p><strong>Poziom 3:</strong> <strong>4 stopy</strong> na każde 20 stóp opadania. </p></li></ul><p>Nie otrzymujesz obrażeń od upadku po wylądowaniu, ani nie zostajesz @Condition[prone].</p>"
                 }
             }
         },

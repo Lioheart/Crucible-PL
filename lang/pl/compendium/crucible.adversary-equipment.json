@@ -1,0 +1,330 @@
+{
+    "label": "Wyposażenie przeciwników",
+    "folders": {
+        "Creature Parts": "Części stworzeń",
+        "Damage-Typed Bites": "Typy obrażeń spowodowanych przez ugryzienia",
+        "Damage-Typed Limbs": "Typy obrażeń kończyn",
+        "Giant Parts": "Olbrzymie części",
+        "Natural Armor": "Naturalny pancerz",
+        "Natural Weapons": "Naturalne bronie"
+    },
+    "entries": {
+        "Beak": {
+            "name": "Dziób",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma ostry, rozdzierający dziób.</p>"
+            }
+        },
+        "Bite": {
+            "name": "Ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada potężny zgryz dzięki ostrym zębom.</p>"
+            }
+        },
+        "Burning Bite": {
+            "name": "Płonące ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} gryzie szczękami otoczonymi palącym płomieniem.</p>"
+            }
+        },
+        "Burning Limb": {
+            "name": "Płonąca kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje skupionym płomieniem z jednej ze swoich kończyn.</p>"
+            }
+        },
+        "Caustic Bite": {
+            "name": "Żrące ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma zęby ociekające kwasem.</p>"
+            }
+        },
+        "Caustic Limb": {
+            "name": "Żrąca kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje ociekającą kończyną, z której wycieka żrąca posoka.</p>"
+            }
+        },
+        "Charged Bite": {
+            "name": "Elektryzujące ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} gryzie szczękami, z których tryska energia burzy.</p>"
+            }
+        },
+        "Charged Limb": {
+            "name": "Elektryzująca kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje kończyną pełną trzaskającej energii burzy.</p>"
+            }
+        },
+        "Claws": {
+            "name": "Pazury",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma wydłużone i zaostrzone pazury.</p>"
+            }
+        },
+        "Dense Pelt": {
+            "name": "Gęsta sierść",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma gęste, wielowarstwowe futro, które tłumi uderzenia.</p>"
+            }
+        },
+        "Elemental Armor": {
+            "name": "Pancerz żywiołów",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} otacza wzmocniona powłoka z pancerza żywiołów, która stanowi barierę obronną.</p>"
+            }
+        },
+        "Exoskeleton": {
+            "name": "Egzoszkielet",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada przegubowy szkielet zewnętrzny złożony ze stwardniałych płytek.</p>"
+            }
+        },
+        "Fangs": {
+            "name": "Kły",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma długie, ostre kły.</p>"
+            }
+        },
+        "Fists": {
+            "name": "Pięści",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} miażdży swoich wrogów potężnymi pięściami.</p>"
+            }
+        },
+        "Frigid Bite": {
+            "name": "Mrożące ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} gryzie bezlitosnym, paraliżującym zimnem.</p>"
+            }
+        },
+        "Frigid Limb": {
+            "name": "Mrożąca kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} macha zimną, wodnistą kończyną.</p>"
+            }
+        },
+        "Fused Exoskeleton": {
+            "name": "Zrośnięty egzoszkielet",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} jest pokryte grubą warstwą zewnętrznej tkanki kostnej, zrośniętej w sztywną skorupę.</p>"
+            }
+        },
+        "Giant Beak": {
+            "name": "Olbrzymi dziób",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma ogromny dziób, którym zadaje rozcinające ugryzienia.</p>"
+            }
+        },
+        "Giant Claws": {
+            "name": "Olbrzymie pazury",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma potężne szpony, z których każdy jest wielkości stalowego ostrza.</p>"
+            }
+        },
+        "Giant Jaws": {
+            "name": "Olbrzymie szczęki",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada potężne szczęki, którymi pochłania i miażdży swoją ofiarę.</p>"
+            }
+        },
+        "Giant Tail": {
+            "name": "Olbrzymi ogon",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma ogon gruby jak kłoda, którym macha i uderza.</p>"
+            }
+        },
+        "Heavy Carapace": {
+            "name": "Gruby karapaks",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada ciężką, przegubową skorupę, która chroni je przed niebezpieczeństwami.</p>"
+            }
+        },
+        "Heavy Plating": {
+            "name": "Grube opancerzenie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Konstrukt} jest pokryty grubą powłoką pancerza.</p>"
+            }
+        },
+        "Heavy Scales": {
+            "name": "Grube łuski",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma szorstką skórę pokrytą grubymi, zazębiającymi się łuskami.</p>"
+            }
+        },
+        "Hooves": {
+            "name": "Kopyta",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma potężne kopyta, którymi kopie i depcze wszystko, co znajdzie się pod jego stopami.</p>"
+            }
+        },
+        "Horns": {
+            "name": "Rogi",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma potężne, zakrzywione rogi, których używa do przebijania przeciwników.</p>"
+            }
+        },
+        "Light Carapace": {
+            "name": "Cienki karapaks",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} chroni elastyczna, chitynowa skorupa.</p>"
+            }
+        },
+        "Light Hide": {
+            "name": "Cienka skóra",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma twardą skórę, która odbija powierzchowne uderzenia.</p>"
+            }
+        },
+        "Light Pelt": {
+            "name": "Cienkie futro",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma krótką sierść, która łagodzi uderzenia.</p>"
+            }
+        },
+        "Light Plating": {
+            "name": "Cienkie opancerzenie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Konstrukt} jest chroniony przez dopasowane opancerzenie.</p>"
+            }
+        },
+        "Light Scales": {
+            "name": "Cienkie łuski",
+            "description": {
+                "public": "<p>Skóra @ref[actor.name]{stworzenia} pokryta jest lekkimi łuskami, które zapewniają jej ochronę, nie spowalniając jej ruchów.</p>"
+            }
+        },
+        "Pestilent Bite": {
+            "name": "Zaraźliwe ukąszenie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada zainfekowane kły, które ropieją i sieją zgniliznę.</p>"
+            }
+        },
+        "Pestilent Limb": {
+            "name": "Zaraźliwa kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje gnijącą kończyną, z której wycieka zgnilizna.</p>"
+            }
+        },
+        "Pincers": {
+            "name": "Szczypce",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada miażdżące, tnące szczypce.</p>"
+            }
+        },
+        "Pseudopod": {
+            "name": "Nibynóżka",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje amorficzną macką ze śluzu.</p>"
+            }
+        },
+        "Psychic Bite": {
+            "name": "Psychiczne ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} zadaje rany, które bardziej ranią umysł niż ciało.</p>"
+            }
+        },
+        "Psychic Limb": {
+            "name": "Psychiczna kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje za pomocą widmowej kończyny, która rani umysł.</p>"
+            }
+        },
+        "Quills": {
+            "name": "Pióra",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} potrafi wystrzelić z boków salwę kolczastych kolców.</p>"
+            }
+        },
+        "Radiant Bite": {
+            "name": "Świetliste ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} gryzie, a jego szczęki lśnią palącym światłem.</p>"
+            }
+        },
+        "Radiant Limb": {
+            "name": "Świetlista kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje promieniem palącej, świecącej energii.</p>"
+            }
+        },
+        "Shadow Bite": {
+            "name": "Cieniste ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} gryzie szczękami pochłaniającej ciemności.</p>"
+            }
+        },
+        "Shadow Limb": {
+            "name": "Cienista kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje ramieniem ogarniającej ciemności.</p>"
+            }
+        },
+        "Stinger": {
+            "name": "Żądło",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada kolczaste żądło, które przebija ciało i wstrzykuje jad.</p>"
+            }
+        },
+        "Stone Skin": {
+            "name": "Kamienna skóra",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma chropowatą, przypominającą skałę skórę.</p>"
+            }
+        },
+        "Tail": {
+            "name": "Ogon",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} potrafi uderzyć swoim wydłużonym, muskularnym ogonem.</p>"
+            }
+        },
+        "Talons": {
+            "name": "Szpony",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada zakrzywione szpony służące do chwytania i rozrywania ofiary.</p>"
+            }
+        },
+        "Tentacles": {
+            "name": "Macki",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje wijącymi się i chwytnymi mackami.</p>"
+            }
+        },
+        "Thick Hide": {
+            "name": "Gruba skóra",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma grubą, skórzastą powłokę, która jest odporna na ataki.</p>"
+            }
+        },
+        "Tusks": {
+            "name": "Kły",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma wystające kły, które rozrywają i rozdzierają wszystko przy każdym szarżującym uderzeniu.</p>"
+            }
+        },
+        "Venomous Bite": {
+            "name": "Jadowite ugryzienie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada ugryzienie, które wstrzykuje silną truciznę.</p>"
+            }
+        },
+        "Venomous Limb": {
+            "name": "Jadowita kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje pokrytą trucizną kończyną, która zatruwa wszystko, czego dotknie.</p>"
+            }
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private"
+            }
+        }
+    }
+}
