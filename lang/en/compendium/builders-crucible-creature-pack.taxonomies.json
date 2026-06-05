@@ -1,0 +1,188 @@
+{
+	"label": "Taxonomies",
+	"folders": {
+		"Outsiders": "Outsiders",
+		"Elementals": "Elementals",
+		"Celestials": "Celestials",
+		"Giants": "Giants",
+		"Plants": "Plants",
+		"Dragons": "Dragons",
+		"Fey": "Fey",
+		"Humanoids": "Humanoids",
+		"Undead": "Undead",
+		"Fiends": "Fiends",
+		"Constructs": "Constructs",
+		"Beasts": "Beasts",
+		"Monstrosities": "Monstrosities"
+	},
+	"entries": {
+		"Fomorian": {
+			"name": "Fomorian"
+		},
+		"Aboleth": {
+			"name": "Aboleth"
+		},
+		"Birdfolk": {
+			"name": "Birdfolk"
+		},
+		"Angel": {
+			"name": "Angel"
+		},
+		"Crawler": {
+			"name": "Crawler"
+		},
+		"Crustacean": {
+			"name": "Crustacean"
+		},
+		"Behir": {
+			"name": "Behir"
+		},
+		"Oblivion Spirit": {
+			"name": "Oblivion Spirit"
+		},
+		"Dracolich": {
+			"name": "Dracolich"
+		},
+		"Couatl": {
+			"name": "Couatl"
+		},
+		"Green Dragon": {
+			"name": "Green Dragon"
+		},
+		"Illumination Construct": {
+			"name": "Illumination Construct"
+		},
+		"Silver Dragon": {
+			"name": "Silver Dragon"
+		},
+		"Copper Dragon": {
+			"name": "Copper Dragon"
+		},
+		"Ettin": {
+			"name": "Ettin"
+		},
+		"Dinosaur": {
+			"name": "Dinosaur"
+		},
+		"Control Construct": {
+			"name": "Control Construct"
+		},
+		"Eye Monster": {
+			"name": "Eye Monster"
+		},
+		"White Dragon": {
+			"name": "White Dragon"
+		},
+		"Red Dragon": {
+			"name": "Red Dragon"
+		},
+		"Flesh Monster": {
+			"name": "Flesh Monster"
+		},
+		"Acid Ant": {
+			"name": "Acid Ant"
+		},
+		"Shadow Dragon": {
+			"name": "Shadow Dragon"
+		},
+		"Demigod": {
+			"name": "Demigod"
+		},
+		"Corrupted Plant": {
+			"name": "Corrupted Plant"
+		},
+		"Chicken": {
+			"name": "Chicken"
+		},
+		"Ghast": {
+			"name": "Ghast"
+		},
+		"Devil": {
+			"name": "Devil"
+		},
+		"Animated Item": {
+			"name": "Animated Item"
+		},
+		"Changeling": {
+			"name": "Changeling"
+		},
+		"Floating Skull": {
+			"name": "Floating Skull"
+		},
+		"Bronze Dragon": {
+			"name": "Bronze Dragon"
+		},
+		"Illusion Construct": {
+			"name": "Illusion Construct"
+		},
+		"Dryad": {
+			"name": "Dryad"
+		},
+		"Blue Dragon": {
+			"name": "Blue Dragon"
+		},
+		"Kinesis Construct": {
+			"name": "Kinesis Construct"
+		},
+		"Death Spirit": {
+			"name": "Death Spirit"
+		},
+		"Flame Dwarf": {
+			"name": "Flame Dwarf"
+		},
+		"Soul Spirit": {
+			"name": "Soul Spirit"
+		},
+		"Land Shark": {
+			"name": "Land Shark"
+		},
+		"Brass Dragon": {
+			"name": "Brass Dragon"
+		},
+		"Banshee": {
+			"name": "Banshee"
+		},
+		"Ettercap": {
+			"name": "Ettercap"
+		},
+		"Cave Squid": {
+			"name": "Cave Squid"
+		},
+		"Life Spirit": {
+			"name": "Life Spirit"
+		},
+		"Shadow": {
+			"name": "Shadow"
+		},
+		"Gold Dragon": {
+			"name": "Gold Dragon"
+		},
+		"Giant": {
+			"name": "Giant"
+		},
+		"Demon": {
+			"name": "Demon"
+		},
+		"Dragon Turtle": {
+			"name": "Dragon Turtle"
+		},
+		"Basilisk": {
+			"name": "Basilisk"
+		},
+		"Chimera": {
+			"name": "Chimera"
+		},
+		"Black Dragon": {
+			"name": "Black Dragon"
+		},
+		"Cyclops": {
+			"name": "Cyclops"
+		},
+		"Cave Ray": {
+			"name": "Cave Ray"
+		},
+		"Fey Dragon": {
+			"name": "Fey Dragon"
+		}
+	}
+}

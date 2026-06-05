@@ -1,0 +1,148 @@
+{
+	"label": "Monster Equipment",
+	"folders": {
+		"Armor": "Armor",
+		"Weapons": "Weapons"
+	},
+	"entries": {
+		"Fist": {
+			"name": "Fist"
+		},
+		"Talons": {
+			"name": "Talons"
+		},
+		"Tail Needles": {
+			"name": "Tail Needles",
+			"effects": {
+				"Fire Damage": {
+					"name": "Fire Damage",
+					"description": "<p>Add <strong>Fire</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Fire</strong>, checked against the target's <strong>Fire</strong> resistance separately.</p>"
+				}
+			}
+		},
+		"Horns": {
+			"name": "Horns"
+		},
+		"Claw": {
+			"name": "Claw"
+		},
+		"Deathly Armor": {
+			"name": "Deathly Armor"
+		},
+		"Bones": {
+			"name": "Bones"
+		},
+		"Stinger": {
+			"name": "Stinger",
+			"effects": {
+				"Poison Damage": {
+					"name": "Poison Damage",
+					"description": "<p>Add <strong>Poison</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Poison</strong>, checked against the target's <strong>Poison</strong> resistance separately.</p>"
+				},
+				"Poison Conversion": {
+					"name": "Poison Conversion",
+					"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+				}
+			}
+		},
+		"Earthen Claw": {
+			"name": "Earthen Claw"
+		},
+		"Icy Claw": {
+			"name": "Icy Claw"
+		},
+		"Mind Claw": {
+			"name": "Mind Claw"
+		},
+		"Illuminated Claw": {
+			"name": "Illuminated Claw"
+		},
+		"Pitchfork": {
+			"name": "Pitchfork"
+		},
+		"Bite": {
+			"name": "Bite"
+		},
+		"Spider Staff": {
+			"name": "Spider Staff"
+		},
+		"Dragon Scales": {
+			"name": "Dragon Scales"
+		},
+		"Sap Life": {
+			"name": "Sap Life"
+		},
+		"Demonic Armor": {
+			"name": "Demonic Armor"
+		},
+		"Needles": {
+			"name": "Needles"
+		},
+		"Spiritual Armor": {
+			"name": "Spiritual Armor"
+		},
+		"Voltaic Claw": {
+			"name": "Voltaic Claw"
+		},
+		"Huge Greatclub": {
+			"name": "Huge Greatclub"
+		},
+		"Construct Armor": {
+			"name": "Construct Armor"
+		},
+		"Sap Soul": {
+			"name": "Sap Soul"
+		},
+		"Void Claw": {
+			"name": "Void Claw"
+		},
+		"Poison Vine": {
+			"name": "Poison Vine"
+		},
+		"Pincer": {
+			"name": "Pincer"
+		},
+		"Tail": {
+			"name": "Tail"
+		},
+		"Bark Armor": {
+			"name": "Bark Armor"
+		},
+		"Proboscis": {
+			"name": "Proboscis"
+		},
+		"Pseudopod": {
+			"name": "Pseudopod"
+		},
+		"Mechanical Spear": {
+			"name": "Mechanical Spear"
+		},
+		"Tentacle": {
+			"name": "Tentacle"
+		},
+		"Elemental Armor": {
+			"name": "Elemental Armor"
+		},
+		"Vine": {
+			"name": "Vine"
+		},
+		"Trident": {
+			"name": "Trident"
+		},
+		"Pelt": {
+			"name": "Pelt"
+		},
+		"Angelic Armor": {
+			"name": "Angelic Armor"
+		},
+		"Rock": {
+			"name": "Rock"
+		},
+		"Flame Claw": {
+			"name": "Flame Claw"
+		},
+		"Natural Armor": {
+			"name": "Natural Armor"
+		}
+	}
+}

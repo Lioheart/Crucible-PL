@@ -1,0 +1,6283 @@
+{
+	"label": "Creatures",
+	"folders": {
+		"Creations": "Creations",
+		"Outsiders": "Outsiders",
+		"Summons": "Summons",
+		"Bronze": "Bronze",
+		"Monstrosities": "Monstrosities",
+		"Earth": "Earth",
+		"Undead": "Undead",
+		"Silver": "Silver",
+		"Dragons": "Dragons",
+		"Fire": "Fire",
+		"Brass": "Brass",
+		"Giants": "Giants",
+		"Beasts": "Beasts",
+		"Copper": "Copper",
+		"Gold": "Gold",
+		"Fey": "Fey",
+		"Blue": "Blue",
+		"Lightning": "Lightning",
+		"Dinosaurs": "Dinosaurs",
+		"Dragon Turtles": "Dragon Turtles",
+		"Humanoids": "Humanoids",
+		"Fiends": "Fiends",
+		"Celestials": "Celestials",
+		"White": "White",
+		"Constructs": "Constructs",
+		"Conjurations": "Conjurations",
+		"Red": "Red",
+		"Demons": "Demons",
+		"Ice": "Ice",
+		"Elementals": "Elementals",
+		"Green": "Green",
+		"Black": "Black",
+		"Plants": "Plants",
+		"Devils": "Devils"
+	},
+	"entries": {
+		"Death Sprite": {
+			"name": "Death Sprite",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Corrupted Shrub": {
+			"name": "Corrupted Shrub",
+			"items": {
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Adult Brass Dragon": {
+			"name": "Adult Brass Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Sleep Breath": {
+					"name": "Sleep Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Conjuration of Life": {
+			"name": "Conjuration of Life",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Mender": {
+					"name": "Mender"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				}
+			}
+		},
+		"Sky Giant": {
+			"name": "Sky Giant",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Perspicacity": {
+					"name": "Perspicacity"
+				},
+				"Limited Flight": {
+					"name": "Limited Flight"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Rock": {
+					"name": "Rock"
+				},
+				"Mace": {
+					"name": "Mace"
+				}
+			}
+		},
+		"Deep Dwarf Protector": {
+			"name": "Deep Dwarf Protector",
+			"items": {
+				"Snakeblood": {
+					"name": "Snakeblood"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Shield Combat Training": {
+					"name": "Shield Combat Training"
+				},
+				"Bulwark": {
+					"name": "Bulwark"
+				},
+				"Intercept": {
+					"name": "Intercept"
+				},
+				"Hold Fast": {
+					"name": "Hold Fast"
+				},
+				"War Hammer": {
+					"name": "War Hammer"
+				},
+				"Tower Shield": {
+					"name": "Tower Shield"
+				},
+				"Scale Mail": {
+					"name": "Scale Mail"
+				}
+			}
+		},
+		"Demigod Champion": {
+			"name": "Demigod Champion",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Counterspell": {
+					"name": "Counterspell"
+				},
+				"Heavy Weapon Master": {
+					"name": "Heavy Weapon Master"
+				},
+				"Heavy Weapon Expert": {
+					"name": "Heavy Weapon Expert"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Concussive Blows": {
+					"name": "Concussive Blows"
+				},
+				"Celestial War Hammer": {
+					"name": "Celestial War Hammer",
+					"effects": {
+						"Returning": {
+							"name": "Returning",
+							"description": "<p>A thrown weapon with this affix magically returns to the wielder's hand after each attack, allowing it to be thrown again without needing to retrieve it.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						},
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Angelic Armor": {
+					"name": "Angelic Armor",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Inflection: Extend": {
+					"name": "Inflection: Extend"
+				},
+				"Inflection: Determine": {
+					"name": "Inflection: Determine"
+				},
+				"Surgeweaver": {
+					"name": "Surgeweaver"
+				},
+				"Mender": {
+					"name": "Mender"
+				},
+				"Gesture: Aura": {
+					"name": "Gesture: Aura"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				},
+				"Inflection: Reshape": {
+					"name": "Inflection: Reshape"
+				},
+				"Inflection: React": {
+					"name": "Inflection: React"
+				},
+				"Illumination Proficiency": {
+					"name": "Illumination Proficiency"
+				},
+				"Lightning Proficiency": {
+					"name": "Lightning Proficiency"
+				}
+			}
+		},
+		"Mosquito Demon": {
+			"name": "Mosquito Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Drone": {
+					"name": "Drone"
+				},
+				"Diseasing Proboscis": {
+					"name": "Diseasing Proboscis"
+				},
+				"Clinging Grip": {
+					"name": "Clinging Grip"
+				},
+				"Proboscis": {
+					"name": "Proboscis"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Dracolich Wyrmling": {
+			"name": "Dracolich Wyrmling",
+			"items": {
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rotting Breath": {
+					"name": "Rotting Breath"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Dredge": {
+			"name": "Dredge",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Poison Cloud": {
+					"name": "Poison Cloud"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Pincer Demon": {
+			"name": "Pincer Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Restraining Claw": {
+					"name": "Restraining Claw"
+				},
+				"Engulfing Darkness": {
+					"name": "Engulfing Darkness"
+				},
+				"Pincer": {
+					"name": "Pincer"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Fomorian Brute": {
+			"name": "Fomorian Brute",
+			"items": {
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Sundering Strike": {
+					"name": "Sundering Strike"
+				},
+				"Huge Greatclub": {
+					"name": "Huge Greatclub"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				},
+				"Thoughtbinder": {
+					"name": "Thoughtbinder"
+				},
+				"Control Proficiency": {
+					"name": "Control Proficiency"
+				}
+			}
+		},
+		"Oblivion Mote": {
+			"name": "Oblivion Mote",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				}
+			}
+		},
+		"Half Spider": {
+			"name": "Half Spider",
+			"items": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Web Spinner": {
+					"name": "Web Spinner"
+				},
+				"Clinging Grip": {
+					"name": "Clinging Grip"
+				},
+				"Projectile Weapon Training": {
+					"name": "Projectile Weapon Training"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Engulfing Darkness": {
+					"name": "Engulfing Darkness"
+				},
+				"Shortsword": {
+					"name": "Shortsword"
+				},
+				"Longbow": {
+					"name": "Longbow"
+				},
+				"Scale Mail": {
+					"name": "Scale Mail"
+				}
+			}
+		},
+		"Young Fey Dragon": {
+			"name": "Young Fey Dragon",
+			"items": {
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Elusive Flight": {
+					"name": "Elusive Flight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Bonded Mind": {
+					"name": "Bonded Mind"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Young Gold Dragon": {
+			"name": "Young Gold Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Weakening Breath": {
+					"name": "Weakening Breath"
+				}
+			}
+		},
+		"Control Sprite": {
+			"name": "Control Sprite",
+			"items": {
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Creation of Control": {
+			"name": "Creation of Control",
+			"items": {
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Young Copper Dragon": {
+			"name": "Young Copper Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Slowing Breath": {
+					"name": "Slowing Breath"
+				}
+			}
+		},
+		"Conjuration of Earth": {
+			"name": "Conjuration of Earth",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				}
+			}
+		},
+		"Soul Mote": {
+			"name": "Soul Mote",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				}
+			}
+		},
+		"Life Visitor": {
+			"name": "Life Visitor",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Mender": {
+					"name": "Mender"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				}
+			}
+		},
+		"Vulture Demon": {
+			"name": "Vulture Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Stunning Screech": {
+					"name": "Stunning Screech"
+				},
+				"Spores": {
+					"name": "Spores"
+				},
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Talons": {
+					"name": "Talons"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Storm Mote": {
+			"name": "Storm Mote",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				}
+			}
+		},
+		"Adult Dragon Turtle": {
+			"name": "Adult Dragon Turtle",
+			"items": {
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Steam Breath": {
+					"name": "Steam Breath"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Ancient Copper Dragon": {
+			"name": "Ancient Copper Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Slowing Breath": {
+					"name": "Slowing Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Soul Sprite": {
+			"name": "Soul Sprite",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Young Blue Dragon": {
+			"name": "Young Blue Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				}
+			}
+		},
+		"Adult Gold Dragon": {
+			"name": "Adult Gold Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Weakening Breath": {
+					"name": "Weakening Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Deva": {
+			"name": "Deva",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Mace": {
+					"name": "Mace"
+				},
+				"Angelic Armor": {
+					"name": "Angelic Armor"
+				}
+			}
+		},
+		"Dark Elf Scout": {
+			"name": "Dark Elf Scout",
+			"items": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Preparedness": {
+					"name": "Preparedness"
+				},
+				"Assess Strength": {
+					"name": "Assess Strength"
+				},
+				"Precision Shot": {
+					"name": "Precision Shot"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Shortsword": {
+					"name": "Shortsword"
+				},
+				"Hand Crossbow": {
+					"name": "Hand Crossbow"
+				},
+				"Chain Mail": {
+					"name": "Chain Mail"
+				},
+				"Mechanical Weapon Training": {
+					"name": "Mechanical Weapon Training"
+				}
+			}
+		},
+		"Needle Devil": {
+			"name": "Needle Devil",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Elusive Flight": {
+					"name": "Elusive Flight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Tail Needles": {
+					"name": "Tail Needles",
+					"effects": {
+						"Fire Damage": {
+							"name": "Fire Damage",
+							"description": "<p>Add <strong>Fire</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Fire</strong>, checked against the target's <strong>Fire</strong> resistance separately.</p>"
+						}
+					}
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Pitchfork": {
+					"name": "Pitchfork"
+				}
+			}
+		},
+		"Flesh Monster": {
+			"name": "Flesh Monster",
+			"items": {
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Subdivide": {
+					"name": "Subdivide"
+				},
+				"Multiply": {
+					"name": "Multiply"
+				},
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Magic Resistance": {
+					"name": "Magic Resistance"
+				},
+				"Blinding Spit": {
+					"name": "Blinding Spit"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Young Brass Dragon": {
+			"name": "Young Brass Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Sleep Breath": {
+					"name": "Sleep Breath"
+				}
+			}
+		},
+		"Red Dragon Wyrmling": {
+			"name": "Red Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				}
+			}
+		},
+		"Snake Demon": {
+			"name": "Snake Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Teleport": {
+					"name": "Teleport"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Scimitar": {
+					"name": "Scimitar",
+					"effects": {
+						"Deflection": {
+							"name": "Deflection",
+							"description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"V7yA7M6nREm9rXqC": {
+					"name": "Scimitar",
+					"effects": {
+						"Deflection": {
+							"name": "Deflection",
+							"description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Tail": {
+					"name": "Tail"
+				},
+				"Counter Riposte": {
+					"name": "Counter Riposte"
+				},
+				"Light Weapon Proficiency": {
+					"name": "Light Weapon Proficiency"
+				}
+			}
+		},
+		"Adult White Dragon": {
+			"name": "Adult White Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Earth Wanderer": {
+			"name": "Earth Wanderer",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				}
+			}
+		},
+		"Adult Black Dragon": {
+			"name": "Adult Black Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Conjuration of Illusion": {
+			"name": "Conjuration of Illusion",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Flame Visitor": {
+			"name": "Flame Visitor",
+			"items": {
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				}
+			}
+		},
+		"Ooze Demon": {
+			"name": "Ooze Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Telecognition": {
+					"name": "Telecognition"
+				},
+				"Pseudopod": {
+					"name": "Pseudopod"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				},
+				"Inflection: Pull": {
+					"name": "Inflection: Pull"
+				}
+			}
+		},
+		"Ankylosaurus": {
+			"name": "Ankylosaurus",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Tail": {
+					"name": "Tail"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Young White Dragon": {
+			"name": "Young White Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				}
+			}
+		},
+		"Bronze Dragon Wyrmling": {
+			"name": "Bronze Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Repulsion Breath": {
+					"name": "Repulsion Breath"
+				}
+			}
+		},
+		"Flaming Skull": {
+			"name": "Flaming Skull",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Flaming Death": {
+					"name": "Flaming Death"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Young Silver Dragon": {
+			"name": "Young Silver Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Paralyzing Breath": {
+					"name": "Paralyzing Breath"
+				}
+			}
+		},
+		"Cockatrice": {
+			"name": "Cockatrice",
+			"items": {
+				"Petrifying Bite": {
+					"name": "Petrifying Bite"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Bugbear Brute": {
+			"name": "Bugbear Brute",
+			"items": {
+				"Stealth Novice": {
+					"name": "Stealth Novice"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Sundering Strike": {
+					"name": "Sundering Strike"
+				},
+				"War Hammer": {
+					"name": "War Hammer"
+				},
+				"Buckler": {
+					"name": "Buckler"
+				},
+				"Heavy Hides": {
+					"name": "Heavy Hides"
+				}
+			}
+		},
+		"Ghoul": {
+			"name": "Ghoul",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Pack Hunter": {
+					"name": "Pack Hunter"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Strike First": {
+					"name": "Strike First"
+				},
+				"Necrotic Bite": {
+					"name": "Necrotic Bite"
+				}
+			}
+		},
+		"Banshee": {
+			"name": "Banshee",
+			"items": {
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Life Sense": {
+					"name": "Life Sense"
+				},
+				"Corrupting Touch": {
+					"name": "Corrupting Touch",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Horrifying Visage": {
+					"name": "Horrifying Visage"
+				}
+			}
+		},
+		"Life Mote": {
+			"name": "Life Mote",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Mender": {
+					"name": "Mender"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Chimera": {
+			"name": "Chimera",
+			"items": {
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Natural Weapon Proficiency": {
+					"name": "Natural Weapon Proficiency"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Horns": {
+					"name": "Horns"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Pelt": {
+					"name": "Pelt"
+				}
+			}
+		},
+		"Ghast": {
+			"name": "Ghast",
+			"items": {
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Necrotic Bite": {
+					"name": "Necrotic Bite"
+				},
+				"Pack Hunter": {
+					"name": "Pack Hunter"
+				},
+				"Repugnant Pustules": {
+					"name": "Repugnant Pustules"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Flame Giant": {
+			"name": "Flame Giant",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Greatsword": {
+					"name": "Greatsword"
+				},
+				"Plate Mail": {
+					"name": "Plate Mail"
+				},
+				"Rock": {
+					"name": "Rock"
+				}
+			}
+		},
+		"Ancient Green Dragon": {
+			"name": "Ancient Green Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Poison Breath": {
+					"name": "Poison Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Lesser Boulder Elemental": {
+			"name": "Lesser Boulder Elemental",
+			"items": {
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Rolling Bash": {
+					"name": "Rolling Bash"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				}
+			}
+		},
+		"Ice Sprite": {
+			"name": "Ice Sprite",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				}
+			}
+		},
+		"Shadow Dragon Wyrmling": {
+			"name": "Shadow Dragon Wyrmling",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Shadow Breath": {
+					"name": "Shadow Breath"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Draining Claw": {
+					"name": "Draining Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Earth Sprite": {
+			"name": "Earth Sprite",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Young Green Dragon": {
+			"name": "Young Green Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Poison Breath": {
+					"name": "Poison Breath"
+				}
+			}
+		},
+		"Ettin Brute": {
+			"name": "Ettin Brute",
+			"items": {
+				"Two Headed": {
+					"name": "Two Headed"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Sundering Strike": {
+					"name": "Sundering Strike"
+				},
+				"Battle Axe": {
+					"name": "Battle Axe"
+				},
+				"War Hammer": {
+					"name": "War Hammer"
+				}
+			}
+		},
+		"Soul Visitor": {
+			"name": "Soul Visitor",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Inspirator": {
+					"name": "Inspirator"
+				}
+			}
+		},
+		"Adult Silver Dragon": {
+			"name": "Adult Silver Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Paralyzing Breath": {
+					"name": "Paralyzing Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"White Dragon Wyrmling": {
+			"name": "White Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				}
+			}
+		},
+		"Hill Giant": {
+			"name": "Hill Giant",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Rock": {
+					"name": "Rock"
+				},
+				"Greatclub": {
+					"name": "Greatclub"
+				},
+				"Cleave": {
+					"name": "Cleave"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				}
+			}
+		},
+		"Flame Sprite": {
+			"name": "Flame Sprite",
+			"items": {
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				}
+			}
+		},
+		"Devil Watcher": {
+			"name": "Devil Watcher",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Pitchfork": {
+					"name": "Pitchfork"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Behir": {
+			"name": "Behir",
+			"items": {
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Clinging Grip": {
+					"name": "Clinging Grip"
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Constrict": {
+					"name": "Constrict"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Dark Elf Warrior": {
+			"name": "Dark Elf Warrior",
+			"items": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Operator": {
+					"name": "Operator"
+				},
+				"Strategic Repositioning": {
+					"name": "Strategic Repositioning"
+				},
+				"Subtle Extrication": {
+					"name": "Subtle Extrication"
+				},
+				"Weak Points": {
+					"name": "Weak Points"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Mechanical Weapon Training": {
+					"name": "Mechanical Weapon Training"
+				},
+				"Shortsword": {
+					"name": "Shortsword"
+				},
+				"Hand Crossbow": {
+					"name": "Hand Crossbow"
+				},
+				"Studded Leather Armor": {
+					"name": "Studded Leather Armor"
+				}
+			}
+		},
+		"Illumination Wanderer": {
+			"name": "Illumination Wanderer",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Storm Wanderer": {
+			"name": "Storm Wanderer",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				}
+			}
+		},
+		"Triceratops": {
+			"name": "Triceratops",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Trampling Charge": {
+					"name": "Trampling Charge"
+				},
+				"Horns": {
+					"name": "Horns"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Cavern Crawler": {
+			"name": "Cavern Crawler",
+			"items": {
+				"Clinging Grip": {
+					"name": "Clinging Grip"
+				},
+				"Bestial Senses": {
+					"name": "Bestial Senses"
+				},
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Paralyzing Tentacles": {
+					"name": "Paralyzing Tentacles"
+				}
+			}
+		},
+		"Creation of Illumination": {
+			"name": "Creation of Illumination",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Kinesis Visitor": {
+			"name": "Kinesis Visitor",
+			"items": {
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Ancient Dracolich": {
+			"name": "Ancient Dracolich",
+			"items": {
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rotting Breath": {
+					"name": "Rotting Breath"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Adult Fey Dragon": {
+			"name": "Adult Fey Dragon",
+			"items": {
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Elusive Flight": {
+					"name": "Elusive Flight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Bonded Mind": {
+					"name": "Bonded Mind"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				},
+				"Protective Mirage": {
+					"name": "Protective Mirage"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Adult Blue Dragon": {
+			"name": "Adult Blue Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Plesiosaurus": {
+			"name": "Plesiosaurus",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Young Shadow Dragon": {
+			"name": "Young Shadow Dragon",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Shadow Breath": {
+					"name": "Shadow Breath"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Draining Claw": {
+					"name": "Draining Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				}
+			}
+		},
+		"Young Bronze Dragon": {
+			"name": "Young Bronze Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Repulsion Breath": {
+					"name": "Repulsion Breath"
+				}
+			}
+		},
+		"Creation of Ice": {
+			"name": "Creation of Ice",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				}
+			}
+		},
+		"Dark Elf Mage": {
+			"name": "Dark Elf Mage",
+			"items": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Counterspell": {
+					"name": "Counterspell"
+				},
+				"Recognize Spellcraft": {
+					"name": "Recognize Spellcraft"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Spider Staff": {
+					"name": "Spider Staff"
+				}
+			}
+		},
+		"Flying Sword": {
+			"name": "Flying Sword",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Bastard Sword": {
+					"name": "Bastard Sword"
+				},
+				"Leg Sweep": {
+					"name": "Leg Sweep"
+				}
+			}
+		},
+		"Skeleton Hand": {
+			"name": "Skeleton Hand",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Blue Dragon Wyrmling": {
+			"name": "Blue Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				}
+			}
+		},
+		"Centaur Scout": {
+			"name": "Centaur Scout",
+			"items": {
+				"Bull Rush": {
+					"name": "Bull Rush"
+				},
+				"Preparedness": {
+					"name": "Preparedness"
+				},
+				"Assess Strength": {
+					"name": "Assess Strength"
+				},
+				"Precision Shot": {
+					"name": "Precision Shot"
+				},
+				"Projectile Weapon Training": {
+					"name": "Projectile Weapon Training"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Longbow": {
+					"name": "Longbow"
+				},
+				"Spear": {
+					"name": "Spear"
+				}
+			}
+		},
+		"Eye Tyrant": {
+			"name": "Eye Tyrant",
+			"items": {
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Magic Resistance": {
+					"name": "Magic Resistance"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				},
+				"Inflection: Pull": {
+					"name": "Inflection: Pull"
+				},
+				"Inflection: Push": {
+					"name": "Inflection: Push"
+				},
+				"Necromancer": {
+					"name": "Necromancer"
+				},
+				"Kineturge": {
+					"name": "Kineturge"
+				},
+				"Thoughtbinder": {
+					"name": "Thoughtbinder"
+				},
+				"Mesmer": {
+					"name": "Mesmer"
+				},
+				"Control Proficiency": {
+					"name": "Control Proficiency"
+				},
+				"Death Proficiency": {
+					"name": "Death Proficiency"
+				},
+				"Illusion Proficiency": {
+					"name": "Illusion Proficiency"
+				},
+				"Kinesis Proficiency": {
+					"name": "Kinesis Proficiency"
+				}
+			}
+		},
+		"Acid Ant": {
+			"name": "Acid Ant",
+			"items": {
+				"Acid Spray": {
+					"name": "Acid Spray"
+				},
+				"Burrower": {
+					"name": "Burrower"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Creation of Lightning": {
+			"name": "Creation of Lightning",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				}
+			}
+		},
+		"Ancient Brass Dragon": {
+			"name": "Ancient Brass Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Sleep Breath": {
+					"name": "Sleep Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Ancient Blue Dragon": {
+			"name": "Ancient Blue Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Ancient Bronze Dragon": {
+			"name": "Ancient Bronze Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Repulsion Breath": {
+					"name": "Repulsion Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Life Wanderer": {
+			"name": "Life Wanderer",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Mender": {
+					"name": "Mender"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				},
+				"Gesture: Cone": {
+					"name": "Gesture: Cone"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				}
+			}
+		},
+		"Cave Ray": {
+			"name": "Cave Ray",
+			"items": {
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Smother": {
+					"name": "Smother"
+				},
+				"Light Sensitivity": {
+					"name": "Light Sensitivity",
+					"effects": {
+						"Light Sensitivity": {
+							"name": "Light Sensitivity",
+							"description": "<p>The creature suffers banes to all actions when exposed to bright light.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Wailing Moan": {
+					"name": "Wailing Moan"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Protective Mirage": {
+					"name": "Protective Mirage"
+				}
+			}
+		},
+		"Quasit": {
+			"name": "Quasit",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Critter Form": {
+					"name": "Critter Form"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Young Black Dragon": {
+			"name": "Young Black Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				}
+			}
+		},
+		"Swine Demon": {
+			"name": "Swine Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Teleport": {
+					"name": "Teleport"
+				},
+				"Horrifying Visage": {
+					"name": "Horrifying Visage"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Bugbear Chief": {
+			"name": "Bugbear Chief",
+			"items": {
+				"Stealth Novice": {
+					"name": "Stealth Novice"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Sundering Strike": {
+					"name": "Sundering Strike"
+				},
+				"War Hammer": {
+					"name": "War Hammer"
+				},
+				"Buckler": {
+					"name": "Buckler"
+				},
+				"Heavy Hides": {
+					"name": "Heavy Hides"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Concussive Blows": {
+					"name": "Concussive Blows"
+				}
+			}
+		},
+		"Cyclops Brute": {
+			"name": "Cyclops Brute",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Sundering Strike": {
+					"name": "Sundering Strike"
+				},
+				"Huge Greatclub": {
+					"name": "Huge Greatclub"
+				},
+				"Cleave": {
+					"name": "Cleave"
+				}
+			}
+		},
+		"Death Knight": {
+			"name": "Death Knight",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Grave Mark": {
+					"name": "Grave Mark"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Bastard Sword": {
+					"name": "Bastard Sword"
+				},
+				"Heater Shield": {
+					"name": "Heater Shield"
+				},
+				"Plate Mail": {
+					"name": "Plate Mail"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Ancient Shadow Dragon": {
+			"name": "Ancient Shadow Dragon",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Shadow Breath": {
+					"name": "Shadow Breath"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Draining Claw": {
+					"name": "Draining Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Couatl": {
+			"name": "Couatl",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Constrict": {
+					"name": "Constrict"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Mental Fortress": {
+					"name": "Mental Fortress"
+				},
+				"Gesture: Aura": {
+					"name": "Gesture: Aura"
+				}
+			}
+		},
+		"Animated Armor": {
+			"name": "Animated Armor",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Armor Crusher": {
+					"name": "Armor Crusher"
+				},
+				"Slam": {
+					"name": "Slam"
+				},
+				"Plate Mail": {
+					"name": "Plate Mail"
+				}
+			}
+		},
+		"Copper Dragon Wyrmling": {
+			"name": "Copper Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Slowing Breath": {
+					"name": "Slowing Breath"
+				}
+			}
+		},
+		"Earth Mote": {
+			"name": "Earth Mote",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Adult Green Dragon": {
+			"name": "Adult Green Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Poison Breath": {
+					"name": "Poison Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Wretch": {
+			"name": "Wretch",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Creation of Earth": {
+			"name": "Creation of Earth",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Kinesis Mote": {
+			"name": "Kinesis Mote",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				}
+			}
+		},
+		"Creation of Flame": {
+			"name": "Creation of Flame",
+			"items": {
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				}
+			}
+		},
+		"Adult Shadow Dragon": {
+			"name": "Adult Shadow Dragon",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Shadow Breath": {
+					"name": "Shadow Breath"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Draining Claw": {
+					"name": "Draining Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Creation of Illusion": {
+			"name": "Creation of Illusion",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Illusion Sprite": {
+			"name": "Illusion Sprite",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Conjuration of Death": {
+			"name": "Conjuration of Death",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				}
+			}
+		},
+		"Adult Red Dragon": {
+			"name": "Adult Red Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Cave Squid": {
+			"name": "Cave Squid",
+			"items": {
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Echolocation": {
+					"name": "Echolocation"
+				},
+				"Smother": {
+					"name": "Smother"
+				},
+				"Engulfing Darkness": {
+					"name": "Engulfing Darkness"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Rock Giant": {
+			"name": "Rock Giant",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Patient Deflection": {
+					"name": "Patient Deflection"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Greatclub": {
+					"name": "Greatclub"
+				},
+				"Rock": {
+					"name": "Rock"
+				}
+			}
+		},
+		"Ice Visitor": {
+			"name": "Ice Visitor",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				}
+			}
+		},
+		"Erinyes Devil": {
+			"name": "Erinyes Devil",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Plate Mail": {
+					"name": "Plate Mail"
+				},
+				"Hellish Bastard Sword": {
+					"name": "Hellish Bastard Sword",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						},
+						"Poison Conversion": {
+							"name": "Poison Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						}
+					}
+				},
+				"Hellish Longbow": {
+					"name": "Hellish Longbow",
+					"effects": {
+						"Poison Conversion": {
+							"name": "Poison Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						},
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Counter Riposte": {
+					"name": "Counter Riposte"
+				}
+			}
+		},
+		"Illumination Mote": {
+			"name": "Illumination Mote",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				}
+			}
+		},
+		"Toad Demon": {
+			"name": "Toad Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Repugnant Pustules": {
+					"name": "Repugnant Pustules"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Silver Dragon Wyrmling": {
+			"name": "Silver Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Paralyzing Breath": {
+					"name": "Paralyzing Breath"
+				}
+			}
+		},
+		"Young Red Dragon": {
+			"name": "Young Red Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				}
+			}
+		},
+		"Imp": {
+			"name": "Imp",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Critter Form": {
+					"name": "Critter Form"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Stinger": {
+					"name": "Stinger",
+					"effects": {
+						"Poison Damage": {
+							"name": "Poison Damage",
+							"description": "<p>Add <strong>Poison</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Poison</strong>, checked against the target's <strong>Poison</strong> resistance separately.</p>"
+						},
+						"Poison Conversion": {
+							"name": "Poison Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Skull Lich": {
+			"name": "Skull Lich",
+			"items": {
+				"Wailing Moan": {
+					"name": "Wailing Moan"
+				},
+				"Cloud of Dust": {
+					"name": "Cloud of Dust"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Magical Sight": {
+					"name": "Magical Sight"
+				}
+			}
+		},
+		"Conjuration of Storm": {
+			"name": "Conjuration of Storm",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				}
+			}
+		},
+		"Solar": {
+			"name": "Solar",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				},
+				"Divine Awareness": {
+					"name": "Divine Awareness"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Lightbringer": {
+					"name": "Lightbringer"
+				},
+				"Illumination Proficiency": {
+					"name": "Illumination Proficiency"
+				},
+				"Life Proficiency": {
+					"name": "Life Proficiency"
+				},
+				"Angelic Armor": {
+					"name": "Angelic Armor"
+				},
+				"Greatsword": {
+					"name": "Greatsword"
+				},
+				"Keen Longbow of Radiance": {
+					"name": "Keen Longbow of Radiance",
+					"effects": {
+						"Radiant Conversion": {
+							"name": "Radiant Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Radiant</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Radiant</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						},
+						"Radiant Damage": {
+							"name": "Radiant Damage",
+							"description": "<p>Add <strong>Radiant</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Radiant</strong>, checked against the target's <strong>Radiant</strong> resistance separately.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Corrupted Vine": {
+			"name": "Corrupted Vine",
+			"items": {
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Grab": {
+					"name": "Grab"
+				},
+				"Squeeze": {
+					"name": "Squeeze"
+				},
+				"Vine": {
+					"name": "Vine"
+				}
+			}
+		},
+		"Storm Visitor": {
+			"name": "Storm Visitor",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				}
+			}
+		},
+		"Gold Dragon Wyrmling": {
+			"name": "Gold Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Weakening Breath": {
+					"name": "Weakening Breath"
+				}
+			}
+		},
+		"Aboleth": {
+			"name": "Aboleth",
+			"items": {
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Telepathy": {
+					"name": "Telepathy"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Telecognition": {
+					"name": "Telecognition"
+				},
+				"Tentacle": {
+					"name": "Tentacle"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				},
+				"Mental Fortress": {
+					"name": "Mental Fortress"
+				},
+				"Thoughtbinder": {
+					"name": "Thoughtbinder"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				},
+				"Control Proficiency": {
+					"name": "Control Proficiency"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Dark Elf Priest": {
+			"name": "Dark Elf Priest",
+			"items": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Thermal Vision": {
+					"name": "Thermal Vision"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Steadfast": {
+					"name": "Steadfast"
+				},
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Ceremonial Dagger": {
+					"name": "Ceremonial Dagger"
+				},
+				"Scale Mail": {
+					"name": "Scale Mail"
+				},
+				"Engulfing Darkness": {
+					"name": "Engulfing Darkness"
+				}
+			}
+		},
+		"Allosaurus": {
+			"name": "Allosaurus",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Pouncing Strike": {
+					"name": "Pouncing Strike"
+				},
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Conjuration of Ice": {
+			"name": "Conjuration of Ice",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				}
+			}
+		},
+		"Demon Tyrant": {
+			"name": "Demon Tyrant",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Teleport": {
+					"name": "Teleport"
+				},
+				"Flaming Death Burst": {
+					"name": "Flaming Death Burst"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Shocking Bastard Sword": {
+					"name": "Shocking Bastard Sword",
+					"effects": {
+						"Electricity Conversion": {
+							"name": "Electricity Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Electricity</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Electricity</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Flaming Chain Hook": {
+					"name": "Flaming Chain Hook",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						},
+						"Fire Conversion": {
+							"name": "Fire Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Fire</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Fire</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						}
+					}
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Gesture: Aura": {
+					"name": "Gesture: Aura"
+				}
+			}
+		},
+		"Zombie Hand": {
+			"name": "Zombie Hand",
+			"items": {
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Repugnant Pustules": {
+					"name": "Repugnant Pustules"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Storm Sprite": {
+			"name": "Storm Sprite",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Voltaic Claw": {
+					"name": "Voltaic Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				}
+			}
+		},
+		"Corrupted Bush": {
+			"name": "Corrupted Bush",
+			"items": {
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Needles": {
+					"name": "Needles"
+				}
+			}
+		},
+		"Creation of Oblivion": {
+			"name": "Creation of Oblivion",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Hulking Demon": {
+			"name": "Hulking Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Goring Charge": {
+					"name": "Goring Charge"
+				},
+				"Siege Monster": {
+					"name": "Siege Monster"
+				},
+				"Horns": {
+					"name": "Horns"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Death Visitor": {
+			"name": "Death Visitor",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				}
+			}
+		},
+		"Shadow": {
+			"name": "Shadow",
+			"items": {
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"effects": {
+						"Sunlight Weakness": {
+							"name": "Sunlight Weakness",
+							"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				}
+			}
+		},
+		"Ancient Dragon Turtle": {
+			"name": "Ancient Dragon Turtle",
+			"items": {
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Steam Breath": {
+					"name": "Steam Breath"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Flame Devil": {
+			"name": "Flame Devil",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Tail": {
+					"name": "Tail"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Pteranodon": {
+			"name": "Pteranodon",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Elusive Flight": {
+					"name": "Elusive Flight"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Frogman Thrower": {
+			"name": "Frogman Thrower",
+			"items": {
+				"Ferocious Leap": {
+					"name": "Ferocious Leap"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Spear": {
+					"name": "Spear"
+				},
+				"Round Shield": {
+					"name": "Round Shield"
+				},
+				"Leather Armor": {
+					"name": "Leather Armor"
+				}
+			}
+		},
+		"Ancient Red Dragon": {
+			"name": "Ancient Red Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Creation of Death": {
+			"name": "Creation of Death",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Elder Fey Dragon": {
+			"name": "Elder Fey Dragon",
+			"items": {
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Elusive Flight": {
+					"name": "Elusive Flight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Bonded Mind": {
+					"name": "Bonded Mind"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Protective Mirage": {
+					"name": "Protective Mirage"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Inflection: Quicken": {
+					"name": "Inflection: Quicken"
+				}
+			}
+		},
+		"Life Sprite": {
+			"name": "Life Sprite",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Mender": {
+					"name": "Mender"
+				}
+			}
+		},
+		"Oblivion Visitor": {
+			"name": "Oblivion Visitor",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				}
+			}
+		},
+		"Control Mote": {
+			"name": "Control Mote",
+			"items": {
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				}
+			}
+		},
+		"Ancient White Dragon": {
+			"name": "Ancient White Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Conjuration of Control": {
+			"name": "Conjuration of Control",
+			"items": {
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Adult Bronze Dragon": {
+			"name": "Adult Bronze Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Lightning Breath": {
+					"name": "Lightning Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Repulsion Breath": {
+					"name": "Repulsion Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Creation of Soul": {
+			"name": "Creation of Soul",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Flame Dwarf": {
+			"name": "Flame Dwarf",
+			"items": {
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Glowing Body": {
+					"name": "Glowing Body"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Armored Efficiency": {
+					"name": "Armored Efficiency"
+				},
+				"Leg Sweep": {
+					"name": "Leg Sweep"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Bulwark": {
+					"name": "Bulwark"
+				},
+				"Heater Shield": {
+					"name": "Heater Shield"
+				},
+				"Flaming War Hammer": {
+					"name": "Flaming War Hammer",
+					"effects": {
+						"Fire Conversion": {
+							"name": "Fire Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Fire</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Fire</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Fire Damage": {
+							"name": "Fire Damage",
+							"description": "<p>Add <strong>Fire</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Fire</strong>, checked against the target's <strong>Fire</strong> resistance separately.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Brass Dragon Wyrmling": {
+			"name": "Brass Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Sleep Breath": {
+					"name": "Sleep Breath"
+				}
+			}
+		},
+		"Onlooker": {
+			"name": "Onlooker",
+			"items": {
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Versatile Translator": {
+					"name": "Versatile Translator"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Mesmer": {
+					"name": "Mesmer"
+				}
+			}
+		},
+		"Ice Wanderer": {
+			"name": "Ice Wanderer",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				}
+			}
+		},
+		"Land Shark": {
+			"name": "Land Shark",
+			"items": {
+				"Pouncing Strike": {
+					"name": "Pouncing Strike"
+				},
+				"Restraining Chomp": {
+					"name": "Restraining Chomp"
+				},
+				"Thrash": {
+					"name": "Thrash"
+				},
+				"Burrower": {
+					"name": "Burrower"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Dryad": {
+			"name": "Dryad",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Tree Stride": {
+					"name": "Tree Stride"
+				},
+				"Wildspeaker": {
+					"name": "Wildspeaker"
+				},
+				"Club": {
+					"name": "Club"
+				}
+			}
+		},
+		"Changeling Operator": {
+			"name": "Changeling Operator",
+			"items": {
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Operator": {
+					"name": "Operator"
+				},
+				"Strategic Repositioning": {
+					"name": "Strategic Repositioning"
+				},
+				"Subtle Extrication": {
+					"name": "Subtle Extrication"
+				},
+				"Weak Points": {
+					"name": "Weak Points"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				}
+			}
+		},
+		"Birdfolk": {
+			"name": "Birdfolk",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Swooping Strike": {
+					"name": "Swooping Strike"
+				},
+				"Precision Shot": {
+					"name": "Precision Shot"
+				},
+				"Evasive Shot": {
+					"name": "Evasive Shot"
+				},
+				"Projectile Weapon Training": {
+					"name": "Projectile Weapon Training"
+				},
+				"Longbow": {
+					"name": "Longbow"
+				},
+				"Talon": {
+					"name": "Talon"
+				}
+			}
+		},
+		"Tyrannosaurus Rex": {
+			"name": "Tyrannosaurus Rex",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Restraining Chomp": {
+					"name": "Restraining Chomp"
+				},
+				"Thrash": {
+					"name": "Thrash"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Tail": {
+					"name": "Tail"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Ancient Silver Dragon": {
+			"name": "Ancient Silver Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Frost Breath": {
+					"name": "Frost Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Paralyzing Breath": {
+					"name": "Paralyzing Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Illumination Visitor": {
+			"name": "Illumination Visitor",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Oblivion Wanderer": {
+			"name": "Oblivion Wanderer",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Gesture: Cone": {
+					"name": "Gesture: Cone"
+				}
+			}
+		},
+		"Boulder Elemental": {
+			"name": "Boulder Elemental",
+			"items": {
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Rolling Bash": {
+					"name": "Rolling Bash"
+				},
+				"Animate Boulders": {
+					"name": "Animate Boulders"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				}
+			}
+		},
+		"Oblivion Sprite": {
+			"name": "Oblivion Sprite",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				}
+			}
+		},
+		"Damned": {
+			"name": "Damned",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Eternal Suffering": {
+					"name": "Eternal Suffering"
+				}
+			}
+		},
+		"Illumination Sprite": {
+			"name": "Illumination Sprite",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Ancient Black Dragon": {
+			"name": "Ancient Black Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Devil Warden": {
+			"name": "Devil Warden",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Horrifying Visage": {
+					"name": "Horrifying Visage"
+				},
+				"Chain Hook": {
+					"name": "Chain Hook"
+				},
+				"jR2DAGJQKmHARt9q": {
+					"name": "Chain Hook"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Black Dragon Wyrmling": {
+			"name": "Black Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				}
+			}
+		},
+		"Adult Copper Dragon": {
+			"name": "Adult Copper Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Acid Breath": {
+					"name": "Acid Breath"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Slowing Breath": {
+					"name": "Slowing Breath"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Conjuration of Flame": {
+			"name": "Conjuration of Flame",
+			"items": {
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				}
+			}
+		},
+		"Rug of Smothering": {
+			"name": "Rug of Smothering",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Smother": {
+					"name": "Smother"
+				}
+			}
+		},
+		"Darkness Demon": {
+			"name": "Darkness Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Light Sensitivity": {
+					"name": "Light Sensitivity",
+					"effects": {
+						"Light Sensitivity": {
+							"name": "Light Sensitivity",
+							"description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>",
+							"changes": {
+								"system.rollBonuses.banes.sunlightWeakness.number": 2,
+								"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+							}
+						}
+					}
+				},
+				"Shadow Gait": {
+					"name": "Shadow Gait"
+				},
+				"Claw": {
+					"name": "Claw"
+				}
+			}
+		},
+		"Dead Eye": {
+			"name": "Dead Eye",
+			"items": {
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Magical Sight": {
+					"name": "Magical Sight"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Negative Energy Pulse": {
+					"name": "Negative Energy Pulse"
+				},
+				"Inflection: Pull": {
+					"name": "Inflection: Pull"
+				},
+				"Inflection: Push": {
+					"name": "Inflection: Push"
+				},
+				"Kineturge": {
+					"name": "Kineturge"
+				},
+				"Necromancer": {
+					"name": "Necromancer"
+				},
+				"Thoughtbinder": {
+					"name": "Thoughtbinder"
+				},
+				"Control Proficiency": {
+					"name": "Control Proficiency"
+				},
+				"Death Proficiency": {
+					"name": "Death Proficiency"
+				},
+				"Illusion Proficiency": {
+					"name": "Illusion Proficiency"
+				},
+				"Kinesis Proficiency": {
+					"name": "Kinesis Proficiency"
+				},
+				"Mesmer": {
+					"name": "Mesmer"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Bones": {
+					"name": "Bones"
+				}
+			}
+		},
+		"Ice Mote": {
+			"name": "Ice Mote",
+			"items": {
+				"Icy Claw": {
+					"name": "Icy Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Kinesis Sprite": {
+			"name": "Kinesis Sprite",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Flame Wanderer": {
+			"name": "Flame Wanderer",
+			"items": {
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Pulse": {
+					"name": "Gesture: Pulse"
+				}
+			}
+		},
+		"Ice Giant": {
+			"name": "Ice Giant",
+			"items": {
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Rock": {
+					"name": "Rock"
+				},
+				"Greataxe": {
+					"name": "Greataxe"
+				},
+				"Heavy Hides": {
+					"name": "Heavy Hides"
+				}
+			}
+		},
+		"Basilisk": {
+			"name": "Basilisk",
+			"items": {
+				"Petrifying Gaze": {
+					"name": "Petrifying Gaze"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Gorilla Demon": {
+			"name": "Gorilla Demon",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Berserker": {
+					"name": "Berserker"
+				},
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Fist": {
+					"name": "Fist"
+				},
+				"Ferocious Leap": {
+					"name": "Ferocious Leap"
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				}
+			}
+		},
+		"Control Visitor": {
+			"name": "Control Visitor",
+			"items": {
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Death Wanderer": {
+			"name": "Death Wanderer",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Gesture: Cone": {
+					"name": "Gesture: Cone"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				}
+			}
+		},
+		"Planetar": {
+			"name": "Planetar",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Divine Awareness": {
+					"name": "Divine Awareness"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Illumination Proficiency": {
+					"name": "Illumination Proficiency"
+				},
+				"Greatsword": {
+					"name": "Greatsword"
+				},
+				"Angelic Armor": {
+					"name": "Angelic Armor"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				}
+			}
+		},
+		"Adult Dracolich": {
+			"name": "Adult Dracolich",
+			"items": {
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rotting Breath": {
+					"name": "Rotting Breath"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Creation of Life": {
+			"name": "Creation of Life",
+			"items": {
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Poison Vine": {
+					"name": "Poison Vine"
+				},
+				"Bark Armor": {
+					"name": "Bark Armor"
+				},
+				"Mender": {
+					"name": "Mender"
+				}
+			}
+		},
+		"Earth Genie": {
+			"name": "Earth Genie",
+			"items": {
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Earth Walk": {
+					"name": "Earth Walk"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Gesture: Conjure": {
+					"name": "Gesture: Conjure"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Great Hammer": {
+					"name": "Great Hammer"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				}
+			}
+		},
+		"Illusion Wanderer": {
+			"name": "Illusion Wanderer",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Devil Footman": {
+			"name": "Devil Footman",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Glaive": {
+					"name": "Glaive"
+				},
+				"Steadfast": {
+					"name": "Steadfast"
+				}
+			}
+		},
+		"Ettercap Ambusher": {
+			"name": "Ettercap Ambusher",
+			"items": {
+				"Web Spinner": {
+					"name": "Web Spinner"
+				},
+				"Clinging Grip": {
+					"name": "Clinging Grip"
+				},
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Venomous Bite": {
+					"name": "Venomous Bite"
+				},
+				"Weak Points": {
+					"name": "Weak Points"
+				},
+				"Bite": {
+					"name": "Bite",
+					"effects": {
+						"Fey Bane": {
+							"name": "Fey Bane",
+							"description": "<p>This weapon is especially effective against <strong>Fey</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Illusion Visitor": {
+			"name": "Illusion Visitor",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Conjuration of Kinesis": {
+			"name": "Conjuration of Kinesis",
+			"items": {
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Storm Genie": {
+			"name": "Storm Genie",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Electricity Absorption": {
+					"name": "Electricity Absorption"
+				},
+				"Gesture: Conjure": {
+					"name": "Gesture: Conjure"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Light Weapon Proficiency": {
+					"name": "Light Weapon Proficiency"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Gesture: Aura": {
+					"name": "Gesture: Aura"
+				},
+				"Invisibility": {
+					"name": "Invisibility"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Scimitar": {
+					"name": "Scimitar"
+				}
+			}
+		},
+		"Creation of Kinesis": {
+			"name": "Creation of Kinesis",
+			"items": {
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				}
+			}
+		},
+		"Kinesis Wanderer": {
+			"name": "Kinesis Wanderer",
+			"items": {
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Self-Repair": {
+					"name": "Self-Repair"
+				},
+				"Mechanical Spear": {
+					"name": "Mechanical Spear"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Ancient Gold Dragon": {
+			"name": "Ancient Gold Dragon",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Flame Breath": {
+					"name": "Flame Breath"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Tail Sweep": {
+					"name": "Tail Sweep"
+				},
+				"Shapeshift": {
+					"name": "Shapeshift"
+				},
+				"Weakening Breath": {
+					"name": "Weakening Breath"
+				},
+				"Horrific Critical": {
+					"name": "Horrific Critical"
+				},
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Tail": {
+					"name": "Tail"
+				}
+			}
+		},
+		"Green Dragon Wyrmling": {
+			"name": "Green Dragon Wyrmling",
+			"items": {
+				"Flight": {
+					"name": "Flight"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				},
+				"Poison Breath": {
+					"name": "Poison Breath"
+				}
+			}
+		},
+		"Flame Genie": {
+			"name": "Flame Genie",
+			"items": {
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				},
+				"Uppercut": {
+					"name": "Uppercut"
+				},
+				"Hover": {
+					"name": "Hover"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"Gesture: Conjure": {
+					"name": "Gesture: Conjure"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Katana": {
+					"name": "Katana"
+				}
+			}
+		},
+		"Earth Visitor": {
+			"name": "Earth Visitor",
+			"items": {
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				}
+			}
+		},
+		"Flame Mote": {
+			"name": "Flame Mote",
+			"items": {
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Fire Absorption": {
+					"name": "Fire Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Flame Claw": {
+					"name": "Flame Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				}
+			}
+		},
+		"Young Dracolich": {
+			"name": "Young Dracolich",
+			"items": {
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Rotting Breath": {
+					"name": "Rotting Breath"
+				},
+				"Restless Dead": {
+					"name": "Restless Dead"
+				},
+				"Raking Talons": {
+					"name": "Raking Talons"
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bite": {
+					"name": "Bite"
+				}
+			}
+		},
+		"Death Mote": {
+			"name": "Death Mote",
+			"items": {
+				"Deathly Armor": {
+					"name": "Deathly Armor"
+				},
+				"Sap Life": {
+					"name": "Sap Life"
+				},
+				"Corruption Absorption": {
+					"name": "Corruption Absorption"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				}
+			}
+		},
+		"Conjuration of Illumination": {
+			"name": "Conjuration of Illumination",
+			"items": {
+				"Rune: Illumination": {
+					"name": "Rune: Illumination"
+				},
+				"Radiant Absorption": {
+					"name": "Radiant Absorption"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Illuminated Claw": {
+					"name": "Illuminated Claw"
+				},
+				"Gesture: Strike": {
+					"name": "Gesture: Strike"
+				},
+				"Gesture: Step": {
+					"name": "Gesture: Step"
+				}
+			}
+		},
+		"Illusion Mote": {
+			"name": "Illusion Mote",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Psychic Absorption": {
+					"name": "Psychic Absorption"
+				},
+				"Immutable Form": {
+					"name": "Immutable Form"
+				},
+				"Construct Armor": {
+					"name": "Construct Armor"
+				},
+				"Mind Claw": {
+					"name": "Mind Claw"
+				}
+			}
+		},
+		"Ossis Devil": {
+			"name": "Ossis Devil",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Stinger": {
+					"name": "Stinger",
+					"effects": {
+						"Poison Damage": {
+							"name": "Poison Damage",
+							"description": "<p>Add <strong>Poison</strong> damage to strikes made with this weapon. The bonus damage is equal to 2 for each <strong>Tier</strong> of this suffix.</p><h3 class=\"divider\">Playtest Notes</h3><p>This bonus currently applies as flat additional damage of the weapon's existing damage type. In a future update, this will deal damage as <strong>Poison</strong>, checked against the target's <strong>Poison</strong> resistance separately.</p>"
+						},
+						"Poison Conversion": {
+							"name": "Poison Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						}
+					}
+				},
+				"Claw": {
+					"name": "Claw"
+				},
+				"Bones": {
+					"name": "Bones"
+				}
+			}
+		},
+		"Soul Wanderer": {
+			"name": "Soul Wanderer",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Gesture: Sense": {
+					"name": "Gesture: Sense"
+				},
+				"Gesture: Ward": {
+					"name": "Gesture: Ward"
+				},
+				"Inspirator": {
+					"name": "Inspirator"
+				},
+				"Gesture: Cone": {
+					"name": "Gesture: Cone"
+				}
+			}
+		},
+		"Mutant Crayfish": {
+			"name": "Mutant Crayfish",
+			"items": {
+				"Thick Skin": {
+					"name": "Thick Skin"
+				},
+				"Restraining Claw": {
+					"name": "Restraining Claw"
+				},
+				"Natural Weapon Training": {
+					"name": "Natural Weapon Training"
+				},
+				"Paralyzing Tentacles": {
+					"name": "Paralyzing Tentacles"
+				},
+				"Pincer": {
+					"name": "Pincer"
+				},
+				"Natural Armor": {
+					"name": "Natural Armor"
+				}
+			}
+		},
+		"Dragon Turtle Wyrmling": {
+			"name": "Dragon Turtle Wyrmling",
+			"items": {
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Steam Breath": {
+					"name": "Steam Breath"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales"
+				}
+			}
+		},
+		"Devil Overlord": {
+			"name": "Devil Overlord",
+			"items": {
+				"Gloom Sight": {
+					"name": "Gloom Sight"
+				},
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Bite": {
+					"name": "Bite",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						},
+						"Poison Conversion": {
+							"name": "Poison Conversion",
+							"description": "<p>A portion of the damage dealt by strikes with this weapon is converted to <strong>Poison</strong> damage. The proportion converted depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> 33% of damage converted</p></li><li><p><strong>Tier 2:</strong> 66% of damage converted</p></li><li><p><strong>Tier 3:</strong> 100% of damage converted</p></li></ul><h3 class=\"divider\">Playtest Notes</h3><p>The infrastructure for splitting a single attack into multiple typed damage components does not yet exist. Until it does, all tiers of this affix convert 100% of the weapon's damage to <strong>Poison</strong>. Once multi-type damage is supported, lower tiers will convert only a fraction of the total damage, leaving the remainder as the weapon's original type.</p>"
+						},
+						"Keen": {
+							"name": "Keen",
+							"description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>"
+						}
+					}
+				},
+				"Claw": {
+					"name": "Claw",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Tail": {
+					"name": "Tail",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Mace": {
+					"name": "Mace",
+					"effects": {
+						"Potency": {
+							"name": "Potency",
+							"description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>"
+						}
+					}
+				},
+				"Demonic Armor": {
+					"name": "Demonic Armor"
+				},
+				"Gesture: Blast": {
+					"name": "Gesture: Blast"
+				}
+			}
+		},
+		"Gargoyle": {
+			"name": "Gargoyle",
+			"items": {
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Acid Absorption": {
+					"name": "Acid Absorption"
+				},
+				"False Appearance": {
+					"name": "False Appearance"
+				},
+				"Flight": {
+					"name": "Flight"
+				},
+				"Earthen Claw": {
+					"name": "Earthen Claw"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				}
+			}
+		},
+		"Ice Genie": {
+			"name": "Ice Genie",
+			"items": {
+				"Cold Absorption": {
+					"name": "Cold Absorption"
+				},
+				"Amorphous": {
+					"name": "Amorphous"
+				},
+				"Rune: Frost": {
+					"name": "Rune: Frost"
+				},
+				"Aqueous Transmission": {
+					"name": "Aqueous Transmission"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Gesture: Ray": {
+					"name": "Gesture: Ray"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				},
+				"Ice Walk": {
+					"name": "Ice Walk"
+				},
+				"Penetrating Throw": {
+					"name": "Penetrating Throw"
+				},
+				"Gesture: Conjure": {
+					"name": "Gesture: Conjure"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Elemental Armor": {
+					"name": "Elemental Armor"
+				},
+				"Trident": {
+					"name": "Trident"
+				}
+			}
+		},
+		"Lightning Giant": {
+			"name": "Lightning Giant",
+			"items": {
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Strong Grip": {
+					"name": "Strong Grip"
+				},
+				"Unshakeable Stance": {
+					"name": "Unshakeable Stance"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Heavy Weapon Proficiency": {
+					"name": "Heavy Weapon Proficiency"
+				},
+				"Rock": {
+					"name": "Rock"
+				},
+				"Greatsword": {
+					"name": "Greatsword"
+				},
+				"Scale Mail": {
+					"name": "Scale Mail"
+				}
+			}
+		},
+		"Conjuration of Soul": {
+			"name": "Conjuration of Soul",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Sap Soul": {
+					"name": "Sap Soul"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Inspirator": {
+					"name": "Inspirator"
+				}
+			}
+		},
+		"Young Dragon Turtle": {
+			"name": "Young Dragon Turtle",
+			"items": {
+				"Amphibious": {
+					"name": "Amphibious"
+				},
+				"Steam Breath": {
+					"name": "Steam Breath"
+				},
+				"Bite": {
+					"name": "Bite"
+				},
+				"Dragon Scales": {
+					"name": "Dragon Scales",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Conjuration of Oblivion": {
+			"name": "Conjuration of Oblivion",
+			"items": {
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Void Absorption": {
+					"name": "Void Absorption"
+				},
+				"Void Claw": {
+					"name": "Void Claw"
+				},
+				"Spiritual Armor": {
+					"name": "Spiritual Armor"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				}
+			}
+		}
+	}
+}

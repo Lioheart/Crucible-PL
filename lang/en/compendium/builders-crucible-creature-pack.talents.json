@@ -1,0 +1,202 @@
+{
+	"label": "Talents",
+	"folders": {
+		"Breath": "Breath",
+		"Form": "Form",
+		"Communication": "Communication",
+		"Senses": "Senses",
+		"Training": "Training",
+		"Resistances": "Resistances",
+		"Burts": "Burts",
+		"Movement": "Movement",
+		"Pulses": "Pulses",
+		"Attacks": "Attacks",
+		"Defenses": "Defenses"
+	},
+	"entries": {
+		"Diseasing Proboscis": {
+			"name": "Diseasing Proboscis"
+		},
+		"Paralyzing Breath": {
+			"name": "Paralyzing Breath"
+		},
+		"Wailing Moan": {
+			"name": "Wailing Moan"
+		},
+		"Teleport": {
+			"name": "Teleport"
+		},
+		"Two Headed": {
+			"name": "Two Headed"
+		},
+		"Magic Resistance": {
+			"name": "Magic Resistance"
+		},
+		"Cloud of Dust": {
+			"name": "Cloud of Dust"
+		},
+		"Animate Boulders": {
+			"name": "Animate Boulders"
+		},
+		"Paralyzing Tentacles": {
+			"name": "Paralyzing Tentacles"
+		},
+		"Steam Breath": {
+			"name": "Steam Breath"
+		},
+		"Slowing Breath": {
+			"name": "Slowing Breath"
+		},
+		"Eternal Suffering": {
+			"name": "Eternal Suffering"
+		},
+		"Life Sense": {
+			"name": "Life Sense"
+		},
+		"Lightning Breath": {
+			"name": "Lightning Breath"
+		},
+		"Flaming Death Burst": {
+			"name": "Flaming Death Burst"
+		},
+		"Heavy Weapon Master": {
+			"name": "Heavy Weapon Master"
+		},
+		"Grab": {
+			"name": "Grab"
+		},
+		"Petrifying Bite": {
+			"name": "Petrifying Bite"
+		},
+		"Phantasms": {
+			"name": "Phantasms"
+		},
+		"Critter Form": {
+			"name": "Critter Form"
+		},
+		"Repulsion Breath": {
+			"name": "Repulsion Breath"
+		},
+		"Flaming Death": {
+			"name": "Flaming Death"
+		},
+		"Frost Breath": {
+			"name": "Frost Breath"
+		},
+		"Negative Energy Pulse": {
+			"name": "Negative Energy Pulse"
+		},
+		"Poison Cloud": {
+			"name": "Poison Cloud"
+		},
+		"Horrifying Visage": {
+			"name": "Horrifying Visage"
+		},
+		"Siege Monster": {
+			"name": "Siege Monster"
+		},
+		"Tree Stride": {
+			"name": "Tree Stride"
+		},
+		"Drone": {
+			"name": "Drone"
+		},
+		"Heavy Weapon Expert": {
+			"name": "Heavy Weapon Expert"
+		},
+		"Acid Breath": {
+			"name": "Acid Breath"
+		},
+		"Rotting Breath": {
+			"name": "Rotting Breath"
+		},
+		"Ice Walk": {
+			"name": "Ice Walk"
+		},
+		"Acid Spray": {
+			"name": "Acid Spray"
+		},
+		"Limited Flight": {
+			"name": "Limited Flight"
+		},
+		"Smother": {
+			"name": "Smother"
+		},
+		"Shapeshift": {
+			"name": "Shapeshift"
+		},
+		"Sleep Breath": {
+			"name": "Sleep Breath"
+		},
+		"Light Sensitivity": {
+			"name": "Light Sensitivity",
+			"effects": {
+				"Sunlight Weakness": {
+					"name": "Sunlight Weakness",
+					"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+					"changes": {
+						"system.rollBonuses.banes.sunlightWeakness.number": 2,
+						"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+					}
+				}
+			}
+		},
+		"Constrict": {
+			"name": "Constrict"
+		},
+		"Telepathy": {
+			"name": "Telepathy"
+		},
+		"Flight": {
+			"name": "Flight"
+		},
+		"Weakening Breath": {
+			"name": "Weakening Breath"
+		},
+		"Earth Walk": {
+			"name": "Earth Walk"
+		},
+		"Blinding Spit": {
+			"name": "Blinding Spit"
+		},
+		"Goring Charge": {
+			"name": "Goring Charge"
+		},
+		"Spores": {
+			"name": "Spores"
+		},
+		"Poison Breath": {
+			"name": "Poison Breath"
+		},
+		"Rolling Bash": {
+			"name": "Rolling Bash"
+		},
+		"Hover": {
+			"name": "Hover"
+		},
+		"Squeeze": {
+			"name": "Squeeze"
+		},
+		"Amphibious": {
+			"name": "Amphibious"
+		},
+		"Shadow Breath": {
+			"name": "Shadow Breath"
+		},
+		"Divine Awareness": {
+			"name": "Divine Awareness"
+		},
+		"Restraining Claw": {
+			"name": "Restraining Claw"
+		},
+		"Flame Breath": {
+			"name": "Flame Breath"
+		},
+		"Stunning Screech": {
+			"name": "Stunning Screech"
+		},
+		"Petrifying Gaze": {
+			"name": "Petrifying Gaze"
+		}
+	}
+}

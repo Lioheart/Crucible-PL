@@ -1,0 +1,1030 @@
+{
+	"label": "Builders Pregens",
+	"entries": {
+		"Dwarf Monk": {
+			"name": "Dwarf Monk",
+			"items": {
+				"Second Wind": {
+					"name": "Second Wind"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Backstab": {
+					"name": "Backstab"
+				},
+				"Stealth Novice": {
+					"name": "Stealth Novice"
+				},
+				"Deception Novice": {
+					"name": "Deception Novice"
+				},
+				"Flying Kick": {
+					"name": "Flying Kick"
+				},
+				"Unarmed Blocking": {
+					"name": "Unarmed Blocking"
+				},
+				"Unarmed Combat Training": {
+					"name": "Unarmed Combat Training"
+				},
+				"Katar": {
+					"name": "Katar"
+				},
+				"fN9s5c7lWhsKtWst": {
+					"name": "Katar"
+				},
+				"Common Clothing": {
+					"name": "Common Clothing"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"rzSOPKrNmQTkcoIB": {
+					"name": "Rations"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Amulet of Nimbleness": {
+					"name": "Amulet of Nimbleness",
+					"effects": {
+						"Nimbleness": {
+							"name": "Nimbleness",
+							"description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"HE26twMsMqb2i52S": {
+					"name": "Healing Elixir"
+				}
+			}
+		},
+		"Human Fighter": {
+			"name": "Human Fighter",
+			"items": {
+				"Intercept": {
+					"name": "Intercept"
+				},
+				"Unarmed Combat Training": {
+					"name": "Unarmed Combat Training"
+				},
+				"Awareness Novice": {
+					"name": "Awareness Novice"
+				},
+				"Intimidation Novice": {
+					"name": "Intimidation Novice"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Ruthless Momentum": {
+					"name": "Ruthless Momentum"
+				},
+				"Bastard Sword": {
+					"name": "Bastard Sword"
+				},
+				"Ring Mail": {
+					"name": "Ring Mail"
+				},
+				"Ring of Reinforcement": {
+					"name": "Ring of Reinforcement",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"qIQYv0zkLxLVMIcQ": {
+					"name": "Rations"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"l5ouNF2IF1hlux1R": {
+					"name": "Healing Elixir"
+				}
+			}
+		},
+		"Orcish Druid": {
+			"name": "Orcish Druid",
+			"items": {
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Medicine Novice": {
+					"name": "Medicine Novice"
+				},
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Arcana Novice": {
+					"name": "Arcana Novice"
+				},
+				"Wildspeaker": {
+					"name": "Wildspeaker"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Club": {
+					"name": "Club"
+				},
+				"Heavy Hides": {
+					"name": "Heavy Hides"
+				},
+				"Ring of Reinforcement": {
+					"name": "Ring of Reinforcement",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Charm of Tenacity": {
+					"name": "Charm of Tenacity",
+					"effects": {
+						"Tenacity": {
+							"name": "Tenacity",
+							"description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"ok4jyKdJT1MtBQOy": {
+					"name": "Rations"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"Primordial Seed": {
+					"name": "Primordial Seed"
+				}
+			}
+		},
+		"Orcish Archer": {
+			"name": "Orcish Archer",
+			"items": {
+				"Projectile Weapon Training": {
+					"name": "Projectile Weapon Training"
+				},
+				"Precision Shot": {
+					"name": "Precision Shot"
+				},
+				"Athletics Novice": {
+					"name": "Athletics Novice"
+				},
+				"Wilderness Novice": {
+					"name": "Wilderness Novice"
+				},
+				"Twinned Shot": {
+					"name": "Twinned Shot"
+				},
+				"Flaming Arrow": {
+					"name": "Flaming Arrow"
+				},
+				"Thread the Needle": {
+					"name": "Thread the Needle"
+				},
+				"Longbow": {
+					"name": "Longbow"
+				},
+				"Battle Axe": {
+					"name": "Battle Axe"
+				},
+				"Leather Armor": {
+					"name": "Leather Armor"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"rUq8zQ6VtVaZEEp1": {
+					"name": "Rations"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				}
+			}
+		},
+		"Gnome Gunslinger": {
+			"name": "Gnome Gunslinger",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Mechanical Weapon Training": {
+					"name": "Mechanical Weapon Training"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Arcana Novice": {
+					"name": "Arcana Novice"
+				},
+				"Science Novice": {
+					"name": "Science Novice"
+				},
+				"Penetrating Shot": {
+					"name": "Penetrating Shot"
+				},
+				"Perspicacity": {
+					"name": "Perspicacity"
+				},
+				"Alchemy Novice": {
+					"name": "Alchemy Novice"
+				},
+				"Pistol": {
+					"name": "Pistol"
+				},
+				"Studded Leather Armor": {
+					"name": "Studded Leather Armor"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"Qh8UL7eFvQRYz623": {
+					"name": "Rations"
+				},
+				"Blast Flask": {
+					"name": "Blast Flask"
+				},
+				"Alchemist's Fire": {
+					"name": "Alchemist's Fire"
+				}
+			}
+		},
+		"Dwarf Fighter": {
+			"name": "Dwarf Fighter",
+			"items": {
+				"Second Wind": {
+					"name": "Second Wind"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"True Grit": {
+					"name": "True Grit"
+				},
+				"Athletics Novice": {
+					"name": "Athletics Novice"
+				},
+				"Intimidation Novice": {
+					"name": "Intimidation Novice"
+				},
+				"Bulwark": {
+					"name": "Bulwark"
+				},
+				"Testudo": {
+					"name": "Testudo"
+				},
+				"Shield Combat Training": {
+					"name": "Shield Combat Training"
+				},
+				"Kite Shield": {
+					"name": "Kite Shield"
+				},
+				"Battle Axe": {
+					"name": "Battle Axe"
+				},
+				"Ring Mail": {
+					"name": "Ring Mail"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"Jp33r9ANwqENpDRi": {
+					"name": "Rations"
+				},
+				"Charm of Tenacity": {
+					"name": "Charm of Tenacity",
+					"effects": {
+						"Tenacity": {
+							"name": "Tenacity",
+							"description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				}
+			}
+		},
+		"Halfling Cleric": {
+			"name": "Halfling Cleric",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Rune: Life": {
+					"name": "Rune: Life"
+				},
+				"Medicine Novice": {
+					"name": "Medicine Novice"
+				},
+				"Science Novice": {
+					"name": "Science Novice"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Diplomacy Novice": {
+					"name": "Diplomacy Novice"
+				},
+				"Rune: Control": {
+					"name": "Rune: Control"
+				},
+				"Holy Symbol": {
+					"name": "Holy Symbol"
+				},
+				"Padded Armor": {
+					"name": "Padded Armor"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"X3CVtoj9CwbKZSbJ": {
+					"name": "Rations"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"Focusing Pearl": {
+					"name": "Focusing Pearl",
+					"effects": {
+						"Focusing": {
+							"name": "Focusing",
+							"description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>"
+						}
+					}
+				},
+				"Periapt of Determination": {
+					"name": "Periapt of Determination",
+					"effects": {
+						"Determination": {
+							"name": "Determination",
+							"description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Elf Rogue": {
+			"name": "Elf Rogue",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Backstab": {
+					"name": "Backstab"
+				},
+				"Stealth Novice": {
+					"name": "Stealth Novice"
+				},
+				"Deception Novice": {
+					"name": "Deception Novice"
+				},
+				"Weak Points": {
+					"name": "Weak Points"
+				},
+				"Flash of Steel": {
+					"name": "Flash of Steel"
+				},
+				"Awareness Novice": {
+					"name": "Awareness Novice"
+				},
+				"Rapier": {
+					"name": "Rapier"
+				},
+				"Dagger": {
+					"name": "Dagger"
+				},
+				"Leather Armor": {
+					"name": "Leather Armor"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"MNXobGh9IsNNnGHu": {
+					"name": "Rations"
+				},
+				"Caustic Phial": {
+					"name": "Caustic Phial"
+				},
+				"Poison Vial": {
+					"name": "Poison Vial"
+				},
+				"Paralytic Vial": {
+					"name": "Paralytic Vial"
+				}
+			}
+		},
+		"Gnome Sorcerer": {
+			"name": "Gnome Sorcerer",
+			"items": {
+				"Rune: Lightning": {
+					"name": "Rune: Lightning"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Preparedness": {
+					"name": "Preparedness"
+				},
+				"Society Novice": {
+					"name": "Society Novice"
+				},
+				"Diplomacy Novice": {
+					"name": "Diplomacy Novice"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Gesture: Aspect": {
+					"name": "Gesture: Aspect"
+				},
+				"Gesture: Fan": {
+					"name": "Gesture: Fan"
+				},
+				"Dagger": {
+					"name": "Dagger"
+				},
+				"Padded Armor": {
+					"name": "Padded Armor"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"yXrNiuQbGSMi0GMi": {
+					"name": "Rations"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Gem Of Conjured Flame": {
+					"name": "Gem Of Conjured Flame"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Spellband": {
+					"name": "Spellband",
+					"effects": {
+						"Focusing": {
+							"name": "Focusing",
+							"description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>"
+						}
+					}
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				}
+			}
+		},
+		"Giantkin Paladin": {
+			"name": "Giantkin Paladin",
+			"items": {
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"True Grit": {
+					"name": "True Grit"
+				},
+				"Athletics Novice": {
+					"name": "Athletics Novice"
+				},
+				"Intimidation Novice": {
+					"name": "Intimidation Novice"
+				},
+				"Leg Sweep": {
+					"name": "Leg Sweep"
+				},
+				"Zealous Smite": {
+					"name": "Zealous Smite"
+				},
+				"Bulwark": {
+					"name": "Bulwark"
+				},
+				"War Hammer": {
+					"name": "War Hammer"
+				},
+				"Tower Shield": {
+					"name": "Tower Shield"
+				},
+				"Ring Mail": {
+					"name": "Ring Mail"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"2qJGMam6IowemxXh": {
+					"name": "Rations"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				}
+			}
+		},
+		"Elf Ranger": {
+			"name": "Elf Ranger",
+			"items": {
+				"Rune: Illusion": {
+					"name": "Rune: Illusion"
+				},
+				"Projectile Weapon Training": {
+					"name": "Projectile Weapon Training"
+				},
+				"Precision Shot": {
+					"name": "Precision Shot"
+				},
+				"Athletics Novice": {
+					"name": "Athletics Novice"
+				},
+				"Wilderness Novice": {
+					"name": "Wilderness Novice"
+				},
+				"Medicine Novice": {
+					"name": "Medicine Novice"
+				},
+				"Wildspeaker": {
+					"name": "Wildspeaker"
+				},
+				"Thread the Needle": {
+					"name": "Thread the Needle"
+				},
+				"Longbow": {
+					"name": "Longbow"
+				},
+				"Leather Armor": {
+					"name": "Leather Armor"
+				},
+				"Stiletto": {
+					"name": "Stiletto"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"Kj8o4Rjuggy2m297": {
+					"name": "Rations"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"r4wWT0KofzEp4akF": {
+					"name": "Healing Elixir"
+				}
+			}
+		},
+		"Halfling Bard": {
+			"name": "Halfling Bard",
+			"items": {
+				"Rune: Soul": {
+					"name": "Rune: Soul"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Deception Novice": {
+					"name": "Deception Novice"
+				},
+				"Performance Novice": {
+					"name": "Performance Novice"
+				},
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Gesture: Influence": {
+					"name": "Gesture: Influence"
+				},
+				"Clarify Intent": {
+					"name": "Clarify Intent"
+				},
+				"Lyre": {
+					"name": "Lyre"
+				},
+				"Padded Armor": {
+					"name": "Padded Armor"
+				},
+				"Spellband": {
+					"name": "Spellband",
+					"effects": {
+						"Focusing": {
+							"name": "Focusing",
+							"description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>"
+						}
+					}
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"tFb7f2x6v95CBcRm": {
+					"name": "Rations"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				}
+			}
+		},
+		"Devilkin Mage": {
+			"name": "Devilkin Mage",
+			"items": {
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Arcana Novice": {
+					"name": "Arcana Novice"
+				},
+				"Mechanical Weapon Training": {
+					"name": "Mechanical Weapon Training"
+				},
+				"Rune: Kinesis": {
+					"name": "Rune: Kinesis"
+				},
+				"Science Novice": {
+					"name": "Science Novice"
+				},
+				"Gesture: Arrow": {
+					"name": "Gesture: Arrow"
+				},
+				"Counterspell": {
+					"name": "Counterspell"
+				},
+				"Rune: Oblivion": {
+					"name": "Rune: Oblivion"
+				},
+				"Ice Staff": {
+					"name": "Ice Staff"
+				},
+				"Padded Armor": {
+					"name": "Padded Armor"
+				},
+				"Spellband": {
+					"name": "Spellband",
+					"effects": {
+						"Focusing": {
+							"name": "Focusing",
+							"description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>"
+						}
+					}
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"6wggsPFb5i3rDxyX": {
+					"name": "Rations"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Gem Of Conjured Flame": {
+					"name": "Gem Of Conjured Flame"
+				}
+			}
+		},
+		"Giantkin Barbarian": {
+			"name": "Giantkin Barbarian",
+			"items": {
+				"Rune: Earth": {
+					"name": "Rune: Earth"
+				},
+				"Heavy Weapon Training": {
+					"name": "Heavy Weapon Training"
+				},
+				"True Grit": {
+					"name": "True Grit"
+				},
+				"Athletics Novice": {
+					"name": "Athletics Novice"
+				},
+				"Intimidation Novice": {
+					"name": "Intimidation Novice"
+				},
+				"Swipe": {
+					"name": "Swipe"
+				},
+				"Bull Rush": {
+					"name": "Bull Rush"
+				},
+				"Iron Resolve": {
+					"name": "Iron Resolve"
+				},
+				"Greatsword": {
+					"name": "Greatsword"
+				},
+				"Heavy Hides": {
+					"name": "Heavy Hides"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"92xywNJa9DbI0WpR": {
+					"name": "Rations"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Charm of Tenacity": {
+					"name": "Charm of Tenacity",
+					"effects": {
+						"Tenacity": {
+							"name": "Tenacity",
+							"description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Ring of Reinforcement": {
+					"name": "Ring of Reinforcement",
+					"effects": {
+						"Reinforcement": {
+							"name": "Reinforcement",
+							"description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				}
+			}
+		},
+		"Devilkin Warlock": {
+			"name": "Devilkin Warlock",
+			"items": {
+				"Rune: Flame": {
+					"name": "Rune: Flame"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Preparedness": {
+					"name": "Preparedness"
+				},
+				"Society Novice": {
+					"name": "Society Novice"
+				},
+				"Diplomacy Novice": {
+					"name": "Diplomacy Novice"
+				},
+				"Rune: Death": {
+					"name": "Rune: Death"
+				},
+				"Gesture: Create": {
+					"name": "Gesture: Create"
+				},
+				"Talisman Weapon Training": {
+					"name": "Talisman Weapon Training"
+				},
+				"Skull Fetish": {
+					"name": "Skull Fetish"
+				},
+				"Leather Armor": {
+					"name": "Leather Armor"
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"RUzCYQ4IflWzPQOA": {
+					"name": "Rations"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Focusing Pearl": {
+					"name": "Focusing Pearl",
+					"effects": {
+						"Focusing": {
+							"name": "Focusing",
+							"description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>"
+						}
+					}
+				},
+				"Scroll of Conjuration": {
+					"name": "Scroll of Conjuration"
+				},
+				"eeoH0HXPKvJSxTzM": {
+					"name": "Scroll of Conjuration"
+				}
+			}
+		},
+		"Human Swashbuckler": {
+			"name": "Human Swashbuckler",
+			"items": {
+				"Intercept": {
+					"name": "Intercept"
+				},
+				"Light Weapon Training": {
+					"name": "Light Weapon Training"
+				},
+				"Deception Novice": {
+					"name": "Deception Novice"
+				},
+				"Inspire Heroism": {
+					"name": "Inspire Heroism"
+				},
+				"Performance Novice": {
+					"name": "Performance Novice"
+				},
+				"Dual Wield": {
+					"name": "Dual Wield"
+				},
+				"Weak Points": {
+					"name": "Weak Points"
+				},
+				"Scimitar": {
+					"name": "Scimitar"
+				},
+				"f3jLAk8dieGUqXNs": {
+					"name": "Scimitar"
+				},
+				"Studded Leather Armor": {
+					"name": "Studded Leather Armor"
+				},
+				"Ring of Evasion": {
+					"name": "Ring of Evasion",
+					"effects": {
+						"Evasion": {
+							"name": "Evasion",
+							"description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>"
+						}
+					}
+				},
+				"Rations": {
+					"name": "Rations"
+				},
+				"YMTqzXZYBCIydx0O": {
+					"name": "Rations"
+				},
+				"Torch": {
+					"name": "Torch"
+				},
+				"Wetskin": {
+					"name": "Wetskin"
+				},
+				"Healing Elixir": {
+					"name": "Healing Elixir"
+				},
+				"Intimidation Novice": {
+					"name": "Intimidation Novice"
+				}
+			}
+		}
+	}
+}

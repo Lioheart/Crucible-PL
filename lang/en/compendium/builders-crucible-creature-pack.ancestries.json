@@ -1,0 +1,20 @@
+{
+	"label": "Ancestries",
+	"entries": {
+		"Deep Dwarf": {
+			"name": "Deep Dwarf"
+		},
+		"Centaur": {
+			"name": "Centaur"
+		},
+		"Dark Elf": {
+			"name": "Dark Elf"
+		},
+		"Bugbear": {
+			"name": "Bugbear"
+		},
+		"Frogman": {
+			"name": "Frogman"
+		}
+	}
+}
