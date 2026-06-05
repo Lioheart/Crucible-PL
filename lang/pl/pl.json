@@ -46,6 +46,11 @@
         "Description": "Możesz opóźnić swoją akcję do późniejszego momentu rundy walki. Wybierz wartość inicjatywy z przedziału od 1 do wartości o jeden mniejszą od twojej aktualnej inicjatywy. Będziesz działać zgodnie z tą nową wartością inicjatywy, a jeśli inni uczestnicy walki mają taką samą wartość, będziesz działać przed nimi. Możesz opóźnić swoją turę tylko raz na rundę.",
         "Name": "Opóźnienie"
       },
+      "Fall": {
+        "Description": "Spadasz na powierzchnię znajdującą się pod tobą. Upadki z wysokości od 11 do 30 stóp wymagają rzutu na Refleks i zadają obrażenia obuchowe. Upadki z wysokości powyżej 30 stóp stanowią ciężkie zagrożenie wymagające rzutu na Wytrwałość. Jeśli rzut nie powiedzie się, postać staje się przewrócona.",
+        "Name": "Upadek",
+        "NameDistance": "Upadek ({distance} stóp)"
+      },
       "Investiture": {
         "Description": "Poświęć czas poza walką na dostrojenie się do wyposażonych przedmiotów magicznych, dzięki czemu przejdą one w stan „Zainwestowane”.",
         "Name": "Inwestowanie"
@@ -351,6 +356,8 @@
       "UnarmedTooltip": "Aby wykonać tę akcję, musisz być całkowicie nieuzbrojony.",
       "Unarmored": "Nieopancerzony",
       "UnarmoredTooltip": "Aby wykonać tę akcję, musisz być nieopancerzony.",
+      "Undetectable": "Niewykrywalny",
+      "UndetectableTooltip": "Ta akcja nie wywołuje zwykłego ostrzeżenia ani nie jest wykrywana przez magię, dzięki czemu podczas jej wykonywania zachowuje się ukrycie i niewidzialność.",
       "Vocal": "Wokalny",
       "VocalTooltip": "Ta akcja wymaga od użytkownika mówienia lub wydawania dźwięków.",
       "Weakened": "Osłabiony",
@@ -400,22 +407,15 @@
     },
     "WARNINGS": {
       "SPECIFIC": {
-        "BODY_BLOCK": {
-          "AlreadyConfirmed": "Atak na Ciebie został już potwierdzony i nie można go już zablokować.",
-          "InvalidOutcome": "Z Bloku ciałem możesz skorzystać tylko wtedy, gdy atak skierowany przeciwko tobie został zablokowany przez Pancerz lub Draśnięcie.",
-          "MeleeOnly": "Ze zdolności Bloku ciałem można skorzystać wyłącznie w odpowiedzi na nadchodzący atak wręcz."
-        },
         "DELAY": {
           "AlreadyDelayed": "W tej rundzie walki nie możesz już więcej opóźniać swojej tury.",
           "WrongTurn": "Z akcji Opóźnienie można skorzystać wyłącznie w swojej turze podczas walki."
         },
-        "INTERPOSE": {
-          "AllyMustBeTarget": "Wybrany sojusznik musi być celem ostatniego ataku.",
-          "AttackMissed": "Możesz użyć Wtrącenia tylko w przypadku ataku, który trafił lub drasnął twojego sojusznika.",
-          "RequiresStrike": "Wtrącenie wymaga, aby ostatnią akcją było uderzenie bronią.",
-          "SingleTarget": "Wtrącenie może być użyte tylko przeciwko atakowi skierowanemu na pojedynczy cel."
+        "REVIVE": {
+          "RequiresDead": "Ożywienie wymaga martwego celu."
         }
       },
+      "AlreadyConfirmed": "Akcja przeciwko Tobie została już zatwierdzona i nie można już na nią zareagować.",
       "AuraNoToken": "Nie możesz wykonać akcji typu „Aura” bez posiadania tokenu na scenie!",
       "BadStatus": "Nie możesz wykonać {action} w trakcie trwania {status}.",
       "CannotAffordCost": "{name} nie ma wystarczających {resource}, aby wykonać {action}!",
@@ -447,10 +447,18 @@
       "MissingSummonEffect": "Aby śledzić tymczasowe przywołanie utworzone przez akcję „{action}”, należy zdefiniować dane ActiveEffect",
       "MovementTooFar": "Planowana trasa ruchu przekracza maksymalny zasięg dozwolony w ramach tej akcji.",
       "MovementTooShort": "Zaplanowana trasa ruchu nie spełnia minimalnych wymagań dotyczących zasięgu dla tej akcji.",
+      "MustFollowMainhandStrike": "Akcję {action} możesz wykonać dopiero po wykonaniu podstawowej akcji Ataku bronią w ręce głównej.",
+      "MustFollowMeleeDefense": "Akcję {action} możesz wykonać dopiero po obronie ataku wręcz za pomocą {defense}.",
+      "MustFollowMeleeKill": "Akcję {action} możesz wykonać dopiero po obezwładnieniu wroga atakiem wręcz.",
+      "MustFollowRanged": "Akcję {action} można wykonać wyłącznie po ataku bronią dystansową.",
       "MustFollowStrike": "Akcję {action} można wykonać dopiero po wykonaniu podstawowej akcji Ataku",
+      "MustReactHit": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak, który trafił lub zadał draśnięcie.",
+      "MustReactSingleTarget": "Akcję {action} można wykonać wyłącznie w odpowiedzi na akcję, która miała tylko jeden cel.",
+      "MustReactStrike": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak bronią.",
       "MustReload": "Aby wykonać tę akcję, musisz przeładować broń.",
       "MustScaleDex": "Każda broń używana w tej akcji musi być skalowana na podstawie zręczności.",
       "MustScaleStrength": "Każda broń używana w tej akcji musi być skalowana na podstawie siły.",
+      "MustTargetTarget": "Akcja {action} może być zastosowana wyłącznie w odniesieniu do celu ostatniej akcji.",
       "NoAbility": "{actor} nie ma wartości {ability}, dlatego nie może wykonać {action}.",
       "NoConsumable": "Nie znaleziono żadnego materiału eksploatacyjnego dla akcji „{action}”",
       "NoConsumableUses": "Przedmiot eksploatacyjny „{item}” nie ma już żadnych pozostałych zastosowań dla akcji „{action}”",
@@ -482,6 +490,7 @@
     "DelayHint": "Wybierz wartość inicjatywy z przedziału od 1 do {maximum}, przy której chcesz wykonać akcję. Informacje na temat tego, jak opóźniona inicjatywa wpływa na rozstrzyganie remisów, znajdziesz pod adresem @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Inicjatywa i kolejność tur}.",
     "DelayLabel": "Opóźniona inicjatywa",
     "DelayTitle": "Opóźnienie tury",
+    "DragToHotbar": "Przeciągnij na pasek skrótów, aby utworzyć makro dla tej akcji.",
     "DurationRounds": "{value}R",
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Do zakończenia",
@@ -534,9 +543,11 @@
       "Entropy": "Entropiczny",
       "Exhausted": "Wyczerpany",
       "Exposed": "Odsłonięty",
+      "Falling": "Spadanie",
       "Fear": "Przerażony",
       "Flanked": "Oskrzydlenie",
       "FlankedDescription": "Otaczają cię liczni przeciwnicy, którzy otrzymują dodatkowe Korzyści do swoich ataków!",
+      "Flying": "Latanie",
       "Freezing": "Zamarzający",
       "Guarded": "Defensywa",
       "Hastened": "Przyśpieszony",
@@ -591,7 +602,10 @@
         "Elite": "Elitarny",
         "Minion": "Sługus",
         "Normal": "Normalny"
-      }
+      },
+      "NoArchetype": "Brak archetypu",
+      "NoTaxonomy": "Brak taksonomii",
+      "ThreatLevelSpecific": "Poziom zagrożenia {threat}"
     },
     "CREATION": {
       "AbandonContent": "Zrezygnować z tworzenia postaci i zamknąć kreator?",
@@ -654,7 +668,7 @@
           "base": "Zaangażowanie podstawowe",
           "label": "Zaangażowanie",
           "labelShort": "Angaż",
-          "tooltip": "Liczba zaangażowanych wrogów<br>(Rozmiar - 2) + Premia zaangażowania"
+          "tooltip": "Liczba przeciwników, którzy są zaangażowani<br>(Rozmiar – 2) + Premia zaangażowania"
         },
         "engagementBonus": {
           "hint": "Dodatkowy modyfikator do podstawowego zaangażowania.",
@@ -918,7 +932,10 @@
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Oczekiwany poziom",
+    "Important": "Ważny",
     "Level": "Poziom",
+    "MarkImportant": "Oznacz jako ważny",
+    "MarkNotImportant": "Oznacz jako nieistotny",
     "MilestoneAward": "Nagroda za postępy w realizacji kamieni milowych ",
     "MilestoneTooltip": "{progress} w realizacji {required} kamieni milowych do następnego poziomu",
     "Progress": "Postępy w realizacji kamieni milowych"
@@ -932,11 +949,11 @@
         "label": "Wartości atrybutów",
         "primary": {
           "hint": "Wybierz podstawowy atrybut, którego wartość początkowa wynosi 3.",
-          "label": "Podstawowy atrybut"
+          "label": "Podstawowy"
         },
         "secondary": {
           "hint": "Wybierz drugorzędny atrybut, której wartość początkowa wynosi 2.",
-          "label": "Drugorzędny atrybut"
+          "label": "Drugorzędny"
         }
       },
       "description": {
@@ -1086,6 +1103,7 @@
     "RESULT_TYPES": {
       "Armor": "Pancerz",
       "Block": "Blok",
+      "CriticalHit": "Krytyk!",
       "Dodge": "Unik",
       "Glance": "Draśnięcie",
       "Hit": "Trafienie",
@@ -1398,11 +1416,13 @@
     "Dodge": "Unik",
     "Fortitude": "Wytrwałość",
     "Madness": "Próg mobilizacji",
+    "MadnessShort": "Mobilizacji",
     "Parry": "Parowanie",
     "Physical": "Fizyczne",
     "Reflex": "Refleks",
     "Willpower": "Wola",
-    "Wounds": "Próg leczenia"
+    "Wounds": "Próg leczenia",
+    "WoundsShort": "Uzdrawianie"
   },
   "DETECTION_MODES": {
     "Echolocation": "Echolokacja",
@@ -1426,6 +1446,7 @@
     },
     "GROUP_CHECK": {
       "Title": "Grupowy test umiejętności",
+      "TitleSpecific": "Grupowy test umiejętności {skill}",
       "DialogTitle": "Test na {skill}: {name}",
       "NoUserForActor": "Nie znaleziono żadnego aktywnego użytkownika dla: {name}",
       "STATUSES": {
@@ -1447,6 +1468,7 @@
       "AnyActorHint": "Wybierz dowolnych aktorów ze świata.",
       "ChooseTarget": "Wybierz cel",
       "ClearRequest": "Wyczyść prośbę",
+      "GroupCheck": "Grupowy test",
       "Request": "Prośba",
       "RequestRolls": "Prośba o rzuty",
       "SpecificActors": "Konkretni aktorzy",
@@ -1483,16 +1505,19 @@
     "DCAdditionalPassive": "{dcLabel}, Pasywny",
     "DCAdditionalGroup": "{dcLabel}, Grupowy",
     "DCSpecific": "ST {dc}",
+    "DCTargetSpecific": "{skill} ST celu",
     "DiceTotal": "Suma oczek",
     "Enchantment": "Zaklinanie",
     "EnchantmentBonus": "Premia zaklinania",
     "Healing": "Uzdrawianie",
+    "ReplayAnimation": "Ponownie odtwórz animację",
     "Reverse": "Wycofaj",
     "Roll": "Rzut",
     "RollTotal": "Suma rzutu",
     "SetDifficulty": "Ustaw poziom trudności",
     "Skill": "Umiejętność",
-    "SkillBonus": "Premia umiejętności"
+    "SkillBonus": "Premia umiejętności",
+    "UnknownScore": "???"
   },
   "FLANKED_EFFECT": {
     "FIELDS": {
@@ -1519,7 +1544,12 @@
   "HAZARD": {
     "DefaultActor": "Środowisko",
     "DefaultName": "Zagrożenie środowiskowe",
+    "Falling": "Spadanie",
     "Hazard": "Zagrożenie",
+    "Parenthetical": "{label} ({tags})",
+    "Rank": "Zagrożenie {danger}",
+    "TooltipDamage": "{rank} kontra {defense} zadaje {damage} obrażeń do {resource}",
+    "TooltipRestoration": "{rank} kontra {defense} odzyskuje {resource}",
     "UseHazard": "Użycie zagrożenia",
     "WindowTitle": "Zagrożenie: {name}",
     "CONFIG": {
@@ -1547,14 +1577,17 @@
       "Create": "Utwórz przedmiot",
       "Delete": "Usuń przedmiot",
       "Drop": "Upuść broń",
+      "DropDetail": "Upuść {item}",
       "Edit": "Edytuj przedmiot",
       "Equip": "Wyposaż {typeLabel}",
       "EquipDetail": "Wyposaż w {item}",
+      "Read": "Przeczytaj {item}",
       "Recover": "Odzyskaj {typeLabel}",
       "RecoverAllContent": "Podnieść wszystkie przedmioty upuszczone przez {actor}?",
       "RecoverAllTitle": "Odzyskaj upuszczone przedmioty",
       "RecoverDetail": "Odzyskaj upuszczony {item}",
-      "UnEquip": "Zdejmij wyposażenie {typeLabel}"
+      "UnEquip": "Zdejmij wyposażenie {typeLabel}",
+      "UnEquipDetail": "Zdjęto {item}"
     },
     "COMPOSED_NAME": {
       "Prefix": "{name} {prefixes}",
@@ -1637,6 +1670,7 @@
       "Equipment": "Szczegóły wyposażenia",
       "EquipmentDrop": "Dodaj wyposażenie początkowe, przeciągając i upuszczając przedmioty w tym obszarze.",
       "EquipmentRemove": "Usuń wyposażenie",
+      "EquipmentScale": "Automatyczne dostosowywanie jakości do poziomu postaci",
       "ScaledPrice": "Przeliczona cena",
       "Spellcraft": "Czaroznastwo",
       "SpellDrop": "Dodaj ikoniczne zaklęcie, przeciągając i upuszczając przedmiot Zaklęcia w tym obszarze.",
@@ -1659,10 +1693,15 @@
       "Talents": "Talenty"
     },
     "WARNINGS": {
+      "CombineDifferent": "{item} nie można połączyć z {target}, ponieważ przedmioty te nie są identyczne.",
+      "CombineEquipped": "{item} nie można połączyć w stos, gdy jest wyposażony.",
+      "CombineInvalidTarget": "Nie można połączyć {item}: przedmiot docelowy musi być innym elementem należącym do tego samego aktora.",
+      "CombineQuantity": "Nie można połączyć {quantity} sztuk {item}, który może pomieścić {available} sztuk w jednym stosie.",
       "HookAlreadyExists": "{item} zawiera już deklarację funkcji dla uchwytu „{hook}”.",
       "InvalidIdentifier": "Nieprawidłowa wartość identyfikatora Crucible „{id}”, która musi być alfanumeryczna i nie może zawierać spacji ani znaków specjalnych",
       "NotTalent": "Upuszczony dokument musi być talentem.",
       "QualityReductionBlocked": "Nie można obniżyć jakości {name}, ponieważ zawiera on afiksy wymagające obecnej pojemności.",
+      "SplitQuantity": "Nie można rozdzielić {quantity} z {item}, która zawiera stos {available}.",
       "UniqueWithAffixes": "Nie można oznaczyć {name} jako unikalnego, ponieważ zawiera afiksy. Najpierw usuń wszystkie afiksy.",
       "LootDropError": "Nie udało się utworzyć łupu \"{name}\". {reason}"
     },
@@ -1910,7 +1949,9 @@
     "CruciblePartyHint": "Skonfiguruj, który aktor grupy jest grupą głównych bohaterów.",
     "CruciblePartyLabel": "Główna grupa poszukiwaczy przygód",
     "EnableVFXHint": "Po zatwierdzeniu akcji wyświetl animacje efektów wizualnych na płótnie.",
-    "EnableVFXName": "Włącz efekty wizualne akcji"
+    "EnableVFXName": "Włącz efekty wizualne akcji",
+    "FlexibleAncestryAbilitiesHint": "Po włączeniu tej opcji bohaterowie mogą podczas tworzenia postaci przydzielić premie do głównych i dodatkowych atrybutów swoich pochodzeń na dowolne atrybuty. Pochodzenia nadal zapewniają te same premie początkowe w wysokości +2 i +1; elastyczność dotyczy jedynie wyboru atrybutów, na które są one przyznawane.",
+    "FlexibleAncestryAbilitiesName": "Elastyczne premie Atrybutów Pochodzenia"
   },
   "SKILL": {
     "CATEGORY": {
@@ -2188,6 +2229,8 @@
       "PurchaseNodeReverse": "Usunąć punkt wydany na pusty węzeł \"{node}\"?",
       "PurchaseNodeTitle": "Nabyć węzeł Talentu?",
       "PurchaseTitle": "Nabyty talent: {name}",
+      "Remove": "<p>Usunąć talent <strong>{name}</strong>, przywracając 1 Punkt Talentu?</p>",
+      "RemoveTitle": "Usuń talent: {name}",
       "Reset": "Resetuj"
     },
     "FIELDS": {
@@ -2293,10 +2336,14 @@
       "RequiresRuneGesture": "Aby użyć Gestu, musisz znać Runę magii.",
       "RequiresRuneInflection": "Aby użyć Fleksji, musisz znać Runę magii."
     },
+    "Banned": "Zakazany",
+    "Empty": "Pusty",
     "GrantsSpells": "<strong>Zaklęcia ikoniczne:</strong>: {name} przyznaje {spells} miejsc na zaklęcia ikoniczne.",
+    "Locked": "Zablokowany",
     "NodeSpecific": "Węzeł typu {nodeType}",
     "PointsAvailable": "Dostępne punkty",
-    "Prerequisites": "Wymagania wstępne"
+    "Prerequisites": "Wymagania wstępne",
+    "Tier": "Stopień {tier}"
   },
   "TAXONOMY": {
     "CATEGORIES": {
@@ -2335,6 +2382,10 @@
         "temperature.hint": "Temperatura ciała stworzeń należących do tej taksonomii. Jeśli pole pozostanie puste, domyślnie zostanie przyjęta temperatura wybranej kategorii stworzeń.",
         "temperature.label": "Temperatura ciała"
       },
+      "equipment": {
+        "hint": "Skonfiguruj wyposażenie, które automatycznie posiadają stworzenia z tej taksonomii.",
+        "label": "Przyznane wyposażenie"
+      },
       "identifier": {
         "hint": "Identyfikator ciągu znaków używany do jednoznacznego odwoływania się do tej taksonomii w tagach, akcjach lub innych elementach interfejsu użytkownika. Identyfikator ten musi być alfanumeryczny, bez spacji i znaków specjalnych.",
         "label": "Identyfikator"
@@ -2371,6 +2422,7 @@
       "TemperatureBlank": "Wartość domyślna ({temperature})"
     },
     "WARNINGS": {
+      "EquipmentNotNatural": "Taksonomia \"{name}\" nie może korzystać z ekwipunku, który nie posiada tagu \"naturalny\".",
       "InvalidAbilities": "Suma początkowych wartości atrybutów musi wynosić 12. Obecnie {sum}",
       "InvalidResistances": "Suma współczynników skalowania odporności musi wynosić zero. Obecnie {sum}"
     }
@@ -2390,6 +2442,12 @@
     },
     "MOVEMENT": {
       "ACTIONS": {
+        "blink.label": "Mignięcie",
+        "displace.label": "Teleportacja",
+        "burrow": {
+          "description": "Wykop tunel w ziemi lub miękkim podłożu na odległość równą połowie twojej wartości Biegu na akcję, przechodząc pod ścianami i swobodnie przez inne stworzenia. Tylko stworzenia posiadające wyraźnie określoną szybkość kopania mogą korzystać z tego trybu ruchu.",
+          "label": "Przekopywanie"
+        },
         "climb": {
           "description": "Wspinaj się lub schodź po powierzchni, pokonując odległość lub wysokość równą połowie swojej wartości atrybutu Bieg na Akcję. Stworzenia posiadające wyraźną szybkość wspinania się używają tej szybkości zamiast połowy swojej wartości Bieg.",
           "label": "Wspinaczka"
@@ -2397,6 +2455,10 @@
         "crawl": {
           "description": "Poruszaj się w pozycji leżącej na odległość równą połowie Twojej wartości atrybutu Bieg na każdą Akcję.",
           "label": "Czołganie się"
+        },
+        "fall": {
+          "description": "Opadanie grawitacyjne w kierunku podłoża. Koszt ruchu wynosi zawsze zero.",
+          "label": "Upadek"
         },
         "fast": {
           "label": "Pośpieszny"
@@ -2411,6 +2473,10 @@
         },
         "normal": {
           "label": "Normalny"
+        },
+        "push": {
+          "description": "Wymuszone przemieszczenie spowodowane czynnikiem zewnętrznym, np. odrzutem. Koszt ruchu wynosi zawsze zero.",
+          "label": "Odepchnięcie"
         },
         "slow": {
           "label": "Ostrożny"
