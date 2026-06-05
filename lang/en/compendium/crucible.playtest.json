@@ -78,7 +78,7 @@
                             "actions": {
                                 "Tusk Charge": {
                                     "name": "Tusk Charge",
-                                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked Prone.</p>",
+                                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked @Condition[prone].</p>",
                                     "effects": [
                                         {
                                             "name": "Tusk Charge"
@@ -109,7 +109,7 @@
                         },
                         "Pack Hunter": {
                             "name": "Pack Hunter",
-                            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
+                            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a @Condition[flanked] enemy.</p>"
                         }
                     },
                     "archetype": {
@@ -147,7 +147,7 @@
                             "actions": {
                                 "Leg Sweep": {
                                     "name": "Leg Sweep",
-                                    "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                                    "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target @Condition[prone].</p>",
                                     "effects": [
                                         {
                                             "name": "Leg Sweep"
@@ -158,7 +158,7 @@
                         },
                         "Concussive Blows": {
                             "name": "Concussive Blows",
-                            "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the <strong>Staggered</strong> condition on Critical Hits which deal damage to Health.</p>\n<p>The Staggered effect lasts for 1 round and reduces your target's maximum Action by 1.</p>"
+                            "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the @Condition[staggered] condition on Critical Hits which deal damage to Health.</p><p>The @Condition[staggered] effect lasts for 1 round and reduces your target's maximum Action by 2.</p>"
                         },
                         "Strong Grip": {
                             "name": "Strong Grip",
@@ -231,7 +231,7 @@
                         },
                         "Skirmisher": {
                             "name": "Skirmisher",
-                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you.</p>"
+                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any @Action[default reactiveStrike] against you.</p>"
                         },
                         "Flurry": {
                             "name": "Flurry",
@@ -249,7 +249,7 @@
                             "actions": {
                                 "Hamstring": {
                                     "name": "Hamstring",
-                                    "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the <strong>Slowed</strong> condition for <strong>3 Rounds</strong>.</p>",
+                                    "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the @Condition[slowed] condition for <strong>3 Rounds</strong>.</p>",
                                     "effects": [
                                         {
                                             "name": "Hamstring"
@@ -274,7 +274,7 @@
                             "actions": {
                                 "Offhand Strike": {
                                     "name": "Offhand Strike",
-                                    "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                                    "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost follow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
                                 }
                             }
                         },
@@ -332,7 +332,7 @@
                         },
                         "Inflection: Push": {
                             "name": "Inflection: Push",
-                            "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 4 feet away from the spellcaster if that destination is unoccupied.</p>"
+                            "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the <strong>Push</strong> inflection are forcibly moved a distance away from the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
                         },
                         "Talisman Weapon Training": {
                             "name": "Talisman Weapon Training",
@@ -346,12 +346,12 @@
                         },
                         "Intercept": {
                             "name": "Intercept",
-                            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+                            "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
                             "actions": {
                                 "Intercept": {
                                     "name": "Intercept",
                                     "condition": "An enemy moves into or through your Engagement radius.",
-                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
+                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
                                 }
                             }
                         },
@@ -371,7 +371,7 @@
                         },
                         "Rune: Soul": {
                             "name": "Rune: Soul",
-                            "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
+                            "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong>. In special circumstances it may be used to inflict <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
                             "actions": {
                                 "Evoke": {
                                     "name": "Evoke",
@@ -430,7 +430,13 @@
                         },
                         "Evasive Shot": {
                             "name": "Evasive Shot",
-                            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain half your <strong>Stride</strong> in additional free movement.</p>"
+                            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks.</p>",
+                            "actions": {
+                                "Evasive Shot": {
+                                    "name": "Evasive Shot",
+                                    "description": "<p>After performing a ranged weapon attack, you may move up to half your <strong>Stride</strong> for free.</p>"
+                                }
+                            }
                         },
                         "Projectile Weapon Training": {
                             "name": "Projectile Weapon Training",
@@ -479,7 +485,7 @@
                             "actions": {
                                 "Leg Sweep": {
                                     "name": "Leg Sweep",
-                                    "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                                    "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target @Condition[prone].</p>",
                                     "effects": [
                                         {
                                             "name": "Leg Sweep"
@@ -553,11 +559,11 @@
                         },
                         "Lesser Regeneration": {
                             "name": "Lesser Regeneration",
-                            "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
+                            "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not @Condition[weakened] you gain <strong>+1 Health</strong>.</p>"
                         },
                         "Bloodletter": {
                             "name": "Bloodletter",
-                            "description": "<p>Your precision with weapons which deal Slashing or Piercing damage can cause the Bleeding condition on Critical Hits which deal damage to Health.</p><p>The Bleeding effect lasts for 1 round and deals your Dexterity score as additional damage to Health.</p>"
+                            "description": "<p>Your precision with weapons which deal Slashing or Piercing damage can cause the @Condition[bleeding] condition on Critical Hits which deal damage to Health.</p><p>The @Condition[bleeding] effect lasts for 3 rounds and deals your Dexterity score as additional damage to Health.</p>"
                         },
                         "Ferocious Leap": {
                             "name": "Ferocious Leap",
@@ -580,7 +586,7 @@
                                 "Berserker Rage": {
                                     "name": "Berserker Rage",
                                     "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
-                                    "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                                    "description": "You become @Condition[enraged]. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
                                     "effects": [
                                         {
                                             "name": "Berserker Rage"
@@ -675,7 +681,7 @@
                         },
                         "Inflection: Pull": {
                             "name": "Inflection: Pull",
-                            "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the Pull inflection move 1 space closer towards the spellcaster if that destination space is unoccupied.</p>"
+                            "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the <strong>Pull</strong> inflection move are forcibly moved a distance towards the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
                         },
                         "Rune: Oblivion": {
                             "name": "Rune: Oblivion",
@@ -891,7 +897,7 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>1 Round</strong> and deals your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                         },
                         "Gesture: Pulse": {
                             "name": "Gesture: Pulse",
@@ -903,7 +909,7 @@
                         },
                         "Strategic Repositioning": {
                             "name": "Strategic Repositioning",
-                            "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
+                            "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not @Condition[unaware], you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
                         },
                         "Lightbringer": {
                             "name": "Lightbringer",
@@ -919,7 +925,7 @@
                         },
                         "Iramancer": {
                             "name": "Iramancer",
-                            "description": "Your feats of arcana are fueled by anger. While Enraged you may still spend Focus and you deal 2 additional damage to all spell attacks."
+                            "description": "<p>Your feats of arcana are fueled by anger. While @Condition[enraged] you may still spend <strong>Focus</strong> and you deal 2 additional damage to all spell attacks.</p>"
                         },
                         "Counterspell": {
                             "name": "Counterspell",
@@ -1004,7 +1010,7 @@
                                 "Counter Riposte": {
                                     "name": "Counter Riposte",
                                     "condition": "You Parry an incoming melee Strike.",
-                                    "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
+                                    "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which is <strong>Accurate</strong>.</p>"
                                 }
                             }
                         },
@@ -1015,13 +1021,13 @@
                                 "Ruthless Momentum": {
                                     "name": "Ruthless Momentum",
                                     "condition": "You incapacitate an enemy with a melee attack.",
-                                    "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
+                                    "description": "<p>After defeating an enemy, you immediately move up to your <strong>Stride </strong>and <strong>Strike</strong> another foe that you pass next to or end your movement adjacent to.</p>"
                                 }
                             }
                         },
                         "Lesser Regeneration": {
                             "name": "Lesser Regeneration",
-                            "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
+                            "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not @Condition[weakened] you gain <strong>+1 Health</strong>.</p>"
                         },
                         "Glaive": {
                             "name": "Glaive",
@@ -1069,7 +1075,7 @@
                             "actions": {
                                 "Sundering Strike": {
                                     "name": "Sundering Strike",
-                                    "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                                    "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                                     "effects": [
                                         {
                                             "name": "Sundered Armor"
@@ -1080,7 +1086,7 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>1 Round</strong> and deals your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                         },
                         "Gesture: Blast": {
                             "name": "Gesture: Blast",
@@ -1163,7 +1169,7 @@
                         },
                         "Bloodletter": {
                             "name": "Bloodletter",
-                            "description": "<p>Your precision with weapons which deal Slashing or Piercing damage can cause the Bleeding condition on Critical Hits which deal damage to Health.</p><p>The Bleeding effect lasts for 1 round and deals your Dexterity score as additional damage to Health.</p>"
+                            "description": "<p>Your precision with weapons which deal Slashing or Piercing damage can cause the @Condition[bleeding] condition on Critical Hits which deal damage to Health.</p><p>The @Condition[bleeding] effect lasts for 3 rounds and deals your Dexterity score as additional damage to Health.</p>"
                         },
                         "Counter Evade": {
                             "name": "Counter Evade",
@@ -1197,7 +1203,7 @@
                         },
                         "Skirmisher": {
                             "name": "Skirmisher",
-                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you.</p>"
+                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any @Action[default reactiveStrike] against you.</p>"
                         },
                         "Impetus": {
                             "name": "Impetus",
@@ -1215,12 +1221,12 @@
                         },
                         "Intercept": {
                             "name": "Intercept",
-                            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+                            "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
                             "actions": {
                                 "Intercept": {
                                     "name": "Intercept",
                                     "condition": "An enemy moves into or through your Engagement radius.",
-                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
+                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
                                 }
                             }
                         },
@@ -1293,7 +1299,7 @@
                             "actions": {
                                 "Flash of Steel": {
                                     "name": "Flash of Steel",
-                                    "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes <strong>Exposed</strong> until the start of their next Turn.</p>",
+                                    "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes @Condition[exposed] until the start of their next Turn.</p>",
                                     "effects": [
                                         {
                                             "name": "Flash of Steel"
@@ -1315,12 +1321,12 @@
                         },
                         "Assassin": {
                             "name": "Assassin",
-                            "description": "<p>You specialize in bringing death the the unwary. Any Strike or Spell attack against an <strong>Unaware</strong> target becomes <strong>Deadly</strong>.</p><p>An Unaware creature hit by your attack may not alert its allies until its own turn in Combat.</p>",
+                            "description": "<p>You specialize in bringing death the the unwary. Any <strong>Strike</strong> or <strong>Spell</strong> attack against an @Condition[unaware] target becomes <strong>Deadly</strong>.</p><p>An <strong>Unaware</strong> creature hit by your attack may not alert its allies until its own turn in <strong>Combat</strong>.</p>",
                             "actions": {
                                 "Mark For Death": {
                                     "name": "Mark For Death",
                                     "condition": "You are unobserved.",
-                                    "description": "You spend 1 minute studying a creature. Perform a Knowledge Test about your target. If successful, you learn all damage types against which the target is Vulnerable. Your minimum Initiative during the first round of Combat becomes one greater than the Initiative of your marked target.</p>"
+                                    "description": "<p>You spend 1 minute studying a creature. Perform a Knowledge Test about your target. If successful, you learn all damage types against which the target is Vulnerable. Your minimum Initiative during the first round of Combat becomes one greater than the Initiative of your marked target.</p><h3 class=\"divider\">Playtest Notes</h3><p>This action is not yet automated.</p>"
                                 }
                             }
                         },
@@ -1360,7 +1366,7 @@
                                 "Backstab": {
                                     "name": "Backstab",
                                     "condition": "You are attacking a target with the Flanked condition.",
-                                    "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
+                                    "description": "<p>You <strong>Strike</strong> with your weapon against a @Condition[flanked] target, dealing <strong>Deadly</strong> damage.</p>"
                                 }
                             }
                         }
@@ -1403,7 +1409,7 @@
                             "actions": {
                                 "Second Wind": {
                                     "name": "Second Wind",
-                                    "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
+                                    "description": "<p>You focus your energy and recover your <strong>Toughness</strong> score in <strong>Health</strong>.</p>"
                                 }
                             }
                         },
@@ -1469,7 +1475,7 @@
                         },
                         "Testudo": {
                             "name": "Testudo",
-                            "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the <strong>Guarded</strong> condition against <strong>Weapon Attacks</strong> while wielding a shield."
+                            "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the @Condition[guarded] condition against <strong>Weapon Attacks</strong> while wielding a shield."
                         },
                         "Hold Fast": {
                             "name": "Hold Fast",
@@ -1503,12 +1509,12 @@
                         },
                         "Intercept": {
                             "name": "Intercept",
-                            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+                            "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
                             "actions": {
                                 "Intercept": {
                                     "name": "Intercept",
                                     "condition": "An enemy moves into or through your Engagement radius.",
-                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
+                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
                                 }
                             }
                         },
@@ -1532,7 +1538,7 @@
                         },
                         "Armored Shell": {
                             "name": "Armored Shell",
-                            "description": "<p>You are expert in using your armor in combination with your shield to create a defensive shell.</p><p>When you have the <strong>Guarded</strong> condition and have a <strong>Heavy Shield</strong> equipped, your base <strong>Armor</strong> defense is reduced by half but your <strong>Block</strong> defense increases by a corresponding amount.</p>"
+                            "description": "<p>You are expert in using your armor in combination with your shield to create a defensive shell.</p><p>When you have the @Condition[guarded] condition and have a <strong>Heavy Shield</strong> equipped, your base <strong>Armor</strong> defense is reduced by half but your <strong>Block</strong> defense increases by a corresponding amount.</p>"
                         },
                         "Shield Combat Training": {
                             "name": "Shield Combat Training",
@@ -1641,12 +1647,6 @@
                     "name": "Eliorwen",
                     "tokenName": "Eliorwen",
                     "items": {
-                        "Longbow": {
-                            "name": "Longbow",
-                            "description": {
-                                "public": "<p>A tall, self-bow often taller than the archer who draws it, the longbow requires great strength and years of practice to master, sending arrows with deadly force across the battlefield.</p>"
-                            }
-                        },
                         "Scimitar": {
                             "name": "Scimitar",
                             "description": {
@@ -1665,7 +1665,7 @@
                             "actions": {
                                 "Pinning Shot": {
                                     "name": "Pinning Shot",
-                                    "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes <strong>Restrained</strong> until the end of their next Turn.</p>",
+                                    "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes @Condition[restrained] until the end of their next Turn.</p>",
                                     "effects": [
                                         {
                                             "name": "Pinning Shot"
@@ -1688,7 +1688,7 @@
                             "actions": {
                                 "Mark Prey": {
                                     "name": "Mark Prey",
-                                    "description": "<p>You Strike using a special shot. If your attack is successful the target is <strong>Exposed</strong> for the next 3 Turns.</p>",
+                                    "description": "<p>You Strike using a special shot. If your attack is successful the target is @Condition[exposed] for the next 3 Turns.</p>",
                                     "effects": [
                                         {
                                             "name": "Marked"
@@ -1699,7 +1699,13 @@
                         },
                         "Evasive Shot": {
                             "name": "Evasive Shot",
-                            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain half your <strong>Stride</strong> in additional free movement.</p>"
+                            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks.</p>",
+                            "actions": {
+                                "Evasive Shot": {
+                                    "name": "Evasive Shot",
+                                    "description": "<p>After performing a ranged weapon attack, you may move up to half your <strong>Stride</strong> for free.</p>"
+                                }
+                            }
                         },
                         "Gesture: Arrow": {
                             "name": "Gesture: Arrow",
@@ -1735,7 +1741,7 @@
                             "actions": {
                                 "Twinned Shot": {
                                     "name": "Twinned Shot",
-                                    "description": "<p>Using this <strong>Difficult</strong> technique, you fire two projectiles at once making two <strong>Strike</strong> attacks against the same target.</p>"
+                                    "description": "<p>You concentrate to nock two projectiles at once making two <strong>Strike</strong> simultaneous attacks against the same single target.</p>"
                                 }
                             }
                         },
@@ -1749,7 +1755,7 @@
                         },
                         "Skirmisher": {
                             "name": "Skirmisher",
-                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you.</p>"
+                            "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any @Action[default reactiveStrike] against you.</p>"
                         },
                         "Diversionist": {
                             "name": "Diversionist",
@@ -1763,7 +1769,7 @@
                         },
                         "Surgeweaver": {
                             "name": "Surgeweaver",
-                            "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                         },
                         "Awareness Novice": {
                             "name": "Awareness Novice",
@@ -1781,7 +1787,7 @@
                         },
                         "Subtle Extrication": {
                             "name": "Subtle Extrication",
-                            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Disengagement Attack</strong> against you is performed without the 2 Boons that would ordinarily apply to such an attack.</p>"
+                            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Reactive Strike</strong> against you is performed with <strong>+1 Bane</strong>.</p>"
                         },
                         "Focused Anticipation": {
                             "name": "Focused Anticipation",
@@ -1818,6 +1824,12 @@
                                     "name": "Quick Draw",
                                     "description": "<p>You can loose a shot under pressure, although with decreased accuracy. You perform a <strong>Strike</strong> that is <strong>Difficult</strong>, but has a reduced Action cost.</p>"
                                 }
+                            }
+                        },
+                        "Shortbow": {
+                            "name": "Shortbow",
+                            "description": {
+                                "public": "<p>Compact and quick to draw, the shortbow excels in rapid, close-quarters archery and skirmishes, favored by scouts, hunters, and swift-footed raiders.</p>"
                             }
                         },
                         "Perspicacity": {
@@ -1936,7 +1948,7 @@
                         },
                         "Surgeweaver": {
                             "name": "Surgeweaver",
-                            "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                         },
                         "Mesmer": {
                             "name": "Mesmer",
@@ -2078,7 +2090,7 @@
                         },
                         "Dustbinder": {
                             "name": "Dustbinder",
-                            "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
                         },
                         "Talisman Weapon Training": {
                             "name": "Talisman Weapon Training",
@@ -2143,7 +2155,7 @@
                         },
                         "Rune: Soul": {
                             "name": "Rune: Soul",
-                            "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
+                            "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong>. In special circumstances it may be used to inflict <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
                             "actions": {
                                 "Evoke": {
                                     "name": "Evoke",
@@ -2153,7 +2165,7 @@
                         },
                         "Irrepressible Spirit": {
                             "name": "Irrepressible Spirit",
-                            "description": "Your tenacity gives you an irrepressible spirit which resists the onset of despair. At the start of your turn if you are not Broken you gain 1 Morale."
+                            "description": "Your tenacity gives you an irrepressible spirit which resists the onset of despair. At the start of your turn if you are not @Condition[broken] you gain 1 Morale."
                         },
                         "Eye of the Storm": {
                             "name": "Eye of the Storm",
@@ -2171,7 +2183,7 @@
                         },
                         "Rune: Life": {
                             "name": "Rune: Life",
-                            "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong> or inflicts <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>",
+                            "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong>. In special circumstances it may be used to inflict <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>",
                             "actions": {
                                 "Bloom": {
                                     "name": "Bloom",
@@ -2249,7 +2261,7 @@
                                 "Berserker Rage": {
                                     "name": "Berserker Rage",
                                     "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
-                                    "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                                    "description": "You become @Condition[enraged]. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
                                     "effects": [
                                         {
                                             "name": "Berserker Rage"
@@ -2272,8 +2284,7 @@
                             "actions": {
                                 "Executioner's Strike": {
                                     "name": "Executioner's Strike",
-                                    "condition": "Your target is Bloodied.",
-                                    "description": "<p>You deliver a Deadly Strike with a two-handed heavy weapon. If your attack is successful, your opponent also suffers the Bleeding condition for 3 Rounds, taking additional damage each Round equal to your Strength score.</p>",
+                                    "description": "<p>You deliver a Strike with a two-handed weapon. If your attack is successful and your opponent is under half their maximum <strong>Health</strong>, the Strike is <strong>Deadly</strong>, and the opponent suffers the @Condition[bleeding] condition for 3 Rounds, taking additional damage each Round equal to your Strength score.</p>",
                                     "effects": [
                                         {
                                             "name": "Executioner's Strike"
@@ -2284,7 +2295,7 @@
                         },
                         "Unshakeable Stance": {
                             "name": "Unshakeable Stance",
-                            "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
+                            "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
                         },
                         "Ruthless Momentum": {
                             "name": "Ruthless Momentum",
@@ -2293,7 +2304,7 @@
                                 "Ruthless Momentum": {
                                     "name": "Ruthless Momentum",
                                     "condition": "You incapacitate an enemy with a melee attack.",
-                                    "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
+                                    "description": "<p>After defeating an enemy, you immediately move up to your <strong>Stride </strong>and <strong>Strike</strong> another foe that you pass next to or end your movement adjacent to.</p>"
                                 }
                             }
                         },
@@ -2303,18 +2314,18 @@
                             "actions": {
                                 "Second Wind": {
                                     "name": "Second Wind",
-                                    "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
+                                    "description": "<p>You focus your energy and recover your <strong>Toughness</strong> score in <strong>Health</strong>.</p>"
                                 }
                             }
                         },
                         "Intercept": {
                             "name": "Intercept",
-                            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+                            "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
                             "actions": {
                                 "Intercept": {
                                     "name": "Intercept",
                                     "condition": "An enemy moves into or through your Engagement radius.",
-                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
+                                    "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
                                 }
                             }
                         },
@@ -2342,7 +2353,7 @@
                             "actions": {
                                 "Sundering Strike": {
                                     "name": "Sundering Strike",
-                                    "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                                    "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                                     "effects": [
                                         {
                                             "name": "Sundered Armor"
