@@ -1,202 +1,718 @@
 {
-	"label": "Talents",
-	"folders": {
-		"Breath": "Breath",
-		"Form": "Form",
-		"Communication": "Communication",
-		"Senses": "Senses",
-		"Training": "Training",
-		"Resistances": "Resistances",
-		"Burts": "Burts",
-		"Movement": "Movement",
-		"Pulses": "Pulses",
-		"Attacks": "Attacks",
-		"Defenses": "Defenses"
-	},
-	"entries": {
-		"Diseasing Proboscis": {
-			"name": "Diseasing Proboscis"
-		},
-		"Paralyzing Breath": {
-			"name": "Paralyzing Breath"
-		},
-		"Wailing Moan": {
-			"name": "Wailing Moan"
-		},
-		"Teleport": {
-			"name": "Teleport"
-		},
-		"Two Headed": {
-			"name": "Two Headed"
-		},
-		"Magic Resistance": {
-			"name": "Magic Resistance"
-		},
-		"Cloud of Dust": {
-			"name": "Cloud of Dust"
-		},
-		"Animate Boulders": {
-			"name": "Animate Boulders"
-		},
-		"Paralyzing Tentacles": {
-			"name": "Paralyzing Tentacles"
-		},
-		"Steam Breath": {
-			"name": "Steam Breath"
-		},
-		"Slowing Breath": {
-			"name": "Slowing Breath"
-		},
-		"Eternal Suffering": {
-			"name": "Eternal Suffering"
-		},
-		"Life Sense": {
-			"name": "Life Sense"
-		},
-		"Lightning Breath": {
-			"name": "Lightning Breath"
-		},
-		"Flaming Death Burst": {
-			"name": "Flaming Death Burst"
-		},
-		"Heavy Weapon Master": {
-			"name": "Heavy Weapon Master"
-		},
-		"Grab": {
-			"name": "Grab"
-		},
-		"Petrifying Bite": {
-			"name": "Petrifying Bite"
-		},
-		"Phantasms": {
-			"name": "Phantasms"
-		},
-		"Critter Form": {
-			"name": "Critter Form"
-		},
-		"Repulsion Breath": {
-			"name": "Repulsion Breath"
-		},
-		"Flaming Death": {
-			"name": "Flaming Death"
-		},
-		"Frost Breath": {
-			"name": "Frost Breath"
-		},
-		"Negative Energy Pulse": {
-			"name": "Negative Energy Pulse"
-		},
-		"Poison Cloud": {
-			"name": "Poison Cloud"
-		},
-		"Horrifying Visage": {
-			"name": "Horrifying Visage"
-		},
-		"Siege Monster": {
-			"name": "Siege Monster"
-		},
-		"Tree Stride": {
-			"name": "Tree Stride"
-		},
-		"Drone": {
-			"name": "Drone"
-		},
-		"Heavy Weapon Expert": {
-			"name": "Heavy Weapon Expert"
-		},
-		"Acid Breath": {
-			"name": "Acid Breath"
-		},
-		"Rotting Breath": {
-			"name": "Rotting Breath"
-		},
-		"Ice Walk": {
-			"name": "Ice Walk"
-		},
-		"Acid Spray": {
-			"name": "Acid Spray"
-		},
-		"Limited Flight": {
-			"name": "Limited Flight"
-		},
-		"Smother": {
-			"name": "Smother"
-		},
-		"Shapeshift": {
-			"name": "Shapeshift"
-		},
-		"Sleep Breath": {
-			"name": "Sleep Breath"
-		},
-		"Light Sensitivity": {
-			"name": "Light Sensitivity",
-			"effects": {
-				"Sunlight Weakness": {
-					"name": "Sunlight Weakness",
-					"description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-					"changes": {
-						"system.rollBonuses.banes.sunlightWeakness.number": 2,
-						"system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-					}
-				}
-			}
-		},
-		"Constrict": {
-			"name": "Constrict"
-		},
-		"Telepathy": {
-			"name": "Telepathy"
-		},
-		"Flight": {
-			"name": "Flight"
-		},
-		"Weakening Breath": {
-			"name": "Weakening Breath"
-		},
-		"Earth Walk": {
-			"name": "Earth Walk"
-		},
-		"Blinding Spit": {
-			"name": "Blinding Spit"
-		},
-		"Goring Charge": {
-			"name": "Goring Charge"
-		},
-		"Spores": {
-			"name": "Spores"
-		},
-		"Poison Breath": {
-			"name": "Poison Breath"
-		},
-		"Rolling Bash": {
-			"name": "Rolling Bash"
-		},
-		"Hover": {
-			"name": "Hover"
-		},
-		"Squeeze": {
-			"name": "Squeeze"
-		},
-		"Amphibious": {
-			"name": "Amphibious"
-		},
-		"Shadow Breath": {
-			"name": "Shadow Breath"
-		},
-		"Divine Awareness": {
-			"name": "Divine Awareness"
-		},
-		"Restraining Claw": {
-			"name": "Restraining Claw"
-		},
-		"Flame Breath": {
-			"name": "Flame Breath"
-		},
-		"Stunning Screech": {
-			"name": "Stunning Screech"
-		},
-		"Petrifying Gaze": {
-			"name": "Petrifying Gaze"
-		}
-	}
+    "label": "Talents",
+    "folders": {
+        "Training": "Training",
+        "Resistances": "Resistances",
+        "Burts": "Burts",
+        "Form": "Form",
+        "Movement": "Movement",
+        "Communication": "Communication",
+        "Pulses": "Pulses",
+        "Senses": "Senses",
+        "Attacks": "Attacks",
+        "Breath": "Breath",
+        "Defenses": "Defenses"
+    },
+    "entries": {
+        "Acid Breath": {
+            "name": "Acid Breath",
+            "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
+            "actions": {
+                "Breath": {
+                    "name": "Breath",
+                    "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Acid Spray"
+                        }
+                    ]
+                }
+            }
+        },
+        "Acid Spray": {
+            "name": "Acid Spray",
+            "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
+            "actions": {
+                "Acid Spray": {
+                    "name": "Acid Spray",
+                    "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Acid Spray"
+                        }
+                    ]
+                }
+            }
+        },
+        "Amphibious": {
+            "name": "Amphibious",
+            "description": "<p>This creature can breath underwater in addition to air.</p>"
+        },
+        "Animate Boulders": {
+            "name": "Animate Boulders",
+            "description": "<p>The Creature Animates two boulders within 30ft of it.</p>",
+            "actions": {
+                "Animate Boulders": {
+                    "name": "Animate Boulders",
+                    "description": "<p>The Creature animates two boulders it can see within 30ft of it. These boulders become @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.FjB79NRT5qOLHMpq] and remain animated until 1 minute has passed or they have died.</p>",
+                    "effects": [
+                        {
+                            "name": "Animate Boulders"
+                        }
+                    ]
+                }
+            }
+        },
+        "Blinding Spit": {
+            "name": "Blinding Spit",
+            "description": "<p>The Creature spits a caustic glob at a target within 30 feet making an attack against the targets reflex defense. On a hit the creature is blinded for 1 turn.</p>",
+            "actions": {
+                "Blinding Spit": {
+                    "name": "Blinding Spit",
+                    "description": "<p>The Creature spits a caustic glob at a target within 30 feet making an attack against the targets reflex defense. On a hit the creature is blinded for 1 turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Blinding Spit"
+                        }
+                    ]
+                }
+            }
+        },
+        "Cloud of Dust": {
+            "name": "Cloud of Dust",
+            "description": "<p>The Creature Spins up a cloud of dust blinding opponents.</p>",
+            "actions": {
+                "Cloud of Dust": {
+                    "name": "Cloud of Dust",
+                    "description": "<p>The Creature Spins up a cloud of dust in a 15ft pulse making a harmless attack that scales with dexterity against the fortitude defense of targets. On a hit targets are blinded for 1 turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Cloud of Dust"
+                        }
+                    ]
+                }
+            }
+        },
+        "Constrict": {
+            "name": "Constrict",
+            "description": "<p>The Creature attempts to Squeeze the life out of its target.</p>",
+            "actions": {
+                "Constrict": {
+                    "name": "Constrict",
+                    "description": "<p>The creature attempts to squeeze the life out of its target. It makes a weakened athletics attack against its target; on a hit the target becomes <strong>Restrained</strong> and begins to <strong>Suffocate </strong>while restrained this way. This Hold can be broken by a athletics attack against the fortitude of the creature by the target or another creature within engagement range.</p>",
+                    "effects": [
+                        {
+                            "name": "Constrict"
+                        }
+                    ]
+                }
+            }
+        },
+        "Critter Form": {
+            "name": "Critter Form",
+            "description": "<p>The Creature Shapeshifts into the form of a tiny critter.</p>",
+            "actions": {
+                "Critter Form": {
+                    "name": "Critter Form",
+                    "description": "<p>The Creature Shapeshifts into the form of a tiny critter of size 1 or less such as a rat, bat, insect, ect. While in this form they are unable to attack but are indistinguishable from that of any other creation of this type outside of the use of the sense gesture. If it is attacked the Creature reverts back to its true form.</p>",
+                    "effects": [
+                        {
+                            "name": "Critter Form"
+                        }
+                    ]
+                }
+            }
+        },
+        "Diseasing Proboscis": {
+            "name": "Diseasing Proboscis",
+            "description": "<p>The creature attacks a target with its sharp proboscis, on a hit in addition to damage the creature begins suffering from the <strong>Diseased </strong>condition until they complete a <strong>Rest </strong>or <strong>Recover </strong>Action.</p>",
+            "actions": {
+                "Diseasing Proboscis": {
+                    "name": "Diseasing Proboscis",
+                    "description": "<p>The Creature Attacks its target inflicting the <strong>Diseased </strong>condition on a hit. This condition lasts until the target uses a <strong>Rest </strong>or <strong>Recover </strong>Action.</p>",
+                    "effects": [
+                        {
+                            "name": "Diseasing Proboscis"
+                        }
+                    ]
+                }
+            }
+        },
+        "Divine Awareness": {
+            "name": "Divine Awareness",
+            "description": "<p>The Planetar knows if it hears a lie.</p>"
+        },
+        "Drone": {
+            "name": "Drone",
+            "description": "<p>The Creature Lets out a long Droning noise disorienting all those around them.</p>",
+            "actions": {
+                "Drone": {
+                    "name": "Drone",
+                    "description": "<p>The creature lets out a long droning noise attacking the <strong>Willpower </strong>defense of all those who can hear within <strong>20ft</strong>. On a hit the attack deals <strong>Psychic</strong> damage to moral and causes the <strong>Disoriented </strong>condition for 3 turns.</p>",
+                    "effects": [
+                        {
+                            "name": "Drone"
+                        }
+                    ]
+                }
+            }
+        },
+        "Earth Walk": {
+            "name": "Earth Walk",
+            "description": "<p>The Creature can burrow through natural earth at a speed equal to their stride. Burrowing in this way does not disturb the earth or leave behind a tunnel.</p>"
+        },
+        "Eternal Suffering": {
+            "name": "Eternal Suffering",
+            "description": "<p>If this Creature dies while in Hell it returns to life in 24 hours unless it is killed with radiant damage.</p>"
+        },
+        "Flame Breath": {
+            "name": "Flame Breath",
+            "description": "<p>The Dragon Breaths forth a blast of fire in a 20ft cone</p>",
+            "actions": {
+                "Flame Breath": {
+                    "name": "Flame Breath",
+                    "description": "<p>The dragon Breaths forth a blast of fire in a 20ft cone.</p><p>On a <strong>Critical Hit</strong>, this attack causes the <strong>Burning </strong>condition for <strong>3 turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Flame Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flaming Death": {
+            "name": "Flaming Death",
+            "description": "<p>As a last resort the creature blasts itself to pieces in an attempt to take those around it down with it.</p>",
+            "actions": {
+                "Flaming Death": {
+                    "name": "Flaming Death",
+                    "description": "<p>The Creature explodes in a blast of <strong>Fire </strong>which attacks the <strong>Reflex </strong>defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[burning] condition for <strong>3 rounds</strong>. Following this the creature is dead.</p>",
+                    "effects": [
+                        {
+                            "name": "Flaming Death"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flaming Death Burst": {
+            "name": "Flaming Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of fire.</p>",
+            "actions": {
+                "Flaming Death Burst": {
+                    "name": "Flaming Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a blast of <strong>Fire</strong> which attacks the <strong>Reflex</strong> defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[burning] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Flaming Death Burst"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flight": {
+            "name": "Flight",
+            "description": "<p>This creature gains a fly speed equal to its stride.</p>"
+        },
+        "Frost Breath": {
+            "name": "Frost Breath",
+            "description": "<p>The dragon breaths forth a breath of ice cold air freezing anything on contact.</p>",
+            "actions": {
+                "Frost Breath": {
+                    "name": "Frost Breath",
+                    "description": "<p>The Dragon Breaths forth a breath of ice cold air in a 20ft cone.</p><p>On a <strong>Critical Hit</strong>, this attack causes the <strong>Freezing </strong>condition for <strong>3 turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Frost Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Goring Charge": {
+            "name": "Goring Charge",
+            "description": "<p>The Creature charges forward up to 15ft making a empowered strike against the against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
+            "actions": {
+                "Goring Charge": {
+                    "name": "Goring Charge",
+                    "description": "<p>The Creature charges forward up to 15ft making a empowered strike against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Goring Charge"
+                        }
+                    ]
+                }
+            }
+        },
+        "Grab": {
+            "name": "Grab",
+            "description": "<p>The creature attempts to grab a creature with its whip like tendrils and squeeze the life from it.</p>",
+            "actions": {
+                "Grab": {
+                    "name": "Grab",
+                    "description": "<p>The creature Wraps its whip like tendrils around its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained </strong>until this creature chooses to release it or the restraint is otherwise broken. Only one target my be restrained by this action at a time.</p>",
+                    "effects": [
+                        {
+                            "name": "Grab"
+                        }
+                    ]
+                }
+            }
+        },
+        "Heavy Weapon Expert": {
+            "name": "Heavy Weapon Expert"
+        },
+        "Heavy Weapon Master": {
+            "name": "Heavy Weapon Master"
+        },
+        "Horrifying Visage": {
+            "name": "Horrifying Visage",
+            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+            "actions": {
+                "Horrifying Visage": {
+                    "name": "Horrifying Visage",
+                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                    "effects": [
+                        {
+                            "name": "Horrifying Visage"
+                        }
+                    ]
+                }
+            }
+        },
+        "Hover": {
+            "name": "Hover",
+            "description": "<p>This creature may hover in the air, gaining a flying speed equal to their stride and being immune to the prone condition.</p>"
+        },
+        "Ice Walk": {
+            "name": "Ice Walk",
+            "description": "<p>Cryovain can move across and climb icy surfaces as if they were normal terrain</p>"
+        },
+        "Life Sense": {
+            "name": "Life Sense",
+            "description": "<p>A creature with this sense can detect any non undead creatures within 100ft of it even if they are behind full cover.</p>"
+        },
+        "Light Sensitivity": {
+            "name": "Light Sensitivity",
+            "description": "<p>While in Bright light, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions.</p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+            "effects": [
+                {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+                }
+            ]
+        },
+        "Lightning Breath": {
+            "name": "Lightning Breath",
+            "description": "<p>The creature Emits a Blast of lightning in a 30ft line.</p>",
+            "actions": {
+                "Breath": {
+                    "name": "Breath",
+                    "description": "<p>The creature breaths a bolt of lightning in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[Shocked] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Lightning Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Limited Flight": {
+            "name": "Limited Flight",
+            "description": "<p>The Creature can temporarily fly but only for a limited time.</p>",
+            "actions": {
+                "Limited Flight": {
+                    "name": "Limited Flight",
+                    "description": "<p>The creature gains a fly speed equal to its stride for 1 minute.</p>",
+                    "effects": [
+                        {
+                            "name": "Limited Flight"
+                        }
+                    ]
+                }
+            }
+        },
+        "Magic Resistance": {
+            "name": "Magic Resistance",
+            "description": "<p>Magic warps strangely around this creature, Spells which target it suffer +2 banes regardless of their effects.</p>"
+        },
+        "Negative Energy Pulse": {
+            "name": "Negative Energy Pulse",
+            "description": "<p>The Creature lets out a pulse of necrotic energy that prevents healing.</p>",
+            "actions": {
+                "Negative Energy Pulse": {
+                    "name": "Negative Energy Pulse",
+                    "description": "<p>The Creature Emits a 20ft Pulse of Necrotic energy which causes targets to become <strong>Diseased </strong>for 3 turns on a hit.</p>",
+                    "effects": [
+                        {
+                            "name": "Negative Energy Pulse"
+                        }
+                    ]
+                }
+            }
+        },
+        "Paralyzing Breath": {
+            "name": "Paralyzing Breath",
+            "description": "<p>The Dragon lets out a breath of gas paralyzing targets.</p>",
+            "actions": {
+                "Paralyzing Breath": {
+                    "name": "Paralyzing Breath",
+                    "description": "<p>The Dragon lets forth a breath of gas in a 10ft fan, that causes the <strong>Paralyzed</strong> condition on a hit.</p>",
+                    "effects": [
+                        {
+                            "name": "Paralyzing Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Paralyzing Tentacles": {
+            "name": "Paralyzing Tentacles",
+            "description": "<p>The Creatures tentacles are coated in a paralyzing toxin that helps them capture prey.</p>",
+            "actions": {
+                "Paralyzing Tentacles": {
+                    "name": "Paralyzing Tentacles",
+                    "description": "<p>The Creature attempts to grab its target with its tentacles and subject it to its paralyzing toxins. If the attack is successful and the target is equal or lesser in Size, The target is also paralyzed for 1 turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Paralyzing Toxin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Petrifying Bite": {
+            "name": "Petrifying Bite",
+            "description": "<p>The Creatures bite can Petrify targets.</p>",
+            "actions": {
+                "Petrifying Bite": {
+                    "name": "Petrifying Bite",
+                    "description": "<p>The Cockatrice Bites a target, On a critical hit the target becomes petrified for 24 hours gaining the <strong>Incapacitated </strong>and <strong>Invulnerable </strong>conditions. The petrification also ends if the Cockatrice dies.</p>",
+                    "effects": [
+                        {
+                            "name": "Petrification"
+                        }
+                    ]
+                }
+            }
+        },
+        "Petrifying Gaze": {
+            "name": "Petrifying Gaze",
+            "description": "<p>The Creature can Petrify creatures that it meets eyes with.</p>",
+            "actions": {
+                "Petrifying Gaze": {
+                    "name": "Petrifying Gaze",
+                    "description": "<p>The Creature locks eyes with one creature that can see it making a harmless attack that scales with toughness targeting willpower defense, if the attack is successful the target is petrified. While petrified the creature is incapacitated and invulnerable. The petrification ends if thus Creature dies.</p>",
+                    "effects": [
+                        {
+                            "name": "Petrified"
+                        }
+                    ]
+                }
+            }
+        },
+        "Phantasms": {
+            "name": "Phantasms",
+            "description": "<p>The Creature Summons illusory copies of itself making it hard to determine which is the real creature. </p>",
+            "actions": {
+                "Phantasms": {
+                    "name": "Phantasms",
+                    "description": "<p>The Creature summons illusory copies of itself making it gain the guarded condition for 1 minute.</p>",
+                    "effects": [
+                        {
+                            "name": "Phantasms"
+                        }
+                    ]
+                }
+            }
+        },
+        "Poison Breath": {
+            "name": "Poison Breath",
+            "description": "<p>The @ref[actor.name]{creature} is able to produce and expel toxic discharge in a fan.</p>",
+            "actions": {
+                "Poison Breath": {
+                    "name": "Poison Breath",
+                    "description": "<p>The @ref[actor.name]{creature} expels toxic discharge in a 10 foot fan, attacking the <strong>Fortitude</strong> of each target in the area and dealing <strong>Poison</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[poisoned] condition for <strong>3 Turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Poison Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Poison Cloud": {
+            "name": "Poison Cloud",
+            "description": "<p>The Creature belches up a noxious cloud of gas.</p>",
+            "actions": {
+                "Poison Cloud": {
+                    "name": "Poison Cloud",
+                    "description": "<p>The Creature makes a <strong>Toughness </strong>attack against the <strong>Fortitude </strong>defense of each creature within 5ft. This attack is harmless but causes the poisoned condition for 3 turns on a successful hit.</p>",
+                    "effects": [
+                        {
+                            "name": "Poison Cloud"
+                        }
+                    ]
+                }
+            }
+        },
+        "Repulsion Breath": {
+            "name": "Repulsion Breath",
+            "description": "<p>The Dragon lets out a burst of repulsive energy blasting back targets in a cone.</p>",
+            "actions": {
+                "Repulsion Breath": {
+                    "name": "Repulsion Breath",
+                    "description": "<p>The dragon lets out a blast of repulsive breath in a 20ft cone blasting anyone hit back 10ft.</p>"
+                }
+            }
+        },
+        "Restraining Claw": {
+            "name": "Restraining Claw",
+            "description": "<p>The creature uses its powerful claws to grab and hold a target.</p>",
+            "actions": {
+                "Restraining Claw": {
+                    "name": "Restraining Claw",
+                    "description": "<p>The creature grabs its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained</strong> until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
+                    "effects": [
+                        {
+                            "name": "Restraining Claw"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rolling Bash": {
+            "name": "Rolling Bash",
+            "description": "<p>The Creature rolls forward up to 15ft making a empowered strike against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
+            "actions": {
+                "Rolling Bash": {
+                    "name": "Rolling Bash",
+                    "description": "<p>The Creature charges forward up to 15ft making a empowered strike against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rolling Bash"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rotting Breath": {
+            "name": "Rotting Breath",
+            "description": "<p>The Dragon Breaths out a blast of necrotic gas rotting targets on contact.</p>",
+            "actions": {
+                "Rotting Breath": {
+                    "name": "Rotting Breath",
+                    "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. On a crit the target gains the <strong>Decaying </strong>Condition for 3 turns.</p>",
+                    "effects": [
+                        {
+                            "name": "Rotting Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Shadow Breath": {
+            "name": "Shadow Breath",
+            "description": "<p>The Dragon Breaths out a blast of necrotic gas rotting targets on contact. If a creature is killed by this attack it rises as a @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] in an hour.</p>",
+            "actions": {
+                "Shadow Breath": {
+                    "name": "Shadow Breath",
+                    "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
+                }
+            }
+        },
+        "Shapeshift": {
+            "name": "Shapeshift",
+            "description": "<p>The Creature Shapeshifts into the shape of a humanoid or beast that is equal or lower than it in level.</p>",
+            "actions": {
+                "Shapeshift": {
+                    "name": "Shapeshift",
+                    "description": "<p>The Creature Shapeshifts into a humanoid or beast of its level or lower.</p>",
+                    "effects": [
+                        {
+                            "name": "Shapeshift"
+                        }
+                    ]
+                }
+            }
+        },
+        "Siege Monster": {
+            "name": "Siege Monster",
+            "description": "<p>This Creature is so large it can easily break down the walls and other structural elements of most structures that are not reinforced.</p>"
+        },
+        "Sleep Breath": {
+            "name": "Sleep Breath",
+            "description": "<p>The dragon Exhales a cloud of gas in a 10ft fan. This cloud attacks targets <strong>Fortitude </strong>and causes the target to gain the <strong>Asleep</strong> Condition for 3 turns.</p>",
+            "actions": {
+                "Sleep Breath": {
+                    "name": "Sleep Breath",
+                    "description": "<p>The Dragon lets out a breath of gas that inflicts the <strong>Asleep </strong>Condition on targets in a 10ft fan</p>",
+                    "effects": [
+                        {
+                            "name": "Sleep Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Slowing Breath": {
+            "name": "Slowing Breath",
+            "description": "<p>The Dragon exhales gas in a 10ft fan <strong>Slowing </strong>targets.</p>",
+            "actions": {
+                "Slowing Breath": {
+                    "name": "Slowing Breath",
+                    "description": "<p>The Dragon exhales gas in a 10ft fan causing the <strong>Slowed </strong>Condition on a hit.</p>",
+                    "effects": [
+                        {
+                            "name": "Slowing Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Smother": {
+            "name": "Smother",
+            "description": "<p>The Creature attempts to grapple and choke its target.</p>",
+            "actions": {
+                "Smother": {
+                    "name": "Smother",
+                    "description": "<p>The creature makes unarmed melee attack against a creature in its reach, if it hits the target is grappled, while grappled this way the creature is suffocating.</p>",
+                    "effects": [
+                        {
+                            "name": "Smother"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spores": {
+            "name": "Spores",
+            "description": "<p>The creature creates a cloud of toxic spores.</p>",
+            "actions": {
+                "Spores": {
+                    "name": "Spores",
+                    "description": "<p>The creature makes a <strong>Weakened</strong> attack against scaling with <strong>Toughness </strong>against all creatures in a <strong>15ft Pulse </strong>targeting <strong>Fortitude </strong>and dealing the <strong>Poisoned</strong> condition for 3 turns on a hit.</p>",
+                    "effects": [
+                        {
+                            "name": "Spores"
+                        }
+                    ]
+                }
+            }
+        },
+        "Squeeze": {
+            "name": "Squeeze",
+            "description": "<p>Once the creature has a enemy restrained, it will constrict tightly dealing terrible damage to the grasped victim.</p>",
+            "actions": {
+                "Constrict": {
+                    "name": "Constrict",
+                    "description": "<p>The Creature deals <strong>Deadly </strong>damage to a target that it currently has <strong>Restrained</strong>.</p>"
+                }
+            }
+        },
+        "Steam Breath": {
+            "name": "Steam Breath",
+            "description": "<p>The Creature breaths forth a blast of scalding hot air in a 20ft fan.</p>",
+            "actions": {
+                "Steam Breath": {
+                    "name": "Steam Breath",
+                    "description": "<p>The Creature breaths forth a blast of scalding hot air in a 20ft fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the <strong>Burning </strong>condition for <strong>3 turns</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Steam Breath"
+                        }
+                    ]
+                }
+            }
+        },
+        "Stunning Screech": {
+            "name": "Stunning Screech",
+            "description": "<p>The Creature lets out a earsplitting screech that stuns opponents. </p>",
+            "actions": {
+                "Stunning Screech": {
+                    "name": "Stunning Screech",
+                    "description": "<p>The Creature makes a harmless <strong>Toughness </strong>attack against the <strong>Willpower </strong>defense of every creature within 10ft that can hear them. Each creature that is hit becomes <strong>Stunned</strong> for 1 turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Stunning Screech"
+                        }
+                    ]
+                }
+            }
+        },
+        "Sunlight Weakness": {
+            "name": "Sunlight Weakness",
+            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+        },
+        "Telepathy": {
+            "name": "Telepathy",
+            "description": "<p>The Creature can communicate telepathically with other creatures it can see.</p>"
+        },
+        "Teleport": {
+            "name": "Teleport",
+            "description": "<p>The Creature teleports to a empty location within 120ft.</p>",
+            "actions": {
+                "Teleport": {
+                    "name": "Teleport",
+                    "description": "<p>The creature teleports to a empty location within 120ft</p>"
+                }
+            }
+        },
+        "Tree Stride": {
+            "name": "Tree Stride",
+            "description": "<p>The Creature can step from one tree to another as if they were doorways.</p>",
+            "actions": {
+                "Tree Stride": {
+                    "name": "Tree Stride",
+                    "description": "<p>The Creature Steps from one tree within range 1 appearing next to another tree within 60ft of the first. Both trees must be larger than the the Creature.</p>"
+                }
+            }
+        },
+        "Two Headed": {
+            "name": "Two Headed",
+            "description": "<p>The Creature gains Training in the <strong>Awareness</strong> Skill. In addition only one head ever sleeps at a time, leaving the other awake.</p>"
+        },
+        "Wailing Moan": {
+            "name": "Wailing Moan",
+            "description": "<p>The Creature wails targeting each creature in a 30ft pulse. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+            "actions": {
+                "Wailing Moan": {
+                    "name": "Wailing Moan",
+                    "description": "<p>The Creature wails targeting each creature in a 30ft pulse. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                    "effects": [
+                        {
+                            "name": "Wailing Moan"
+                        }
+                    ]
+                }
+            }
+        },
+        "Weakening Breath": {
+            "name": "Weakening Breath",
+            "description": "<p>The Dragon Exhales a cloud of gas in a 10ft fan. This cloud attacks targets <strong>Fortitude </strong>and causes the target to gain the <strong>Exhausted </strong>Condition for 3 turns if they are hit.</p>",
+            "actions": {
+                "Weakening Breath": {
+                    "name": "Weakening Breath",
+                    "description": "<p>The Dragon lets out a breath of gas that inflicts the <strong>Exhausted </strong>Condition on targets in a 10ft fan.</p>",
+                    "effects": [
+                        {
+                            "name": "Weakening Breath"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "mapping": {
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "description": "system.description",
+        "effects": {
+            "path": "effects",
+            "converter": "embeddedEffectsConverter"
+        }
+    }
 }
