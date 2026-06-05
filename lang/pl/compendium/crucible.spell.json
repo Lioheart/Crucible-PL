@@ -6,7 +6,7 @@
         "Gesture: Aspect": "Gest: Aspekt",
         "Gesture: Pulse": "Gest: Impuls",
         "Gesture: Infuence": "Gest: Wpływ",
-        "Gesture: Creation": "Gest: Stworzenie",
+        "Gesture: Creation": "Gest: Wytwór",
         "Gesture: Sense": "Gest: Zmysł"
     },
     "entries": {
@@ -211,10 +211,10 @@
         }
     },
     "mapping": {
-        "description": "system.description",
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
-        }
+        },
+        "description": "system.description"
     }
 }

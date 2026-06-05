@@ -320,7 +320,7 @@
                         },
                         "Gesture: Create": {
                             "name": "Gest: Tworzenie",
-                            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
+                            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ognistego ducha</strong>.</p>"
                         },
                         "Gesture: Arrow": {
                             "name": "Gest: Grot",
@@ -328,7 +328,7 @@
                         },
                         "Conjurer": {
                             "name": "Przywoływacz",
-                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
+                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Wytworu, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
                         },
                         "Inflection: Push": {
                             "name": "Fleksja: Pchanie",
@@ -580,7 +580,7 @@
                                 "Berserker Rage": {
                                     "name": "Szał berserkera",
                                     "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajes 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                                     "effects": [
                                         {
                                             "name": "Szał berserkera"
@@ -960,7 +960,7 @@
                         "description": "Byłeś wędrownym artystą estradowym. Nauczyłeś się czuć swobodnie podczas różnych imprez towarzyskich, jak grać przed publicznością, upiększać szczegóły swojego występu, aby wywołać określone reakcje emocjonalne."
                     },
                     "biography": {
-                        "public": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia charakterystycznego talentu <strong>Maga wojennego</strong>.</p>"
+                        "public": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>"
                     }
                 },
                 "Agnath": {
@@ -1122,7 +1122,7 @@
                         "description": "<p>Byłeś szeregowym członkiem jakiejś organizacji wojskowej. Dyscyplina sprawiła, że przetrwałeś i podkreśliła znaczenie okazywania siły i dominacji nad innymi, a lata spędzone na koniu lub w marszu nauczyły cię, jak radzić sobie w każdym terenie.</p>"
                     },
                     "biography": {
-                        "public": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia charakterystycznego talentu <strong>Zaklętego ostrza</strong>.</p>"
+                        "public": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>"
                     }
                 },
                 "Belladonna": {
@@ -1374,7 +1374,7 @@
                         "description": "<p>Niewielu uczy się przetrwać tak jak ty. Twoja edukacja była surowa i oparta na nieufności. Nauczyłeś się obserwować innych, wypatrując oznak niebezpieczeństwa lub nielojalności, unikać zwracania na siebie uwagi, szukać resztek jedzenia na ulicach rozległych miast.</p>"
                     },
                     "biography": {
-                        "public": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia charakterystycznego talentu <strong>Truciciel</strong>.</p>"
+                        "public": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>"
                     }
                 },
                 "Duurath": {
@@ -1634,7 +1634,7 @@
                         "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
                     },
                     "biography": {
-                        "public": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia charakterystycznego talentu <strong>Strażnika run</strong>.</p>"
+                        "public": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>"
                     }
                 },
                 "Eliorwen": {
@@ -1875,7 +1875,7 @@
                         },
                         "Gesture: Create": {
                             "name": "Gest: Tworzenie",
-                            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Chochlika</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Chochlik jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a chochlik przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego chochlika, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego chochlika. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Chochlika. Runy, które nie mają jeszcze zdefiniowanego Stworzenia, będą — na razie — manifestować <strong>Ognistego chochlika</strong>.</p>"
+                            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ognistego ducha</strong>.</p>"
                         },
                         "Inflection: Compose": {
                             "name": "Fleksja: Kompozycja",
@@ -1883,7 +1883,7 @@
                         },
                         "Conjurer": {
                             "name": "Przywoływacz",
-                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Stworzenia, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
+                            "description": "<p>Jesteś mistrzem Przywoływania i Gestów Wytworu, dzięki którym możesz przekształcać tajemniczą energię w fizyczną formę. Możesz utrzymać jednocześnie do 3 takich stworzeń, a nie tylko jedno.</p>"
                         },
                         "Rimecaller": {
                             "name": "Wywoływacz mrozu",
@@ -1998,13 +1998,13 @@
                             "actions": {
                                 "Unshakeable Poise": {
                                     "name": "Niezachwiana równowaga",
-                                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoją <strong>Koncentrację</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
+                                    "description": "<p>Wydajesz <strong>Heroizm</strong>, aby natychmiast odzyskać swoje <strong>Skupienie</strong> w ilości punktów <strong>Mądrości</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
                                 }
                             }
                         },
                         "Gesture: Conjure": {
                             "name": "Gest: Wywołanie",
-                            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Gościa</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Gość jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Gość przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Gościa. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Gościa. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Gościa. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego gościa</strong>.</p>"
+                            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Ognistego przybysza</strong>.</p>"
                         },
                         "Stiletto": {
                             "name": "Stiletto",
@@ -2022,7 +2022,7 @@
                         "description": "<p>Zawsze najlepiej czułeś się w bibliotece lub sali lekcyjnej. Twoje studia skupiały się na odkrywaniu tajemnic otaczającego Cię świata i niewiele jest przedmiotów teoretycznych, których jeszcze nie znasz.</p>"
                     },
                     "biography": {
-                        "public": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia charakterystycznego talentu <strong>Przywoływacza</strong>.</p>"
+                        "public": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>"
                     }
                 },
                 "Kagura": {
@@ -2189,7 +2189,7 @@
                         "description": "<p>Byłeś uzdrowicielem lub pracownikiem służby zdrowia. Część swojego życia poświęciłeś na naukę medycyny i masz zdolność dostrzegania chorób u innych. Wiesz, jak leczyć rany i choroby oraz jak rozpoznawać ich przyczyny.</p>"
                     },
                     "biography": {
-                        "public": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia charakterystycznego talentu <strong>Uzdrowiciel</strong>.</p>"
+                        "public": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>"
                     }
                 },
                 "Ulfen": {
@@ -2249,7 +2249,7 @@
                                 "Berserker Rage": {
                                     "name": "Szał berserkera",
                                     "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajes 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                                    "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                                     "effects": [
                                         {
                                             "name": "Szał berserkera"

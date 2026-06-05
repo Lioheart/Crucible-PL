@@ -1,6 +1,7 @@
 ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Lioheart/Crucible-PL/latest/total)
 ![GitHub Release](https://img.shields.io/github/v/release/Lioheart/Crucible-PL)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/lang-pl-crucible&colorB=4aa94a)
+<a href="https://buycoffee.to/crucible-pl" target="_blank"><img src="https://buycoffee.to/static/img/share/share-button-dark.png" style="width: 78px; height: 20px" alt="Postaw kawę dla Lioheart na buycoffee.to"></a>
 
 # Nieoficjalne tłumaczenie gry Crucible na język polski
 <p align="center">
