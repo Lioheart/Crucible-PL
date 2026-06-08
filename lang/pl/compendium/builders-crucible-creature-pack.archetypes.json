@@ -1,0 +1,308 @@
+{
+    "label": "Archetypy",
+    "folders": {
+        "Devils": "Diabły",
+        "Spirits": "Duchy",
+        "Celestials": "Niebianie",
+        "Plants": "Rośliny",
+        "Constructs": "Konstrukty",
+        "Humanoids": "Humanoidy",
+        "Fiends": "Diabły",
+        "Undead": "Nieumarli",
+        "Demons": "Demony",
+        "Monstrosities": "Potworności",
+        "Giants": "Olbrzymy",
+        "Beasts": "Bestie",
+        "Outsiders": "Zewnętrzni",
+        "Dinosaurs": "Dinozaury",
+        "Elementals": "Żywiołaki",
+        "Dragons": "Smoki"
+    },
+    "entries": {
+        "Adult Dragon": {
+            "name": "Dorosły smok"
+        },
+        "Adult Dragon Turtle": {
+            "name": "Dorosły smoczy żółw"
+        },
+        "Adult Fey Dragon": {
+            "name": "Dorosły wróżkowy smok"
+        },
+        "Allosaurus": {
+            "name": "Allozaur"
+        },
+        "Ambusher": {
+            "name": "Czyhacz"
+        },
+        "Ancient Dragon": {
+            "name": "Starożytny smok"
+        },
+        "Ancient Dragon Turtle": {
+            "name": "Starożytny smoczy żółw"
+        },
+        "Animated Armor": {
+            "name": "Ożywiony pancerz"
+        },
+        "Animated Hand": {
+            "name": "Ożywiona ręka"
+        },
+        "Ankylosaurus": {
+            "name": "Ankylozaur"
+        },
+        "Basilisk": {
+            "name": "Bazyliszek"
+        },
+        "Boulder Elemental": {
+            "name": "Żywiołak głazu"
+        },
+        "Brute": {
+            "name": "Brutalny"
+        },
+        "Champion": {
+            "name": "Czempion"
+        },
+        "Chimera": {
+            "name": "Chimera"
+        },
+        "Cockatrice": {
+            "name": "Kuroliszek"
+        },
+        "Constrictor": {
+            "name": "Wąż dusiciel"
+        },
+        "Construct Mote": {
+            "name": "Cząstka konstruktu"
+        },
+        "Construct Sprite": {
+            "name": "Konstrukt duchowy"
+        },
+        "Construct Visitor": {
+            "name": "Konstrukt przybysz"
+        },
+        "Construct Wanderer": {
+            "name": "Konstrukt wędrowiec"
+        },
+        "Damned": {
+            "name": "Przeklęty"
+        },
+        "Darkness Demon": {
+            "name": "Demon ciemności"
+        },
+        "Dead Eye": {
+            "name": "Martwe oko"
+        },
+        "Death Knight": {
+            "name": "Rycerz śmierci"
+        },
+        "Demon Tyrant": {
+            "name": "Władca demonów"
+        },
+        "Deva": {
+            "name": "Dewa"
+        },
+        "Devil Footman": {
+            "name": "Diabelski lokaj"
+        },
+        "Devil Overlord": {
+            "name": "Władca piekieł"
+        },
+        "Devil Warden": {
+            "name": "Diabeł wędrowiec"
+        },
+        "Devil Watcher": {
+            "name": "Piekielny obserwator"
+        },
+        "Dragon Turtle Wyrmling": {
+            "name": "Pisklę smoczego żółwia"
+        },
+        "Dredge": {
+            "name": "Pogrzebacz"
+        },
+        "Earth Genie": {
+            "name": "Ziemisty dżin"
+        },
+        "Elder Fey Dragon": {
+            "name": "Starszy wróżkowy smok"
+        },
+        "Erinyes Devil": {
+            "name": "Erynia"
+        },
+        "Eye Tyrant": {
+            "name": "Władca oczu"
+        },
+        "Flame Devil": {
+            "name": "Ognisty diabeł"
+        },
+        "Flame Genie": {
+            "name": "Ognisty dżin"
+        },
+        "Flame Giant": {
+            "name": "Ognisty olbrzym"
+        },
+        "Flaming Skull": {
+            "name": "Płonąca czaszka"
+        },
+        "Flesh Monster": {
+            "name": "Potwór z ciała"
+        },
+        "Flying Sword": {
+            "name": "Latający miecz"
+        },
+        "Gargoyle": {
+            "name": "Gargulec"
+        },
+        "Gorilla Demon": {
+            "name": "Demon-goryl"
+        },
+        "Half Spider": {
+            "name": "Półpająk"
+        },
+        "Hill Giant": {
+            "name": "Wzgórzowy olbrzym"
+        },
+        "Hulking Demon": {
+            "name": "Potężny demon"
+        },
+        "Ice Genie": {
+            "name": "Lodowy dżin"
+        },
+        "Ice Giant": {
+            "name": "Lodowy olbrzym"
+        },
+        "Imp": {
+            "name": "Imp"
+        },
+        "Lightning Giant": {
+            "name": "Burzowy olbrzym"
+        },
+        "Mindwarper": {
+            "name": "Wypaczacz umysłu"
+        },
+        "Mosquito Demon": {
+            "name": "Demon-komar"
+        },
+        "Needle Devil": {
+            "name": "Igłowy diabeł"
+        },
+        "Needle Plant": {
+            "name": "Kolczasta roślina"
+        },
+        "Onlooker": {
+            "name": "Przyglądacz"
+        },
+        "Ooze Demon": {
+            "name": "Demon-śluz"
+        },
+        "Ossis Devil": {
+            "name": "Diabeł Ossis"
+        },
+        "Paralyzer": {
+            "name": "Bezwładnik"
+        },
+        "Phantasm": {
+            "name": "Zjawa"
+        },
+        "Pincer Demon": {
+            "name": "Szczypcowy demon"
+        },
+        "Planetar": {
+            "name": "Planetar"
+        },
+        "Plesiosaurus": {
+            "name": "Plesiozaur"
+        },
+        "Pteranodon": {
+            "name": "Pteranodon"
+        },
+        "Quasit": {
+            "name": "Quasit"
+        },
+        "Rock Giant": {
+            "name": "Kamienny olbrzym"
+        },
+        "Rug of Smothering": {
+            "name": "Duszący dywan"
+        },
+        "Shadow": {
+            "name": "Cień"
+        },
+        "Shadow Caster": {
+            "name": "Mistrz cieni"
+        },
+        "Shrub Plant": {
+            "name": "Krzew"
+        },
+        "Skull Lich": {
+            "name": "Czaszkowy lich"
+        },
+        "Sky Giant": {
+            "name": "Niebiański olbrzym"
+        },
+        "Snake Demon": {
+            "name": "Demon-wąż"
+        },
+        "Solar": {
+            "name": "Archanioł"
+        },
+        "Spiritual Mote": {
+            "name": "Cząstka duchowa"
+        },
+        "Spiritual Sprite": {
+            "name": "Spirytualny duch"
+        },
+        "Spiritual Visitor": {
+            "name": "Duchowy przybysz"
+        },
+        "Spiritual Wanderer": {
+            "name": "Duchowy wędrowiec"
+        },
+        "Storm Genie": {
+            "name": "Burzowy dżin"
+        },
+        "Swine Demon": {
+            "name": "Demon-świnia"
+        },
+        "Thrower": {
+            "name": "Miotacz"
+        },
+        "Toad Demon": {
+            "name": "Demon-ropucha"
+        },
+        "Triceratops": {
+            "name": "Triceratops"
+        },
+        "Tyrannosaurus Rex": {
+            "name": "Tyranozaur"
+        },
+        "Vine Plant": {
+            "name": "Winorośl"
+        },
+        "Vulture Demon": {
+            "name": "Demon-sęp"
+        },
+        "Wailer": {
+            "name": "Wyjec"
+        },
+        "Wildspeaker": {
+            "name": "Dziki mówca"
+        },
+        "Wretch": {
+            "name": "Nędznik"
+        },
+        "Wyrmling": {
+            "name": "Smocze pisklę"
+        },
+        "Young Dragon": {
+            "name": "Młody smok"
+        },
+        "Young Dragon Turtle": {
+            "name": "Młody smoczy żółw"
+        },
+        "Young Fey Dragon": {
+            "name": "Młody wróżkowy smok"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
