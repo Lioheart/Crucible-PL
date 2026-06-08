@@ -1,305 +1,308 @@
 {
-	"label": "Archetypes",
-	"folders": {
-		"Devils": "Devils",
-		"Spirits": "Spirits",
-		"Celestials": "Celestials",
-		"Plants": "Plants",
-		"Constructs": "Constructs",
-		"Humanoids": "Humanoids",
-		"Fiends": "Fiends",
-		"Undead": "Undead",
-		"Demons": "Demons",
-		"Monstrosities": "Monstrosities",
-		"Giants": "Giants",
-		"Beasts": "Beasts",
-		"Outsiders": "Outsiders",
-		"Dinosaurs": "Dinosaurs",
-		"Elementals": "Elementals",
-		"Dragons": "Dragons"
-	},
-	"entries": {
-		"Shadow": {
-			"name": "Shadow"
-		},
-		"Brute": {
-			"name": "Brute"
-		},
-		"Ancient Dragon": {
-			"name": "Ancient Dragon"
-		},
-		"Construct Sprite": {
-			"name": "Construct Sprite"
-		},
-		"Young Dragon": {
-			"name": "Young Dragon"
-		},
-		"Flaming Skull": {
-			"name": "Flaming Skull"
-		},
-		"Ice Genie": {
-			"name": "Ice Genie"
-		},
-		"Chimera": {
-			"name": "Chimera"
-		},
-		"Wyrmling": {
-			"name": "Wyrmling"
-		},
-		"Toad Demon": {
-			"name": "Toad Demon"
-		},
-		"Spiritual Sprite": {
-			"name": "Spiritual Sprite"
-		},
-		"Needle Devil": {
-			"name": "Needle Devil"
-		},
-		"Flame Genie": {
-			"name": "Flame Genie"
-		},
-		"Ossis Devil": {
-			"name": "Ossis Devil"
-		},
-		"Mindwarper": {
-			"name": "Mindwarper"
-		},
-		"Devil Watcher": {
-			"name": "Devil Watcher"
-		},
-		"Damned": {
-			"name": "Damned"
-		},
-		"Flame Devil": {
-			"name": "Flame Devil"
-		},
-		"Gorilla Demon": {
-			"name": "Gorilla Demon"
-		},
-		"Adult Dragon": {
-			"name": "Adult Dragon"
-		},
-		"Sky Giant": {
-			"name": "Sky Giant"
-		},
-		"Ancient Dragon Turtle": {
-			"name": "Ancient Dragon Turtle"
-		},
-		"Adult Fey Dragon": {
-			"name": "Adult Fey Dragon"
-		},
-		"Pteranodon": {
-			"name": "Pteranodon"
-		},
-		"Devil Overlord": {
-			"name": "Devil Overlord"
-		},
-		"Elder Fey Dragon": {
-			"name": "Elder Fey Dragon"
-		},
-		"Flying Sword": {
-			"name": "Flying Sword"
-		},
-		"Animated Hand": {
-			"name": "Animated Hand"
-		},
-		"Imp": {
-			"name": "Imp"
-		},
-		"Eye Tyrant": {
-			"name": "Eye Tyrant"
-		},
-		"Tyrannosaurus Rex": {
-			"name": "Tyrannosaurus Rex"
-		},
-		"Half Spider": {
-			"name": "Half Spider"
-		},
-		"Onlooker": {
-			"name": "Onlooker"
-		},
-		"Adult Dragon Turtle": {
-			"name": "Adult Dragon Turtle"
-		},
-		"Ice Giant": {
-			"name": "Ice Giant"
-		},
-		"Wildspeaker": {
-			"name": "Wildspeaker"
-		},
-		"Allosaurus": {
-			"name": "Allosaurus"
-		},
-		"Construct Mote": {
-			"name": "Construct Mote"
-		},
-		"Wailer": {
-			"name": "Wailer"
-		},
-		"Constrictor": {
-			"name": "Constrictor"
-		},
-		"Hill Giant": {
-			"name": "Hill Giant"
-		},
-		"Dredge": {
-			"name": "Dredge"
-		},
-		"Basilisk": {
-			"name": "Basilisk"
-		},
-		"Quasit": {
-			"name": "Quasit"
-		},
-		"Shrub Plant": {
-			"name": "Shrub Plant"
-		},
-		"Rock Giant": {
-			"name": "Rock Giant"
-		},
-		"Darkness Demon": {
-			"name": "Darkness Demon"
-		},
-		"Animated Armor": {
-			"name": "Animated Armor"
-		},
-		"Death Knight": {
-			"name": "Death Knight"
-		},
-		"Wretch": {
-			"name": "Wretch"
-		},
-		"Deva": {
-			"name": "Deva"
-		},
-		"Dragon Turtle Wyrmling": {
-			"name": "Dragon Turtle Wyrmling"
-		},
-		"Earth Genie": {
-			"name": "Earth Genie"
-		},
-		"Shadow Caster": {
-			"name": "Shadow Caster"
-		},
-		"Mosquito Demon": {
-			"name": "Mosquito Demon"
-		},
-		"Champion": {
-			"name": "Champion"
-		},
-		"Paralyzer": {
-			"name": "Paralyzer"
-		},
-		"Ambusher": {
-			"name": "Ambusher"
-		},
-		"Thrower": {
-			"name": "Thrower"
-		},
-		"Spiritual Wanderer": {
-			"name": "Spiritual Wanderer"
-		},
-		"Triceratops": {
-			"name": "Triceratops"
-		},
-		"Hulking Demon": {
-			"name": "Hulking Demon"
-		},
-		"Cockatrice": {
-			"name": "Cockatrice"
-		},
-		"Devil Footman": {
-			"name": "Devil Footman"
-		},
-		"Swine Demon": {
-			"name": "Swine Demon"
-		},
-		"Demon Tyrant": {
-			"name": "Demon Tyrant"
-		},
-		"Skull Lich": {
-			"name": "Skull Lich"
-		},
-		"Plesiosaurus": {
-			"name": "Plesiosaurus"
-		},
-		"Lightning Giant": {
-			"name": "Lightning Giant"
-		},
-		"Planetar": {
-			"name": "Planetar"
-		},
-		"Construct Visitor": {
-			"name": "Construct Visitor"
-		},
-		"Ankylosaurus": {
-			"name": "Ankylosaurus"
-		},
-		"Phantasm": {
-			"name": "Phantasm"
-		},
-		"Construct Wanderer": {
-			"name": "Construct Wanderer"
-		},
-		"Flame Giant": {
-			"name": "Flame Giant"
-		},
-		"Spiritual Visitor": {
-			"name": "Spiritual Visitor"
-		},
-		"Young Fey Dragon": {
-			"name": "Young Fey Dragon"
-		},
-		"Vine Plant": {
-			"name": "Vine Plant"
-		},
-		"Vulture Demon": {
-			"name": "Vulture Demon"
-		},
-		"Boulder Elemental": {
-			"name": "Boulder Elemental"
-		},
-		"Ooze Demon": {
-			"name": "Ooze Demon"
-		},
-		"Pincer Demon": {
-			"name": "Pincer Demon"
-		},
-		"Snake Demon": {
-			"name": "Snake Demon"
-		},
-		"Young Dragon Turtle": {
-			"name": "Young Dragon Turtle"
-		},
-		"Dead Eye": {
-			"name": "Dead Eye"
-		},
-		"Erinyes Devil": {
-			"name": "Erinyes Devil"
-		},
-		"Flesh Monster": {
-			"name": "Flesh Monster"
-		},
-		"Gargoyle": {
-			"name": "Gargoyle"
-		},
-		"Devil Warden": {
-			"name": "Devil Warden"
-		},
-		"Solar": {
-			"name": "Solar"
-		},
-		"Rug of Smothering": {
-			"name": "Rug of Smothering"
-		},
-		"Storm Genie": {
-			"name": "Storm Genie"
-		},
-		"Spiritual Mote": {
-			"name": "Spiritual Mote"
-		},
-		"Needle Plant": {
-			"name": "Needle Plant"
-		}
-	}
+    "label": "Archetypes",
+    "folders": {
+        "Devils": "Devils",
+        "Spirits": "Spirits",
+        "Celestials": "Celestials",
+        "Plants": "Plants",
+        "Constructs": "Constructs",
+        "Humanoids": "Humanoids",
+        "Fiends": "Fiends",
+        "Undead": "Undead",
+        "Demons": "Demons",
+        "Monstrosities": "Monstrosities",
+        "Giants": "Giants",
+        "Beasts": "Beasts",
+        "Outsiders": "Outsiders",
+        "Dinosaurs": "Dinosaurs",
+        "Elementals": "Elementals",
+        "Dragons": "Dragons"
+    },
+    "entries": {
+        "Adult Dragon": {
+            "name": "Adult Dragon"
+        },
+        "Adult Dragon Turtle": {
+            "name": "Adult Dragon Turtle"
+        },
+        "Adult Fey Dragon": {
+            "name": "Adult Fey Dragon"
+        },
+        "Allosaurus": {
+            "name": "Allosaurus"
+        },
+        "Ambusher": {
+            "name": "Ambusher"
+        },
+        "Ancient Dragon": {
+            "name": "Ancient Dragon"
+        },
+        "Ancient Dragon Turtle": {
+            "name": "Ancient Dragon Turtle"
+        },
+        "Animated Armor": {
+            "name": "Animated Armor"
+        },
+        "Animated Hand": {
+            "name": "Animated Hand"
+        },
+        "Ankylosaurus": {
+            "name": "Ankylosaurus"
+        },
+        "Basilisk": {
+            "name": "Basilisk"
+        },
+        "Boulder Elemental": {
+            "name": "Boulder Elemental"
+        },
+        "Brute": {
+            "name": "Brute"
+        },
+        "Champion": {
+            "name": "Champion"
+        },
+        "Chimera": {
+            "name": "Chimera"
+        },
+        "Cockatrice": {
+            "name": "Cockatrice"
+        },
+        "Constrictor": {
+            "name": "Constrictor"
+        },
+        "Construct Mote": {
+            "name": "Construct Mote"
+        },
+        "Construct Sprite": {
+            "name": "Construct Sprite"
+        },
+        "Construct Visitor": {
+            "name": "Construct Visitor"
+        },
+        "Construct Wanderer": {
+            "name": "Construct Wanderer"
+        },
+        "Damned": {
+            "name": "Damned"
+        },
+        "Darkness Demon": {
+            "name": "Darkness Demon"
+        },
+        "Dead Eye": {
+            "name": "Dead Eye"
+        },
+        "Death Knight": {
+            "name": "Death Knight"
+        },
+        "Demon Tyrant": {
+            "name": "Demon Tyrant"
+        },
+        "Deva": {
+            "name": "Deva"
+        },
+        "Devil Footman": {
+            "name": "Devil Footman"
+        },
+        "Devil Overlord": {
+            "name": "Devil Overlord"
+        },
+        "Devil Warden": {
+            "name": "Devil Warden"
+        },
+        "Devil Watcher": {
+            "name": "Devil Watcher"
+        },
+        "Dragon Turtle Wyrmling": {
+            "name": "Dragon Turtle Wyrmling"
+        },
+        "Dredge": {
+            "name": "Dredge"
+        },
+        "Earth Genie": {
+            "name": "Earth Genie"
+        },
+        "Elder Fey Dragon": {
+            "name": "Elder Fey Dragon"
+        },
+        "Erinyes Devil": {
+            "name": "Erinyes Devil"
+        },
+        "Eye Tyrant": {
+            "name": "Eye Tyrant"
+        },
+        "Flame Devil": {
+            "name": "Flame Devil"
+        },
+        "Flame Genie": {
+            "name": "Flame Genie"
+        },
+        "Flame Giant": {
+            "name": "Flame Giant"
+        },
+        "Flaming Skull": {
+            "name": "Flaming Skull"
+        },
+        "Flesh Monster": {
+            "name": "Flesh Monster"
+        },
+        "Flying Sword": {
+            "name": "Flying Sword"
+        },
+        "Gargoyle": {
+            "name": "Gargoyle"
+        },
+        "Gorilla Demon": {
+            "name": "Gorilla Demon"
+        },
+        "Half Spider": {
+            "name": "Half Spider"
+        },
+        "Hill Giant": {
+            "name": "Hill Giant"
+        },
+        "Hulking Demon": {
+            "name": "Hulking Demon"
+        },
+        "Ice Genie": {
+            "name": "Ice Genie"
+        },
+        "Ice Giant": {
+            "name": "Ice Giant"
+        },
+        "Imp": {
+            "name": "Imp"
+        },
+        "Lightning Giant": {
+            "name": "Lightning Giant"
+        },
+        "Mindwarper": {
+            "name": "Mindwarper"
+        },
+        "Mosquito Demon": {
+            "name": "Mosquito Demon"
+        },
+        "Needle Devil": {
+            "name": "Needle Devil"
+        },
+        "Needle Plant": {
+            "name": "Needle Plant"
+        },
+        "Onlooker": {
+            "name": "Onlooker"
+        },
+        "Ooze Demon": {
+            "name": "Ooze Demon"
+        },
+        "Ossis Devil": {
+            "name": "Ossis Devil"
+        },
+        "Paralyzer": {
+            "name": "Paralyzer"
+        },
+        "Phantasm": {
+            "name": "Phantasm"
+        },
+        "Pincer Demon": {
+            "name": "Pincer Demon"
+        },
+        "Planetar": {
+            "name": "Planetar"
+        },
+        "Plesiosaurus": {
+            "name": "Plesiosaurus"
+        },
+        "Pteranodon": {
+            "name": "Pteranodon"
+        },
+        "Quasit": {
+            "name": "Quasit"
+        },
+        "Rock Giant": {
+            "name": "Rock Giant"
+        },
+        "Rug of Smothering": {
+            "name": "Rug of Smothering"
+        },
+        "Shadow": {
+            "name": "Shadow"
+        },
+        "Shadow Caster": {
+            "name": "Shadow Caster"
+        },
+        "Shrub Plant": {
+            "name": "Shrub Plant"
+        },
+        "Skull Lich": {
+            "name": "Skull Lich"
+        },
+        "Sky Giant": {
+            "name": "Sky Giant"
+        },
+        "Snake Demon": {
+            "name": "Snake Demon"
+        },
+        "Solar": {
+            "name": "Solar"
+        },
+        "Spiritual Mote": {
+            "name": "Spiritual Mote"
+        },
+        "Spiritual Sprite": {
+            "name": "Spiritual Sprite"
+        },
+        "Spiritual Visitor": {
+            "name": "Spiritual Visitor"
+        },
+        "Spiritual Wanderer": {
+            "name": "Spiritual Wanderer"
+        },
+        "Storm Genie": {
+            "name": "Storm Genie"
+        },
+        "Swine Demon": {
+            "name": "Swine Demon"
+        },
+        "Thrower": {
+            "name": "Thrower"
+        },
+        "Toad Demon": {
+            "name": "Toad Demon"
+        },
+        "Triceratops": {
+            "name": "Triceratops"
+        },
+        "Tyrannosaurus Rex": {
+            "name": "Tyrannosaurus Rex"
+        },
+        "Vine Plant": {
+            "name": "Vine Plant"
+        },
+        "Vulture Demon": {
+            "name": "Vulture Demon"
+        },
+        "Wailer": {
+            "name": "Wailer"
+        },
+        "Wildspeaker": {
+            "name": "Wildspeaker"
+        },
+        "Wretch": {
+            "name": "Wretch"
+        },
+        "Wyrmling": {
+            "name": "Wyrmling"
+        },
+        "Young Dragon": {
+            "name": "Young Dragon"
+        },
+        "Young Dragon Turtle": {
+            "name": "Young Dragon Turtle"
+        },
+        "Young Fey Dragon": {
+            "name": "Young Fey Dragon"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
 }

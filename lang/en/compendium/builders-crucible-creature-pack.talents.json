@@ -296,12 +296,16 @@
         "Light Sensitivity": {
             "name": "Light Sensitivity",
             "description": "<p>While in Bright light, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions.</p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-            "effects": [
-                {
+            "effects": {
+                "Sunlight Weakness": {
                     "name": "Sunlight Weakness",
-                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                    "changes": {
+                        "system.rollBonuses.banes.sunlightWeakness.number": 2,
+                        "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                    }
                 }
-            ]
+            }
         },
         "Lightning Breath": {
             "name": "Lightning Breath",
@@ -641,10 +645,6 @@
                 }
             }
         },
-        "Sunlight Weakness": {
-            "name": "Sunlight Weakness",
-            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
-        },
         "Telepathy": {
             "name": "Telepathy",
             "description": "<p>The Creature can communicate telepathically with other creatures it can see.</p>"
@@ -712,7 +712,7 @@
         "description": "system.description",
         "effects": {
             "path": "effects",
-            "converter": "embeddedEffectsConverter"
+            "converter": "itemEffectsConverter"
         }
     }
 }

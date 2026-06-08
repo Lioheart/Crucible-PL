@@ -1,20 +1,23 @@
 {
-	"label": "Ancestries",
-	"entries": {
-		"Deep Dwarf": {
-			"name": "Deep Dwarf"
-		},
-		"Centaur": {
-			"name": "Centaur"
-		},
-		"Dark Elf": {
-			"name": "Dark Elf"
-		},
-		"Bugbear": {
-			"name": "Bugbear"
-		},
-		"Frogman": {
-			"name": "Frogman"
-		}
-	}
+    "label": "Ancestries",
+    "entries": {
+        "Bugbear": {
+            "name": "Bugbear"
+        },
+        "Centaur": {
+            "name": "Centaur"
+        },
+        "Dark Elf": {
+            "name": "Dark Elf"
+        },
+        "Deep Dwarf": {
+            "name": "Deep Dwarf"
+        },
+        "Frogman": {
+            "name": "Frogman"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
 }
