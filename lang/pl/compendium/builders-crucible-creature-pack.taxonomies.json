@@ -1,0 +1,191 @@
+{
+    "label": "Taksonomie",
+    "folders": {
+        "Outsiders": "Zewnętrzni",
+        "Elementals": "Żywiołaki",
+        "Celestials": "Niebianie",
+        "Giants": "Olbrzymy",
+        "Plants": "Rośliny",
+        "Dragons": "Smoki",
+        "Fey": "Fey",
+        "Humanoids": "Humanoidy",
+        "Undead": "Nieumarły",
+        "Fiends": "Diabły",
+        "Constructs": "Konstrukty",
+        "Beasts": "Bestie",
+        "Monstrosities": "Potworności"
+    },
+    "entries": {
+        "Aboleth": {
+            "name": "Aboleth"
+        },
+        "Acid Ant": {
+            "name": "Mrówka kwasowa"
+        },
+        "Angel": {
+            "name": "Anioł"
+        },
+        "Animated Item": {
+            "name": "Ożywiony przedmiot"
+        },
+        "Banshee": {
+            "name": "Banshee"
+        },
+        "Basilisk": {
+            "name": "Bazyliszek"
+        },
+        "Behir": {
+            "name": "Behir"
+        },
+        "Birdfolk": {
+            "name": "Człowiek-ptak"
+        },
+        "Black Dragon": {
+            "name": "Czarny smok"
+        },
+        "Blue Dragon": {
+            "name": "Niebieski smok"
+        },
+        "Brass Dragon": {
+            "name": "Mosiężny smok"
+        },
+        "Bronze Dragon": {
+            "name": "Brązowy smok"
+        },
+        "Cave Ray": {
+            "name": "Płaszczka jaskiniowa"
+        },
+        "Cave Squid": {
+            "name": "Kałamarnica jaskiniowa"
+        },
+        "Changeling": {
+            "name": "Zmiennokształtny"
+        },
+        "Chicken": {
+            "name": "Kurczak"
+        },
+        "Chimera": {
+            "name": "Chimera"
+        },
+        "Control Construct": {
+            "name": "Konstrukt kontroli"
+        },
+        "Copper Dragon": {
+            "name": "Miedziany smok"
+        },
+        "Corrupted Plant": {
+            "name": "Skażona roślina"
+        },
+        "Couatl": {
+            "name": "Couatl"
+        },
+        "Crawler": {
+            "name": "Gąsienica"
+        },
+        "Crustacean": {
+            "name": "Skorupiak"
+        },
+        "Cyclops": {
+            "name": "Cyklop"
+        },
+        "Death Spirit": {
+            "name": "Duchowa śmierć"
+        },
+        "Demigod": {
+            "name": "Półbóg"
+        },
+        "Demon": {
+            "name": "Demon"
+        },
+        "Devil": {
+            "name": "Diabeł"
+        },
+        "Dinosaur": {
+            "name": "Dinozaur"
+        },
+        "Dracolich": {
+            "name": "Drakolich"
+        },
+        "Dragon Turtle": {
+            "name": "Smoczy żółw"
+        },
+        "Dryad": {
+            "name": "Driada"
+        },
+        "Ettercap": {
+            "name": "Ettercap"
+        },
+        "Ettin": {
+            "name": "Ettin"
+        },
+        "Eye Monster": {
+            "name": "Potwór oka"
+        },
+        "Fey Dragon": {
+            "name": "Wróżkowy smok"
+        },
+        "Flame Dwarf": {
+            "name": "Krasnolud ognia"
+        },
+        "Flesh Monster": {
+            "name": "Potwór z ciała"
+        },
+        "Floating Skull": {
+            "name": "Latająca czaszka"
+        },
+        "Fomorian": {
+            "name": "Fomorianin"
+        },
+        "Ghast": {
+            "name": "Ghast"
+        },
+        "Giant": {
+            "name": "Olbrzym"
+        },
+        "Gold Dragon": {
+            "name": "Złoty smok"
+        },
+        "Green Dragon": {
+            "name": "Zielony smok"
+        },
+        "Illumination Construct": {
+            "name": "Konstrukt światłości"
+        },
+        "Illusion Construct": {
+            "name": "Konstrukt iluzji"
+        },
+        "Kinesis Construct": {
+            "name": "Konstrukt kinetyki"
+        },
+        "Land Shark": {
+            "name": "Rekin lądowy"
+        },
+        "Life Spirit": {
+            "name": "Duch życia"
+        },
+        "Oblivion Spirit": {
+            "name": "Duch zapomnienia"
+        },
+        "Red Dragon": {
+            "name": "Czerwony smok"
+        },
+        "Shadow": {
+            "name": "Cień"
+        },
+        "Shadow Dragon": {
+            "name": "Cienisty smok"
+        },
+        "Silver Dragon": {
+            "name": "Srebrny smok"
+        },
+        "Soul Spirit": {
+            "name": "Duch duszy"
+        },
+        "White Dragon": {
+            "name": "Biały smok"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
