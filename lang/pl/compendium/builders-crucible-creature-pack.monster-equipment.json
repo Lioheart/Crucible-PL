@@ -1,0 +1,185 @@
+{
+    "label": "Wyposażenie potworów",
+    "folders": {
+        "Armor": "Pancerz",
+        "Weapons": "Bronie"
+    },
+    "entries": {
+        "Angelic Armor": {
+            "name": "Anielski pancerz"
+        },
+        "Bark Armor": {
+            "name": "Korowy pancerz"
+        },
+        "Bite": {
+            "name": "Ugryzienie"
+        },
+        "Bones": {
+            "name": "Kości"
+        },
+        "Claw": {
+            "name": "Pazur"
+        },
+        "Construct Armor": {
+            "name": "Pancerz konstruktu"
+        },
+        "Deathly Armor": {
+            "name": "Pancerz śmierci"
+        },
+        "Demonic Armor": {
+            "name": "Demoniczny pancerz"
+        },
+        "Dragon Scales": {
+            "name": "Smocze łuski"
+        },
+        "Earthen Claw": {
+            "name": "Ziemski pazur"
+        },
+        "Elemental Armor": {
+            "name": "Pancerz żywiołów"
+        },
+        "Fire Damage": {
+            "name": "Obrażenia od ognia",
+            "description": "<p>Dodaje obrażenia typu <strong>Ogień</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Ogień</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Ogień</strong>.</p>",
+            "adjective": "Płomienia"
+        },
+        "Fist": {
+            "name": "Pięść"
+        },
+        "Flame Claw": {
+            "name": "Płomienny pazur"
+        },
+        "Horns": {
+            "name": "Rogi"
+        },
+        "Huge Greatclub": {
+            "name": "Ogromna maczuga",
+            "description": {
+                "public": "<p>Gruby kawałek ciężkiego drewna, czasem nabity żelaznymi kolcami, wielka maczuga jest prymitywną, ale budzącą grozę bronią, niebezpieczną nawet w rękach niedoświadczonego użytkownika.</p>"
+            }
+        },
+        "Icy Claw": {
+            "name": "Lodowy pazur"
+        },
+        "Illuminated Claw": {
+            "name": "Świetlisty szpon"
+        },
+        "Mechanical Spear": {
+            "name": "Mechaniczna włócznia"
+        },
+        "Mind Claw": {
+            "name": "Szpon umysłu"
+        },
+        "Natural Armor": {
+            "name": "Naturalny pancerz"
+        },
+        "Needles": {
+            "name": "Igły"
+        },
+        "Pelt": {
+            "name": "Skóra"
+        },
+        "Pincer": {
+            "name": "Szczypce"
+        },
+        "Pitchfork": {
+            "name": "Widelec"
+        },
+        "Poison Conversion": {
+            "name": "Konwersja trucizny",
+            "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Trucizna</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Truciznę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+            "adjective": "Jadowitości"
+        },
+        "Poison Damage": {
+            "name": "Obrażeń od trucizny",
+            "description": "<p>Dodaje obrażenia typu <strong>Trucizna</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Trucizna</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Truciznę</strong>.</p>",
+            "adjective": "Jadu"
+        },
+        "Poison Vine": {
+            "name": "Trujące pnącze"
+        },
+        "Proboscis": {
+            "name": "Trąbka"
+        },
+        "Pseudopod": {
+            "name": "Nibynóżka"
+        },
+        "Rock": {
+            "name": "Skała"
+        },
+        "Sap Life": {
+            "name": "Energia życia"
+        },
+        "Sap Soul": {
+            "name": "Energia duszy"
+        },
+        "Spider Staff": {
+            "name": "Pajęczy kostur"
+        },
+        "Spiritual Armor": {
+            "name": "Duchowy pancerz"
+        },
+        "Stinger": {
+            "name": "Żądło",
+            "effects": {
+                "Poison Damage": {
+                    "name": "Obrażeń od trucizny",
+                    "description": "<p>Dodaje obrażenia typu <strong>Trucizna</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Trucizna</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Truciznę</strong>.</p>",
+                    "adjective": "Jadu"
+                },
+                "Poison Conversion": {
+                    "name": "Konwersja trucizny",
+                    "description": "<p>Część obrażeń zadawanych przez ataki tą bronią jest przekształcana w obrażenia typu <strong>Trucizna</strong>. Proporcja konwersji zależy od <strong>Stopnia</strong> tego przyrostka I.</p><ul><li><p><strong>Stopień 1:</strong> 33% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 2:</strong> 66% obrażeń ulega konwersji</p></li><li><p><strong>Stopień 3:</strong> 100% obrażeń ulega konwersji</p></li></ul><h3 class=\"divider\">Uwagi do playtestu</h3><p>Infrastruktura umożliwiająca podział pojedynczego ataku na wiele typów obrażeń jeszcze nie istnieje. Do czasu jej wprowadzenia wszystkie stopnie tego przedrostka konwertują 100% obrażeń broni na <strong>Truciznę</strong>. Gdy obsługa wielu typów obrażeń zostanie zaimplementowana, niższe stopnie będą konwertować jedynie część całkowitych obrażeń, pozostawiając resztę jako pierwotny typ obrażeń broni.</p>",
+                    "adjective": "Jadowitości"
+                }
+            }
+        },
+        "Tail": {
+            "name": "Ogon"
+        },
+        "Tail Needles": {
+            "name": "Igły ogonowe",
+            "effects": {
+                "Fire Damage": {
+                    "name": "Obrażenia od ognia",
+                    "description": "<p>Dodaje obrażenia typu <strong>Ogień</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Ogień</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Ogień</strong>.</p>",
+                    "adjective": "Płomienia"
+                }
+            }
+        },
+        "Talons": {
+            "name": "Szpony"
+        },
+        "Tentacle": {
+            "name": "Macka"
+        },
+        "Trident": {
+            "name": "Trójząb"
+        },
+        "Vine": {
+            "name": "Winorośl"
+        },
+        "Void Claw": {
+            "name": "Szpon pustki"
+        },
+        "Voltaic Claw": {
+            "name": "Elektryczny pazur"
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private"
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "itemEffectsConverter"
+        },
+        "adjective": "system.adjective"
+    }
+}
