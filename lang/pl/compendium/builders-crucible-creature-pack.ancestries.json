@@ -1,0 +1,23 @@
+{
+    "label": "Pochodzenia",
+    "entries": {
+        "Bugbear": {
+            "name": "Strachun"
+        },
+        "Centaur": {
+            "name": "Centaur"
+        },
+        "Dark Elf": {
+            "name": "Mroczny elf"
+        },
+        "Deep Dwarf": {
+            "name": "Krasnolud głębinowy"
+        },
+        "Frogman": {
+            "name": "Żaboludź"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
