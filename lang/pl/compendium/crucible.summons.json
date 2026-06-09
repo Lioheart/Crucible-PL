@@ -35,12 +35,12 @@
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
                 },
-                "Voltaic Claw": {
-                    "name": "Elektryczny pazur"
+                "Earthen Claw": {
+                    "name": "Ziemski pazur"
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": "<p>Siła uporządkowana żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym. Jej przeciwieństwem jest chaotyczna runa Błyskawicy.</p>\n<p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>kwasowe</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
@@ -56,7 +56,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -73,7 +73,7 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": "<p>Siła uporządkowana żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym. Jej przeciwieństwem jest chaotyczna runa Błyskawicy.</p>\n<p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>kwasowe</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "Opanowujesz Rune Ziemi, co pozwala ci kontrolować siły tektoniczne i korozyjne."
                 },
                 "Acid Absorption": {
                     "name": "Absorpcja kwasu",
@@ -81,7 +81,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -126,11 +126,11 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": "<p>Chaotyczna siła żywiołowej energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem. Jej przeciwieństwem jest uporządkowana runa Mrozu.</p>\n<p>Runa Płomienia skaluje się w oparciu o <strong>Inteligencję</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>ogniste</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -161,7 +161,7 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": "<p>Chaotyczna siła żywiołowej energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem. Jej przeciwieństwem jest uporządkowana runa Mrozu.</p>\n<p>Runa Płomienia skaluje się w oparciu o <strong>Inteligencję</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>ogniste</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "Nauczyłeś się Runy Płomienia, pozwalającej ci splatać tajemny żywioł ognia."
                 },
                 "Fire Absorption": {
                     "name": "Absorpcja ognia",
@@ -169,7 +169,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -205,7 +205,7 @@
                 },
                 "Rune: Frost": {
                     "name": "Runa: Mróz",
-                    "description": "<p>Uporządkowana siła elementarnej energii cieplnej. Runa Mrozu rządzi źródłami lodu i zimna. Jej przeciwieństwem jest chaotyczna runa Płomienia.</p>\n<p>Runa Mrozu wykorzystuje <strong>Mądrość</strong>, atakuje <strong>Wytrzymałość</strong> i zadaje <strong>Obrażenia od zimna</strong> do <strong>Zdrowia</strong>.</p>"
+                    "description": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
@@ -217,15 +217,15 @@
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego <strong>Biegu</strong>. Otrzymuje premię do <strong>Uniku</strong> równą połowie swojej wartości <strong>Wytrzymałości</strong>i jest odporny na stan @Condition[restrained].</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie poruszać się błyskawicznie w wodzie.</p>",
+                    "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
-                            "description": "<p>Gdy @ref[actor.name]{stworzenie} znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                            "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                         }
                     }
                 },
@@ -235,7 +235,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -256,25 +256,25 @@
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
-                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego <strong>Biegu</strong>. Otrzymuje premię do <strong>Uniku</strong> równą połowie swojej wartości <strong>Wytrzymałości</strong>i jest odporny na stan @Condition[restrained].</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się w przestrzeni o średnicy 1 cm bez żadnych kar do swojego <strong>Biegu</strong>. Jest odporna na stan @Condition[restrained].</p>"
                 },
                 "Rune: Frost": {
                     "name": "Runa: Mróz",
-                    "description": "<p>Uporządkowana siła elementarnej energii cieplnej. Runa Mrozu rządzi źródłami lodu i zimna. Jej przeciwieństwem jest chaotyczna runa Płomienia.</p>\n<p>Runa Mrozu wykorzystuje <strong>Mądrość</strong>, atakuje <strong>Wytrzymałość</strong> i zadaje <strong>Obrażenia od zimna</strong> do <strong>Zdrowia</strong>.</p>"
+                    "description": "Nauczyłeś się Runy Mrozu, która pozwala ci kierować magicznym żywiołem lodu."
                 },
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie poruszać się błyskawicznie w wodzie.</p>",
+                    "description": "<p>@ref[name] jest w stanie poruszać się błyskawicznie w wodzie.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
-                            "description": "<p>Gdy @ref[actor.name]{stworzenie} znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                            "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                         }
                     }
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -329,7 +329,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
@@ -366,8 +366,8 @@
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
                 },
-                "Voltaic Claw": {
-                    "name": "Elektryczny pazur"
+                "Earthen Claw": {
+                    "name": "Ziemski pazur"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
@@ -375,7 +375,7 @@
                 },
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
-                    "description": "Opanowujesz Runę Błyskawicy, która pozwala ci kontrolować gwałtowne, tajemnicze wyładowania elektryczne."
+                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
@@ -387,7 +387,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 }
             },
             "archetype": {
@@ -404,7 +404,7 @@
             "items": {
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
-                    "description": "Opanowujesz Runę Błyskawicy, która pozwala ci kontrolować gwałtowne, tajemnicze wyładowania elektryczne."
+                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
@@ -412,7 +412,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Skup esencję runy w szerokim lub rozszczepionym łuku, aby trafić wiele celów znajdujących się w bliskiej odległości. W połączeniu z żywiołem Ziemi może to spowodować wyrzucenie strumienia kamieni po łuku, natomiast w połączeniu z Kinezą może wyryć cięcie przecinające wielu wrogów.</p><p>Gest Wachlarz skaluje się w oparciu o <strong>Intelekt</strong> i obejmuje stożek o kącie 120 stopni i promieniu 6 stóp, zadając 6 punktów obrażeń podstawowych w przypadku udanego ataku.</p>"
                 },
                 "Voltaic Claw": {
                     "name": "Elektryczny pazur"
