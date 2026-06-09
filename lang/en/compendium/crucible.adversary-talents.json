@@ -563,17 +563,13 @@
         },
         "Sunlight Weakness": {
             "name": "Sunlight Weakness",
-            "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-            "effects": {
-                "Sunlight Weakness": {
+            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+            "effects": [
+                {
                     "name": "Sunlight Weakness",
-                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                    "changes": {
-                        "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                        "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                    }
+                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
                 }
-            }
+            ]
         },
         "Swallow": {
             "name": "Swallow",
@@ -723,7 +719,7 @@
         },
         "effects": {
             "path": "effects",
-            "converter": "itemEffectsConverter"
+            "converter": "embeddedEffectsConverter"
         }
     }
 }
