@@ -428,10 +428,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego afiksu.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "affixFocusing": {
+                        "affixFocus": {
                             "name": "Odnowienie skupienia",
                             "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
@@ -483,7 +483,7 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Aktywacja iluminacji",
-                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[item.name]{przedmiot} rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>"
+                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>"
                         }
                     }
                 }
@@ -774,7 +774,7 @@
             "effects": {
                 "Luminary": {
                     "name": "Świetlistości",
-                    "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I. Tylko jeden afiks może zapewniać tę korzyść.</p>",
+                    "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I.</p>",
                     "adjective": "Świetlistości"
                 }
             }
@@ -1229,10 +1229,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego afiksu.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "affixFocusing": {
+                        "affixFocus": {
                             "name": "Odnowienie skupienia",
                             "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
