@@ -1080,15 +1080,15 @@
             "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kinetyki. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[bleeding] przy Trafieniach krytycznych.</p><p>Efekt Krwawienie trwa przez <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>kłute</strong> <strong>Zdrowiu</strong> równe wartości twojej <strong>Prezencji</strong>.</p>"
         },
         "Last Stand": {
-            "name": "Ostatnia bitwa",
+            "name": "Ostatnie starcie",
             "description": "<p>Możesz zebrać siły i odwagę, aby walczyć dalej i nie poddawać się w obliczu nieprawdopodobnych przeciwności losu.</p>",
             "actions": {
                 "Last Stand": {
-                    "name": "Ostatnia bitwa",
+                    "name": "Ostatnie starcie",
                     "description": "<p>Wydajesz punkty <strong>Heroizmu</strong>, aby natychmiast odzyskać dwukrotność swojej <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>. Twój <strong>Próg Leczenia</strong> zostaje zmniejszony o 2 na następne 3 Rundy.</p>",
                     "effects": [
                         {
-                            "name": "Ostatnia bitwa"
+                            "name": "Ostatnie starcie"
                         }
                     ]
                 }
