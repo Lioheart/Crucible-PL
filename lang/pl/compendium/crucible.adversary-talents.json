@@ -563,9 +563,9 @@
         },
         "Sunlight Weakness": {
             "name": "Wrażliwość na światło słoneczne",
-            "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-            "effects": {
-                "Sunlight Weakness": {
+            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
+            "effects": [
+                {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                     "changes": {
@@ -573,7 +573,7 @@
                         "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
                     }
                 }
-            }
+            ]
         },
         "Swallow": {
             "name": "Połykanie",
@@ -723,7 +723,7 @@
         },
         "effects": {
             "path": "effects",
-            "converter": "itemEffectsConverter"
+            "converter": "embeddedEffectsConverter"
         }
     }
 }
