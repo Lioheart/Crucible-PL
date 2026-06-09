@@ -15,3 +15,10 @@ body {
 .crucible {
     --font-quote: "IM FELL DW Pica PRO", "CaslonAntique", serif;
 }
+
+.crucible .line-item .title h1,
+.crucible .line-item .title h2,
+.crucible .line-item .title h3,
+.crucible .line-item .title h4 {
+    white-space: wrap;
+}
