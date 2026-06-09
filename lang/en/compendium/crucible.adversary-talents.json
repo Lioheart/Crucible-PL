@@ -567,7 +567,11 @@
             "effects": [
                 {
                     "name": "Sunlight Weakness",
-                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>"
+                    "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                    "changes": {
+                        "system.rollBonuses.banes.sunlightWeakness.number": 2,
+                        "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                    }
                 }
             ]
         },
