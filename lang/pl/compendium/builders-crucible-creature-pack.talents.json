@@ -1,0 +1,718 @@
+{
+    "label": "Talenty",
+    "folders": {
+        "Training": "Szkolenie",
+        "Resistances": "Odporności",
+        "Burts": "Wybuchy",
+        "Form": "Kształt",
+        "Movement": "Ruch",
+        "Communication": "Komunikacja",
+        "Pulses": "Impulsy",
+        "Senses": "Zmysły",
+        "Attacks": "Ataki",
+        "Breath": "Zionięcie",
+        "Defenses": "Obrony"
+    },
+    "entries": {
+        "Acid Breath": {
+            "name": "Kwasowe zionięcie",
+            "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
+            "actions": {
+                "Breath": {
+                    "name": "Zionięcie",
+                    "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozprysk kwasu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Acid Spray": {
+            "name": "Rozprysk kwasu",
+            "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
+            "actions": {
+                "Acid Spray": {
+                    "name": "Rozprysk kwasu",
+                    "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozprysk kwasu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Amphibious": {
+            "name": "Amfibia",
+            "description": "<p>Stworzenie to potrafi oddychać zarówno pod wodą, jak i w powietrzu.</p>"
+        },
+        "Animate Boulders": {
+            "name": "Ożywione głazy",
+            "description": "<p>Stworzenie ożywia dwa głazy znajdujące się w promieniu 30 stóp od siebie.</p>",
+            "actions": {
+                "Animate Boulders": {
+                    "name": "Ożywione głazy",
+                    "description": "<p>Stworzenie ożywia dwa głazy, które widzi w promieniu 30 stóp od siebie. Głazy te stają się @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.FjB79NRT5qOLHMpq] i pozostają ożywione przez 1 minutę lub do momentu, gdy zginą.</p>",
+                    "effects": [
+                        {
+                            "name": "Ożywione głazy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Blinding Spit": {
+            "name": "Oślepiająca ślina",
+            "description": "<p>Stworzenie wypluwa żrącą kulę w kierunku celu znajdującego się w odległości do 30 stóp, wykonując atak przeciwko jego obronie na refleks. W przypadku trafienia cel zostaje oślepiony na 1 turę.</p>",
+            "actions": {
+                "Blinding Spit": {
+                    "name": "Oślepiająca ślina",
+                    "description": "<p>Stworzenie wypluwa żrącą kulę w kierunku celu znajdującego się w odległości do 30 stóp, wykonując atak przeciwko jego obronie na refleks. W przypadku trafienia cel zostaje oślepiony na 1 turę.</p>",
+                    "effects": [
+                        {
+                            "name": "Oślepiająca ślina"
+                        }
+                    ]
+                }
+            }
+        },
+        "Cloud of Dust": {
+            "name": "Chmura pyłu",
+            "description": "<p>Stworzenie wznieca chmurę pyłu, oślepiając przeciwników.</p>",
+            "actions": {
+                "Cloud of Dust": {
+                    "name": "Chmura pyłu",
+                    "description": "<p>Stworzenie wznieca chmurę pyłu w promieniu 15 stóp, wykonując nieszkodliwy atak, którego siła zależy od zręczności i jest porównywana z obroną na wytrzymałość celów. W przypadku trafienia cele są oślepione na 1 turę.</p>",
+                    "effects": [
+                        {
+                            "name": "Chmura pyłu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Constrict": {
+            "name": "Zaciskanie",
+            "description": "<p>Stworzenie próbuje wycisnąć życie ze swojej ofiary.</p>",
+            "actions": {
+                "Constrict": {
+                    "name": "Zaciskanie",
+                    "description": "<p>Stworzenie próbuje wycisnąć życie ze swojej ofiary. Wykonuje osłabiony atak atletyczny na swoją ofiarę; w przypadku trafienia ofiara otrzymuje stan <strong>@Condition[restrained]</strong> i zaczyna się <strong>dusić</strong>, pozostając w ten sposób unieruchomiona. Uchwyt ten można przełamać poprzez atak atletyczny ofiary lub innego stworzenia znajdującego się w zasięgu walki, wymierzony w wytrzymałość stworzenia.</p>",
+                    "effects": [
+                        {
+                            "name": "Zaciskanie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Critter Form": {
+            "name": "Postać stworzenia",
+            "description": "<p>Stworzenie przybiera postać malutkiego stworzonka.</p>",
+            "actions": {
+                "Critter Form": {
+                    "name": "Postać stworzenia",
+                    "description": "<p>Stworzenie przybiera postać niewielkiego zwierzęcia o wielkości 1 lub mniejszej, takiego jak szczur, nietoperz, owad itp. W tej postaci nie jest w stanie atakować, ale nie da się go odróżnić od innych stworzeń tego typu, chyba że użyje się gestu wyczuwania. Jeśli zostanie zaatakowane, Stworzenie powraca do swojej prawdziwej postaci.</p>",
+                    "effects": [
+                        {
+                            "name": "Postać stworzenia"
+                        }
+                    ]
+                }
+            }
+        },
+        "Diseasing Proboscis": {
+            "name": "Trąbka choroby",
+            "description": "<p>Stworzenie atakuje cel swoją ostrą trąbką; w przypadku trafienia, oprócz zadawanych obrażeń, stwarzenie zaczyna cierpieć na stan <strong>Zarażony</strong>, dopóki nie wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+            "actions": {
+                "Diseasing Proboscis": {
+                    "name": "Trąbka choroby",
+                    "description": "<p>Stworzenie atakuje cel, a w przypadku trafienia nakłada na niego stan <strong>@Condition[diseased]</strong>. Stan ten utrzymuje się do momentu, gdy cel wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Trąbka choroby"
+                        }
+                    ]
+                }
+            }
+        },
+        "Divine Awareness": {
+            "name": "Boska świadomość",
+            "description": "<p>Planetar potrafi rozpoznać kłamstwo.</p>"
+        },
+        "Drone": {
+            "name": "Brzęczenie",
+            "description": "<p>Stworzenie wydaje długi, buczący dźwięk, który dezorientuje wszystkich wokół.</p>",
+            "actions": {
+                "Drone": {
+                    "name": "Brzęczenie",
+                    "description": "<p>Stworzenie wydaje długi, buczący dźwięk, atakując <strong>wolę</strong> wszystkich, którzy słyszą go w promieniu <strong>20 stóp</strong>. W przypadku trafienia atak zadaje <strong>psychiczne obrażenia</strong> morale i powoduje stan <strong>@Condition[disoriented]</strong> na 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Brzęczenie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Earth Walk": {
+            "name": "Spacer po ziemi",
+            "description": "<p>Stworzenie może kopać tunele w naturalnej ziemi z prędkością równą długości swojego biegu. Kopanie w ten sposób nie narusza powierzchni ziemi ani nie pozostawia po sobie tunelu.</p>"
+        },
+        "Eternal Suffering": {
+            "name": "Wieczne cierpienie",
+            "description": "<p>Jeśli ta istota zginie w Piekle, powróci do życia po 24 godzinach, chyba że zostanie zabita obrażeniami świetlnymi.</p>"
+        },
+        "Flame Breath": {
+            "name": "Ogniste zionięcie",
+            "description": "<p>Smok zionie ogniem w kształcie stożka o promieniu 20 stóp</p>",
+            "actions": {
+                "Flame Breath": {
+                    "name": "Ogniste zionięcie",
+                    "description": "<p>Smok zionie ogniem w kształcie stożka o promieniu 20 stóp.</p><p>W przypadku <strong>trafienia krytycznego</strong>atak ten powoduje stan <strong>@Condition[burning]</strong> trwający <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Ogniste zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flaming Death": {
+            "name": "Płonąca śmierć",
+            "description": "<p>W ostateczności stworzenie to wysadza się w powietrze, próbując pociągnąć za sobą wszystkich wokół.</p>",
+            "actions": {
+                "Flaming Death": {
+                    "name": "Płonąca śmierć",
+                    "description": "<p>Stworzenie eksploduje, powodując wybuch <strong>ognia</strong>, który atakuje <strong>refleks</strong> wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[burning] na <strong>3 rundy</strong>. Następnie stworzenie ginie.</p>",
+                    "effects": [
+                        {
+                            "name": "Płonąca śmierć"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flaming Death Burst": {
+            "name": "Płonący wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} ginie, wybucha gwałtownym płomieniem.</p>",
+            "actions": {
+                "Flaming Death Burst": {
+                    "name": "Płonący wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>ognia</strong>, który atakuje <strong>Refleks</strong> wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[burning] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Płonący wybuch śmierci"
+                        }
+                    ]
+                }
+            }
+        },
+        "Flight": {
+            "name": "Latanie",
+            "description": "<p>Ta istota zyskuje szybkość lotu równą długości swojego biegu.</p>"
+        },
+        "Frost Breath": {
+            "name": "Mrożące zionięcie",
+            "description": "<p>Smok zionie lodowatym powietrzem, które zamraża wszystko, z czym się zetknie.</p>",
+            "actions": {
+                "Frost Breath": {
+                    "name": "Mrożące zionięcie",
+                    "description": "<p>Smok zionie lodowatym powietrzem w kształcie stożka o promieniu 20 stóp.</p><p>W przypadku <strong>trafienia krytycznego</strong> atak ten powoduje stan <strong>@Condition[freezing]</strong> trwający <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Mrożące zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Goring Charge": {
+            "name": "Przebijająca szarża",
+            "description": "<p>Stworzenie szarżuje do przodu na odległość do 15 stóp, wykonując wzmocniony atak na pierwszą napotkaną istotę. W przypadku trafienia krytycznego cel otrzymuje również stan <strong>@Condition[prone]</strong>.</p>",
+            "actions": {
+                "Goring Charge": {
+                    "name": "Przebijająca szarża",
+                    "description": "<p>Stworzenie szarżuje do przodu na odległość do 15 stóp, wykonując wzmocniony atak na pierwszą napotkaną istotę. W przypadku trafienia krytycznego cel otrzymuje również stan <strong>@Condition[prone]</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Przebijająca szarża"
+                        }
+                    ]
+                }
+            }
+        },
+        "Grab": {
+            "name": "Chwyt",
+            "description": "<p>Stworzenie próbuje chwycić inną istotę swoimi mackami przypominającymi bicze i wycisnąć z niej życie.</p>",
+            "actions": {
+                "Grab": {
+                    "name": "Chwyt",
+                    "description": "<p>Stworzenie owija swoje pnącze niczym macki wokół celu. Jeśli atak się powiedzie, a cel ma taki sam lub mniejszy <strong>rozmiar</strong>, dostaje stan <strong>@Condition[restrained]</strong>, dopóki stworzenie nie zdecyduje się go uwolnić lub dopóki unieruchomienie nie zostanie w inny sposób przerwane. W ramach tej akcji można unieruchomić tylko jeden cel na raz.</p>",
+                    "effects": [
+                        {
+                            "name": "Chwyt"
+                        }
+                    ]
+                }
+            }
+        },
+        "Heavy Weapon Expert": {
+            "name": "Ekspert ciężkiej broni"
+        },
+        "Heavy Weapon Master": {
+            "name": "Mistrz ciężkiej broni"
+        },
+        "Horrifying Visage": {
+            "name": "Przerażające oblicze",
+            "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+            "actions": {
+                "Horrifying Visage": {
+                    "name": "Przerażające oblicze",
+                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę oprócz wszelkich zadawanych obrażeń.</p>",
+                    "effects": [
+                        {
+                            "name": "Przerażające oblicze"
+                        }
+                    ]
+                }
+            }
+        },
+        "Hover": {
+            "name": "Unoszenie się",
+            "description": "<p>To stworzenie może unosić się w powietrzu, zyskując prędkość lotu równą swojej prędkości kroku oraz odporność na stan przewrócenia.</p>"
+        },
+        "Ice Walk": {
+            "name": "Spacer po lodzie",
+            "description": "<p>Cryovain potrafi poruszać się po oblodzonych powierzchniach i wspinać się po nich tak, jakby były zwykłym terenem</p>"
+        },
+        "Life Sense": {
+            "name": "Zmysł życia",
+            "description": "<p>Stworzenie posiadające ten zmysł może wykryć wszystkie stworzenia inne niż nieumarli w promieniu 100 stóp od siebie, nawet jeśli znajdują się one za pełną osłoną.</p>"
+        },
+        "Light Sensitivity": {
+            "name": "Wrażliwość na światło",
+            "description": "<p>W jasnym świetle @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy każdej akcji.</p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
+            "effects": {
+                "Sunlight Weakness": {
+                    "name": "Wrażliwość na światło słoneczne",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
+                    "changes": {
+                        "system.rollBonuses.banes.sunlightWeakness.number": 2,
+                        "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                    }
+                }
+            }
+        },
+        "Lightning Breath": {
+            "name": "Piorunujące zionięcie",
+            "description": "<p>Stworzenie wystrzeliwuje błyskawicę wzdłuż linii o długości 30 stóp.</p>",
+            "actions": {
+                "Breath": {
+                    "name": "Zionięcie",
+                    "description": "<p>Stworzenie wystrzeliwuje błyskawicę wzdłuż linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[shocked] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Piorunujące zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Limited Flight": {
+            "name": "Ograniczony lot",
+            "description": "<p>Stworzenie może chwilowo latać, ale tylko przez ograniczony czas.</p>",
+            "actions": {
+                "Limited Flight": {
+                    "name": "Ograniczony lot",
+                    "description": "<p>Stworzenie zyskuje prędkość lotu równą długości swojego biegu przez 1 minutę.</p>",
+                    "effects": [
+                        {
+                            "name": "Ograniczony lot"
+                        }
+                    ]
+                }
+            }
+        },
+        "Magic Resistance": {
+            "name": "Magiczna odporność",
+            "description": "<p>Magia dziwnie się zakrzywia wokół tej istoty; zaklęcia, które ją wybierają jako cel, otrzymują +2 do Zguby niezależnie od swoich efektów.</p>"
+        },
+        "Negative Energy Pulse": {
+            "name": "Impuls energii negatywnej",
+            "description": "<p>Stworzenie emituje impuls energii nekrotycznej, który uniemożliwia leczenie.</p>",
+            "actions": {
+                "Negative Energy Pulse": {
+                    "name": "Impuls energii negatywnej",
+                    "description": "<p>Stworzenie emituje falę energii nekrotycznej o zasięgu 20 stóp, która w przypadku trafienia powoduje, że cele mają stan <strong>@Condition[diseased]</strong> na 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Impuls energii negatywnej"
+                        }
+                    ]
+                }
+            }
+        },
+        "Paralyzing Breath": {
+            "name": "Paraliżujące zionięcie",
+            "description": "<p>Smok zionie gazem, który paraliżuje cele.</p>",
+            "actions": {
+                "Paralyzing Breath": {
+                    "name": "Paraliżujące zionięcie",
+                    "description": "<p>Smok zionie gazem w promieniu 10 stóp, co w przypadku trafienia powoduje stan <strong>@Condition[paralyzed]</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Paraliżujące zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Paralyzing Tentacles": {
+            "name": "Paraliżujące macki",
+            "description": "<p>Macki tego stworzenia pokryte są paraliżującą toksyną, która pomaga im w chwytaniu ofiar.</p>",
+            "actions": {
+                "Paralyzing Tentacles": {
+                    "name": "Paraliżujące macki",
+                    "description": "<p>Stworzenie próbuje chwycić cel mackami i poddać go działaniu swoich paraliżujących toksyn. Jeśli atak się powiedzie, a cel ma taki sam lub mniejszy rozmiar, zostaje on również sparaliżowany na 1 turę.</p>",
+                    "effects": [
+                        {
+                            "name": "Paraliżująca toksyna"
+                        }
+                    ]
+                }
+            }
+        },
+        "Petrifying Bite": {
+            "name": "Paraliżujące ugryzienie",
+            "description": "<p>Ugryzienie stworzeń może sparaliżować cele.</p>",
+            "actions": {
+                "Petrifying Bite": {
+                    "name": "Paraliżujące ugryzienie",
+                    "description": "<p>Kuroliszek atakuje cel. W przypadku trafienia krytycznego cel zostaje sparaliżowany na 24 godziny, zyskując stany <strong>@Condition[incapacitated]</strong> oraz <strong>@Condition[invulnerable]</strong>. Paraliż kończy się również w przypadku śmierci Kuroliszka.</p>",
+                    "effects": [
+                        {
+                            "name": "Petrifikacja"
+                        }
+                    ]
+                }
+            }
+        },
+        "Petrifying Gaze": {
+            "name": "Paraliżujące spojrzenie",
+            "description": "<p>Stworzenie może sparaliżować stworzenia, z którymi nawiąże kontakt wzrokowy.</p>",
+            "actions": {
+                "Petrifying Gaze": {
+                    "name": "Paraliżujące spojrzenie",
+                    "description": "<p>Stworzenie nawiązuje kontakt wzrokowy z jedną istotą, która jest w stanie je dostrzec, i wykonuje nieszkodliwy atak, którego siła zależy od wytrzymałości, a którego celem jest obrona oparta na woli. Jeśli atak się powiedzie, cel zostaje sparaliżowany. W stanie sparaliżowania istota jest unieruchomiona i niepodatna na obrażenia. Paraliż ustaje, jeśli stworzenie zginie.</p>",
+                    "effects": [
+                        {
+                            "name": "Sparaliżowany"
+                        }
+                    ]
+                }
+            }
+        },
+        "Phantasms": {
+            "name": "Zjawy",
+            "description": "<p>Stworzenie przywołuje swoje iluzoryczne kopie, przez co trudno jest ustalić, które z nich jest prawdziwe.</p>",
+            "actions": {
+                "Phantasms": {
+                    "name": "Zjawy",
+                    "description": "<p>Stworzenie przywołuje swoje iluzoryczne kopie, co powoduje, że na 1 minutę zyskuje stan @Condition[guarded].</p>",
+                    "effects": [
+                        {
+                            "name": "Zjawy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Poison Breath": {
+            "name": "Trujące zionięcie",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi wytwarzać i uwalniać toksyczne substancje w postaci podmuchu.</p>",
+            "actions": {
+                "Poison Breath": {
+                    "name": "Trujące zionięcie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wydziela toksyczne wyziewy w promieniu 10 stóp, atakując <strong>Wytrzymałość</strong> każdego celu w tym obszarze i zadając <strong>trujące</strong> obrażenia.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak powoduje stan @Condition[poisoned] na <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Trujące zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Poison Cloud": {
+            "name": "Chmura trucizny",
+            "description": "<p>Stworzenie wyrzuca z siebie trującą chmurę gazu.</p>",
+            "actions": {
+                "Poison Cloud": {
+                    "name": "Chmura trucizny",
+                    "description": "<p>Stworzenie wykonuje atak na <strong>wytrzymałość</strong> przeciwko <strong>Wytrwałości</strong> każdego stworzenia w promieniu 5 stóp. Atak ten jest nieszkodliwy, ale w przypadku trafienia powoduje stan @Condition[poisoned] na 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Chmura trucizny"
+                        }
+                    ]
+                }
+            }
+        },
+        "Repulsion Breath": {
+            "name": "Odrzucające zionięcie",
+            "description": "<p>Smok zionie strumieniem odrzucającej energii w kształcie stożka, odrzucając cele.</p>",
+            "actions": {
+                "Repulsion Breath": {
+                    "name": "Odrzucające zionięcie",
+                    "description": "<p>Smok zionie odrażającym ogniem w kształcie stożka o promieniu 20 stóp, odrzucając każdego, kogo trafi, o 10 stóp.</p>"
+                }
+            }
+        },
+        "Restraining Claw": {
+            "name": "Obezwładniający pazur",
+            "description": "<p>Stworzenie wykorzystuje swoje potężne szczypce, by chwycić i przytrzymać cel.</p>",
+            "actions": {
+                "Restraining Claw": {
+                    "name": "Obezwładniający pazur",
+                    "description": "<p>Stworzenie chwyta swój cel. Jeśli atak się powiedzie, a cel ma rozmiar równy lub mniejszy od <strong>Rozmiaru</strong> tego stworzenia, cel otrzymuje również stan <strong>@Condition[restrained]</strong>, dopóki stworzenie nie zdecyduje się go uwolnić lub dopóki unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jeden cel może zostać unieruchomiony w wyniku tej akcji.</p>",
+                    "effects": [
+                        {
+                            "name": "Obezwładniający pazur"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rolling Bash": {
+            "name": "Toczące uderzenie",
+            "description": "<p>Stworzenie przetacza się do przodu na odległość do 15 stóp, wykonując wzmocniony atak na pierwszą napotkaną istotę. W przypadku trafienia krytycznego cel otrzymuje również stan <strong>@Condition[prone]</strong>.</p>",
+            "actions": {
+                "Rolling Bash": {
+                    "name": "Toczące uderzenie",
+                    "description": "<p>Stworzenie szarżuje do przodu na odległość do 15 stóp, wykonując wzmocniony atak na pierwszą napotkaną istotę. W przypadku trafienia krytycznego cel otrzymuje również stan <strong>@Condition[prone]</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Toczące uderzenie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rotting Breath": {
+            "name": "Gnijące zionięcie",
+            "description": "<p>Smok zionie strumieniem nekrotycznego gazu, który powoduje gnicie celów przy kontakcie.</p>",
+            "actions": {
+                "Rotting Breath": {
+                    "name": "Gnijące zionięcie",
+                    "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia od zepsucia celom znajdującym się w obszarze o promieniu 10 stóp. W przypadku trafienia krytycznego cel otrzymuje stan <strong>@Condition[decaying]</strong> na 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Gnijące zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Shadow Breath": {
+            "name": "Cieniste zionięcie",
+            "description": "<p>Smok zionie nekrotycznym gazem, który powoduje gnicie celów przy kontakcie. Jeśli istota zginie w wyniku tego ataku, po upływie godziny powstaje jako @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym].</p>",
+            "actions": {
+                "Shadow Breath": {
+                    "name": "Cieniste zionięcie",
+                    "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
+                }
+            }
+        },
+        "Shapeshift": {
+            "name": "Zmiana kształtu",
+            "description": "<p>Stworzenie przybiera postać humanoida lub bestii o poziomie równym lub niższym od swojego.</p>",
+            "actions": {
+                "Shapeshift": {
+                    "name": "Zmiana kształtu",
+                    "description": "<p>Stworzenie może przybrać postać humanoida lub bestii o poziomie równym lub niższym od swojego.</p>",
+                    "effects": [
+                        {
+                            "name": "Zmiana kształtu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Siege Monster": {
+            "name": "Potwór szturmowy",
+            "description": "<p>Stworzenie to jest tak ogromne, że z łatwością może zburzyć ściany i inne elementy konstrukcyjne większości budynków, które nie są wzmocnione.</p>"
+        },
+        "Sleep Breath": {
+            "name": "Usypiające zionięcie",
+            "description": "<p>Smok zionie chmurą gazu o promieniu 10 stóp. Chmura ta atakuje <strong>Wytrwałość</strong> celów i powoduje, że cel otrzymuje stan <strong>@Condition[asleep]</strong> na 3 tury.</p>",
+            "actions": {
+                "Sleep Breath": {
+                    "name": "Usypiające zionięcie",
+                    "description": "<p>Smok zionie gazem, który nakłada stan <strong>@Condition[asleep]</strong> na cele w obszarze o szerokości 10 stóp.</p>",
+                    "effects": [
+                        {
+                            "name": "Usypiające zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Slowing Breath": {
+            "name": "Spowalniające zionięcie",
+            "description": "<p>Smok zionie gazem w promieniu 10 stóp, powodując, że cel jest <strong>@Condition[slowed]</strong>. </p>",
+            "actions": {
+                "Slowing Breath": {
+                    "name": "Spowalniające zionięcie",
+                    "description": "<p>Smok zionie gazem w promieniu 10 stóp, powodując stan <strong>@Condition[slowed]</strong> przy trafieniu.</p>",
+                    "effects": [
+                        {
+                            "name": "Spowalniające zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Smother": {
+            "name": "Duszenie",
+            "description": "<p>Stworzenie próbuje chwycić ofiarę i dusić ją.</p>",
+            "actions": {
+                "Smother": {
+                    "name": "Duszenie",
+                    "description": "<p>Stworzenie wykonuje atak wręcz bez broni przeciwko stworzeniu znajdującemu się w zasięgu; jeśli trafi, cel zostaje pochwycony, a podczas takiego uścisku stworzenie to dusi się.</p>",
+                    "effects": [
+                        {
+                            "name": "Duszenie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spores": {
+            "name": "Zarodniki",
+            "description": "<p>Stworzenie wytwarza chmurę toksycznych zarodników.</p>",
+            "actions": {
+                "Spores": {
+                    "name": "Zarodniki",
+                    "description": "<p>Stworzenie wykonuje <strong>Osłabiony</strong> atak o sile proporcjonalnej do <strong>Wytrzymałości</strong> wszystkich stworzeń znajdujących się w <strong>promieniu 15 stóp</strong>, który celuje w <strong>Wytrzymałość</strong> i w przypadku trafienia powoduje stan <strong>@Condition[poisoned]</strong> na 3 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Zarodniki"
+                        }
+                    ]
+                }
+            }
+        },
+        "Squeeze": {
+            "name": "Ściskanie",
+            "description": "<p>Gdy stworzenie unieruchomi wroga, zaciska się mocno, zadając ofierze straszliwe obrażenia.</p>",
+            "actions": {
+                "Constrict": {
+                    "name": "Zaciskanie",
+                    "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
+                }
+            }
+        },
+        "Steam Breath": {
+            "name": "Parowe zionięcie",
+            "description": "<p>Stworzenie zionie gorącym powietrzem w promieniu 20 stóp.</p>",
+            "actions": {
+                "Steam Breath": {
+                    "name": "Parowe zionięcie",
+                    "description": "<p>Stworzenie zionie gorącym powietrzem w promieniu 20 stóp.</p><p>W przypadku <strong>trafienia krytycznego</strong>atak ten powoduje stan <strong>@Condition[burning]</strong> trwający <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Parowe zionięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Stunning Screech": {
+            "name": "Oszałamiający skowyt",
+            "description": "<p>Stworzenie wydaje ogłuszający krzyk, który ogłusza przeciwników.</p>",
+            "actions": {
+                "Stunning Screech": {
+                    "name": "Oszałamiający skowyt",
+                    "description": "<p>Stworzenie wykonuje nieszkodliwy atak na <strong>wytrzymałość</strong> przeciwko <strong>woli</strong> każdego stworzenia w promieniu 10 stóp, które je słyszy. Każde trafione stworzenie otrzymuje stan <strong>@Condition[stunned]</strong> na 1 turę.</p>",
+                    "effects": [
+                        {
+                            "name": "Oszałamiający skowyt"
+                        }
+                    ]
+                }
+            }
+        },
+        "Telepathy": {
+            "name": "Telepatia",
+            "description": "<p>Stworzenie może komunikować się telepatycznie z innymi stworzeniami, które widzi.</p>"
+        },
+        "Teleport": {
+            "name": "Teleportacja",
+            "description": "<p>Stworzenie teleportuje się w puste miejsce w promieniu 120 stóp.</p>",
+            "actions": {
+                "Teleport": {
+                    "name": "Teleportacja",
+                    "description": "<p>Stworzenie teleportuje się w puste miejsce w promieniu 120 stóp.</p>"
+                }
+            }
+        },
+        "Tree Stride": {
+            "name": "Chodzenie po drzewach",
+            "description": "<p>Stworzenie może przechodzić z jednego drzewa na drugie, jakby były to przejścia.</p>",
+            "actions": {
+                "Tree Stride": {
+                    "name": "Chodzenie po drzewach",
+                    "description": "<p>Stworzenie przemieszcza się z jednego drzewa znajdującego się w zasięgu 1 i pojawia się obok innego drzewa w odległości do 60 stóp od pierwszego. Oba drzewa muszą być większe od stworzenia.</p>"
+                }
+            }
+        },
+        "Two Headed": {
+            "name": "Dwugłowy",
+            "description": "<p>Stworzenie zyskuje szkolenie w zakresie umiejętności <strong>świadomości</strong>. Ponadto tylko jedna głowa może spać w danym momencie, podczas gdy druga pozostaje czujna.</p>"
+        },
+        "Wailing Moan": {
+            "name": "Płaczliwy jęk",
+            "description": "<p>Stworzenie wyje, atakując wszystkie istoty w promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+            "actions": {
+                "Wailing Moan": {
+                    "name": "Płaczliwy jęk",
+                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę oprócz wszelkich zadawanych obrażeń.</p>",
+                    "effects": [
+                        {
+                            "name": "Płaczliwy jęk"
+                        }
+                    ]
+                }
+            }
+        },
+        "Weakening Breath": {
+            "name": "Osłabiające zionięcie",
+            "description": "<p>Smok zionie chmurą gazu o promieniu 10 stóp. Chmura ta atakuje <strong>Wytrwałość</strong> celów i powoduje, że cel otrzymuje stan <strong>@Condition[exhausted]</strong> na 3 tury jeśli trafi.</p>",
+            "actions": {
+                "Weakening Breath": {
+                    "name": "Osłabiające zionięcie",
+                    "description": "<p>Smok zionie gazem, który nakłada stan <strong>@Condition[exhausted]</strong> na cele w obszarze o szerokości 10 stóp.</p>",
+                    "effects": [
+                        {
+                            "name": "Osłabiające zionięcie"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "mapping": {
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "description": "system.description",
+        "effects": {
+            "path": "effects",
+            "converter": "itemEffectsConverter"
+        }
+    }
+}
