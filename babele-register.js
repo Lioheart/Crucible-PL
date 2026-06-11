@@ -30,7 +30,7 @@ Hooks.once("babele.init", (babele) => {
     return [];
   };
 
-  const cloneSourceData = (value) => {
+  const cloneRawData = (value) => {
     if (!value || typeof value !== "object") return value;
 
     const source =
@@ -45,8 +45,86 @@ Hooks.once("babele.init", (babele) => {
     return structuredClone(source);
   };
 
+  const cloneEffectData = (effect) => {
+    return cloneRawData(effect);
+  };
+
+  const cloneItemData = (item) => {
+    const source = cloneRawData(item);
+
+    if (!source || typeof source !== "object") {
+      return source;
+    }
+
+    /*
+     * W item._source.effects mogą znajdować się wyłącznie identyfikatory.
+     * Rzeczywiste osadzone ActiveEffect są dostępne w item.effects.
+     *
+     * Pobieramy dokumenty efektów, ale kopiujemy wyłącznie ich _source,
+     * żeby nie wywoływać getterów systemowych ani fromUuidSync.
+     */
+    let embeddedEffects = [];
+
+    try {
+      embeddedEffects = asArray(item?.effects).filter(
+        (effect) =>
+          effect &&
+          typeof effect === "object"
+      );
+    } catch (error) {
+      console.warn(
+        "Crucible PL | Nie udało się odczytać osadzonych efektów itemu",
+        item?.name,
+        error
+      );
+    }
+
+    if (embeddedEffects.length) {
+      source.effects = embeddedEffects.map(cloneEffectData);
+    } else if (Array.isArray(source.effects)) {
+      /*
+       * Jeśli wejściem jest już zwykły obiekt zawierający pełne efekty,
+       * również kopiujemy je bezpiecznie.
+       *
+       * Jeżeli znajdują się tam tylko identyfikatory tekstowe, zostawiamy
+       * oryginalną tablicę bez zmian, aby nie usuwać danych mechanicznych.
+       */
+      const sourceEffectObjects = source.effects.filter(
+        (effect) =>
+          effect &&
+          typeof effect === "object"
+      );
+
+      if (sourceEffectObjects.length) {
+        source.effects = sourceEffectObjects.map(cloneEffectData);
+      }
+    }
+
+    return source;
+  };
+
+  const asEffectSourceArray = (effects) => {
+    return asArray(effects)
+      .filter(
+        (effect) =>
+          effect &&
+          typeof effect === "object"
+      )
+      .map(cloneEffectData);
+  };
+
+  const asItemSourceArray = (items) => {
+    return asArray(items)
+      .filter(
+        (item) =>
+          item &&
+          typeof item === "object"
+      )
+      .map(cloneItemData);
+  };
+
   const asSourceArray = (collection) => {
-    return asArray(collection).map((entry) => cloneSourceData(entry));
+    return asArray(collection).map((entry) => cloneRawData(entry));
   };
 
   const stripTierSuffix = (value) => {
@@ -135,6 +213,57 @@ Hooks.once("babele.init", (babele) => {
     return value;
   };
 
+  const crucibleDescriptionConverter = (value, translation) => {
+    if (translation === undefined || translation === null) return value;
+
+    if (typeof value === "string") {
+      if (typeof translation === "string") return translation;
+
+      if (
+        translation &&
+        typeof translation === "object" &&
+        !Array.isArray(translation)
+      ) {
+        return translation.public ?? translation.private ?? value;
+      }
+
+      return value;
+    }
+
+    if (
+      value &&
+      typeof value === "object" &&
+      !Array.isArray(value)
+    ) {
+      const result = cloneRawData(value);
+
+      if (typeof translation === "string") {
+        result.public = translation;
+        return result;
+      }
+
+      if (
+        translation &&
+        typeof translation === "object" &&
+        !Array.isArray(translation)
+      ) {
+        if (translation.public !== undefined) {
+          result.public = translation.public;
+        }
+
+        if (translation.private !== undefined) {
+          result.private = translation.private;
+        }
+
+        return result;
+      }
+
+      return result;
+    }
+
+    return translation;
+  };
+
   const activeEffectChangesConverter = (changes, translations) => {
     if (!changes || !translations) return changes;
 
@@ -181,7 +310,7 @@ Hooks.once("babele.init", (babele) => {
   const embeddedEffectsConverter = (effects, translations) => {
     if (!effects || !translations) return effects;
 
-    const arr = asSourceArray(effects);
+    const arr = asEffectSourceArray(effects);
 
     for (const [index, effect] of arr.entries()) {
       if (!effect || typeof effect !== "object") continue;
@@ -264,7 +393,7 @@ Hooks.once("babele.init", (babele) => {
   const itemEffectsConverter = (effects, translations) => {
     if (!effects || !translations) return effects;
 
-    const arr = asSourceArray(effects);
+    const arr = asEffectSourceArray(effects);
 
     for (const [index, effect] of arr.entries()) {
       if (!effect || typeof effect !== "object") continue;
@@ -346,7 +475,7 @@ Hooks.once("babele.init", (babele) => {
       return items;
     }
 
-    const arr = asSourceArray(items);
+    const arr = asItemSourceArray(items);
 
     for (const [index, item] of arr.entries()) {
       if (!item || typeof item !== "object") continue;
@@ -401,7 +530,10 @@ Hooks.once("babele.init", (babele) => {
         );
       }
 
-      if (itemTranslation.effects && item.effects) {
+      if (
+        itemTranslation.effects &&
+        Array.isArray(item.effects)
+      ) {
         item.effects = itemEffectsConverter(
           item.effects,
           itemTranslation.effects
@@ -495,5 +627,6 @@ Hooks.once("babele.init", (babele) => {
     nested_object_converter: nestedObjectConverter,
     categories_converter: categoriesConverter,
     active_effect_changes_converter: activeEffectChangesConverter,
+    crucible_description_converter: crucibleDescriptionConverter,
   });
 });
