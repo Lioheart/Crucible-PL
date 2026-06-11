@@ -171,7 +171,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Counterspell",
@@ -241,12 +241,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "6wggsPFb5i3rDxyX": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -374,12 +368,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "RUzCYQ4IflWzPQOA": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Torch": {
                     "name": "Torch",
                     "description": {
@@ -439,23 +427,6 @@
                             ]
                         }
                     }
-                },
-                "eeoH0HXPKvJSxTzM": {
-                    "name": "Scroll of Conjuration",
-                    "description": {
-                        "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>The number of spellcraft components a scroll can contain depends on the quality of its construction.</p><ul><li><p><strong>Fine</strong>: May contain a single spellcraft component</p></li><li><p><strong>Superior</strong>: May contain two spellcraft components</p></li><li><p><strong>Masterwork</strong>: May contain three spellcraft components</p></li></ul>"
-                    },
-                    "actions": {
-                        "Read Scroll": {
-                            "name": "Read Scroll",
-                            "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
-                            "effects": [
-                                {
-                                    "name": "Read Scroll"
-                                }
-                            ]
-                        }
-                    }
                 }
             },
             "ancestry": {
@@ -488,7 +459,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Second Wind",
-                            "description": "<p>You focus your energy and recover your <strong>Toughness</strong> score in <strong>Health</strong>.</p>"
+                            "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
                         }
                     }
                 },
@@ -520,7 +491,7 @@
                 },
                 "Testudo": {
                     "name": "Testudo",
-                    "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the @Condition[guarded] condition against <strong>Weapon Attacks</strong> while wielding a shield."
+                    "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the <strong>Guarded</strong> condition against <strong>Weapon Attacks</strong> while wielding a shield."
                 },
                 "Shield Combat Training": {
                     "name": "Shield Combat Training",
@@ -556,12 +527,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "Jp33r9ANwqENpDRi": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -623,7 +588,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Second Wind",
-                            "description": "<p>You focus your energy and recover your <strong>Toughness</strong> score in <strong>Health</strong>.</p>"
+                            "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
                         }
                     }
                 },
@@ -644,7 +609,7 @@
                         "Backstab": {
                             "name": "Backstab",
                             "condition": "You are attacking a target with the Flanked condition.",
-                            "description": "<p>You <strong>Strike</strong> with your weapon against a @Condition[flanked] target, dealing <strong>Deadly</strong> damage.</p>"
+                            "description": "<p>You <strong>Strike</strong> with your weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
                         }
                     }
                 },
@@ -662,7 +627,7 @@
                     "actions": {
                         "Flying Kick": {
                             "name": "Flying Kick",
-                            "description": "<p><strong>Move</strong> forward at least 3 feet and up to your stride in a straight line to kick an enemy with an empowered <strong>Strike</strong>.</p>"
+                            "description": "<p><strong>Move</strong> forward between 3 feet and 6 feet in a straight line to kick an enemy with an empowered <strong>Strike</strong>.</p>"
                         }
                     }
                 },
@@ -689,12 +654,6 @@
                     }
                 },
                 "Katar": {
-                    "name": "Katar",
-                    "description": {
-                        "public": "<p>A punch-dagger with a straight blade and horizontal grip, the katar drives forward with brutal force, designed to pierce armor and guts with a single, direct thrust.</p>"
-                    }
-                },
-                "fN9s5c7lWhsKtWst": {
                     "name": "Katar",
                     "description": {
                         "public": "<p>A punch-dagger with a straight blade and horizontal grip, the katar drives forward with brutal force, designed to pierce armor and guts with a single, direct thrust.</p>"
@@ -735,12 +694,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "rzSOPKrNmQTkcoIB": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Ring of Evasion": {
                     "name": "Ring of Evasion",
                     "description": {
@@ -770,18 +723,6 @@
                     }
                 },
                 "Healing Elixir": {
-                    "name": "Healing Elixir",
-                    "description": {
-                        "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Healing Elixir",
-                            "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
-                        }
-                    }
-                },
-                "HE26twMsMqb2i52S": {
                     "name": "Healing Elixir",
                     "description": {
                         "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
@@ -915,12 +856,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "Kj8o4Rjuggy2m297": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Ring of Evasion": {
                     "name": "Ring of Evasion",
                     "description": {
@@ -936,18 +871,6 @@
                     }
                 },
                 "Healing Elixir": {
-                    "name": "Healing Elixir",
-                    "description": {
-                        "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Healing Elixir",
-                            "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
-                        }
-                    }
-                },
-                "r4wWT0KofzEp4akF": {
                     "name": "Healing Elixir",
                     "description": {
                         "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
@@ -999,7 +922,7 @@
                         "Backstab": {
                             "name": "Backstab",
                             "condition": "You are attacking a target with the Flanked condition.",
-                            "description": "<p>You <strong>Strike</strong> with your weapon against a @Condition[flanked] target, dealing <strong>Deadly</strong> damage.</p>"
+                            "description": "<p>You <strong>Strike</strong> with your weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
                         }
                     }
                 },
@@ -1021,7 +944,7 @@
                     "actions": {
                         "Flash of Steel": {
                             "name": "Flash of Steel",
-                            "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes @Condition[exposed] until the start of their next Turn.</p>",
+                            "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes <strong>Exposed</strong> until the start of their next Turn.</p>",
                             "effects": [
                                 {
                                     "name": "Flash of Steel"
@@ -1090,12 +1013,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "MNXobGh9IsNNnGHu": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -1292,7 +1209,7 @@
                     "actions": {
                         "Bull Rush": {
                             "name": "Bull Rush",
-                            "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked @Condition[prone] and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
+                            "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
                             "effects": [
                                 {
                                     "name": "Bull Rush"
@@ -1318,12 +1235,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "92xywNJa9DbI0WpR": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -1431,7 +1342,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Leg Sweep",
-                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target @Condition[prone].</p>",
+                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Leg Sweep"
@@ -1442,11 +1353,11 @@
                 },
                 "Zealous Smite": {
                     "name": "Zealous Smite",
-                    "description": "<p>You can imbue righteous power into your blow with a Strength-based weapon.</p>",
+                    "description": "<p>You can imbue righteous power into your blow with a heavy weapon.</p>",
                     "actions": {
                         "Zealous Smite": {
                             "name": "Zealous Smite",
-                            "condition": "You are attacking an enemy with a Strength-based weapon.",
+                            "condition": "You are attacking an Exposed enemy with a Heavy weapon.",
                             "description": "<p>You <strong>Strike</strong> using a Strength-based weapon. The attack becomes <strong>Deadly</strong> and any damage dealt is <strong>Radiant</strong>.</p>"
                         }
                     }
@@ -1474,12 +1385,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "2qJGMam6IowemxXh": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -1618,12 +1523,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "Qh8UL7eFvQRYz623": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Blast Flask": {
                     "name": "Blast Flask",
                     "description": {
@@ -1711,11 +1610,11 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Dagger": {
                     "name": "Dagger",
@@ -1730,12 +1629,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "yXrNiuQbGSMi0GMi": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -1893,7 +1786,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Clarify Intent": {
                     "name": "Clarify Intent",
@@ -1985,12 +1878,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "tFb7f2x6v95CBcRm": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Healing Elixir": {
                     "name": "Healing Elixir",
                     "description": {
@@ -2056,7 +1943,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Diplomacy Novice": {
                     "name": "Diplomacy Novice",
@@ -2086,12 +1973,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "X3CVtoj9CwbKZSbJ": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -2205,12 +2086,12 @@
             "items": {
                 "Intercept": {
                     "name": "Intercept",
-                    "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
+                    "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
                     "actions": {
                         "Intercept": {
                             "name": "Intercept",
                             "condition": "An enemy moves into or through your Engagement radius.",
-                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
+                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
                         }
                     }
                 },
@@ -2272,7 +2153,7 @@
                         "Ruthless Momentum": {
                             "name": "Ruthless Momentum",
                             "condition": "You incapacitate an enemy with a melee attack.",
-                            "description": "<p>After defeating an enemy, you immediately move up to your <strong>Stride </strong>and <strong>Strike</strong> another foe that you pass next to or end your movement adjacent to.</p>"
+                            "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
                         }
                     }
                 },
@@ -2303,12 +2184,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "qIQYv0zkLxLVMIcQ": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -2348,18 +2223,6 @@
                             "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
                         }
                     }
-                },
-                "l5ouNF2IF1hlux1R": {
-                    "name": "Healing Elixir",
-                    "description": {
-                        "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Healing Elixir",
-                            "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
-                        }
-                    }
                 }
             },
             "ancestry": {
@@ -2376,12 +2239,12 @@
             "items": {
                 "Intercept": {
                     "name": "Intercept",
-                    "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
+                    "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
                     "actions": {
                         "Intercept": {
                             "name": "Intercept",
                             "condition": "An enemy moves into or through your Engagement radius.",
-                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
+                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
                         }
                     }
                 },
@@ -2424,7 +2287,7 @@
                     "actions": {
                         "Offhand Strike": {
                             "name": "Offhand Strike",
-                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost follow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
                         }
                     }
                 },
@@ -2433,12 +2296,6 @@
                     "description": "<p>You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is @Condition[unaware], @Condition[flanked], or @Condition[exposed] using a weapon which scales with <strong>Dexterity</strong>, you gain +2 damage to any Strike.</p>"
                 },
                 "Scimitar": {
-                    "name": "Scimitar",
-                    "description": {
-                        "public": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
-                    }
-                },
-                "f3jLAk8dieGUqXNs": {
                     "name": "Scimitar",
                     "description": {
                         "public": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
@@ -2465,12 +2322,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "YMTqzXZYBCIydx0O": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
@@ -2696,12 +2547,6 @@
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
                     }
                 },
-                "rUq8zQ6VtVaZEEp1": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
                 "Torch": {
                     "name": "Torch",
                     "description": {
@@ -2890,12 +2735,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Rations",
-                    "description": {
-                        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
-                    }
-                },
-                "ok4jyKdJT1MtBQOy": {
                     "name": "Rations",
                     "description": {
                         "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"

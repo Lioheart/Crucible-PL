@@ -75,7 +75,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Telecognition": {
                     "name": "Telecognition",
@@ -99,7 +99,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Thoughtbinder",
-                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gesture: Pulse",
@@ -241,13 +241,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -584,13 +584,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -781,11 +781,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Illusion": {
                     "name": "Rune: Illusion",
@@ -1105,19 +1105,9 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Flight": {
                     "name": "Flight",
@@ -1139,7 +1129,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Shadow Breath",
-                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
+                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
                         }
                     }
                 },
@@ -1384,7 +1374,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Pouncing Strike": {
                     "name": "Pouncing Strike",
@@ -1480,13 +1470,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -1903,13 +1893,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -2432,19 +2422,9 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Flight": {
                     "name": "Flight",
@@ -2466,7 +2446,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Shadow Breath",
-                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
+                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
                         }
                     }
                 },
@@ -2826,7 +2806,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Tail Sweep": {
                     "name": "Tail Sweep",
@@ -3095,13 +3075,7 @@
                 },
                 "Evasive Shot": {
                     "name": "Evasive Shot",
-                    "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks.</p>",
-                    "actions": {
-                        "Evasive Shot": {
-                            "name": "Evasive Shot",
-                            "description": "<p>After performing a ranged weapon attack, you may move up to half your <strong>Stride</strong> for free.</p>"
-                        }
-                    }
+                    "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain half your <strong>Stride</strong> in additional free movement.</p>"
                 },
                 "Projectile Weapon Training": {
                     "name": "Projectile Weapon Training",
@@ -3150,13 +3124,13 @@
                 "Dragon Scales": {
                     "name": "Dragon Scales"
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -3457,7 +3431,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Sundering Strike",
-                            "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                            "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                             "effects": [
                                 {
                                     "name": "Sundered Armor"
@@ -3515,7 +3489,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Sundering Strike",
-                            "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                            "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                             "effects": [
                                 {
                                     "name": "Sundered Armor"
@@ -3548,7 +3522,7 @@
                 },
                 "Concussive Blows": {
                     "name": "Concussive Blows",
-                    "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the @Condition[staggered] condition on Critical Hits which deal damage to Health.</p><p>The @Condition[staggered] effect lasts for 1 round and reduces your target's maximum Action by 2.</p>"
+                    "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the <strong>Staggered</strong> condition on Critical Hits which deal damage to Health.</p>\n<p>The Staggered effect lasts for 1 round and reduces your target's maximum Action by 1.</p>"
                 }
             },
             "archetype": {
@@ -3619,7 +3593,6 @@
                             "name": "Sunlight Weakness",
                             "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
                                 "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
                             }
                         }
@@ -3791,7 +3764,7 @@
                     "actions": {
                         "Bull Rush": {
                             "name": "Bull Rush",
-                            "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked @Condition[prone] and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
+                            "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
                             "effects": [
                                 {
                                     "name": "Bull Rush"
@@ -3894,15 +3867,15 @@
                 },
                 "Operator": {
                     "name": "Operator",
-                    "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not @Condition[incapacitated], you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>"
+                    "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not Incapacitated, you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>"
                 },
                 "Strategic Repositioning": {
                     "name": "Strategic Repositioning",
-                    "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not @Condition[unaware], you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
                 },
                 "Subtle Extrication": {
                     "name": "Subtle Extrication",
-                    "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Reactive Strike</strong> against you is performed with <strong>+1 Bane</strong>.</p>"
+                    "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Disengagement Attack</strong> against you is performed without the 2 Boons that would ordinarily apply to such an attack.</p>"
                 },
                 "Weak Points": {
                     "name": "Weak Points",
@@ -4132,11 +4105,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4155,7 +4128,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -4165,7 +4138,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Rune: Earth",
@@ -4196,7 +4169,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -4206,7 +4179,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -4267,11 +4240,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4425,11 +4398,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Bark Armor"
@@ -4470,11 +4443,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4505,11 +4478,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Inspirator": {
                     "name": "Inspirator",
@@ -4548,11 +4521,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4746,13 +4719,13 @@
                 "Dragon Scales": {
                     "name": "Dragon Scales"
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -5044,7 +5017,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5063,7 +5036,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -5100,7 +5073,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Flame Claw"
@@ -5179,7 +5152,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5329,7 +5302,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "False Appearance",
@@ -5382,7 +5355,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5423,7 +5396,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5458,7 +5431,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5501,7 +5474,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Sundering Strike",
-                            "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                            "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                             "effects": [
                                 {
                                     "name": "Sundered Armor"
@@ -5556,19 +5529,9 @@
         "Dark Elf Mage": {
             "name": "Dark Elf Mage",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5586,11 +5549,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Counterspell",
@@ -5652,19 +5615,9 @@
         "Dark Elf Priest": {
             "name": "Dark Elf Priest",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5682,15 +5635,15 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Steadfast": {
                     "name": "Steadfast",
@@ -5698,7 +5651,7 @@
                     "actions": {
                         "Steadfast Resolve": {
                             "name": "Steadfast Resolve",
-                            "description": "<p>You harden yourself against demoralization. Your <strong>Morale</strong> is increased by your <strong>Wisdom</strong> score and you temporarily gain the @Condition[resolute] condition.</p>",
+                            "description": "<p>You harden yourself against demoralization. Your Morale is increased by your Wisdom score and you temporarily gain the Resolute condition.</p>",
                             "effects": [
                                 {
                                     "name": "Steadfast Resolve"
@@ -5765,19 +5718,9 @@
         "Dark Elf Scout": {
             "name": "Dark Elf Scout",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5867,19 +5810,9 @@
         "Dark Elf Warrior": {
             "name": "Dark Elf Warrior",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5897,15 +5830,15 @@
                 },
                 "Operator": {
                     "name": "Operator",
-                    "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not @Condition[incapacitated], you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>"
+                    "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not Incapacitated, you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>"
                 },
                 "Strategic Repositioning": {
                     "name": "Strategic Repositioning",
-                    "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not @Condition[unaware], you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
                 },
                 "Subtle Extrication": {
                     "name": "Subtle Extrication",
-                    "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Reactive Strike</strong> against you is performed with <strong>+1 Bane</strong>.</p>"
+                    "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Disengagement Attack</strong> against you is performed without the 2 Boons that would ordinarily apply to such an attack.</p>"
                 },
                 "Weak Points": {
                     "name": "Weak Points",
@@ -5977,7 +5910,6 @@
                             "name": "Sunlight Weakness",
                             "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
                                 "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
                             }
                         }
@@ -6029,7 +5961,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magical Sight",
@@ -6080,11 +6012,11 @@
                 },
                 "Inflection: Pull": {
                     "name": "Inflection: Pull",
-                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the <strong>Pull</strong> inflection move are forcibly moved a distance towards the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
+                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the Pull inflection move 1 space closer towards the spellcaster if that destination space is unoccupied.</p>"
                 },
                 "Inflection: Push": {
                     "name": "Inflection: Push",
-                    "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the <strong>Push</strong> inflection are forcibly moved a distance away from the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
+                    "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 4 feet away from the spellcaster if that destination is unoccupied.</p>"
                 },
                 "Kineturge": {
                     "name": "Kineturge",
@@ -6092,11 +6024,11 @@
                 },
                 "Necromancer": {
                     "name": "Necromancer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Presence</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals your <strong>Intellect</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
                 },
                 "Thoughtbinder": {
                     "name": "Thoughtbinder",
-                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
                 },
                 "Control Proficiency": {
                     "name": "Control Proficiency",
@@ -6277,7 +6209,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -6312,11 +6244,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -6351,7 +6283,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Cone": {
                     "name": "Gesture: Cone",
@@ -6383,19 +6315,9 @@
                     "name": "Snakeblood",
                     "description": "Your supernatural toughness makes you resistant to venoms and toxins. You gain +5 Resistance to Poison damage."
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Shield Combat Training": {
                     "name": "Shield Combat Training",
@@ -6418,12 +6340,12 @@
                 },
                 "Intercept": {
                     "name": "Intercept",
-                    "description": "<p>You protect your allies, intercepting blows that might otherwise be directed towards your companions.</p>",
+                    "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
                     "actions": {
                         "Intercept": {
                             "name": "Intercept",
                             "condition": "An enemy moves into or through your Engagement radius.",
-                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediately moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a @Action[default reactiveStrike] against them.</p><h3 class=\"divider\">Playtest Notes</h3><p>The interruption of enemy movement is not yet automated.</p>"
+                            "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
                         }
                     }
                 },
@@ -6516,11 +6438,11 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Counterspell",
@@ -6570,7 +6492,7 @@
                 },
                 "Concussive Blows": {
                     "name": "Concussive Blows",
-                    "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the @Condition[staggered] condition on Critical Hits which deal damage to Health.</p><p>The @Condition[staggered] effect lasts for 1 round and reduces your target's maximum Action by 2.</p>"
+                    "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the <strong>Staggered</strong> condition on Critical Hits which deal damage to Health.</p>\n<p>The Staggered effect lasts for 1 round and reduces your target's maximum Action by 1.</p>"
                 },
                 "Celestial War Hammer": {
                     "name": "Celestial War Hammer",
@@ -6615,7 +6537,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Surgeweaver",
-                    "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                 },
                 "Mender": {
                     "name": "Mender",
@@ -6781,7 +6703,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Life": {
                     "name": "Rune: Life",
@@ -6862,7 +6784,7 @@
                     "actions": {
                         "Steadfast Resolve": {
                             "name": "Steadfast Resolve",
-                            "description": "<p>You harden yourself against demoralization. Your <strong>Morale</strong> is increased by your <strong>Wisdom</strong> score and you temporarily gain the @Condition[resolute] condition.</p>",
+                            "description": "<p>You harden yourself against demoralization. Your Morale is increased by your Wisdom score and you temporarily gain the Resolute condition.</p>",
                             "effects": [
                                 {
                                     "name": "Steadfast Resolve"
@@ -6992,12 +6914,6 @@
                         "public": "<p>A sturdy and flexible chain affixed with a barbed hook at its end. In the hands of a skilled combatant the chain can be thrown towards a target, tearing at their flesh or equipment.</p>"
                     }
                 },
-                "jR2DAGJQKmHARt9q": {
-                    "name": "Chain Hook",
-                    "description": {
-                        "public": "<p>A sturdy and flexible chain affixed with a barbed hook at its end. In the hands of a skilled combatant the chain can be thrown towards a target, tearing at their flesh or equipment.</p>"
-                    }
-                },
                 "Demonic Armor": {
                     "name": "Demonic Armor"
                 }
@@ -7018,7 +6934,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -7267,7 +7183,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Training": {
                     "name": "Heavy Weapon Training",
@@ -7363,7 +7279,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -7404,7 +7320,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -7414,7 +7330,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Rune: Earth",
@@ -7454,7 +7370,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Rune: Earth",
@@ -7515,11 +7431,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Control": {
                     "name": "Rune: Control",
@@ -7677,7 +7593,7 @@
                         "Counter Riposte": {
                             "name": "Counter Riposte",
                             "condition": "You Parry an incoming melee Strike.",
-                            "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which is <strong>Accurate</strong>.</p>"
+                            "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
                         }
                     }
                 }
@@ -7784,7 +7700,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Sundering Strike",
-                            "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                            "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                             "effects": [
                                 {
                                     "name": "Sundered Armor"
@@ -7841,7 +7757,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magical Sight",
@@ -7883,15 +7799,15 @@
                 },
                 "Inflection: Pull": {
                     "name": "Inflection: Pull",
-                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the <strong>Pull</strong> inflection move are forcibly moved a distance towards the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
+                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the Pull inflection move 1 space closer towards the spellcaster if that destination space is unoccupied.</p>"
                 },
                 "Inflection: Push": {
                     "name": "Inflection: Push",
-                    "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the <strong>Push</strong> inflection are forcibly moved a distance away from the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
+                    "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 4 feet away from the spellcaster if that destination is unoccupied.</p>"
                 },
                 "Necromancer": {
                     "name": "Necromancer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Presence</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals your <strong>Intellect</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
                 },
                 "Kineturge": {
                     "name": "Kineturge",
@@ -7899,7 +7815,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Thoughtbinder",
-                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
                 },
                 "Mesmer": {
                     "name": "Mesmer",
@@ -7982,7 +7898,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -8046,7 +7962,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Leg Sweep",
-                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target @Condition[prone].</p>",
+                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Leg Sweep"
@@ -8111,7 +8027,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Heavy Weapon Training": {
                     "name": "Heavy Weapon Training",
@@ -8200,7 +8116,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Heavy Weapon Proficiency",
@@ -8271,7 +8187,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Flame Claw"
@@ -8316,7 +8232,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -8326,7 +8242,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -8363,7 +8279,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -8452,11 +8368,11 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Kinesis": {
                     "name": "Rune: Kinesis",
@@ -8585,7 +8501,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Leg Sweep",
-                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target @Condition[prone].</p>",
+                            "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Leg Sweep"
@@ -8607,7 +8523,7 @@
             "items": {
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Control": {
                     "name": "Rune: Control",
@@ -8639,7 +8555,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Sundering Strike",
-                            "description": "<p>You make a <strong>Strike</strong> with a Strength-scaling weapon which, if successful, applies the @Condition[exposed] condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                            "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
                             "effects": [
                                 {
                                     "name": "Sundered Armor"
@@ -8659,7 +8575,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Thoughtbinder",
-                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
                 },
                 "Control Proficiency": {
                     "name": "Control Proficiency",
@@ -8860,7 +8776,7 @@
                 },
                 "Pack Hunter": {
                     "name": "Pack Hunter",
-                    "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a @Condition[flanked] enemy.</p>"
+                    "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
                 },
                 "Repugnant Pustules": {
                     "name": "Repugnant Pustules",
@@ -8916,7 +8832,7 @@
                 },
                 "Pack Hunter": {
                     "name": "Pack Hunter",
-                    "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a @Condition[flanked] enemy.</p>"
+                    "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
                 },
                 "Claw": {
                     "name": "Claw"
@@ -9045,7 +8961,7 @@
                         "Berserker Rage": {
                             "name": "Berserker Rage",
                             "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
-                            "description": "You become @Condition[enraged]. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                            "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
                             "effects": [
                                 {
                                     "name": "Berserker Rage"
@@ -9203,19 +9119,9 @@
         "Half Spider": {
             "name": "Half Spider",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -9379,7 +9285,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Heavy Weapon Proficiency",
@@ -9447,7 +9353,7 @@
                     "actions": {
                         "Goring Charge": {
                             "name": "Goring Charge",
-                            "description": "<p>The Creature charges forward up to 15ft making a empowered strike against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
+                            "description": "<p>The Creature charges forward up to 15ft making a empowered strike against the against the first creature they encounter. On a critical success the target is also knocked <strong>Prone</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Goring Charge"
@@ -9521,7 +9427,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Strong Grip": {
                     "name": "Strong Grip",
@@ -9583,7 +9489,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Heavy Weapon Proficiency",
@@ -9706,7 +9612,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -9757,11 +9663,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -9815,7 +9721,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gesture: Step",
@@ -10519,7 +10425,7 @@
                     "actions": {
                         "Restraining Chomp": {
                             "name": "Restraining Chomp",
-                            "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also @Condition[restrained] until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
+                            "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained</strong> until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
                             "effects": [
                                 {
                                     "name": "Restraining Chomp"
@@ -10535,7 +10441,7 @@
                         "Thrash": {
                             "name": "Thrash",
                             "condition": "The target is Restrained by this creature.",
-                            "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has @Condition[restrained].</p>"
+                            "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has <strong>Restrained</strong>.</p>"
                         }
                     }
                 },
@@ -10686,7 +10592,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "False Appearance",
@@ -10729,11 +10635,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Bark Armor"
@@ -10768,7 +10674,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Bark Armor"
@@ -10833,7 +10739,7 @@
             "items": {
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Rune: Lightning",
@@ -10851,7 +10757,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Training": {
                     "name": "Heavy Weapon Training",
@@ -11235,7 +11141,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -11270,11 +11176,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -11309,7 +11215,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gesture: Sense",
@@ -11356,7 +11262,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magical Sight",
@@ -11449,7 +11355,7 @@
                 },
                 "Inflection: Pull": {
                     "name": "Inflection: Pull",
-                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the <strong>Pull</strong> inflection move are forcibly moved a distance towards the spellcaster equal to the Ability Bonus that applied to the Spell, potentially colliding with walls or other movement-blocking obstacles.</p>"
+                    "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the Pull inflection move 1 space closer towards the spellcaster if that destination space is unoccupied.</p>"
                 }
             },
             "archetype": {
@@ -11674,7 +11580,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -11731,7 +11637,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Amphibious": {
                     "name": "Amphibious",
@@ -11858,7 +11764,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Flight": {
                     "name": "Flight",
@@ -12078,7 +11984,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Heavy Weapon Proficiency",
@@ -12312,19 +12218,9 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Amorphous": {
                     "name": "Amorphous",
@@ -12357,19 +12253,9 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Flight": {
                     "name": "Flight",
@@ -12391,7 +12277,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Shadow Breath",
-                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
+                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
                         }
                     }
                 },
@@ -12641,7 +12527,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Heavy Weapon Proficiency",
@@ -12764,19 +12650,6 @@
                         }
                     }
                 },
-                "V7yA7M6nREm9rXqC": {
-                    "name": "Scimitar",
-                    "description": {
-                        "public": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
-                    },
-                    "effects": {
-                        "Deflection": {
-                            "name": "Deflection",
-                            "description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
-                            "adjective": "Deflection"
-                        }
-                    }
-                },
                 "Tail": {
                     "name": "Tail"
                 },
@@ -12787,7 +12660,7 @@
                         "Counter Riposte": {
                             "name": "Counter Riposte",
                             "condition": "You Parry an incoming melee Strike.",
-                            "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which is <strong>Accurate</strong>.</p>"
+                            "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
                         }
                     }
                 },
@@ -12853,7 +12726,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gesture: Sense",
@@ -12975,7 +12848,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13006,11 +12879,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Inspirator": {
                     "name": "Inspirator",
@@ -13045,7 +12918,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gesture: Sense",
@@ -13164,7 +13037,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Light Weapon Training": {
                     "name": "Light Weapon Training",
@@ -13287,7 +13160,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13324,11 +13197,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13365,7 +13238,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a Rune into your body, empowering your own physical form or psyche.</p><p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gesture: Step",
@@ -13662,7 +13535,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Trampling Charge": {
                     "name": "Trampling Charge",
@@ -13708,7 +13581,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Unshakeable Stance",
-                    "description": "<p>You cannot be unvoluntarily Moved or knocked @Condition[prone] by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+                    "description": "You cannot be unvoluntarily Moved or knocked Prone by any action that is not a Critical Success rolled by an enemy or a Critical Failure rolled by yourself."
                 },
                 "Restraining Chomp": {
                     "name": "Restraining Chomp",
@@ -13716,7 +13589,7 @@
                     "actions": {
                         "Restraining Chomp": {
                             "name": "Restraining Chomp",
-                            "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also @Condition[restrained] until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
+                            "description": "<p>The creature chomps down upon its target. If the attack is successful and the target is equal or lesser in <strong>Size</strong>, the target is also <strong>Restrained</strong> until this creature chooses to release it or the restraint is otherwise broken. Only one target may be restrained by this action at a given time.</p>",
                             "effects": [
                                 {
                                     "name": "Restraining Chomp"
@@ -13732,7 +13605,7 @@
                         "Thrash": {
                             "name": "Thrash",
                             "condition": "The target is Restrained by this creature.",
-                            "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has @Condition[restrained].</p>"
+                            "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has <strong>Restrained</strong>.</p>"
                         }
                     }
                 },
@@ -14006,13 +13879,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -14277,13 +14150,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Acid Spray",
+                "Acid Breath": {
+                    "name": "Acid Breath",
                     "description": "<p>The creature has salivary glands which produce a caustic acidic spray.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Acid Spray",
-                            "description": "<p>The creature expels a spray of acidic bile in a 10 foot fan.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
+                        "Breath": {
+                            "name": "Breath",
+                            "description": "<p>The creature expels a spray of acidic bile in a 30 foot line.</p><p>On a <strong>Critical Hit</strong>, this attack causes the @Condition[corroding] condition for <strong>3 Turns</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Acid Spray"
@@ -14463,11 +14336,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a Rune into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with 6 foot radius. It deals <strong>6 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Invisibility": {
                     "name": "Invisibility",
@@ -14694,19 +14567,9 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Sunlight Weakness",
-                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Sunlight Weakness",
-                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Light Sensitivity",
+                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
                 },
                 "Flight": {
                     "name": "Flight",
@@ -14728,7 +14591,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Shadow Breath",
-                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
+                            "description": "<p>The dragon breaths forth a blast of rotting gas dealing corruption damage to targets in a 10ft fan. A creature killed by this gas rises as a @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] in 1 hour.</p>"
                         }
                     }
                 },
