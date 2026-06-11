@@ -125,7 +125,7 @@
         },
         "Diseasing Proboscis": {
             "name": "Trąbka choroby",
-            "description": "<p>Stworzenie atakuje cel swoją ostrą trąbką; w przypadku trafienia, oprócz zadawanych obrażeń, stwarzenie zaczyna cierpieć na stan <strong>Zarażony</strong>, dopóki nie wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+            "description": "<p>Stworzenie atakuje cel swoją ostrą trąbką; w przypadku trafienia, oprócz zadawanych obrażeń, stwarzenie zaczyna cierpieć na stan <strong>Zarażony</strong>, dopóki nie wykona akcji <strong>Odpoczynku</strong> lub <strong>Odzyskiwania</strong>.</p>",
             "actions": {
                 "Diseasing Proboscis": {
                     "name": "Trąbka choroby",
