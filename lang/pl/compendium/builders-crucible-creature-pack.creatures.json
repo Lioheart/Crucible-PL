@@ -75,7 +75,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Telecognition": {
                     "name": "Telepoznanie",
@@ -99,7 +99,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Myślotwórca",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -241,13 +241,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -584,13 +584,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -781,11 +781,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Illusion": {
                     "name": "Runa: Iluzja",
@@ -1105,19 +1105,9 @@
                     "name": "Niespokojni umarli",
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Flight": {
                     "name": "Latanie",
@@ -1139,7 +1129,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Cieniste zionięcie",
-                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
+                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
                         }
                     }
                 },
@@ -1384,7 +1374,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Pouncing Strike": {
                     "name": "Atak z wyskoku",
@@ -1480,13 +1470,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -1903,13 +1893,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -2432,19 +2422,9 @@
                     "name": "Niespokojni umarli",
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Flight": {
                     "name": "Latanie",
@@ -2466,7 +2446,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Cieniste zionięcie",
-                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
+                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
                         }
                     }
                 },
@@ -2826,7 +2806,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Tail Sweep": {
                     "name": "Zamach ogonem",
@@ -3095,13 +3075,7 @@
                 },
                 "Evasive Shot": {
                     "name": "Wymijający strzał",
-                    "description": "<p>Jesteś mistrzem w oddawaniu strzałów z broni dystansowej, jednocześnie unikając ataków wroga.</p>",
-                    "actions": {
-                        "Evasive Shot": {
-                            "name": "Wymijający strzał",
-                            "description": "<p>Po wykonaniu ataku bronią dystansową możesz bezpłatnie przemieścić się o odległość nie większą niż połowa swojego <strong>Biegu</strong>.</p>"
-                        }
-                    }
+                    "description": "<p>Jesteś ekspertem w strzelaniu z broni dystansowej, jednocześnie unikając ataków wroga. Po wykonaniu ataku bronią dystansową zyskujesz dodatkowy ruch równy połowie swojej wartości <strong>Biegu</strong>.</p>"
                 },
                 "Projectile Weapon Training": {
                     "name": "Szkolenie z broni miotanej",
@@ -3150,13 +3124,13 @@
                 "Dragon Scales": {
                     "name": "Smocze łuski"
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -3457,7 +3431,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -3515,7 +3489,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -3548,7 +3522,7 @@
                 },
                 "Concussive Blows": {
                     "name": "Ogłuszające ciosy",
-                    "description": "<p>Twoja siła fizyczna pozwalająca na posługiwanie się bronią białą zadającą obrażenia obuchowe może spowodować stan @Condition[staggered] przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p>\n<p>Efekt @Condition[staggered] trwa 1 rundę i zmniejsza maksymalną liczbę Akcji celu o 2.</p>"
+                    "description": "<p>Twoja siła fizyczna pozwalająca na posługiwanie się bronią białą zadającą obrażenia obuchowe może spowodować stan <strong>Chwiejny</strong> przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p>\n<p>Efekt Chwiejny trwa 1 rundę i zmniejsza maksymalną liczbę Akcji celu o 1.</p>"
                 }
             },
             "archetype": {
@@ -3619,7 +3593,6 @@
                             "name": "Wrażliwość na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
                                 "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
                             }
                         }
@@ -3791,7 +3764,7 @@
                     "actions": {
                         "Bull Rush": {
                             "name": "Szarża byka",
-                            "description": "<p>Wykonaj atak używając umiejętności <strong>Atletyka</strong> przeciwko sąsiedniemu wrogowi, który broni się za pomocą swojej obrony Wytrwałości. Jeśli atak się powiedzie, możesz przemieścić się o odległość równą twojemu <strong>Biegu</strong> bezpośrednio przez pole przeciwnika. Twój przeciwnik zostaje @Condition[prone] na ziemię i nie może wykonać żadnego ataku okazjonalnego przeciwko tobie. Jeśli atak się nie powiedzie, twoje przemieszczenie zostaje zablokowane i pozostajesz w obecnej pozycji.</p>",
+                            "description": "<p>Wykonaj atak używając umiejętności <strong>Atletyka</strong> przeciwko sąsiedniemu wrogowi, który broni się za pomocą swojej obrony Wytrwałości. Jeśli atak się powiedzie, możesz przemieścić się o odległość równą twojemu <strong>Biegu</strong> bezpośrednio przez pole przeciwnika. Twój przeciwnik zostaje Przewrócony na ziemię i nie może wykonać żadnego ataku okazjonalnego przeciwko tobie. Jeśli atak się nie powiedzie, twoje przemieszczenie zostaje zablokowane i pozostajesz w obecnej pozycji.</p>",
                             "effects": [
                                 {
                                     "name": "Szarża byka"
@@ -3894,15 +3867,15 @@
                 },
                 "Operator": {
                     "name": "Operator",
-                    "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś @Condition[incapacitated], otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>"
+                    "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś Obezwładniony, otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>"
                 },
                 "Strategic Repositioning": {
                     "name": "Strategiczna reorganizacja",
-                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś @Condition[unaware], możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś nieświadomy, możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p>"
                 },
                 "Subtle Extrication": {
                     "name": "Subtelne wyzwolenie",
-                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy @Action[default reactiveStrike] skierowany przeciwko tobie jest wykonywany z modyfikatorem <strong>+1 do Zguby</strong>.</p>"
+                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy <strong>atak wycofujący</strong> skierowany przeciwko tobie jest wykonywany bez 2 Korzyści, które normalnie miałyby zastosowanie do takiego ataku.</p>"
                 },
                 "Weak Points": {
                     "name": "Słabe punkty",
@@ -4132,11 +4105,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4155,7 +4128,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -4165,7 +4138,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
@@ -4196,7 +4169,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -4206,7 +4179,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -4267,11 +4240,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4425,11 +4398,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Korowy pancerz"
@@ -4470,11 +4443,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4505,11 +4478,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Inspirator": {
                     "name": "Inspirator",
@@ -4548,11 +4521,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -4746,13 +4719,13 @@
                 "Dragon Scales": {
                     "name": "Smocze łuski"
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -5044,7 +5017,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5063,7 +5036,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -5100,7 +5073,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -5179,7 +5152,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5329,7 +5302,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
@@ -5382,7 +5355,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5423,7 +5396,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5458,7 +5431,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5501,7 +5474,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -5556,19 +5529,9 @@
         "Dark Elf Mage": {
             "name": "Mroczny elf mag",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
@@ -5586,11 +5549,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -5652,19 +5615,9 @@
         "Dark Elf Priest": {
             "name": "Mroczny elf kapłan",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
@@ -5682,15 +5635,15 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Steadfast": {
                     "name": "Nieugięty",
@@ -5698,7 +5651,7 @@
                     "actions": {
                         "Steadfast Resolve": {
                             "name": "Nieugięta determinacja",
-                            "description": "<p>Stajesz się odporny na demoralizację. Twoje <strong>Morale</strong> wzrasta o wartość twojej <strong>Mądrości</strong> i tymczasowo zyskujesz stan @Condition[resolute].</p>",
+                            "description": "<p>Stajesz się odporny na demoralizację. Twoje Morale wzrasta o wartość twojej Mądrości i tymczasowo zyskujesz stan Stanowczy.</p>",
                             "effects": [
                                 {
                                     "name": "Nieugięta determinacja"
@@ -5765,19 +5718,9 @@
         "Dark Elf Scout": {
             "name": "Mroczny elf zwiadowca",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
@@ -5867,19 +5810,9 @@
         "Dark Elf Warrior": {
             "name": "Mroczny elf wojownik",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
@@ -5897,15 +5830,15 @@
                 },
                 "Operator": {
                     "name": "Operator",
-                    "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś @Condition[incapacitated], otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>"
+                    "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś Obezwładniony, otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>"
                 },
                 "Strategic Repositioning": {
                     "name": "Strategiczna reorganizacja",
-                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś @Condition[unaware], możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś nieświadomy, możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p>"
                 },
                 "Subtle Extrication": {
                     "name": "Subtelne wyzwolenie",
-                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy @Action[default reactiveStrike] skierowany przeciwko tobie jest wykonywany z modyfikatorem <strong>+1 do Zguby</strong>.</p>"
+                    "description": "<p>Wiesz, jak oddalić się od przeciwnika, nie narażając się na najgorsze ataki w odwecie. Każdy <strong>atak wycofujący</strong> skierowany przeciwko tobie jest wykonywany bez 2 Korzyści, które normalnie miałyby zastosowanie do takiego ataku.</p>"
                 },
                 "Weak Points": {
                     "name": "Słabe punkty",
@@ -5977,7 +5910,6 @@
                             "name": "Wrażliwość na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
                                 "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
                             }
                         }
@@ -6029,7 +5961,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magiczny wzrok",
@@ -6080,11 +6012,11 @@
                 },
                 "Inflection: Pull": {
                     "name": "Fleksja: Przyciąganie",
-                    "description": "<p>Wzmocnij zaklęcie, aby przyciągało dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Przyciąganie</strong> zostają przymusowo przesunięte w kierunku rzucającego o odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
+                    "description": "<p>Wzmocnij zaklęcie, aby przyciągnąć dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją Przyciąganie przemieszczają się o 1 pole bliżej rzucającego zaklęcie, jeśli pole docelowe jest niezajęte.</p>"
                 },
                 "Inflection: Push": {
                     "name": "Fleksja: Pchanie",
-                    "description": "<p>Wzmocnij zaklęcie, aby odepchnąć dotknięte nim stworzenia od rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Pchnięcie</strong> zostają siłą odsunięte od rzucającego na odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
+                    "description": "<p>Wzmocnij zaklęcie, aby odrzucić dotknięte nim stworzenia od rzucającego. Stworzenia dotknięte zaklęciem z fleksją Pchnięcia odsuwają się o 4 stopy od rzucającego zaklęcie, jeśli miejsce docelowe jest niezajęte.</p>"
                 },
                 "Kineturge": {
                     "name": "Kineturg",
@@ -6092,11 +6024,11 @@
                 },
                 "Necromancer": {
                     "name": "Nekromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe połowie twojej wartości <strong>Prezencji</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
                 },
                 "Thoughtbinder": {
                     "name": "Myślotwórca",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Control Proficiency": {
                     "name": "Biegłość kontroli",
@@ -6277,7 +6209,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -6312,11 +6244,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -6351,7 +6283,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Cone": {
                     "name": "Gest: Stożek",
@@ -6383,19 +6315,9 @@
                     "name": "Wężowa krew",
                     "description": "Twoja nadprzyrodzona wytrzymałość sprawia, że jesteś odporny na trucizny i toksyny. Zyskujesz +5 do odporności na obrażenia od trucizny."
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Shield Combat Training": {
                     "name": "Szkolenie z walki tarczą",
@@ -6418,12 +6340,12 @@
                 },
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
+                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                         }
                     }
                 },
@@ -6516,11 +6438,11 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -6570,7 +6492,7 @@
                 },
                 "Concussive Blows": {
                     "name": "Ogłuszające ciosy",
-                    "description": "<p>Twoja siła fizyczna pozwalająca na posługiwanie się bronią białą zadającą obrażenia obuchowe może spowodować stan @Condition[staggered] przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p>\n<p>Efekt @Condition[staggered] trwa 1 rundę i zmniejsza maksymalną liczbę Akcji celu o 2.</p>"
+                    "description": "<p>Twoja siła fizyczna pozwalająca na posługiwanie się bronią białą zadającą obrażenia obuchowe może spowodować stan <strong>Chwiejny</strong> przy Trafieniach krytycznych, które zadają obrażenia Zdrowia.</p>\n<p>Efekt Chwiejny trwa 1 rundę i zmniejsza maksymalną liczbę Akcji celu o 1.</p>"
                 },
                 "Celestial War Hammer": {
                     "name": "Niebiański młot bojowy",
@@ -6615,7 +6537,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
                 },
                 "Mender": {
                     "name": "Znachor",
@@ -6781,7 +6703,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Life": {
                     "name": "Runa: Życie",
@@ -6862,7 +6784,7 @@
                     "actions": {
                         "Steadfast Resolve": {
                             "name": "Nieugięta determinacja",
-                            "description": "<p>Stajesz się odporny na demoralizację. Twoje <strong>Morale</strong> wzrasta o wartość twojej <strong>Mądrości</strong> i tymczasowo zyskujesz stan @Condition[resolute].</p>",
+                            "description": "<p>Stajesz się odporny na demoralizację. Twoje Morale wzrasta o wartość twojej Mądrości i tymczasowo zyskujesz stan Stanowczy.</p>",
                             "effects": [
                                 {
                                     "name": "Nieugięta determinacja"
@@ -6992,12 +6914,6 @@
                         "public": "<p>Solidny i elastyczny łańcuch zakończony haczykiem z zadziorami. W rękach doświadczonego wojownika łańcuch można rzucić w kierunku celu, rozrywając jego ciało lub wyposażenie.</p>"
                     }
                 },
-                "jR2DAGJQKmHARt9q": {
-                    "name": "Hak łańcuchowy",
-                    "description": {
-                        "public": "<p>Solidny i elastyczny łańcuch zakończony haczykiem z zadziorami. W rękach doświadczonego wojownika łańcuch można rzucić w kierunku celu, rozrywając jego ciało lub wyposażenie.</p>"
-                    }
-                },
                 "Demonic Armor": {
                     "name": "Demoniczny pancerz"
                 }
@@ -7018,7 +6934,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -7267,7 +7183,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Training": {
                     "name": "Szkolenie z broni ciężkiej",
@@ -7363,7 +7279,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -7404,7 +7320,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -7414,7 +7330,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
@@ -7454,7 +7370,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
@@ -7515,11 +7431,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Control": {
                     "name": "Runa: Kontrola",
@@ -7677,7 +7593,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
                         }
                     }
                 }
@@ -7784,7 +7700,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -7841,7 +7757,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magiczny wzrok",
@@ -7883,15 +7799,15 @@
                 },
                 "Inflection: Pull": {
                     "name": "Fleksja: Przyciąganie",
-                    "description": "<p>Wzmocnij zaklęcie, aby przyciągało dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Przyciąganie</strong> zostają przymusowo przesunięte w kierunku rzucającego o odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
+                    "description": "<p>Wzmocnij zaklęcie, aby przyciągnąć dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją Przyciąganie przemieszczają się o 1 pole bliżej rzucającego zaklęcie, jeśli pole docelowe jest niezajęte.</p>"
                 },
                 "Inflection: Push": {
                     "name": "Fleksja: Pchanie",
-                    "description": "<p>Wzmocnij zaklęcie, aby odepchnąć dotknięte nim stworzenia od rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Pchnięcie</strong> zostają siłą odsunięte od rzucającego na odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
+                    "description": "<p>Wzmocnij zaklęcie, aby odrzucić dotknięte nim stworzenia od rzucającego. Stworzenia dotknięte zaklęciem z fleksją Pchnięcia odsuwają się o 4 stopy od rzucającego zaklęcie, jeśli miejsce docelowe jest niezajęte.</p>"
                 },
                 "Necromancer": {
                     "name": "Nekromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe połowie twojej wartości <strong>Prezencji</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
                 },
                 "Kineturge": {
                     "name": "Kineturg",
@@ -7899,7 +7815,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Myślotwórca",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Mesmer": {
                     "name": "Hipnotyk",
@@ -7982,7 +7898,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -8046,7 +7962,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Podcięcie nóg",
-                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
+                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Podcięcie nóg"
@@ -8111,7 +8027,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Heavy Weapon Training": {
                     "name": "Szkolenie z broni ciężkiej",
@@ -8200,7 +8116,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Biegłość w broni ciężkiej",
@@ -8271,7 +8187,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -8316,7 +8232,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -8326,7 +8242,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -8363,7 +8279,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -8452,11 +8368,11 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Kinesis": {
                     "name": "Runa: Kinetyka",
@@ -8585,7 +8501,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Podcięcie nóg",
-                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
+                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Podcięcie nóg"
@@ -8607,7 +8523,7 @@
             "items": {
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Control": {
                     "name": "Runa: Kontrola",
@@ -8639,7 +8555,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -8659,7 +8575,7 @@
                 },
                 "Thoughtbinder": {
                     "name": "Myślotwórca",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Control Proficiency": {
                     "name": "Biegłość kontroli",
@@ -8860,7 +8776,7 @@
                 },
                 "Pack Hunter": {
                     "name": "Stadny łowca",
-                    "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie wroga ze stanem @Condition[flanked].</p>"
+                    "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Oskrzydlonego</strong> wroga.</p>"
                 },
                 "Repugnant Pustules": {
                     "name": "Odrażające czyraki",
@@ -8916,7 +8832,7 @@
                 },
                 "Pack Hunter": {
                     "name": "Stadny łowca",
-                    "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie wroga ze stanem @Condition[flanked].</p>"
+                    "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie <strong>Oskrzydlonego</strong> wroga.</p>"
                 },
                 "Claw": {
                     "name": "Pazur"
@@ -9045,7 +8961,7 @@
                         "Berserker Rage": {
                             "name": "Szał berserkera",
                             "condition": "Od ostatniej tury w walce poniosłeś obrażenia, które zmniejszyły twoją pulę Zdrowia.",
-                            "description": "Otrzymujesz stan @Condition[enraged]. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
+                            "description": "Stajesz się Wściekły. Podczas Wściekłości zadajesz 4 dodatkowe punkty obrażeń przy wszystkich atakach wręcz. Możesz spróbować zakończyć ten efekt w swojej turze, wykonując udany test Woli o ST 20. Efekt kończy się automatycznie po zakończeniu walki.",
                             "effects": [
                                 {
                                     "name": "Szał berserkera"
@@ -9203,19 +9119,9 @@
         "Half Spider": {
             "name": "Półpająk",
             "items": {
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
@@ -9379,7 +9285,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Biegłość w broni ciężkiej",
@@ -9521,7 +9427,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Strong Grip": {
                     "name": "Silny chwyt",
@@ -9583,7 +9489,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Biegłość w broni ciężkiej",
@@ -9706,7 +9612,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -9757,11 +9663,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -9815,7 +9721,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -10519,7 +10425,7 @@
                     "actions": {
                         "Restraining Chomp": {
                             "name": "Zaciśnięcie",
-                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, otrzymuje również stan @Condition[restrained], dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, zostaje ona również <strong>Wstrzymana</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
                             "effects": [
                                 {
                                     "name": "Zaciśnięcie"
@@ -10535,7 +10441,7 @@
                         "Thrash": {
                             "name": "Szarpanina",
                             "condition": "Cel jest Wstrzymany przez tę istotę.",
-                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, na którym obecnie działa stan @Condition[restrained].</p>"
+                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
                         }
                     }
                 },
@@ -10686,7 +10592,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "Fałszywy wygląd",
@@ -10729,11 +10635,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Korowy pancerz"
@@ -10768,7 +10674,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Bark Armor": {
                     "name": "Korowy pancerz"
@@ -10833,7 +10739,7 @@
             "items": {
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Runa: Błyskawica",
@@ -10851,7 +10757,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Training": {
                     "name": "Szkolenie z broni ciężkiej",
@@ -11235,7 +11141,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -11270,11 +11176,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -11309,7 +11215,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
@@ -11356,7 +11262,7 @@
                 },
                 "Gesture: Ray": {
                     "name": "Gest: Promień",
-                    "description": "Nauczysz się gestu Promienia, który pozwoli ci skupić energię tajemną w postaci skoncentrowanej linii."
+                    "description": "<p>Skupiasz tajemniczą moc runy w jednym punkcie i wyrzucasz ją na zewnątrz w postaci wiązki. </p><p>Gest promienia skaluje się przy użyciu <strong>Mądrości</strong> i tworzy linię o szerokości 1 stopy i długości 30 stóp, wychodzącą od rzucającego zaklęcie, zadając <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Magical Sight": {
                     "name": "Magiczny wzrok",
@@ -11449,7 +11355,7 @@
                 },
                 "Inflection: Pull": {
                     "name": "Fleksja: Przyciąganie",
-                    "description": "<p>Wzmocnij zaklęcie, aby przyciągało dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Przyciąganie</strong> zostają przymusowo przesunięte w kierunku rzucającego o odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
+                    "description": "<p>Wzmocnij zaklęcie, aby przyciągnąć dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją Przyciąganie przemieszczają się o 1 pole bliżej rzucającego zaklęcie, jeśli pole docelowe jest niezajęte.</p>"
                 }
             },
             "archetype": {
@@ -11674,7 +11580,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -11731,7 +11637,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Amphibious": {
                     "name": "Amfibia",
@@ -11858,7 +11764,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Flight": {
                     "name": "Latanie",
@@ -12078,7 +11984,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Biegłość w broni ciężkiej",
@@ -12312,19 +12218,9 @@
                     "name": "Niespokojni umarli",
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Amorphous": {
                     "name": "Amorficzny",
@@ -12357,19 +12253,9 @@
                     "name": "Niespokojni umarli",
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Flight": {
                     "name": "Latanie",
@@ -12391,7 +12277,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Cieniste zionięcie",
-                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
+                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
                         }
                     }
                 },
@@ -12641,7 +12527,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Biegłość w broni ciężkiej",
@@ -12764,19 +12650,6 @@
                         }
                     }
                 },
-                "V7yA7M6nREm9rXqC": {
-                    "name": "Bułat",
-                    "description": {
-                        "public": "<p>Dzięki szerokiemu, zakrzywionemu ostrzu i zabójczemu łukowi, szabla ta tańczy na polu bitwy, przecinając wrogów eleganckimi, zamaszystymi ciosami.</p>"
-                    },
-                    "effects": {
-                        "Deflection": {
-                            "name": "Odparcia",
-                            "description": "<p>Zwiększa <strong>Parowanie</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
-                            "adjective": "Odparcia"
-                        }
-                    }
-                },
                 "Tail": {
                     "name": "Ogon"
                 },
@@ -12787,7 +12660,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
                         }
                     }
                 },
@@ -12853,7 +12726,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
@@ -12975,7 +12848,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13006,11 +12879,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Inspirator": {
                     "name": "Inspirator",
@@ -13045,7 +12918,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
@@ -13164,7 +13037,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Light Weapon Training": {
                     "name": "Szkolenie z broni lekkiej",
@@ -13287,7 +13160,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13324,11 +13197,11 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13365,7 +13238,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -13662,7 +13535,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Trampling Charge": {
                     "name": "Taranowanie",
@@ -13708,7 +13581,7 @@
                 },
                 "Unshakeable Stance": {
                     "name": "Nieugięta postawa",
-                    "description": "<p>Nie możesz zostać mimowolnie Przesunięty lub @Condition[prone] przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
+                    "description": "Nie możesz zostać mimowolnie Przesunięty lub Przewrócony przez żadną akcję, która nie jest Krytycznym Sukcesem rzuconym przez wroga lub Krytyczną Porażką rzuconą przez ciebie."
                 },
                 "Restraining Chomp": {
                     "name": "Zaciśnięcie",
@@ -13716,7 +13589,7 @@
                     "actions": {
                         "Restraining Chomp": {
                             "name": "Zaciśnięcie",
-                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, otrzymuje również stan @Condition[restrained], dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, zostaje ona również <strong>Wstrzymana</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
                             "effects": [
                                 {
                                     "name": "Zaciśnięcie"
@@ -13732,7 +13605,7 @@
                         "Thrash": {
                             "name": "Szarpanina",
                             "condition": "Cel jest Wstrzymany przez tę istotę.",
-                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, na którym obecnie działa stan @Condition[restrained].</p>"
+                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
                         }
                     }
                 },
@@ -14006,13 +13879,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -14277,13 +14150,13 @@
                         }
                     }
                 },
-                "Acid Spray": {
-                    "name": "Rozprysk kwasu",
+                "Acid Breath": {
+                    "name": "Kwasowe zionięcie",
                     "description": "<p>Stworzenie posiada gruczoły ślinowe, które wytwarzają żrący kwasowy rozprysk.</p>",
                     "actions": {
-                        "Acid Spray": {
-                            "name": "Rozprysk kwasu",
-                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                        "Breath": {
+                            "name": "Zionięcie",
+                            "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w linii o długości 30 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Rozprysk kwasu"
@@ -14463,11 +14336,11 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
@@ -14694,19 +14567,9 @@
                     "name": "Niespokojni umarli",
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
-                "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-                    "effects": {
-                        "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
-                            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
-                            "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.number": 2,
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
-                            }
-                        }
-                    }
+                "Light Sensitivity": {
+                    "name": "Wrażliwość na światło",
+                    "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie jasnego światła.</p>"
                 },
                 "Flight": {
                     "name": "Latanie",
@@ -14728,7 +14591,7 @@
                     "actions": {
                         "Shadow Breath": {
                             "name": "Cieniste zionięcie",
-                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
+                            "description": "<p>Smok zionie strumieniem gnijącego gazu, zadając obrażenia z zepsucia celom w obszarze o promieniu 10 stóp. Istota zabita przez ten gaz powstaje jako @UUID[Compendium.builders-crucible-creature-pack.creatures.Actor.cMB6VWYRpQRjjPym] po upływie 1 godziny.</p>"
                         }
                     }
                 },
