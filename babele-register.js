@@ -30,6 +30,25 @@ Hooks.once("babele.init", (babele) => {
     return [];
   };
 
+  const cloneSourceData = (value) => {
+    if (!value || typeof value !== "object") return value;
+
+    const source =
+      value._source && typeof value._source === "object"
+        ? value._source
+        : value;
+
+    if (globalThis.foundry?.utils?.deepClone) {
+      return globalThis.foundry.utils.deepClone(source);
+    }
+
+    return structuredClone(source);
+  };
+
+  const asSourceArray = (collection) => {
+    return asArray(collection).map((entry) => cloneSourceData(entry));
+  };
+
   const stripTierSuffix = (value) => {
     if (typeof value !== "string") return value;
     return value.replace(/\s+(I|II|III|IV|V|VI|VII|VIII|IX|X|[1-9][0-9]*)$/i, "").trim();
@@ -116,27 +135,90 @@ Hooks.once("babele.init", (babele) => {
     return value;
   };
 
+  const activeEffectChangesConverter = (changes, translations) => {
+    if (!changes || !translations) return changes;
+
+    const arr = asArray(changes);
+
+    for (const change of arr) {
+      if (!change || typeof change !== "object") continue;
+
+      const key = change.key;
+      if (typeof key !== "string" || !key) continue;
+
+      let translatedValue;
+
+      if (Array.isArray(translations)) {
+        const translation = translations.find((entry) =>
+          entry && typeof entry === "object" && entry.key === key
+        );
+
+        if (translation) {
+          translatedValue = translation.value;
+        }
+      } else if (typeof translations === "object") {
+        const translation = translations[key];
+
+        if (
+          translation &&
+          typeof translation === "object" &&
+          !Array.isArray(translation)
+        ) {
+          translatedValue = translation.value;
+        } else {
+          translatedValue = translation;
+        }
+      }
+
+      if (translatedValue !== undefined) {
+        change.value = translatedValue;
+      }
+    }
+
+    return arr;
+  };
+
   const embeddedEffectsConverter = (effects, translations) => {
     if (!effects || !translations) return effects;
 
-    const arr = asArray(effects);
+    const arr = asSourceArray(effects);
+
     for (const [index, effect] of arr.entries()) {
-      if (!effect) continue;
+      if (!effect || typeof effect !== "object") continue;
 
       const translation = findTranslation(effect, translations, index);
       if (!translation || typeof translation !== "object") continue;
 
-      if (translation.name !== undefined) effect.name = translation.name;
-      if (translation.label !== undefined) effect.label = translation.label;
+      if (translation.name !== undefined) {
+        effect.name = translation.name;
+      }
+
+      if (translation.label !== undefined) {
+        effect.label = translation.label;
+      }
 
       if (translation.description !== undefined) {
         effect.description = translation.description;
-        effect.system ??= {};
-        effect.system.description = translation.description;
+      }
+
+      if (translation.changes !== undefined) {
+        if (Array.isArray(effect.changes)) {
+          effect.changes = activeEffectChangesConverter(
+            effect.changes,
+            translation.changes
+          );
+        }
+
+        if (Array.isArray(effect.system?.changes)) {
+          effect.system.changes = activeEffectChangesConverter(
+            effect.system.changes,
+            translation.changes
+          );
+        }
       }
     }
 
-    return effects;
+    return arr;
   };
 
   const embeddedAffixesConverter = (effects, translations) => {
@@ -182,20 +264,24 @@ Hooks.once("babele.init", (babele) => {
   const itemEffectsConverter = (effects, translations) => {
     if (!effects || !translations) return effects;
 
-    const arr = asArray(effects);
+    const arr = asSourceArray(effects);
+
     for (const [index, effect] of arr.entries()) {
       if (!effect || typeof effect !== "object") continue;
 
       const translation = findTranslation(effect, translations, index);
       if (!translation || typeof translation !== "object") continue;
 
-      if (translation.name !== undefined) effect.name = translation.name;
-      if (translation.label !== undefined) effect.label = translation.label;
+      if (translation.name !== undefined) {
+        effect.name = translation.name;
+      }
+
+      if (translation.label !== undefined) {
+        effect.label = translation.label;
+      }
 
       if (translation.description !== undefined) {
         effect.description = translation.description;
-        effect.system ??= {};
-        effect.system.description = translation.description;
       }
 
       if (translation.adjective !== undefined) {
@@ -203,39 +289,81 @@ Hooks.once("babele.init", (babele) => {
         effect.system.adjective = translation.adjective;
       }
 
-      if (translation.actions !== undefined) {
-        if (effect.system?.actions) {
-          effect.system.actions = actionsConverter(effect.system.actions, translation.actions);
+      if (translation.changes !== undefined) {
+        if (Array.isArray(effect.changes)) {
+          effect.changes = activeEffectChangesConverter(
+            effect.changes,
+            translation.changes
+          );
         }
-        if (effect.actions) {
-          effect.actions = actionsConverter(effect.actions, translation.actions);
+
+        if (Array.isArray(effect.system?.changes)) {
+          effect.system.changes = activeEffectChangesConverter(
+            effect.system.changes,
+            translation.changes
+          );
+        }
+      }
+
+      if (translation.actions !== undefined) {
+        if (Array.isArray(effect.system?.actions)) {
+          effect.system.actions = actionsConverter(
+            effect.system.actions,
+            translation.actions
+          );
+        }
+
+        if (Array.isArray(effect.actions)) {
+          effect.actions = actionsConverter(
+            effect.actions,
+            translation.actions
+          );
         }
       }
 
       if (translation.effects !== undefined) {
         if (effect.effects) {
-          effect.effects = embeddedEffectsConverter(effect.effects, translation.effects);
+          effect.effects = embeddedEffectsConverter(
+            effect.effects,
+            translation.effects
+          );
         }
+
         if (effect.system?.effects) {
-          effect.system.effects = embeddedEffectsConverter(effect.system.effects, translation.effects);
+          effect.system.effects = embeddedEffectsConverter(
+            effect.system.effects,
+            translation.effects
+          );
         }
       }
     }
 
-    return effects;
+    return arr;
   };
 
   const embeddedItemsConverter = (items, translations) => {
-    if (!items || !translations || typeof translations !== "object") return items;
+    if (!items || !translations || typeof translations !== "object") {
+      return items;
+    }
 
-    const arr = asArray(items);
+    const arr = asSourceArray(items);
+
     for (const [index, item] of arr.entries()) {
-      if (!item) continue;
+      if (!item || typeof item !== "object") continue;
 
-      const itemTranslation = findTranslation(item, translations, index);
-      if (!itemTranslation || typeof itemTranslation !== "object") continue;
+      const itemTranslation = findTranslation(
+        item,
+        translations,
+        index
+      );
 
-      if (itemTranslation.name !== undefined) item.name = itemTranslation.name;
+      if (!itemTranslation || typeof itemTranslation !== "object") {
+        continue;
+      }
+
+      if (itemTranslation.name !== undefined) {
+        item.name = itemTranslation.name;
+      }
 
       if (itemTranslation.description !== undefined) {
         item.system ??= {};
@@ -245,29 +373,43 @@ Hooks.once("babele.init", (babele) => {
           itemTranslation.description !== null &&
           !Array.isArray(itemTranslation.description)
         ) {
-          item.system.description = normalizeDescriptionContainer(item.system.description);
+          item.system.description = normalizeDescriptionContainer(
+            item.system.description
+          );
 
           if (itemTranslation.description.public !== undefined) {
-            item.system.description.public = itemTranslation.description.public;
+            item.system.description.public =
+              itemTranslation.description.public;
           }
+
           if (itemTranslation.description.private !== undefined) {
-            item.system.description.private = itemTranslation.description.private;
+            item.system.description.private =
+              itemTranslation.description.private;
           }
         } else {
           item.system.description = itemTranslation.description;
         }
       }
 
-      if (itemTranslation.actions && item.system?.actions) {
-        item.system.actions = actionsConverter(item.system.actions, itemTranslation.actions);
+      if (
+        itemTranslation.actions &&
+        Array.isArray(item.system?.actions)
+      ) {
+        item.system.actions = actionsConverter(
+          item.system.actions,
+          itemTranslation.actions
+        );
       }
 
       if (itemTranslation.effects && item.effects) {
-        item.effects = itemEffectsConverter(item.effects, itemTranslation.effects);
+        item.effects = itemEffectsConverter(
+          item.effects,
+          itemTranslation.effects
+        );
       }
     }
 
-    return items;
+    return arr;
   };
 
   const embeddedObjectWithActionsConverter = (obj, translations) => {
@@ -351,6 +493,7 @@ Hooks.once("babele.init", (babele) => {
     embedded_object_with_actions_converter: embeddedObjectWithActionsConverter,
     embedded_biography_converter: embeddedBiographyConverter,
     nested_object_converter: nestedObjectConverter,
-    categories_converter: categoriesConverter
+    categories_converter: categoriesConverter,
+    active_effect_changes_converter: activeEffectChangesConverter,
   });
 });
