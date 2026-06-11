@@ -8,6 +8,12 @@ from urllib.request import urlretrieve
 import plyvel
 import requests
 
+
+ADDITIONAL_MODULE_MANIFESTS = [
+    "https://github.com/master-builder75/Builders-Crucible-Creature-Pack/releases/latest/download/module.json",
+    "https://github.com/master-builder75/Builders-Crucible-Pregen-Characters/releases/latest/download/module.json",
+]
+
 CAPTION_ACTOR_MAPPING = {
     "tokenName": {
         "path": "prototypeToken.name",
@@ -375,7 +381,6 @@ def add_actions_from_record(
             continue
 
         target_entry["actions"].setdefault(action_name, {})
-        action_id = (action.get("id") or action.get("_id") or "").strip()
         target_entry["actions"][action_name]["name"] = action_name
         target_entry["actions"][action_name]["condition"] = action.get("condition") or ""
         target_entry["actions"][action_name]["description"] = action.get("description") or ""
@@ -410,6 +415,86 @@ def resolve_reference_list(ref_list, id_index: dict) -> list[dict]:
     return resolved
 
 
+def is_item_like_record(record: dict) -> bool:
+    """Rozpoznaje dokument Item i odrzuca rekordy ActiveEffect o tym samym _id."""
+    if not isinstance(record, dict):
+        return False
+
+    if record.get("type") in {"base", "effect", "affix"}:
+        return False
+
+    active_effect_keys = {
+        "changes",
+        "duration",
+        "disabled",
+        "start",
+        "transfer",
+        "statuses",
+        "showIcon",
+        "origin",
+        "tint",
+    }
+    if any(key in record for key in active_effect_keys):
+        return False
+
+    return isinstance(record.get("system"), dict)
+
+
+def resolve_item_reference(
+        item_ref,
+        all_records: list[dict],
+        id_index: dict
+) -> dict | None:
+    """
+    Rozwiązuje referencję do Item bez przebudowy globalnego id_index.
+
+    Niektóre packi zawierają Item i jego ActiveEffect z identycznym _id.
+    Dla aktorów trzeba wybrać dokument Item, a nie ostatni rekord zapisany
+    pod tym identyfikatorem w zwykłym słowniku.
+    """
+    if isinstance(item_ref, dict):
+        return item_ref if is_item_like_record(item_ref) else None
+
+    if not isinstance(item_ref, str) or not item_ref:
+        return None
+
+    for candidate in all_records:
+        if (
+            isinstance(candidate, dict)
+            and candidate.get("_id") == item_ref
+            and is_item_like_record(candidate)
+        ):
+            return candidate
+
+    fallback = id_index.get(item_ref) if isinstance(id_index, dict) else None
+    if is_item_like_record(fallback):
+        return fallback
+
+    return None
+
+
+def resolve_item_reference_list(
+        ref_list,
+        all_records: list[dict],
+        id_index: dict
+) -> list[dict]:
+    resolved = []
+
+    if isinstance(ref_list, list):
+        references = ref_list
+    elif isinstance(ref_list, (str, dict)):
+        references = [ref_list]
+    else:
+        references = []
+
+    for item_ref in references:
+        record = resolve_item_reference(item_ref, all_records, id_index)
+        if record:
+            resolved.append(record)
+
+    return resolved
+
+
 def fill_translated_object_from_record(
         target_obj: dict,
         source_record: dict,
@@ -437,14 +522,27 @@ def fill_translated_object_from_record(
     )
 
 
+
 def populate_reference_bucket(
         parent_entry: dict,
         bucket_name: str,
         source_value,
         id_index: dict,
-        transifex_dict: dict
+        transifex_dict: dict,
+        all_records: list[dict] | None = None
 ) -> None:
-    resolved_records = resolve_reference_list(source_value, id_index)
+    if all_records is None:
+        all_records = []
+
+    if bucket_name == "items":
+        resolved_records = resolve_item_reference_list(
+            ref_list=source_value,
+            all_records=all_records,
+            id_index=id_index
+        )
+    else:
+        resolved_records = resolve_reference_list(source_value, id_index)
+
     if not resolved_records:
         return
 
@@ -461,13 +559,26 @@ def populate_reference_bucket(
         # string albo {"public", "private"}
         preserve_description_shape = bucket_name == "items"
 
+        item_entry = parent_entry[bucket_name][record_name]
+
         fill_translated_object_from_record(
-            target_obj=parent_entry[bucket_name][record_name],
+            target_obj=item_entry,
             source_record=record,
             transifex_dict=transifex_dict,
             preserve_description_shape=preserve_description_shape
         )
 
+        # Effects dla itemów zagnieżdżonych w aktorach/pregenach/summonach.
+        # Nie rusza globalnego id_index i nie wymusza _id jako klucza wyjściowego.
+        if bucket_name == "items":
+            populate_effects_object_from_refs(
+                entry=item_entry,
+                source_record=record,
+                all_records=all_records,
+                id_index=id_index,
+                transifex_dict=transifex_dict,
+                add_mapping=False
+            )
 
 def populate_single_reference_object(
         parent_entry: dict,
@@ -494,15 +605,57 @@ def populate_single_reference_object(
     )
 
 
+
+def build_embedded_items_mapping() -> dict:
+    """
+    Deklaratywne mapowanie Babele 2.8+ dla Itemów osadzonych w Actorach.
+
+    Użycie wbudowanego convertera "document" jest konieczne, ponieważ Babele
+    tworzy wtedy lokalny runtime scope dla Itemów i ich ActiveEffectów.
+    Dzięki temu efekty osadzone w itemach nie są traktowane jak zwykłe ID.
+    """
+    return {
+        "path": "items",
+        "converter": "document",
+        "documentType": "Item",
+        "cardinality": "many",
+        "mapping": {
+            "description": {
+                "path": "system.description",
+                "converter": "crucible_description_converter"
+            },
+            "actions": {
+                "path": "system.actions",
+                "converter": "actions_converter"
+            },
+            "effects": {
+                "path": "effects",
+                "converter": "document",
+                "documentType": "ActiveEffect",
+                "cardinality": "many",
+                "mapping": {
+                    "changes": {
+                        "path": "system.changes",
+                        "converter": "structured",
+                        "cardinality": "many",
+                        "container": "array",
+                        "key": "key",
+                        "valuePath": "value"
+                    }
+                }
+            }
+        }
+    }
+
 def populate_prototype_fields(
         entry: dict,
         new_data: dict,
         id_index: dict,
         transifex_dict: dict,
-        items_source=None
+        items_source=None,
+        all_records: list[dict] | None = None
 ) -> None:
     mapping_data = {
-        "items": ("items", "adventure_items_converter"),
         "actions": ("system.actions", "actions_converter"),
         "ancestry": ("system.details.ancestry", "nested_object_converter"),
         "background": ("system.details.background", "nested_object_converter"),
@@ -512,6 +665,8 @@ def populate_prototype_fields(
     }
 
     transifex_dict.setdefault("mapping", {})
+    transifex_dict["mapping"]["items"] = build_embedded_items_mapping()
+
     for key, (path, conv) in mapping_data.items():
         transifex_dict["mapping"][key] = {
             "path": path,
@@ -535,7 +690,8 @@ def populate_prototype_fields(
         bucket_name="items",
         source_value=items_source,
         id_index=id_index,
-        transifex_dict=transifex_dict
+        transifex_dict=transifex_dict,
+        all_records=all_records
     )
 
     # ancestry/background/biography/archetype/taxonomy
@@ -600,10 +756,7 @@ def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
                 "path": "prototypeToken.name",
                 "converter": "name"
             },
-            "items": {
-                "path": "items",
-                "converter": "embedded_items_converter"
-            },
+            "items": build_embedded_items_mapping(),
             "actions": {
                 "path": "system.actions",
                 "converter": "actions_converter"
@@ -635,7 +788,9 @@ def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
 def populate_caption_actor(
         actor_entry: dict,
         actor_data: dict,
-        transifex_dict: dict
+        transifex_dict: dict,
+        all_records: list[dict] | None = None,
+        id_index: dict | None = None
 ) -> None:
     actor_name = (actor_data.get("name") or "").strip()
     if actor_name:
@@ -686,6 +841,15 @@ def populate_caption_actor(
                 add_mapping=False
             )
 
+            populate_effects_object_from_refs(
+                entry=actor_entry["items"][item_name],
+                source_record=item,
+                all_records=all_records or [],
+                id_index=id_index or {},
+                transifex_dict=transifex_dict,
+                add_mapping=False
+            )
+
     details = actor_data.get("system", {}).get("details", {})
 
     for field_name in ["ancestry", "background", "archetype", "taxonomy"]:
@@ -721,10 +885,7 @@ def populate_caption_actor(
 
 def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
     transifex_dict.setdefault("mapping", {})
-    transifex_dict["mapping"]["items"] = {
-        "path": "items",
-        "converter": "embedded_items_converter"
-    }
+    transifex_dict["mapping"]["items"] = build_embedded_items_mapping()
 
     transifex_dict["mapping"]["actions"] = {
         "path": "system.actions",
@@ -748,7 +909,13 @@ def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
     }
 
 
-def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
+def populate_caption_entry(
+        entry: dict,
+        new_data: dict,
+        id_index: dict,
+        transifex_dict: dict,
+        all_records: list[dict] | None = None
+) -> None:
     entry["caption"] = new_data.get("caption", "")
     entry["description"] = new_data.get("description", "")
 
@@ -881,7 +1048,9 @@ def populate_caption_entry(entry: dict, new_data: dict, id_index: dict, transife
             populate_caption_actor(
                 actor_entry=entry["actors"][actor_name],
                 actor_data=actor,
-                transifex_dict=transifex_dict
+                transifex_dict=transifex_dict,
+                all_records=all_records,
+                id_index=id_index
             )
 
 
@@ -1017,38 +1186,227 @@ def populate_embedded_affixes(entry: dict, new_data: dict, id_index: dict, trans
             "converter": "itemEffectsConverter"
         }
 
-def populate_embedded_effects_from_ids(entry: dict, new_data: dict, id_index: dict, transifex_dict: dict) -> None:
-    effect_refs = new_data.get("effects", [])
+
+def is_effect_like_record(record: dict, source_record: dict | None = None) -> bool:
+    """
+    Rozpoznaje rekordy ActiveEffect bez zmieniania globalnego id_index.
+    To jest ważne dla przypadków typu Sunlight Weakness, gdzie item i efekt
+    mogą mieć ten sam _id. Nie wybieramy wtedy ślepo id_index[_id].
+    """
+    if not isinstance(record, dict):
+        return False
+
+    if source_record is not None and record is source_record:
+        return False
+
+    # Foundry ActiveEffect zwykle ma te pola na poziomie głównym.
+    active_effect_keys = {
+        "changes",
+        "duration",
+        "disabled",
+        "start",
+        "transfer",
+        "statuses",
+        "showIcon",
+        "origin",
+        "tint",
+    }
+
+    if any(key in record for key in active_effect_keys):
+        return True
+
+    # W niektórych eksportach pomocnicze efekty bywają oznaczone typem.
+    if record.get("type") in {"base", "effect", "affix"}:
+        return True
+
+    return False
+
+
+def resolve_effect_reference(effect_ref, all_records: list[dict], id_index: dict, source_record: dict | None = None) -> dict | None:
+    """
+    Rozwiązuje effects bez przebudowywania id_index na listę rekordów.
+    Najpierw skanuje oryginalne dane i wybiera rekord wyglądający jak ActiveEffect,
+    z wykluczeniem samego itemu źródłowego. Dopiero potem używa id_index jako fallbacku.
+    """
+    if isinstance(effect_ref, dict):
+        return effect_ref
+
+    if not isinstance(effect_ref, str) or not effect_ref:
+        return None
+
+    candidates = [
+        record for record in all_records
+        if isinstance(record, dict)
+        and record.get("_id") == effect_ref
+        and record is not source_record
+    ]
+
+    for candidate in candidates:
+        if is_effect_like_record(candidate, source_record):
+            return candidate
+
+    if candidates:
+        return candidates[0]
+
+    fallback = id_index.get(effect_ref) if isinstance(id_index, dict) else None
+    if isinstance(fallback, dict) and fallback is not source_record:
+        return fallback
+
+    return None
+
+
+def extract_effect_changes(effect_obj: dict):
+    changes = effect_obj.get("changes")
+
+    if changes is None and isinstance(effect_obj.get("system"), dict):
+        changes = effect_obj.get("system", {}).get("changes")
+
+    if isinstance(changes, dict):
+        return {
+            key: value.strip()
+            for key, value in changes.items()
+            if isinstance(key, str)
+            and key.strip()
+            and isinstance(value, str)
+            and value.strip()
+        }
+
+    if isinstance(changes, list):
+        result = {}
+        for change in changes:
+            if not isinstance(change, dict):
+                continue
+
+            key = change.get("key")
+            value = change.get("value")
+
+            if not isinstance(key, str) or not key.strip():
+                continue
+
+            # Do pliku tłumaczenia trafiają tylko wartości tekstowe.
+            # Liczby i wartości logiczne są mechaniką, nie treścią do tłumaczenia.
+            if isinstance(value, str) and value.strip():
+                result[key] = value.strip()
+
+        return result
+
+    return {}
+
+def build_effect_translation(effect_obj: dict) -> dict:
+    if not isinstance(effect_obj, dict):
+        return {}
+
+    effect_entry = {}
+
+    effect_name = (effect_obj.get("name") or "").strip()
+    if effect_name:
+        effect_entry["name"] = effect_name
+
+    effect_label = (effect_obj.get("label") or "").strip()
+    if effect_label:
+        effect_entry["label"] = effect_label
+
+    effect_description = effect_obj.get("description")
+    if isinstance(effect_description, str) and effect_description.strip():
+        effect_entry["description"] = effect_description.strip()
+    else:
+        system_description = effect_obj.get("system", {}).get("description")
+        if isinstance(system_description, str) and system_description.strip():
+            effect_entry["description"] = system_description.strip()
+
+    adjective = effect_obj.get("system", {}).get("adjective")
+    if isinstance(adjective, str) and adjective.strip():
+        effect_entry["adjective"] = adjective.strip()
+
+    changes = extract_effect_changes(effect_obj)
+    if changes:
+        effect_entry["changes"] = changes
+
+    add_actions_from_record_by_id(effect_entry, effect_obj)
+
+    return effect_entry
+
+
+def populate_effects_object_from_refs(
+        entry: dict,
+        source_record: dict,
+        all_records: list[dict],
+        id_index: dict,
+        transifex_dict: dict | None = None,
+        add_mapping: bool = False,
+        converter: str = "itemEffectsConverter"
+) -> None:
+    effect_refs = source_record.get("effects", [])
     if not isinstance(effect_refs, list) or not effect_refs:
         return
 
-    embedded_effects = []
+    effects = {}
 
     for effect_ref in effect_refs:
-        if isinstance(effect_ref, dict):
-            effect_obj = effect_ref
-        elif isinstance(effect_ref, str):
-            effect_obj = id_index.get(effect_ref)
-        else:
-            continue
+        effect_obj = resolve_effect_reference(
+            effect_ref=effect_ref,
+            all_records=all_records,
+            id_index=id_index,
+            source_record=source_record
+        )
 
         if not isinstance(effect_obj, dict):
             continue
 
-        effect_entry = {}
+        effect_entry = build_effect_translation(effect_obj)
+        if not effect_entry:
+            continue
 
-        effect_name = (effect_obj.get("name") or "").strip()
-        if effect_name:
-            effect_entry["name"] = effect_name
+        effect_key = (
+            effect_obj.get("name")
+            or effect_obj.get("label")
+            or effect_obj.get("_id")
+            or (effect_ref if isinstance(effect_ref, str) else "")
+        )
 
-        effect_label = (effect_obj.get("label") or "").strip()
-        if effect_label:
-            effect_entry["label"] = effect_label
+        if not isinstance(effect_key, str) or not effect_key.strip():
+            continue
 
-        effect_description = effect_obj.get("description")
-        if isinstance(effect_description, str) and effect_description.strip():
-            effect_entry["description"] = effect_description.strip()
+        effects[effect_key.strip()] = effect_entry
 
+    if effects:
+        entry["effects"] = effects
+        if add_mapping and transifex_dict is not None:
+            transifex_dict.setdefault("mapping", {})
+            transifex_dict["mapping"]["effects"] = {
+                "path": "effects",
+                "converter": converter
+            }
+
+
+def populate_embedded_effects_from_ids(
+        entry: dict,
+        new_data: dict,
+        id_index: dict,
+        transifex_dict: dict,
+        all_records: list[dict] | None = None
+) -> None:
+    effect_refs = new_data.get("effects", [])
+    if not isinstance(effect_refs, list) or not effect_refs:
+        return
+
+    if all_records is None:
+        all_records = []
+
+    embedded_effects = []
+
+    for effect_ref in effect_refs:
+        effect_obj = resolve_effect_reference(
+            effect_ref=effect_ref,
+            all_records=all_records,
+            id_index=id_index,
+            source_record=new_data
+        )
+
+        if not isinstance(effect_obj, dict):
+            continue
+
+        effect_entry = build_effect_translation(effect_obj)
         if effect_entry:
             embedded_effects.append(effect_entry)
 
@@ -1059,8 +1417,176 @@ def populate_embedded_effects_from_ids(entry: dict, new_data: dict, id_index: di
             "converter": "embeddedEffectsConverter"
         }
 
-def process_files(folders: str, version: str) -> None:
+def load_manifest(manifest_url: str) -> dict:
+    """Pobiera i zwraca manifest module.json."""
+    response = requests.get(manifest_url, timeout=60)
+    response.raise_for_status()
+
+    module_meta = response.json()
+    if not isinstance(module_meta, dict):
+        raise ValueError(f"Manifest {manifest_url} nie zawiera obiektu JSON.")
+
+    return module_meta
+
+
+def find_module_root(extract_folder: pathlib.Path) -> pathlib.Path:
+    """
+    Zwraca katalog główny rozpakowanego modułu.
+
+    Obsługuje archiwa, w których pliki modułu znajdują się bezpośrednio w
+    katalogu docelowym, oraz archiwa z dodatkowym katalogiem nadrzędnym.
+    """
+    if (extract_folder / "packs").is_dir():
+        return extract_folder
+
+    manifest_files = list(extract_folder.rglob("module.json"))
+    for manifest_file in manifest_files:
+        candidate = manifest_file.parent
+        if (candidate / "packs").is_dir():
+            return candidate
+
+    pack_directories = [
+        path.parent
+        for path in extract_folder.rglob("packs")
+        if path.is_dir()
+    ]
+    if pack_directories:
+        return pack_directories[0]
+
+    return extract_folder
+
+
+def download_and_extract_module(
+        manifest_url: str,
+        modules_folder: str = "pack_modules"
+) -> tuple[dict, str]:
+    """Pobiera moduł na podstawie module.json i rozpakowuje jego archiwum."""
+    module_meta = load_manifest(manifest_url)
+
+    module_id = (
+        module_meta.get("id")
+        or module_meta.get("name")
+        or "unknown-module"
+    )
+    download_url = module_meta.get("download")
+
+    if not isinstance(download_url, str) or not download_url.strip():
+        raise ValueError(f"Manifest modułu {module_id} nie zawiera pola download.")
+
+    modules_path = pathlib.Path(modules_folder)
+    extract_folder = modules_path / module_id
+    zip_filename = modules_path / f"{module_id}.zip"
+
+    if extract_folder.exists():
+        shutil.rmtree(extract_folder)
+
+    extract_folder.mkdir(parents=True, exist_ok=True)
+    zip_filename.parent.mkdir(parents=True, exist_ok=True)
+
+    response = requests.get(download_url, timeout=120)
+    response.raise_for_status()
+
+    with open(zip_filename, "wb") as zip_file:
+        zip_file.write(response.content)
+
+    with zipfile.ZipFile(zip_filename, "r") as zip_file:
+        zip_file.extractall(extract_folder)
+
+    module_root = find_module_root(extract_folder)
+    print(f"Pobrano i rozpakowano moduł: {module_id}")
+
+    return module_meta, str(module_root)
+
+
+def collect_pack_labels(module_meta: dict) -> dict:
+    """Tworzy mapę nazwa packa -> etykieta z manifestu modułu."""
+    labels = {}
+
+    for pack in module_meta.get("packs", []):
+        if not isinstance(pack, dict):
+            continue
+
+        pack_name = pack.get("name")
+        pack_label = pack.get("label")
+
+        if isinstance(pack_name, str) and isinstance(pack_label, str):
+            labels[pack_name] = pack_label
+
+    return labels
+
+
+def write_pack_folders_translation(
+        module_meta: dict,
+        version: str,
+        output_prefix: str
+) -> None:
+    """Tworzy plik tłumaczenia folderów grupujących packi modułu."""
+    entries = {}
+
+    for pack_folder in module_meta.get("packFolders", []):
+        if not isinstance(pack_folder, dict):
+            continue
+
+        folder_name = (pack_folder.get("name") or "").strip()
+        if folder_name:
+            entries[folder_name] = folder_name
+
+    if not entries:
+        return
+
+    output = {"entries": entries}
+    output_path = pathlib.Path(version) / f"{output_prefix}._packs-folders.json"
+
+    with open(output_path, "w", encoding="utf-8") as outfile:
+        json.dump(output, outfile, ensure_ascii=False, indent=4)
+
+    print(f"Zapisano foldery packów modułu: {output_path}")
+
+
+def build_simple_global_id_index(folder: str) -> dict:
+    """
+    Buduje zwykły indeks _id -> rekord dla wszystkich plików JSON w folderze.
+
+    Nie zmienia dotychczasowego formatu id_index i nie przechowuje list pod
+    jednym _id. Indeks pliku aktualnie przetwarzanego ma później pierwszeństwo.
+    """
+    global_index = {}
+    folder_path = pathlib.Path(folder)
+
+    if not folder_path.is_dir():
+        return global_index
+
+    for file_path in folder_path.glob("*.json"):
+        try:
+            with open(file_path, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
+        except (OSError, json.JSONDecodeError):
+            continue
+
+        if not isinstance(data, list):
+            continue
+
+        global_index.update(build_id_index(data))
+
+    return global_index
+
+
+def process_files(
+        folders: str,
+        version: str,
+        output_prefix: str = "crucible",
+        pack_labels: dict | None = None,
+        extra_id_index: dict | None = None,
+        include_folder_id_index: bool = False
+) -> None:
     dict_key = []
+    pack_labels = pack_labels or {}
+    extra_id_index = extra_id_index or {}
+    folder_id_index = (
+        build_simple_global_id_index(folders)
+        if include_folder_id_index
+        else {}
+    )
 
     for root, dirs, files in os.walk(folders):
         for file in files:
@@ -1077,7 +1603,9 @@ def process_files(folders: str, version: str) -> None:
                 print(f"Pomijam {file}: plik nie zawiera listy rekordów.")
                 continue
 
-            id_index = build_id_index(data)
+            id_index = dict(extra_id_index)
+            id_index.update(folder_id_index)
+            id_index.update(build_id_index(data))
 
             try:
                 compendium = data[0]
@@ -1092,15 +1620,16 @@ def process_files(folders: str, version: str) -> None:
             print('Klucze pliku JSON:', list(keys))
 
             pack_name = file.split('.')[0]
-            new_name = f'{version}/crucible.{pack_name}.json'
+            new_name = f'{version}/{output_prefix}.{pack_name}.json'
             print('Nowy plik:', new_name)
             print()
 
             folder_json_path = pathlib.Path(root) / f'{pack_name}_folders.json'
+            label = pack_labels.get(pack_name, pack_name.title())
 
             if folder_json_path.is_file():
                 transifex_dict = {
-                    "label": pack_name.title(),
+                    "label": label,
                     "folders": {},
                     "entries": {},
                     "mapping": {}
@@ -1116,14 +1645,14 @@ def process_files(folders: str, version: str) -> None:
 
             elif 'color' in keys or 'folder' in keys:
                 transifex_dict = {
-                    "label": pack_name.title(),
+                    "label": label,
                     "folders": {},
                     "entries": {},
                     "mapping": {}
                 }
             else:
                 transifex_dict = {
-                    "label": pack_name.title(),
+                    "label": label,
                     "entries": {},
                     "mapping": {}
                 }
@@ -1166,7 +1695,7 @@ def process_files(folders: str, version: str) -> None:
 
                 # Rekordy przygód / playtestów
                 if 'caption' in keys:
-                    populate_caption_entry(entry, new_data, id_index, transifex_dict)
+                    populate_caption_entry(entry, new_data, id_index, transifex_dict, all_records=data)
 
                 # zwykłe opisy
                 if 'prototypeToken' not in keys and pack_name not in ['weapon']:
@@ -1181,7 +1710,7 @@ def process_files(folders: str, version: str) -> None:
                         entry["description"] = description
 
                     if pack_name != "equipment":
-                        populate_embedded_effects_from_ids(entry, new_data, id_index, transifex_dict)
+                        populate_embedded_effects_from_ids(entry, new_data, id_index, transifex_dict, all_records=data)
 
                     if pack_name == "equipment":
                         populate_embedded_affixes(entry, new_data, id_index, transifex_dict)
@@ -1249,7 +1778,8 @@ def process_files(folders: str, version: str) -> None:
                         entry=entry,
                         new_data=new_data,
                         id_index=id_index,
-                        transifex_dict=transifex_dict
+                        transifex_dict=transifex_dict,
+                        all_records=data
                     )
 
             transifex_dict = remove_empty_keys(transifex_dict)
@@ -1291,8 +1821,8 @@ def move_json_files(version_crucible: str) -> None:
 
 
 if __name__ == '__main__':
-    # crucible_url = "https://github.com/foundryvtt/crucible/releases/latest/download/system.json"
-    crucible_url = "https://github.com/foundryvtt/crucible/releases/download/release-0.9.4/system.json"
+    crucible_url = "https://github.com/foundryvtt/crucible/releases/latest/download/system.json"
+    # crucible_url = "https://github.com/foundryvtt/crucible/releases/download/release-0.9.4/system.json"
     path_crucible, headers_crucible = urlretrieve(crucible_url, 'crucible.json')
 
     with open('crucible.json', 'r', encoding='utf-8') as f:
@@ -1316,6 +1846,50 @@ if __name__ == '__main__':
     print()
 
     folder = os.path.join('pack_crucible', 'output')
-    process_files(folder, version_crucible)
+    core_id_index = build_simple_global_id_index(folder)
+
+    process_files(
+        folder,
+        version_crucible,
+        output_prefix="crucible"
+    )
+
+    for manifest_url in ADDITIONAL_MODULE_MANIFESTS:
+        try:
+            module_meta, module_folder = download_and_extract_module(manifest_url)
+        except Exception as error:
+            print(f"Nie udało się pobrać modułu {manifest_url}: {error}")
+            continue
+
+        module_id = (
+            module_meta.get("id")
+            or module_meta.get("name")
+            or pathlib.Path(module_folder).name
+        )
+        module_packs = os.path.join(module_folder, "packs")
+        module_output = os.path.join(module_folder, "output")
+
+        if not pathlib.Path(module_packs).is_dir():
+            print(f"Moduł {module_id} nie ma folderu packs: {module_packs}")
+            continue
+
+        read_leveldb_to_json(module_packs, module_output)
+
+        pack_labels = collect_pack_labels(module_meta)
+        write_pack_folders_translation(
+            module_meta=module_meta,
+            version=version_crucible,
+            output_prefix=module_id
+        )
+
+        process_files(
+            folders=module_output,
+            version=version_crucible,
+            output_prefix=module_id,
+            pack_labels=pack_labels,
+            extra_id_index=core_id_index,
+            include_folder_id_index=True
+        )
+
     move_json_files(version_crucible)
     copy_en_json(version_crucible)
