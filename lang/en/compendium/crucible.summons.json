@@ -35,12 +35,12 @@
                 "Elemental Armor": {
                     "name": "Elemental Armor"
                 },
-                "Earthen Claw": {
-                    "name": "Earthen Claw"
+                "Voltaic Claw": {
+                    "name": "Voltaic Claw"
                 },
                 "Rune: Earth": {
                     "name": "Rune: Earth",
-                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs health and matters relating to biological growth. It is opposed by the chaotic rune of Lightning.</p>\n<p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
@@ -56,7 +56,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 }
             },
             "archetype": {
@@ -73,7 +73,7 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Rune: Earth",
-                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs health and matters relating to biological growth. It is opposed by the chaotic rune of Lightning.</p>\n<p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Acid Absorption": {
                     "name": "Acid Absorption",
@@ -81,7 +81,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -126,11 +126,11 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Rune: Flame",
-                    "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
+                    "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat. It is opposed by the orderly rune of Frost.</p>\n<p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "Flame Claw": {
                     "name": "Flame Claw"
@@ -161,7 +161,7 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Rune: Flame",
-                    "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
+                    "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat. It is opposed by the orderly rune of Frost.</p>\n<p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Fire Absorption": {
                     "name": "Fire Absorption",
@@ -169,7 +169,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -205,7 +205,7 @@
                 },
                 "Rune: Frost": {
                     "name": "Rune: Frost",
-                    "description": "You learn Rune of Frost, allowing you to channel the arcane element of ice."
+                    "description": "<p>The orderly force of elemental, thermal energy. The Frost rune governs sources of ice and cold. It is opposed by the chaotic rune of Flame.</p>\n<p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
@@ -235,7 +235,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 }
             },
             "archetype": {
@@ -260,7 +260,7 @@
                 },
                 "Rune: Frost": {
                     "name": "Rune: Frost",
-                    "description": "You learn Rune of Frost, allowing you to channel the arcane element of ice."
+                    "description": "<p>The orderly force of elemental, thermal energy. The Frost rune governs sources of ice and cold. It is opposed by the chaotic rune of Flame.</p>\n<p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Aqueous Transmission",
@@ -274,7 +274,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -329,7 +329,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "False Appearance": {
                     "name": "False Appearance",
@@ -366,8 +366,8 @@
                 "Elemental Armor": {
                     "name": "Elemental Armor"
                 },
-                "Earthen Claw": {
-                    "name": "Earthen Claw"
+                "Voltaic Claw": {
+                    "name": "Voltaic Claw"
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
@@ -375,7 +375,7 @@
                 },
                 "Rune: Lightning": {
                     "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "You learn Rune of Lightning, allowing you to control volatile arcane surges of electricity."
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -387,7 +387,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 }
             },
             "archetype": {
@@ -404,7 +404,7 @@
             "items": {
                 "Rune: Lightning": {
                     "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "You learn Rune of Lightning, allowing you to control volatile arcane surges of electricity."
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -412,7 +412,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
                 },
                 "Voltaic Claw": {
                     "name": "Voltaic Claw"

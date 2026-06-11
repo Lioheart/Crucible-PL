@@ -1105,9 +1105,18 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Flight": {
                     "name": "Flight",
@@ -2422,9 +2431,18 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Flight": {
                     "name": "Flight",
@@ -2898,11 +2916,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Horrifying Visage",
-                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Horrifying Visage",
-                            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                            "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
                             "effects": [
                                 {
                                     "name": "Horrifying Visage"
@@ -3600,7 +3618,7 @@
                 },
                 "Wailing Moan": {
                     "name": "Wailing Moan",
-                    "description": "<p>The Creature wails targeting each creature in a 30ft pulse. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Wailing Moan",
@@ -5529,9 +5547,18 @@
         "Dark Elf Mage": {
             "name": "Dark Elf Mage",
             "items": {
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5615,9 +5642,18 @@
         "Dark Elf Priest": {
             "name": "Dark Elf Priest",
             "items": {
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5718,9 +5754,18 @@
         "Dark Elf Scout": {
             "name": "Dark Elf Scout",
             "items": {
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -5810,9 +5855,18 @@
         "Dark Elf Warrior": {
             "name": "Dark Elf Warrior",
             "items": {
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -6315,9 +6369,18 @@
                     "name": "Snakeblood",
                     "description": "Your supernatural toughness makes you resistant to venoms and toxins. You gain +5 Resistance to Poison damage."
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Shield Combat Training": {
                     "name": "Shield Combat Training",
@@ -6895,11 +6958,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Horrifying Visage",
-                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Horrifying Visage",
-                            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                            "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
                             "effects": [
                                 {
                                     "name": "Horrifying Visage"
@@ -9119,9 +9182,18 @@
         "Half Spider": {
             "name": "Half Spider",
             "items": {
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Thermal Vision": {
                     "name": "Thermal Vision",
@@ -12218,9 +12290,18 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Amorphous": {
                     "name": "Amorphous",
@@ -12253,9 +12334,18 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Flight": {
                     "name": "Flight",
@@ -12441,7 +12531,7 @@
             "items": {
                 "Wailing Moan": {
                     "name": "Wailing Moan",
-                    "description": "<p>The Creature wails targeting each creature in a 30ft pulse. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Wailing Moan",
@@ -13339,11 +13429,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Horrifying Visage",
-                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Horrifying Visage",
-                            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                            "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
                             "effects": [
                                 {
                                     "name": "Horrifying Visage"
@@ -14567,9 +14657,18 @@
                     "name": "Restless Dead",
                     "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
                 },
-                "Light Sensitivity": {
-                    "name": "Light Sensitivity",
-                    "description": "<p>The creature suffers banes to all actions when exposed to Bright Light.</p>"
+                "Sunlight Weakness": {
+                    "name": "Sunlight Weakness",
+                    "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>",
+                    "effects": {
+                        "Sunlight Weakness": {
+                            "name": "Sunlight Weakness",
+                            "description": "<p>The creature suffers banes to all actions when exposed to sunlight.</p>",
+                            "changes": {
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Sunlight Weakness"
+                            }
+                        }
+                    }
                 },
                 "Flight": {
                     "name": "Flight",
