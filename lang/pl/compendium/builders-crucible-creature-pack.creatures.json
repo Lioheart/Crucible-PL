@@ -6965,7 +6965,7 @@
             "actions": {
                 "Diseasing Proboscis": {
                     "name": "Trąbka choroby",
-                    "description": "<p>Stworzenie atakuje cel, a w przypadku trafienia nakłada na niego stan <strong>@Condition[diseased]</strong>. Stan ten utrzymuje się do momentu, gdy cel wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+                    "description": "<p>Stworzenie atakuje cel, a w przypadku trafienia nakłada na niego stan <strong>@Condition[diseased]</strong>. Stan ten utrzymuje się do momentu, gdy cel wykona akcji <strong>Odpoczynku</strong> lub <strong>Odzyskiwania</strong>.</p>",
                     "effects": [
                         {
                             "name": "Trąbka choroby"
@@ -10877,11 +10877,11 @@
                 },
                 "Diseasing Proboscis": {
                     "name": "Trąbka choroby",
-                    "description": "<p>Stworzenie atakuje cel swoją ostrą trąbką; w przypadku trafienia, oprócz zadawanych obrażeń, stwarzenie zaczyna cierpieć na stan <strong>Zarażony</strong>, dopóki nie wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+                    "description": "<p>Stworzenie atakuje cel swoją ostrą trąbką; w przypadku trafienia, oprócz zadawanych obrażeń, stwarzenie zaczyna cierpieć na stan <strong>Zarażony</strong>, dopóki nie wykona akcji <strong>Odpoczynku</strong> lub <strong>Odzyskiwania</strong>.</p>",
                     "actions": {
                         "Diseasing Proboscis": {
                             "name": "Trąbka choroby",
-                            "description": "<p>Stworzenie atakuje cel, a w przypadku trafienia nakłada na niego stan <strong>@Condition[diseased]</strong>. Stan ten utrzymuje się do momentu, gdy cel wykona akcji <strong>Odpoczynku</strong>lub <strong>Odzyskiwania</strong>.</p>",
+                            "description": "<p>Stworzenie atakuje cel, a w przypadku trafienia nakłada na niego stan <strong>@Condition[diseased]</strong>. Stan ten utrzymuje się do momentu, gdy cel wykona akcji <strong>Odpoczynku</strong> lub <strong>Odzyskiwania</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Trąbka choroby"
