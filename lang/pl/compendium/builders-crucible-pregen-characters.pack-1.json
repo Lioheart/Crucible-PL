@@ -171,7 +171,7 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
-                    "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
+                    "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -241,12 +241,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "6wggsPFb5i3rDxyX": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -374,12 +368,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "RUzCYQ4IflWzPQOA": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Torch": {
                     "name": "Pochodnia",
                     "description": {
@@ -439,23 +427,6 @@
                             ]
                         }
                     }
-                },
-                "eeoH0HXPKvJSxTzM": {
-                    "name": "Zwój przywołania",
-                    "description": {
-                        "public": "<p>Zwój zaklęć to specjalny arkusz welinu lub pergaminu, na którym starannie umieszczono glify jednego lub więcej komponentów czaroznawstwa. Aktywacja tego zwoju tymczasowo obdarza jego czytelnika głęboką znajomością tych komponentów, jak gdyby znał je od lat.</p><p>Liczba komponentów czaroznawstwa, które może zawierać zwój, zależy od jakości jego wykonania.</p><ul><li><p><strong>Dobry</strong>: Może zawierać jeden komponent czaroznawstwa</p></li><li><p><strong>Wybitny</strong>: Może zawierać dwa komponenty czaroznawstwa</p></li><li><p><strong>Mistrzowska</strong>: Może zawierać trzy komponenty czaroznawstwa</p></li></ul>"
-                    },
-                    "actions": {
-                        "Read Scroll": {
-                            "name": "Czytanie zwoju",
-                            "description": "<p>Przeczytaj ten zwój zaklęcia, aby tymczasowo uzyskać wiedzę na temat jego składników magicznych na 10 minut.</p><p>W danym momencie możesz mieć aktywny tylko jeden efekt zwoju zaklęcia. Przeczytanie innego zwoju zastępuje bieżący efekt.</p>",
-                            "effects": [
-                                {
-                                    "name": "Czytanie zwoju"
-                                }
-                            ]
-                        }
-                    }
                 }
             },
             "ancestry": {
@@ -488,7 +459,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty Wytrzymałości jako Zdrowie.</p>"
                         }
                     }
                 },
@@ -520,7 +491,7 @@
                 },
                 "Testudo": {
                     "name": "Testudo",
-                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu @Condition[guarded] przeciwko <strong>atakom bronią</strong>, gdy dzierżysz tarczę."
+                    "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu <strong>Defensywa</strong> przeciwko <strong>Atakom bronią</strong>, gdy dzierżysz tarczę."
                 },
                 "Shield Combat Training": {
                     "name": "Szkolenie z walki tarczą",
@@ -556,12 +527,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "Jp33r9ANwqENpDRi": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -623,7 +588,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty Wytrzymałości jako Zdrowie.</p>"
                         }
                     }
                 },
@@ -644,7 +609,7 @@
                         "Backstab": {
                             "name": "Cios w plecy",
                             "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
-                            "description": "<p><strong>Uderzasz</strong> bronią w cel ze stanem @Condition[flanked], zadając <strong>Mordercze</strong> obrażenia.</p>"
+                            "description": "<p><strong>Uderzasz</strong> bronią w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                         }
                     }
                 },
@@ -662,7 +627,7 @@
                     "actions": {
                         "Flying Kick": {
                             "name": "Kopnięcie w locie",
-                            "description": "<p><strong>Przesuń</strong> się do przodu o co najmniej 3 stopy, a maksymalnie o długość biegu, poruszając się po linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
+                            "description": "<p><strong>Przesuń</strong> się o odległość od 3 do 6 stóp w linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
                         }
                     }
                 },
@@ -689,12 +654,6 @@
                     }
                 },
                 "Katar": {
-                    "name": "Katar",
-                    "description": {
-                        "public": "<p>Katar to sztylet z prostym ostrzem i poziomym uchwytem, który dzięki brutalnej sile pozwala przebić zbroję i wnętrzności jednym, bezpośrednim pchnięciem.</p>"
-                    }
-                },
-                "fN9s5c7lWhsKtWst": {
                     "name": "Katar",
                     "description": {
                         "public": "<p>Katar to sztylet z prostym ostrzem i poziomym uchwytem, który dzięki brutalnej sile pozwala przebić zbroję i wnętrzności jednym, bezpośrednim pchnięciem.</p>"
@@ -735,12 +694,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "rzSOPKrNmQTkcoIB": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Ring of Evasion": {
                     "name": "Pierścień uników",
                     "description": {
@@ -770,18 +723,6 @@
                     }
                 },
                 "Healing Elixir": {
-                    "name": "Eliksir leczenia",
-                    "description": {
-                        "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Eliksir leczenia",
-                            "description": "<p>Natychmiastowo przywraca ilość <strong>Zdrowia</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Zdrowia</strong>.</p></li></ul>"
-                        }
-                    }
-                },
-                "HE26twMsMqb2i52S": {
                     "name": "Eliksir leczenia",
                     "description": {
                         "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
@@ -915,12 +856,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "Kj8o4Rjuggy2m297": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Ring of Evasion": {
                     "name": "Pierścień uników",
                     "description": {
@@ -936,18 +871,6 @@
                     }
                 },
                 "Healing Elixir": {
-                    "name": "Eliksir leczenia",
-                    "description": {
-                        "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Eliksir leczenia",
-                            "description": "<p>Natychmiastowo przywraca ilość <strong>Zdrowia</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Zdrowia</strong>.</p></li></ul>"
-                        }
-                    }
-                },
-                "r4wWT0KofzEp4akF": {
                     "name": "Eliksir leczenia",
                     "description": {
                         "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
@@ -999,7 +922,7 @@
                         "Backstab": {
                             "name": "Cios w plecy",
                             "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
-                            "description": "<p><strong>Uderzasz</strong> bronią w cel ze stanem @Condition[flanked], zadając <strong>Mordercze</strong> obrażenia.</p>"
+                            "description": "<p><strong>Uderzasz</strong> bronią w <strong>Oskrzydlony</strong> cel, zadając <strong>Mordercze</strong> obrażenia.</p>"
                         }
                     }
                 },
@@ -1021,7 +944,7 @@
                     "actions": {
                         "Flash of Steel": {
                             "name": "Błysk stali",
-                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się @Condition[exposed] do początku swojej następnej tury.</p>",
+                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, celując w słaby punkt w obronie przeciwnika. Jeśli atak trafi, cel staje się <strong>Odsłonięty</strong> do początku swojej następnej tury.</p>",
                             "effects": [
                                 {
                                     "name": "Błysk stali"
@@ -1090,12 +1013,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "MNXobGh9IsNNnGHu": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -1292,7 +1209,7 @@
                     "actions": {
                         "Bull Rush": {
                             "name": "Szarża byka",
-                            "description": "<p>Wykonaj atak używając umiejętności <strong>Atletyka</strong> przeciwko sąsiedniemu wrogowi, który broni się za pomocą swojej obrony Wytrwałości. Jeśli atak się powiedzie, możesz przemieścić się o odległość równą twojemu <strong>Biegu</strong> bezpośrednio przez pole przeciwnika. Twój przeciwnik zostaje @Condition[prone] na ziemię i nie może wykonać żadnego ataku okazjonalnego przeciwko tobie. Jeśli atak się nie powiedzie, twoje przemieszczenie zostaje zablokowane i pozostajesz w obecnej pozycji.</p>",
+                            "description": "<p>Wykonaj atak używając umiejętności <strong>Atletyka</strong> przeciwko sąsiedniemu wrogowi, który broni się za pomocą swojej obrony Wytrwałości. Jeśli atak się powiedzie, możesz przemieścić się o odległość równą twojemu <strong>Biegu</strong> bezpośrednio przez pole przeciwnika. Twój przeciwnik zostaje Przewrócony na ziemię i nie może wykonać żadnego ataku okazjonalnego przeciwko tobie. Jeśli atak się nie powiedzie, twoje przemieszczenie zostaje zablokowane i pozostajesz w obecnej pozycji.</p>",
                             "effects": [
                                 {
                                     "name": "Szarża byka"
@@ -1318,12 +1235,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "92xywNJa9DbI0WpR": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -1431,7 +1342,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Podcięcie nóg",
-                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
+                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Podcięcie nóg"
@@ -1442,11 +1353,11 @@
                 },
                 "Zealous Smite": {
                     "name": "Gorliwy cios",
-                    "description": "<p>Możesz wzbogacić swoje uderzenie mocą sprawiedliwości, używając broni opartej na Sile.</p>",
+                    "description": "<p>Możesz nasycić swoje uderzenie potężną mocą, używając ciężkiej broni.</p>",
                     "actions": {
                         "Zealous Smite": {
                             "name": "Gorliwy cios",
-                            "condition": "Atakujesz wroga bronią opartą na Sile.",
+                            "condition": "Atakujesz Odsłoniętego wroga Ciężką bronią.",
                             "description": "<p><strong>Uderzasz</strong> bronią opartą na Sile. Atak staje się <strong>Morderczy</strong>, a wszelkie zadane obrażenia są <strong>Świetliste</strong>.</p>"
                         }
                     }
@@ -1474,12 +1385,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "2qJGMam6IowemxXh": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -1618,12 +1523,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "Qh8UL7eFvQRYz623": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
                     "description": {
@@ -1711,11 +1610,11 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
-                    "description": "<p>Wlewasz esencję Runy w siebie, wzmacniając własną formę fizyczną lub psychikę.</p>\n\n<p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej zestrojony z typem obrażeń Runy użytej w twoim zaklęciu. Zyskujesz <strong>+2 odporności</strong> na ten typ obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego typu.</p>\n\n<p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt; rzucenie kolejnego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt.</p>"
+                    "description": "<p>Wlewasz esencję runy do swojego ciała, wzmacniając swoją fizyczną formę lub psychikę.</p><p>Kiedy przyjmujesz określony Aspekt, stajesz się bardziej dostrojony do rodzaju obrażeń zadawanych przez runę używaną w twoim zaklęciu. Zyskujesz <strong>+2 do odporności</strong> na ten rodzaj obrażeń i zadajesz dodatkowe <strong>+2 obrażenia</strong> za każdym razem, gdy zadajesz obrażenia tego rodzaju.</p><p>Twój Aspekt trwa przez <strong>6 rund</strong>. Możesz mieć tylko jeden aktywny Aspekt, rzucenie innego zaklęcia przy użyciu gestu Aspektu zastępuje poprzedni efekt. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "Nauczysz się gestu Wachlarz, który pozwoli ci rzucać zaklęcia w ograniczonym łuku."
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Dagger": {
                     "name": "Sztylet",
@@ -1730,12 +1629,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "yXrNiuQbGSMi0GMi": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -1893,7 +1786,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Clarify Intent": {
                     "name": "Wyjaśnienie intencji",
@@ -1985,12 +1878,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "tFb7f2x6v95CBcRm": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Healing Elixir": {
                     "name": "Eliksir leczenia",
                     "description": {
@@ -2056,7 +1943,7 @@
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
-                    "description": "<p>Uczysz się gestu Wpływu, który pozwala ci wzmocnić lub osłabić magiczne zjawisko na bliskim dystansie.</p>\n<p>Gest Wpływu to silniejsza ewolucja gestu Dotyku, zadająca więcej obrażeń lub lecząca, ale wymagająca 2 Akcji do wykonania.</p>"
+                    "description": "<p>Wzmacniasz tajemniczą moc runy poprzez skoncentrowany bezpośredni kontakt, który jest zazwyczaj potężniejszą ewolucją podstawowego gestu dotyku. </p><p>Gest wpływu skaluje się przy użyciu <strong>Prezencji</strong> i jest skierowany do pojedynczej sąsiedniej istoty. Zadaje <strong>10 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Diplomacy Novice": {
                     "name": "Nowicjusz dyplomacji",
@@ -2086,12 +1973,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "X3CVtoj9CwbKZSbJ": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -2205,12 +2086,12 @@
             "items": {
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
+                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                         }
                     }
                 },
@@ -2272,7 +2153,7 @@
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
                             "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
-                            "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
+                            "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
                         }
                     }
                 },
@@ -2303,12 +2184,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "qIQYv0zkLxLVMIcQ": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -2348,18 +2223,6 @@
                             "description": "<p>Natychmiastowo przywraca ilość <strong>Zdrowia</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Zdrowia</strong>.</p></li></ul>"
                         }
                     }
-                },
-                "l5ouNF2IF1hlux1R": {
-                    "name": "Eliksir leczenia",
-                    "description": {
-                        "public": "<p>Ta mikstura zawiera specjalną formułę alchemiczną, która szybko zamyka rany i poprawia stan zdrowia organizmu.</p>"
-                    },
-                    "actions": {
-                        "Healing Elixir": {
-                            "name": "Eliksir leczenia",
-                            "description": "<p>Natychmiastowo przywraca ilość <strong>Zdrowia</strong> zależną od jakości eliksiru.</p><ul><li><p><strong>Tandetna jakość</strong> - Natychmiastowo leczy 6 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Standardowa jakość</strong> - Natychmiastowo leczy 12 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Dobra jakość</strong> - Natychmiastowo leczy 24 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Wybitna jakość</strong> - Natychmiastowo leczy 48 punktów <strong>Zdrowia</strong>.</p></li><li><p><strong>Mistrzowska jakość</strong> - Natychmiastowo leczy 96 punktów <strong>Zdrowia</strong>.</p></li></ul>"
-                        }
-                    }
                 }
             },
             "ancestry": {
@@ -2376,12 +2239,12 @@
             "items": {
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "description": "<p>Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.</p>",
+                    "description": "Chronisz swoich sojuszników, przechwytując ciosy, które w przeciwnym razie mogłyby trafić w twoich towarzyszy.",
                     "actions": {
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać @Action[default reactiveStrike] przeciwko niemu.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Zatrzymywanie ruchów wroga nie jest jeszcze zautomatyzowane.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
                         }
                     }
                 },
@@ -2438,12 +2301,6 @@
                         "public": "<p>Dzięki szerokiemu, zakrzywionemu ostrzu i zabójczemu łukowi, szabla ta tańczy na polu bitwy, przecinając wrogów eleganckimi, zamaszystymi ciosami.</p>"
                     }
                 },
-                "f3jLAk8dieGUqXNs": {
-                    "name": "Bułat",
-                    "description": {
-                        "public": "<p>Dzięki szerokiemu, zakrzywionemu ostrzu i zabójczemu łukowi, szabla ta tańczy na polu bitwy, przecinając wrogów eleganckimi, zamaszystymi ciosami.</p>"
-                    }
-                },
                 "Studded Leather Armor": {
                     "name": "Ćwiekowana zbroja skórzana",
                     "description": {
@@ -2465,12 +2322,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "YMTqzXZYBCIydx0O": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
@@ -2696,12 +2547,6 @@
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
                     }
                 },
-                "rUq8zQ6VtVaZEEp1": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
                 "Torch": {
                     "name": "Pochodnia",
                     "description": {
@@ -2890,12 +2735,6 @@
                     }
                 },
                 "Rations": {
-                    "name": "Racje żywnościowe",
-                    "description": {
-                        "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
-                    }
-                },
-                "ok4jyKdJT1MtBQOy": {
                     "name": "Racje żywnościowe",
                     "description": {
                         "public": "<p>Suszony chleb, orzechy, wędzony ser i mięso nadające się do spożycia jako podstawowy posiłek zapewniający utrzymanie życia przez jeden dzień.</p>"
