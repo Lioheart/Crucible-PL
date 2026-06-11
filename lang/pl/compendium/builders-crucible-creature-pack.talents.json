@@ -296,16 +296,15 @@
         "Light Sensitivity": {
             "name": "Wrażliwość na światło",
             "description": "<p>W jasnym świetle @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy każdej akcji.</p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
-            "effects": {
-                "Sunlight Weakness": {
+            "effects": [
+                {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                     "changes": {
-                        "system.rollBonuses.banes.sunlightWeakness.number": 2,
                         "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
                     }
                 }
-            }
+            ]
         },
         "Lightning Breath": {
             "name": "Piorunujące zionięcie",
@@ -645,6 +644,10 @@
                 }
             }
         },
+        "Sunlight Weakness": {
+            "name": "Wrażliwość na światło słoneczne",
+            "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
+        },
         "Telepathy": {
             "name": "Telepatia",
             "description": "<p>Stworzenie może komunikować się telepatycznie z innymi stworzeniami, które widzi.</p>"
@@ -712,7 +715,7 @@
         "description": "system.description",
         "effects": {
             "path": "effects",
-            "converter": "itemEffectsConverter"
+            "converter": "embeddedEffectsConverter"
         }
     }
 }
