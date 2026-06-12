@@ -4860,7 +4860,7 @@
                     "actions": {
                         "Constrict": {
                             "name": "Zaciskanie",
-                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
+                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Unieruchomione</strong>.</p>"
                         }
                     }
                 },
