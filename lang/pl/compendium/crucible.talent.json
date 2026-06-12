@@ -930,7 +930,7 @@
             "description": "<p>Wzmocnij zaklęcie, aby przyciągało dotknięte nim stworzenia w kierunku rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Przyciąganie</strong> zostają przymusowo przesunięte w kierunku rzucającego o odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
         },
         "Inflection: Push": {
-            "name": "Fleksja: Pchanie",
+            "name": "Fleksja: Pchnięcie",
             "description": "<p>Wzmocnij zaklęcie, aby odepchnąć dotknięte nim stworzenia od rzucającego. Stworzenia dotknięte zaklęciem z fleksją <strong>Pchnięcie</strong> zostają siłą odsunięte od rzucającego na odległość równą premii do atrybutu zastosowanej do zaklęcia, co może spowodować zderzenie z ścianami lub innymi przeszkodami blokującymi ruch.</p>"
         },
         "Inflection: Quicken": {
