@@ -247,7 +247,7 @@
                     "text": "<p>Stworzenie, które jest <strong>Spowolnione</strong>, traktuje odległość jako podwojoną przy określaniu kosztu akcji <strong>Ruch</strong>. Dodatkowo stworzenie będące <strong>Spowolnione</strong> nie może korzystać z darmowego Ruchu.</p>"
                 },
                 "Restrained": {
-                    "name": "Wstrzymany",
+                    "name": "Unieruchomiony",
                     "text": "<p>Stworzenie, które jest <strong>Unieruchomione</strong>, nie może wykonywać żadnej Akcji obejmującej <strong>Ruch</strong> i otrzymuje <strong>+2 Zguby</strong> do rzutów ataku.</p>"
                 },
                 "Disoriented": {
