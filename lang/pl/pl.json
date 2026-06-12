@@ -2136,7 +2136,7 @@
       "NegateAdj": "Zaprzeczający",
       "Pull": "Przyciąganie",
       "PullAdj": "Przyciągający",
-      "Push": "Odepchnięcie",
+      "Push": "Pchnięcie",
       "PushAdj": "Odpychający",
       "Quicken": "Przyspieszanie",
       "QuickenAdj": "Przyspieszający",
@@ -2476,7 +2476,7 @@
         },
         "push": {
           "description": "Wymuszone przemieszczenie spowodowane czynnikiem zewnętrznym, np. odrzutem. Koszt ruchu wynosi zawsze zero.",
-          "label": "Odepchnięcie"
+          "label": "Pchnięcie"
         },
         "slow": {
           "label": "Ostrożny"
