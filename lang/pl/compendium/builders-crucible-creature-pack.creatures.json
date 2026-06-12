@@ -13679,7 +13679,7 @@
                     "actions": {
                         "Restraining Chomp": {
                             "name": "Zaciśnięcie",
-                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, zostaje ona również <strong>Wstrzymana</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                            "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, dostaje również stan <strong>@Condition[restrained]</strong>, dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
                             "effects": [
                                 {
                                     "name": "Zaciśnięcie"
@@ -13694,8 +13694,8 @@
                     "actions": {
                         "Thrash": {
                             "name": "Szarpanina",
-                            "condition": "Cel jest Wstrzymany przez tę istotę.",
-                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Wstrzymane</strong>.</p>"
+                            "condition": "Cel jest Unieruchomiony przez tę istotę.",
+                            "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, który obecnie jest przez nie <strong>Unieruchomione</strong>.</p>"
                         }
                     }
                 },
