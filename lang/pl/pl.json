@@ -475,7 +475,7 @@
       "RequiresTalisman": "{action} wymaga użycia broni typu Talisman.",
       "RequiresTwoHanded": "Aby wykonać tę akcję, musisz mieć wyposażoną broń dwuręczną.",
       "RequireTemplate": "Musisz umieścić szablon pomiarowy, aby wskazać obszar działania {action}.",
-      "Restrained": "Nie możesz się ruszać, gdy jesteś Wstrzymany!",
+      "Restrained": "Nie możesz się ruszać, gdy jesteś Unieruchomiony!",
       "Silenced": "Nie możesz użyć tej akcji, gdy jesteś Wyciszony.",
       "UnimplementedTarget": "Automatyzacja dla typu celu {type} dla akcji {name} nie jest jeszcze obsługiwana, należy ręcznie wybrać odpowiednie tokeny.",
       "WrongMovementToken": "Aby wykonać tę akcję, musisz przesunąć token."
@@ -564,7 +564,7 @@
       "Poisoned": "Zatruty",
       "Prone": "Przewrócony",
       "Resolute": "Stanowczy",
-      "Restrained": "Wstrzymany",
+      "Restrained": "Unieruchomiony",
       "Shocked": "Porażony",
       "Slowed": "Spowolniony",
       "Staggered": "Chwiejny",
