@@ -113,7 +113,7 @@
                 "Explosive Emergence": {
                     "name": "Wybuchowe pojawienie się",
                     "condition": "Podczas kopania.",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>Uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
                 }
             }
         },
