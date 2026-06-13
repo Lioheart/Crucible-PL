@@ -4942,7 +4942,7 @@
                 "Counter Riposte": {
                     "name": "Kontr-riposta",
                     "condition": "Parujesz nadchodzący atak wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
+                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                 }
             }
         },
@@ -7656,7 +7656,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                         }
                     }
                 }
@@ -12750,7 +12750,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                         }
                     }
                 },
