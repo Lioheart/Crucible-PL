@@ -1836,7 +1836,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonywasz <strong>uderzenie</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
