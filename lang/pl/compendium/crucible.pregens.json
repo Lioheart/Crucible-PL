@@ -294,7 +294,7 @@
                 },
                 "Strike First": {
                     "name": "Pierwszy cios",
-                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego ataku fizycznego lub magicznym przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
+                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego uderzenia lub ataku zaklęciem przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
                 },
                 "Preternatural Instinct": {
                     "name": "Nadprzyrodzony instynkt",
