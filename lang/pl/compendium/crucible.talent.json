@@ -1100,7 +1100,7 @@
             "actions": {
                 "Leg Sweep": {
                     "name": "Podcięcie nóg",
-                    "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Podcięcie nóg"
