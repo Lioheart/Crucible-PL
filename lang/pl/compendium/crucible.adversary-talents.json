@@ -123,7 +123,7 @@
             "actions": {
                 "Dropping Strike": {
                     "name": "Uderzenie z góry",
-                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie z góry"
