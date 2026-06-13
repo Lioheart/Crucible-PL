@@ -627,7 +627,7 @@
                     "actions": {
                         "Flying Kick": {
                             "name": "Kopnięcie w locie",
-                            "description": "<p><strong>Przesuń</strong> się o odległość od 3 do 6 stóp w linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
+                            "description": "<p><strong>Przesuń</strong> się o odległość od 3 do 6 stóp w linii prostej, aby kopnąć wroga wzmocnionym <strong>uderzeniem</strong>.</p>"
                         }
                     }
                 },
@@ -1118,7 +1118,7 @@
             "actions": {
                 "Flying Kick": {
                     "name": "Kopnięcie w locie",
-                    "description": "<p><strong>Przesuń</strong> się o odległość od 3 do 6 stóp w linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
+                    "description": "<p><strong>Przesuń</strong> się o odległość od 3 do 6 stóp w linii prostej, aby kopnąć wroga wzmocnionym <strong>uderzeniem</strong>.</p>"
                 }
             }
         },
