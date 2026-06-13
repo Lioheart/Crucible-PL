@@ -14914,35 +14914,7 @@
     "mapping": {
         "items": {
             "path": "items",
-            "converter": "document",
-            "documentType": "Item",
-            "cardinality": "many",
-            "mapping": {
-                "description": {
-                    "path": "system.description",
-                    "converter": "crucible_description_converter"
-                },
-                "actions": {
-                    "path": "system.actions",
-                    "converter": "actions_converter"
-                },
-                "effects": {
-                    "path": "effects",
-                    "converter": "document",
-                    "documentType": "ActiveEffect",
-                    "cardinality": "many",
-                    "mapping": {
-                        "changes": {
-                            "path": "system.changes",
-                            "converter": "structured",
-                            "cardinality": "many",
-                            "container": "array",
-                            "key": "key",
-                            "valuePath": "value"
-                        }
-                    }
-                }
-            }
+            "converter": "adventure_items_converter"
         },
         "actions": {
             "path": "system.actions",
@@ -14954,10 +14926,6 @@
         },
         "background": {
             "path": "system.details.background",
-            "converter": "nested_object_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
             "converter": "nested_object_converter"
         },
         "archetype": {
