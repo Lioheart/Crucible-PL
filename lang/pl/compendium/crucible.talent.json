@@ -638,7 +638,7 @@
         },
         "Eye of the Storm": {
             "name": "Oko cyklonu",
-            "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich ataków fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
+            "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich uderzeń fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
         },
         "Fan of Arrows": {
             "name": "Wachlarz strzał",
