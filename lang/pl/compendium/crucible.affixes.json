@@ -507,7 +507,7 @@
         },
         "Potency": {
             "name": "Mocy",
-            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
             "adjective": "Mocy"
         },
         "Psychic Conversion": {
