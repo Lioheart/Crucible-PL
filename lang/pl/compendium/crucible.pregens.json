@@ -60,7 +60,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                         }
                     }
                 },
