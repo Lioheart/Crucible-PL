@@ -447,7 +447,7 @@
       "MissingSummonEffect": "Aby śledzić tymczasowe przywołanie utworzone przez akcję „{action}”, należy zdefiniować dane ActiveEffect",
       "MovementTooFar": "Planowana trasa ruchu przekracza maksymalny zasięg dozwolony w ramach tej akcji.",
       "MovementTooShort": "Zaplanowana trasa ruchu nie spełnia minimalnych wymagań dotyczących zasięgu dla tej akcji.",
-      "MustFollowMainhandStrike": "Akcję {action} możesz wykonać dopiero po wykonaniu podstawowej akcji Ataku bronią w ręce głównej.",
+      "MustFollowMainhandStrike": "Akcję {action} możesz wykonać dopiero po wykonaniu podstawowej akcji Uderzenia bronią w ręce głównej.",
       "MustFollowMeleeDefense": "Akcję {action} możesz wykonać dopiero po obronie ataku wręcz za pomocą {defense}.",
       "MustFollowMeleeKill": "Akcję {action} możesz wykonać dopiero po obezwładnieniu wroga atakiem wręcz.",
       "MustFollowRanged": "Akcję {action} można wykonać wyłącznie po ataku bronią dystansową.",
