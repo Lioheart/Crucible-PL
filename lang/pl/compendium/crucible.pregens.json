@@ -671,7 +671,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                         }
                     }
                 },
@@ -1944,7 +1944,7 @@
             "actions": {
                 "Second Wind": {
                     "name": "Drugie tchnienie",
-                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
