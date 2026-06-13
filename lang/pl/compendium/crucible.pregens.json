@@ -2106,7 +2106,7 @@
                     "actions": {
                         "Uppercut": {
                             "name": "Uderzenie z wybicia",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                            "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                         }
                     }
                 },
@@ -2329,7 +2329,7 @@
             "actions": {
                 "Uppercut": {
                     "name": "Uderzenie z wybicia",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                    "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                 }
             }
         },
