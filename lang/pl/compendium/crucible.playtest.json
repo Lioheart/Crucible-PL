@@ -1429,7 +1429,7 @@
                                 "Counter Strike": {
                                     "name": "Kontratak",
                                     "condition": "Blokujesz nadchodzący atak wręcz.",
-                                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                                 }
                             }
                         },
