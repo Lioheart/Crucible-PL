@@ -462,12 +462,12 @@
         },
         "Ooze Bane": {
             "name": "Zguba śluzów",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Śluz</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Śluz</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby śluzów"
         },
         "Outsider Bane": {
             "name": "Zguba zewnętrznych",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Zewnętrzny</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Zewnętrzny</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby zewnętrznych"
         },
         "Performance": {
