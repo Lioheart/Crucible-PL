@@ -431,7 +431,7 @@
                 },
                 "Assassin": {
                     "name": "Zabójca",
-                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>uderzenie</strong> lub <strong>Zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
+                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>uderzenie</strong> lub <strong>zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
                     "actions": {
                         "Mark For Death": {
                             "name": "Znak śmierci",
