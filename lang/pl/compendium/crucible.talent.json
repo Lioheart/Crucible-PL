@@ -496,7 +496,7 @@
             "actions": {
                 "Whirlwind": {
                     "name": "Wicher",
-                    "description": "<p>Stajesz się cyklonem wirującej broni, wykonując <strong>ataki uderzeniowe</strong> obiema broniami przeciwko każdemu wrogowi w zasięgu.</p>"
+                    "description": "<p>Stajesz się cyklonem wirującej broni, wykonując <strong>uderzenie</strong> obiema broniami przeciwko każdemu wrogowi w zasięgu.</p>"
                 }
             }
         },
