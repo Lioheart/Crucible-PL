@@ -1069,7 +1069,7 @@
         },
         "Justiciar": {
             "name": "Justycjariusz",
-            "description": "<p>Jesteś narzędziem sprawiedliwości. Ataki krytyczne zadają również nadwyżkę obrażeń Morale przeciwnika.</p>"
+            "description": "<p>Jesteś narzędziem sprawiedliwości. Uderzenia krytyczne zadają również nadwyżkę obrażeń Morale przeciwnika.</p>"
         },
         "Kinesis Proficiency": {
             "name": "Biegłość kinetyki",
