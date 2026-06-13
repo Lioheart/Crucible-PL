@@ -3449,7 +3449,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -3507,7 +3507,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -5492,7 +5492,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -7763,7 +7763,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -8618,7 +8618,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -13395,7 +13395,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
