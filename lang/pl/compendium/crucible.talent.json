@@ -463,7 +463,7 @@
             "actions": {
                 "Decisive Action": {
                     "name": "Decydujące działanie",
-                    "description": "<p>Wydajesz punkty <strong>Heroizmu</strong>, aby natychmiast odzyskać połowę swojego <strong>Intelektu</strong> w <strong>Akcji</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
+                    "description": "<p>Wykorzystujesz <strong>Heroizm</strong>, aby natychmiast odzyskać połowę punktów swojego <strong>Intelektu</strong> w postaci punktów <strong>Akcji</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
                 }
             }
         },
