@@ -895,7 +895,7 @@
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
-            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
+            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>uderzenie</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
         },
         "Impetus": {
             "name": "Impet",
