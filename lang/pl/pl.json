@@ -451,7 +451,7 @@
       "MustFollowMeleeDefense": "Akcję {action} możesz wykonać dopiero po obronie ataku wręcz za pomocą {defense}.",
       "MustFollowMeleeKill": "Akcję {action} możesz wykonać dopiero po obezwładnieniu wroga atakiem wręcz.",
       "MustFollowRanged": "Akcję {action} można wykonać wyłącznie po ataku bronią dystansową.",
-      "MustFollowStrike": "Akcję {action} można wykonać dopiero po wykonaniu podstawowej akcji Ataku",
+      "MustFollowStrike": "Akcję {action} można wykonać dopiero po wykonaniu podstawowej akcji Uderzenia",
       "MustReactHit": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak, który trafił lub zadał draśnięcie.",
       "MustReactSingleTarget": "Akcję {action} można wykonać wyłącznie w odpowiedzi na akcję, która miała tylko jeden cel.",
       "MustReactStrike": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak bronią.",
