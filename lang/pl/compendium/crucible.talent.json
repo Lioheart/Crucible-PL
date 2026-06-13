@@ -249,7 +249,7 @@
             "actions": {
                 "Berserk Strike": {
                     "name": "Szaleńcze uderzenie",
-                    "description": "<p>Nakładasz na swoje uderzenie impet i intensywność, zwiększając <strong>Premię do obrażeń</strong> zgodnie z utraconym <strong>Zdrowiem</strong>.</p><ul><li><p>Jeśli twoje Zdrowie wynosi poniżej 75%, twoje Uderzenie zadaje<strong>+1 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 50%, twoje Uderzenie zadaje <strong>+2 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 25%, twoje Uderzenie zadaje <strong>+3 Obrażeń</strong></p></li></ul><p>Ta premia do obrażeń jest podwajana, jeśli używasz broni <strong>Dwuręcznej</strong>.</p>"
+                    "description": "<p>Nakładasz na swoje uderzenie impet i intensywność, zwiększając <strong>Premię do obrażeń</strong> zgodnie z utraconym <strong>Zdrowiem</strong>.</p><ul><li><p>Jeśli twoje Zdrowie wynosi poniżej 75%, twoje uderzenie zadaje<strong>+1 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 50%, twoje uderzenie zadaje <strong>+2 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 25%, twoje uderzenie zadaje <strong>+3 Obrażeń</strong></p></li></ul><p>Ta premia do obrażeń jest podwajana, jeśli używasz broni <strong>Dwuręcznej</strong>.</p>"
                 }
             }
         },
