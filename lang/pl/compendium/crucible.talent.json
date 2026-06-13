@@ -1049,7 +1049,7 @@
         },
         "Iramancer": {
             "name": "Gniewomanta",
-            "description": "<p>Twoje wyczyny związane z magią są napędzane gniewem. Podczas @Condition[enraged] nadal możesz wydawać <strong>Punkty Skupienia</strong> i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym.</p>"
+            "description": "<p>Twoje wyczyny magiczne czerpią siłę z gniewu. Gdy jesteś w stanie @Condition[enraged], nadal możesz wykorzystać <strong>Skupienie</strong>, a wszystkie twoje ataki zaklęciami zadają 2 dodatkowe punkty obrażeń.</p>"
         },
         "Iron Resolve": {
             "name": "Żelazna determinacja",
