@@ -1234,7 +1234,7 @@
             "actions": {
                 "Wild Strike": {
                     "name": "Dzikie uderzenie",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                 }
             }
         },
