@@ -828,7 +828,7 @@
             "actions": {
                 "Hamstring": {
                     "name": "Podcinanie",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale jeśli się powiedzie, powoduje stan @Condition[slowed] na <strong>3 Rundy</strong>.</p>",
+                    "description": "<p>Wykonujesz <strong>atak</strong>, który jest <strong>Trudny</strong>, ale jeśli się powiedzie, powoduje stan @Condition[slowed] na <strong>3 Rundy</strong>.</p>",
                     "effects": [
                         {
                             "name": "Podcinanie"
