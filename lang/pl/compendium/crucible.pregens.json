@@ -39,7 +39,7 @@
                 },
                 "Spellblade": {
                     "name": "Zaklęte ostrze",
-                    "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+                    "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>ataku</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
                 },
                 "Strong Grip": {
                     "name": "Silny chwyt",
