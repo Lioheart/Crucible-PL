@@ -1406,7 +1406,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -3736,7 +3736,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -3927,7 +3927,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -8905,7 +8905,7 @@
                 },
                 "Strike First": {
                     "name": "Pierwszy cios",
-                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego ataku fizycznego lub magicznym przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
+                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego uderzenia lub ataku zaklęciem przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
                 },
                 "Necrotic Bite": {
                     "name": "Nekrotyczne ugryzienie",
@@ -9039,7 +9039,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -11028,7 +11028,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -11072,7 +11072,7 @@
             "actions": {
                 "Wild Strike": {
                     "name": "Dzikie uderzenie",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                 }
             }
         },
@@ -13800,7 +13800,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
