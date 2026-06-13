@@ -1174,7 +1174,7 @@
                                 "Counter Evade": {
                                     "name": "Kontr-unik",
                                     "condition": "Unikasz nadchodzącego ataku wręcz.",
-                                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                                    "description": "<p>Kiedy bronisz się przed uderzeniem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                                 }
                             }
                         },
