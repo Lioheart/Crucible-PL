@@ -2152,7 +2152,7 @@
                     "actions": {
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
-                            "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                            "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                             "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
                         }
                     }
@@ -2975,7 +2975,7 @@
             "actions": {
                 "Ruthless Momentum": {
                     "name": "Bezlitosny pęd",
-                    "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                    "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                     "description": "<p>Po pokonaniu wroga możesz wykonać ruch o długości równej Twojej wartości <strong>Biegu</strong> i zaatakować innego przeciwnika znajdującego się w zasięgu walki wręcz.</p>"
                 }
             }
