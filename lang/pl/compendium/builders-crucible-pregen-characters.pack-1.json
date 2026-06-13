@@ -1220,7 +1220,7 @@
                 },
                 "Iron Resolve": {
                     "name": "Żelazna determinacja",
-                    "description": "<p>Twoja wytrzymałość fizyczna sprawia, że jesteś zbyt odporny, by potężny cios wywarł na tobie znaczący wpływ. Próg krytycznego trafienia dla <strong>ataków</strong> wymierzonych w ciebie wzrasta o +1, co sprawia, że trudniej cię trafić krytycznie.</p>"
+                    "description": "<p>Twoja wytrzymałość fizyczna sprawia, że jesteś zbyt odporny, by potężny cios wywarł na tobie znaczący wpływ. Próg krytycznego trafienia dla <strong>uderzeń</strong> wymierzonych w ciebie wzrasta o +1, co sprawia, że trudniej cię trafić krytycznie.</p>"
                 },
                 "Greatsword": {
                     "name": "Wielki miecz",
