@@ -2376,7 +2376,7 @@
                             "actions": {
                                 "Penetrating Throw": {
                                     "name": "Rzut penetrujący",
-                                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                                 }
                             }
                         },
