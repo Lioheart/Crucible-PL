@@ -1680,7 +1680,7 @@
                             "actions": {
                                 "Mark Prey": {
                                     "name": "Naznaczenie celu",
-                                    "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
+                                    "description": "<p>Uderzasz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                                     "effects": [
                                         {
                                             "name": "Oznaczony"
