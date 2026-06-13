@@ -537,7 +537,7 @@
             "actions": {
                 "Disarming Strike": {
                     "name": "Atak rozbrajający",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> przeciwko obronie <strong>Refleksu</strong> pojedynczego celu. Technika ta jest <strong>trudna</strong> do wykonania i zadaje zmniejszone obrażenia. Jeśli się powiedzie, broń głównej ręki celu zostaje <strong>Upuszczona</strong>.</p>"
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> przeciwko obronie <strong>Refleksu</strong> pojedynczego celu. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia. Jeśli się powiedzie, broń głównej ręki celu zostaje <strong>Upuszczona</strong>.</p>"
                 }
             }
         },
