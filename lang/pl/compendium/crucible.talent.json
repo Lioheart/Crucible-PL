@@ -1859,7 +1859,7 @@
             "actions": {
                 "Swipe": {
                     "name": "Zamach",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> przeciwko dwóm sąsiadującym wrogom, atakując ich obu jednym zamachem swojej wielkiej broni.</p>"
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> przeciwko dwóm sąsiadującym wrogom, atakując ich obu jednym zamachem swojej wielkiej broni.</p>"
                 }
             }
         },
