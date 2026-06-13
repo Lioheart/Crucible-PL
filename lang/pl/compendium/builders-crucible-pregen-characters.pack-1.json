@@ -446,7 +446,7 @@
             "actions": {
                 "Offhand Strike": {
                     "name": "Uderzenie z drugiej ręki",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                 }
             }
         },
@@ -2287,7 +2287,7 @@
                     "actions": {
                         "Offhand Strike": {
                             "name": "Uderzenie z drugiej ręki",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                         }
                     }
                 },
