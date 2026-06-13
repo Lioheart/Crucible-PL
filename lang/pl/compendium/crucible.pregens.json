@@ -808,7 +808,7 @@
                     "actions": {
                         "Shield Bash": {
                             "name": "Uderzenie tarczą",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                            "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie tarczą"
@@ -1970,7 +1970,7 @@
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie tarczą"
