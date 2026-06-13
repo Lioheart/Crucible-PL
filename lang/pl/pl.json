@@ -438,7 +438,7 @@
       "IncorrectTargets": "Możesz wyznaczyć maksymalnie {number} celów {type} dla {action}!",
       "InvalidTarget": "Musisz wyznaczyć co najmniej jeden cel {type} dla {action}!",
       "InvalidTargetsGeneric": "Nieprawidłowe cele dla tej akcji!",
-      "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym Ataku, który nie zakończył się krytyczną porażką.",
+      "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym uderzeniu, które nie zakończyło się krytyczną porażką.",
       "LastNotMeleeCrit": "Możesz wykonać {action} wyłącznie bezpośrednio po ataku wręcz, który zakończył się trafieniem krytycznym.",
       "MaximumRange": "Wybrany cel znajduje się dalej niż maksymalny zasięg {max} stóp.",
       "MinimumRange": "Wybrany cel znajduje się bliżej niż minimalny zasięg {min} stóp.",
@@ -447,11 +447,11 @@
       "MissingSummonEffect": "Aby śledzić tymczasowe przywołanie utworzone przez akcję „{action}”, należy zdefiniować dane ActiveEffect",
       "MovementTooFar": "Planowana trasa ruchu przekracza maksymalny zasięg dozwolony w ramach tej akcji.",
       "MovementTooShort": "Zaplanowana trasa ruchu nie spełnia minimalnych wymagań dotyczących zasięgu dla tej akcji.",
-      "MustFollowMainhandStrike": "Akcję {action} możesz wykonać dopiero po wykonaniu podstawowej akcji Ataku bronią w ręce głównej.",
+      "MustFollowMainhandStrike": "Akcję {action} możesz wykonać dopiero po wykonaniu podstawowej akcji Uderzenia bronią w ręce głównej.",
       "MustFollowMeleeDefense": "Akcję {action} możesz wykonać dopiero po obronie ataku wręcz za pomocą {defense}.",
       "MustFollowMeleeKill": "Akcję {action} możesz wykonać dopiero po obezwładnieniu wroga atakiem wręcz.",
       "MustFollowRanged": "Akcję {action} można wykonać wyłącznie po ataku bronią dystansową.",
-      "MustFollowStrike": "Akcję {action} można wykonać dopiero po wykonaniu podstawowej akcji Ataku",
+      "MustFollowStrike": "Akcję {action} można wykonać dopiero po wykonaniu podstawowej akcji Uderzenia",
       "MustReactHit": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak, który trafił lub zadał draśnięcie.",
       "MustReactSingleTarget": "Akcję {action} można wykonać wyłącznie w odpowiedzi na akcję, która miała tylko jeden cel.",
       "MustReactStrike": "Akcję {action} można wykonać wyłącznie w odpowiedzi na atak bronią.",
@@ -2643,7 +2643,7 @@
       "Parrying": "Odparowywanie",
       "ParryingTooltip": "Ta broń zapewnia premię do obrony Parowania.",
       "Reach": "Zasięgowa",
-      "ReachTooltip": "Ta broń zapewnia większy niż normalnie zasięg skuteczny. Możesz wykonywać podstawowe ataki uderzeniowe z dwukrotnie większej od normalnej odległości.",
+      "ReachTooltip": "Ta broń zapewnia większy niż normalnie zasięg skuteczny. Możesz wykonywać podstawowe uderzenie z dwukrotnie większej od normalnej odległości.",
       "Reliable": "Niezawodna",
       "ReliableTooltip": "Ta broń jest niezawodna i prawie nigdy nie powoduje spektakularnych niepowodzeń. Próg krytycznej porażki tej broni jest zmniejszony o 2, co sprawia, że nieudane ataki rzadziej kończą się krytycznym chybieniem.",
       "Reload": "Przeładowanie",
@@ -2653,7 +2653,7 @@
       "Thrown": "Rzucana",
       "ThrownTooltip": "Broń ta została zaprojektowana tak, aby nadawała się do rzucania i nie podlega karze Zgub, która zazwyczaj jest nakładana na akcję rzucania bronią.",
       "Versatile": "Wszechstronna",
-      "VersatileTooltip": "Broń tę można dzierżyć jedną lub dwiema rękami i przełączać się między tymi trybami bez ponoszenia kosztów Punktów Akcji. Podczas dzierżenia broni dwiema rękami zyskuje ona dodatkowe +2 do podstawowych obrażeń, ale atak kosztuje 1 dodatkowy Punkt Akcji."
+      "VersatileTooltip": "Broń tę można dzierżyć jedną lub dwiema rękami i przełączać się między tymi trybami bez ponoszenia kosztów Punktów Akcji. Podczas dzierżenia broni dwiema rękami zyskuje ona dodatkowe +2 do podstawowych obrażeń, ale uderzenie kosztuje 1 dodatkowy Punkt Akcji."
     }
   }
 }

@@ -175,7 +175,7 @@
             "actions": {
                 "Protective Mirage": {
                     "name": "Ochronny miraż",
-                    "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                    "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
                     "effects": [
                         {
                             "name": "Miraż"

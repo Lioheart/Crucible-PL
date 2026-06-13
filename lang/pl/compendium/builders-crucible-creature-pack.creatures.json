@@ -148,7 +148,7 @@
                         "Explosive Emergence": {
                             "name": "Wybuchowe pojawienie się",
                             "condition": "Podczas kopania.",
-                            "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>Uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                            "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
                         }
                     }
                 },
@@ -817,7 +817,7 @@
                     "actions": {
                         "Protective Mirage": {
                             "name": "Ochronny miraż",
-                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
                             "effects": [
                                 {
                                     "name": "Miraż"
@@ -1406,7 +1406,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -2794,7 +2794,7 @@
                     "actions": {
                         "Armor Crusher": {
                             "name": "Niszczyciel zbroi",
-                            "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                            "description": "<p>Wykonujesz nieuzbrojone <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                         }
                     }
                 },
@@ -2869,7 +2869,7 @@
             "actions": {
                 "Armor Crusher": {
                     "name": "Niszczyciel zbroi",
-                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Wykonujesz nieuzbrojone <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -2909,7 +2909,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -2999,7 +2999,7 @@
                     "actions": {
                         "Dropping Strike": {
                             "name": "Uderzenie z góry",
-                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie z góry"
@@ -3101,7 +3101,7 @@
                     "actions": {
                         "Quick Draw": {
                             "name": "Szybkie naciągnięcie",
-                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                         }
                     }
                 },
@@ -3439,7 +3439,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -3449,7 +3449,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -3497,7 +3497,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -3507,7 +3507,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -3573,7 +3573,7 @@
                 "Explosive Emergence": {
                     "name": "Wybuchowe pojawienie się",
                     "condition": "Podczas kopania.",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>Uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
                 }
             }
         },
@@ -3640,7 +3640,7 @@
                     "actions": {
                         "Protective Mirage": {
                             "name": "Ochronny miraż",
-                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
                             "effects": [
                                 {
                                     "name": "Miraż"
@@ -3717,7 +3717,7 @@
                     "actions": {
                         "Dropping Strike": {
                             "name": "Uderzenie z góry",
-                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie z góry"
@@ -3736,7 +3736,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -3821,7 +3821,7 @@
                     "actions": {
                         "Quick Draw": {
                             "name": "Szybkie naciągnięcie",
-                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                         }
                     }
                 },
@@ -3831,7 +3831,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -3905,7 +3905,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 }
@@ -3927,7 +3927,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -3987,7 +3987,7 @@
             "actions": {
                 "Dropping Strike": {
                     "name": "Uderzenie z góry",
-                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie z góry"
@@ -4084,7 +4084,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -4299,7 +4299,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -4338,7 +4338,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -4383,7 +4383,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -4661,7 +4661,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -4707,7 +4707,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -4900,7 +4900,7 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Constrict": {
                     "name": "Zaciskanie",
@@ -4942,7 +4942,7 @@
                 "Counter Riposte": {
                     "name": "Kontr-riposta",
                     "condition": "Parujesz nadchodzący atak wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
+                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                 }
             }
         },
@@ -4996,7 +4996,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -5211,7 +5211,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -5250,7 +5250,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -5295,7 +5295,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -5482,7 +5482,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -5492,7 +5492,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -5623,7 +5623,7 @@
                     "actions": {
                         "Refocus": {
                             "name": "Ponowne skupienie",
-                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                         }
                     }
                 },
@@ -5712,7 +5712,7 @@
                     "actions": {
                         "Refocus": {
                             "name": "Ponowne skupienie",
-                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                         }
                     }
                 },
@@ -5811,7 +5811,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -5904,7 +5904,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -6181,7 +6181,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -6345,11 +6345,11 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -6388,7 +6388,7 @@
                     "actions": {
                         "Shield Bash": {
                             "name": "Uderzenie tarczą",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                            "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie tarczą"
@@ -6408,7 +6408,7 @@
                         "Intercept": {
                             "name": "Przechwycenie",
                             "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                            "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>@Action[default reactiveStrike]</strong> przeciwko niemu.</p>"
                         }
                     }
                 },
@@ -6530,7 +6530,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -6570,12 +6570,12 @@
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         },
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -6694,7 +6694,7 @@
                         },
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -6707,12 +6707,12 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         },
                         "Fire Conversion": {
@@ -6795,7 +6795,7 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Rune: Control": {
                     "name": "Runa: Kontrola",
@@ -6809,7 +6809,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Mace": {
                     "name": "Buława",
@@ -6886,7 +6886,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         },
                         "Poison Conversion": {
@@ -6896,7 +6896,7 @@
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         }
                     }
@@ -6906,7 +6906,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -6916,7 +6916,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -6929,7 +6929,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -7254,7 +7254,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -7272,7 +7272,7 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -7451,7 +7451,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -7541,7 +7541,7 @@
                     "actions": {
                         "Protective Mirage": {
                             "name": "Ochronny miraż",
-                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                            "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
                             "effects": [
                                 {
                                     "name": "Miraż"
@@ -7611,7 +7611,7 @@
                     "effects": {
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         },
                         "Poison Conversion": {
@@ -7621,7 +7621,7 @@
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         }
                     }
@@ -7639,12 +7639,12 @@
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         },
                         "Potency": {
                             "name": "Mocy",
-                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich Uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
+                            "description": "<p>Dodaje <strong>Premię Zaklinania</strong> do wszystkich uderzeń wykonywanych tą bronią, zależną od <strong>Stopnia</strong> tego afiksu.</p>",
                             "adjective": "Moc"
                         }
                     }
@@ -7656,7 +7656,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                         }
                     }
                 }
@@ -7690,7 +7690,7 @@
                     "actions": {
                         "Dropping Strike": {
                             "name": "Uderzenie z góry",
-                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie z góry"
@@ -7727,7 +7727,7 @@
                     "effects": {
                         "Fey Bane": {
                             "name": "Zguba fey",
-                            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
+                            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Fey</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
                             "adjective": "Zguby fey"
                         }
                     }
@@ -7753,7 +7753,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -7763,7 +7763,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -8013,7 +8013,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Armored Efficiency": {
                     "name": "Sprawność w pancerzu",
@@ -8025,7 +8025,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Podcięcie nóg",
-                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Podcięcie nóg"
@@ -8040,7 +8040,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -8098,7 +8098,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -8112,7 +8112,7 @@
                     "actions": {
                         "Uppercut": {
                             "name": "Uderzenie z wybicia",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                            "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                         }
                     }
                 },
@@ -8169,7 +8169,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -8360,7 +8360,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -8564,7 +8564,7 @@
                     "actions": {
                         "Leg Sweep": {
                             "name": "Podcięcie nóg",
-                            "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Podcięcie nóg"
@@ -8608,7 +8608,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -8618,7 +8618,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -8671,7 +8671,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -8847,7 +8847,7 @@
                     "actions": {
                         "Repugnant Pustules": {
                             "name": "Odrażające czyraki",
-                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
                             "effects": [
                                 {
                                     "name": "Odrażające czyraki"
@@ -8905,7 +8905,7 @@
                 },
                 "Strike First": {
                     "name": "Pierwszy cios",
-                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego ataku fizycznego lub magicznym przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
+                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego uderzenia lub ataku zaklęciem przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
                 },
                 "Necrotic Bite": {
                     "name": "Nekrotyczne ugryzienie",
@@ -9039,7 +9039,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -9225,7 +9225,7 @@
                     "actions": {
                         "Dropping Strike": {
                             "name": "Uderzenie z góry",
-                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie z góry"
@@ -9240,7 +9240,7 @@
                     "actions": {
                         "Quick Draw": {
                             "name": "Szybkie naciągnięcie",
-                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                         }
                     }
                 },
@@ -9250,7 +9250,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -9313,7 +9313,7 @@
             "actions": {
                 "Heavy Strike": {
                     "name": "Mocne uderzenie",
-                    "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                    "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                 }
             }
         },
@@ -9332,7 +9332,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -9493,7 +9493,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -9515,7 +9515,7 @@
                     "actions": {
                         "Penetrating Throw": {
                             "name": "Rzut penetrujący",
-                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                            "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                         }
                     }
                 },
@@ -9551,7 +9551,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -9801,7 +9801,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -9890,7 +9890,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -9925,7 +9925,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -9964,7 +9964,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -9972,7 +9972,7 @@
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -10053,7 +10053,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -10088,7 +10088,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -10127,7 +10127,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -10135,7 +10135,7 @@
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -10256,7 +10256,7 @@
                 "Intercept": {
                     "name": "Przechwycenie",
                     "condition": "Wróg wkracza w obszar twojego zasięgu działania lub przechodzi przez niego.",
-                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>atak odwetowy</strong> przeciwko niemu.</p>"
+                    "description": "<p>Przechwytujesz ścieżkę wroga, który wkracza w obszar twojego zasięgu <strong>Zaangażowanie</strong>, natychmiast poruszając się do przodu o długość twojego <strong>Biegu</strong>, aby stanąć na drodze przeciwnika i zablokować mu przejście.</p><p>Jeśli wróg wyjdzie poza zasięg twojego Zaangażowania lub zaatakuje jakąkolwiek inną istotę podczas swojej tury, możesz wykonać <strong>@Action[default reactiveStrike]</strong> przeciwko niemu.</p>"
                 }
             }
         },
@@ -10362,7 +10362,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 }
             },
             "archetype": {
@@ -10403,7 +10403,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -10448,7 +10448,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Gest: Krok",
@@ -10456,7 +10456,7 @@
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -10524,7 +10524,7 @@
                         "Explosive Emergence": {
                             "name": "Wybuchowe pojawienie się",
                             "condition": "Podczas kopania.",
-                            "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>Uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                            "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
                         }
                     }
                 },
@@ -10548,7 +10548,7 @@
             "actions": {
                 "Leg Sweep": {
                     "name": "Podcięcie nóg",
-                    "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje <strong>Przewrócony</strong>.</p>",
                     "effects": [
                         {
                             "name": "Podcięcie nóg"
@@ -10760,11 +10760,11 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -10785,7 +10785,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Wykrok",
-                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                 }
             }
         },
@@ -10837,7 +10837,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -10968,7 +10968,7 @@
                     "actions": {
                         "Dropping Strike": {
                             "name": "Uderzenie z góry",
-                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>Uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                            "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie z góry"
@@ -11028,7 +11028,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -11072,7 +11072,7 @@
             "actions": {
                 "Wild Strike": {
                     "name": "Dzikie uderzenie",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                 }
             }
         },
@@ -11291,11 +11291,11 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Cone": {
                     "name": "Gest: Stożek",
@@ -11407,7 +11407,7 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Telecognition": {
                     "name": "Telepoznanie",
@@ -11522,7 +11522,7 @@
             "actions": {
                 "Penetrating Throw": {
                     "name": "Rzut penetrujący",
-                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                 }
             }
         },
@@ -11648,7 +11648,7 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
@@ -11670,7 +11670,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Illumination Proficiency": {
                     "name": "Biegłość światłości",
@@ -11803,7 +11803,7 @@
             "actions": {
                 "Quick Draw": {
                     "name": "Szybkie naciągnięcie",
-                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                 }
             }
         },
@@ -11812,7 +11812,7 @@
             "actions": {
                 "Protective Mirage": {
                     "name": "Ochronny miraż",
-                    "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>Uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy Uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
+                    "description": "<p>Otaczają cię trzy iluzoryczne duplikaty, które utrzymują się przez maksymalnie 10 rund. Każde <strong>uderzenie</strong> skierowane przeciwko tobie jest wykonywane z liczbą <strong>Zgub</strong> równą dwukrotności liczby pozostałych duplikatów. Za każdym razem, gdy uderzenie cię nie trafia, jeden z twoich duplikatów znika.</p>",
                     "effects": [
                         {
                             "name": "Miraż"
@@ -11978,7 +11978,7 @@
             "actions": {
                 "Repugnant Pustules": {
                     "name": "Odrażające czyraki",
-                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
                     "effects": [
                         {
                             "name": "Odrażające czyraki"
@@ -12042,7 +12042,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -12416,7 +12416,7 @@
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                    "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie tarczą"
@@ -12592,7 +12592,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -12723,7 +12723,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -12750,7 +12750,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>Uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>Odsłonięty</strong>.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Punkty Skupienia</strong>, aby odparować atak za pomocą <strong>uderzenia</strong> o obniżonym koszcie, które korzysta ze stanu <strong>@Condition[exposed]</strong>.</p>"
                         }
                     }
                 },
@@ -12820,15 +12820,15 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Lightbringer": {
                     "name": "Niosący światło",
@@ -12864,7 +12864,7 @@
                         },
                         "Keen": {
                             "name": "Ostrości",
-                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym Uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
+                            "description": "<p>Obniża <strong>Próg Krytyczny</strong> wymagany do uzyskania <strong>Trafienia Krytycznego</strong> przy udanym uderzeniu. Próg ten jest zmniejszany o 1 za każdy <strong>Stopień</strong> tego afiksu.</p>",
                             "adjective": "Ostrości"
                         },
                         "Radiant Damage": {
@@ -13012,11 +13012,11 @@
                 },
                 "Gesture: Sense": {
                     "name": "Gest: Zmysł",
-                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+                    "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Inspirator": {
                     "name": "Inspirator",
@@ -13135,7 +13135,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -13336,7 +13336,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -13395,7 +13395,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>Odsłonięty</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią główną, które w przypadku powodzenia nakłada na cel stan <strong>@Condition[exposed]</strong> na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
@@ -13498,7 +13498,7 @@
             "actions": {
                 "Refocus": {
                     "name": "Ponowne skupienie",
-                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                 }
             }
         },
@@ -13564,7 +13564,7 @@
                     "actions": {
                         "Repugnant Pustules": {
                             "name": "Odrażające czyraki",
-                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
                             "effects": [
                                 {
                                     "name": "Odrażające czyraki"
@@ -13724,7 +13724,7 @@
             "actions": {
                 "Uppercut": {
                     "name": "Uderzenie z wybicia",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                    "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                 }
             }
         },
@@ -13800,7 +13800,7 @@
                     "actions": {
                         "Wild Strike": {
                             "name": "Dzikie uderzenie",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                         }
                     }
                 },
@@ -14885,7 +14885,7 @@
                     "actions": {
                         "Repugnant Pustules": {
                             "name": "Odrażające czyraki",
-                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
                             "effects": [
                                 {
                                     "name": "Odrażające czyraki"
@@ -14914,35 +14914,7 @@
     "mapping": {
         "items": {
             "path": "items",
-            "converter": "document",
-            "documentType": "Item",
-            "cardinality": "many",
-            "mapping": {
-                "description": {
-                    "path": "system.description",
-                    "converter": "crucible_description_converter"
-                },
-                "actions": {
-                    "path": "system.actions",
-                    "converter": "actions_converter"
-                },
-                "effects": {
-                    "path": "effects",
-                    "converter": "document",
-                    "documentType": "ActiveEffect",
-                    "cardinality": "many",
-                    "mapping": {
-                        "changes": {
-                            "path": "system.changes",
-                            "converter": "structured",
-                            "cardinality": "many",
-                            "container": "array",
-                            "key": "key",
-                            "valuePath": "value"
-                        }
-                    }
-                }
-            }
+            "converter": "adventure_items_converter"
         },
         "actions": {
             "path": "system.actions",
@@ -14954,10 +14926,6 @@
         },
         "background": {
             "path": "system.details.background",
-            "converter": "nested_object_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
             "converter": "nested_object_converter"
         },
         "archetype": {

@@ -21,6 +21,7 @@
         },
         "Agnath": {
             "name": "Agnath",
+            "biography": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>",
             "items": {
                 "Splint Mail": {
                     "name": "Napierśnik",
@@ -30,7 +31,7 @@
                 },
                 "Cadence": {
                     "name": "Kadencja",
-                    "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>Uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
+                    "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
@@ -38,7 +39,7 @@
                 },
                 "Spellblade": {
                     "name": "Zaklęte ostrze",
-                    "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+                    "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>ataku</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
                 },
                 "Strong Grip": {
                     "name": "Silny chwyt",
@@ -46,7 +47,7 @@
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
-                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+                    "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
                 },
                 "Powerful Physique": {
                     "name": "Potężna sylwetka",
@@ -59,7 +60,7 @@
                         "Counter Riposte": {
                             "name": "Kontr-riposta",
                             "condition": "Parujesz nadchodzący atak wręcz.",
-                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                            "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                         }
                     }
                 },
@@ -69,7 +70,7 @@
                     "actions": {
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
-                            "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                            "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                             "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                         }
                     }
@@ -98,7 +99,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -124,7 +125,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonywasz <strong>uderzenie</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -242,6 +243,7 @@
         },
         "Belladonna": {
             "name": "Belladonna",
+            "biography": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>",
             "items": {
                 "Dagger": {
                     "name": "Sztylet",
@@ -286,13 +288,13 @@
                         "Counter Evade": {
                             "name": "Kontr-unik",
                             "condition": "Unikasz nadchodzącego ataku wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                            "description": "<p>Kiedy bronisz się przed uderzeniem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                         }
                     }
                 },
                 "Strike First": {
                     "name": "Pierwszy cios",
-                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego ataku fizycznego lub magicznym przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
+                    "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego uderzenia lub ataku zaklęciem przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
                 },
                 "Preternatural Instinct": {
                     "name": "Nadprzyrodzony instynkt",
@@ -323,7 +325,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -429,7 +431,7 @@
                 },
                 "Assassin": {
                     "name": "Zabójca",
-                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>Uderzenie</strong> lub <strong>Zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
+                    "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>uderzenie</strong> lub <strong>zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
                     "actions": {
                         "Mark For Death": {
                             "name": "Znak śmierci",
@@ -463,7 +465,7 @@
                     "actions": {
                         "Offhand Strike": {
                             "name": "Uderzenie z drugiej ręki",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>Uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                         }
                     }
                 },
@@ -555,7 +557,7 @@
                 "Counter Evade": {
                     "name": "Kontr-unik",
                     "condition": "Unikasz nadchodzącego ataku wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                    "description": "<p>Kiedy bronisz się przed uderzeniem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                 }
             }
         },
@@ -565,7 +567,7 @@
                 "Counter Riposte": {
                     "name": "Kontr-riposta",
                     "condition": "Parujesz nadchodzący atak wręcz.",
-                    "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                    "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                 }
             }
         },
@@ -575,7 +577,7 @@
                 "Counter Strike": {
                     "name": "Kontratak",
                     "condition": "Blokujesz nadchodzący atak wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                 }
             }
         },
@@ -636,7 +638,7 @@
             "actions": {
                 "Offhand Strike": {
                     "name": "Uderzenie z drugiej ręki",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>Uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                 }
             }
         },
@@ -645,6 +647,7 @@
         },
         "Duurath": {
             "name": "Duurath",
+            "biography": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>",
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -668,13 +671,13 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                         }
                     }
                 },
                 "Gesture: Ward": {
                     "name": "Gest: Glif",
-                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glifu skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
                 "Body Block": {
                     "name": "Blok ciałem",
@@ -694,7 +697,7 @@
                         "Counter Strike": {
                             "name": "Kontratak",
                             "condition": "Blokujesz nadchodzący atak wręcz.",
-                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                            "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                         }
                     }
                 },
@@ -787,7 +790,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -797,7 +800,7 @@
                 },
                 "Armored Shell": {
                     "name": "Pancerna powłoka",
-                    "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
+                    "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Bloku</strong> wzrasta odpowiednio o tę samą wartość.</p>"
                 },
                 "Shield Combat Training": {
                     "name": "Szkolenie z walki tarczą",
@@ -805,7 +808,7 @@
                     "actions": {
                         "Shield Bash": {
                             "name": "Uderzenie tarczą",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                            "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie tarczą"
@@ -880,7 +883,7 @@
                     "actions": {
                         "Shield Bash": {
                             "name": "Uderzenie tarczą",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan <strong>Chwiejny</strong> na jedną rundę.</p>",
+                            "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan <strong>Chwiejny</strong> na jedną rundę.</p>",
                             "effects": [
                                 {
                                     "name": "Uderzenie tarczą"
@@ -901,6 +904,7 @@
         },
         "Eliorwen": {
             "name": "Eliorwen",
+            "biography": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>",
             "items": {
                 "Scimitar": {
                     "name": "Bułat",
@@ -931,7 +935,7 @@
                 },
                 "Arcane Archer": {
                     "name": "Tajemny łucznik",
-                    "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+                    "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
                 },
                 "Weak Points": {
                     "name": "Słabe punkty",
@@ -943,7 +947,7 @@
                     "actions": {
                         "Mark Prey": {
                             "name": "Naznaczenie celu",
-                            "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
+                            "description": "<p>Uderzasz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                             "effects": [
                                 {
                                     "name": "Oznaczony"
@@ -1077,7 +1081,7 @@
                     "actions": {
                         "Quick Draw": {
                             "name": "Szybkie naciągnięcie",
-                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                            "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                         }
                     }
                 },
@@ -1115,7 +1119,7 @@
             "actions": {
                 "Executioner's Strike": {
                     "name": "Atak egzekutora",
-                    "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
+                    "description": "<p>Wykonujesz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                     "effects": [
                         {
                             "name": "Atak egzekutora"
@@ -1141,6 +1145,7 @@
         },
         "Fizzit": {
             "name": "Fizzit",
+            "biography": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>",
             "items": {
                 "Ring Mail": {
                     "name": "Kolczuga pierścieniowa",
@@ -1289,7 +1294,7 @@
                     "actions": {
                         "Refocus": {
                             "name": "Ponowne skupienie",
-                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                         }
                     }
                 },
@@ -1437,7 +1442,7 @@
             "actions": {
                 "Heavy Strike": {
                     "name": "Mocne uderzenie",
-                    "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                    "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                 }
             }
         },
@@ -1519,6 +1524,7 @@
         },
         "Kagura": {
             "name": "Kagura",
+            "biography": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>",
             "items": {
                 "Ice Staff": {
                     "name": "Kostur lodu",
@@ -1577,7 +1583,7 @@
                     "actions": {
                         "Refocus": {
                             "name": "Ponowne skupienie",
-                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                            "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                         }
                     }
                 },
@@ -1648,7 +1654,7 @@
                 },
                 "Eye of the Storm": {
                     "name": "Oko cyklonu",
-                    "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich ataków fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
+                    "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich uderzeń fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
@@ -1691,7 +1697,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Wykrok",
-                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                 }
             }
         },
@@ -1703,7 +1709,7 @@
             "actions": {
                 "Mark Prey": {
                     "name": "Naznaczenie celu",
-                    "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
+                    "description": "<p>Uderzasz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                     "effects": [
                         {
                             "name": "Oznaczony"
@@ -1741,7 +1747,7 @@
             "actions": {
                 "Penetrating Throw": {
                     "name": "Rzut penetrujący",
-                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                 }
             }
         },
@@ -1803,7 +1809,7 @@
             "actions": {
                 "Quick Draw": {
                     "name": "Szybkie naciągnięcie",
-                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                 }
             }
         },
@@ -1922,7 +1928,7 @@
             "actions": {
                 "Ruthless Momentum": {
                     "name": "Bezlitosny pęd",
-                    "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                    "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                     "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                 }
             }
@@ -1938,7 +1944,7 @@
             "actions": {
                 "Second Wind": {
                     "name": "Drugie tchnienie",
-                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -1947,7 +1953,7 @@
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan <strong>Chwiejny</strong> na jedną rundę.</p>",
+                    "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan <strong>Chwiejny</strong> na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie tarczą"
@@ -1964,7 +1970,7 @@
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                    "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie tarczą"
@@ -2023,7 +2029,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonywasz <strong>uderzenie</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
@@ -2049,7 +2055,7 @@
             "actions": {
                 "Refocus": {
                     "name": "Ponowne skupienie",
-                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                 }
             }
         },
@@ -2070,6 +2076,7 @@
         },
         "Ulfen": {
             "name": "Ulfen",
+            "biography": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>",
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -2099,7 +2106,7 @@
                     "actions": {
                         "Uppercut": {
                             "name": "Uderzenie z wybicia",
-                            "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                            "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                         }
                     }
                 },
@@ -2147,7 +2154,7 @@
                     "actions": {
                         "Executioner's Strike": {
                             "name": "Atak egzekutora",
-                            "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
+                            "description": "<p>Wykonujesz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                             "effects": [
                                 {
                                     "name": "Atak egzekutora"
@@ -2166,7 +2173,7 @@
                     "actions": {
                         "Ruthless Momentum": {
                             "name": "Bezlitosny pęd",
-                            "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                            "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                             "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                         }
                     }
@@ -2177,7 +2184,7 @@
                     "actions": {
                         "Second Wind": {
                             "name": "Drugie tchnienie",
-                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                            "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                         }
                     }
                 },
@@ -2216,7 +2223,7 @@
                     "actions": {
                         "Sundering Strike": {
                             "name": "Rozbijające uderzenie",
-                            "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                            "description": "<p>Wykonywasz <strong>uderzenie</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                             "effects": [
                                 {
                                     "name": "Pęknięty pancerz"
@@ -2231,7 +2238,7 @@
                     "actions": {
                         "Heavy Strike": {
                             "name": "Mocne uderzenie",
-                            "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                            "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                         }
                     }
                 },
@@ -2253,7 +2260,7 @@
                     "actions": {
                         "Penetrating Throw": {
                             "name": "Rzut penetrujący",
-                            "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                            "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                         }
                     }
                 },
@@ -2322,7 +2329,7 @@
             "actions": {
                 "Uppercut": {
                     "name": "Uderzenie z wybicia",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                    "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                 }
             }
         },
@@ -2349,6 +2356,7 @@
         },
         "Zarajah": {
             "name": "Zarajah",
+            "biography": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>",
             "items": {
                 "Flame Staff": {
                     "name": "Kostur ognia",
@@ -2387,7 +2395,7 @@
                     "actions": {
                         "Lunge": {
                             "name": "Wykrok",
-                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                            "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                         }
                     }
                 },
@@ -2457,7 +2465,7 @@
                 },
                 "Iramancer": {
                     "name": "Gniewomanta",
-                    "description": "<p>Twoje wyczyny związane z magią są napędzane gniewem. Podczas @Condition[enraged] nadal możesz wydawać <strong>Punkty Skupienia</strong> i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym.</p>"
+                    "description": "<p>Twoje wyczyny magiczne czerpią siłę z gniewu. Gdy jesteś w stanie @Condition[enraged], nadal możesz wykorzystać <strong>Skupienie</strong>, a wszystkie twoje ataki zaklęciami zadają 2 dodatkowe punkty obrażeń.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -2500,6 +2508,10 @@
         }
     },
     "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        },
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
@@ -2512,10 +2524,6 @@
             "path": "system.details.background",
             "converter": "nested_object_converter"
         },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "nested_object_converter"
-        },
         "archetype": {
             "path": "system.details.archetype",
             "converter": "nested_object_converter"
@@ -2524,37 +2532,6 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "items": {
-            "path": "items",
-            "converter": "document",
-            "documentType": "Item",
-            "cardinality": "many",
-            "mapping": {
-                "description": {
-                    "path": "system.description",
-                    "converter": "crucible_description_converter"
-                },
-                "actions": {
-                    "path": "system.actions",
-                    "converter": "actions_converter"
-                },
-                "effects": {
-                    "path": "effects",
-                    "converter": "document",
-                    "documentType": "ActiveEffect",
-                    "cardinality": "many",
-                    "mapping": {
-                        "changes": {
-                            "path": "system.changes",
-                            "converter": "structured",
-                            "cardinality": "many",
-                            "container": "array",
-                            "key": "key",
-                            "valuePath": "value"
-                        }
-                    }
-                }
-            }
-        }
+        "biography": "system.details.biography.public"
     }
 }

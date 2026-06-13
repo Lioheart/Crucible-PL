@@ -116,7 +116,7 @@
         },
         "Arcane Archer": {
             "name": "Tajemny łucznik",
-            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armor Crusher": {
             "name": "Niszczyciel zbroi",
@@ -124,7 +124,7 @@
             "actions": {
                 "Armor Crusher": {
                     "name": "Niszczyciel zbroi",
-                    "description": "<p>Wykonujesz nieuzbrojony <strong>atak</strong> na pobliskiego wroga. Jeśli atak spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Wykonujesz nieuzbrojone <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -138,7 +138,7 @@
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
-            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
+            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Bloku</strong> wzrasta odpowiednio o tę samą wartość.</p>"
         },
         "Artful Parry": {
             "name": "Zręczna obrona",
@@ -153,7 +153,7 @@
         },
         "Assassin": {
             "name": "Zabójca",
-            "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>Uderzenie</strong> lub <strong>Zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
+            "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>uderzenie</strong> lub <strong>zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
             "actions": {
                 "Mark For Death": {
                     "name": "Znak śmierci",
@@ -249,7 +249,7 @@
             "actions": {
                 "Berserk Strike": {
                     "name": "Szaleńcze uderzenie",
-                    "description": "<p>Nakładasz na swoje uderzenie impet i intensywność, zwiększając <strong>Premię do obrażeń</strong> zgodnie z utraconym <strong>Zdrowiem</strong>.</p><ul><li><p>Jeśli twoje Zdrowie wynosi poniżej 75%, twoje Uderzenie zadaje<strong>+1 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 50%, twoje Uderzenie zadaje <strong>+2 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 25%, twoje Uderzenie zadaje <strong>+3 Obrażeń</strong></p></li></ul><p>Ta premia do obrażeń jest podwajana, jeśli używasz broni <strong>Dwuręcznej</strong>.</p>"
+                    "description": "<p>Nakładasz na swoje uderzenie impet i intensywność, zwiększając <strong>Premię do obrażeń</strong> zgodnie z utraconym <strong>Zdrowiem</strong>.</p><ul><li><p>Jeśli twoje Zdrowie wynosi poniżej 75%, twoje uderzenie zadaje<strong>+1 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 50%, twoje uderzenie zadaje <strong>+2 Obrażeń</strong></p></li><li><p>Jeśli twoje Zdrowie wynosi poniżej 25%, twoje uderzenie zadaje <strong>+3 Obrażeń</strong></p></li></ul><p>Ta premia do obrażeń jest podwajana, jeśli używasz broni <strong>Dwuręcznej</strong>.</p>"
                 }
             }
         },
@@ -313,7 +313,7 @@
         },
         "Cadence": {
             "name": "Kadencja",
-            "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>Uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
+            "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
         },
         "Carefree": {
             "name": "Beztroski",
@@ -400,7 +400,7 @@
                 "Counter Evade": {
                     "name": "Kontr-unik",
                     "condition": "Unikasz nadchodzącego ataku wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                    "description": "<p>Kiedy bronisz się przed uderzeniem wręcz za pomocą <strong>Uników</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                 }
             }
         },
@@ -411,7 +411,7 @@
                 "Counter Riposte": {
                     "name": "Kontr-riposta",
                     "condition": "Parujesz nadchodzący atak wręcz.",
-                    "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>Uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
+                    "description": "<p>Gdy bronisz się przed atakiem wręcz za pomocą <strong>Parowania</strong>, możesz zareagować i zużyć <strong>Skupienie</strong>, aby wykonać kontratak w postaci <strong>uderzenia</strong> o obniżonym koszcie, który jest <strong>Dokładny</strong>.</p>"
                 }
             }
         },
@@ -422,7 +422,7 @@
                 "Counter Strike": {
                     "name": "Kontratak",
                     "condition": "Blokujesz nadchodzący atak wręcz.",
-                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>atakiem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
+                    "description": "<p>Kiedy bronisz się przed atakiem wręcz za pomocą <strong>Bloku</strong>, możesz zużyć <strong>Punkty Skupienia</strong>, aby odpowiedzieć <strong>uderzeniem</strong> o zmniejszonym koszcie, używając broni głównej.</p>"
                 }
             }
         },
@@ -463,7 +463,7 @@
             "actions": {
                 "Decisive Action": {
                     "name": "Decydujące działanie",
-                    "description": "<p>Wydajesz punkty <strong>Heroizmu</strong>, aby natychmiast odzyskać połowę swojego <strong>Intelektu</strong> w <strong>Akcji</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
+                    "description": "<p>Wykorzystujesz <strong>Heroizm</strong>, aby natychmiast odzyskać połowę punktów <strong>Akcji</strong> równe połowie punktów swojego <strong>Intelektu</strong>. Możesz wykonać tę akcję poza swoją turą w walce, przed wykonaniem <strong>Reakcji</strong>.</p>"
                 }
             }
         },
@@ -496,7 +496,7 @@
             "actions": {
                 "Whirlwind": {
                     "name": "Wicher",
-                    "description": "<p>Stajesz się cyklonem wirującej broni, wykonując <strong>ataki uderzeniowe</strong> obiema broniami przeciwko każdemu wrogowi w zasięgu.</p>"
+                    "description": "<p>Stajesz się cyklonem wirującej broni, wykonując <strong>uderzenie</strong> obiema broniami przeciwko każdemu wrogowi w zasięgu.</p>"
                 }
             }
         },
@@ -522,7 +522,7 @@
             "actions": {
                 "Dirty Tricks": {
                     "name": "Nieczyste zagrania",
-                    "description": "<p>Rzucasz odłamkami w oczy przeciwnika. Jeśli <strong>atak</strong> się powiedzie, przeciwnik zostaje @Condition[blinded] do końca swojej następnej <strong>tury</strong>.</p>",
+                    "description": "<p>Rzucasz odłamkami w oczy przeciwnika. Jeśli <strong>uderzenie</strong> się powiedzie, przeciwnik zostaje @Condition[blinded] do końca swojej następnej <strong>tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Nieczyste zagrania"
@@ -537,7 +537,7 @@
             "actions": {
                 "Disarming Strike": {
                     "name": "Atak rozbrajający",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> przeciwko obronie <strong>Refleksu</strong> pojedynczego celu. Technika ta jest <strong>trudna</strong> do wykonania i zadaje zmniejszone obrażenia. Jeśli się powiedzie, broń głównej ręki celu zostaje <strong>Upuszczona</strong>.</p>"
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> przeciwko obronie <strong>Refleksu</strong> pojedynczego celu. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia. Jeśli się powiedzie, broń głównej ręki celu zostaje <strong>Upuszczona</strong>.</p>"
                 }
             }
         },
@@ -576,7 +576,7 @@
             "actions": {
                 "Offhand Strike": {
                     "name": "Uderzenie z drugiej ręki",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz dodatkowe <strong>Uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                 }
             }
         },
@@ -616,7 +616,7 @@
             "actions": {
                 "Executioner's Strike": {
                     "name": "Atak egzekutora",
-                    "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
+                    "description": "<p>Wykonujesz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                     "effects": [
                         {
                             "name": "Atak egzekutora"
@@ -638,7 +638,7 @@
         },
         "Eye of the Storm": {
             "name": "Oko cyklonu",
-            "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich ataków fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
+            "description": "<p>Po opóźnieniu swojej tury zyskujesz +2 Korzyści do wszystkich uderzeń fizycznych lub magicznych przeciwko wrogowi, któremu pozwoliłeś działać przed tobą w tej rundzie.</p><p>Do zrobienia: Wymaga automatyzacji. Na razie stosuj bonusy ręcznie.</p>"
         },
         "Fan of Arrows": {
             "name": "Wachlarz strzał",
@@ -656,7 +656,7 @@
             "actions": {
                 "Feinting Strike": {
                     "name": "Atak pozorowany",
-                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>Uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do Uderzenia i zadajesz dodatkowe <strong>+6 obrażeń</strong>.</p>"
+                    "description": "<p>Wykonujesz zwód bronią główną, przeprowadzając atak <strong>Oszustwa</strong> przeciwko obronie <strong>Refleksu</strong> celu. Natychmiast wykonujesz <strong>uderzenie</strong> bronią <strong>drugiej ręki</strong>.</p><p>Jeśli twoje Oszustwo zakończyło się sukcesem, otrzymujesz <strong>+2 Korzyści</strong> do uderzenia i zadajesz dodatkowe <strong>+6 obrażeń</strong>.</p>"
                 }
             }
         },
@@ -723,7 +723,7 @@
             "actions": {
                 "Flying Kick": {
                     "name": "Kopnięcie w locie",
-                    "description": "<p><strong>Przesuń</strong> się do przodu o co najmniej 3 stopy, a maksymalnie o długość biegu, poruszając się po linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
+                    "description": "<p><strong>Przesuń</strong> się do przodu o co najmniej 3 stopy, a maksymalnie o długość biegu, poruszając się po linii prostej, aby kopnąć wroga wzmocnionym <strong>uderzeniem</strong>.</p>"
                 }
             }
         },
@@ -792,7 +792,7 @@
         },
         "Gesture: Sense": {
             "name": "Gest: Zmysł",
-            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Wyczuwania skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
         },
         "Gesture: Step": {
             "name": "Gest: Krok",
@@ -800,7 +800,7 @@
         },
         "Gesture: Strike": {
             "name": "Gest: Uderzenie",
-            "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Moc uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
+            "description": "<p>Wzmacniasz bezpośredni atak z bliskiej odległości tajemniczą esencją runy, wykonując uderzenie wyposażoną bronią.</p><p>Gest Uderzenia zależy od <strong>Siły</strong> postaci i zadaje obrażenia w oparciu o używaną broń, ale z typem obrażeń wbudowanej runy. Gest ten nie wymaga wolnej ręki i ma podstawowy koszt <strong>1 Skupienia</strong> oprócz kosztu uderzenia bronią.</p>"
         },
         "Gesture: Surge": {
             "name": "Gest: Fala",
@@ -808,11 +808,11 @@
         },
         "Gesture: Ward": {
             "name": "Gest: Glif",
-            "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest ochrony skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+            "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
         },
         "Gladiator": {
             "name": "Gladiator",
-            "description": "<p>Raz na rundę możesz wykonać Reakcję, która obejmuje atak, nie zużywający żadnego punktu Skupienia.</p>"
+            "description": "<p>Raz na rundę możesz wykonać Reakcję, która obejmuje uderzenie, nie zużywający żadnego punktu Skupienia.</p>"
         },
         "Glyphweaving Journeyman": {
             "name": "Czeladnik glifotwórstwa",
@@ -828,7 +828,7 @@
             "actions": {
                 "Hamstring": {
                     "name": "Podcinanie",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale jeśli się powiedzie, powoduje stan @Condition[slowed] na <strong>3 Rundy</strong>.</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale jeśli się powiedzie, powoduje stan @Condition[slowed] na <strong>3 Rundy</strong>.</p>",
                     "effects": [
                         {
                             "name": "Podcinanie"
@@ -843,7 +843,7 @@
             "actions": {
                 "Headbutt": {
                     "name": "Uderzenie głową",
-                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 korzyść</strong> do tego ataku. </p><p>Atak jest <strong>trudny</strong> i zadaje jedynie obrażenia ze stanem @Condition[weakened], ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
+                    "description": "<p>Wykonaj <strong>uderzenie</strong> bez broni przeciwko obronie <strong>Wytrwałości</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 Korzyść</strong> do tego ataku.</p><p>Ten atak jest <strong>Trudny</strong> i zadaje jedynie osłabione obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie głową"
@@ -877,7 +877,7 @@
             "actions": {
                 "Heavy Strike": {
                     "name": "Mocne uderzenie",
-                    "description": "<p>Wykonujesz potężne <strong>Uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
+                    "description": "<p>Wykonujesz potężne <strong>uderzenie</strong> bronią główną. Atak jest wolniejszy, ale <strong>Wzmocniony</strong>, aby zadać dodatkowe obrażenia.</p>"
                 }
             }
         },
@@ -895,7 +895,7 @@
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
-            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>Atak</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
+            "description": "<p>Twoja obrona udaremnia ataki przeciwników, którzy bezskutecznie próbują znaleźć lukę w twojej gardzie. Gdy <strong>uderzenie</strong> wroga skierowany przeciwko tobie kończy się <strong>Blokiem</strong> lub spowodowałby <strong>Draśnięcie</strong>, wróg ten otrzymuje <strong>1 Zgubę</strong> podczas swojego następnego ataku na ciebie.</p>"
         },
         "Impetus": {
             "name": "Impet",
@@ -977,7 +977,7 @@
         },
         "Intellectual Superiority": {
             "name": "Przewaga intelektualna",
-            "description": "Czasami zadziwiające jest, jak powoli myślą ludzie wokół ciebie. Otrzymujesz <strong>+1 Korzyści</strong> do ataku fizycznego lub magicznym przeciwko wrogowi, który ma niższą inicjatywę od ciebie."
+            "description": "Czasami zadziwiające jest, jak powoli myślą ludzie wokół ciebie. Otrzymujesz <strong>+1 Korzyści</strong> do uderzenia fizycznego lub ataku zaklęciem przeciwko wrogowi, który ma niższą inicjatywę od ciebie."
         },
         "Intercept": {
             "name": "Przechwycenie",
@@ -1049,11 +1049,11 @@
         },
         "Iramancer": {
             "name": "Gniewomanta",
-            "description": "<p>Twoje wyczyny związane z magią są napędzane gniewem. Podczas @Condition[enraged] nadal możesz wydawać <strong>Punkty Skupienia</strong> i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym.</p>"
+            "description": "<p>Twoje wyczyny magiczne czerpią siłę z gniewu. Gdy jesteś w stanie @Condition[enraged], nadal możesz wykorzystać <strong>Skupienie</strong>, a wszystkie twoje ataki zaklęciami zadają 2 dodatkowe punkty obrażeń.</p>"
         },
         "Iron Resolve": {
             "name": "Żelazna determinacja",
-            "description": "<p>Twoja wytrzymałość fizyczna sprawia, że jesteś zbyt odporny, by potężny cios wywarł na tobie znaczący wpływ. Próg krytycznego trafienia dla <strong>ataków</strong> wymierzonych w ciebie wzrasta o +1, co sprawia, że trudniej cię trafić krytycznie.</p>"
+            "description": "<p>Twoja wytrzymałość fizyczna sprawia, że jesteś zbyt odporny, by potężny cios wywarł na tobie znaczący wpływ. Próg krytycznego trafienia dla <strong>uderzeń</strong> wymierzonych w ciebie wzrasta o +1, co sprawia, że trudniej cię trafić krytycznie.</p>"
         },
         "Irrepressible Spirit": {
             "name": "Nieposkromiony duch",
@@ -1069,7 +1069,7 @@
         },
         "Justiciar": {
             "name": "Justycjariusz",
-            "description": "<p>Jesteś narzędziem sprawiedliwości. Ataki krytyczne zadają również nadwyżkę obrażeń Morale przeciwnika.</p>"
+            "description": "<p>Jesteś narzędziem sprawiedliwości. Uderzenia krytyczne zadają również nadwyżkę obrażeń Morale przeciwnika.</p>"
         },
         "Kinesis Proficiency": {
             "name": "Biegłość kinetyki",
@@ -1100,7 +1100,7 @@
             "actions": {
                 "Leg Sweep": {
                     "name": "Podcięcie nóg",
-                    "description": "<p>Wykonujesz <strong>atak</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> bronią trzymaną w głównej ręce. Technika ta jest <strong>Trudna</strong> do wykonania i zadaje zmniejszone obrażenia, ale jeśli się powiedzie, sprawia, że cel zostaje @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Podcięcie nóg"
@@ -1131,7 +1131,7 @@
             "actions": {
                 "Lunge": {
                     "name": "Wykrok",
-                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>Uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
+                    "description": "<p>Rzucasz się do przodu zwinnie, wykonując atak z niespodziewaną szybkością, aby wykonać <strong>uderzenie</strong> przy użyciu broni, której siła ataku zależy od <strong>Zręczności</strong> przeciwko pojedynczemu celowi z zwiększonym zasięgiem <strong>+2 stopy</strong>.</p><p>Atak jest <strong>Trudny</strong>, ale nie zmieniasz swojej aktualnej pozycji, a atak ten nie powoduje Wycofania się.</p>"
                 }
             }
         },
@@ -1149,7 +1149,7 @@
             "actions": {
                 "Mark Prey": {
                     "name": "Naznaczenie celu",
-                    "description": "<p>Atakujesz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
+                    "description": "<p>Uderzasz specjalnym strzałem. Jeśli atak się powiedzie, cel staje się @Condition[exposed] na kolejne 3 tury.</p>",
                     "effects": [
                         {
                             "name": "Oznaczony"
@@ -1234,7 +1234,7 @@
             "actions": {
                 "Wild Strike": {
                     "name": "Dzikie uderzenie",
-                    "description": "<p>Natychmiast po wykonaniu podstawowego Uderzenia wykonujesz kolejne <strong>Uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
+                    "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia wykonujesz kolejne <strong>uderzenie</strong> o zmniejszonym koszcie przeciwko temu samemu celowi, używając innej broni <strong>Naturalnej</strong>, do której masz dostęp.</p>"
                 }
             }
         },
@@ -1304,7 +1304,7 @@
             "actions": {
                 "Penetrating Throw": {
                     "name": "Rzut penetrujący",
-                    "description": "<p>Wykonujesz atak bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                 }
             }
         },
@@ -1408,7 +1408,7 @@
             "actions": {
                 "Quick Draw": {
                     "name": "Szybkie naciągnięcie",
-                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                 }
             }
         },
@@ -1600,7 +1600,7 @@
             "actions": {
                 "Ruthless Momentum": {
                     "name": "Bezlitosny pęd",
-                    "condition": "Otrzymujesz przewagę nad przeciwnikiem dzięki atakowi wręcz.",
+                    "condition": "Atakiem wręcz obezwładniasz przeciwnika.",
                     "description": "<p>Po pokonaniu wroga natychmiast wykonujesz <strong>Bieg</strong> i <strong>uderzasz</strong> kolejnego przeciwnika, obok którego przechodzisz lub obok którego kończysz swój ruch.</p>"
                 }
             }
@@ -1639,7 +1639,7 @@
             "actions": {
                 "Second Wind": {
                     "name": "Drugie tchnienie",
-                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
@@ -1664,11 +1664,11 @@
         },
         "Shield Charge": {
             "name": "Szarża tarczą",
-            "description": "<p>Technika obronna, w której pędzisz do przodu, uderzając i odpychając przeciwników ze swojej drogi. Pędzisz do 20 stóp w linii prostej i wykonujesz <strong>Uderzenie</strong> tarczą w każdego kolejnego przeciwnika na swojej drodze.</p>",
+            "description": "<p>Technika obronna, w której pędzisz do przodu, uderzając i odpychając przeciwników ze swojej drogi. Pędzisz do 20 stóp w linii prostej i wykonujesz <strong>uderzenie</strong> tarczą w każdego kolejnego przeciwnika na swojej drodze.</p>",
             "actions": {
                 "Shield Charge": {
                     "name": "Szarża tarczą",
-                    "description": "<p>Pędzisz do przodu w linii prostej, przechodząc przez przestrzeń wszystkich napotkanych stworzeń i wykonując <strong>Uderzenie </strong>przeciwko każdemu kolejnemu przeciwnikowi. Każde stworzenie, które otrzymało <strong>Trafienie krytyczne</strong> w wyniku ataku, może zostać zepchnięte do wybranej przez ciebie sąsiedniej przestrzeni. Nie możesz zakończyć szarży w tej samej przestrzeni, co inne stworzenie.</p>"
+                    "description": "<p>Pędzisz do przodu w linii prostej, przechodząc przez przestrzeń wszystkich napotkanych stworzeń i wykonując <strong>uderzenie</strong> przeciwko każdemu kolejnemu przeciwnikowi. Każde stworzenie, które otrzymało <strong>Trafienie krytyczne</strong> w wyniku ataku, może zostać zepchnięte do wybranej przez ciebie sąsiedniej przestrzeni. Nie możesz zakończyć szarży w tej samej przestrzeni, co inne stworzenie.</p>"
                 }
             }
         },
@@ -1682,7 +1682,7 @@
             "actions": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia bronią główną, wykonujesz <strong>Uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
+                    "description": "<p>Po wykonaniu podstawowego uderzenia bronią główną, wykonujesz <strong>uderzenie</strong> tarczą, powodując stan @Condition[staggered] na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie tarczą"
@@ -1758,7 +1758,7 @@
         },
         "Spellblade": {
             "name": "Zaklęte ostrze",
-            "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+            "description": "<p>Jesteś tajemniczym wojownikiem, który potrafi połączyć uderzenia i zaklęcia, wykorzystując w walce zarówno techniki walki wręcz, jak i magiczne. Fizyczne uderzenia twojej broni częściowo zastępują gesty somatyczne tradycyjnej magii.</p><p>Kiedy dzierżysz broń <strong>do walki wręcz</strong> jako broń główną, zaklęcia rzucane za pomocą <strong>Gestu: Uderzenie</strong> korzystają z premii do obrażeń twojej broni.</p><p>Natychmiast po wykonaniu <strong>ataku</strong> bronią do walki wręcz możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Spellmute": {
             "name": "Wyciszenie czarów",
@@ -1805,7 +1805,7 @@
         },
         "Strike First": {
             "name": "Pierwszy cios",
-            "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego ataku fizycznego lub magicznym przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
+            "description": "Najpierw strzelaj, potem zadawaj pytania. Otrzymujesz <strong>+1 Korzyść</strong> do każdego uderzenia lub ataku zaklęciem przeciwko przeciwnikowi, którego inicjatywa jest niższa od twojej."
         },
         "Strong Grip": {
             "name": "Silny chwyt",
@@ -1836,7 +1836,7 @@
             "actions": {
                 "Sundering Strike": {
                     "name": "Rozbijające uderzenie",
-                    "description": "<p>Wykonywasz <strong>atak</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
+                    "description": "<p>Wykonywasz <strong>uderzenie</strong> bronią, której siła zależy od twojej Siły; jeśli atak się powiedzie, nałożysz na cel stan @Condition[exposed] na 3 rundy. Atak ten jest <strong>Trudny</strong> do wykonania i zadaje zmniejszone obrażenia.</p>",
                     "effects": [
                         {
                             "name": "Pęknięty pancerz"
@@ -1859,7 +1859,7 @@
             "actions": {
                 "Swipe": {
                     "name": "Zamach",
-                    "description": "<p>Wykonujesz <strong>Uderzenie</strong> przeciwko dwóm sąsiadującym wrogom, atakując ich obu jednym zamachem swojej wielkiej broni.</p>"
+                    "description": "<p>Wykonujesz <strong>uderzenie</strong> przeciwko dwóm sąsiadującym wrogom, atakując ich obu jednym zamachem swojej wielkiej broni.</p>"
                 }
             }
         },
@@ -1891,7 +1891,7 @@
             "actions": {
                 "Refocus": {
                     "name": "Ponowne skupienie",
-                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>Uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
+                    "description": "<p>Używasz wyposażonego Talizmanu, aby spróbować odzyskać trochę <strong>Skupienia</strong>. Wykonujesz <strong>Nieszkodliwe</strong> <strong>uderzenie</strong> przeciwko własnemu progowi <strong>Mobilizacji</strong>.</p><p>W przypadku sukcesu odzyskujesz <strong>+1 punkt Skupienia</strong>, jeśli używasz talizmanu jednoręcznego, i <strong>+2 punkty Skupienia</strong>, jeśli używasz talizmanu dwuręcznego. W przypadku krytycznego sukcesu ilość odzyskanego Skupienia wzrasta o dodatkowy +1 punkt.</p>"
                 }
             }
         },
@@ -1987,7 +1987,7 @@
             "actions": {
                 "Uppercut": {
                     "name": "Uderzenie z wybicia",
-                    "description": "<p>Po wykonaniu podstawowego Uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>Uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
+                    "description": "<p>Po wykonaniu podstawowego uderzenia, które nie zakończyło się krytycznym pudłem, ponownie <strong>uderzasz</strong> ten sam cel zamachem broni przy zmniejszonym koszcie <strong>Akcji</strong>.</p>"
                 }
             }
         },
