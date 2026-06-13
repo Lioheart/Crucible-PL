@@ -1664,7 +1664,7 @@
         },
         "Shield Charge": {
             "name": "Szarża tarczą",
-            "description": "<p>Technika obronna, w której pędzisz do przodu, uderzając i odpychając przeciwników ze swojej drogi. Pędzisz do 20 stóp w linii prostej i wykonujesz <strong>Uderzenie</strong> tarczą w każdego kolejnego przeciwnika na swojej drodze.</p>",
+            "description": "<p>Technika obronna, w której pędzisz do przodu, uderzając i odpychając przeciwników ze swojej drogi. Pędzisz do 20 stóp w linii prostej i wykonujesz <strong>uderzenie</strong> tarczą w każdego kolejnego przeciwnika na swojej drodze.</p>",
             "actions": {
                 "Shield Charge": {
                     "name": "Szarża tarczą",
