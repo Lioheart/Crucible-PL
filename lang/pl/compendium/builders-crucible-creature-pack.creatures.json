@@ -2794,7 +2794,7 @@
                     "actions": {
                         "Armor Crusher": {
                             "name": "Niszczyciel zbroi",
-                            "description": "<p>Wykonujesz nieuzbrojony <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                            "description": "<p>Wykonujesz nieuzbrojone <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                         }
                     }
                 },
@@ -2869,7 +2869,7 @@
             "actions": {
                 "Armor Crusher": {
                     "name": "Niszczyciel zbroi",
-                    "description": "<p>Wykonujesz nieuzbrojony <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Wykonujesz nieuzbrojone <strong>uderzenie</strong> na pobliskiego wroga. Jeśli uderzenie spowoduje <strong>Draśnięcie</strong>, zużywasz <strong>1 punkt Skupienia</strong>, o ile to możliwe, aby zadać dodatkowe obrażenia równe twojej <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
