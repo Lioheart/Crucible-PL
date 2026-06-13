@@ -21,6 +21,7 @@
         },
         "Agnath": {
             "name": "Agnath",
+            "biography": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>",
             "items": {
                 "Splint Mail": {
                     "name": "Napierśnik",
@@ -242,6 +243,7 @@
         },
         "Belladonna": {
             "name": "Belladonna",
+            "biography": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>",
             "items": {
                 "Dagger": {
                     "name": "Sztylet",
@@ -645,6 +647,7 @@
         },
         "Duurath": {
             "name": "Duurath",
+            "biography": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>",
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -901,6 +904,7 @@
         },
         "Eliorwen": {
             "name": "Eliorwen",
+            "biography": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>",
             "items": {
                 "Scimitar": {
                     "name": "Bułat",
@@ -1141,6 +1145,7 @@
         },
         "Fizzit": {
             "name": "Fizzit",
+            "biography": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>",
             "items": {
                 "Ring Mail": {
                     "name": "Kolczuga pierścieniowa",
@@ -1519,6 +1524,7 @@
         },
         "Kagura": {
             "name": "Kagura",
+            "biography": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>",
             "items": {
                 "Ice Staff": {
                     "name": "Kostur lodu",
@@ -2070,6 +2076,7 @@
         },
         "Ulfen": {
             "name": "Ulfen",
+            "biography": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>",
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -2349,6 +2356,7 @@
         },
         "Zarajah": {
             "name": "Zarajah",
+            "biography": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>",
             "items": {
                 "Flame Staff": {
                     "name": "Kostur ognia",
@@ -2457,7 +2465,7 @@
                 },
                 "Iramancer": {
                     "name": "Gniewomanta",
-                    "description": "<p>Twoje wyczyny związane z magią są napędzane gniewem. Podczas @Condition[enraged] nadal możesz wydawać <strong>Punkty Skupienia</strong> i zadajesz 2 dodatkowe punkty obrażeń wszystkim atakom magicznym.</p>"
+                    "description": "<p>Twoje wyczyny magiczne czerpią siłę z gniewu. Gdy jesteś w stanie @Condition[enraged], nadal możesz wykorzystać <strong>Skupienie</strong>, a wszystkie twoje ataki zaklęciami zadają 2 dodatkowe punkty obrażeń.</p>"
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -2500,6 +2508,10 @@
         }
     },
     "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        },
         "actions": {
             "path": "system.actions",
             "converter": "actions_converter"
@@ -2512,10 +2524,6 @@
             "path": "system.details.background",
             "converter": "nested_object_converter"
         },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "nested_object_converter"
-        },
         "archetype": {
             "path": "system.details.archetype",
             "converter": "nested_object_converter"
@@ -2524,37 +2532,6 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "items": {
-            "path": "items",
-            "converter": "document",
-            "documentType": "Item",
-            "cardinality": "many",
-            "mapping": {
-                "description": {
-                    "path": "system.description",
-                    "converter": "crucible_description_converter"
-                },
-                "actions": {
-                    "path": "system.actions",
-                    "converter": "actions_converter"
-                },
-                "effects": {
-                    "path": "effects",
-                    "converter": "document",
-                    "documentType": "ActiveEffect",
-                    "cardinality": "many",
-                    "mapping": {
-                        "changes": {
-                            "path": "system.changes",
-                            "converter": "structured",
-                            "cardinality": "many",
-                            "container": "array",
-                            "key": "key",
-                            "valuePath": "value"
-                        }
-                    }
-                }
-            }
-        }
+        "biography": "system.details.biography.public"
     }
 }
