@@ -1408,7 +1408,7 @@
             "actions": {
                 "Quick Draw": {
                     "name": "Szybkie naciągnięcie",
-                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>Uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
+                    "description": "<p>Pod presją możesz spróbować wystrzelić, choć z mniejszą dokładnością. Wykonujesz <strong>uderzenie</strong>, które jest <strong>Trudne</strong>, ale ma zmniejszony koszt Akcji.</p>"
                 }
             }
         },
