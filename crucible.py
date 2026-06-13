@@ -351,6 +351,22 @@ def extract_description_text(record: dict) -> str:
 
     return ""
 
+def extract_biography_public(record: dict) -> str:
+    if not isinstance(record, dict):
+        return ""
+
+    biography = record.get("system", {}).get("details", {}).get("biography")
+    if isinstance(biography, dict):
+        public_bio = biography.get("public")
+        if isinstance(public_bio, str) and public_bio.strip():
+            return public_bio.strip()
+
+    # Fallback dla sytuacji, gdy przekazany rekord jest już samym obiektem biography.
+    public_bio = record.get("public")
+    if isinstance(public_bio, str) and public_bio.strip():
+        return public_bio.strip()
+
+    return ""
 
 def ensure_nested_mapping(transifex_dict: dict, key: str, path: str, converter: str) -> None:
     transifex_dict.setdefault("mapping", {})
@@ -656,10 +672,10 @@ def populate_prototype_fields(
         all_records: list[dict] | None = None
 ) -> None:
     mapping_data = {
+        "items": ("items", "adventure_items_converter"),
         "actions": ("system.actions", "actions_converter"),
         "ancestry": ("system.details.ancestry", "nested_object_converter"),
         "background": ("system.details.background", "nested_object_converter"),
-        "biography": ("system.details.biography", "nested_object_converter"),
         "archetype": ("system.details.archetype", "nested_object_converter"),
         "taxonomy": ("system.details.taxonomy", "nested_object_converter"),
     }
@@ -672,6 +688,11 @@ def populate_prototype_fields(
             "path": path,
             "converter": conv
         }
+
+    biography_public = extract_biography_public(new_data)
+    if biography_public:
+        entry["biography"] = biography_public
+        transifex_dict["mapping"]["biography"] = "system.details.biography.public"
 
     # actions bezpośrednio na rekordzie
     add_actions_from_record(
@@ -697,7 +718,7 @@ def populate_prototype_fields(
     # ancestry/background/biography/archetype/taxonomy
     details = new_data.get("system", {}).get("details", {})
 
-    for field_name in ["ancestry", "background", "biography", "archetype", "taxonomy"]:
+    for field_name in ["ancestry", "background", "archetype", "taxonomy"]:
         source_value = details.get(field_name)
 
         record = None
@@ -777,10 +798,7 @@ def ensure_caption_actor_mapping(transifex_dict: dict) -> None:
                 "path": "system.details.taxonomy",
                 "converter": "embedded_object_with_actions_converter"
             },
-            "biography": {
-                "path": "system.details.biography",
-                "converter": "embedded_biography_converter"
-            }
+            "biography": "system.details.biography.public"
         }
     }
 
@@ -875,12 +893,9 @@ def populate_caption_actor(
             add_mapping=False
         )
 
-    biography = details.get("biography")
-    if isinstance(biography, dict):
-        actor_entry.setdefault("biography", {})
-        for key, value in biography.items():
-            if isinstance(value, str) and value.strip():
-                actor_entry["biography"][key] = value.strip()
+    biography_public = extract_biography_public(actor_data)
+    if biography_public:
+        actor_entry["biography"] = biography_public
 
 
 def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
@@ -898,10 +913,7 @@ def ensure_items_mapping_for_caption(transifex_dict: dict) -> None:
             "converter": "embedded_object_with_actions_converter"
         }
 
-    transifex_dict["mapping"]["biography"] = {
-        "path": "system.details.biography",
-        "converter": "embedded_biography_converter"
-    }
+    transifex_dict["mapping"]["biography"] = "system.details.biography.public"
 
     transifex_dict["mapping"]["tokenName"] = {
         "path": "prototypeToken.name",
