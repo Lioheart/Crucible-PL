@@ -1119,7 +1119,7 @@
             "actions": {
                 "Executioner's Strike": {
                     "name": "Atak egzekutora",
-                    "description": "<p>Wykonywasz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
+                    "description": "<p>Wykonujesz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                     "effects": [
                         {
                             "name": "Atak egzekutora"
@@ -2154,7 +2154,7 @@
                     "actions": {
                         "Executioner's Strike": {
                             "name": "Atak egzekutora",
-                            "description": "<p>Wykonywasz atak bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
+                            "description": "<p>Wykonujesz uderzenie bronią dwuręczną. Jeśli atak się powiedzie, a przeciwnik ma mniej niż połowę maksymalnego <strong>Zdrowia</strong>, atak jest <strong>Morderczy</strong>, a przeciwnik otrzymuje stan @Condition[bleeding] na 3 rundy, otrzymując co rundę dodatkowe obrażenia równe twojej wartości Siły.</p>",
                             "effects": [
                                 {
                                     "name": "Atak egzekutora"
