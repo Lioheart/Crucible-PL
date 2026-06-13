@@ -438,7 +438,7 @@
       "IncorrectTargets": "Możesz wyznaczyć maksymalnie {number} celów {type} dla {action}!",
       "InvalidTarget": "Musisz wyznaczyć co najmniej jeden cel {type} dla {action}!",
       "InvalidTargetsGeneric": "Nieprawidłowe cele dla tej akcji!",
-      "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym Ataku, który nie zakończył się krytyczną porażką.",
+      "LastCriticallyMissed": "Możesz wykonać {action} tylko po podstawowym uderzeniu, które nie zakończyło się krytyczną porażką.",
       "LastNotMeleeCrit": "Możesz wykonać {action} wyłącznie bezpośrednio po ataku wręcz, który zakończył się trafieniem krytycznym.",
       "MaximumRange": "Wybrany cel znajduje się dalej niż maksymalny zasięg {max} stóp.",
       "MinimumRange": "Wybrany cel znajduje się bliżej niż minimalny zasięg {min} stóp.",
