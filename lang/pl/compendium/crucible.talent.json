@@ -522,7 +522,7 @@
             "actions": {
                 "Dirty Tricks": {
                     "name": "Nieczyste zagrania",
-                    "description": "<p>Rzucasz odłamkami w oczy przeciwnika. Jeśli <strong>atak</strong> się powiedzie, przeciwnik zostaje @Condition[blinded] do końca swojej następnej <strong>tury</strong>.</p>",
+                    "description": "<p>Rzucasz odłamkami w oczy przeciwnika. Jeśli <strong>uderzenie</strong> się powiedzie, przeciwnik zostaje @Condition[blinded] do końca swojej następnej <strong>tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Nieczyste zagrania"
