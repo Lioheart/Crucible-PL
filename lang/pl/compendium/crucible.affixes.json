@@ -632,7 +632,7 @@
         },
         "Strike Spellcraft": {
             "name": "Czaroznastwo uderzenia",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Uderzenie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Uderzenie</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>uderzenie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Uderzenie</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
             "adjective": "Uderzenia"
         },
         "Surge Spellcraft": {
