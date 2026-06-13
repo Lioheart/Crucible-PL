@@ -723,7 +723,7 @@
             "actions": {
                 "Flying Kick": {
                     "name": "Kopnięcie w locie",
-                    "description": "<p><strong>Przesuń</strong> się do przodu o co najmniej 3 stopy, a maksymalnie o długość biegu, poruszając się po linii prostej, aby kopnąć wroga wzmocnionym <strong>Uderzeniem</strong>.</p>"
+                    "description": "<p><strong>Przesuń</strong> się do przodu o co najmniej 3 stopy, a maksymalnie o długość biegu, poruszając się po linii prostej, aby kopnąć wroga wzmocnionym <strong>uderzeniem</strong>.</p>"
                 }
             }
         },
