@@ -452,7 +452,7 @@
             "actions": {
                 "Repugnant Pustules": {
                     "name": "Odrażające czyraki",
-                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>Uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
                     "effects": [
                         {
                             "name": "Odrażające czyraki"
