@@ -1668,7 +1668,7 @@
             "actions": {
                 "Shield Charge": {
                     "name": "Szarża tarczą",
-                    "description": "<p>Pędzisz do przodu w linii prostej, przechodząc przez przestrzeń wszystkich napotkanych stworzeń i wykonując <strong>Uderzenie </strong>przeciwko każdemu kolejnemu przeciwnikowi. Każde stworzenie, które otrzymało <strong>Trafienie krytyczne</strong> w wyniku ataku, może zostać zepchnięte do wybranej przez ciebie sąsiedniej przestrzeni. Nie możesz zakończyć szarży w tej samej przestrzeni, co inne stworzenie.</p>"
+                    "description": "<p>Pędzisz do przodu w linii prostej, przechodząc przez przestrzeń wszystkich napotkanych stworzeń i wykonując <strong>uderzenie</strong> przeciwko każdemu kolejnemu przeciwnikowi. Każde stworzenie, które otrzymało <strong>Trafienie krytyczne</strong> w wyniku ataku, może zostać zepchnięte do wybranej przez ciebie sąsiedniej przestrzeni. Nie możesz zakończyć szarży w tej samej przestrzeni, co inne stworzenie.</p>"
                 }
             }
         },
