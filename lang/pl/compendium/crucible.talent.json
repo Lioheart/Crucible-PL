@@ -138,7 +138,7 @@
         },
         "Armored Shell": {
             "name": "Pancerna powłoka",
-            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Blokowania</strong> wzrasta o odpowiednią wartość.</p>"
+            "description": "<p>Jesteś ekspertem w używaniu swojego pancerza w połączeniu z tarczą, aby stworzyć powłokę ochronną.</p><p>Kiedy masz stan @Condition[guarded] i wyposażony jesteś w <strong>Ciężką tarczę</strong>, twoja podstawowa obrona <strong>Pancerza</strong> zostaje zmniejszona o połowę, ale twoja obrona <strong>Bloku</strong> wzrasta odpowiednio o tę samą wartość.</p>"
         },
         "Artful Parry": {
             "name": "Zręczna obrona",
@@ -808,7 +808,7 @@
         },
         "Gesture: Ward": {
             "name": "Gest: Glif",
-            "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest ochrony skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Osłony zastępuje poprzednią Osłonę. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
+            "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
         },
         "Gladiator": {
             "name": "Gladiator",
@@ -843,7 +843,7 @@
             "actions": {
                 "Headbutt": {
                     "name": "Uderzenie głową",
-                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 korzyść</strong> do tego ataku. </p><p>Atak jest <strong>trudny</strong> i zadaje jedynie obrażenia ze stanem @Condition[weakened], ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
+                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 Korzyść</strong> do tego ataku.</p><p>Ten atak jest <strong>Trudny</strong> i zadaje jedynie osłabione obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie głową"
@@ -1639,7 +1639,7 @@
             "actions": {
                 "Second Wind": {
                     "name": "Drugie tchnienie",
-                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Wytrzymałości</strong> w postaci punktów <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Skupiasz swoją energię i odzyskujesz punkty <strong>Zdrowia</strong> o równowartości punktów <strong>Wytrzymałości</strong>.</p>"
                 }
             }
         },
