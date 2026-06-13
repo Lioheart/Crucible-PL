@@ -209,12 +209,12 @@
         },
         "Dragon Bane": {
             "name": "Zguba smoków",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Smok</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Smok</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby smoków"
         },
         "Earth Elemental Bane": {
             "name": "Zguba żywiołaków ziemi",
-            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ziemi</strong>. Podczas wykonywania <strong>Uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
+            "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak ziemi</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby bestii"
         },
         "Earth Potency": {
