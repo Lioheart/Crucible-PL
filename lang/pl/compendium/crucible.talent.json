@@ -977,7 +977,7 @@
         },
         "Intellectual Superiority": {
             "name": "Przewaga intelektualna",
-            "description": "Czasami zadziwiające jest, jak powoli myślą ludzie wokół ciebie. Otrzymujesz <strong>+1 Korzyści</strong> do ataku fizycznego lub magicznym przeciwko wrogowi, który ma niższą inicjatywę od ciebie."
+            "description": "Czasami zadziwiające jest, jak powoli myślą ludzie wokół ciebie. Otrzymujesz <strong>+1 Korzyści</strong> do uderzenia fizycznego lub ataku zaklęciem przeciwko wrogowi, który ma niższą inicjatywę od ciebie."
         },
         "Intercept": {
             "name": "Przechwycenie",
