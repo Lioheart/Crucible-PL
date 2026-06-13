@@ -116,7 +116,7 @@
         },
         "Arcane Archer": {
             "name": "Tajemny łucznik",
-            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>Uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
+            "description": "<p>Twoje umiejętności łucznicze mogą wpływać na twoją magię, częściowo zastępując gesty somatyczne tradycyjnego rzucania zaklęć.</p><p>Kiedy używasz broni <strong>Miotanej</strong> jako broni głównej, nie musisz mieć wolnej ręki, żeby rzucać zaklęcia za pomocą gestu <strong>Grot</strong>, a zasięg tych zaklęć jest taki sam jak zasięg twojej broni.</p><p>Natychmiast po wykonaniu <strong>uderzenia</strong> bronią miotającą możesz rzucić zaklęcie, którego koszt <strong>Akcji</strong> zostanie zmniejszony o 1.</p>"
         },
         "Armor Crusher": {
             "name": "Niszczyciel zbroi",
