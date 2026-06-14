@@ -455,24 +455,64 @@ def is_item_like_record(record: dict) -> bool:
 
     return isinstance(record.get("system"), dict)
 
+def build_item_reference_candidates(all_records: list[dict]) -> dict[str, list[dict]]:
+    """
+    Buduje pomocniczy indeks wyłącznie dla referencji Actor.items.
+
+    Nie zastępuje globalnego id_index. Jeżeli w packu kilka dokumentów Item ma
+    ten sam _id, zachowujemy wszystkie w kolejności z pliku. Dzięki temu
+    kolejne użycia tego samego klucza przez aktorów mogą dostać kolejne rekordy:
+    1. aktor -> 1. rekord Item o tym _id,
+    2. aktor -> 2. rekord Item o tym _id, itd.
+    """
+    candidates: dict[str, list[dict]] = {}
+
+    for record in all_records:
+        if not isinstance(record, dict):
+            continue
+
+        record_id = record.get("_id")
+        if not isinstance(record_id, str) or not record_id:
+            continue
+
+        if not is_item_like_record(record):
+            continue
+
+        candidates.setdefault(record_id, []).append(record)
+
+    return candidates
 
 def resolve_item_reference(
         item_ref,
         all_records: list[dict],
-        id_index: dict
+        id_index: dict,
+        item_reference_candidates: dict[str, list[dict]] | None = None,
+        item_reference_cursor: dict[str, int] | None = None
 ) -> dict | None:
-    """
-    Rozwiązuje referencję do Item bez przebudowy globalnego id_index.
-
-    Niektóre packi zawierają Item i jego ActiveEffect z identycznym _id.
-    Dla aktorów trzeba wybrać dokument Item, a nie ostatni rekord zapisany
-    pod tym identyfikatorem w zwykłym słowniku.
-    """
     if isinstance(item_ref, dict):
         return item_ref if is_item_like_record(item_ref) else None
 
     if not isinstance(item_ref, str) or not item_ref:
         return None
+
+    candidates = []
+    if isinstance(item_reference_candidates, dict):
+        candidates = item_reference_candidates.get(item_ref, [])
+
+    if candidates:
+        if len(candidates) == 1:
+            return candidates[0]
+
+        if item_reference_cursor is None:
+            item_reference_cursor = {}
+
+        cursor = item_reference_cursor.get(item_ref, 0)
+        item_reference_cursor[item_ref] = cursor + 1
+
+        if cursor < len(candidates):
+            return candidates[cursor]
+
+        return candidates[-1]
 
     for candidate in all_records:
         if (
@@ -492,7 +532,9 @@ def resolve_item_reference(
 def resolve_item_reference_list(
         ref_list,
         all_records: list[dict],
-        id_index: dict
+        id_index: dict,
+        item_reference_candidates: dict[str, list[dict]] | None = None,
+        item_reference_cursor: dict[str, int] | None = None
 ) -> list[dict]:
     resolved = []
 
@@ -504,7 +546,13 @@ def resolve_item_reference_list(
         references = []
 
     for item_ref in references:
-        record = resolve_item_reference(item_ref, all_records, id_index)
+        record = resolve_item_reference(
+            item_ref=item_ref,
+            all_records=all_records,
+            id_index=id_index,
+            item_reference_candidates=item_reference_candidates,
+            item_reference_cursor=item_reference_cursor
+        )
         if record:
             resolved.append(record)
 
@@ -545,7 +593,9 @@ def populate_reference_bucket(
         source_value,
         id_index: dict,
         transifex_dict: dict,
-        all_records: list[dict] | None = None
+        all_records: list[dict] | None = None,
+        item_reference_candidates: dict[str, list[dict]] | None = None,
+        item_reference_cursor: dict[str, int] | None = None
 ) -> None:
     if all_records is None:
         all_records = []
@@ -554,7 +604,9 @@ def populate_reference_bucket(
         resolved_records = resolve_item_reference_list(
             ref_list=source_value,
             all_records=all_records,
-            id_index=id_index
+            id_index=id_index,
+            item_reference_candidates=item_reference_candidates,
+            item_reference_cursor=item_reference_cursor
         )
     else:
         resolved_records = resolve_reference_list(source_value, id_index)
@@ -669,7 +721,9 @@ def populate_prototype_fields(
         id_index: dict,
         transifex_dict: dict,
         items_source=None,
-        all_records: list[dict] | None = None
+        all_records: list[dict] | None = None,
+        item_reference_candidates: dict[str, list[dict]] | None = None,
+        item_reference_cursor: dict[str, int] | None = None
 ) -> None:
     mapping_data = {
         "items": ("items", "adventure_items_converter"),
@@ -712,7 +766,9 @@ def populate_prototype_fields(
         source_value=items_source,
         id_index=id_index,
         transifex_dict=transifex_dict,
-        all_records=all_records
+        all_records=all_records,
+        item_reference_candidates=item_reference_candidates,
+        item_reference_cursor=item_reference_cursor
     )
 
     # ancestry/background/biography/archetype/taxonomy
@@ -1619,6 +1675,9 @@ def process_files(
             id_index.update(folder_id_index)
             id_index.update(build_id_index(data))
 
+            item_reference_candidates = build_item_reference_candidates(data)
+            item_reference_cursor: dict[str, int] = {}
+
             try:
                 compendium = data[0]
             except (KeyError, AttributeError, IndexError, TypeError):
@@ -1791,7 +1850,9 @@ def process_files(
                         new_data=new_data,
                         id_index=id_index,
                         transifex_dict=transifex_dict,
-                        all_records=data
+                        all_records=data,
+                        item_reference_candidates=item_reference_candidates,
+                        item_reference_cursor=item_reference_cursor
                     )
 
             transifex_dict = remove_empty_keys(transifex_dict)
