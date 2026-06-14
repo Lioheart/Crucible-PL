@@ -2305,13 +2305,13 @@
       "Magic": "Magia",
       "Melee": "Walka wręcz",
       "Move": "Ruch",
-      "Origin": "Geneza",
+      "Origin": "Źródło",
       "Ranged": "Dystansowy",
       "Signature": "Popisowe",
       "Skill": "Umiejętność",
       "Spell": "Czaroznastwo",
-      "Training": "Wytrenowanie",
-      "Utility": "Użytkowe"
+      "Training": "Szkolenie",
+      "Utility": "Narzędzie"
     },
     "RANKS": {
       "Expert": "Ekspercki",
