@@ -18,6 +18,24 @@ Hooks.once("babele.init", (babele) => {
     requiresReload: false,
   });
 
+  game.settings.register("lang-pl-crucible", "heroism-reroll-enabled", {
+    name: "Włącz przerzuty za Punkty Heroizmu (Zasada domowa)",
+    hint: "Dodaje do menu kontekstowego czatu opcję przerzutu wyniku za 1 Punkt Heroizmu. Wyłączenie tej opcji ukrywa przerzut i blokuje jego wykonanie. Dostępne tylko dla MG.",
+    scope: "world",
+    type: Boolean,
+    default: true,
+    config: true,
+    restricted: true,
+    requiresReload: false,
+    onChange: value => {
+      ui.notifications?.info(
+        value
+          ? "Przerzuty za Punkty Heroizmu zostały włączone."
+          : "Przerzuty za Punkty Heroizmu zostały wyłączone."
+      );
+    }
+  });
+
   const asArray = (collection) => {
     if (!collection) return [];
     if (Array.isArray(collection)) return collection;

@@ -10,7 +10,8 @@
   },
   "esmodules": [
     "babele-register.js",
-    "src/original-name.js"
+    "src/original-name.js",
+    "src/heroism-reroll.mjs"
   ],
   "styles": [
     "styles/lang-pl-crucible.css",
