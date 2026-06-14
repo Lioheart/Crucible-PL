@@ -15,6 +15,7 @@
         "Creature Bane": "Tworzące Zgubę",
         "Gestures": "Gesty",
         "Resources": "Zasoby",
+        "Inflections": "Fleksje",
         "Senses": "Zmysły",
         "Damage": "Obrażenia",
         "Resistances": "Odporności"
@@ -116,6 +117,11 @@
             "description": "<p>Zwiększa odporność na <strong>Zimno</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed mrozem"
         },
+        "Compose Spellcraft": {
+            "name": "Czaroznastwo kompozycji",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Kompozycja</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Kompozycji</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Kompozycja"
+        },
         "Cone Spellcraft": {
             "name": "Czaroznastwo stożka",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Stożek</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Stożek</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
@@ -186,6 +192,11 @@
             "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Determinacji"
         },
+        "Determine Spellcraft": {
+            "name": "Czaroznastwo determinacji",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Determinacja</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Determinacji</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Determinacja"
+        },
         "Diplomacy": {
             "name": "Dyplomacja",
             "description": "<p>Zwiększa <strong>premię do Zaklinania</strong> przy testach umiejętności <strong>Dyplomacji</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
@@ -242,10 +253,20 @@
             "description": "<p>Zwiększa odporność na <strong>Elektryczność</strong> o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed elektrycznością"
         },
+        "Elude Spellcraft": {
+            "name": "Czaroznastwo unikania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Unikanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Unikania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Unikanie"
+        },
         "Evasion": {
             "name": "Unikania",
             "description": "<p>Zwiększa <strong>Uniki</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
             "adjective": "Unikania"
+        },
+        "Extend Spellcraft": {
+            "name": "Czaroznastwo rozszerzania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Rozszerzanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Rozszerzania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Rozszerzanie"
         },
         "Fan Spellcraft": {
             "name": "Czaroznastwo wachlarza",
@@ -394,16 +415,6 @@
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Życia</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Życia</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>",
             "adjective": "Runy życia"
         },
-        "Lightning Potency": {
-            "name": "Mocy błyskawic",
-            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Błyskawic</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
-            "adjective": "Mocy błyskawic"
-        },
-        "Lightning Spellcraft": {
-            "name": "Czaroznastwo błyskawic",
-            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Błyskawic</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Błyskawic</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>",
-            "adjective": "Runy błyskawic"
-        },
         "Luminary": {
             "name": "Świetlistości",
             "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I. Tylko jeden afiks może zapewniać tę korzyść.</p>",
@@ -439,6 +450,11 @@
             "name": "Zguba potworności",
             "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Potworność</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby potworności"
+        },
+        "Negate Spellcraft": {
+            "name": "Czaroznastwo negacji",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Negacja</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Negacji</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Negacja"
         },
         "Nimbleness": {
             "name": "Zwinności",
@@ -525,10 +541,25 @@
             "description": "<p>Zwiększa odporność na <strong>Psychiczne</strong> obrażenia o 3 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Odporności przed obr. psychicznymi"
         },
+        "Pull Spellcraft": {
+            "name": "Czaroznastwo przyciągania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Przyciąganie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Przyciągania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Przyciąganie"
+        },
         "Pulse Spellcraft": {
             "name": "Czaroznastwo impulsu",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Impuls</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Impuls</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
             "adjective": "Impulsu"
+        },
+        "Push Spellcraft": {
+            "name": "Czaroznastwo pchnięcia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Pchnięcie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Pchnięcia</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Pchnięcie"
+        },
+        "Quicken Spellcraft": {
+            "name": "Czaroznastwo przyspieszenia",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Przyspieszanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Przyspieszania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Przyspieszanie"
         },
         "Radiant Conversion": {
             "name": "Konwersja świetlistych obrażeń",
@@ -560,6 +591,11 @@
             "description": "<p>Zwiększa efektywny zasięg tej broni. Broń do walki wręcz otrzymuje <strong>+1 do zasięgu na Stopień</strong>. Broń dystansowa otrzymuje <strong>+10 do zasięgu na Stopień</strong>.</p>",
             "adjective": "Zasięgu"
         },
+        "React Spellcraft": {
+            "name": "Czaroznastwo reagowania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Reagowanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Reagowania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Reagowanie"
+        },
         "Reinforcement": {
             "name": "Wzmocnienia",
             "description": "<p>Zwiększa <strong>Pancerz</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
@@ -569,6 +605,11 @@
             "name": "Niezawodności",
             "description": "<p>Obniża <strong>Próg Krytycznej Porażki</strong> dla rzutów ataku wykonywanych tą bronią. Próg zmniejsza się o <strong>1 na Stopień</strong>.</p>",
             "adjective": "Niezawodności"
+        },
+        "Reshape Spellcraft": {
+            "name": "Czaroznastwo przekształcania",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Przekształcanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Przekształcania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
+            "adjective": "Przekształcanie"
         },
         "Returning": {
             "name": "Powracania",
@@ -630,6 +671,16 @@
             "description": "<p>Ta broń jest szczególnie skuteczna przeciwko istotom typu <strong>Żywiołak burzy</strong>. Podczas wykonywania <strong>uderzenia</strong> przeciwko celowi tego typu napastnik otrzymuje dodatkowe <strong>Korzyści</strong> równe <strong>Stopniowi</strong> tego przyrostka I.</p>",
             "adjective": "Zguby burzy"
         },
+        "Storm Potency": {
+            "name": "Mocy burzy",
+            "description": "<p>Zwiększa <strong>Premię Zaklinania</strong> dla zaklęć wykorzystujących runę <strong>Burzy</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
+            "adjective": "Mocy burzy"
+        },
+        "Storm Spellcraft": {
+            "name": "Czaroznastwo burzy",
+            "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Burza</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość runy <strong>Burzy</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej runy poprzez talent.</p>",
+            "adjective": "Runy burzy"
+        },
         "Strike Spellcraft": {
             "name": "Czaroznastwo uderzenia",
             "description": "<p>Ten przedmiot jest nasycony esencją <strong>Uderzenia</strong> czaroznawstwa. Podczas noszenia posiadacz instynktownie zyskuje znajomość gestu <strong>Uderzenie</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tego gestu poprzez talent.</p>",
@@ -654,6 +705,11 @@
             "name": "Niewzruszenia",
             "description": "<p>Uderzenia przeciwko twojemu <strong>Zdrowiu</strong> wymagają większego nadmiaru, aby uzyskać <strong>Trafienie Krytyczne</strong>. Próg krytyczny jest zwiększany o 1 za każdy <strong>Stopień</strong> tego przyrostka I.</p>",
             "adjective": "Niewzruszenia"
+        },
+        "Vicious": {
+            "name": "Okrucieństwa",
+            "description": "<p>Uderzenie, które zadaje <strong>trafienie krytyczne</strong> tą bronią, brutalnie pogłębia ranę.</p><ul><li><p>Broń zadająca obrażenia <strong>kłute</strong> lub <strong>cięte</strong> powoduje, że cel otrzymuje stan @Condition[bleeding].</p></li><li><p>Broń zadająca <strong>obrażenia obuchowe</strong> powoduje, że cel otrzymuje stan @Condition[staggered].</p></li></ul>",
+            "adjective": "Okrucieństwa"
         },
         "Void Conversion": {
             "name": "Konwersja pustki",
