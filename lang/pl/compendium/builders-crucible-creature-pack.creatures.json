@@ -2916,11 +2916,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Przerażające oblicze",
-                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+                    "description": "<p>Banshee wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Przerażające oblicze",
-                            "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę oprócz wszelkich zadawanych obrażeń.</p>",
+                            "description": "<p>Banshee wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę oprócz wszelkich zadawanych obrażeń.</p>",
                             "effects": [
                                 {
                                     "name": "Przerażające oblicze"
@@ -3618,7 +3618,7 @@
                 },
                 "Wailing Moan": {
                     "name": "Płaczliwy jęk",
-                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+                    "description": "<p>Banshee wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Płaczliwy jęk",
@@ -12531,7 +12531,7 @@
             "items": {
                 "Wailing Moan": {
                     "name": "Płaczliwy jęk",
-                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty w promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Płaczliwy jęk",
