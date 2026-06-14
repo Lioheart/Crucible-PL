@@ -1614,7 +1614,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Dagger": {
                     "name": "Sztylet",
