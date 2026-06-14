@@ -41,6 +41,10 @@
             "name": "Smoczydło",
             "description": "<p>Wężowe stworzenia, które są mniejszymi krewnymi smoków. Smoczydła zazwyczaj żyją i polują w stadach, w przeciwieństwie do bardziej samotniczych pełnoprawnych smoków. Smoczydła występują w różnych odmianach, od młodszych i mniejszych, często nazywanych \"smoczątkami\", po ogromne okazy, czasami określane jako \"ultra smoki\"</p><p>Zaobserwowane różnice wielkości obejmują:</p><ul><li><p><strong>Smoczątko</strong>: Rozmiar 3, Bieg 10</p></li><li><p><strong>Smoczydło</strong>: Rozmiar 6, Bieg 16</p></li><li><p><strong>Ultra Smok</strong>: Rozmiar 9, Bieg 12</p></li></ul><p>Różne typy smoczydł charakteryzują się różnym zakresem odporności na obrażenia i podatności na uszkodzenia w zależności od podgatunku.</p>"
         },
+        "Dust Devil": {
+            "name": "Wir piaskowy",
+            "description": "<p>Żywiołowe ucieleśnienia wirującego pyłu i piasku. Najmniejszy z nich, Cząstka pyłu, należy do najsłabszych ze wszystkich żywiołów; większe osobniki wyrastają na diabły, trąby powietrzne i ryczące burze piaskowe.</p>"
+        },
         "Earth Elemental": {
             "name": "Żywiołak ziemi",
             "description": "<p>Istoty żywiołowe odpowiadające żywiołowi ziemi.</p>"
@@ -73,6 +77,10 @@
             "name": "Hiena",
             "description": "Ssaki z rodziny hien. Hieny są mięsożernymi drapieżnikami polującymi w stadach, wyposażonymi w potężne szyje i szczęki."
         },
+        "Mud Elemental": {
+            "name": "Cząstka żywiołu",
+            "description": "<p>Bezkształtne żywiołaki z żrącego błota i szlamu: miękkie, pozbawione rozumu i niszczące. Pożerają i rozpuszczają to, czego nie są w stanie zmiażdżyć.</p>"
+        },
         "Ogre": {
             "name": "Ogr",
             "description": "<p>Potężni olbrzymi, znani ze swojej brutalnej siły i bezpośredniego podejścia do rozwiązywania problemów.</p>"
@@ -89,9 +97,13 @@
             "name": "Szlam",
             "description": "<p>Stworzenia zbudowane głównie z galaretowatej materii. Są zazwyczaj powolne, niewielkich rozmiarów i nie potrafią rzucać zaklęć ani mówić. Odnotowano jednak pewne wyjątki – istnieją odmiany śluzowców, które są duże, szybkie lub potrafią się komunikować.</p>"
         },
+        "Stone Elemental": {
+            "name": "Żywiołak kamienia",
+            "description": "<p>Potężne żywiołaki z litej, żywej skały: ociężałe, niewzruszone i niezniszczalne. Przez swoją ogromną masę przekazują surową potęgę ziemi.</p>"
+        },
         "Storm Elemental": {
             "name": "Żywiołak burzy",
-            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi błyskawicy.</p>"
+            "description": "<p>Istoty żywiołowe odpowiadające żywiołowi burzy.</p>"
         },
         "War Machine": {
             "name": "Maszyna wojenna",
