@@ -2420,6 +2420,68 @@
         }
     },
     "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": {
+                    "path": "system.description",
+                    "converter": "structured",
+                    "cardinality": "one",
+                    "mapping": {
+                        "public": "public",
+                        "private": "private"
+                    }
+                },
+                "actions": {
+                    "path": "system.actions",
+                    "converter": "actions_converter"
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "document",
+                    "documentType": "ActiveEffect",
+                    "cardinality": "many",
+                    "mapping": {
+                        "changes": {
+                            "path": "system.changes",
+                            "converter": "structured",
+                            "cardinality": "many",
+                            "container": "array",
+                            "key": "key",
+                            "valuePath": "value"
+                        }
+                    }
+                }
+            }
+        },
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "embedded_object_with_actions_converter"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "embedded_object_with_actions_converter"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "embedded_object_with_actions_converter"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "embedded_object_with_actions_converter"
+        },
+        "biography": "system.details.biography.public",
+        "tokenName": {
+            "path": "prototypeToken.name",
+            "converter": "nested_object_converter"
+        },
         "actors": {
             "path": "actors",
             "converter": "document",
@@ -2438,7 +2500,12 @@
                     "mapping": {
                         "description": {
                             "path": "system.description",
-                            "converter": "crucible_description_converter"
+                            "converter": "structured",
+                            "cardinality": "one",
+                            "mapping": {
+                                "public": "public",
+                                "private": "private"
+                            }
                         },
                         "actions": {
                             "path": "system.actions",
