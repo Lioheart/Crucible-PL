@@ -31,7 +31,7 @@
                 },
                 "Cadence": {
                     "name": "Kadencja",
-                    "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
+                    "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
@@ -43,7 +43,7 @@
                 },
                 "Strong Grip": {
                     "name": "Silny chwyt",
-                    "description": "Twoje opanowanie broni jest pewne i nieugięte. Możesz wykonywać czynności wymagające wolnej ręki, nawet gdy dzierżysz broń dwuręczną. Próby Rozbrojenia ciebie są wykonywane z modyfikatorem +2 Zguby."
+                    "description": "<p>Twoja pewność w posługiwaniu się bronią jest niezachwiana. Korzystając z broni dwuręcznej, której siła ataku zależy od Siły, możesz rzucać zaklęcia wymagające użycia obu rąk, a próby rozbrojenia cię otrzymują modyfikator +2 do zguby. </p><p>Ponadto możesz dzierżyć ciężką broń jednoręczną w drugiej ręce.</p>"
                 },
                 "Gesture: Strike": {
                     "name": "Gest: Uderzenie",
@@ -136,21 +136,11 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>3 rundy</strong> i zadaje obrażenia równe połowie Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
                     "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
-                },
-                "Rune: Lightning": {
-                    "name": "Runa: Błyskawica",
-                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Błyskawicy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
-                    "actions": {
-                        "Energize": {
-                            "name": "Energetyzacja",
-                            "description": "<p>Twoja znajomość Runy Błyskawicy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
-                        }
-                    }
                 },
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
@@ -159,6 +149,16 @@
                         "Enkindle": {
                             "name": "Rozpalanie",
                             "description": "<p>Twoja znajomość Runy Płomienia pozwala ci manipulować ogniem i energią cieplną w kreatywny sposób, wywołując jeden z następujących efektów:</p><ul><li><p>Wywołaj wybuch elementarnego płomienia w kuli o średnicy jednego cala, który może zapalić świecę, pochodnię lub inne łatwopalne materiały.</p></li><li><p>Nakładanie na swoje ciało chwilowej osłony termicznej, która zapewnia odporność na obrażenia od ognia podczas natychmiastowej kolejnej akcji, która kosztuje <strong>1 Akcję</strong> lub mniej.</p></li><li><p>Kontroluj ruch płomieni na niewielkim obszarze, powodując ich migotanie, tańczenie lub przemieszczanie się w ożywionym spektaklu światła i cienia.</p></li></ul><p>Rozpalanie może wpływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, których skuteczność decyduje Mistrz Gry.</p>"
+                        }
+                    }
+                },
+                "Rune: Storm": {
+                    "name": "Runa: Burza",
+                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Burzy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
+                    "actions": {
+                        "Energize": {
+                            "name": "Energetyzacja",
+                            "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
                         }
                     }
                 },
@@ -459,16 +459,6 @@
                     "name": "Nowicjusz świadomości",
                     "description": "<p>Zostałeś przeszkolony w zakresie podstaw świadomości sytuacyjnej i potrafisz dostrzegać ważne szczegóły dotyczące swojego otoczenia. Otrzymujesz rangę <strong>Nowicjusza</strong> w umiejętności <strong>Świadomość</strong> i nie jesteś już uważany za osobę <strong>Niewyszkoloną</strong> w tej umiejętności.</p><p>Wiesz, że po wejściu do pomieszczenia należy sprawdzić wyjścia oraz szukać ukrytej broni, pułapek i innych zagrożeń. Wiesz, jak rozpoznać, że ktoś cię śledzi, i jak przeszukiwać typowe kryjówki.</p>"
                 },
-                "Dual Wield": {
-                    "name": "Walka dwoma broniami",
-                    "description": "<p>Jesteś biegły w walce dwoma broniami jednocześnie. Potrafisz łączyć ataki, aby uderzać szybciej niż byłoby to możliwe przy użyciu jednej broni.</p>",
-                    "actions": {
-                        "Offhand Strike": {
-                            "name": "Uderzenie z drugiej ręki",
-                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
-                        }
-                    }
-                },
                 "Backstab": {
                     "name": "Cios w plecy",
                     "description": "<p>Skupiasz swoją przebiegłość na wykorzystaniu słabych punktów oskrzydlonego celu. Wykorzystujesz okazję i atakujesz z zabójczą skutecznością.</p>",
@@ -477,6 +467,16 @@
                             "name": "Cios w plecy",
                             "condition": "Atakujesz cel ze stanem Oskrzydlenie.",
                             "description": "<p><strong>Uderzasz</strong> bronią w cel ze stanem @Condition[flanked], zadając <strong>Mordercze</strong> obrażenia.</p>"
+                        }
+                    }
+                },
+                "Dual Wield": {
+                    "name": "Walka dwoma broniami",
+                    "description": "<p>Jesteś biegły w walce dwoma broniami jednocześnie. Potrafisz łączyć ataki, aby uderzać szybciej niż byłoby to możliwe przy użyciu jednej broni.</p>",
+                    "actions": {
+                        "Offhand Strike": {
+                            "name": "Uderzenie z drugiej ręki",
+                            "description": "<p>Natychmiast po wykonaniu podstawowego uderzenia bronią główną, wykonujesz dodatkowe <strong>uderzenie</strong> bronią z <strong>drugiej ręki</strong>, którego koszt jest zmniejszony.</p>"
                         }
                     }
                 }
@@ -519,16 +519,6 @@
         },
         "Bloodletter": {
             "name": "Krwawiciel"
-        },
-        "Body Block": {
-            "name": "Blok ciałem",
-            "actions": {
-                "Body Block": {
-                    "name": "Blok ciałem",
-                    "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
-                    "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
-                }
-            }
         },
         "Bulwark": {
             "name": "Bastion"
@@ -679,17 +669,6 @@
                     "name": "Gest: Glif",
                     "description": "<p>Przekształcasz tajemniczą moc runy w barierę ochronną, która chroni cię przed obrażeniami.</p><p>Gest Glif skaluje się przy użyciu <strong>Wytrzymałości</strong> i zapewnia <strong>+6 do odporności</strong> na rodzaj obrażeń runy użytej w zaklęciu. Odporność ta trwa przez <strong>1 rundę</strong> i możesz mieć tylko jedną ochronę naraz. Rzucenie innego zaklęcia przy użyciu gestu Glifu zastępuje poprzedni Glif. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>2 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
                 },
-                "Body Block": {
-                    "name": "Blok ciałem",
-                    "description": "Pochylasz się, aby wykonać atak, który w innym przypadku zostałby zablokowany przez twój pancerz, zamieniając jego wynik na Blok.",
-                    "actions": {
-                        "Body Block": {
-                            "name": "Blok ciałem",
-                            "condition": "Bronisz się przed atakiem wręcz za pomocą swojego Pancerza lub jako Draśnięcie.",
-                            "description": "<p>Atak, który w innym przypadku zostałby zablokowany przez twój Pancerz lub spowodowałby Draśnięcie, zostaje przekształcony w Blok i nie zadaje żadnych obrażeń.</p>"
-                        }
-                    }
-                },
                 "Counter Strike": {
                     "name": "Kontratak",
                     "description": "<p>Jesteś wyszkolony w przechodzeniu od obrony tarczą do szybkiego kontrataku.</p>",
@@ -711,21 +690,6 @@
                             "effects": [
                                 {
                                     "name": "Potężna obecność"
-                                }
-                            ]
-                        }
-                    }
-                },
-                "Rallying Cry": {
-                    "name": "Okrzyk bojowy",
-                    "description": "Jesteś przywódcą na polu bitwy, który swoją obecnością i głosem wzmacnia determinację sojuszników.",
-                    "actions": {
-                        "Rallying Cry": {
-                            "name": "Okrzyk bojowy",
-                            "description": "<p>Wydajesz odważny ryk, który inspiruje sojuszników w promieniu 12 stóp od ciebie, aby pozostali nieugięci w obliczu niebezpieczeństwa. Wykonujesz test umiejętności <strong>Zastraszanie</strong> przeciwko progowi Obłędu sojuszników. Jeśli test się powiedzie, sojusznicy, których to dotyczy, zyskują @Condition[resolute] na jedną rundę.</p>",
-                            "effects": [
-                                {
-                                    "name": "Okrzyk bojowy"
                                 }
                             ]
                         }
@@ -875,6 +839,25 @@
                     "name": "Ciężka kusza",
                     "description": {
                         "public": "<p>Potężna kusza o stalowych ramionach, wymagająca użycia korby lub dźwigni do naciągnięcia cięciwy, wystrzeliwuje niszczycielskie bełty, które są w stanie przebić zbroję lub przygwoździć wrogów do ścian.</p>"
+                    }
+                },
+                "Mental Fortress": {
+                    "name": "Twierdza umysłu",
+                    "description": "<p>Twoja silna wola sprawia, że niezwykle trudno jest na ciebie wpłynąć. Otrzymujesz +1 do obrony <strong>Woli</strong> i +5 do odporności na obrażenia <strong>psychiczne</strong>.</p>"
+                },
+                "Rallying Cry": {
+                    "name": "Okrzyk bojowy",
+                    "description": "<p>Twoja obecność jako przywódcy na polu bitwy wzmacnia i przywraca morale twoich sojuszników.</p>",
+                    "actions": {
+                        "Rallying Cry": {
+                            "name": "Okrzyk bojowy",
+                            "description": "<p>Wydajesz pełen odwagi okrzyk, który inspiruje sojuszników w promieniu 12 stóp do pozostania niezłomnymi w obliczu niebezpieczeństwa. Wszyscy sojusznicy w zasięgu natychmiast odzyskują wartość <strong>Morale</strong> równą twojej wartości <strong>Prezencji</strong> i stają się @Condition[resolute] na 3 rundy.</p>",
+                            "effects": [
+                                {
+                                    "name": "Okrzyk bojowy"
+                                }
+                            ]
+                        }
                     }
                 },
                 "Shield Bash": {
@@ -1028,7 +1011,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
@@ -1065,16 +1048,6 @@
                         }
                     }
                 },
-                "Rune: Lightning": {
-                    "name": "Runa: Błyskawica",
-                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Błyskawicy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
-                    "actions": {
-                        "Energize": {
-                            "name": "Energetyzacja",
-                            "description": "<p>Twoja znajomość Runy Błyskawicy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
-                        }
-                    }
-                },
                 "Projectile Weapon Training": {
                     "name": "Szkolenie z broni miotanej",
                     "description": "<p>Posiadasz podstawową wiedzę na temat łucznictwa i innych rodzajów broni miotanej. Nie jesteś już traktowany jako <strong>Niewyszkolony</strong> w zakresie broni z kategorii <strong>Miotanej</strong>.</p>",
@@ -1089,6 +1062,16 @@
                     "name": "Krótki łuk",
                     "description": {
                         "public": "<p>Kompaktowy i szybki w użyciu łuk krótki doskonale sprawdza się w szybkiej strzelaninie z bliskiej odległości i potyczkach, dlatego jest ulubioną bronią zwiadowców, myśliwych i szybkich najeźdźców.</p>"
+                    }
+                },
+                "Rune: Storm": {
+                    "name": "Runa: Burza",
+                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Burzy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
+                    "actions": {
+                        "Energize": {
+                            "name": "Energetyzacja",
+                            "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
+                        }
                     }
                 },
                 "Perspicacity": {
@@ -1173,16 +1156,6 @@
                     "name": "Gest: Tworzenie",
                     "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ducha ognia</strong>.</p>"
                 },
-                "Rune: Lightning": {
-                    "name": "Runa: Błyskawica",
-                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Błyskawicy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
-                    "actions": {
-                        "Energize": {
-                            "name": "Energetyzacja",
-                            "description": "<p>Twoja znajomość Runy Błyskawicy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
-                        }
-                    }
-                },
                 "Rune: Kinesis": {
                     "name": "Runa: Kinetyka",
                     "description": "<p>Chaotyczna siła przestrzeni i ruchu fizycznego. Runa Kinetyki rządzi wszystkim, co związane z ruchem i fizycznością.</p><p>Runa Kinetyki skaluje się przy użyciu <strong>Prezencji</strong>, atakuje <strong>Fizyczną</strong> obronę i zadaje obrażenia <strong>Obuchowe</strong>, <strong>Kłute</strong> lub <strong>Cięte</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Kontroli</strong>.</p>",
@@ -1213,6 +1186,16 @@
                         }
                     }
                 },
+                "Rune: Storm": {
+                    "name": "Runa: Burza",
+                    "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Burzy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
+                    "actions": {
+                        "Energize": {
+                            "name": "Energetyzacja",
+                            "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
+                        }
+                    }
+                },
                 "Intuit Weakness": {
                     "name": "Intuicja słabości",
                     "description": "<p>Uspokajasz umysł i analizujesz fizjologię przeciwnika, szukając słabego punktu w jego obronie.</p><p>Wykonaj <strong>Test Wiedzy</strong>, używając odpowiedniej Umiejętności wybranej przez Mistrza Gry. W przypadku sukcesu dowiesz się, na jaki rodzaj obrażeń stworzenie jest najbardziej podatne, jeśli w ogóle. W przypadku Krytycznego Sukcesu dowiesz się, na jakie dwa rodzaje obrażeń stworzenie jest najbardziej podatne.</p>",
@@ -1233,7 +1216,7 @@
                 },
                 "Rimecaller": {
                     "name": "Wywoływacz mrozu",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Mrozu. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[freezing] przy Trafieniach krytycznych.</p><p>Efekt Zamrożenia trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Mądrości</strong> jako obrażenia <strong>Mrozu</strong> do <strong>Zdrowia</strong> i nakłada stan @Condition[slowed].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, zadaje obrażenia od <strong>zimna</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[slowed].</p>"
                 },
                 "Recognize Spellcraft": {
                     "name": "Rozpoznawanie czarów",
@@ -1282,11 +1265,11 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
                 },
                 "Mesmer": {
                     "name": "Hipnotyk",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Iluzji. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[confused] przy Trafieniach krytycznych.</p><p>Efekt Skonfundowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> i nakłada stan @Condition[disoriented].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
                 },
                 "Talisman Weapon Training": {
                     "name": "Szkolenie z talizmanów",
@@ -1575,7 +1558,7 @@
                 },
                 "Dustbinder": {
                     "name": "Zaklinacz pyłu",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe połowie twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>kwasowe</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong>.</p>"
                 },
                 "Talisman Weapon Training": {
                     "name": "Szkolenie z talizmanów",
@@ -1628,11 +1611,11 @@
                 },
                 "Inspirator": {
                     "name": "Inspirator",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Duszy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[inspired] przy Trafieniach krytycznych.</p><p>Efekt Zainspirowany trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>przywrócenie</strong> <strong>Morale</strong> równe twojej wartości <strong>Prezencji</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> równe twojej wartości <strong>Prezencji</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Mender": {
                     "name": "Znachor",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Regeneracji trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
                 },
                 "Arcana Novice": {
                     "name": "Nowicjusz arkan",
@@ -1658,7 +1641,7 @@
                 },
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": "<p>Uporządkowana siła żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi minerałami, metalami, glebami i innymi związkami fizycznymi.</p><p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Kwasowe</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest chaotyczna runa <strong>Błyskawicy</strong>.</p>",
+                    "description": "<p>Uporządkowana siła żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi minerałami, metalami, glebami i innymi związkami fizycznymi.</p><p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Kwasowe</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest chaotyczna runa <strong>Burzy</strong>.</p>",
                     "actions": {
                         "Mould": {
                             "name": "Formowanie",
@@ -1821,7 +1804,7 @@
             "actions": {
                 "Rallying Cry": {
                     "name": "Okrzyk bojowy",
-                    "description": "<p>Wydajesz odważny ryk, który inspiruje sojuszników w promieniu 12 stóp od ciebie, aby pozostali nieugięci w obliczu niebezpieczeństwa. Wykonujesz test umiejętności <strong>Zastraszanie</strong> przeciwko progowi Obłędu sojuszników. Jeśli test się powiedzie, sojusznicy, których to dotyczy, zyskują @Condition[resolute] na jedną rundę.</p>",
+                    "description": "<p>Wydajesz pełen odwagi okrzyk, który inspiruje sojuszników w promieniu 12 stóp do pozostania niezłomnymi w obliczu niebezpieczeństwa. Wszyscy sojusznicy w zasięgu natychmiast odzyskują wartość <strong>Morale</strong> równą twojej wartości <strong>Prezencji</strong> i stają się @Condition[resolute] na 3 rundy.</p>",
                     "effects": [
                         {
                             "name": "Okrzyk bojowy"
@@ -1893,15 +1876,6 @@
                 }
             }
         },
-        "Rune: Lightning": {
-            "name": "Runa: Błyskawica",
-            "actions": {
-                "Energize": {
-                    "name": "Energetyzacja",
-                    "description": "<p>Twoja znajomość Runy Błyskawicy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
-                }
-            }
-        },
         "Rune: Oblivion": {
             "name": "Runa: Nicość",
             "actions": {
@@ -1917,6 +1891,15 @@
                 "Evoke": {
                     "name": "Wywoływanie",
                     "description": "<p>Twoja znajomość Runy Duszy pozwala ci wywierać podstawowy wpływ duchowy, wywołując jeden z następujących efektów:</p><ul><li><p>Umożliwienie sobie lub innej chętnej osobie powrót do kluczowego wspomnienia z przeszłości trwającego do jednej minuty, tak jakby miało ono miejsce niedawno.</p></li><li><p>Zidentyfikuj negatywny stan duchowy, który wpływa na daną osobę, taki jak @Condition[broken], @Condition[frightened], @Condition[confused] lub @Condition[insane].</p></li><li><p>Stwórz chwilowe duchowe połączenie z inną chętną istotą, które pozwoli jej rozpoznać ideę, którą można wyrazić jednym słowem.</p></li></ul><p>Zastosowania Wywoływania mogą wpływać tylko na ciebie lub inną istotę, którą możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, których skuteczność zależy od decyzji Mistrza Gry.</p>"
+                }
+            }
+        },
+        "Rune: Storm": {
+            "name": "Runa: Burza",
+            "actions": {
+                "Energize": {
+                    "name": "Energetyzacja",
+                    "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
                 }
             }
         },
@@ -2142,7 +2125,7 @@
                 },
                 "Strong Grip": {
                     "name": "Silny chwyt",
-                    "description": "Twoje opanowanie broni jest pewne i nieugięte. Możesz wykonywać czynności wymagające wolnej ręki, nawet gdy dzierżysz broń dwuręczną. Próby Rozbrojenia ciebie są wykonywane z modyfikatorem +2 Zguby."
+                    "description": "<p>Twoja pewność w posługiwaniu się bronią jest niezachwiana. Korzystając z broni dwuręcznej, której siła ataku zależy od Siły, możesz rzucać zaklęcia wymagające użycia obu rąk, a próby rozbrojenia cię otrzymują modyfikator +2 do zguby. </p><p>Ponadto możesz dzierżyć ciężką broń jednoręczną w drugiej ręce.</p>"
                 },
                 "Blood Frenzy": {
                     "name": "Krwawa furia",
@@ -2425,7 +2408,7 @@
                 },
                 "War Mage": {
                     "name": "Mag wojenny",
-                    "description": "<p>Twoja magia jest doskonalona jako broń wojenna, aby udaremniać zaklęcia innych magów. Możesz zapytać Mistrza Gry, czy znasz Runę zdolną do przeciwdziałania zaklęciu wroga, nawet jeśli nie rozpoznajesz rzucanego zaklęcia. Otrzymujesz +2 Korzyści do wszystkich prób przeciwdziałania zaklęciom.</p>"
+                    "description": "<p>Twoja magia jest doskonalona jako broń wojenna, aby udaremniać zaklęcia innych magów. Możesz zapytać Mistrza Gry, czy znasz <strong>Runę</strong> zdolną do przeciwdziałania zaklęciu wroga, nawet jeśli nie rozpoznajesz rzucanego zaklęcia. Otrzymujesz +2 Korzyści do wszystkich prób @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell].</p>"
                 },
                 "Impetus": {
                     "name": "Impet",
@@ -2437,7 +2420,7 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>3 rundy</strong> i zadaje obrażenia równe połowie Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -2453,7 +2436,7 @@
                 },
                 "Lightbringer": {
                     "name": "Niosący światło",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Światłości. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[irradiated] przy Trafieniach krytycznych.</p><p>Efekt Napromieniowania trwa <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
