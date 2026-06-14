@@ -781,7 +781,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
@@ -3035,7 +3035,7 @@
                 }
             },
             "archetype": {
-                "name": "Wąż dusiciel"
+                "name": "Dusiciel"
             },
             "taxonomy": {
                 "name": "Behir"
@@ -4146,7 +4146,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -4187,7 +4187,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -4258,7 +4258,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
@@ -4539,7 +4539,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
@@ -4930,7 +4930,7 @@
                 }
             },
             "archetype": {
-                "name": "Wąż dusiciel"
+                "name": "Dusiciel"
             },
             "taxonomy": {
                 "name": "Couatl"
@@ -5054,7 +5054,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -5091,7 +5091,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -5170,7 +5170,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5373,7 +5373,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -5576,7 +5576,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Arrow": {
                     "name": "Gest: Grot",
@@ -7342,7 +7342,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -7383,7 +7383,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Ziemski pazur"
@@ -7494,7 +7494,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Influence": {
                     "name": "Gest: Wpływ",
@@ -8250,7 +8250,7 @@
             "items": {
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Płomienny pazur"
@@ -8295,7 +8295,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Pancerz żywiołów"
@@ -9684,7 +9684,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -9735,7 +9735,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
@@ -13127,7 +13127,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Light Weapon Training": {
                     "name": "Szkolenie z broni lekkiej",
@@ -13250,7 +13250,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 }
             },
             "archetype": {
@@ -13287,7 +13287,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Gesture: Aspect": {
                     "name": "Gest: Aspekt",
@@ -14430,7 +14430,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gest: Wachlarz",
-                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+                    "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
