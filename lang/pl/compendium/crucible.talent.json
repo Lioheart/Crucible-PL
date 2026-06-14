@@ -14,7 +14,7 @@
         "Gestures": "Gesty",
         "Runes": "Runy",
         "Miscellaneous": "Różne",
-        "Training": "Szkolenie",
+        "Training": "Wytrenowanie",
         "Dodge": "Unik",
         "Upgrades": "Aktualizacje",
         "Willpower": "Siła woli",
@@ -22,7 +22,7 @@
         "One-Handed": "Jednoręczny",
         "Resistances": "Odporności",
         "Spellcraft": "Czaroznastwo",
-        "Utility": "Narzędzie",
+        "Utility": "Narzędzia",
         "Finesse": "Finezyjne",
         "Thrown": "Rzucana",
         "Engagement": "Zaangażowanie",
@@ -50,6 +50,20 @@
         "Projectile": "Miotany"
     },
     "entries": {
+        "Acrid Earth": {
+            "name": "Cierpka ziemia",
+            "description": "<p>Posługujesz się ziemią tak, jak chemik posługuje się odczynnikami, a jej żrąca siła stanowi odpowiedź na twój bystry i przenikliwy umysł. Twoje wykorzystanie <strong>Runy Ziemi</strong> zależy od <strong>Intelektu</strong>, a nie od <strong>Mądrości</strong>.</p>"
+        },
+        "Acrobat": {
+            "name": "Akrobata",
+            "description": "<p>Walczysz z płynną gracją akrobaty, traktując swoją broń zarówno jako drążek do skoków, jak i jako narzędzie walki. Kiedy dzierżysz <strong>wyważoną broń dwuręczną</strong>, twoje ruchy nie wywołują akcji Wycofania się. Twoja wirująca broń odrzuca również nadlatujące pociski, nakładając <strong>+2 do zguby</strong> na ataki dystansowe skierowane przeciwko tobie.</p>",
+            "actions": {
+                "Vaulting Sweep": {
+                    "name": "Podcięcie z przeskoku",
+                    "description": "<p>Wyskakujesz w powietrze i lądujesz z impetem pośród wrogów, a twoja broń wiruje, rysując olśniewający łuk. Wybierz punkt w zasięgu twojego <strong>biegu</strong> i skocz do niego, a następnie wykonaj <strong>Uderzenie</strong> na każdą istotę znajdującą się w zasięgu twojej broni w miejscu, gdzie wylądujesz.</p>"
+                }
+            }
+        },
         "Adrenaline": {
             "name": "Adrenalina",
             "description": "<p>Ból wyostrza twoją koncentrację. Raz na rundę, gdy otrzymasz obrażenia <strong>Zdrowia</strong> w wyniku ataku, zyskujesz <strong>+1 Skupienia</strong>.</p>"
@@ -151,6 +165,20 @@
                 }
             }
         },
+        "Artificer": {
+            "name": "Rzemieślnik",
+            "description": "<p>Wyróżniasz się umiejętnością wykorzystania <strong>Arkanów</strong>, <strong>Tkania glifów</strong> oraz <strong>Zaklinania</strong> do tworzenia nowatorskiego i praktycznego ekwipunku. Potrafisz dokonywać tymczasowych modyfikacji ekwipunku w celu nałożenia zaklinania z afiksami lub wzmocnienia konkretnego zaklęcia.</p>",
+            "actions": {
+                "Imbue Affix": {
+                    "name": "Nasycenie afiksem",
+                    "description": "<p>W trakcie działania @Action[default rest] kierujesz energię tajemną do swojego ekwipunku, nanosząc na niego <strong>afiks</strong> jako tymczasowe zaklinanie. Wybierz jeden przedmiot fizyczny, który można zakląć, i tymczasowo nasyc go wybranym przez siebie afiksem <strong>stopnia 1</strong>. Nasycony afiks utrzymuje się do momentu ponownego użycia zdolności Nasycenie afiksem.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Obecnie możesz nasycić dowolnym afiksem, który może pomieścić wybrany przedmiot. W przyszłej aktualizacji będzie to ograniczone do afiksów, które możesz <strong>zakląć</strong>.</p>"
+                },
+                "Amplify Affix": {
+                    "name": "Wzmocnienie afiksu",
+                    "description": "<p>W trakcie działania @Action[default rest] wzmacniasz moc zaklinania <strong>afiksów</strong> na jednym ze swoich przedmiotów. Wybierz jeden afiks na wyposażonym przez ciebie przedmiocie fizycznym i podnieś jego poziom o jeden, maksymalnie do wartości maksymalnej. To wzmocnienie utrzymuje się do momentu ponownego użycia Wzmocnienia afiksu.</p>"
+                }
+            }
+        },
         "Assassin": {
             "name": "Zabójca",
             "description": "<p>Specjalizujesz się w zabijaniu nieostrożnych osób. Każde <strong>uderzenie</strong> lub <strong>zaklęcie</strong> skierowane przeciwko celowi ze stanem @Condition[unaware] staje się <strong>Mordercze</strong>.</p><p><strong>Nieświadoma</strong> istota trafiona twoim atakiem nie może zaalarmować swoich sojuszników, dopóki nie nadejdzie jej tura w <strong>walce</strong>.</p>",
@@ -226,6 +254,21 @@
                     "effects": [
                         {
                             "name": "Powód do śmiechu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Bastion": {
+            "name": "Bastion",
+            "description": "<p>Opanowałeś sztukę obrony, stając się niewzruszonym murem. Dopóki masz stan @Condition[guarded], korzystasz z następujących korzyści:</p><ul><li><p>Nie można cię przesunąć wbrew twojej woli ani powalić do stanu @Condition[prone].</p></li><li><p>Wrogowie nie mogą przejść przez twoje pole, nawet używając zdolności, które normalnie pozwalają na przemieszczanie się przez inne istoty.</p></li><li><p>Twoje <strong>Zaangażowanie</strong> wzrasta o +1, co pozwala ci powstrzymać większą liczbę wrogów.</p></li><li><p>Twoja obrona <strong>Refleksu</strong> jest traktowana jako suma twoich obron <strong>Pancerza</strong> i <strong>Bloku</strong>, jeśli jest większa, ponieważ wytrzymujesz ataki, zamiast ich unikać. Atak na twój <strong>Refleks</strong>, któremu się opierasz, jest traktowany jako obroniony przez <strong>Blok</strong>.</p></li></ul>",
+            "actions": {
+                "Get Behind Me": {
+                    "name": "Stań za mną",
+                    "description": "<p>Wybierz sojusznika znajdującego się obok ciebie i przesuń go tak, aby znalazł się bezpośrednio za tobą, zgodnie z kierunkiem, w którym jesteś zwrócony w momencie wykonania tej akcji, stając między tym sojusznikiem a jego napastnikami.</p><p>Ten ruch nie wywołuje reakcji związanych z wycofaniem się, a chroniony sojusznik zyskuje stan @Condition[guarded] do początku swojej następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Defensywa"
                         }
                     ]
                 }
@@ -313,11 +356,26 @@
         },
         "Cadence": {
             "name": "Kadencja",
-            "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p><p></p>"
+            "description": "<p>Jesteś wyszkolony w wykonywaniu sekwencji ataków wręcz z rytmiczną precyzją. Kiedy wykonujesz kilka <strong>uderzeń</strong> z rzędu przy użyciu jednoręcznej broni do walki wręcz, zyskujesz kumulującą się <strong>+1 Korzyść</strong> za każdy kolejny udany atak.</p>"
         },
         "Carefree": {
             "name": "Beztroski",
             "description": "<p>Potrafisz oddzielać i ignorować niepowodzenia, co zapewnia Ci niezwykłą zdolność do regeneracji po utracie Morale.</p>\n<p>Twój <strong>Próg Obłędu</strong> zostaje zmniejszony o 1, co sprawia, że łatwiej cię wyleczyć.</p>"
+        },
+        "Champion": {
+            "name": "Czempion",
+            "description": "<p>Cieszysz się dreszczykiem emocji związanym z pojedynkiem, dążąc do tego, by stać się niezrównanym pretendentem, który dominuje nad rywalami dzięki przytłaczającej potędze i nieugiętej sile woli. Możesz rzucić <strong>Wyzwanie</strong>, wyznaczając przeciwnika jako swój <strong>Wyzwany</strong> cel i zyskując dodatkowe obrażenia przy atakach przeciwko niemu.</p><p>Twoja koncentracja jest tak intensywna, że żaden rywal nie może uciec z twojego uścisku. Możesz wykonać @Action[default reactiveStrike] przeciwko swojemu <strong>wyzwanemu</strong> rywalowi, nawet gdy posiadasz stan @Condition[flanked], a o ile masz do wydania Punkty Skupienia, kosztuje to tylko <strong>1 Punkt Skupienia</strong> zamiast Akcji.</p>",
+            "actions": {
+                "Challenge": {
+                    "name": "Wyzwanie",
+                    "description": "<p>Wybierasz godnego przeciwnika i zmuszasz go do pojedynku samą siłą swojej obecności. Cel staje się twoim <strong>wyzwanym</strong> rywalem do czasu zakończenia walki, pokonania go lub wyzwania innego przeciwnika. W danym momencie możesz mieć tylko jednego wyzwanego rywala.</p><p>Gdy twój rywal, z którym toczysz pojedynek, jest jedynym wrogiem, z którym walczysz, twoje zaangażowanie w pojedynek pogłębia się: na koniec każdej swojej tury zyskujesz kumulującą się premię +1 <strong>do obrażeń</strong> do twoich <strong>uderzeń</strong> przeciwko temu rywalowi, do maksymalnej wartości równej twojej <strong>Prezencji</strong>. Ta premia resetuje się do zera, jeśli pojedynek zostanie przerwany, co ma miejsce, gdy inny wróg zaatakuje cię, jeśli twój rywal ucieknie z twojego <strong>zaangażowania</strong> lub jeśli uderzysz jakąkolwiek inną istotę.</p>",
+                    "effects": [
+                        {
+                            "name": "Dominacja"
+                        }
+                    ]
+                }
+            }
         },
         "Chirurgeon": {
             "name": "Chirurg",
@@ -484,7 +542,7 @@
         },
         "Deft Grip": {
             "name": "Zręczny chwyt",
-            "description": "Twoje posługiwanie się bronią jest płynne i precyzyjne. Możesz wykonywać akcje wymagające wolnej ręki, nawet gdy dzierżysz dwuręczną broń dystansową."
+            "description": "<p>Posługujesz się bronią płynnie i precyzyjnie. Korzystając z broni dwuręcznej, której moc zależy od Zręczności, możesz rzucać zaklęcia wymagające użycia obu rąk, a próby rozbrojenia cię są wykonywane z modyfikatorem +2 do zguby.</p><p>Możesz skorzystać z zdolności Swobodnego ruchu, aby założyć lub zdjąć taką broń bez ponoszenia kosztu akcji.</p>"
         },
         "Demolitionist": {
             "name": "Burzyciel",
@@ -530,6 +588,10 @@
                     ]
                 }
             }
+        },
+        "Disarming Riposte": {
+            "name": "Rozbrajająca riposta",
+            "description": "<p>Twoje kontrataki są na tyle celne, że pozwalają wyrwać broń z rąk przeciwnika. Gdy twoja zdolność @UUID[Compendium.crucible.talent.Item.counterriposte00]{Kontr-riposty} zadaje <strong>trafienie krytyczne</strong>, cel zostaje rozbrojony i upuszcza broń trzymaną w ręce głównej.</p>"
         },
         "Disarming Strike": {
             "name": "Atak rozbrajający",
@@ -580,9 +642,19 @@
                 }
             }
         },
+        "Duelist": {
+            "name": "Fechmistrz",
+            "description": "<p>Cieszysz się emocjami i mistrzowskim opanowaniem walki wręcz, stosując styl walki oparty na broni jednoręcznej, przy czym druga ręka pozostaje wolna.</p><p>Kiedy dzierżysz jednoręczną broń do walki wręcz, a druga ręka jest wolna, otrzymujesz premię <strong>+2</strong> do obrony <strong>Parowania</strong>, o ile nie jesteś w stanie @Condition[flanked]. Spełniając te kryteria, każdy atak, który skutkuje <strong>Draśnięciem</strong> przeciwko twojemu <strong>Pancerzowi</strong>, zamienia się w <strong>Parowanie</strong>.</p>",
+            "actions": {
+                "Estocade": {
+                    "name": "Rozstrzygający sztych",
+                    "description": "<p>Zadajesz dokładny, zdecydowany cios przeciwnikowi, którego zaskoczyłeś w niekorzystnej sytuacji. Wykonujesz <strong>uderzenie</strong> bronią w ręce głównej, która jest <strong>wzmocniona</strong> i <strong>ostra</strong>.</p><p>Możesz wykonać ten atak wyłącznie przeciwko celowi, który jest w stanie @Condition[exposed], @Condition[prone], @Condition[slowed], @Condition[staggered], @Condition[paralyzed] lub który został pozbawiony broni głównej.</p>"
+                }
+            }
+        },
         "Dustbinder": {
             "name": "Zaklinacz pyłu",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Ziemi. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[corroding] przy Trafieniach krytycznych.</p><p>Efekt Korodujący trwa przez <strong>3 rundy</strong> i zadaje <strong>Zdrowiu</strong> obrażenia <strong>kwasowe</strong> równe połowie twojej wartości <strong>Mądrości</strong> w każdej rundzie.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>kwasowe</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong>.</p>"
         },
         "Earth Proficiency": {
             "name": "Biegłość ziemi",
@@ -684,6 +756,10 @@
                 }
             }
         },
+        "Flash Frost": {
+            "name": "Nagły mróz",
+            "description": "<p>Zamrażasz przeciwnika z prędkością myśli – chłód uderza natychmiast, a nie wkrada się powoli. Twoje wykorzystanie <strong>Runy Mrozu</strong> zależy od <strong>Intelektu</strong>, a nie od <strong>Mądrości</strong>.</p>"
+        },
         "Flash of Steel": {
             "name": "Błysk stali",
             "description": "<p>Jesteś ekspertem w posługiwaniu się bronią rzucaną, która pozwala wytrącić przeciwnika z równowagi lub odsłonić go, umożliwiając kolejne ataki.</p>",
@@ -746,6 +822,20 @@
                 }
             }
         },
+        "Gambit": {
+            "name": "Gambit",
+            "description": "<p>Niektórzy walczą zgodnie z zasadami, ty walczysz, licząc na szansę. Każda wymiana ciosów to zakład: odczytujesz zamiary przeciwnika, podejmujesz ryzykowne decyzje, by skłonić go do nadmiernego zaangażowania, a następnie stawiasz wszystko na jedną kartę, licząc na przełomowy wynik. Ufasz swojej intuicji, sprytowi i pewnym tajemniczym sztuczkom, by przechylić szalę na swoją stronę, zyskując następujące korzyści:</p><ul><li><p><em>Zdradzający sygnał.</em> Widzisz cios, zanim zostanie zadany. Twój <strong>Unik</strong> jest obliczany na podstawie <strong>Intelektu</strong> zamiast <strong>Zręczności</strong>, jeśli jest wyższa. </p></li><li><p><em>Podrobione kości.</em> Szczęście sprzyja tym, którzy mu pomagają. Raz na rundę, gdy po raz pierwszy wyrzucisz 1 na dowolnej kości, kość ta jest rzucana ponownie, a nowy wynik zostaje zachowany.</p></li><li><p><em>Podbij stawkę.</em> Kiedy wykonujesz @Action[default strike], możesz zdecydować się na celowe dodanie do niego <strong>Zgub</strong>. Jeśli cios trafi, specjalny efekt <strong>Gambit</strong> zwiększa się zgodnie z liczbą postawionych przez ciebie zgub. Ładunki te trwają do końca walki lub do momentu ich wyczerpania.</p></li></ul>",
+            "actions": {
+                "All-In": {
+                    "name": "Wszystko na jedną kartę",
+                    "description": "<p>Każdy podjęty przez ciebie ryzykowny ruch przynosi teraz korzyści, a ty zbierasz je wszystkie naraz. Kolejny pojedynczy atak lub rzut na obronę daje maksymalny możliwy wynik na wszystkich kościach. Możesz aktywować tę akcję, wydając albo 6 <strong>punktów gambitu</strong>, albo 1 <strong>punkt heroizmu</strong>.</p>"
+                }
+            }
+        },
+        "Gathering Storm": {
+            "name": "Nadciągająca burza",
+            "description": "<p>Rozumiesz, że burza to nie nagły chaos, lecz cierpliwie gromadząca się siła, która wybucha dopiero wtedy, gdy musi. Twoje wykorzystanie <strong>Runy Burzy</strong> zależy od <strong>Mądrości</strong>, a nie od <strong>Intelektu</strong>.</p>"
+        },
         "Gesture: Arrow": {
             "name": "Gest: Grot",
             "description": "<p>Rzucasz pociskiem nasyconym magiczną mocą runy w odległy cel.</p><p>Gest Grot wykorzystuje <strong>Intelekt</strong> i atakuje pojedynczą istotę w odległości do 60 stóp, zadając <strong>8 punktów podstawowych obrażeń</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>1 ręki</strong> i ma podstawowy koszt <strong>3 Akcji</strong> i <strong>1 Skupienia</strong>.</p>"
@@ -776,7 +866,7 @@
         },
         "Gesture: Fan": {
             "name": "Gest: Wachlarz",
-            "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Inteligencji</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
+            "description": "<p>Kształtujesz esencję runy w szeroki lub rozbity łuk, aby uderzyć wiele celów znajdujących się w bliskiej odległości. </p><p>Gest wachlarza skaluje się przy użyciu <strong>Intelektu</strong> i obejmuje łuk 120 stopni o promieniu 6 stóp. Zadaje <strong>6 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>.</p>"
         },
         "Gesture: Influence": {
             "name": "Gest: Wpływ",
@@ -792,7 +882,7 @@
         },
         "Gesture: Sense": {
             "name": "Gest: Zmysł",
-            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Błyskawica</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Burza</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
         },
         "Gesture: Step": {
             "name": "Gest: Krok",
@@ -837,13 +927,17 @@
                 }
             }
         },
+        "Harrier": {
+            "name": "Prześladowca",
+            "description": "<p>Ścigasz wrogów, którzy wolą walczyć z tobą z daleka. Możesz wykonać @Action[default reactiveStrike] przeciwko wrogowi, z którym jesteś w walce, za każdym razem, gdy wykona on atak, który nie jest oznaczony jako <strong>walka wręcz</strong>.</p>"
+        },
         "Headbutt": {
             "name": "Uderzenie głową",
             "description": "<p>Możesz zadać brutalny atak głową z bliskiej odległości, który zaskoczy przeciwników.</p>",
             "actions": {
                 "Headbutt": {
                     "name": "Uderzenie głową",
-                    "description": "<p>Wykonaj <strong>uderzenie</strong> bez broni przeciwko obronie <strong>Wytrwałości</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 Korzyść</strong> do tego ataku.</p><p>Ten atak jest <strong>Trudny</strong> i zadaje jedynie osłabione obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
+                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 korzyść</strong> do tego ataku. </p><p>Atak jest <strong>trudny</strong> i zadaje jedynie <strong>osłabione</strong> obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie głową"
@@ -884,6 +978,10 @@
         "Hold Fast": {
             "name": "Nieugiętość",
             "description": "<p>Jesteś spokojną ostoją w burzliwym morzu walki. Gdy masz wyposażoną tarczę, twoje <strong>Zaangażowanie</strong> wzrasta o +1, co pozwala ci jednocześnie walczyć z większą liczbą sąsiednich przeciwników.</p>"
+        },
+        "Hulking Physique": {
+            "name": "Masywna sylwetka",
+            "description": "<p>Twoja potężna sylwetka nabiera surowej masy. Twoja <strong>Wielkość</strong> wzrasta o 1, ale ta masa cię spowalnia: twój <strong>bieg</strong> oraz obrona <strong>Unik</strong> zmniejszają się o 2.</p>"
         },
         "Illumination Proficiency": {
             "name": "Biegłość światłości",
@@ -947,18 +1045,17 @@
         },
         "Inquisitor": {
             "name": "Inkwizytor",
-            "description": "<p>Jesteś ekspertem w walce z użytkownikami magii. Wiesz, jak oszczędzać energię i uderzać w odpowiednim momencie, aby udaremnić ich zaklęcia.</p>",
+            "description": "<p>Jesteś ekspertem w walce z użytkownikami magii, wyszkolonym w oszczędzaniu energii i uderzaniu w idealnym momencie, by udaremnić zaklęcie.</p><p>Koszt akcji @Action[default reactiveStrike] zmniejsza się o dodatkową 1 <strong>Akcję</strong>, ale zawsze kosztuje 1 <strong>punkt skupienia</strong>. Kiedy uderzasz wroga w reakcji na rzucenie przez niego zaklęcia, udane trafienie odbiera <strong>1 Skupienie</strong> temu wrogowi i zwraca twój własny; przy <strong>trafieniu krytycznym</strong> jego zaklęcie zostaje przerwane, a magia przepada.</p>",
             "actions": {
-                "Inquisitor's Strike": {
-                    "name": "Uderzenie inkwizytora",
-                    "condition": "Twój cel rzuca zaklęcie.",
-                    "description": "Kiedy wróg znajdujący się w zasięgu twojego działania, którego widzisz, rzuca zaklęcie, możesz zareagować, aby zaatakować ten cel. W przypadku Trafienia krytycznego zaklęcie celu zostaje przerwane, a magia zostaje utracona."
+                "Abjure": {
+                    "name": "Wyrzekanie",
+                    "description": "<p>Wykorzystujesz swoją wyćwiczoną siłę woli, by przeciwstawić się wrogiej magii, zrywając jej wpływ na ciebie i twoich sojuszników w pobliżu. Dla siebie oraz każdego sojusznika w promieniu 12 stóp, który cierpi z powodu stanu magicznego wywołanego przez wroga, wykonaj test <strong>Arkan</strong> w stosunku do najniższego <strong>ST usunięcia</strong> spośród dotykających ich stanów. Każdy taki stan, którego ST usunięcia jest niższe od twojego wyniku, zostaje usunięty.</p>"
                 }
             }
         },
         "Inspirator": {
             "name": "Inspirator",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Duszy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[inspired] przy Trafieniach krytycznych.</p><p>Efekt Zainspirowany trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>przywrócenie</strong> <strong>Morale</strong> równe twojej wartości <strong>Prezencji</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> równe twojej wartości <strong>Prezencji</strong> do <strong>Morale</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspiracja heroizmu",
@@ -1067,6 +1164,31 @@
             "name": "Nowicjusz szlifierstwa",
             "description": "<p>Przeszedłeś szkolenie z podstaw jubilerstwa i potrafisz pracować z większością popularnych opraw i wzorów.</p><p>Nadal musisz korzystać ze schematów i książek, aby zidentyfikować kamienie szlachetne, ozdobne metale i ich właściwości.</p>"
         },
+        "Juggernaut": {
+            "name": "Moloch",
+            "description": "<p>Czerpiesz radość z fizycznej walki, wykorzystując swoją niezwykłą siłę i hart ducha, by pokonać stworzenia, których masa przewyższa nawet twoją. Kiedy wykonasz akcję @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] wobec stworzenia, sam nie otrzymujesz stanu @Condition[restrained]. <strong>Rozmiar</strong> stworzeń, z którymi możesz się zmagać i które mogą zmagać się z tobą, wzrasta o +1.</p>",
+            "actions": {
+                "Throw": {
+                    "name": "Rzut",
+                    "condition": "Przytrzymujesz stworzenie.",
+                    "description": "<p>Podrzucasz cel swojej akcji @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] w powietrze w kierunku wybranego punktu, na odległość nie większą niż dwukrotność twojej <strong>Siły</strong>.</p><p>Wykonujesz atak umiejętnościowy <strong>Atletyki</strong> przeciwko obronie <strong>Refleksu</strong> twojego pochwyconego celu. W przypadku sukcesu cel zostaje rzucony, pozostając w stanie @Condition[prone]. Jeśli jego ruch zostanie zatrzymany przez ścianę lub inną istotę, uderza on w przeszkodę i otrzymuje obrażenia <strong>obuchowe</strong> od ataku. Istota rzucona w otwartą przestrzeń nie otrzymuje obrażeń od samego rzutu, choć może @Action[default fall].</p><p>Niezależnie od wyniku, twój chwyt zostaje zwolniony w ramach tej akcji. </p>",
+                    "effects": [
+                        {
+                            "name": "Rzut"
+                        }
+                    ]
+                },
+                "Overrun": {
+                    "name": "Tratowanie",
+                    "description": "<p>Opuszczasz ramię i szarżujesz w linii prostej, przewracając wszystkich, którzy staną ci na drodze.</p><p>Przesuń się o odległość nie większą niż dwukrotność twojego <strong>biegu</strong> w linii prostej, przechodząc przez pole dowolnej istoty, na której mógłbyś wykonać akcję @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple]. Wykonujesz atak umiejętnościowy <strong>Atletyki</strong> przeciwko obronie <strong>Refleksu</strong> każdego celu, a w przypadku sukcesu zadajesz obrażenia <strong>obuchowe</strong> i sprawiasz, że stworzenie otrzymuje stan @Condition[prone].</p><p>Twoja szarża zostaje zatrzymana przez każde stworzenie zbyt masywne, byś mógł je obezwładnić, na które atak nie ma wpływu.</p>",
+                    "effects": [
+                        {
+                            "name": "Tratowanie"
+                        }
+                    ]
+                }
+            }
+        },
         "Justiciar": {
             "name": "Justycjariusz",
             "description": "<p>Jesteś narzędziem sprawiedliwości. Uderzenia krytyczne zadają również nadwyżkę obrażeń Morale przeciwnika.</p>"
@@ -1077,7 +1199,7 @@
         },
         "Kineturge": {
             "name": "Kineturg",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kinetyki. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[bleeding] przy Trafieniach krytycznych.</p><p>Efekt Krwawienie trwa przez <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>kłute</strong> <strong>Zdrowiu</strong> równe wartości twojej <strong>Prezencji</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kinetyki. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[bleeding].</p><p>Efekt Krwawienia trwa przez <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>kłute</strong> równe twojej wartości cechy <strong>Prezencji</strong> do <strong>Zdrowia</strong>.</p>"
         },
         "Last Stand": {
             "name": "Ostatnie starcie",
@@ -1137,11 +1259,7 @@
         },
         "Lightbringer": {
             "name": "Niosący światło",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Światłości. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[irradiated] przy Trafieniach krytycznych.</p><p>Efekt Napromieniowania trwa <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
-        },
-        "Lightning Proficiency": {
-            "name": "Biegłość błyskawicy",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Błyskawicy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Energetyzacja</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
         },
         "Mark Prey": {
             "name": "Naznaczenie celu",
@@ -1194,7 +1312,7 @@
         },
         "Mender": {
             "name": "Znachor",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[mending] przy Trafieniach krytycznych.</p><p>Efekt Regeneracji trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>odzyskanie</strong> <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Twierdza umysłu",
@@ -1202,7 +1320,7 @@
         },
         "Mesmer": {
             "name": "Hipnotyk",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Iluzji. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[confused] przy Trafieniach krytycznych.</p><p>Efekt Skonfundowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> i nakłada stan @Condition[disoriented].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
         },
         "Mnemonic Realization": {
             "name": "Realizacja pamięciowa",
@@ -1240,7 +1358,7 @@
         },
         "Necromancer": {
             "name": "Nekromanta",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Śmierci. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[decaying] przy Trafieniach krytycznych.</p><p>Efekt Gnicia trwa przez <strong>3 rundy</strong> i zadaje co rundę obrażenia <strong>Zdrowia</strong> równe połowie twojej wartości <strong>Prezencji</strong> jako obrażenia od <strong>zepsucia</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Śmierci. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[decaying] </p><p>Efekt Gnijący trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>zepsucia</strong> równe połowie twojej <strong>Prezencji</strong> do <strong>Zdrowia</strong>.</p>"
         },
         "Never Yield": {
             "name": "Nigdy nie odpuszczać",
@@ -1263,7 +1381,13 @@
         },
         "Operator": {
             "name": "Operator",
-            "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś @Condition[incapacitated], otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>"
+            "description": "<p>Masz lodowate nerwy i zachowujesz spokój w sytuacjach stresowych. Twoja wytrzymałość fizyczna i bystrość umysłu pozwalają ci zmniejszyć zagrożenie, aby osiągnąć najlepsze wyniki, gdy stawka jest najwyższa.</p><p>Podczas walki, gdy nie jesteś @Condition[incapacitated], otrzymujesz +1 Korzyść do wszystkich testów, gdy pozostało ci mniej niż 50% maksymalnego zdrowia. Otrzymujesz +2 Korzyści do wszystkich testów, gdy pozostało ci mniej niż 25% maksymalnego zdrowia.</p>",
+            "actions": {
+                "Cold Focus": {
+                    "name": "Zimne skupienie",
+                    "description": "<p>Wykorzystujesz <strong>Heroizm</strong>, czerpiąc z otaczającej cię sytuacji przenikliwą jasność umysłu, aby odzyskać 1 <strong>punkt skupienia</strong>, a także 1 dodatkowy punkt skupienia za każde 25% utraconego maksymalnego zdrowia, maksymalnie do 5.</p>"
+                }
+            }
         },
         "Opportunist": {
             "name": "Oportunista",
@@ -1275,18 +1399,28 @@
         },
         "Overwatch": {
             "name": "Obserwacja",
-            "description": "<p>Jesteś ekspertem w walce z użytkownikami magii. Wiesz, jak oszczędzać energię i uderzać w odpowiednim momencie, aby udaremnić ich zaklęcia.</p>",
+            "description": "<p>Masz pole bitwy na celowniku, gotowy ukarać każdego wroga, który znajdzie się w zasięgu twojego ognia. Rzucający zaklęcia przed tobą ryzykuje nie tylko trafienie z twojej broni, ale także przerwanie swojej inkantacji.</p>",
             "actions": {
-                "Disrupting Shot": {
-                    "name": "Strzał przerywający",
-                    "condition": "Twój cel rzuca zaklęcie.",
-                    "description": "Kiedy widoczny wróg rzuca zaklęcie, możesz zareagować, aby zaatakować ten cel. Technika ta jest trudna do wykonania, ale w przypadku Trafienia krytycznego zaklęcie celu zostaje przerwane, a magia zostaje utracona."
+                "Covering Fire": {
+                    "name": "Ogień osłonowy",
+                    "condition": "Widoczny przeciwnik rzuca zaklęcie lub wykonuje akcję, której celem jest istota inna niż on sam.",
+                    "description": "<p>Możesz wykonać reakcję, aby wykonać atak z dystansu przeciwko temu przeciwnikowi. W przypadku trafienia krytycznego w rzucającego zaklęcie zaklęcie zostaje przerwane, a magia przepada. Akcja skierowana przeciwko sobie, która nie jest zaklęciem, taka jak ruch lub obrona, nie wywołuje tej reakcji, z której można skorzystać tylko raz na rundę.</p>"
                 }
             }
         },
         "Patient Deflection": {
             "name": "Rozważne odparcie",
             "description": "Twoja biegłość w sztukach walki pozwala ci unikać lub odbijać ciosy równie skutecznie, jak ciężko opancerzony wojownik. Gdy jesteś nieuzbrojony, połowa twojej wartości Mądrości przyczynia się do twojej obrony Parowania."
+        },
+        "Peltast": {
+            "name": "Peltasta",
+            "description": "<p>Dla ciebie rzucana broń nie jest po prostu wypuszczana – jest kierowana. Broń opuszczająca twoją dłoń podlega tajemnej dyscyplinie, która wygina jej tor zgodnie z twoją wolą, nadając twoim rzutom zasięg i precyzję, z którymi żadne ramię bez pomocy nie mogłoby się równać. Rzucana broń powraca nieomylnie z powrotem do twojej dłoni. Zyskujesz następujące korzyści:</p><ul><li><p>Możesz wykonać @Action[default throwWeapon] przy użyciu dowolnej broni do walki wręcz lub tarczy z pełną skutecznością, nawet tych, które nie są przeznaczone do rzucania.</p></li><li><p>Broń przeznaczona do rzucania z właściwością <strong>Rzucana</strong> zyskuje w twoich rękach +10 stóp zasięgu, osiągając 20 stóp.</p></li><li><p>Broń, którą rzucasz, automatycznie i natychmiast wraca do twojej ręki.</p></li></ul>",
+            "actions": {
+                "Ricochet": {
+                    "name": "Rykoszet",
+                    "description": "<p>Wykorzystaj atak bronią <strong>rzucaną</strong> przeciwko wrogowi znajdującemu się w zasięgu. Kierowana twoim mistycznym instynktem broń odbija się od najbliższego wroga w odległości nieprzekraczającej wartości twojego <strong>Intelektu</strong>, jeśli na jej drodze znajduje się przeszkoda.</p><p>Broń będzie odbijać się od wroga do wroga, trafiając każdego tylko raz, aż uderzy w maksymalną liczbę wrogów równą połowie twojego <strong>Intelektu</strong>.</p><p>Rozegraj oddzielny atak przeciwko każdemu trafionemu wrogowi. Każdy cel po pierwszym otrzymuje skumulowaną redukcję <strong>Obrażeń</strong> o -1, ponieważ rzut traci impet.</p>"
+                }
+            }
         },
         "Penetrating Shot": {
             "name": "Strzał penetrujący",
@@ -1398,6 +1532,52 @@
             "name": "Nadprzyrodzony instynkt",
             "description": "Twoja szybkość umysłu i ciała są równie imponujące. Otrzymujesz +2 Korzyści do wszystkich testów Inicjatywy."
         },
+        "Primalist": {
+            "name": "Prymalista",
+            "description": "<p>Moc run żywiołów przepływa przez ciebie. Przyjmując <strong>Postawę</strong> żywiołu, kierujesz moc runy do ciosów zadawanych bronią. Możesz przyjąć postawę dla jednej z run żywiołów, które znasz: </p><ul><li><p>@UUID[Compendium.crucible.talent.Item.runeEarth0000000]{Runa: Ziemia}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFlame0000000] {Runa: Płomień}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFrost0000000]{Runa: Mróz}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeStorm0000000] {Runa: Burza}</p></li></ul><p>Możesz przyjąć lub zmienić swoją postawę raz na <strong>turę</strong>, a przyjęta postawa trwa do momentu jej zmiany lub zakończenia walki. Podczas pozostawania w postawie talenty lub cechy, które nakładają efekty trafień krytycznych na akcje wykorzystujące tę runę, mają również zastosowanie do twoich uderzeń bronią.</p>",
+            "actions": {
+                "Storm Stance": {
+                    "name": "Postawa burzy",
+                    "condition": "Znasz Runę Burzy.",
+                    "description": "<p>Przyjmujesz <strong>Postawę Burzy</strong>, skupiając moc Runy Burzy. W tej postawie twój <strong>bieg</strong> wzrasta o 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Postawa burzy"
+                        }
+                    ]
+                },
+                "Cinder Stance": {
+                    "name": "Postawa popiołu",
+                    "condition": "Znasz Runę Płomienia.",
+                    "description": "<p>Przyjmujesz <strong>Postawę popiołu</strong>, czerpiąc moc z Runy Płomienia. W tej postawie twoje ciosy bronią zadają 2 dodatkowe <strong>obrażenia od ognia</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Postawa popiołu"
+                        }
+                    ]
+                },
+                "Water Stance": {
+                    "name": "Postawa wody",
+                    "condition": "Znasz Runę Mrozu.",
+                    "description": "<p>Przyjmujesz <strong>Postawę wody</strong>, czerpiąc moc z Runy Mrozu. Będąc w tej pozycji, zyskujesz +1 do swoich obronnych <strong>Refleksu</strong>, <strong>Wytrzymałości</strong> i <strong>Woli</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Postawa wody"
+                        }
+                    ]
+                },
+                "Stone Stance": {
+                    "name": "Postawa kamienia",
+                    "condition": "Znasz Runę Ziemi.",
+                    "description": "<p>Przyjmujesz <strong>Postawę kamienia</strong>, czerpiąc moc z Runy Ziemi. W tej postawie zyskujesz +2 do <strong>Odporności</strong> na obrażenia od uderzeń obuchowych, kłutych i ciętych.</p>",
+                    "effects": [
+                        {
+                            "name": "Postawa kamienia"
+                        }
+                    ]
+                }
+            }
+        },
         "Projectile Weapon Proficiency": {
             "name": "Biegłość w broni miotanej",
             "description": "<p>Posiadasz biegłą znajomość posługiwania się bronią miotającą. Otrzymujesz rangę <strong>Specjalisty</strong> oraz <strong>+1 premii do umiejętności</strong> w zakresie broni z kategorii <strong>Miotana</strong>.</p>"
@@ -1430,7 +1610,7 @@
         },
         "Pyromancer": {
             "name": "Piromanta",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Płomienia. Zaklęcia wykorzystujące tę Runę powodują @Condition[burning] przy Trafieniach krytycznych.</p><p>Efekt Płonięcia trwa <strong>3 rundy</strong> i zadaje obrażenia równe połowie Twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno <strong>Zdrowiu</strong>, jak i <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Okrzyk bojowy",
@@ -1468,7 +1648,7 @@
         },
         "Rimecaller": {
             "name": "Wywoływacz mrozu",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Mrozu. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[freezing] przy Trafieniach krytycznych.</p><p>Efekt Zamrożenia trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Mądrości</strong> jako obrażenia <strong>Mrozu</strong> do <strong>Zdrowia</strong> i nakłada stan @Condition[slowed].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, zadaje obrażenia od <strong>zimna</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[slowed].</p>"
         },
         "Rune: Control": {
             "name": "Runa: Kontrola",
@@ -1492,7 +1672,7 @@
         },
         "Rune: Earth": {
             "name": "Runa: Ziemia",
-            "description": "<p>Uporządkowana siła żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi minerałami, metalami, glebami i innymi związkami fizycznymi.</p><p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Kwasowe</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest chaotyczna runa <strong>Błyskawicy</strong>.</p>",
+            "description": "<p>Uporządkowana siła żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi minerałami, metalami, glebami i innymi związkami fizycznymi.</p><p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Kwasowe</strong> <strong>Zdrowiu</strong>. Jej przeciwieństwem jest chaotyczna runa <strong>Burzy</strong>.</p>",
             "actions": {
                 "Mould": {
                     "name": "Formowanie",
@@ -1560,16 +1740,6 @@
                 }
             }
         },
-        "Rune: Lightning": {
-            "name": "Runa: Błyskawica",
-            "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Błyskawicy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
-            "actions": {
-                "Energize": {
-                    "name": "Energetyzacja",
-                    "description": "<p>Twoja znajomość Runy Błyskawicy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
-                }
-            }
-        },
         "Rune: Oblivion": {
             "name": "Runa: Nicość",
             "description": "<p>Chaotyczna siła niszczenia i unicestwiania istnienia. Runa Nicości rządzi rozkładem materii lub dekoherencją ducha.</p><p>Runa Nicości skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Wolę</strong> i zadaje obrażenia od <strong>Pustki</strong> <strong>Morale</strong>. Jej przeciwieństwem jest uporządkowana runa <strong>Duszy</strong>.</p>",
@@ -1587,6 +1757,16 @@
                 "Evoke": {
                     "name": "Wywoływanie",
                     "description": "<p>Twoja znajomość Runy Duszy pozwala ci wywierać podstawowy wpływ duchowy, wywołując jeden z następujących efektów:</p><ul><li><p>Umożliwienie sobie lub innej chętnej osobie powrót do kluczowego wspomnienia z przeszłości trwającego do jednej minuty, tak jakby miało ono miejsce niedawno.</p></li><li><p>Zidentyfikuj negatywny stan duchowy, który wpływa na daną osobę, taki jak @Condition[broken], @Condition[frightened], @Condition[confused] lub @Condition[insane].</p></li><li><p>Stwórz chwilowe duchowe połączenie z inną chętną istotą, które pozwoli jej rozpoznać ideę, którą można wyrazić jednym słowem.</p></li></ul><p>Zastosowania Wywoływania mogą wpływać tylko na ciebie lub inną istotę, którą możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, których skuteczność zależy od decyzji Mistrza Gry.</p>"
+                }
+            }
+        },
+        "Rune: Storm": {
+            "name": "Runa: Burza",
+            "description": "<p>Chaotyczna siła surowej energii elektrycznej. Runa Burzy rządzi źródłami ładunków elektrycznych i wyładowań.</p><p>Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, atakuje <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> <strong>Zdrowiu</strong>. Przeciwdziała jej uporządkowana runa <strong>Ziemi</strong>.</p>",
+            "actions": {
+                "Energize": {
+                    "name": "Energetyzacja",
+                    "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
                 }
             }
         },
@@ -1612,6 +1792,30 @@
         "Safecracker": {
             "name": "Włamywacz",
             "description": "<p>Jesteś biegły w sztuce rozbrajania pułapek i otwierania zamków. Otrzymujesz +1 Korzyści do testów <strong>Skradania się</strong> w celu unieszkodliwienia urządzenia lub otwarcia zamka.</p>"
+        },
+        "Sage": {
+            "name": "Mędrzec",
+            "description": "<p>Twoja encyklopedyczna wiedza obejmuje wszystkie dziedziny nauki. Dzięki systematycznym badaniom i nagłym przebłyskom intuicji możesz sięgnąć po <strong>wiedzę</strong>, która zapewni ci wsparcie w kluczowych momentach.</p>",
+            "actions": {
+                "Flash of Brilliance": {
+                    "name": "Przebłysk geniuszu",
+                    "description": "<p>Wykorzystujesz <strong>Heroizm</strong> i doświadczasz nagłego, olśniewającego momentu całkowitej jasności umysłu. Do końca swojej następnej tury traktuje się cię tak, jakbyś posiadał każdą formę <strong>Wiedzy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Przebłysk geniuszu"
+                        }
+                    ]
+                },
+                "Field Study": {
+                    "name": "Badania terenowe",
+                    "description": "<p>Podczas wykonywania akcji @Action[default rest] poświęcasz się zgłębianiu wybranej dziedziny <strong>wiedzy</strong>. Po zakończeniu odpoczynku zyskujesz tę wiedzę na kolejne 24 godziny lub do momentu ponownego użycia tej akcji.</p>",
+                    "effects": [
+                        {
+                            "name": "Badania terenowe"
+                        }
+                    ]
+                }
+            }
         },
         "Science Adept": {
             "name": "Adept nauki",
@@ -1643,9 +1847,13 @@
                 }
             }
         },
+        "Sentinel": {
+            "name": "Strażnik",
+            "description": "<p>Karzesz tych, którzy próbują ominąć twoją obronę. Gdy zadasz obrażenia wrogowi za pomocą @Action[default reactiveStrike], istota ta otrzymuje @Condition[slowed] do końca swojej następnej tury.</p>"
+        },
         "Shapeshifter": {
             "name": "Zmiennokształtny",
-            "description": "<p>Posiadasz nadprzyrodzoną zdolność przekształcania swojego ciała w postacie bestii.</p><p>Przechodzisz transformację, w wyniku której przybierasz postać znanej ci bestii, której poziom jest równy połowie twojego poziomu lub niższy. Podczas transformacji posiadasz dokładnie takie same atrybuty i zdolności jak wybrana bestia.</p><p>Twój ekwipunek zostaje w magiczny sposób wcielony w przybraną przez ciebie postać, jednak podczas transformacji nie czerpiesz z tego żadnych korzyści.</p><p>Jeśli twoja bestialska postać otrzymuje stan @Condition[incapacitated], powracasz do swojej normalnej postaci, a wszelkie nadwyżki obrażeń zamieniają się w <strong>Rany</strong>. Jeśli twoje <strong>Morale</strong> będzie miało stan @Condition[broken] podczas przebywania w postaci bestii, twoja transformacja kończy się, a wszelkie nadwyżki obrażeń zamieniają się w <strong>Obłęd</strong>.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent i związane z nim akcje nie są jeszcze zautomatyzowane.</p>",
+            "description": "<p>Posiadasz nadprzyrodzoną zdolność przekształcania swojego ciała w postacie bestii.</p>\n<p>Przechodzisz transformację, w wyniku której przybierasz postać znanej ci bestii, której poziom jest równy połowie twojego poziomu lub niższy. Podczas transformacji posiadasz dokładnie takie same atrybuty i zdolności jak wybrana bestia.</p>\n<p>Twój ekwipunek zostaje w magiczny sposób wcielony w przybraną przez ciebie postać, jednak podczas transformacji nie czerpiesz z tego żadnych korzyści.</p>\n<p>Jeśli twoja bestialska postać otrzymuje stan @Condition[incapacitated], powracasz do swojej normalnej postaci, a wszelkie nadwyżki obrażeń zamieniają się w <strong>Rany</strong>. Jeśli twoje <strong>Morale</strong> będzie miało stan @Condition[broken] podczas przebywania w postaci bestii, twoja transformacja kończy się, a wszelkie nadwyżki obrażeń zamieniają się w <strong>Obłęd</strong>.</p>\n<h3 class=\"divider\">Uwagi z testów gry</h3>\n<p>Ten talent i związane z nim akcje nie są jeszcze zautomatyzowane.</p>",
             "actions": {
                 "Beast Shape": {
                     "name": "Postać bestii",
@@ -1764,6 +1972,10 @@
             "name": "Wyciszenie czarów",
             "description": "<p>Strumienie magii płyną wokół ciebie w dziwny sposób, jakby nieświadome twojej obecności.</p><p>Nie możesz wykonywać żadnych czynności z tagiem <strong>Zaklęcie</strong>. Zaklęcia, które mają cię za cel, otrzymują +2 <strong>Zguby</strong>, niezależnie od tego, czy wywołują one szkodliwe, czy korzystne efekty.</p>"
         },
+        "Spiritbreaker": {
+            "name": "Łamacz ducha",
+            "description": "<p>Wiedziesz wojnę z samym umysłem, podkopując determinację swoich wrogów. Twoje działania, które bezpośrednio atakują <strong>Morale</strong>, łatwiej znajdują pęknięcia w woli stworzenia, zmniejszając twój <strong>Próg Krytyczny</strong> o 2.</p><p>Kiedy sprawisz, że cel znajdzie się w stanie @Condition[broken], wstrząs psychiczny sprawia, że cel pozostaje w stanie @Condition[stunned] do końca swojej następnej tury.</p>"
+        },
         "Steadfast": {
             "name": "Nieugięty",
             "description": "Twoja cierpliwa determinacja pozwala ci znosić psychicznie wyczerpujące próby z niezachwianą determinacją.",
@@ -1799,6 +2011,10 @@
             "name": "Spokojne jezioro",
             "description": "<p>Twoje doświadczenia życiowe zapewniają spokój, który pozwala ci oprzeć się próbom manipulacji ze strony innych.</p><p><strong>Ataki umiejętności</strong> skierowane przeciwko tobie z dowolnej umiejętności <strong>Społecznej</strong> są wykonywane z <strong>2 Zgubami</strong>.</p>"
         },
+        "Storm Proficiency": {
+            "name": "Biegłość burzy",
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Burzy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Energetyzacji</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+        },
         "Strategic Repositioning": {
             "name": "Strategiczna reorganizacja",
             "description": "<p>Zawsze myślisz z wyprzedzeniem o tym, gdzie się ustawić, gdy zbliża się niebezpieczeństwo. Przed <strong>1 turą</strong> walki, pod warunkiem, że nie jesteś @Condition[unaware], możesz natychmiast przesunąć się o 4 stopy w dowolnym dozwolonym kierunku.</p><p>Jeśli wielu walczących posiada tę cechę, zmiana pozycji następuje w odwrotnej kolejności do inicjatywy.</p><h3 class=\"divider\">Uwagi z testów gry</h3><p>Ten talent nie jest jeszcze zautomatyzowany.</p>"
@@ -1809,7 +2025,7 @@
         },
         "Strong Grip": {
             "name": "Silny chwyt",
-            "description": "Twoje opanowanie broni jest pewne i nieugięte. Możesz wykonywać czynności wymagające wolnej ręki, nawet gdy dzierżysz broń dwuręczną. Próby Rozbrojenia ciebie są wykonywane z modyfikatorem +2 Zguby."
+            "description": "<p>Twoja pewność w posługiwaniu się bronią jest niezachwiana. Korzystając z broni dwuręcznej, której siła ataku zależy od Siły, możesz rzucać zaklęcia wymagające użycia obu rąk, a próby rozbrojenia cię otrzymują modyfikator +2 do zguby. </p><p>Ponadto możesz dzierżyć ciężką broń jednoręczną w drugiej ręce.</p>"
         },
         "Stunning Strike": {
             "name": "Oszałamiające uderzenie",
@@ -1847,7 +2063,7 @@
         },
         "Surgeweaver": {
             "name": "Iskrzyciel",
-            "description": "<p>Jesteś bardzo biegły w tkaniu Runy Błyskawicy. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[shocked] przy Trafieniach krytycznych.</p><p>Efekt Porażony trwa <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Błyskawicy</strong> do <strong>Morale</strong> i nakłada stan @Condition[staggered].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
         },
         "Swashbuckler": {
             "name": "Zawadiaka",
@@ -1895,6 +2111,21 @@
                 }
             }
         },
+        "Telekinetic": {
+            "name": "Telekineza",
+            "description": "<p>Wykorzystujesz siłę kinetyczną z wyćwiczoną łatwością, kierując torem ruchu przedmiotów i istot zgodnie ze swoją wolą.</p><ul><li><p>Raz na turę, gdy zastosujesz @UUID[Compendium.crucible.talent.Item.inflectionpush00]{Fleksję: Pchnięcie} lub @UUID[Compendium.crucible.talent.Item.inflectionpull00]{Fleksję: Przyciąganie} do zaklęcia, ignorujesz koszt <strong>Skupienia</strong> tej infleksji. </p></li><li><p>Podwajasz odległość, na jaką możesz przyciągać, odrzucać lub zawieszać obiekty za pomocą akcji @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel].</p></li><li><p>Odblokowujesz akcję <strong>Telekinetyczny lot</strong>, pozwalającą zawisnąć w powietrzu, aby latać i unosić się w miejscu.</p></li></ul>",
+            "actions": {
+                "Telekinetic Flight": {
+                    "name": "Telekinetyczny lot",
+                    "description": "<p>Unosisz się w powietrzu na prądach siły kinetycznej, zyskując stan @Condition[flying], który pozwala ci latać i zawisnąć w powietrzu. Efekt ten podtrzymujesz za pomocą <strong>Skupienia</strong> w każdej rundzie; kończy się on, gdy znajdziesz się w stanie @Condition[incapacitated].</p>",
+                    "effects": [
+                        {
+                            "name": "Telekinetyczny lot"
+                        }
+                    ]
+                }
+            }
+        },
         "Testudo": {
             "name": "Testudo",
             "description": "Jesteś bardzo biegły w posługiwaniu się tarczami, aby przyjąć postawę obronną. Uzyskujesz podwójną korzyść ze stanu @Condition[guarded] przeciwko <strong>atakom bronią</strong>, gdy dzierżysz tarczę."
@@ -1905,7 +2136,7 @@
         },
         "Thoughtbinder": {
             "name": "Myślotwórca",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Kontroli. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[dominated] przy Trafieniach krytycznych.</p><p>Efekt Zdominowany trwa <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe Twojej wartości <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kontroli. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[dominated].</p><p>Efekt Dominacji trwa przez <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe twojej wartości cechy <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Nawlekanie igły",
@@ -1997,7 +2228,7 @@
         },
         "Voidcaller": {
             "name": "Wzywacz pustki",
-            "description": "<p>Jesteś bardzo biegły w tkaniu Runy Nicości. Zaklęcia wykorzystujące tę Runę powodują stan @Condition[entropy] przy Trafieniach krytycznych. </p><p>Efekt Entropii trwa <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Prezencji</strong> jako obrażenia <strong>Pustki</strong> do <strong>Zdrowia</strong> i nakłada stan @Condition[frightened].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Nicości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[entropy]. </p><p>Efekt Entropii trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Prezencji</strong> jako obrażenia <strong>pustki</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[frightened].</p>"
         },
         "Vow of Animus": {
             "name": "Nienawistna przysięga",
@@ -2016,7 +2247,82 @@
         },
         "War Mage": {
             "name": "Mag wojenny",
-            "description": "<p>Twoja magia jest doskonalona jako broń wojenna, aby udaremniać zaklęcia innych magów. Możesz zapytać Mistrza Gry, czy znasz Runę zdolną do przeciwdziałania zaklęciu wroga, nawet jeśli nie rozpoznajesz rzucanego zaklęcia. Otrzymujesz +2 Korzyści do wszystkich prób przeciwdziałania zaklęciom.</p>"
+            "description": "<p>Twoja magia jest doskonalona jako broń wojenna, aby udaremniać zaklęcia innych magów. Możesz zapytać Mistrza Gry, czy znasz <strong>Runę</strong> zdolną do przeciwdziałania zaklęciu wroga, nawet jeśli nie rozpoznajesz rzucanego zaklęcia. Otrzymujesz +2 Korzyści do wszystkich prób @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell].</p>"
+        },
+        "Warchanter": {
+            "name": "Bitewny pieśniarz",
+            "description": "<p>Jesteś pieśniarzem wojennym, który zamienia zgiełk wojny w siłę, a twoje pieśni płyną w rytmie twoich ciosów. Znasz sześć <strong>pieśni</strong>; trzy <strong>pieśni</strong>, które wzmacniają twoich sojuszników, oraz trzy <strong>pieśni żałobne</strong>, które osłabiają twoich wrogów. Możesz łączyć wiele Intonacji, tworząc ewoluujący chór bitewny, ale potrzebujesz ciągłych ciosów swoją bronią, aby podsycać ich śpiew. </p><p>Rozpoczęcie intonacji tworzy wokół ciebie aurę, która wpływa na inne stworzenia w ich odpowiednich turach i trwa przez jedną rundę. Za każdym razem, gdy trafisz atakiem <strong>w walce wręcz</strong>, twoja Intonacja, która jest najbliższa wygaśnięcia, zostaje przedłużona o jedną <strong>rundę</strong>.</p>",
+            "actions": {
+                "Song of the Titan's Might": {
+                    "name": "Pieśń o Potędze Tytanów",
+                    "description": "<p>Wznosisz potężny hymn ku czci <strong>Tytana</strong>, którego siła niegdyś powaliła lewiatanów. Ty i sprzymierzone stworzenia w promieniu <strong>15 stóp</strong> zyskujecie <strong>+1 do Siły</strong> oraz <strong>+1 do Mądrości</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń o Potędze Tytanów"
+                        }
+                    ]
+                },
+                "Song of the Hunter's Alacrity": {
+                    "name": "Pieśń o Zuchwałości Łowcy",
+                    "description": "<p>Uwolnij porywającą melodię ku <strong>Łowcy</strong>, szybkiemu w biegu i o nieomylnym oku. Ty oraz sprzymierzone stworzenia w promieniu <strong>15 stóp</strong> zyskujecie <strong>+1 do Zręczności</strong> oraz <strong>+1 do Intelektu</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń o Zuchwałości Łowcy"
+                        }
+                    ]
+                },
+                "Song of the Mountain's Endurance": {
+                    "name": "Pieśń o Wytrwałości Gór",
+                    "description": "<p>Intonujesz odwieczny hymn ku czci <strong>Góry</strong>, która przetrwała wszystkie epoki w nienaruszonym stanie. Ty i sprzymierzone stworzenia w promieniu <strong>15 stóp</strong> zyskujecie <strong>+1 do Wytrzymałości</strong> oraz <strong>+1 do Prezencji</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń o Wytrwałości Gór"
+                        }
+                    ]
+                },
+                "Dirge of the Worm's Feebleness": {
+                    "name": "Pieśń żałobna o Słabości Robaka",
+                    "description": "<p>Nucisz szyderczą pieśń żałobną, w której nazywasz swoich wrogów pełzającym <strong>Robakiem</strong>, nadającym się jedynie do czołgania się. Wrogie stworzenia w promieniu <strong>15 stóp</strong> otrzymują <strong>1 zgubę</strong> do wszystkich swoich akcji.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń żałobna o Słabości Robaka"
+                        }
+                    ]
+                },
+                "Dirge of the Glutton's Lethargy": {
+                    "name": "Pieśń żałobna o Ospałości Żarłoka",
+                    "description": "<p>Intonujesz przeciągły requiem dla <strong>Żarłoka</strong>, który jest zbyt otyły i leniwy, by się poruszyć. Wrogie stworzenia w promieniu <strong>15 stóp</strong> tracą <strong>darmowy</strong> <strong>ruch</strong> i zmniejszają swój <strong>bieg</strong> o 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń żałobna o Ospałości Żarłoka"
+                        }
+                    ]
+                },
+                "Dirge of the Husk's Fragility": {
+                    "name": "Pieśń żałobna o Kruchości Skorupy",
+                    "description": "<p>Wypowiadasz kruchą pieśń żałobną dla <strong>Skorupy</strong>, pustej i gotowej do rozpadnięcia się. Wrogie stworzenia w promieniu <strong>15 stóp</strong> otrzymują <strong>wrażliwość</strong> równą 2 na wszystkie rodzaje obrażeń.</p>",
+                    "effects": [
+                        {
+                            "name": "Pieśń żałobna o Kruchości Skorupy"
+                        }
+                    ]
+                }
+            }
+        },
+        "Warden": {
+            "name": "Opiekun",
+            "description": "<p>Jesteś opiekunem starych zwyczajów, druidem bojowym, który wzywa duchy natury przodków, by otoczyły opieką tych, którzy znajdują się pod twoją ochroną.</p><p>Używasz @Action[Compendium.crucible.talent.Item.warden0000000000 ancestralGrove], aby wywołać obszar naturalnej ochrony, który powstaje dzięki duchowej projekcji Strażnika Przodków. </p><h3 class=\"divider\">Testowanie gry</h3><p>Pasywna aura Odporności promieniowana przez Strażnika Przodków nie jest jeszcze w pełni zautomatyzowana, w oczekiwaniu na dalsze ulepszenia Aury i Regionu.</p>",
+            "actions": {
+                "Ancestral Grove": {
+                    "name": "Gaj przodków",
+                    "description": "<p>Przywołujesz @UUID[Compendium.crucible.summons.Actor.ancestralGuard00]{Strażnika przodków}, który pojawia się w widocznym dla ciebie miejscu w promieniu 30 stóp. Strażnik jest niematerialnym duchem, którego nie można zranić ani przesunąć. Stworzenia mogą przechodzić przez jego przestrzeń, ale dla celów ustalenia, czy wróg jest @Condition[flanked], liczy się on jako trzy stworzenia. </p><p>Strażnik emanuje aurą o promieniu 20 stóp, która zwiększa <strong>Odporność</strong> sojuszników na wszystkie rodzaje obrażeń o +2.</p><p>Dopóki Strażnik trwa, twoje ataki bronią przeciwko wrogom w tej aurze powodują transfer siły życiowej od twoich wrogów do sojuszników. Twój cel otrzymuje dodatkowe obrażenia od <strong>trucizny</strong> równe połowie twojej <strong>Mądrości</strong>, które są przekazywane jako <strong>Zdrowie</strong> przywrócenie tobie lub sojusznikowi w gaju, który ma obecnie najniższy poziom zdrowia.</p><p>Strażnik pozostaje na miejscu do końca walki lub do momentu, gdy Opiekun ponownie użyje tej akcji.</p><p></p>",
+                    "effects": [
+                        {
+                            "name": "Gaj przodków"
+                        }
+                    ]
+                }
+            }
         },
         "Weak Points": {
             "name": "Słabe punkty",
@@ -2047,6 +2353,14 @@
                     "description": "<p>Jeśli uda Ci się wykonać test [[/skillCheck wilderness 14]], możesz zadawać proste pytania <strong>Bestii</strong>, która Cię dostrzega. Jeśli stworzenie nie jest wrogie, odpowie zgodnie z posiadaną wiedzą.</p><ul><li><p>Bestie o wartości <strong>Intelektu</strong> równej zero nie są w stanie Cię zrozumieć.</p></li><li><p>Bestie o wartości <strong>Intelektu</strong> równej 1 mogą odpowiadać tylko \"tak\" lub \"nie\".</p></li><li><p>Bestie o wartości <strong>Intelektu</strong> większej niż 1 mogą udzielać prostych odpowiedzi składających się z kilku słów.</p></li></ul>"
                 }
             }
+        },
+        "Wizard": {
+            "name": "Mag",
+            "description": "<p>Jesteś wybitnym znawcą sztuki magicznej, potrafiącym zachować płynność i dynamikę w rzucaniu zaklęć. Raz na turę, gdy rzucasz <strong>zaklęcie</strong>, możesz przenieść część jego mocy, aby zmniejszyć koszt <strong>skupienia</strong> bezpośrednio następującego po nim zaklęcia o 1.</p>"
+        },
+        "Wrestler": {
+            "name": "Zapaśnik",
+            "description": "<p>Wykorzystując siłę i technikę, potrafisz obezwładnić i utrzymać w uścisku stworzenia znacznie większe od ciebie. Wielkość stworzeń, na którym możesz użyć akcji @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] i które mogą obezwładnić ciebie, wzrasta o 1.</p>"
         },
         "Zealous Smite": {
             "name": "Gorliwy cios",
