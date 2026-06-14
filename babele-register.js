@@ -23,7 +23,7 @@ Hooks.once("babele.init", (babele) => {
     hint: "Dodaje do menu kontekstowego czatu opcję przerzutu wyniku za 1 Punkt Heroizmu. Wyłączenie tej opcji ukrywa przerzut i blokuje jego wykonanie.",
     scope: "world",
     type: Boolean,
-    default: true,
+    default: false,
     config: true,
     restricted: true,
     requiresReload: true,
