@@ -22,3 +22,7 @@ body {
 .crucible .line-item .title h4 {
     white-space: wrap;
 }
+
+.crucible.action-roll .description {
+    overflow-y: hidden;
+}

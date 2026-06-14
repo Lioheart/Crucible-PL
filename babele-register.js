@@ -20,13 +20,13 @@ Hooks.once("babele.init", (babele) => {
 
   game.settings.register("lang-pl-crucible", "heroism-reroll-enabled", {
     name: "Włącz przerzuty za Punkty Heroizmu (Zasada domowa)",
-    hint: "Dodaje do menu kontekstowego czatu opcję przerzutu wyniku za 1 Punkt Heroizmu. Wyłączenie tej opcji ukrywa przerzut i blokuje jego wykonanie. Dostępne tylko dla MG.",
+    hint: "Dodaje do menu kontekstowego czatu opcję przerzutu wyniku za 1 Punkt Heroizmu. Wyłączenie tej opcji ukrywa przerzut i blokuje jego wykonanie.",
     scope: "world",
     type: Boolean,
     default: true,
     config: true,
     restricted: true,
-    requiresReload: false,
+    requiresReload: true,
     onChange: value => {
       ui.notifications?.info(
         value

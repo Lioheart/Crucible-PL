@@ -3,6 +3,7 @@
   "title": "Polskia wersja Crucible",
   "description": "Polskie tłumaczenie do Crucible",
   "version": "vDev",
+  "socket": true,
   "compatibility": {
     "minimum": "14",
     "verified": "14",

@@ -2,6 +2,11 @@ const MODULE_ID = "lang-pl-crucible";
 
 const HEROISM_VALUE_PATH = "system.resources.heroism.value";
 
+const SOCKET_NAME = `module.${MODULE_ID}`;
+const SOCKET_TIMEOUT_MS = 60000;
+const PENDING_GM_REQUESTS = new Map();
+const HEROISM_REROLL_REJECTED = "HEROISM_REROLL_REJECTED";
+
 function isHeroismRerollEnabled() {
   try {
     return game.settings.get(MODULE_ID, "heroism-reroll-enabled");
@@ -10,8 +15,13 @@ function isHeroismRerollEnabled() {
   }
 }
 
+registerHeroismRerollChatStyling();
+
 Hooks.once("ready", () => {
   if (game.system.id !== "crucible") return;
+
+  registerHeroismRerollSocket();
+  styleExistingHeroismRerollChatMessages();
 
   console.log(
     `${MODULE_ID} | Heroism reroll ready; enabled: ${isHeroismRerollEnabled()}`
@@ -36,309 +46,654 @@ Hooks.on("getChatMessageContextOptions", (_app, options) => {
 
 function canRerollFromContext(li) {
   if (!isHeroismRerollEnabled()) return false;
-  const message = getMessageFromContext(li);
-  if (!message?.isRoll) return false;
-  if (!message.rolls?.length) return false;
-  if (message.getFlag(MODULE_ID, "rerolled")) return false;
-  if (!isMessageConfirmedForHeroism(message, li)) return false;
 
-const rolls = getRerollableCrucibleRolls(message);
+  const message = getMessageFromContext(li);
+  if (!message) return false;
+
+  const rolls = getRerollableCrucibleRolls(message);
   if (!rolls.length) return false;
 
-  const actor = getActorForRoll(message, rolls[0]);
+  if (!message.getFlag("crucible", "action")) return false;
+  if (message.getFlag(MODULE_ID, "rerolled")) return false;
+
+  if (!isMessageConfirmedForHeroism(message, li)) return false;
+
+  const actor = getActorForHeroismMessage(message, rolls[0]);
   if (!actor) return false;
 
-  if (!canControlActor(actor)) return false;
+  if (!canControlHeroismActor(actor, message)) return false;
 
   const heroism = getHeroism(actor);
   return Number.isFinite(heroism) && heroism > 0;
 }
 
 function isMessageConfirmedForHeroism(message, li) {
+  const messageElement = getMessageElementFromContext(li);
+
   /*
-   * Crucible oznacza potwierdzone akcje ikoną .confirmed w nagłówku wiadomości.
-   * Niepotwierdzona akcja ma przycisk "Potwierdź" oraz/lub ikonę stanu niepotwierdzonego.
-   *
-   * Dla zwykłych rzutów bez bloku akcji nie blokujemy przerzutu, bo mogą nie mieć
-   * mechaniki potwierdzania.
+   * Jeżeli DOM pokazuje przycisk potwierdzenia, karta jest niepotwierdzona.
+   * To jest jedyny twardy przypadek, w którym ukrywamy opcję.
    */
+  const hasConfirmControl =
+    messageElement?.querySelector?.("[data-action='confirmAction']")
+    || messageElement?.querySelector?.("[data-action=\"confirmAction\"]")
+    || messageElement?.querySelector?.("[data-action='confirm']")
+    || messageElement?.querySelector?.("[data-action=\"confirm\"]")
+    || messageElement?.textContent?.includes("Potwierdź")
+    || messageElement?.textContent?.includes("Confirm");
 
-  const element = normalizeElement(li);
-  const content = message?.content ?? "";
+  if (hasConfirmControl) return false;
 
-  const hasActionBlock =
-    Boolean(element?.querySelector?.(".crucible.action-roll"))
-    || content.includes("crucible action-roll");
-
-  if (!hasActionBlock) return true;
-
+  /*
+   * Jeżeli widać ikonę potwierdzenia, karta jest potwierdzona.
+   */
   const hasConfirmedIcon =
-    Boolean(element?.querySelector?.(".message-header .confirmed"))
-    || content.includes("class=\"confirmed")
-    || content.includes("class='confirmed");
+    messageElement?.querySelector?.(".message-header .confirmed")
+    || messageElement?.querySelector?.(".message-header .fa-hexagon-check");
 
   if (hasConfirmedIcon) return true;
 
-  const hasUnconfirmedMarker =
-    Boolean(element?.querySelector?.(".message-header .unconfirmed"))
-    || Boolean(element?.querySelector?.(".message-header .fa-hexagon-xmark"))
-    || Boolean(element?.querySelector?.("[data-action='confirmAction']"))
-    || Boolean(element?.querySelector?.("[data-action=\"confirmAction\"]"))
-    || Boolean(element?.querySelector?.("button"))
-    || content.includes("confirmAction")
-    || content.includes("Potwierdź")
-    || content.includes("Confirm");
-
-  if (hasUnconfirmedMarker) return false;
-
   /*
-   * Jeżeli to jest karta akcji, ale nie znaleziono potwierdzenia,
-   * traktujemy ją ostrożnie jako niepotwierdzoną.
+   * Nie blokuj gracza tylko dlatego, że jego DOM wiadomości nie zawiera ikony.
+   * Wystarczy, że wiadomość jest akcją Crucible i nie ma widocznego przycisku potwierdzenia.
    */
-  return false;
+  return Boolean(message?.getFlag("crucible", "action"));
+}
+
+function getMessageElementFromContext(li) {
+  const element = normalizeElement(li);
+  if (!element) return null;
+
+  if (element.matches?.("[data-message-id]")) return element;
+
+  return element.closest?.("[data-message-id]") ?? null;
 }
 
 async function rerollFromContext(li) {
   if (!isHeroismRerollEnabled()) {
     return ui.notifications.warn("Przerzuty za Punkty Heroizmu są obecnie wyłączone w ustawieniach modułu.");
   }
+
   const message = getMessageFromContext(li);
   if (!message) return ui.notifications.warn("Nie znaleziono wiadomości czatu.");
+
+  if (!message.getFlag("crucible", "action")) {
+    return ui.notifications.warn("Ten tryb przerzutu działa tylko na wiadomościach akcji Crucible.");
+  }
 
   if (!isMessageConfirmedForHeroism(message, li)) {
     return ui.notifications.warn("Nie można przerzucić niepotwierdzonej akcji. Najpierw potwierdź akcję w czacie.");
   }
 
-  const rolls = getRerollableCrucibleRolls(message);
+  const actor = getActorForHeroismMessage(message, getFirstCrucibleRoll(message));
+  if (!actor) return ui.notifications.warn("Nie znaleziono aktora przypisanego do akcji.");
 
-  if (!rolls.length) return ui.notifications.warn("Ta wiadomość nie zawiera obsługiwanego rzutu Crucible.");
-
-  const actor = getActorForRoll(message, rolls[0]);
-  if (!actor) return ui.notifications.warn("Nie znaleziono aktora przypisanego do rzutu.");
-
-  if (!canControlActor(actor)) {
+  if (!canControlHeroismActor(actor, message)) {
     return ui.notifications.warn("Nie masz uprawnień do wydania Heroizmu tego aktora.");
   }
 
   const currentHeroism = getHeroism(actor);
   if (!Number.isFinite(currentHeroism)) {
-    return ui.notifications.error(`Nie znaleziono wartości Heroizm pod ścieżką ${HEROISM_VALUE_PATH}.`);
+    return ui.notifications.error(`Nie znaleziono wartości Heroizmu pod ścieżką ${HEROISM_VALUE_PATH}.`);
   }
 
   if (currentHeroism < 1) {
     return ui.notifications.warn(`${actor.name} nie ma dostępnych Punktów Heroizmu.`);
   }
 
+  const ActionClass = getCrucibleActionClass();
+  if (!ActionClass) {
+    return ui.notifications.error("Nie znaleziono klasy CrucibleAction w API systemu Crucible.");
+  }
+
+  const previousTargets = captureUserTargets();
   let spent = false;
-  let resourceRollback = null;
+  let reversed = false;
 
   try {
+    const originalAction = ActionClass.fromChatMessage(message);
+    if (!originalAction) {
+      return ui.notifications.warn("Nie udało się odtworzyć akcji z wiadomości czatu.");
+    }
+
     await actor.update({
       [HEROISM_VALUE_PATH]: currentHeroism - 1
     });
     spent = true;
 
-    const rerolls = [];
+    /*
+     * Cofamy starą potwierdzoną akcję tym samym mechanizmem,
+     * którego używa Crucible przy wycofaniu. To powinno cofnąć
+     * obrażenia, efekty, aktualizacje aktorów i inne eventy akcji.
+     */
+    await confirmCrucibleActionMessage(message, {
+      action: originalAction,
+      reverse: true,
+      requireApproval: !game.user.isGM
+    });
+    reversed = true;
 
-    for (const oldRoll of rolls) {
-      const newRoll = await createReroll(oldRoll);
-      rerolls.push(newRoll);
-    }
+    /*
+     * Przywracamy cele z oryginalnej akcji jako aktualne targety.
+     * Dialog Crucible nadal pozwoli zmienić konfigurację przed rzutem.
+     */
+    restoreTargetsFromAction(originalAction);
 
-    const attackCount = rerolls.filter(r => isAttackRoll(r, r.data ?? {})).length;
-
-    for (let i = 0; i < rerolls.length; i++) {
-      rerolls[i].data.index = i;
-
-      if (isAttackRoll(rerolls[i], rerolls[i].data ?? {})) {
-        rerolls[i].data.newTarget = attackCount > 1;
+    /*
+     * Uruchamiamy pełny cykl CrucibleAction#use().
+     * To jest kluczowe dla efektów warunkowych, np. Płonący po krytyku.
+     */
+    const replayAction = await originalAction.use({
+      token: getActionTokenDocument(originalAction, message),
+      dialog: true,
+      chatMessageOptions: {
+        flags: {
+          [MODULE_ID]: {
+            heroismReroll: true,
+            originalMessageId: message.id,
+            actorId: actor.id,
+            userId: game.user.id,
+            timestamp: Date.now()
+          }
+        }
       }
+    });
+
+    if (!replayAction) {
+      await confirmCrucibleActionMessage(message, {
+        action: ActionClass.fromChatMessage(message),
+        reverse: false,
+        requireApproval: false
+      });
+      reversed = false;
+
+      await actor.update({
+        [HEROISM_VALUE_PATH]: currentHeroism
+      });
+      spent = false;
+
+      ui.notifications.warn("Przerzut anulowany. Oryginalna akcja została przywrócona, a Punkt Heroizmu zwrócony.");
+      return;
     }
 
-    const resourceChange = await applyRerollAttackResourcesForRolls(rolls, rerolls);
-    resourceRollback = resourceChange?.rollback ?? null;
+    try {
+      await setOriginalMessageRerolledFlag(message, actor);
+    } catch (err) {
+      console.warn(`${MODULE_ID} | Nie udało się oznaczyć oryginalnej wiadomości jako przerzuconej`, err);
+    }
 
-    const actionHtml = getOriginalActionHtml(message, li);
-    const oldFlavor = message.flavor ?? rolls[0].options?.flavor ?? "";
-
-    const flavor = [
-      actionHtml || oldFlavor,
-      `<hr>`,
-      `<p><strong>Przerzut za Heroizm</strong></p>`,
-      formatRerollTotals(rolls, rerolls),
-      formatResourceChange(resourceChange)
-    ].filter(Boolean).join("");
-
-    const newMessage = await ChatMessage.create({
+    await ChatMessage.create({
       speaker: message.speaker ?? ChatMessage.getSpeaker({ actor }),
-      flavor,
-      rolls: rerolls,
-      ...(CONST.CHAT_MESSAGE_STYLES?.ROLL != null ? { style: CONST.CHAT_MESSAGE_STYLES.ROLL } : {}),
+      content: buildHeroismRerollChatContent({
+        message,
+        actor,
+        status: "accepted"
+      }),
       flags: {
         [MODULE_ID]: {
-          type: "heroism-reroll",
+          type: "heroism-reroll-note",
+          status: "accepted",
           originalMessageId: message.id,
-          originalRollTotals: rolls.map(r => Number.isFinite(r.total) ? r.total : null),
-          newRollTotals: rerolls.map(r => Number.isFinite(r.total) ? r.total : null),
           actorId: actor.id,
           userId: game.user.id,
           timestamp: Date.now()
         }
       }
-    }, {
-      messageMode: rolls[0].data?.messageMode
     });
 
-    await message.setFlag(MODULE_ID, "rerolled", {
-      rerollMessageId: newMessage.id,
-      actorId: actor.id,
-      userId: game.user.id,
-      timestamp: Date.now()
-    });
-
-    ui.notifications.info(`${actor.name}: wydano 1 Punkt Heroizmu i wykonano przerzut dla ${rolls.length} ${rolls.length === 1 ? "rzutu" : "rzutów"}.`);
   } catch (err) {
-    console.error(`${MODULE_ID} | Reroll failed`, err);
+    const rejectedByGM = err?.code === HEROISM_REROLL_REJECTED;
 
-    if (resourceRollback) {
-      await resourceRollback();
+    if (!rejectedByGM) {
+      console.error(`${MODULE_ID} | Heroism action replay failed`, err);
+    }
+
+    if (reversed) {
+      try {
+        await confirmCrucibleActionMessage(message, {
+          action: ActionClass.fromChatMessage(message),
+          reverse: false,
+          requireApproval: false
+        });
+      } catch (restoreErr) {
+        console.error(`${MODULE_ID} | Nie udało się przywrócić oryginalnej akcji po błędzie`, restoreErr);
+      }
     }
 
     if (spent) {
-      await actor.update({
-        [HEROISM_VALUE_PATH]: currentHeroism
-      });
+      try {
+        await actor.update({
+          [HEROISM_VALUE_PATH]: currentHeroism
+        });
+      } catch (refundErr) {
+        console.error(`${MODULE_ID} | Nie udało się zwrócić Punktu Heroizmu po błędzie`, refundErr);
+      }
     }
 
-    ui.notifications.error("Nie udało się wykonać przerzutu za Heroizm. Szczegóły są w konsoli.");
+    if (!rejectedByGM) {
+      ui.notifications.error("Nie udało się wykonać przerzutu przez ponowne uruchomienie akcji. Szczegóły są w konsoli.");
+    }
+  } finally {
+    restoreUserTargets(previousTargets);
   }
 }
 
-async function createReroll(oldRoll) {
-  const diceApi = game.crucible?.api?.dice ?? crucible?.api?.dice;
-  const StandardCheck = diceApi?.StandardCheck;
-  const AttackRoll = diceApi?.AttackRoll;
-
-  if (!StandardCheck) throw new Error("Brak crucible.api.dice.StandardCheck.");
-
-  const oldData = foundry.utils.deepClone(oldRoll.data ?? {});
-  const oldDamage = foundry.utils.deepClone(oldData.damage ?? {});
-
-  const isAttack = isAttackRoll(oldRoll, oldData) && AttackRoll;
-  const RollClass = isAttack ? AttackRoll : StandardCheck;
-
-  delete oldData.result;
-  delete oldData.damage;
-
-  const reroll = new RollClass(oldData);
-  await reroll.evaluate({
-    allowInteractive: oldData.messageMode !== "blind"
-  });
-
-  if (isAttack) {
-    await resolveAttackReroll(reroll, oldData, oldDamage, AttackRoll);
-  }
-
-  return reroll;
+function getCrucibleActionClass() {
+  return game.system?.api?.models?.CrucibleAction
+    ?? game.crucible?.api?.models?.CrucibleAction
+    ?? globalThis.crucible?.api?.models?.CrucibleAction
+    ?? null;
 }
 
-async function resolveAttackReroll(reroll, rollData, oldDamage, AttackRoll) {
-  const RESULTS = AttackRoll.RESULT_TYPES;
+function getActorForActionMessage(message) {
+  const actorUuid = message.getFlag("crucible", "actor");
 
-  const actor = game.actors.get(rollData.actorId);
-  const targetDocument = rollData.target ? await fromUuid(rollData.target) : null;
-  const target = targetDocument?.actor ?? targetDocument ?? null;
-
-  const defenseType = rollData.defenseType || "physical";
-
-  if (target?.testDefense instanceof Function) {
-    reroll.data.result = target.testDefense(defenseType, reroll);
-  } else {
-    reroll.data.result = Number.isFinite(rollData.dc) && reroll.total > rollData.dc
-      ? RESULTS.HIT
-      : RESULTS.MISS;
+  if (actorUuid) {
+    try {
+      const actor = foundry.utils.fromUuidSync?.(actorUuid) ?? fromUuidSync(actorUuid);
+      if (actor) return actor;
+    } catch (_err) { }
   }
 
-  if (!Object.values(RESULTS).includes(reroll.data.result)) {
-    reroll.data.result = RESULTS.MISS;
-    delete reroll.data.damage;
-    return;
-  }
-
-  if (reroll.data.result < RESULTS.GLANCE) {
-    delete reroll.data.damage;
-    return;
-  }
-
-  reroll.data.damage = buildRerollDamageData({
-    actor,
-    target,
-    rollData,
-    oldDamage,
-    reroll
-  });
+  return ChatMessage.getSpeakerActor(message.speaker);
 }
 
-async function getTargetActorFromUuid(uuid) {
-  if (!uuid) return null;
+function getActorForHeroismMessage(message, roll = null) {
+  return getActorForActionMessage(message)
+    ?? getActorFromMessageSpeaker(message)
+    ?? getActorForRoll(message, roll)
+    ?? null;
+}
+
+function getActorFromMessageSpeaker(message) {
+  if (!message?.speaker) return null;
+
+  const speakerActor = ChatMessage.getSpeakerActor?.(message.speaker);
+  if (speakerActor) return speakerActor;
+
+  const scene = message.speaker.scene ? game.scenes.get(message.speaker.scene) : null;
+  const tokenDocument = scene && message.speaker.token ? scene.tokens.get(message.speaker.token) : null;
+
+  return tokenDocument?.actor ?? null;
+}
+
+function getTokenDocumentFromMessage(message) {
+  const tokenUuid = message.getFlag("crucible", "token");
+
+  if (tokenUuid) {
+    try {
+      const token = foundry.utils.fromUuidSync?.(tokenUuid) ?? fromUuidSync(tokenUuid);
+      if (token) return token;
+    } catch (_err) {}
+  }
+
+  const scene = message.speaker?.scene ? game.scenes.get(message.speaker.scene) : null;
+  if (!scene || !message.speaker?.token) return null;
+
+  return scene.tokens.get(message.speaker.token) ?? null;
+}
+
+function getActionTokenDocument(action, message) {
+  if (action?.token) return action.token;
+
+  const tokenUuid = message.getFlag("crucible", "token");
+  if (!tokenUuid) return null;
 
   try {
-    const document = await fromUuid(uuid);
-    return document?.actor ?? document ?? null;
-  } catch (err) {
-    console.warn(`${MODULE_ID} | Nie udało się pobrać celu ataku`, err);
+    return foundry.utils.fromUuidSync?.(tokenUuid) ?? fromUuidSync(tokenUuid);
+  } catch (_err) {
     return null;
   }
 }
 
-function getCurrentDefenseDC(target, defenseType, fallback) {
-  if (!target) return fallback;
-
-  if (defenseType === "physical") {
-    return target.defenses?.physical?.total
-      ?? target.system?.defenses?.physical?.total
-      ?? fallback;
-  }
-
-  if (target.defenses?.[defenseType]) {
-    return target.defenses[defenseType].total ?? fallback;
-  }
-
-  if (target.skills?.[defenseType]) {
-    return target.skills[defenseType].passive ?? fallback;
-  }
-
-  return fallback;
+function captureUserTargets() {
+  return Array.from(game.user.targets ?? [])
+    .map(token => token.document?.uuid ?? token.id)
+    .filter(Boolean);
 }
 
-function getBaseDamage(actor, rollData, oldDamage) {
-  if (Number.isFinite(oldDamage.base)) return oldDamage.base;
-
-  const item = rollData.itemId ? actor?.items?.get(rollData.itemId) : null;
-  const weaponBase = Number(item?.system?.damage?.weapon);
-
-  if (Number.isFinite(weaponBase)) return weaponBase;
-
-  return 0;
+function restoreUserTargets(tokenRefs) {
+  setUserTargets(tokenRefs ?? []);
 }
 
-function getBonusDamage(actor, rollData, oldDamage) {
-  if (Number.isFinite(oldDamage.bonus)) return oldDamage.bonus;
+function restoreTargetsFromAction(action) {
+  const tokenRefs = [];
 
-  const item = rollData.itemId ? actor?.items?.get(rollData.itemId) : null;
-  const weaponBonus = Number(item?.system?.damage?.bonus ?? 0);
-  const rollBonus = Number(rollData.damageBonus ?? 0);
+  for (const target of action?.targets?.values?.() ?? []) {
+    const token =
+      target.token?.object
+      ?? getCanvasTokenFromUuid(target.token?.uuid)
+      ?? getCanvasTokenFromUuid(target.document?.uuid)
+      ?? getCanvasTokenFromActor(target.actor ?? target)
+      ?? null;
 
-  return weaponBonus + rollBonus;
-}
-
-function getNumeric(...values) {
-  for (const value of values) {
-    const number = Number(value);
-    if (Number.isFinite(number)) return number;
+    const ref = token?.document?.uuid ?? token?.id;
+    if (ref) tokenRefs.push(ref);
   }
 
-  return 0;
+  if (!tokenRefs.length) return;
+
+  setUserTargets(tokenRefs);
+}
+
+function setUserTargets(tokenRefs) {
+  if (!canvas?.tokens) return;
+
+  const wanted = new Set((tokenRefs ?? []).filter(Boolean));
+
+  for (const token of canvas.tokens.placeables ?? []) {
+    const refs = [
+      token.id,
+      token.document?.id,
+      token.document?.uuid,
+      token.actor?.id,
+      token.actor?.uuid
+    ].filter(Boolean);
+
+    const shouldTarget = refs.some(ref => wanted.has(ref));
+    const isTargeted = game.user.targets?.has(token) ?? false;
+
+    if (shouldTarget === isTargeted) continue;
+
+    token.setTarget(shouldTarget, {
+      user: game.user,
+      releaseOthers: false,
+      groupSelection: true
+    });
+  }
+}
+
+function getCanvasTokenFromUuid(uuid) {
+  if (!uuid || !canvas?.tokens) return null;
+
+  try {
+    const document = foundry.utils.fromUuidSync?.(uuid) ?? fromUuidSync(uuid);
+    return document?.object
+      ?? canvas.tokens.placeables?.find(token => token.document?.uuid === uuid)
+      ?? null;
+  } catch (_err) {
+    return canvas.tokens.placeables?.find(token => token.document?.uuid === uuid) ?? null;
+  }
+}
+
+function getCanvasTokenFromActor(actor) {
+  if (!actor || !canvas?.tokens) return null;
+
+  const actorUuid = actor.uuid;
+  const actorId = actor.id;
+
+  return canvas.tokens.placeables?.find(token => {
+    return token.actor?.uuid === actorUuid || token.actor?.id === actorId;
+  }) ?? null;
+}
+
+async function confirmCrucibleActionMessage(message, {
+  action = null,
+  reverse = false,
+  requireApproval = reverse
+} = {}) {
+  const ActionClass = getCrucibleActionClass();
+  if (!ActionClass) throw new Error("Nie znaleziono klasy CrucibleAction.");
+
+  if (game.user.isGM) {
+    await ActionClass.confirmMessage(message, {
+      action,
+      reverse
+    });
+    return;
+  }
+
+  await requestPrimaryGM("confirmActionMessage", {
+    messageId: message.id,
+    reverse,
+    requireApproval
+  });
+}
+
+function registerHeroismRerollSocket() {
+  if (!game.socket) return;
+
+  game.socket.on(SOCKET_NAME, async payload => {
+    if (!payload?.type) return;
+
+    if (payload.type === "gmResponse") {
+      handleGMResponse(payload);
+      return;
+    }
+
+    if (!game.user.isGM || !isPrimaryActiveGM()) return;
+    if (payload.gmId && payload.gmId !== game.user.id) return;
+
+    try {
+      if (payload.type === "setRerolledFlag") {
+        const message = game.messages.get(payload.messageId);
+        if (!message) throw new Error("Nie znaleziono wiadomości do oznaczenia jako przerzuconej.");
+
+        const actor = getActorForHeroismMessage(message, getFirstCrucibleRoll(message));
+        const requestingUser = game.users.get(payload.requestingUserId);
+
+        if (actor && requestingUser && !canUserControlHeroismActor(requestingUser, actor, message)) {
+          throw new Error(`Użytkownik ${requestingUser.name} nie ma uprawnień właściciela do aktora "${actor.name}".`);
+        }
+
+        await message.setFlag(MODULE_ID, "rerolled", {
+          mode: "replay-action",
+          actorId: payload.actorId,
+          userId: payload.requestingUserId,
+          timestamp: Date.now()
+        });
+
+        sendGMResponse(payload, {
+          ok: true,
+          result: true
+        });
+
+        return;
+      }
+
+      if (payload.type !== "confirmActionMessage") return;
+
+      const message = game.messages.get(payload.messageId);
+      if (!message) throw new Error("Nie znaleziono wiadomości akcji do potwierdzenia/cofnięcia.");
+
+      const actor = getActorForHeroismMessage(message, getFirstCrucibleRoll(message));
+      const requestingUser = game.users.get(payload.requestingUserId);
+
+      if (actor && requestingUser && !canUserControlHeroismActor(requestingUser, actor, message)) {
+        throw new Error(`Użytkownik ${requestingUser.name} nie ma uprawnień właściciela do aktora "${actor.name}".`);
+      }
+
+      if (payload.requireApproval !== false) {
+        const approved = await showGMHeroismRerollDialog({
+          message,
+          actor,
+          requestingUser,
+          reverse: Boolean(payload.reverse)
+        });
+
+        if (!approved) {
+          await ChatMessage.create({
+            speaker: message.speaker ?? ChatMessage.getSpeaker({ actor }),
+            content: buildHeroismRerollChatContent({
+              message,
+              actor,
+              status: "rejected"
+            }),
+            flags: {
+              [MODULE_ID]: {
+                type: "heroism-reroll-note",
+                status: "rejected",
+                originalMessageId: message.id,
+                actorId: actor?.id,
+                userId: payload.requestingUserId,
+                gmId: game.user.id,
+                timestamp: Date.now()
+              }
+            }
+          });
+
+          sendGMResponse(payload, {
+            ok: false,
+            code: HEROISM_REROLL_REJECTED,
+            error: "MG odrzucił prośbę o przerzut za Heroizm."
+          });
+
+          return;
+        }
+      }
+
+      const ActionClass = getCrucibleActionClass();
+      if (!ActionClass) throw new Error("Nie znaleziono klasy CrucibleAction.");
+
+      const action = ActionClass.fromChatMessage(message);
+
+      await ActionClass.confirmMessage(message, {
+        action,
+        reverse: Boolean(payload.reverse)
+      });
+
+      sendGMResponse(payload, {
+        ok: true,
+        result: true
+      });
+    } catch (err) {
+      console.error(`${MODULE_ID} | Socket request failed`, err);
+
+      sendGMResponse(payload, {
+        ok: false,
+        error: err.message ?? String(err)
+      });
+    }
+  });
+}
+
+function sendGMResponse(requestPayload, response) {
+  if (!requestPayload?.requestId || !requestPayload?.requestingUserId) return;
+
+  game.socket.emit(SOCKET_NAME, {
+    type: "gmResponse",
+    requestId: requestPayload.requestId,
+    requestingUserId: requestPayload.requestingUserId,
+    gmId: game.user.id,
+    ...response
+  });
+}
+
+function canUserControlHeroismActor(user, actor, message = null) {
+  if (!user || !actor) return false;
+  if (user.isGM) return true;
+
+  if (actor.testUserPermission?.(user, "OWNER")) return true;
+
+  const tokenDocument = message ? getTokenDocumentFromMessage(message) : null;
+
+  if (tokenDocument?.actor?.id === actor.id || tokenDocument?.actor?.uuid === actor.uuid) {
+    if (tokenDocument.actor?.testUserPermission?.(user, "OWNER")) return true;
+  }
+
+  if (user.character) {
+    if (user.character.id === actor.id) return true;
+    if (user.character.uuid === actor.uuid) return true;
+    if (user.character.name === actor.name) return true;
+  }
+
+  return false;
+}
+
+async function showGMHeroismRerollDialog({ message, actor, requestingUser, reverse = true } = {}) {
+  const DialogV2 = foundry.applications?.api?.DialogV2;
+  if (!DialogV2) throw new Error("Nie znaleziono foundry.applications.api.DialogV2.");
+
+  const actionData = message.getFlag("crucible", "action") ?? {};
+  const actionName = actionData.name ?? actionData.title ?? "akcja";
+  const actorName = actor?.name ?? "aktor";
+  const userName = requestingUser?.name ?? "gracz";
+
+  const operation = reverse
+    ? "cofnięcie potwierdzonej akcji i pozwolenie graczowi wykonać ją ponownie"
+    : "ponownie zastosować cofniętą akcję";
+
+  const confirmed = await DialogV2.confirm({
+    window: {
+      title: "Przerzut za Heroizm"
+    },
+    content: [
+      `<p><strong>${escapeHtml(userName)}</strong> chce użyć przerzutu za Heroizm.</p>`,
+      `<p><strong>Aktor:</strong> ${escapeHtml(actorName)}</p>`,
+      `<p>Operacja: ${escapeHtml(operation)}.</p>`,
+      `<p>Po zatwierdzeniu stara akcja zostanie cofnięta, a gracz uruchomi ją ponownie.</p>`
+    ].join(""),
+    yes: {
+      label: "Potwierdź"
+    },
+    no: {
+      label: "Anuluj"
+    },
+    modal: true,
+    rejectClose: false
+  });
+
+  return confirmed === true;
+}
+
+function handleGMResponse(payload) {
+  if (payload.requestingUserId !== game.user.id) return;
+
+  const pending = PENDING_GM_REQUESTS.get(payload.requestId);
+  if (!pending) return;
+
+  window.clearTimeout(pending.timeout);
+  PENDING_GM_REQUESTS.delete(payload.requestId);
+
+  if (!payload.ok) {
+    const error = new Error(payload.error ?? "MG nie wykonał żądania socketu.");
+    error.code = payload.code;
+    pending.reject(error);
+    return;
+  }
+
+  pending.resolve(payload.result);
+}
+
+function isPrimaryActiveGM() {
+  return getPrimaryActiveGM()?.id === game.user.id;
+}
+
+function getPrimaryActiveGM() {
+  return game.users
+    .filter(user => user.active && user.isGM)
+    .sort((a, b) => a.id.localeCompare(b.id))[0] ?? null;
+}
+
+function requestPrimaryGM(type, data = {}) {
+  const gm = getPrimaryActiveGM();
+
+  if (!gm) {
+    return Promise.reject(new Error("Nie znaleziono aktywnego MG. Cofnięcie starej akcji wymaga aktywnego MG."));
+  }
+
+  const requestId = foundry.utils.randomID();
+
+  return new Promise((resolve, reject) => {
+    const timeout = window.setTimeout(() => {
+      PENDING_GM_REQUESTS.delete(requestId);
+      reject(new Error("Przekroczono limit czasu oczekiwania na odpowiedź MG."));
+    }, SOCKET_TIMEOUT_MS);
+
+    PENDING_GM_REQUESTS.set(requestId, {
+      resolve,
+      reject,
+      timeout
+    });
+
+    game.socket.emit(SOCKET_NAME, {
+      type,
+      requestId,
+      requestingUserId: game.user.id,
+      gmId: gm.id,
+      ...data
+    });
+  });
 }
 
 function getFirstCrucibleRoll(message) {
@@ -402,14 +757,44 @@ function getHeroism(actor) {
   return Number(foundry.utils.getProperty(actor, HEROISM_VALUE_PATH));
 }
 
-function canControlActor(actor) {
-  return game.user.isGM || actor.testUserPermission(game.user, "OWNER");
+function canControlHeroismActor(actor, message = null) {
+  if (game.user.isGM) return true;
+  if (!actor) return false;
+
+  if (actor.testUserPermission?.(game.user, "OWNER")) return true;
+
+  const tokenDocument = message ? getTokenDocumentFromMessage(message) : null;
+
+  if (tokenDocument?.actor?.id === actor.id || tokenDocument?.actor?.uuid === actor.uuid) {
+    if (tokenDocument.actor?.testUserPermission?.(game.user, "OWNER")) return true;
+  }
+
+  const assigned = getUserAssignedActors(game.user);
+
+  return assigned.some(assignedActor => {
+    return assignedActor?.id === actor.id
+      || assignedActor?.uuid === actor.uuid
+      || assignedActor?.name === actor.name;
+  });
+}
+
+function getUserAssignedActors(user) {
+  const actors = [];
+
+  if (user.character) actors.push(user.character);
+
+  for (const actor of game.actors ?? []) {
+    if (actor.testUserPermission?.(user, "OWNER")) {
+      actors.push(actor);
+    }
+  }
+
+  return actors;
 }
 
 function getMessageFromContext(li) {
-  const element = normalizeElement(li);
-  const messageId = element?.dataset?.messageId
-    ?? element?.closest?.("[data-message-id]")?.dataset?.messageId;
+  const messageElement = getMessageElementFromContext(li);
+  const messageId = messageElement?.dataset?.messageId;
 
   return messageId ? game.messages.get(messageId) : null;
 }
@@ -421,559 +806,208 @@ function normalizeElement(li) {
   return null;
 }
 
-async function applyRerollAttackResources(oldRoll, newRoll) {
-  return applyRerollAttackResourcesForRolls([oldRoll], [newRoll]);
-}
-
-async function applyRerollAttackResourcesForRolls(oldRolls, newRolls) {
-  const pairs = [];
-
-  for (let i = 0; i < oldRolls.length; i++) {
-    const oldRoll = oldRolls[i];
-    const newRoll = newRolls[i];
-
-    if (!oldRoll || !newRoll) continue;
-    if (!isAttackRoll(oldRoll, oldRoll.data ?? {})) continue;
-
-    const target = await getTargetActorFromRollData(oldRoll.data ?? newRoll.data ?? {});
-
-    if (!target) {
-      pairs.push({
-        oldRoll,
-        newRoll,
-        target: null,
-        warning: "Nie znaleziono celu ataku, więc PW nie zostało zmienione."
-      });
-      continue;
-    }
-
-    if (!(game.user.isGM || target.testUserPermission(game.user, "OWNER"))) {
-      throw new Error(
-        `Brak uprawnień do zmiany zasobów celu "${target.name}". ` +
-        `Uruchom przerzut jako MG albo dodaj obsługę socketu MG.`
-      );
-    }
-
-    pairs.push({ oldRoll, newRoll, target });
-  }
-
-  if (!pairs.length) return null;
-
-  const snapshots = [];
-  const uniqueTargets = new Map();
-
-  for (const pair of pairs) {
-    if (!pair.target) continue;
-    const key = pair.target.uuid ?? pair.target.id;
-
-    if (!uniqueTargets.has(key)) {
-      uniqueTargets.set(key, pair.target);
-      snapshots.push(snapshotActorResources(pair.target));
-    }
-  }
-
-  const rollback = async () => {
-    for (let i = snapshots.length - 1; i >= 0; i--) {
-      await snapshots[i]();
-    }
-  };
-
-  const results = [];
-  const warnings = [];
-
-  try {
-    for (const pair of pairs) {
-      if (!pair.target) {
-        warnings.push(pair.warning);
-        continue;
-      }
-
-      const restored = await restorePreviousAttackDamage(pair.target, pair.oldRoll.data?.damage);
-      const applied = await applyNewAttackDamage(pair.target, pair.newRoll.data?.damage);
-
-      results.push({
-        targetName: pair.target.name,
-        targetUuid: pair.target.uuid,
-        oldTotal: Number.isFinite(pair.oldRoll.total) ? pair.oldRoll.total : null,
-        newTotal: Number.isFinite(pair.newRoll.total) ? pair.newRoll.total : null,
-        restored,
-        applied
-      });
-    }
-
-    return {
-      targets: results,
-      warnings,
-      rollback
-    };
-  } catch (err) {
-    await rollback();
-    throw err;
-  }
-}
-
-async function getTargetActorFromRollData(rollData) {
-  if (!rollData?.target) return null;
-
-  try {
-    const document = await fromUuid(rollData.target);
-    return document?.actor ?? document ?? null;
-  } catch (err) {
-    console.warn(`${MODULE_ID} | Nie udało się znaleźć celu ataku`, err);
-    return null;
-  }
-}
-
-function snapshotActorResources(actor) {
-  const updates = {};
-
-  for (const [id, resource] of Object.entries(actor.system.resources ?? {})) {
-    updates[`system.resources.${id}.value`] = resource.value;
-  }
-
-  return async () => actor.update(updates, { scrollingText: false });
-}
-
-async function restorePreviousAttackDamage(target, damage) {
-  const total = getDamageTotal(damage);
-  const resource = damage?.resource ?? "health";
-  const restoration = Boolean(damage?.restoration);
-
-  if (!total) {
-    return {
-      resource,
-      total: 0,
-      restoration
-    };
-  }
-
-  if (!restoration && ["health", "morale"].includes(resource)) {
-    await restoreActiveDamageWithReserve(target, resource, total);
-  } else {
-    const oldDelta = getSignedResourceDelta(damage);
-    await applyResourceDeltaDirect(target, resource, -oldDelta);
-  }
-
-  return {
-    resource,
-    total,
-    restoration
-  };
-}
-
-async function applyNewAttackDamage(target, damage) {
-  const total = getDamageTotal(damage);
-  const resource = damage?.resource ?? "health";
-  const restoration = Boolean(damage?.restoration);
-
-  if (!total) {
-    return {
-      resource,
-      total: 0,
-      restoration
-    };
-  }
-
-  const delta = getSignedResourceDelta(damage);
-
-  if (target.alterResources instanceof Function) {
-    await target.alterResources({
-      [resource]: delta
-    });
-  } else {
-    await applyResourceDeltaDirect(target, resource, delta);
-  }
-
-  return {
-    resource,
-    total,
-    restoration,
-    delta
-  };
-}
-
-function getDamageTotal(damage) {
-  const total = Number(damage?.total ?? 0);
-  if (!Number.isFinite(total)) return 0;
-  return Math.max(0, total);
-}
-
-function getSignedResourceDelta(damage) {
-  const total = getDamageTotal(damage);
-  const resource = damage?.resource ?? "health";
-  const restoration = Boolean(damage?.restoration);
-
-  const reserveResource = ["wounds", "madness"].includes(resource);
-
-  if (restoration) {
-    return reserveResource ? -total : total;
-  }
-
-  return reserveResource ? total : -total;
-}
-
-async function restoreActiveDamageWithReserve(actor, activeResource, total) {
-  const resources = actor.system.resources ?? {};
-  const reserveResource = activeResource === "health"
-    ? "wounds"
-    : activeResource === "morale"
-      ? "madness"
-      : null;
-
-  let remaining = total;
-  const updates = {};
-
-  const active = resources[activeResource];
-  if (!active) return;
-
-  const activeValue = Number(active.value ?? 0);
-
-  if (
-    reserveResource
-    && actor.system.usesReserveResources
-    && resources[reserveResource]
-    && activeValue <= 0
-  ) {
-    const reserve = resources[reserveResource];
-    const reserveValue = Number(reserve.value ?? 0);
-    const reserveMax = Number(reserve.max ?? 999999);
-
-    const reserveRestore = Math.min(remaining, reserveValue);
-
-    if (reserveRestore > 0) {
-      updates[`system.resources.${reserveResource}.value`] = Math.clamp(
-        reserveValue - reserveRestore,
-        0,
-        reserveMax
-      );
-
-      remaining -= reserveRestore;
-    }
-  }
-
-  if (remaining > 0) {
-    const activeMax = Number(active.max ?? 999999);
-
-    updates[`system.resources.${activeResource}.value`] = Math.clamp(
-      activeValue + remaining,
-      0,
-      activeMax
-    );
-  }
-
-  if (Object.keys(updates).length) {
-    await actor.update(updates);
-  }
-}
-
-async function applyResourceDeltaDirect(actor, resourceName, delta) {
-  const resource = actor.system.resources?.[resourceName];
-  if (!resource) return;
-
-  const value = Number(resource.value ?? 0);
-  const max = Number(resource.max ?? 999999);
-
-  await actor.update({
-    [`system.resources.${resourceName}.value`]: Math.clamp(value + delta, 0, max)
-  });
-}
-
-function formatResourceChange(change) {
-  if (!change) return "";
-
-  const parts = [];
-
-  if (change.warning) {
-    parts.push(`<p><em>${escapeHtml(change.warning)}</em></p>`);
-  }
-
-  for (const warning of change.warnings ?? []) {
-    parts.push(`<p><em>${escapeHtml(warning)}</em></p>`);
-  }
-
-  const targets = change.targets ?? [];
-
-  if (targets.length === 1) {
-    const target = targets[0];
-    const restored = formatDamageEffect(target.restored);
-    const applied = formatDamageEffect(target.applied);
-
-    parts.push([
-      `<p>Przywrócono poprzedni efekt: <strong>${restored}</strong>.</p>`,
-      `<p>Zastosowano nowy efekt: <strong>${applied}</strong>.</p>`
-    ].join(""));
-  } else if (targets.length > 1) {
-    const rows = targets.map(target => {
-      const restored = formatDamageEffect(target.restored);
-      const applied = formatDamageEffect(target.applied);
-
-      return `<li><strong>${escapeHtml(target.targetName ?? "cel")}</strong>: przywrócono ${restored}; zastosowano ${applied}.</li>`;
-    });
-
-    parts.push([
-      `<p><strong>Cele objęte przerzutem:</strong> ${targets.length}</p>`,
-      `<ul>${rows.join("")}</ul>`
-    ].join(""));
-  }
-
-  return parts.join("");
-}
-
-function formatDamageEffect(effect) {
-  if (!effect || !effect.total) return "0";
-
-  const type = effect.restoration ? "przywrócenia" : "obrażeń";
-  return `${effect.total} ${type}`;
-}
-
-function formatRerollTotals(oldRolls, newRolls) {
-  if (oldRolls.length === 1) {
-    const oldTotal = Number.isFinite(oldRolls[0].total) ? oldRolls[0].total : "—";
-    const newTotal = Number.isFinite(newRolls[0].total) ? newRolls[0].total : "—";
-
-    return `<p>Poprzedni wynik: <strong>${oldTotal}</strong>. Nowy wynik: <strong>${newTotal}</strong>.</p>`;
-  }
-
-  const rows = oldRolls.map((oldRoll, index) => {
-    const newRoll = newRolls[index];
-    const oldTotal = Number.isFinite(oldRoll.total) ? oldRoll.total : "—";
-    const newTotal = Number.isFinite(newRoll?.total) ? newRoll.total : "—";
-    const targetName = getRollTargetName(oldRoll);
-
-    return `<li><strong>${escapeHtml(targetName)}</strong>: ${oldTotal} → ${newTotal}</li>`;
-  });
-
-  return [
-    `<p>Przerzucono wyniki dla <strong>${oldRolls.length}</strong> celów.</p>`,
-    `<ul>${rows.join("")}</ul>`
-  ].join("");
-}
-
-function getRollTargetName(roll) {
-  const uuid = roll?.data?.target;
-  if (!uuid) return "cel";
-
-  try {
-    const document = foundry.utils.fromUuidSync?.(uuid);
-    const actor = document?.actor ?? document;
-    return actor?.name ?? uuid;
-  } catch (_err) {
-    return uuid;
-  }
-}
-
 function escapeHtml(value) {
   const div = document.createElement("div");
   div.textContent = String(value ?? "");
   return div.innerHTML;
 }
 
-function buildRerollDamageData({ actor, target, rollData, oldDamage = {}, reroll }) {
-  const item = rollData.itemId ? actor?.items?.get(rollData.itemId) : null;
-
-  const resource = rollData.resource
-    ?? oldDamage.resource
-    ?? "health";
-
-  const damageType = getValidDamageType(
-    rollData.damageType,
-    oldDamage.type,
-    item?.system?.damageType,
-    item?.system?.damage?.type,
-    item?.system?.damage?.damageType,
-    item?.system?.damage?.kind,
-    "slashing"
-  );
-
-  const restoration = Boolean(oldDamage.restoration);
-
-  const base = getFirstFiniteNumber(
-    oldDamage.base,
-    item?.system?.damage?.weapon,
-    item?.system?.damage?.base,
-    0
-  );
-
-  const bonus = getFirstFiniteNumber(
-    oldDamage.bonus,
-    Number(item?.system?.damage?.bonus ?? 0) + Number(rollData.damageBonus ?? 0),
-    rollData.damageBonus,
-    0
-  );
-
-  const multiplier = getFirstFiniteNumber(
-    rollData.multiplier,
-    oldDamage.multiplier,
-    1
-  );
-
-  const resistance = damageType && target?.getResistance instanceof Function
-    ? target.getResistance(resource, damageType, restoration)
-    : 0;
-
-  const damage = {
-    overflow: Number.isFinite(reroll.overflow) ? reroll.overflow : 0,
-    multiplier,
-    base,
-    bonus,
-    resistance,
-    resource,
-    restoration
-  };
-
-  if (damageType) {
-    damage.type = damageType;
-  }
-
-  damage.total = computeCrucibleDamageSafe(damage);
-
-  if (!Number.isFinite(damage.total)) {
-    damage.total = 0;
-  }
-
-  damage.total = Math.max(0, damage.total);
-
-  return damage;
+function escapeAttribute(value) {
+  return escapeHtml(value).replace(/"/g, "&quot;");
 }
 
-function getFirstFiniteNumber(...values) {
-  for (const value of values) {
-    const number = Number(value);
-    if (Number.isFinite(number)) return number;
-  }
+function buildHeroismRerollChatContent({ message, actor, status = "accepted" }) {
+  const actionData = message.getFlag("crucible", "action") ?? {};
 
-  return 0;
+  const actionId = actionData.id
+    ?? actionData.slug
+    ?? "heroism.reroll";
+
+  const actionName = actionData.name
+    ?? actionData.title
+    ?? "Przerzut za Heroizm";
+
+  const actionImg = actionData.img
+    ?? actor?.img
+    ?? "icons/svg/d20.svg";
+
+  const rejected = status === "rejected";
+
+  const rollClass = rejected
+    ? "crucible dice-roll standard-check failure line-item"
+    : "crucible dice-roll standard-check success line-item";
+
+  const outcome = rejected ? "Heroizm" : "Heroizm";
+  const result = rejected ? "0" : "1";
+  const target = rejected ? "odmowa" : "wydano";
+
+  const description = rejected
+    ? "MG odrzucił prośbę o przerzut za Heroizm. Punkt Heroizmu nie został wydany albo został zwrócony."
+    : "Wydano <strong>1 Punkt Heroizmu</strong>. Oryginalna akcja została cofnięta i uruchomiona ponownie. Potwierdź nową kartę akcji, aby zastosować nowe obrażenia i efekty.";
+
+  const tags = rejected
+    ? [
+        `<span class="tag" data-crucible-tooltip="tag" data-tag="heroism">Przerzut za Heroizm</span>`,
+        `<span class="tag" data-crucible-tooltip="tag" data-tag="rejected">Odrzucono</span>`
+      ]
+    : [
+        `<span class="tag" data-crucible-tooltip="tag" data-tag="heroism">1 Punkt Heroizmu</span>`,
+        `<span class="tag" data-crucible-tooltip="tag" data-tag="reroll">Przerzut</span>`
+      ];
+
+  return [
+    `<div class="crucible action-roll heroism-reroll" data-action-id="${escapeAttribute(actionId)}" data-heroism-status="${escapeAttribute(status)}">`,
+
+      `<section class="action line-item">`,
+        `<header class="action-header">`,
+          `<img class="icon" src="${escapeAttribute(actionImg)}" alt="${escapeAttribute(actionName)}">`,
+          `<div class="title">`,
+            `<h4>Przerzut za Heroizm</h4>`,
+            `<div class="tags" data-tag-type="activation">`,
+              tags.join(""),
+            `</div>`,
+          `</div>`,
+        `</header>`,
+
+        `<div class="description">`,
+          description,
+        `</div>`,
+      `</section>`,
+
+      `<section class="action-sections">`,
+        `<section class="action-target">`,
+          `<div class="${rollClass}" data-action="expandRoll">`,
+            `<div class="dice-result">`,
+              `<h4 class="dice-total check-result">`,
+                `<span class="outcome">${outcome}</span>`,
+                `<span class="result hex">${result}</span>`,
+                `<span class="target">${target}</span>`,
+              `</h4>`,
+            `</div>`,
+          `</div>`,
+        `</section>`,
+      `</section>`,
+
+    `</div>`
+  ].join("");
 }
 
-function computeCrucibleDamageSafe(damage) {
-  const computeDamage =
-    game.crucible?.api?.models?.CrucibleAction?.computeDamage
-    ?? globalThis.crucible?.api?.models?.CrucibleAction?.computeDamage;
+function registerHeroismRerollChatStyling() {
+  Hooks.on("renderChatMessageHTML", (message, html, _context) => {
+    styleHeroismRerollChatMessage(message, html);
+  });
 
-  if (computeDamage instanceof Function) {
-    return computeDamage(damage);
-  }
+  Hooks.on("renderChatMessage", (message, html, _context) => {
+    styleHeroismRerollChatMessage(message, html);
+  });
 
-  let multiplier = damage.multiplier ?? 1;
-
-  if ((damage.overflow ?? 0) < 0) {
-    multiplier = Math.max(multiplier, 1);
-  }
-
-  const preMitigation =
-    ((damage.overflow ?? 0) * multiplier)
-    + (damage.base ?? 0)
-    + (damage.bonus ?? 0);
-
-  if (preMitigation <= 0) return 0;
-
-  const postMitigation = damage.restoration
-    ? preMitigation
-    : preMitigation - (damage.resistance ?? 0);
-
-  return Math.clamp(postMitigation, 0, 2 * preMitigation);
+  Hooks.on("renderChatLog", () => {
+    styleExistingHeroismRerollChatMessages();
+  });
 }
 
-function getOriginalActionHtml(message, li) {
-  const element = normalizeElement(li);
+function styleExistingHeroismRerollChatMessages() {
+  for (const element of document.querySelectorAll("li.chat-message")) {
+    const messageId = element.dataset.messageId;
+    const message = messageId ? game.messages?.get(messageId) : null;
 
-  const renderedAction = element?.querySelector?.(
-    ".message-content > .crucible.action-roll, .message-content .crucible.action-roll"
-  );
+    const isHeroismNote =
+      message?.getFlag?.(MODULE_ID, "type") === "heroism-reroll-note"
+      || Boolean(element.querySelector(".heroism-reroll"));
 
-  if (renderedAction) return renderedAction.outerHTML;
+    if (!isHeroismNote) continue;
 
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = message.content ?? "";
-
-  const action = wrapper.querySelector(".crucible.action-roll");
-  return action?.outerHTML ?? "";
+    applyHeroismRerollCrucibleClasses(element);
+  }
 }
 
-function getValidDamageType(...candidates) {
-  const damageTypes = getCrucibleDamageTypes();
+function styleHeroismRerollChatMessage(message, html) {
+  const element = normalizeRenderedChatElement(html);
+  if (!element) return;
 
-  for (const candidate of candidates) {
-    const type = normalizeDamageType(candidate);
-    if (!type) continue;
+  const chatMessage = getRenderedChatMessageElement(element);
+  if (!chatMessage) return;
 
-    if (damageTypes?.[type]) {
-      return type;
-    }
+  const isHeroismNote =
+    message?.getFlag?.(MODULE_ID, "type") === "heroism-reroll-note"
+    || Boolean(chatMessage.querySelector(".heroism-reroll"))
+    || chatMessage.classList.contains("heroism-reroll");
 
-    if (!damageTypes && isKnownCrucibleDamageType(type)) {
-      return type;
-    }
+  if (!isHeroismNote) return;
+
+  applyHeroismRerollCrucibleClasses(chatMessage);
+}
+
+function applyHeroismRerollCrucibleClasses(chatMessage) {
+  chatMessage.classList.add("crucible");
+
+  const content = chatMessage.querySelector(".message-content");
+
+  if (content) {
+    content.classList.add("themed", "theme-dark");
   }
 
-  const fallback = damageTypes
-    ? Object.keys(damageTypes)[0]
-    : undefined;
+  const metadata = chatMessage.querySelector(".message-header .message-metadata");
 
-  return fallback ?? undefined;
+  if (metadata) {
+    metadata.querySelector(".confirmed[data-heroism-reroll-icon]")?.remove();
+    metadata.querySelector(".unconfirmed[data-heroism-reroll-icon]")?.remove();
+
+    metadata.prepend(createHeroismRerollHeaderIcon(chatMessage));
+  }
 }
 
-function getCrucibleDamageTypes() {
-  return globalThis.SYSTEM?.DAMAGE_TYPES
-    ?? CONFIG?.CRUCIBLE?.DAMAGE_TYPES
-    ?? CONFIG?.Crucible?.damageTypes
-    ?? game.crucible?.config?.damageTypes
+function getRenderedChatMessageElement(element) {
+  if (!element) return null;
+
+  if (element.matches?.("li.chat-message")) return element;
+
+  return element.closest?.("li.chat-message")
+    ?? element.querySelector?.("li.chat-message")
     ?? null;
 }
 
-function normalizeDamageType(value) {
-  if (!value) return null;
-
-  if (typeof value === "object") {
-    value = value.id ?? value.type ?? value.value ?? value.slug ?? value.key;
-  }
-
-  if (typeof value !== "string") return null;
-
-  const type = value.trim().toLowerCase();
-
-  const aliases = {
-    cut: "slashing",
-    cutting: "slashing",
-    ciete: "slashing",
-    "cięte": "slashing",
-
-    pierce: "piercing",
-    pierced: "piercing",
-    klute: "piercing",
-    "kłute": "piercing",
-
-    blunt: "bludgeoning",
-    crushing: "bludgeoning",
-    obuchowe: "bludgeoning",
-
-    electric: "electricity",
-    lightning: "electricity",
-
-    flame: "fire",
-    frost: "cold",
-
-    necrotic: "void",
-    radiant: "radiant"
-  };
-
-  return aliases[type] ?? type;
+function normalizeRenderedChatElement(html) {
+  if (html instanceof HTMLElement) return html;
+  if (html?.[0] instanceof HTMLElement) return html[0];
+  if (html?.jquery && html[0] instanceof HTMLElement) return html[0];
+  return null;
 }
 
-function isKnownCrucibleDamageType(type) {
-  return [
-    "acid",
-    "bludgeoning",
-    "cold",
-    "corruption",
-    "electricity",
-    "fire",
-    "piercing",
-    "poison",
-    "psychic",
-    "radiant",
-    "slashing",
-    "spiritual",
-    "void"
-  ].includes(type);
+function createHeroismRerollHeaderIcon(chatMessage) {
+  const rejected =
+    chatMessage.querySelector(".heroism-reroll[data-heroism-status='rejected']")
+    || chatMessage.querySelector(".heroism-reroll .dice-roll.failure");
+
+  const icon = document.createElement("i");
+
+  if (rejected) {
+    icon.classList.add("unconfirmed", "fa-solid", "fa-hexagon-xmark");
+  } else {
+    icon.classList.add("confirmed", "fa-solid", "fa-hexagon-check");
+  }
+
+  icon.dataset.tooltip = "Przerzut za Heroizm";
+  icon.dataset.heroismRerollIcon = "true";
+
+  return icon;
+}
+
+async function setOriginalMessageRerolledFlag(message, actor) {
+  const data = {
+    mode: "replay-action",
+    actorId: actor.id,
+    userId: game.user.id,
+    timestamp: Date.now()
+  };
+
+  if (game.user.isGM) {
+    await message.setFlag(MODULE_ID, "rerolled", data);
+    return;
+  }
+
+  await requestPrimaryGM("setRerolledFlag", {
+    messageId: message.id,
+    actorId: actor.id
+  });
 }
