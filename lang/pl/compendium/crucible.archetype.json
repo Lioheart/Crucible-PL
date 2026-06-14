@@ -44,6 +44,10 @@
             "name": "Pospólstwo",
             "description": "<p>Zwykli obywatele świata, którzy nie posiadają żadnych wyjątkowych umiejętności ani zdolności przydatnych w przygodach.</p>"
         },
+        "Constrictor": {
+            "name": "Wąż dusiciel",
+            "description": "<p>Drapieżniki, które chwytają ofiarę za pomocą wici, macek lub szczęk, przyciągają ją do siebie i wyciskają z niej życie, podczas gdy ta próbuje się wyrwać.</p>"
+        },
         "Deep Behemoth": {
             "name": "Wielki behemot",
             "description": "<p>Ogromne podziemne drapieżniki będące gigantycznymi potworami, które grasują w najgłębszych jaskiniach.</p>"
@@ -87,6 +91,10 @@
         "Herd Beast": {
             "name": "Stadna bestia",
             "description": "<p>Bydło, zwierzęta juczne i inne zwierzęta łowne, które gromadzą się w stadach.</p>"
+        },
+        "Juggernaut": {
+            "name": "Moloch",
+            "description": "<p>Nieustępliwi wojownicy, którzy zmniejszają dystans, chwytają przeciwników w silnych uściskach i pokonują ich dzięki ogromnej sile fizycznej i wytrzymałości. Walczą gołymi rękami, wykorzystując własną masę ciała zarówno jako broń, jak i tarczę.</p>"
         },
         "Justiciar": {
             "name": "Justycjariusz",
@@ -155,6 +163,10 @@
         "Swashbuckler": {
             "name": "Zawadiaka",
             "description": "<p>Osoby, które prowadzą niebezpieczne życie na pokładzie żaglowca lub zajmują się piractwem na pełnym morzu. Znane są ze swojej inteligencji, uroku osobistego, a czasem także z lekkomyślnej odwagi.</p>"
+        },
+        "Telekinetic": {
+            "name": "Telekineza",
+            "description": "<p>Magowie telekinetyczni, którzy tworzą Runę Kinezy, by rzucać, przeciągać i miażdżyć wrogów czystą siłą kinetyczną, dominując na polu bitwy dzięki nieustannym atakom Pchnięcia i Przyciągania.</p>"
         },
         "Thief": {
             "name": "Złodziej",
