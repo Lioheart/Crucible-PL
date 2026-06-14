@@ -159,10 +159,16 @@
                 "public": "<p>@ref[actor.name]{Stworzenie} ma potężne kopyta, którymi kopie i depcze wszystko, co znajdzie się pod jego stopami.</p>"
             }
         },
-        "Horns": {
-            "name": "Rogi",
+        "Horn": {
+            "name": "Róg",
             "description": {
-                "public": "<p>@ref[actor.name]{Stworzenie} ma potężne, zakrzywione rogi, których używa do przebijania przeciwników.</p>"
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada potężny i groźny centralny róg, którym może przebić swoją ofiarę.</p>"
+            }
+        },
+        "Kinetic Limb": {
+            "name": "Kinetyczna kończyna",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje niewidzialnymi kończynami, wykorzystując surową siłę kinetyczną.</p>"
             }
         },
         "Light Carapace": {
@@ -193,6 +199,12 @@
             "name": "Cienkie łuski",
             "description": {
                 "public": "<p>Skóra @ref[actor.name]{stworzenia} pokryta jest lekkimi łuskami, które zapewniają jej ochronę, nie spowalniając jej ruchów.</p>"
+            }
+        },
+        "Obsidian Thorns": {
+            "name": "Obsydianowe ciernie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje kolczastym kawałkiem ostrego jak brzytwa czarnego szkła.</p>"
             }
         },
         "Pestilent Bite": {
