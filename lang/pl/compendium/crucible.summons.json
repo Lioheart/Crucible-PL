@@ -1,6 +1,7 @@
 {
     "label": "Przywołania",
     "folders": {
+        "Talents": "Talenty",
         "Gesture: Create": "Gest: Tworzenie",
         "Gesture: Conjure": "Gest: Wywołanie"
     },
@@ -10,6 +11,27 @@
         },
         "Amorphous": {
             "name": "Amorficzny"
+        },
+        "Ancestral Guardian": {
+            "name": "Strażnik przodków",
+            "biography": "<p>Strażnik Przodków to nie tyle istota, co raczej obecność: zgromadzone duchy tych, którzy odeszli, przywołane do świata przez @UUID[Compendium.crucible.talent.Item.warden0000000000]{Strażnika} za pośrednictwem Gaju Przodków. Nie da się nim kierować ani go przekonać, a ponadto nie jest zdolny do mowy. Po prostu czuwa nad żywymi tak długo, jak trwa komunia Strażnika. </p>",
+            "items": {
+                "Ancestral Manifestation": {
+                    "name": "Manifestacja przodków",
+                    "description": "<p>Strażnik Przodków jest niematerialnym ucieleśnieniem czujnych duchów. Nie można go zranić, przesunąć wbrew jego woli ani zniszczyć, a inne istoty mogą swobodnie przechodzić przez zajmowaną przez niego przestrzeń. Jego przytłaczająca obecność na polu bitwy sprawia, że przy ustalaniu, czy przeciwnik został oskrzydlony, liczy się on jako <strong>trzy istoty</strong>.</p>"
+                }
+            },
+            "archetype": {
+                "name": "Ochrona przodków",
+                "description": "<p>Czujny duch, który stanowi oparcie dla ochronnego gaju.</p>"
+            },
+            "taxonomy": {
+                "name": "Duch przodków",
+                "description": "<p>Niematerialna manifestacja duchów przodków, przywołana, by czuwać nad żywymi. Nie ma fizycznego ciała, które można by zranić, ani woli, którą można by złamać.</p>"
+            }
+        },
+        "Ancestral Manifestation": {
+            "name": "Manifestacja przodków"
         },
         "Aqueous Transmission": {
             "name": "Transmisja wodna",
@@ -73,7 +95,7 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Runa: Ziemia",
-                    "description": "<p>Siła uporządkowana żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym. Jej przeciwieństwem jest chaotyczna runa Błyskawicy.</p>\n<p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>kwasowe</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "<p>Siła uporządkowana żywiołu ziemi, odpowiedzialna za materię fizyczną. Runa Ziemi rządzi zdrowiem i sprawami związanymi z rozwojem biologicznym. Jej przeciwieństwem jest chaotyczna runa Burzy.</p>\n<p>Runa Ziemi skaluje się przy użyciu <strong>Mądrości</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>kwasowe</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
                 },
                 "Acid Absorption": {
                     "name": "Absorpcja kwasu",
@@ -161,7 +183,7 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Runa: Płomień",
-                    "description": "<p>Chaotyczna siła żywiołowej energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem. Jej przeciwieństwem jest uporządkowana runa Mrozu.</p>\n<p>Runa Płomienia skaluje się w oparciu o <strong>Inteligencję</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>ogniste</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
+                    "description": "<p>Chaotyczna siła żywiołowej energii cieplnej. Runa Płomienia rządzi ogniem i ciepłem. Jej przeciwieństwem jest uporządkowana runa Mrozu.</p>\n<p>Runa Płomienia skaluje się w oparciu o <strong>Intelekt</strong>, atakuje <strong>Refleks</strong> i zadaje <strong>ogniste</strong> obrażenia <strong>Zdrowiu</strong>.</p>"
                 },
                 "Fire Absorption": {
                     "name": "Absorpcja ognia",
@@ -357,8 +379,8 @@
         "Rune: Frost": {
             "name": "Runa: Mróz"
         },
-        "Rune: Lightning": {
-            "name": "Runa: Błyskawica"
+        "Rune: Storm": {
+            "name": "Runa: Burza"
         },
         "Storm Sprite": {
             "name": "Duch burzy",
@@ -373,9 +395,9 @@
                     "name": "Gest: Grot",
                     "description": "<p>Uczysz się gestu Grot, pozwalającego ci ciskać ukierunkowany pocisk mocy tajemnej w kierunku odległego celu.</p>\n<p>Gest Strzały zadaje obrażenia odpowiadające użytej Runie pojedynczemu wrogiemu celowi w zasięgu.</p>"
                 },
-                "Rune: Lightning": {
-                    "name": "Runa: Błyskawica",
-                    "description": "Opanowujesz Runę Błyskawicy, która pozwala ci kontrolować gwałtowne, tajemnicze wyładowania elektryczne."
+                "Rune: Storm": {
+                    "name": "Runa: Burza",
+                    "description": "Opanowujesz Runę Burzy, która pozwala ci kontrolować gwałtowne, tajemnicze wyładowania elektryczne."
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
@@ -396,15 +418,15 @@
             },
             "taxonomy": {
                 "name": "Żywiołak burzy",
-                "description": "<p>Istoty żywiołowe odpowiadające żywiołowi błyskawicy.</p>"
+                "description": "<p>Istoty żywiołowe odpowiadające żywiołowi burzy.</p>"
             }
         },
         "Storm Visitor": {
             "name": "Przybysz burzy",
             "items": {
-                "Rune: Lightning": {
-                    "name": "Runa: Błyskawica",
-                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Błyskawicy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Błyskawicy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
+                "Rune: Storm": {
+                    "name": "Runa: Burza",
+                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Burzy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
@@ -431,7 +453,7 @@
             },
             "taxonomy": {
                 "name": "Żywiołak burzy",
-                "description": "<p>Istoty żywiołowe odpowiadające żywiołowi błyskawicy.</p>"
+                "description": "<p>Istoty żywiołowe odpowiadające żywiołowi burzy.</p>"
             }
         },
         "Voltaic Claw": {
@@ -462,6 +484,7 @@
         "taxonomy": {
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
-        }
+        },
+        "biography": "system.details.biography.public"
     }
 }
