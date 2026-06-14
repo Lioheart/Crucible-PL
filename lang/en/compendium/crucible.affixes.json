@@ -15,6 +15,7 @@
         "Creature Bane": "Creature Bane",
         "Gestures": "Gestures",
         "Resources": "Resources",
+        "Inflections": "Inflections",
         "Senses": "Senses",
         "Damage": "Damage",
         "Resistances": "Resistances"
@@ -116,6 +117,11 @@
             "description": "<p>Increase <strong>Cold</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Frost-Warding"
         },
+        "Compose Spellcraft": {
+            "name": "Compose Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Compose</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Compose</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Compose"
+        },
         "Cone Spellcraft": {
             "name": "Cone Spellcraft",
             "description": "<p>This item is imbued with the essence of <strong>Cone</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Cone</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
@@ -186,6 +192,11 @@
             "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Determination"
         },
+        "Determine Spellcraft": {
+            "name": "Determine Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Determine</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Determine</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Determine"
+        },
         "Diplomacy": {
             "name": "Diplomacy",
             "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
@@ -242,10 +253,20 @@
             "description": "<p>Increase <strong>Electricity</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Lightning-Warding"
         },
+        "Elude Spellcraft": {
+            "name": "Elude Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Elude</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Elude</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Elude"
+        },
         "Evasion": {
             "name": "Evasion",
             "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Evasion"
+        },
+        "Extend Spellcraft": {
+            "name": "Extend Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Extend</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Extend</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Extend"
         },
         "Fan Spellcraft": {
             "name": "Fan Spellcraft",
@@ -394,16 +415,6 @@
             "description": "<p>This item is imbued with the essence of <strong>Life</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Life</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
             "adjective": "Life-Runic"
         },
-        "Lightning Potency": {
-            "name": "Lightning Potency",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Lightning</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
-            "adjective": "Lightning Potency"
-        },
-        "Lightning Spellcraft": {
-            "name": "Lightning Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Lightning</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Lightning</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
-            "adjective": "Lightning-Runic"
-        },
         "Luminary": {
             "name": "Luminary",
             "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one Affix can provide this benefit.</p>",
@@ -439,6 +450,11 @@
             "name": "Monstrosity Bane",
             "description": "<p>This weapon is especially effective against <strong>Monstrosity</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Monstrosity-Bane"
+        },
+        "Negate Spellcraft": {
+            "name": "Negate Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Negate</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Negate</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Negate"
         },
         "Nimbleness": {
             "name": "Nimbleness",
@@ -525,10 +541,25 @@
             "description": "<p>Increase <strong>Psychic</strong> resistance by 3 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Psyche-Warding"
         },
+        "Pull Spellcraft": {
+            "name": "Pull Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Pull</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Pull</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Pull"
+        },
         "Pulse Spellcraft": {
             "name": "Pulse Spellcraft",
             "description": "<p>This item is imbued with the essence of <strong>Pulse</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Pulse</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
             "adjective": "Pulse"
+        },
+        "Push Spellcraft": {
+            "name": "Push Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Push</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Push</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Push"
+        },
+        "Quicken Spellcraft": {
+            "name": "Quicken Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Quicken</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Quicken</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Quicken"
         },
         "Radiant Conversion": {
             "name": "Radiant Conversion",
@@ -560,6 +591,11 @@
             "description": "<p>Extends the effective range of this weapon. Melee weapons gain <strong>+1 range per Tier</strong>. Ranged weapons gain <strong>+10 range per Tier</strong>.</p>",
             "adjective": "Reaching"
         },
+        "React Spellcraft": {
+            "name": "React Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>React</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>React</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "React"
+        },
         "Reinforcement": {
             "name": "Reinforcement",
             "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
@@ -569,6 +605,11 @@
             "name": "Reliable",
             "description": "<p>Reduces the <strong>Critical Failure Threshold</strong> for attack rolls made with this weapon. The threshold decreases by <strong>1 per Tier</strong>.</p>",
             "adjective": "Reliable"
+        },
+        "Reshape Spellcraft": {
+            "name": "Reshape Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Reshape</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Reshape</strong> inflection, allowing them to compose spells using it even without having learned the inflection through a talent.</p>",
+            "adjective": "Reshape"
         },
         "Returning": {
             "name": "Returning",
@@ -630,6 +671,16 @@
             "description": "<p>This weapon is especially effective against <strong>Storm Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Storm-Bane"
         },
+        "Storm Potency": {
+            "name": "Storm Potency",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for spells using the <strong>Storm</strong> rune by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "adjective": "Storm Potency"
+        },
+        "Storm Spellcraft": {
+            "name": "Storm Spellcraft",
+            "description": "<p>This item is imbued with the essence of <strong>Storm</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Storm</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "adjective": "Storm-Runic"
+        },
         "Strike Spellcraft": {
             "name": "Strike Spellcraft",
             "description": "<p>This item is imbued with the essence of <strong>Strike</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Strike</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
@@ -654,6 +705,11 @@
             "name": "Unshakeable",
             "description": "<p>Strikes against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Unshakeable"
+        },
+        "Vicious": {
+            "name": "Vicious",
+            "description": "<p>A Strike that scores a <strong>Critical Hit</strong> with this weapon brutally exploits the wound.</p><ul><li><p>Weapons that deal <strong>Piercing</strong> or <strong>Slashing</strong> damage cause the target to begin @Condition[bleeding].</p></li><li><p>Weapons that deal <strong>Bludgeoning</strong> damage cause the target to become @Condition[staggered].</p></li></ul>",
+            "adjective": "Vicious"
         },
         "Void Conversion": {
             "name": "Void Conversion",

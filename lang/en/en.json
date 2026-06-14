@@ -46,6 +46,10 @@
         "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and one less than your current Initiative. You will act at this new Initiative value, and if other combatants share that value you will act before them. You may only delay your turn once per round.",
         "Name": "Delay"
       },
+      "Escape": {
+        "Description": "Struggle free of an effect which causes you to be @Condition[restrained]. You perform an <strong>Athletics</strong> check and remove the Restrained condition from each effect where your roll exceeds its Removal Difficulty.",
+        "Name": "Escape"
+      },
       "Fall": {
         "Description": "You plummet to the surface beneath you. Falls of 11-30 feet challenge Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
         "Name": "Fall",
@@ -182,6 +186,10 @@
           "hint": "Which specific actor should be summoned by this action?",
           "label": "Summoned Actor"
         },
+        "combatant": {
+          "hint": "Should the summoned creature be added to the active Combat encounter?",
+          "label": "Joins Combat"
+        },
         "label": "Action Summon",
         "permanent": {
           "hint": "Should this summon persist until killed?",
@@ -289,6 +297,8 @@
       "HealingTooltip": "This action provides restoration by testing an ally's Wounds threshold.",
       "IconicSpell": "Iconic Spell",
       "IconicSpellTooltip": "This action is an Iconic Spell learned through mastery of its components.",
+      "Keen": "Keen",
+      "KeenTooltip": "This action is precise, lowering its critical hit threshold by 2 and making a Critical Hit more likely.",
       "MainHand": "Main-Hand",
       "MainHandTooltip": "This action utilizes your main-hand weapon to make an attack.",
       "Maintained": "Maintained",
@@ -335,6 +345,8 @@
       "ReactionTooltip": "This action can only be performed during some other creature's turn when its activation condition is met.",
       "Reload": "Reload",
       "ReloadTooltip": "This action reloads a ranged weapon which requires reloading.",
+      "Rest": "After Rest",
+      "RestTooltip": "This action may only be performed immediately after you confirm a Rest action, and only one such action may follow each Rest.",
       "Severe": "Severe",
       "SevereTooltip": "If the target of this action has Wounds and Madness resources, this action damages those resources directly regardless of their Health or Morale.",
       "Shield": "Shield",
@@ -411,6 +423,9 @@
           "AlreadyDelayed": "You may not delay your turn again this combat round.",
           "WrongTurn": "You may only use the Delay action on your own turn in combat."
         },
+        "ESTOCADE": {
+          "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
+        },
         "REVIVE": {
           "RequiresDead": "Revive requires a Dead target."
         }
@@ -434,9 +449,11 @@
       "CannotThrow": "You cannot throw this weapon.",
       "CannotUse": "{name} does not satisfy the prerequisites to use {action}.",
       "CannotUseReason": "{name} does not satisfy the prerequisites to use {action}: {reason}",
+      "CannotUseTagGeneric": "with tag {tag}",
       "DirectMovementOnly": "This action requires a direct movement path with no intermediate waypoints.",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
+      "InvalidTargetScope": "That creature is not a valid target for {action}.",
       "InvalidTargetsGeneric": "Invalid targets for this action!",
       "LastCriticallyMissed": "You may only perform {action} after a basic Strike which did not critically miss.",
       "LastNotMeleeCrit": "You may only perform {action} immediately after a melee Strike which critically succeeded.",
@@ -451,6 +468,7 @@
       "MustFollowMeleeDefense": "You may only perform the {action} action after defending a melee attack with a {defense}.",
       "MustFollowMeleeKill": "You may only perform the {action} action after incapacitating an enemy with a melee attack.",
       "MustFollowRanged": "You may only perform the {action} action after a ranged weapon attack.",
+      "MustFollowRest": "You may only perform the {action} action immediately after a Rest.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
       "MustReactHit": "You may only perform the {action} action in response to an attack that hit or glanced.",
       "MustReactSingleTarget": "You may only perform the {action} action in response to an action that had a single target.",
@@ -466,11 +484,14 @@
       "NoReloadRequired": "Your weapons do not require reloading",
       "NotFlanked": "{action} requires a flanked target. Target \"{target}\" is not flanked.",
       "NoViewedScene": "A viewed Scene is required to acquire targets for this action.",
+      "OncePerRound": "You may only perform the {action} action once per round.",
+      "OncePerTurn": "You may only perform the {action} action once per turn.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
       "RequiresMelee": "You must have melee weapons equipped to use this action.",
       "RequiresNatural": "This action requires use of a natural weapon.",
       "RequiresOffhand": "This action requires an offhand weapon equipped.",
       "RequiresRanged": "This action requires a ranged weapon equipped.",
+      "RequiresRune": "You must know the Rune required by this action.",
       "RequiresSlashingMelee": "{action} requires a melee weapon which deals slashing damage.",
       "RequiresTalisman": "{action} requires use of a Talisman weapon.",
       "RequiresTwoHanded": "This action requires a two-handed weapon equipped.",
@@ -495,6 +516,8 @@
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
     "EffectSpecific": "Effect: {effect}",
+    "MaintainContent": "<p>Spend {cost} Focus to maintain {effect}?</p>",
+    "MaintainTitle": "Maintain Focus: {effect}",
     "NoTargets": "No Targets",
     "Overview": "Action Overview",
     "PlanMovement": "Plan Movement",
@@ -515,6 +538,56 @@
     "Unconfirmed": "Unconfirmed",
     "UseAction": "Use Action"
   },
+  "ACTIONS": {
+    "AllIn": {
+      "CannotAfford": "{name} must spend 1 Heroism or 6 Gambit Charges to go All-In.",
+      "Marker": "All-In"
+    },
+    "AmplifyAffix": {
+      "Effect": "Amplify Affix",
+      "Label": "Affix to Amplify",
+      "NoAffixes": "You have no equipped affixes that can be amplified.",
+      "Required": "You must choose an affix to amplify.",
+      "Title": "Amplify Affix"
+    },
+    "Challenge": {
+      "Dominance": "Dominance"
+    },
+    "FieldStudy": {
+      "Effect": "Field Study: {knowledge}",
+      "Label": "Topic of Study",
+      "Required": "You must choose a field of Knowledge to study.",
+      "Title": "Field Study"
+    },
+    "Gambit": {
+      "AnteWon": "Gambit (+{count})",
+      "Charges": "Gambit ({count})",
+      "ChargeDescription": "A number of Gambit charges that can be spent instead of <strong>Heroism</strong> to perform your \"All In\" action.",
+      "LoadedDice": "Loaded Dice"
+    },
+    "Glide": {
+      "MustDescend": "A glide must end at a lower elevation than where it began."
+    },
+    "Grapple": {
+      "AlreadyGrappled": "{name} is already Grappled by another creature.",
+      "AlreadyGrappling": "You are already Grappling another creature.",
+      "TooLarge": "{name} is too large for you to Grapple."
+    },
+    "ImbueAffix": {
+      "AffixLabel": "Affix",
+      "Incompatible": "That affix cannot be applied to the chosen item.",
+      "InvalidAffix": "You must choose a valid affix to imbue.",
+      "InvalidItem": "You must choose a physical item that you own and that can bear an enchantment.",
+      "ItemLabel": "Item to Imbue",
+      "NoCapacity": "That item has no open affix slot for this enchantment.",
+      "Required": "You must choose both an item and an affix.",
+      "TierTooHigh": "That affix cannot be imbued at Tier 1.",
+      "Title": "Imbue Affix"
+    },
+    "Throw": {
+      "NotGrappling": "You may only Throw a creature you are Grappling."
+    }
+  },
   "ACTIVE_EFFECT": {
     "ACTIONS": {
       "Create": "Create Effect",
@@ -523,6 +596,14 @@
       "Edit": "Edit Effect",
       "Enable": "Enable Effect",
       "New": "New Effect"
+    },
+    "CHANGE_TYPES": {
+      "scaleResource": "Scale Resource"
+    },
+    "DURATION": {
+      "Combat": "Combat",
+      "Infinite": "∞",
+      "Rounds": "{value}R"
     },
     "STATUSES": {
       "Asleep": "Asleep",
@@ -587,6 +668,8 @@
       "IncreaseAbilitySpecific": "Increase {ability}",
       "LevelUp": "Level Up!",
       "ResetTalents": "Reset All Talents",
+      "ResetTalentsContent": "<p>Are you sure you wish to reset all Talents?</p>",
+      "ResetTalentsTitle": "Reset Talents: {actor}",
       "RollCheck": "Roll Check",
       "TalentTreeClose": "Close Talent Tree",
       "TalentTreeOpen": "Open Talent Tree",
@@ -1220,7 +1303,21 @@
     }
   },
   "BASE_EFFECT": {
+    "Difficulty": "Difficulty {dc}",
+    "Suspended": "Suspended",
+    "PROPERTIES": {
+      "Magical": "Magical",
+      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities."
+    },
+    "SECTIONS": {
+      "Removal": "Removal",
+      "General": "General"
+    },
     "FIELDS": {
+      "dc": {
+        "hint": "The difficulty of removing this effect, e.g. by dispelling magic. Leave blank for an effect that cannot be removed.",
+        "label": "Removal DC"
+      },
       "dot": {
         "element": {
           "amount": {
@@ -1239,6 +1336,10 @@
           }
         },
         "label": "Damage Over Time"
+      },
+      "properties": {
+        "hint": "Traits describing the nature of this effect.",
+        "label": "Properties"
       },
       "maintenance": {
         "cost": {
@@ -1275,6 +1376,7 @@
     "WARNINGS": {
       "CannotChangeRound": "Only a Gamemaster user may change the Combat round."
     },
+    "Escalation": "Escalation",
     "HeroismPct": "Heroism {pct}%",
     "HeroismTooltip": "Progress to next Heroism point"
   },
@@ -1347,6 +1449,7 @@
       "Archetype": "Crucible Archetype Sheet",
       "Armor": "Crucible Armor Sheet",
       "Background": "Crucible Background Sheet",
+      "Effect": "Crucible Effect Sheet",
       "Group": "Crucible Group Sheet",
       "Hero": "Crucible Hero Sheet",
       "HeroCreation": "Crucible Hero Creation Sheet",
@@ -2180,12 +2283,12 @@
       "KinesisAdj": "Kinetic",
       "Life": "Life",
       "LifeAdj": "Vital",
-      "Lightning": "Lightning",
-      "LightningAdj": "Voltaic",
       "Oblivion": "Oblivion",
       "OblivionAdj": "Annihilating",
       "Soul": "Soul",
-      "SoulAdj": "Soulful"
+      "SoulAdj": "Soulful",
+      "Storm": "Storm",
+      "StormAdj": "Voltaic"
     },
     "SHEET": {
       "Knowledge": "Required Knowledge"
@@ -2334,7 +2437,9 @@
       "Inaccessible": "You are unable to acquire \"{name}\" because you have not unlocked this talent tree node.",
       "Locked": "You do not satisfy the requirements to acquire \"{name}\" which requires {requires} {requirement}.",
       "RequiresRuneGesture": "You must know a spellcraft Rune in order to utilize a Gesture.",
-      "RequiresRuneInflection": "You must know a spellcraft Rune in order to utilize an Inflection."
+      "RequiresRuneInflection": "You must know a spellcraft Rune in order to utilize an Inflection.",
+      "SignatureLimit": "You have acquired the maximum of {max} Signature Talents permitted at character level {level}.",
+      "SignatureLimitNext": "You have acquired the maximum of {max} Signature Talents permitted at character level {level}. You may acquire another upon reaching level {next}."
     },
     "Banned": "Banned",
     "Empty": "Empty",
@@ -2343,6 +2448,8 @@
     "NodeSpecific": "{nodeType} Node",
     "PointsAvailable": "Points Available",
     "Prerequisites": "Prerequisites",
+    "SignatureLimit": "Signature Limit Reached",
+    "SignatureNext": "Next at Level {level}",
     "Tier": "Tier {tier}"
   },
   "TAXONOMY": {
@@ -2652,6 +2759,7 @@
       "ReturningTooltip": "This weapon is magically or mechanically engineered to return to your hand after being thrown. Using the Throw Weapon action with this weapon does not result in it becoming Dropped.",
       "Thrown": "Thrown",
       "ThrownTooltip": "This weapon is designed to be suitable for throwing and does not suffer the Banes penalty that is usually applied to the Throw Weapon action.",
+      "UntrainedTooltip": "Your character lacks {training} weapon training and suffers a -4 Skill penalty when attacking with this weapon.",
       "Versatile": "Versatile",
       "VersatileTooltip": "This weapon can be wielded with either one or two hands, and switched between these modes without any Action Point cost. While wielded in two hands, the weapon gains an additional +2 base damage but incurs 1 additional Action cost to Strike."
     }

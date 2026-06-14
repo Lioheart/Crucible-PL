@@ -50,6 +50,20 @@
         "Projectile": "Projectile"
     },
     "entries": {
+        "Acrid Earth": {
+            "name": "Acrid Earth",
+            "description": "<p>You wield earth as a chemist wields reagents, its caustic bite answering a sharp and incisive mind. Your usage of the <strong>Rune of Earth</strong> scales with <strong>Intellect</strong> instead of <strong>Wisdom</strong>.</p>"
+        },
+        "Acrobat": {
+            "name": "Acrobat",
+            "description": "<p>You fight with the fluid grace of an acrobat, treating your weapon as a vaulting pole as readily as an armament. While wielding a <strong>Balanced 2H </strong>weapon, your movement does not provoke Disengagement. Your whirling weapon also bats aside incoming missiles, imposing <strong>+2 Banes</strong> on ranged attacks made against you.</p>",
+            "actions": {
+                "Vaulting Sweep": {
+                    "name": "Vaulting Sweep",
+                    "description": "<p>You vault into the air and crash down amid your foes, your weapon whirling in a dazzling arc. Choose a point within your <strong>Stride</strong> and leap to it, then make a <strong>Strike</strong> against every creature within your weapon's reach of where you land.</p>"
+                }
+            }
+        },
         "Adrenaline": {
             "name": "Adrenaline",
             "description": "<p>Pain sharpens your concentration. Once per round, when you sustain <strong>Health</strong> damage from an attack, you gain <strong>+1 Focus</strong>.</p>"
@@ -151,6 +165,20 @@
                 }
             }
         },
+        "Artificer": {
+            "name": "Artificer",
+            "description": "<p>You excel in applying the skills of<strong> Arcana</strong>, <strong>Glyphweaving</strong>, and <strong>Enchanting</strong> to create innovative and practical equipment. You can perform temporary modification of equipment to apply affix enchantments or to deepen the strength of a particular enchantment.</p>",
+            "actions": {
+                "Imbue Affix": {
+                    "name": "Imbue Affix",
+                    "description": "<p>Over the course of a During a @Action[default rest], you channel arcane energy into your equipment, inscribing an <strong>Affix</strong> as a temporary enchantment. Choose one physical item that has capacity for enchantment and temporarily imbue it with a <strong>Tier 1</strong> Affix of your choice. The imbued affix persists until you use Imbue Affix again.</p><h3 class=\"divider\">Playtest Notes</h3><p>You may currently imbue any affix that the chosen item can bear. In a future update this will be limited to affixes which you are able to <strong>Enchant</strong>.</p>"
+                },
+                "Amplify Affix": {
+                    "name": "Amplify Affix",
+                    "description": "<p>Over the course of a @Action[default rest], you deepen the potency of an <strong>Affix</strong> enchantment on one of your items. Choose one Affix on a physical item you have equipped and increase the Tier of that affix by one, up to its maximum. This amplification persists until you use Amplify Affix again.</p>"
+                }
+            }
+        },
         "Assassin": {
             "name": "Assassin",
             "description": "<p>You specialize in bringing death the the unwary. Any <strong>Strike</strong> or <strong>Spell</strong> attack against an @Condition[unaware] target becomes <strong>Deadly</strong>.</p><p>An <strong>Unaware</strong> creature hit by your attack may not alert its allies until its own turn in <strong>Combat</strong>.</p>",
@@ -226,6 +254,21 @@
                     "effects": [
                         {
                             "name": "Laughing Matter"
+                        }
+                    ]
+                }
+            }
+        },
+        "Bastion": {
+            "name": "Bastion",
+            "description": "<p>You have mastered the art of the defensive stand, becoming an unbreakable wall. While you have the @Condition[guarded] condition, you have the following benefits:</p><ul><li><p>You cannot be moved against your will or knocked @Condition[prone].</p></li><li><p>Your space cannot be crossed by enemies, even when using abilities that would normally move through a creature.</p></li><li><p>Your <strong>Engagement</strong> increases by +1, holding more foes at bay.</p></li><li><p>Your <strong>Reflex</strong> defense is treated as the sum of your <strong>Armor</strong> and <strong>Block </strong>defenses, if greater, as you endure attacks rather than avoiding them. An attack against your <strong>Reflex</strong> which you resist is treated as having been defended by <strong>Block</strong>.</p></li></ul>",
+            "actions": {
+                "Get Behind Me": {
+                    "name": "Get Behind Me",
+                    "description": "<p>Choose an ally adjacent to you and reposition them to be directly behind you, based on your direction of facing at the time this action is used, interposing yourself between that ally and their attackers.</p><p>This movement does not provoke reactions for Disengagement and the protected ally gains the @Condition[guarded] condition until the start of their next turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Guarded"
                         }
                     ]
                 }
@@ -313,11 +356,26 @@
         },
         "Cadence": {
             "name": "Cadence",
-            "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p><p></p>"
+            "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p>"
         },
         "Carefree": {
             "name": "Carefree",
             "description": "<p>You are able to compartmentalize and brush off setbacks, providing a remarkable ability to recover from damage to your Morale.</p>\n<p>Your <strong>Madness Threshold</strong> is reduced by 1, making you easier to heal.</p>"
+        },
+        "Champion": {
+            "name": "Champion",
+            "description": "<p>You relish the thrill of single combat, aspiring to become a peerless challenger who dominates rivals through overwhelming might and unyielding force of will. You can issue a <strong>Challenge</strong>, marking a rival creature as your <strong>Challenged</strong> target, and gaining bonus damage to attacks against it.</p><p>So intense is your focus that no rival may flee your grasp. You may make a @Action[default reactiveStrike] against your <strong>Challenged</strong> rival even while you are @Condition[flanked], and so long as you have Focus to spend it costs only <strong>1 Focus</strong> instead of an Action.</p>",
+            "actions": {
+                "Challenge": {
+                    "name": "Challenge",
+                    "description": "<p>You single out a worthy foe, binding them to a duel through the sheer force of your presence. The target becomes your <strong>Challenged</strong> rival until Combat ends, until they are defeated, or until you Challenge a different foe. You may have only one Challenged rival at a time.</p><p>While your Challenged rival is the only enemy you are engaged with, your immersion in the duel deepens: at the end of each of your turns you gain stacking +1 <strong>Bonus Damage</strong> to your melee <strong>Strikes</strong> against that rival, to a maximum equal to your <strong>Presence</strong>. This bonus resets to zero if the duel is broken, which happens if another enemy engages you, if your rival escapes your <strong>Engagement</strong>, or if you Strike any other creature.</p>",
+                    "effects": [
+                        {
+                            "name": "Dominance"
+                        }
+                    ]
+                }
+            }
         },
         "Chirurgeon": {
             "name": "Chirurgeon",
@@ -484,7 +542,7 @@
         },
         "Deft Grip": {
             "name": "Deft Grip",
-            "description": "Your grasp of your weaponry is fluid and precise. You can perform Actions which require a free hand while wielding a two-handed ranged weapon."
+            "description": "<p>Your grasp of your weaponry is fluid and precise. While wielding a two-handed weapon that scales with Dexterity you may cast spells which require two hands, and attempts to Disarm you are made with +2 Banes.</p><p>You may use Free Movement to equip or unequip such a weapon without any Action cost.</p>"
         },
         "Demolitionist": {
             "name": "Demolitionist",
@@ -530,6 +588,10 @@
                     ]
                 }
             }
+        },
+        "Disarming Riposte": {
+            "name": "Disarming Riposte",
+            "description": "<p>Your ripostes are precise enough to strip a weapon from your foe's grasp. When your @UUID[Compendium.crucible.talent.Item.counterriposte00]{Counter Riposte} achieves a <strong>Critical Hit</strong>, the target is disarmed, dropping their main-hand weapon.</p>"
         },
         "Disarming Strike": {
             "name": "Disarming Strike",
@@ -580,9 +642,19 @@
                 }
             }
         },
+        "Duelist": {
+            "name": "Duelist",
+            "description": "<p>You relish the thrill and skillful mastery of single combat, employing a fighting style that uses a one-handed weapon while keeping your off-hand unoccupied.</p><p>While wielding a one-handed melee weapon with your other hand empty, you gain a <strong>+2</strong> bonus to your <strong>Parry</strong> defense as long as you are not @Condition[flanked]. While meeting these criteria, any attack that results in a <strong>Glance</strong> against your <strong>Armor</strong> becomes a <strong>Parry</strong> instead.</p>",
+            "actions": {
+                "Estocade": {
+                    "name": "Estocade",
+                    "description": "<p>You deliver a precise, decisive thrust against a foe you have caught at a disadvantage. You make a <strong>Strike</strong> with your main-hand weapon which is <strong>Empowered</strong> and <strong>Keen</strong>.</p><p>You may only perform this attack against a target who is @Condition[exposed], @Condition[prone], @Condition[slowed], @Condition[staggered], @Condition[paralyzed] or who has been disarmed of their main-hand weapon.</p>"
+                }
+            }
+        },
         "Dustbinder": {
             "name": "Dustbinder",
-            "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
         },
         "Earth Proficiency": {
             "name": "Earth Proficiency",
@@ -684,6 +756,10 @@
                 }
             }
         },
+        "Flash Frost": {
+            "name": "Flash Frost",
+            "description": "<p>You freeze with the speed of thought, cold striking in an instant rather than creeping in slowly. Your usage of the <strong>Rune of Frost</strong> scales with <strong>Intellect</strong> instead of <strong>Wisdom</strong>.</p>"
+        },
         "Flash of Steel": {
             "name": "Flash of Steel",
             "description": "<p>You are an expert in using a thrown weapon to imbalance or expose your target for follow-up strikes.</p>",
@@ -746,6 +822,20 @@
                 }
             }
         },
+        "Gambit": {
+            "name": "Gambit",
+            "description": "<p>Some fight by the book, you fight by the odds. Every exchange is a wager: you read your opponent's intent, make risky bets to goad them into overcommitting, then stake everything on a game-changing payout. You trust your gut, wits, and some arcane chicanery to tilt the odds in your favor, gaining the following benefits:</p><ul><li><p><em>The Tell.</em> You see a blow before it is thrown. Your <strong>Dodge</strong> defense is calculated using your <strong>Intellect</strong> instead of <strong>Dexterity</strong>, if it is higher.</p></li><li><p><em>Loaded Dice.</em> Fortune bends to those who help it along. Once per round, the first time you roll a 1 on any die, that die is rerolled and you keep the new result.</p></li><li><p><em>Ante Up.</em> When you make a @Action[default strike], you can choose to intentionally add <strong>Banes</strong> to it. If the Strike hits, a special <strong>Gambit</strong> effect increments according to the number of Banes you wagered. These charges last until the end of Combat or until spent.</p></li></ul>",
+            "actions": {
+                "All-In": {
+                    "name": "All-In",
+                    "description": "<p>Every gamble you have made comes due, and you collect all at once. The next single attack or check rolls the maximum possible result on all of its dice. You can activate this action by spending either 6 <strong>Gambit</strong> charges, or 1 <strong>Heroism</strong>.</p>"
+                }
+            }
+        },
+        "Gathering Storm": {
+            "name": "Gathering Storm",
+            "description": "<p>You understand that a storm is not sudden chaos but a patient, gathering force that breaks only when it must. Your usage of the <strong>Rune of Storm</strong> scales with <strong>Wisdom</strong> instead of <strong>Intellect</strong>.</p>"
+        },
         "Gesture: Arrow": {
             "name": "Gesture: Arrow",
             "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
@@ -792,7 +882,7 @@
         },
         "Gesture: Sense": {
             "name": "Gesture: Sense",
-            "description": "<p>You attune your mind to the arcane power of a Rune to sense nearby sources of energy.</p><p>The Sense gesture scales with <strong>Presence</strong> and produces an emanation with 30 feet radius and position that remains centered upon the spellcaster. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>. It may optionally be <strong>Maintained</strong> at the additional cost of <strong>1 Focus</strong> every subsequent round.</p><p>This spell allows the caster to detect the presence of spellcraft using the same Rune as the one incorporated in this spell. The sense will also momentarily detect the presence of creatures according to their type.</p><ul><li><p><strong>Control</strong>: Fiends</p></li><li><p><strong>Death</strong>: Undead</p></li><li><p><strong>Earth</strong>: Oozes and Earth Elementals</p></li><li><p><strong>Flame</strong>: Dragons and Fire Elementals</p></li><li><p><strong>Frost</strong>: Giants and Frost Elementals</p></li><li><p><strong>Illumination</strong>: Celestials</p></li><li><p><strong>Illusion</strong>: Fey</p></li><li><p><strong>Kinesis</strong>: Monstrosities</p></li><li><p><strong>Life</strong>: Plants and Beasts</p></li><li><p><strong>Lightning</strong>: Constructs and Storm Elementals</p></li><li><p><strong>Oblivion</strong>: Outsiders</p></li><li><p><strong>Soul</strong>: Humanoids</p></li></ul>"
+            "description": "<p>You attune your mind to the arcane power of a Rune to sense nearby sources of energy.</p><p>The Sense gesture scales with <strong>Presence</strong> and produces an emanation with 30 feet radius and position that remains centered upon the spellcaster. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>. It may optionally be <strong>Maintained</strong> at the additional cost of <strong>1 Focus</strong> every subsequent round.</p><p>This spell allows the caster to detect the presence of spellcraft using the same Rune as the one incorporated in this spell. The sense will also momentarily detect the presence of creatures according to their type.</p><ul><li><p><strong>Control</strong>: Fiends</p></li><li><p><strong>Death</strong>: Undead</p></li><li><p><strong>Earth</strong>: Oozes and Earth Elementals</p></li><li><p><strong>Flame</strong>: Dragons and Fire Elementals</p></li><li><p><strong>Frost</strong>: Giants and Frost Elementals</p></li><li><p><strong>Illumination</strong>: Celestials</p></li><li><p><strong>Illusion</strong>: Fey</p></li><li><p><strong>Kinesis</strong>: Monstrosities</p></li><li><p><strong>Life</strong>: Plants and Beasts</p></li><li><p><strong>Storm</strong>: Constructs and Storm Elementals</p></li><li><p><strong>Oblivion</strong>: Outsiders</p></li><li><p><strong>Soul</strong>: Humanoids</p></li></ul>"
         },
         "Gesture: Step": {
             "name": "Gesture: Step",
@@ -837,13 +927,17 @@
                 }
             }
         },
+        "Harrier": {
+            "name": "Harrier",
+            "description": "<p>You hound enemies who would rather fight you from afar. You may make a @Action[default reactiveStrike] against an enemy engaged with you whenever they make an attack that is not tagged as <strong>Melee</strong>.</p>"
+        },
         "Headbutt": {
             "name": "Headbutt",
             "description": "<p>You can deliver a brutal close-range strike with your head that catches opponents off-guard.</p>",
             "actions": {
                 "Headbutt": {
                     "name": "Headbutt",
-                    "description": "<p>Make an unarmed <strong>Strike</strong> against the <strong>Fortitude</strong> defense of an adjacent enemy. If your <strong>Initiative</strong> is superior to that of your target, you gain <strong>+1 Boon</strong> to this attack.</p><p>The attack is <strong>Difficult</strong> and only deals @Condition[weakened] damage, but if successful it inflicts the @Condition[staggered] for one round.</p><p>This action always uses an Unarmed weapon, even if your weapon slots are otherwise occupied.</p>",
+                    "description": "<p>Make an unarmed <strong>Strike</strong> against the <strong>Fortitude</strong> defense of an adjacent enemy. If your <strong>Initiative</strong> is superior to that of your target, you gain <strong>+1 Boon</strong> to this attack.</p><p>The attack is <strong>Difficult</strong> and only deals <strong>Weakened</strong> damage, but if successful it inflicts the @Condition[staggered] for one round.</p><p>This action always uses an Unarmed weapon, even if your weapon slots are otherwise occupied.</p>",
                     "effects": [
                         {
                             "name": "Headbutt"
@@ -884,6 +978,10 @@
         "Hold Fast": {
             "name": "Hold Fast",
             "description": "<p>You are a calm anchor in the swirling sea of combat. When you have a Shield equipped, your <strong>Engagement</strong> increases by +1, allowing you to simultaneously engage more adjacent foes.</p>"
+        },
+        "Hulking Physique": {
+            "name": "Hulking Physique",
+            "description": "<p>Your hulking frame swells with raw mass. Your <strong>Size</strong> increases by 1, but your bulk slows you: your <strong>Stride</strong> and <strong>Dodge</strong> defense each decrease by 2.</p>"
         },
         "Illumination Proficiency": {
             "name": "Illumination Proficiency",
@@ -947,18 +1045,17 @@
         },
         "Inquisitor": {
             "name": "Inquisitor",
-            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
+            "description": "<p>You are an expert in combat against magic users, trained to conserve your energy and strike at the precise moment to thwart an incantation.</p><p>The cost of your @Action[default reactiveStrike] is reduced by an additional 1  <strong>Action</strong> but always costs 1 <strong>Focus</strong>. When you Strike an enemy in reaction to them casting a spell, a successful hit drains <strong>1 Focus</strong> from that enemy and refunds your own; on a <strong>Critical Hit</strong> their spell is interrupted and the magic is lost.</p>",
             "actions": {
-                "Inquisitor's Strike": {
-                    "name": "Inquisitor's Strike",
-                    "condition": "Your target is casting a spell.",
-                    "description": "When an enemy within your Engagement radius whom you can see casts a spell, you may react to Strike that target. On a Critical Hit the target's spell is interrupted and the magic is lost."
+                "Abjure": {
+                    "name": "Abjure",
+                    "description": "<p>You exert your trained will against hostile sorcery, unraveling its hold over you and your nearby allies. For yourself and each ally within 12 feet suffering a magical condition inflicted by an enemy, make an <strong>Arcana</strong> check against the lowest <strong>Removal DC</strong> among their afflicting conditions. Every such condition whose Removal DC your result exceeds is removed.</p>"
                 }
             }
         },
         "Inspirator": {
             "name": "Inspirator",
-            "description": "<p>You are highly skilled in weaving the Rune of Soul. Spells which use this Rune cause the @Condition[inspired] condition on Critical Hits.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspire Heroism",
@@ -1067,6 +1164,31 @@
             "name": "Jewelcraft Novice",
             "description": "<p>You have received training in the fundamentals of Jewelcrafting and are capable of working with most common settings and designs.</p><p>You still need to reference schematics and books to identify gem stones, ornate metals, and their properties.</p>"
         },
+        "Juggernaut": {
+            "name": "Juggernaut",
+            "description": "<p>You thrive on physical contest, using your extraordinary brawn and grit to overpower creatures whose bulk outstrips even your own. When you @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] a creature, you are not @Condition[restrained] yourself. The <strong>Size</strong> of creature that you can Grapple and be Grappled by increases by +1.</p>",
+            "actions": {
+                "Throw": {
+                    "name": "Throw",
+                    "condition": "You have a creature Grappled.",
+                    "description": "<p>You heave the target of your @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] through the air towards a target point up to a distance of two times your <strong>Strength</strong> score.</p><p>You make an <strong>Athletics</strong> skill attack against the <strong>Reflex</strong> defense of your grappled target. On a success the target is thrown, leaving it @Condition[prone]. If its movement is stopped short by a wall or another creature, it slams into the obstacle and suffers <strong>Bludgeoning</strong> damage from the attack. A creature hurled into open space takes no damage from the throw itself, although it may @Action[default fall].</p><p>Regardless of the outcome, your Grapple is released as part of this action.</p>",
+                    "effects": [
+                        {
+                            "name": "Throw"
+                        }
+                    ]
+                },
+                "Overrun": {
+                    "name": "Overrun",
+                    "description": "<p>You lower your shoulder and charge in a straight line, bowling over those who stand in your way.</p><p>Move up to twice your <strong>Stride</strong> in a straight line, passing through the space of any creature that you could @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple]. You make an <strong>Athletics</strong> skill attack against the <strong>Reflex</strong> defense of each target, on a success dealing <strong>Bludgeoning</strong> damage and knocking the creature @Condition[prone].</p><p>Your charge is halted by any creature too massive for you to Grapple, which is unaffected by the attack.</p>",
+                    "effects": [
+                        {
+                            "name": "Overrun"
+                        }
+                    ]
+                }
+            }
+        },
         "Justiciar": {
             "name": "Justiciar",
             "description": "<p>You are an instrument of justice. Critical Strike attacks also deal the Overflow portion of damage to enemy Morale.</p>"
@@ -1077,7 +1199,7 @@
         },
         "Kineturge": {
             "name": "Kineturge",
-            "description": "<p>You are highly skilled in weaving the Rune of Kinesis. Spells which use this Rune cause the @Condition[bleeding] condition on Critical Hits.</p><p>The Bleeding effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> ability score as additional <strong>Piercing</strong> damage to <strong>Health</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Kinesis. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[bleeding] condition.</p><p>The Bleeding effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> ability score as additional <strong>Piercing</strong> damage to <strong>Health</strong>.</p>"
         },
         "Last Stand": {
             "name": "Last Stand",
@@ -1137,11 +1259,7 @@
         },
         "Lightbringer": {
             "name": "Lightbringer",
-            "description": "<p>You are highly skilled in weaving the Rune of Illumination. Spells which use this Rune cause the @Condition[irradiated] condition on Critical Hits.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
-        },
-        "Lightning Proficiency": {
-            "name": "Lightning Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Lightning. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Energize </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
         },
         "Mark Prey": {
             "name": "Mark Prey",
@@ -1194,7 +1312,7 @@
         },
         "Mender": {
             "name": "Mender",
-            "description": "<p>You are highly skilled in weaving the Rune of Life. Spells which use this Rune cause the @Condition[mending] condition on Critical Hits.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Mental Fortress",
@@ -1202,7 +1320,7 @@
         },
         "Mesmer": {
             "name": "Mesmer",
-            "description": "<p>You are highly skilled in weaving the Rune of Illusion. Spells which use this Rune cause @Condition[confused] on Critical Hits.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
         },
         "Mnemonic Realization": {
             "name": "Mnemonic Realization",
@@ -1240,7 +1358,7 @@
         },
         "Necromancer": {
             "name": "Necromancer",
-            "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the @Condition[decaying] condition on Critical Hits.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Presence</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Death. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[decaying] condition.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Presence</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
         },
         "Never Yield": {
             "name": "Never Yield",
@@ -1263,11 +1381,17 @@
         },
         "Operator": {
             "name": "Operator",
-            "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not @Condition[incapacitated], you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>"
+            "description": "<p>You have ice in your veins and remain cool under pressure. Your physical toughness and mental acuity allow you to hone the danger of your situation to achieve the greatest results when the stakes are highest.</p><p>While in combat and not @Condition[incapacitated], you gain +1 Boon to all checks when you have less than 50% of your maximum Health remaining. You gain +2 Boons to all checks when you have less than 25% of your maximum Health remaining.</p>",
+            "actions": {
+                "Cold Focus": {
+                    "name": "Cold Focus",
+                    "description": "<p>You expend <strong>Heroism</strong>, drawing icy clarity from your circumstances to restore 1 <strong>Focus</strong>, plus 1 additional Focus for every 25% of your maximum Health you are missing, to a maximum of 5.</p>"
+                }
+            }
         },
         "Opportunist": {
             "name": "Opportunist",
-            "description": "<p>You seize any opportunity you can to capitalize on an enemy who turns their back on you. You may make a <strong>Reactive Strike</strong> even if you are otherwise <strong>Fully Engaged</strong>.</p>"
+            "description": "<p>You seize any opportunity you can to capitalize on an enemy who turns their back on you. You may make a @Action[default reactiveStrike] even if you are otherwise <strong>Fully Engaged</strong>.</p>"
         },
         "Opportunistic Spellcraft": {
             "name": "Opportunistic Spellcraft",
@@ -1275,18 +1399,28 @@
         },
         "Overwatch": {
             "name": "Overwatch",
-            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
+            "description": "<p>You hold the battlefield in your sights, ready to punish any foe who acts within your line of fire. A spellcaster who weaves magic before you risks not only your shot, but the unraveling of their incantation.</p>",
             "actions": {
-                "Disrupting Shot": {
-                    "name": "Disrupting Shot",
-                    "condition": "Your target is casting a spell.",
-                    "description": "When an enemy you can see casts a spell, you may react to Strike that target. The technique is difficult to perform, but on a Critical Hit the target's spell is interrupted and the magic is lost."
+                "Covering Fire": {
+                    "name": "Covering Fire",
+                    "condition": "An enemy you can see casts a spell, or takes an action that targets a creature other than itself.",
+                    "description": "<p>You may React to make a ranged Strike against that enemy. On a Critical Hit against a caster, the spell is interrupted and the magic is lost. A self-targeted action that is not a spell, such as Move or Defend, does not trigger this Reaction, which may be used only once per Round.</p>"
                 }
             }
         },
         "Patient Deflection": {
             "name": "Patient Deflection",
             "description": "Your expertise with martial arts allows you to dodge or deflect blows as effectively as a heavily armored fighter. While unarmed, half your Wisdom score contributes to your Parry defense."
+        },
+        "Peltast": {
+            "name": "Peltast",
+            "description": "<p>To you, a thrown weapon is not released - it is directed. Weapons that depart your hand are guided by an arcane discipline which bends its path to your will, lending your throws a reach and precision that no unaided arm could match. Weapons you throw are returned unerringly back to your grasp. You gain the following benefits:</p><ul><li><p>You can @Action[default throwWeapon] using any melee weapon or shield with full effectiveness, even those not designed to be thrown.</p></li><li><p>A weapon designed for throwing with the <strong>Thrown</strong> property gains +10 feet of range in your hands, reaching 20 feet.</p></li><li><p>Weapons you throw automatically and immediately return to your hand.</p></li></ul>",
+            "actions": {
+                "Ricochet": {
+                    "name": "Ricochet",
+                    "description": "<p>Make a <strong>Thrown</strong> weapon attack at an enemy within range. Guided by your arcane instinct, your weapon ricochets onward to the closest enemy within a maximum distance equal to your <strong>Intellect</strong> where wall blocks its path.</p><p>The weapon will continue caroming from foe to foe, hitting each only once, until it has struck a maximum number of enemies equal to half your <strong>Intellect</strong>.</p><p>Resolve a separate attack against each enemy struck. Each target after the first suffers a cumulative -1 <strong>Damage</strong> as the throw sheds momentum.</p>"
+                }
+            }
         },
         "Penetrating Shot": {
             "name": "Penetrating Shot",
@@ -1398,6 +1532,52 @@
             "name": "Preternatural Instinct",
             "description": "Your quickness of mind and body are equally impressive. You gain +2 Boons to all Initiative checks."
         },
+        "Primalist": {
+            "name": "Primalist",
+            "description": "<p>The potency of elemental Runes flows through you. By adopting an elemental <strong>Stance</strong> you channel a Rune through your weapon Strikes. You may enter a Stance for one of the elemental Runes that you know: </p><ul><li><p>@UUID[Compendium.crucible.talent.Item.runeEarth0000000]{Rune: Earth}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFlame0000000]{Rune: Flame}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFrost0000000]{Rune: Frost}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeStorm0000000]{Rune: Storm}</p></li></ul><p>You may enter or change your Stance once per <strong>Turn</strong>, and your entered stance lasts until you change it or until  Combat ends. While in a Stance, talents or features which apply Critical Hit effects for actions that use that Rune apply to your weapon Strikes as well.</p>",
+            "actions": {
+                "Storm Stance": {
+                    "name": "Storm Stance",
+                    "condition": "You know the Rune of Storm.",
+                    "description": "<p>You adopt the <strong>Storm Stance</strong>, channeling the Rune of Storm. While in this Stance your <strong>Stride</strong> is increased by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Storm Stance"
+                        }
+                    ]
+                },
+                "Cinder Stance": {
+                    "name": "Cinder Stance",
+                    "condition": "You know the Rune of Flame.",
+                    "description": "<p>You adopt the <strong>Cinder Stance</strong>, channeling the Rune of Flame. While in this Stance your weapon Strikes deal 2 additional <strong>Fire </strong>damage.</p>",
+                    "effects": [
+                        {
+                            "name": "Cinder Stance"
+                        }
+                    ]
+                },
+                "Water Stance": {
+                    "name": "Water Stance",
+                    "condition": "You know the Rune of Frost.",
+                    "description": "<p>You adopt the <strong>Water Stance</strong>, channeling the Rune of Frost. While in this Stance you gain +1 to your <strong>Reflex</strong>, <strong>Fortitude</strong>, and <strong>Willpower</strong> defenses.</p>",
+                    "effects": [
+                        {
+                            "name": "Water Stance"
+                        }
+                    ]
+                },
+                "Stone Stance": {
+                    "name": "Stone Stance",
+                    "condition": "You know the Rune of Earth.",
+                    "description": "<p>You adopt the <strong>Stone Stance</strong>, channeling the Rune of Earth. While in this Stance you gain +2 <strong>Resistance</strong> to Bludgeoning, Piercing, and Slashing damage.</p>",
+                    "effects": [
+                        {
+                            "name": "Stone Stance"
+                        }
+                    ]
+                }
+            }
+        },
         "Projectile Weapon Proficiency": {
             "name": "Projectile Weapon Proficiency",
             "description": "<p>You have a fluent education in the use of projectile weaponry. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Projectile</strong> category.</p>"
@@ -1430,7 +1610,7 @@
         },
         "Pyromancer": {
             "name": "Pyromancer",
-            "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Rallying Cry",
@@ -1468,7 +1648,7 @@
         },
         "Rimecaller": {
             "name": "Rimecaller",
-            "description": "<p>You are highly skilled in weaving the Rune of Frost. Spells which use this Rune cause the @Condition[freezing] condition on Critical Hits.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
         },
         "Rune: Control": {
             "name": "Rune: Control",
@@ -1492,7 +1672,7 @@
         },
         "Rune: Earth": {
             "name": "Rune: Earth",
-            "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>",
+            "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Storm</strong>.</p>",
             "actions": {
                 "Mould": {
                     "name": "Mould",
@@ -1560,16 +1740,6 @@
                 }
             }
         },
-        "Rune: Lightning": {
-            "name": "Rune: Lightning",
-            "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
-            "actions": {
-                "Energize": {
-                    "name": "Energize",
-                    "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                }
-            }
-        },
         "Rune: Oblivion": {
             "name": "Rune: Oblivion",
             "description": "<p>A chaotic force of destruction and annihilation of existence. The Oblivion rune governs unmaking of matter or decoherence of spirit.</p><p>The Oblivion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Void</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Soul</strong>.</p>",
@@ -1587,6 +1757,16 @@
                 "Evoke": {
                     "name": "Evoke",
                     "description": "<p>Your command of the Rune of Soul allows you to facilitate basic forms of spiritual influence, producing one of the following effects:</p><ul><li><p>Enable yourself or another willing person to revisit a core memory of a moment from their past up to one minute in duration as if it happened recently.</p></li><li><p>Identify a negative spiritual condition that is affecting a person such as @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Create a momentary spiritual connection with another willing creature that allows them to recognize an idea which can be expressed as a single word.</p></li></ul><p>Uses of Evoke may only affect yourself or another creature which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
+        },
+        "Rune: Storm": {
+            "name": "Rune: Storm",
+            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+            "actions": {
+                "Energize": {
+                    "name": "Energize",
+                    "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                 }
             }
         },
@@ -1612,6 +1792,30 @@
         "Safecracker": {
             "name": "Safecracker",
             "description": "<p>You are skilled in the arts of disarming traps and picking locks. You gain +1 Boon on <strong>Stealth</strong> checks to disable a device or open a lock.</p>"
+        },
+        "Sage": {
+            "name": "Sage",
+            "description": "<p>Your encyclopedic learning spans every field of study. Through disciplined research and sudden flashes of insight you can call upon <strong>Knowledge</strong> to aid you during key moments.</p>",
+            "actions": {
+                "Flash of Brilliance": {
+                    "name": "Flash of Brilliance",
+                    "description": "<p>You expend <strong>Heroism</strong> and experience a sudden, brilliant moment of total clarity. Until the end of your next turn you are treated as possessing every form of <strong>Knowledge</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Flash of Brilliance"
+                        }
+                    ]
+                },
+                "Field Study": {
+                    "name": "Field Study",
+                    "description": "<p>During the process of a @Action[default rest], you devote yourself to studying a chosen field of <strong>Knowledge</strong>. Upon the completion of the Rest, you gain that Knowledge for the next 24 hours or until you use this Action again.</p>",
+                    "effects": [
+                        {
+                            "name": "Field Study"
+                        }
+                    ]
+                }
+            }
         },
         "Science Adept": {
             "name": "Science Adept",
@@ -1643,9 +1847,13 @@
                 }
             }
         },
+        "Sentinel": {
+            "name": "Sentinel",
+            "description": "<p>You punish those who try to slip past your guard. When you damage an enemy with a @Action[default reactiveStrike], that creature becomes @Condition[slowed] until the end of its next turn.</p>"
+        },
         "Shapeshifter": {
             "name": "Shapeshifter",
-            "description": "<p>You possess supernatural ability to transform your body into the shapes of beasts.</p><p>You undergo a transformation where you assume the form of a beast that you are familiar with and which is half your level or less. While transformed you have the exact attributes and abilities of the chosen beast.</p><p>Your equipment is magically incorporated into the form that you take, however you gain no benefit from that equipment while transformed.</p><p>If your bestial form becomes @Condition[incapacitated] you revert back to your normal form with any excess damage becoming <strong>Wounds</strong>. If your <strong>Morale</strong> is @Condition[broken] while in beast form your transformation ends and any excess damage becomes <strong>Madness</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent and its associated actions are not yet automated.</p>",
+            "description": "<p>You possess supernatural ability to transform your body into the shapes of beasts.</p>\n<p>You undergo a transformation where you assume the form of a beast that you are familiar with and which is half your level or less. While transformed you have the exact attributes and abilities of the chosen beast.</p>\n<p>Your equipment is magically incorporated into the form that you take, however you gain no benefit from that equipment while transformed.</p>\n<p>If your bestial form becomes @Condition[incapacitated] you revert back to your normal form with any excess damage becoming <strong>Wounds</strong>. If your <strong>Morale</strong> is @Condition[broken] while in beast form your transformation ends and any excess damage becomes <strong>Madness</strong>.</p>\n<h3 class=\"divider\">Playtest Notes</h3>\n<p>This talent and its associated actions are not yet automated.</p>",
             "actions": {
                 "Beast Shape": {
                     "name": "Beast Shape",
@@ -1764,6 +1972,10 @@
             "name": "Spellmute",
             "description": "<p>Currents of magic flow strangely around you, as if unaware of your presence.</p><p>You cannot perform any action with the <strong>Spell</strong> tag. Spells which target you suffer +2 <strong>Banes</strong> regardless of whether they impose harmful or beneficial effects.</p>"
         },
+        "Spiritbreaker": {
+            "name": "Spiritbreaker",
+            "description": "<p>You wage war upon the mind itself, unraveling the resolve of your foes. Your actions which directly attack <strong>Morale</strong> find the cracks in a creature's will more easily, reducing your <strong>Critical Threshold</strong> by 2.</p><p>When you cause a target to become @Condition[broken], the shock to their psyche leaves the target @Condition[stunned] until the end of its next turn.</p>"
+        },
         "Steadfast": {
             "name": "Steadfast",
             "description": "Your patient resolve allows you to endure psychologically grueling ordeals with steadfast determination.",
@@ -1799,6 +2011,10 @@
             "name": "Still Lake",
             "description": "<p>Your life experiences provide serenity that allows you to resist the attempted manipulation of others.</p><p><strong>Skill Attacks</strong> against you from any of the <strong>Social</strong> skills are made with <strong>2 Banes</strong>.</p>"
         },
+        "Storm Proficiency": {
+            "name": "Storm Proficiency",
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Storm. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Energize </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+        },
         "Strategic Repositioning": {
             "name": "Strategic Repositioning",
             "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not @Condition[unaware], you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
@@ -1809,7 +2025,7 @@
         },
         "Strong Grip": {
             "name": "Strong Grip",
-            "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
+            "description": "<p>Your grasp of your weaponry is firm and unyielding. While wielding a two-handed weapon that scales with Strength you may cast spells which require two hands, and attempts to Disarm you are made with +2 Banes. </p><p>Additionally, you may wield a one-handed Heavy weapon in your off-hand.</p>"
         },
         "Stunning Strike": {
             "name": "Stunning Strike",
@@ -1847,7 +2063,7 @@
         },
         "Surgeweaver": {
             "name": "Surgeweaver",
-            "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
         },
         "Swashbuckler": {
             "name": "Swashbuckler",
@@ -1895,6 +2111,21 @@
                 }
             }
         },
+        "Telekinetic": {
+            "name": "Telekinetic",
+            "description": "<p>You wield kinetic force with practiced ease, bending the paths of objects and creatures to your will.</p><ul><li><p>Once per turn, when you apply @UUID[Compendium.crucible.talent.Item.inflectionpush00]{Inflection: Push} or @UUID[Compendium.crucible.talent.Item.inflectionpull00]{Inflection: Pull} toH a Spell, you ignore the inflection's <strong>Focus</strong> cost.</p></li><li><p>You double the distance at which you can Pull, Flick, or Suspend using the @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel] action.</p></li><li><p>You unlock the <strong>Telekinetic Flight</strong> action, suspending yourself aloft to fly and hover.</p></li></ul>",
+            "actions": {
+                "Telekinetic Flight": {
+                    "name": "Telekinetic Flight",
+                    "description": "<p>You suspend yourself aloft on currents of kinetic force, gaining the @Condition[flying] condition to fly and hover. You sustain the effect with <strong>Focus</strong> each round; it ends if you become @Condition[incapacitated].</p>",
+                    "effects": [
+                        {
+                            "name": "Telekinetic Flight"
+                        }
+                    ]
+                }
+            }
+        },
         "Testudo": {
             "name": "Testudo",
             "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the @Condition[guarded] condition against <strong>Weapon Attacks</strong> while wielding a shield."
@@ -1905,7 +2136,7 @@
         },
         "Thoughtbinder": {
             "name": "Thoughtbinder",
-            "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Control. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[dominated] condition.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Thread the Needle",
@@ -1997,7 +2228,7 @@
         },
         "Voidcaller": {
             "name": "Voidcaller",
-            "description": "<p>You are highly skilled in weaving the Rune of Oblivion. Spells which use this Rune cause the @Condition[entropy] condition on Critical Hits.</p><p>The Entropy effect lasts for <strong>1 Round</strong>, deals half your <strong>Presence</strong> score as <strong>Void</strong> damage to <strong>Health</strong>, and applies the @Condition[frightened] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Oblivion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[entropy] condition.</p><p>The Entropy effect lasts for <strong>1 Round</strong>, deals half your <strong>Presence</strong> score as <strong>Void</strong> damage to <strong>Health</strong>, and applies the @Condition[frightened] condition.</p>"
         },
         "Vow of Animus": {
             "name": "Vow of Animus",
@@ -2016,7 +2247,82 @@
         },
         "War Mage": {
             "name": "War Mage",
-            "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a Rune capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any Counterspell attempt.</p>"
+            "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a <strong>Rune</strong> capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell] attempt.</p>"
+        },
+        "Warchanter": {
+            "name": "Warchanter",
+            "description": "<p>You are a battle-singer who turns the clamor of war into power, your chants carried on the rhythm of your own blows. You know six <strong>Chants</strong>; three <strong>Songs</strong> that strengthen your allies and three <strong>Dirges</strong> that sap your foes. You may weave multiple Chants together to craft an evolving chorus of battle, but you require the continued strikes of your weapon to fuel their song.</p><p>Beginning a chant creates an aura around you that affects other creatures on their respective turns and lasts for one Round. Whenever you successfully hit with a <strong>Melee</strong> attack, your Chant that is nearest to expiring is extended by one <strong>Round</strong>.</p>",
+            "actions": {
+                "Song of the Titan's Might": {
+                    "name": "Song of the Titan's Might",
+                    "description": "<p>You raise a thunderous anthem to the <strong>Titan</strong>, whose strength once toppled leviathans. You and allied creatures within <strong>15 feet</strong> gain <strong>+1 Strength</strong> and <strong>+1 Wisdom</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Song of the Titan's Might"
+                        }
+                    ]
+                },
+                "Song of the Hunter's Alacrity": {
+                    "name": "Song of the Hunter's Alacrity",
+                    "description": "<p>You loose a soaring melody to the <strong>Hunter</strong>, swift of foot and unerring of eye. You and allied creatures within <strong>15 feet</strong> gain <strong>+1 Dexterity</strong> and <strong>+1 Intellect</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Song of the Hunter's Alacrity"
+                        }
+                    ]
+                },
+                "Song of the Mountain's Endurance": {
+                    "name": "Song of the Mountain's Endurance",
+                    "description": "<p>You intone a rooted hymn to the <strong>Mountain</strong>, who weathered every age unbroken. You and allied creatures within <strong>15 feet</strong> gain <strong>+1 Toughness</strong> and <strong>+1 Presence</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Song of the Mountain's Endurance"
+                        }
+                    ]
+                },
+                "Dirge of the Worm's Feebleness": {
+                    "name": "Dirge of the Worm's Feebleness",
+                    "description": "<p>You hum a mocking lament that names your enemies the crawling <strong>Worm</strong>, fit only to grovel. Enemy creatures within <strong>15 feet</strong> suffer <strong>1 Bane</strong> to all of their actions.</p>",
+                    "effects": [
+                        {
+                            "name": "Dirge of the Worm's Feebleness"
+                        }
+                    ]
+                },
+                "Dirge of the Glutton's Lethargy": {
+                    "name": "Dirge of the Glutton's Lethargy",
+                    "description": "<p>You drone a dragging requiem to the <strong>Glutton</strong>, too bloated and idle to stir. Enemy creatures within <strong>15 feet</strong> gain lose <strong>Free</strong> <strong>Movement</strong> and reduce their <strong>Stride</strong> by 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Dirge of the Glutton's Lethargy"
+                        }
+                    ]
+                },
+                "Dirge of the Husk's Fragility": {
+                    "name": "Dirge of the Husk's Fragility",
+                    "description": "<p>You keen a brittle threnody for the <strong>Husk</strong>, hollow and ready to crumble. Enemy creatures within <strong>15 feet</strong> suffer <strong>Vulnerability </strong>of 2 to all damage types.</p>",
+                    "effects": [
+                        {
+                            "name": "Dirge of the Husk's Fragility"
+                        }
+                    ]
+                }
+            }
+        },
+        "Warden": {
+            "name": "Warden",
+            "description": "<p>You are a keeper of the old ways, a battle-druid who calls upon ancestral spirits of nature to shelter those under your protection.</p><p>You use @Action[Compendium.crucible.talent.Item.warden0000000000 ancestralGrove] to call forth an area of natural protection originating from the spiritual projection of an Ancestral Guardian.</p><h3 class=\"divider\">Playtesting</h3><p>The passive Resistance aura radiated by the Ancestral Guardian is not yet fully automated, pending further Aura and Region improvements.</p>",
+            "actions": {
+                "Ancestral Grove": {
+                    "name": "Ancestral Grove",
+                    "description": "<p>You call forth an @UUID[Compendium.crucible.summons.Actor.ancestralGuard00]{Ancestral Guardian} which manifests at a point you can see within 30 feet. The Guardian is an incorporeal spirit that cannot be harmed or moved. Creatures can pass through its space, but it counts as three creatures for the purposes of determining whether an enemy is @Condition[flanked].</p><p>The Guardian emanates an aura with a 20 foot radius that increases the <strong>Resistance</strong> of allies to all damage types by +2.</p><p>So long as the Guardian endures, your weapon attacks against enemies within this aura cause a transfer of life-force from your enemies to your allies. Your target suffers additional <strong>Poison</strong> damage equal to half your <strong>Wisdom</strong>, which is transferred as <strong>Health</strong> restoration to yourself or an ally within the grove who currently has the lowest Health.</p><p>The Guardian remains until Combat ends, or until the Warden uses this Action again.</p><p></p>",
+                    "effects": [
+                        {
+                            "name": "Ancestral Grove"
+                        }
+                    ]
+                }
+            }
         },
         "Weak Points": {
             "name": "Weak Points",
@@ -2047,6 +2353,14 @@
                     "description": "<p>If you succeed on a [[/skillCheck wilderness 14]] check, you may pose simple questions to a <strong>Beast</strong> which can perceive you. As long as the creature is not hostile it will respond accurately within the limits of its own knowledge.</p><ul><li><p>Beasts with an <strong>Intellect</strong> score of zero are incapable of understanding you.</p></li><li><p>Beasts with an <strong>Intellect</strong> score of 1 can only respond with \"yes\" or \"no\" responses.</p></li><li><p>Beasts with an <strong>Intellect</strong> score greater than 1 can provide simple multi-word responses.</p></li></ul>"
                 }
             }
+        },
+        "Wizard": {
+            "name": "Wizard",
+            "description": "<p>You are a consummate scholar of the arcane who can sustain fluidity and momentum in your spellcraft. Once per Turn when you cast a <strong>Spell</strong>, you can carry forward a portion of its magic to reduce the <strong>Focus</strong> cost of an immediately subsequent Spell by 1.</p>"
+        },
+        "Wrestler": {
+            "name": "Wrestler",
+            "description": "<p>Through leverage and technique you seize and hold creatures far larger than yourself. The Size of creature you can @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple], and be Grappled by, increases by 1.</p>"
         },
         "Zealous Smite": {
             "name": "Zealous Smite",

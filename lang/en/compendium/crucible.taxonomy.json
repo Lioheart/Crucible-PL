@@ -41,6 +41,10 @@
             "name": "Drake",
             "description": "<p>Serpentine creatures which are lesser kin of dragons. Drakes generally live and hunt in packs, unlike more solitary full dragons. Drakes range from younger and smaller varieties often called \"Drakelings\" to huge specimens sometimes referred to as \"Ultra Drakes\".</p><p>Observed size variations include:</p><ul><li><p><strong>Drakeling</strong>: Size 3, Stride 10</p></li><li><p><strong>Drake</strong>: Size 6, Stride 16</p></li><li><p><strong>Ultra Drake</strong>: Size 9, Stride 12</p></li></ul><p>Different types of Drakes feature a different range of damage resistances and vulnerabilities depending on their sub-species.</p>"
         },
+        "Dust Devil": {
+            "name": "Dust Devil",
+            "description": "<p>Elemental embodiments of swirling dust and grit. The smallest, a Dust Mote, is among the weakest of all elementals; greater specimens grow into devils, whirlwinds, and roaring dust storms.</p>"
+        },
         "Earth Elemental": {
             "name": "Earth Elemental",
             "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
@@ -73,6 +77,10 @@
             "name": "Hyena",
             "description": "Mammals from the hyena family. Hyenas are carnivorous pack hunters with powerful necks and jaws."
         },
+        "Mud Elemental": {
+            "name": "Mud Elemental",
+            "description": "<p>Shapeless elementals of caustic mud and sludge: soft, mindless, and corrosive. They engulf and dissolve what they cannot crush.</p>"
+        },
         "Ogre": {
             "name": "Ogre",
             "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
@@ -89,9 +97,13 @@
             "name": "Slime",
             "description": "<p>Creatures made primarily of gelatinous material. They are generally slow, small in size, and incapable of spellcasting or speech. Some exceptions have been documented with variations of slimes which are large, fast, or capable of communication.</p>"
         },
+        "Stone Elemental": {
+            "name": "Stone Elemental",
+            "description": "<p>Towering elementals of solid living rock: ponderous, immovable, and enduring. They channel the raw might of the earth through their own immense mass.</p>"
+        },
         "Storm Elemental": {
             "name": "Storm Elemental",
-            "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+            "description": "<p>Elemental creatures corresponding to the element of Storm.</p>"
         },
         "War Machine": {
             "name": "War Machine",

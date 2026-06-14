@@ -1,6 +1,7 @@
 {
     "label": "Summons",
     "folders": {
+        "Talents": "Talents",
         "Gesture: Create": "Gesture: Create",
         "Gesture: Conjure": "Gesture: Conjure"
     },
@@ -10,6 +11,27 @@
         },
         "Amorphous": {
             "name": "Amorphous"
+        },
+        "Ancestral Guardian": {
+            "name": "Ancestral Guardian",
+            "biography": "<p>The Ancestral Guardian is less a creature than a presence: the gathered spirits of those who came before, called into the world by a @UUID[Compendium.crucible.talent.Item.warden0000000000]{Warden} through the Ancestral Grove. It cannot be commanded or reasoned with and offers no speech. It simply keeps watch over the living for as long as the Warden's communion endures.</p>",
+            "items": {
+                "Ancestral Manifestation": {
+                    "name": "Ancestral Manifestation",
+                    "description": "<p>The Ancestral Guardian is an incorporeal manifestation of watchful spirits. It cannot be harmed, moved against its will, or broken, and other creatures may pass freely through its space. Its overwhelming presence on the battlefield causes it to count as <strong>three creatures</strong> when determining whether an enemy is Flanked.</p>"
+                }
+            },
+            "archetype": {
+                "name": "Ancestral Ward",
+                "description": "<p>A watchful spirit that anchors a protective grove.</p>"
+            },
+            "taxonomy": {
+                "name": "Ancestral Spirit",
+                "description": "<p>An incorporeal manifestation of ancestral spirits, summoned to watch over the living. It has no corporeal body to wound and no will to break.</p>"
+            }
+        },
+        "Ancestral Manifestation": {
+            "name": "Ancestral Manifestation"
         },
         "Aqueous Transmission": {
             "name": "Aqueous Transmission",
@@ -73,7 +95,7 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Rune: Earth",
-                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs health and matters relating to biological growth. It is opposed by the chaotic rune of Lightning.</p>\n<p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs health and matters relating to biological growth. It is opposed by the chaotic rune of Storm.</p>\n<p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Acid Absorption": {
                     "name": "Acid Absorption",
@@ -357,8 +379,8 @@
         "Rune: Frost": {
             "name": "Rune: Frost"
         },
-        "Rune: Lightning": {
-            "name": "Rune: Lightning"
+        "Rune: Storm": {
+            "name": "Rune: Storm"
         },
         "Storm Sprite": {
             "name": "Storm Sprite",
@@ -373,9 +395,9 @@
                     "name": "Gesture: Arrow",
                     "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
                 },
-                "Rune: Lightning": {
-                    "name": "Rune: Lightning",
-                    "description": "You learn Rune of Lightning, allowing you to control volatile arcane surges of electricity."
+                "Rune: Storm": {
+                    "name": "Rune: Storm",
+                    "description": "You learn Rune of Storm, allowing you to control volatile arcane surges of electricity."
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -396,15 +418,15 @@
             },
             "taxonomy": {
                 "name": "Storm Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+                "description": "<p>Elemental creatures corresponding to the element of Storm.</p>"
             }
         },
         "Storm Visitor": {
             "name": "Storm Visitor",
             "items": {
-                "Rune: Lightning": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
+                "Rune: Storm": {
+                    "name": "Rune: Storm",
+                    "description": "<p>The chaotic force of raw, electrical energy. The Storm rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -431,7 +453,7 @@
             },
             "taxonomy": {
                 "name": "Storm Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+                "description": "<p>Elemental creatures corresponding to the element of Storm.</p>"
             }
         },
         "Voltaic Claw": {
@@ -462,6 +484,7 @@
         "taxonomy": {
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
-        }
+        },
+        "biography": "system.details.biography.public"
     }
 }

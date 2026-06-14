@@ -44,6 +44,10 @@
             "name": "Commonfolk",
             "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
         },
+        "Constrictor": {
+            "name": "Constrictor",
+            "description": "<p>Predators that seize prey in coils, tendrils, or jaws, drag it into reach, and crush the life from it while it struggles to break free.</p>"
+        },
         "Deep Behemoth": {
             "name": "Deep Behemoth",
             "description": "<p>Colossal subterranean apex predators, hulking monstrosities that thunder in the deepest caverns.</p>"
@@ -87,6 +91,10 @@
         "Herd Beast": {
             "name": "Herd Beast",
             "description": "<p>Cattle, beasts of burden, and other prey animals that congregate in herds.</p>"
+        },
+        "Juggernaut": {
+            "name": "Juggernaut",
+            "description": "<p>Relentless brawlers who close the distance, seize their foes in unbreakable holds, and overpower them through sheer brawn and resilience. They fight bare-handed, turning their own bulk into both weapon and shield.</p>"
         },
         "Justiciar": {
             "name": "Justiciar",
@@ -155,6 +163,10 @@
         "Swashbuckler": {
             "name": "Swashbuckler",
             "description": "<p>Those who engage in the dangerous life aboard a sailing ship, or practice the trade of high seas piracy. You are known for your wit, charm, and sometimes reckless bravery.</p>"
+        },
+        "Telekinetic": {
+            "name": "Telekinetic",
+            "description": "<p>Telekinetic mages who weave the Rune of Kinesis to hurl, drag, and crush their foes with raw kinetic force, dominating the battlefield through relentless Push and Pull.</p>"
         },
         "Thief": {
             "name": "Thief",

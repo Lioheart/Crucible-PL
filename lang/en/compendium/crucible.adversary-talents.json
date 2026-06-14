@@ -82,9 +82,17 @@
             "name": "Bestial Senses",
             "description": "<p>The @ref[actor.name]{creature} has finely honed senses and is particularly perceptive of their environment, all <strong>Awareness</strong> checks gain <strong>+2 Boons</strong>.</p>"
         },
+        "Blindsight": {
+            "name": "Blindsight",
+            "description": "<p>@ref[actor.name]{This creature} perceives its surroundings without the use of sight, sensing the precise location of creatures and objects within 60 feet. It is unaffected by @Condition[blinded], darkness, or invisibility, and any creature it detects this way is treated as visible to it.</p>"
+        },
         "Blood Sense": {
             "name": "Blood Sense",
             "description": "<p>The @ref[actor.name]{creature} can precisely sense any blooded creature within 20 feet which does not have all its hit points. Any weapon or skill attack against a wounded creature does not suffer <strong>Banes</strong> that would normally apply if the creature were @Condition[blinded].</p>"
+        },
+        "Bloodless": {
+            "name": "Bloodless",
+            "description": "<p>The @ref[actor.name]{creature} has no blood, vital organs, or exploitable weak points. It is immune to the @Condition[bleeding] condition, and the critical hit threshold for <strong>Strikes</strong> against it is increased by 2.</p>"
         },
         "Bonded Mind": {
             "name": "Bonded Mind",
@@ -114,6 +122,10 @@
                     "name": "Explosive Emergence",
                     "condition": "While burrowing.",
                     "description": "<p>The @ref[actor.name]{creature} emerges from a subterranean position with surprising and sudden force. This action may only be activated immediately the creature leaves the @Condition[burrowing] state.</p><p>The @ref[actor.name]{creature} erupts to <strong>Strike</strong> against all enemies within its weapon range with an <strong>Empowered</strong> attack.</p>"
+                },
+                "Submerging Withdrawal": {
+                    "name": "Submerging Withdrawal",
+                    "description": "<p>The @ref[actor.name]{creature} retracts beneath the surface using a <strong>Burrow</strong> movement, relocating away from its current position. Ending this movement underground grants the @Condition[burrowing] condition, beneath which it cannot be seen by light-based perception.</p><p>This action cannot be used while @Condition[staggered], @Condition[stunned], @Condition[slowed], or @Condition[paralyzed].</p>"
                 }
             }
         },
@@ -147,6 +159,10 @@
                 }
             }
         },
+        "Corrosive Strikes": {
+            "name": "Corrosive Strikes",
+            "description": "<p>The @ref[actor.name]{creature}'s caustic body sears whatever it strikes. When it scores a <strong>Critical Hit</strong> with a melee attack that deals damage to Health, the target becomes @Condition[corroding] for 3 rounds.</p>"
+        },
         "Corrupting Death Burst": {
             "name": "Corrupting Death Burst",
             "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of corrupting energy.</p>",
@@ -166,6 +182,21 @@
         "Corruption Absorption": {
             "name": "Corruption Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of Death magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "Crushing Leap": {
+            "name": "Crushing Leap",
+            "description": "<p>This creature hurls its bulk into the air and crashes down upon its foes with tremendous, ground-shaking force.</p>",
+            "actions": {
+                "Crushing Leap": {
+                    "name": "Crushing Leap",
+                    "description": "<p>You leap into the air, landing at a point you can see within 30 feet and crashing down with crushing force. All creatures within the area of the resulting <strong>Blast</strong> face an attack against their <strong>Reflex</strong>, suffering <strong>Bludgeoning</strong> damage and are knocked @Condition[prone]. The Blast extends outward from your own footprint, so larger creatures crash down over a wider area. This action scales with your highest ability of <strong>Strength</strong> or <strong>Toughness</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Crushing Leap"
+                        }
+                    ]
+                }
+            }
         },
         "Dying Call": {
             "name": "Dying Call",
@@ -190,6 +221,21 @@
             "name": "Elusive Flight",
             "description": "<p>This @ref[actor.name]{creature} is especially elusive while in flight, able to swoop in and out of combat without provoking any <strong>Disengagement</strong>. It can be engaged if it lands upon the ground and Disengagement may apply if it attempts to return to flight.</p>"
         },
+        "Ensnare": {
+            "name": "Ensnare",
+            "description": "<p>The @ref[actor.name]{creature} lashes out with a grasping tendril, coil, or limb to seize prey at range and drag it into a crushing hold.</p>",
+            "actions": {
+                "Ensnare": {
+                    "name": "Ensnare",
+                    "description": "<p>The @ref[actor.name]{creature} reaches out to seize a single target within range, attacking its <strong>Reflex</strong>. On a success the target is dragged back into reach and becomes @Condition[restrained]. This action may only be used on creatures which are eligible targets for @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple].</p><p>The hold is maintained until the @ref[actor.name]{creature} releases it, the target escapes, or a different creature is targeted with Ensnare.</p>",
+                    "effects": [
+                        {
+                            "name": "Ensnared"
+                        }
+                    ]
+                }
+            }
+        },
         "Extended Breath": {
             "name": "Extended Breath",
             "description": "<p>The @ref[actor.name]{creature} can hold its breath for <strong>15 minutes</strong>.</p>"
@@ -204,7 +250,13 @@
         },
         "Glider": {
             "name": "Glider",
-            "description": "<p>The @ref[actor.name]{creature} can control its movement while falling and may perform the <strong>Move</strong> action up to a maximum distance of its <strong>Stride</strong> for each 20 feet that it falls.</p><p>If it spends Action to Move in this way, it does not suffer falling damage upon landing.</p>"
+            "description": "<p>The @ref[actor.name]{creature} controls its descent while falling. Unless it is Incapacitated or Restrained, a fall becomes a <strong>Glide</strong>: a downward Fly movement instead of an impact, suffering no falling damage.</p> <p>While gliding the creature's <strong>Stride</strong> is doubled and it is granted a free move, so it can always glide at least a short distance. Its glide must descend, and wherever the movement ends is where it comes to rest; if it ends the glide still aloft it gains the @Condition[flying] condition.</p>",
+            "actions": {
+                "Glide": {
+                    "name": "Glide",
+                    "description": "<p>The @ref[actor.name]{creature} glides rather than falls, flying downward under control. The movement must descend and suffers no falling damage. If the creature ends its glide while still aloft it gains the @Condition[flying] condition.</p>"
+                }
+            }
         },
         "Gloom Sight": {
             "name": "Gloom Sight",
@@ -294,6 +346,10 @@
                     ]
                 }
             }
+        },
+        "Living Boulder": {
+            "name": "Living Boulder",
+            "description": "<p>The @ref[actor.name]{creature} channels earth through its own physical mass rather than its mind. Its usage of the <strong>Rune of Earth</strong> scales with <strong>Toughness</strong> instead of <strong>Wisdom</strong>.</p>"
         },
         "Maddening Shriek": {
             "name": "Maddening Shriek",

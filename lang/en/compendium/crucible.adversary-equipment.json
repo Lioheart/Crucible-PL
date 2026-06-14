@@ -159,10 +159,16 @@
                 "public": "<p>The @ref[actor.name]{creature} has heavy hooves that kick and trample anything underfoot.</p>"
             }
         },
-        "Horns": {
-            "name": "Horns",
+        "Horn": {
+            "name": "Horn",
             "description": {
-                "public": "<p>The @ref[actor.name]{creature} has stout, curved horns used for goring.</p>"
+                "public": "<p>The @ref[actor.name]{creature} has a stout and wicked central horn with which it can gore its target.</p>"
+            }
+        },
+        "Kinetic Limb": {
+            "name": "Kinetic Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with unseen limbs of raw kinetic force.</p>"
             }
         },
         "Light Carapace": {
@@ -193,6 +199,12 @@
             "name": "Light Scales",
             "description": {
                 "public": "<p>The @ref[actor.name]{creature}'s skin is covered in lightweight scales that provide protection without slowing it down.</p>"
+            }
+        },
+        "Obsidian Thorns": {
+            "name": "Obsidian Thorns",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} lashes out with a thorned length of razor-sharp black glass.</p>"
             }
         },
         "Pestilent Bite": {

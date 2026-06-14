@@ -42,7 +42,7 @@
             "actions": {
                 "Alchemist's Fire": {
                     "name": "Alchemist's Fire",
-                    "description": "<p>You hurl the @ref[name], dealing @Condition[weakened] immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Alchemist's Fire"
@@ -146,6 +146,12 @@
                 }
             }
         },
+        "Bo Staff": {
+            "name": "Bo Staff",
+            "description": {
+                "public": "<p>A balanced hardwood staff favored by martial artists, lighter and quicker in the hand than a common quarterstaff. Its even weighting rewards a deft wielder, weaving constant parries between flurrying strikes.</p>"
+            }
+        },
         "Book": {
             "name": "Book",
             "description": {
@@ -185,7 +191,7 @@
             "actions": {
                 "Caustic Phial": {
                     "name": "Caustic Phial",
-                    "description": "<p>You fling the @ref[name], dealing @Condition[weakened] immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Caustic Phial"
@@ -428,10 +434,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Focusing",
-                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Focusing",
                     "actions": {
-                        "affixFocus": {
+                        "affixFocusing": {
                             "name": "Replenish Focus",
                             "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
@@ -685,7 +691,7 @@
         "Javelin": {
             "name": "Javelin",
             "description": {
-                "public": "<p>With a sharp metal head mounted atop a long pole, the javelin is light enough to be thrown but sturdy enough to remain useful in close quarters.</p>"
+                "public": "<p>With a sharp metal head mounted atop a long pole, the javelin is light enough to be thrown but sturdy enough to remain useful in close quarters. Balanced for flight, it can be hurled up to <strong>60 feet</strong> when used for thrown attacks.</p>"
             }
         },
         "Jeweler's Portable Workbench": {
@@ -1229,10 +1235,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Focusing",
-                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Focusing",
                     "actions": {
-                        "affixFocus": {
+                        "affixFocusing": {
                             "name": "Replenish Focus",
                             "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
