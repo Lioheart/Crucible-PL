@@ -42,7 +42,7 @@
             "actions": {
                 "Alchemist's Fire": {
                     "name": "Ogień alchemika",
-                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe obrażenia stanu @Condition[weakened], ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
                     "effects": [
                         {
                             "name": "Ogień alchemika"
@@ -146,6 +146,12 @@
                 }
             }
         },
+        "Bo Staff": {
+            "name": "Kostur bo",
+            "description": {
+                "public": "<p>Wyważona laska z twardego drewna, ceniona przez adeptów sztuk walki, lżejsza i zwinniejsza w ręku niż zwykła laska. Jej równomierny rozkład ciężaru pozwala zręcznemu użytkownikowi na płynne wykonywanie parowań pomiędzy serią szybkich ciosów.</p>"
+            }
+        },
         "Book": {
             "name": "Książka",
             "description": {
@@ -185,7 +191,7 @@
             "actions": {
                 "Caustic Phial": {
                     "name": "Fiolka z substancją żrącą",
-                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe obrażenia stanu @Condition[weakened], ale powodując stan @Condition[corroding] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od korozji i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[corroding] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od korozji i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
                     "effects": [
                         {
                             "name": "Fiolka z substancją żrącą"
@@ -428,10 +434,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego afiksu.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "affixFocus": {
+                        "affixFocusing": {
                             "name": "Odnowienie skupienia",
                             "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
@@ -685,7 +691,7 @@
         "Javelin": {
             "name": "Oszczep",
             "description": {
-                "public": "<p>Ostrze z metalu zamontowane na długim drążku sprawia, że oszczep jest wystarczająco lekki, aby można go było rzucać, ale jednocześnie wystarczająco wytrzymały, aby nadawał się do walki w zwarciu.</p>"
+                "public": "<p>Ostry metalowy grot osadzony na długim drążku sprawia, że oszczep jest wystarczająco lekki, by go rzucać, a jednocześnie wystarczająco wytrzymały, by sprawdzić się w walce wręcz. Dzięki odpowiedniemu wyważeniu pozwala osiągnąć zasięg do <strong>60 stóp</strong> podczas rzutów. </p>"
             }
         },
         "Jeweler's Portable Workbench": {
@@ -1229,10 +1235,10 @@
             "effects": {
                 "Focusing": {
                     "name": "Skupienia",
-                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego przyrostka I.</p>",
+                    "description": "<p>Zapewnia akcję <strong>Odnowienie skupienia</strong>, pozwalające posiadaczowi przywrócić <strong>Skupienie</strong> w trudnych sytuacjach. Ilość przywróconego skupienia zależy od <strong>Stopnia</strong> tego afiksu.</p>",
                     "adjective": "Skupienia",
                     "actions": {
-                        "affixFocus": {
+                        "affixFocusing": {
                             "name": "Odnowienie skupienia",
                             "description": "<p>W sytuacjach zagrożenia możesz pobrać z tego przedmiotu dodatkowy zapas <strong>Skupienia</strong>. Ilość przywróconego Skupienia zależy od <strong>Stopnia</strong> tego przyrostka I. </p><ul><li><p><strong>Stopień 1:</strong> <strong>4 punktów Skupienia</strong></p></li><li><p><strong>Stopień 2:</strong> <strong>6 punktów Skupienia</strong></p></li><li><p><strong>Stopień 3:</strong> <strong>8 punktów Skupienia</strong></p></li></ul>"
                         }
