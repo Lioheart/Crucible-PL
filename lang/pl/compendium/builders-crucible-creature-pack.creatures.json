@@ -12531,7 +12531,7 @@
             "items": {
                 "Wailing Moan": {
                     "name": "Płaczliwy jęk",
-                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty znajdujące się w stożku o promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
+                    "description": "<p>Stworzenie wyje, atakując wszystkie istoty w promieniu 30 stóp. Istota trafiona tym atakiem otrzymuje stan <strong>@Condition[confused]</strong> przez 1 minutę.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Płaczliwy jęk",
