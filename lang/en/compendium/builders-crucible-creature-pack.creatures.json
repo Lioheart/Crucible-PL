@@ -6958,11 +6958,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Horrifying Visage",
-                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Horrifying Visage",
-                            "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
                             "effects": [
                                 {
                                     "name": "Horrifying Visage"
@@ -12531,7 +12531,7 @@
             "items": {
                 "Wailing Moan": {
                     "name": "Wailing Moan",
-                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Creature wails targeting each creature in a 30ft pulse. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Wailing Moan": {
                             "name": "Wailing Moan",
@@ -13429,11 +13429,11 @@
                 },
                 "Horrifying Visage": {
                     "name": "Horrifying Visage",
-                    "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
+                    "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused </strong>for 1 minute.</p>",
                     "actions": {
                         "Horrifying Visage": {
                             "name": "Horrifying Visage",
-                            "description": "<p>The Banshee wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
+                            "description": "<p>The Creature wails targeting each creature in a 30ft cone. A creature hit by this is <strong>Confused</strong> for 1 minute in addition to any damage dealt.</p>",
                             "effects": [
                                 {
                                     "name": "Horrifying Visage"
