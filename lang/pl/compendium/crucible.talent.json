@@ -1179,11 +1179,11 @@
                     ]
                 },
                 "Overrun": {
-                    "name": "Przekroczenie",
+                    "name": "Tratowanie",
                     "description": "<p>Opuszczasz ramię i szarżujesz w linii prostej, przewracając wszystkich, którzy staną ci na drodze.</p><p>Przesuń się o odległość nie większą niż dwukrotność twojego <strong>biegu</strong> w linii prostej, przechodząc przez pole dowolnej istoty, na której mógłbyś wykonać akcję @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple]. Wykonujesz atak umiejętnościowy <strong>Atletyki</strong> przeciwko obronie <strong>Refleksu</strong> każdego celu, a w przypadku sukcesu zadajesz obrażenia <strong>obuchowe</strong> i sprawiasz, że stworzenie otrzymuje stan @Condition[prone].</p><p>Twoja szarża zostaje zatrzymana przez każde stworzenie zbyt masywne, byś mógł je obezwładnić, na które atak nie ma wpływu.</p>",
                     "effects": [
                         {
-                            "name": "Przekroczenie"
+                            "name": "Tratowanie"
                         }
                     ]
                 }
