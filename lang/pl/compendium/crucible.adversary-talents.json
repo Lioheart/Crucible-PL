@@ -82,9 +82,17 @@
             "name": "Zwierzęce zmysły",
             "description": "<p>@ref[actor.name]{Stworzenie} ma wyostrzone zmysły i jest szczególnie wyczulony na otoczenie, wszystkie testy <strong>Świadomości</strong> otrzymują <strong>+2 Korzyści</strong>.</p>"
         },
+        "Blindsight": {
+            "name": "Ślepowidzenie",
+            "description": "<p>@ref[actor.name]{To stworzenie} postrzega otoczenie bez użycia wzroku, wyczuwając dokładną lokalizację stworzeń i przedmiotów w promieniu 60 stóp. Nie ma na nie wpływu stan @Condition[blinded], ciemność ani niewidzialność, a każde stworzenie, które wykryje w ten sposób, traktuje się jako widoczne dla niego.</p>"
+        },
         "Blood Sense": {
             "name": "Zmysł krwi",
             "description": "<p>@ref[actor.name]{Stworzenie} potrafi precyzyjnie wyczuć każdą krwawiącą istotę w promieniu 20 stóp, która nie posiada wszystkich Punktów Życia. Każda broń lub atak umiejętności przeciwko zranionej istocie nie podlega <strong>Zgubie</strong>, które normalnie miałyby zastosowanie, gdyby istota była @Condition[blinded].</p>"
+        },
+        "Bloodless": {
+            "name": "Bezkrwawy",
+            "description": "<p>@ref[actor.name]{Stworzenie} nie ma krwi, ważnych organów ani słabych punktów, które można wykorzystać. Jest odporne na stan @Condition[bleeding], a próg trafienia krytycznego dla <strong>Uderzeń</strong> wymierzonych w nie zostaje zwiększony o 2.</p>"
         },
         "Bonded Mind": {
             "name": "Połączone umysły",
@@ -114,6 +122,10 @@
                     "name": "Wybuchowe pojawienie się",
                     "condition": "Podczas kopania.",
                     "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                },
+                "Submerging Withdrawal": {
+                    "name": "Podwodne wycofanie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} chowa się pod powierzchnię, wykonując ruch <strong>przekopywania</strong>, oddalając się od swojej aktualnej pozycji. Zakończenie tego ruchu pod ziemią powoduje nadanie stanu @Condition[burrowing], w którym nie jest ono widoczne dla zmysłów wykorzystujących światło.</p><p>Akcji tej nie można użyć, gdy obowiązuje @Condition[staggered], @Condition[stunned], @Condition[slowed] lub @Condition[paralyzed].</p>"
                 }
             }
         },
@@ -147,6 +159,10 @@
                 }
             }
         },
+        "Corrosive Strikes": {
+            "name": "Ataki korozyjne",
+            "description": "<p>Żrące ciało @ref[actor.name]{stworzenia} wypala wszystko, co dotknie. Gdy zadaje ono <strong>trafienie krytyczne</strong> atakiem wręcz, który zadaje obrażenia do zdrowia, cel otrzymuje @Condition[corroding] na 3 rundy.</p>"
+        },
         "Corrupting Death Burst": {
             "name": "Niszczycielska fala śmierci",
             "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę energii zepsucia.</p>",
@@ -166,6 +182,21 @@
         "Corruption Absorption": {
             "name": "Absorpcja zepsucia",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii śmierci. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+        },
+        "Crushing Leap": {
+            "name": "Miażdżący skok",
+            "description": "<p>Stworzenie to wyrzuca swoje potężne ciało w powietrze i z ogromną, wstrząsającą ziemią siłą rzuca się na wrogów.</p>",
+            "actions": {
+                "Crushing Leap": {
+                    "name": "Miażdżący skok",
+                    "description": "<p>Wyskakujesz w powietrze, lądując w widocznym miejscu w promieniu 30 stóp i uderzając z miażdżącą siłą. Wszystkie stworzenia znajdujące się w obszarze powstałego <strong>Wybuchu</strong> muszą wykonać rzut obronny na <strong>Refleks</strong>, otrzymują <strong>obrażenia obuchowe</strong> i otrzymują stan @Condition[prone]. Wybuch rozchodzi się na zewnątrz od miejsca, w którym stoisz, więc większe stworzenia uderzają w ziemię na większym obszarze. Ta akcja skaluje się z twoją najwyższą cechą <strong>Siły</strong> lub <strong>Wytrzymałości</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Miażdżący skok"
+                        }
+                    ]
+                }
+            }
         },
         "Dying Call": {
             "name": "Ostatni Zew",
@@ -190,6 +221,21 @@
             "name": "Nieuchwytny lot",
             "description": "<p>@ref[actor.name]{Stworzenie} jest szczególnie nieuchwytne podczas lotu, potrafiące wlatywać i wylatywać z walki bez wywoływania <strong>Wycofania się</strong>. Można je zaatakować, jeśli wyląduje na ziemi, a Wycofanie się może mieć zastosowanie, jeśli spróbuje powrócić do lotu.</p>"
         },
+        "Ensnare": {
+            "name": "Zwabianie",
+            "description": "<p>@ref[actor.name]{Stworzenie} atakuje, wyciąga mackę, pętlę lub kończynę, by schwycić ofiarę z daleka i wciągnąć ją w miażdżący uścisk.</p>",
+            "actions": {
+                "Ensnare": {
+                    "name": "Zwabianie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyciąga rękę, by chwycić pojedynczy cel znajdujący się w zasięgu, atakując jego <strong>Refleks</strong>. W przypadku powodzenia cel zostaje przyciągnięty z powrotem do zasięgu i otrzymuje stan @Condition[restrained]. Akcja ta może zostać użyta wyłącznie wobec stworzeń, które kwalifikują się jako cele dla @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple].</p><p>Utrzymanie trwa do momentu, gdy @ref[actor.name]{stworzenie} zwolni cel, cel ucieknie lub inna istota zostanie wybrana jako cel dla Zwabienia.</p>",
+                    "effects": [
+                        {
+                            "name": "W pułapce"
+                        }
+                    ]
+                }
+            }
+        },
         "Extended Breath": {
             "name": "Wydłużony oddech",
             "description": "<p>@ref[actor.name]{Stworzenie} może wstrzymywać oddech przez <strong>15 minut</strong>.</p>"
@@ -204,7 +250,13 @@
         },
         "Glider": {
             "name": "Szybowanie",
-            "description": "<p>@ref[actor.name]{Stworzenie} może kontrolować swój ruch podczas upadku i może wykonać akcję <strong>Ruchu</strong> na maksymalną odległość równą jego <strong>Biegu</strong> za każde 20 stóp upadku.</p><p>Jeśli wykorzysta akcję Ruchu w ten sposób, nie ponosi obrażeń od upadku po wylądowaniu.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} kontroluje swoje opadanie podczas upadku. O ile nie jest obezwładnione ani unieruchomione, upadek zamienia się w <strong>szybowanie</strong>: ruch w dół w trybie latania zamiast uderzenia o podłoże, bez ponoszenia obrażeń od upadku.</p><p>Podczas szybowania <strong>zasięg biegu</strong> stworzenia podwaja się i otrzymuje ono darmowy ruch, dzięki czemu zawsze może szybować przynajmniej na niewielką odległość. Jego szybowanie musi przebiegać w dół, a miejsce, w którym ruch się kończy, jest miejscem, w którym zatrzymuje się; jeśli kończy szybowanie wciąż w powietrzu, zyskuje stan @Condition[flying].</p>",
+            "actions": {
+                "Glide": {
+                    "name": "Szybowanie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} raczej szybuje niż spada, kontrolując swój lot w dół. Ruch ten musi przebiegać w dół i nie powoduje obrażeń od upadku. Jeśli stworzenie zakończy szybowanie, będąc wciąż w powietrzu, zyskuje stan @Condition[flying].</p>"
+                }
+            }
         },
         "Gloom Sight": {
             "name": "Widzenie w mroku",
@@ -294,6 +346,10 @@
                     ]
                 }
             }
+        },
+        "Living Boulder": {
+            "name": "Żyjący głaz",
+            "description": "<p>@ref[actor.name]{Stworzenie} czerpie moc z ziemi poprzez swoją masę fizyczną, a nie umysł. Jej wykorzystanie runy <strong>Runy Ziemi</strong> zależy od <strong>Wytrzymałości</strong>, a nie od <strong>Mądrości</strong>.</p>"
         },
         "Maddening Shriek": {
             "name": "Obłędny wrzask",
