@@ -42,7 +42,7 @@
             "actions": {
                 "Alchemist's Fire": {
                     "name": "Ogień alchemika",
-                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
                     "effects": [
                         {
                             "name": "Ogień alchemika"
@@ -92,7 +92,7 @@
             "actions": {
                 "Antitoxin": {
                     "name": "Antytoksyna",
-                    "description": "<p>Spożycie tego @ref[name] pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez ten @ref[name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
+                    "description": "<p>@ref[name] po spożyciu pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez przedmiot @ref[name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
                 }
             }
         },
@@ -142,7 +142,7 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
-                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                    "description": "<p>@ref[name] jest podpalana i rzucana, zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                 }
             }
         },
@@ -191,7 +191,7 @@
             "actions": {
                 "Caustic Phial": {
                     "name": "Fiolka z substancją żrącą",
-                    "description": "<p>Rzucasz @ref[name], zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[corroding] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od korozji i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[corroding] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od korozji i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
                     "effects": [
                         {
                             "name": "Fiolka z substancją żrącą"
@@ -252,7 +252,7 @@
             "actions": {
                 "Choking Ampoule": {
                     "name": "Dusząca ampułka",
-                    "description": "<p>Rzucasz @ref[name], co w bezpośrednim skutku jest <strong>nieszkodliwe</strong>, ale powoduje stan @Condition[poisoned] u wszystkich wrogów w promieniu 8 stóp <strong>Wybuchu</strong>, którzy nie zdołali oprzeć się atakowi swoją <strong>Wytrwałością</strong>.</p><p>Gaz zadaje obrażenia od trucizny <strong>Morale</strong> w ilości zależnej od jakości @ref[name]. W przypadku krytycznego sukcesu, dotknięty cel staje się również @Condition[silenced] na czas trwania.</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 3 rundy</p></li><li><p><strong>Standardowa jakość</strong> - 6 obrażeń przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> - 12 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Wybitna jakość</strong> - 20 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Mistrzowska jakość</strong> - 30 punktów obrażeń przez 3 rundy</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, co w bezpośrednim skutku jest <strong>nieszkodliwe</strong>, ale powoduje stan @Condition[poisoned] u wszystkich wrogów w promieniu 8 stóp <strong>Wybuchu</strong>, którzy nie zdołali oprzeć się atakowi swoją <strong>Wytrwałością</strong>.</p><p>Gaz zadaje obrażenia od trucizny <strong>Morale</strong> w ilości zależnej od jakości przedmiotu @ref[name]. W przypadku krytycznego sukcesu, dotknięty cel staje się również @Condition[silenced] na czas trwania.</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 3 rundy</p></li><li><p><strong>Standardowa jakość</strong> - 6 obrażeń przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> - 12 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Wybitna jakość</strong> - 20 punktów obrażeń przez 3 rundy</p></li><li><p><strong>Mistrzowska jakość</strong> - 30 punktów obrażeń przez 3 rundy</p></li></ul>",
                     "effects": [
                         {
                             "name": "Dusząca ampułka"
@@ -374,7 +374,7 @@
             "actions": {
                 "Electrocharge Ampoule": {
                     "name": "Ampułka z ładunkiem elektrycznym",
-                    "description": "<p>Rzucasz @ref[name], zadając osłabione <strong>obrażenia elektryczne</strong> wszystkim wrogom w promieniu wyładowania i powodując u nich krótkotrwały stan @Condition[staggered]. Promień <strong>wyładowania</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, zadając osłabione <strong>obrażenia elektryczne</strong> wszystkim wrogom w promieniu wyładowania i powodując u nich krótkotrwały stan @Condition[staggered]. Promień <strong>wyładowania</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
                     "effects": [
                         {
                             "name": "Ampułka z ładunkiem elektrycznym"
@@ -454,7 +454,7 @@
             "actions": {
                 "Frostdrop Flask": {
                     "name": "Kolba ze szronem",
-                    "description": "<p>Rzucasz @ref[name], zadając osłabione <strong>obrażenia od zimna</strong> wszystkim wrogom w promieniu wybuchu i powodując, że na krótko zostaną oni @Condition[slowed]. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, zadając osłabione <strong>obrażenia od zimna</strong> wszystkim wrogom w promieniu wybuchu i powodując, że na krótko zostaną oni @Condition[slowed]. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>",
                     "effects": [
                         {
                             "name": "Kolba ze szronem"
@@ -471,7 +471,7 @@
             "actions": {
                 "Summon Flame Elemental": {
                     "name": "Przywołanie żywiołaka ognia",
-                    "description": "<p>@ref[name] rozbija się w wybuchu płomieni, pozostawiając po sobie ognistego żywiołaka. Żywiołaki przywołane przez ten klejnot pozostają w grze przez 6 rund (1 minutę).</p><ul><li><p><strong>andetna jakość - </strong>Żaden żywiołak nie zostaje przywołany</p></li><li><p><strong>Standardowa jakość</strong>- Cząstka żywiołów</p></li><li><p><strong>Dobra jakość</strong> - Duch żywiołów</p></li><li><p><strong>Wybitna jakość</strong> - Przybysz żywiołów</p></li><li><p><strong>Mistrzowska jakość - </strong>Wędrowiec żywiołów</p></li></ul>"
+                    "description": "<p>@ref[name] rozbija się w wybuchu płomieni, pozostawiając po sobie ognistego żywiołaka. Żywiołaki przywołane przez ten klejnot pozostają w grze przez 6 rund (1 minutę).</p><ul><li><p><strong>Tandetna jakość - </strong>Żaden żywiołak nie zostaje przywołany</p></li><li><p><strong>Standardowa jakość</strong>- Cząstka żywiołów</p></li><li><p><strong>Dobra jakość</strong> - Duch żywiołów</p></li><li><p><strong>Wybitna jakość</strong> - Przybysz żywiołów</p></li><li><p><strong>Mistrzowska jakość - </strong>Wędrowiec żywiołów</p></li></ul>"
                 }
             }
         },
@@ -489,7 +489,7 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Aktywacja iluminacji",
-                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyskuje stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>"
+                            "description": "<p>Wypowiadasz słowo-komendę, a @ref[name] rozbłyśnie stałym, nieziemskim blaskiem. Promień jasnego światła zależy od <strong>stopnia</strong> tego przyrostka I, a dodatkowy promień słabego światła rozciąga się na taką samą odległość poza nim.</p><ul><li><p><strong>Stopień 1:</strong> 20 stóp jasnego światła, 40 stóp słabego światła.</p></li><li><p><strong>Stopień 2:</strong> 40 stóp jasnego światła, 80 stóp słabego światła.</p></li><li><p><strong>Stopień 3:</strong> 60 stóp jasnego światła, 120 stóp słabego światła.</p></li></ul><p>Światło utrzymuje się, dopóki nie zlikwidujesz efektu lub nie usuniesz przedmiotu.</p>"
                         }
                     }
                 }
@@ -732,7 +732,7 @@
             "actions": {
                 "Light Lantern": {
                     "name": "Zapalenie latarnii",
-                    "description": "<p>Rozpalasz @ref[name], zapewniając stałe oświetlenie w szerokim promieniu. Czynność ta zużywa jedną jednostkę @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{oleju do latarni} z ekwipunku; czas palenia zależy od jakości zużytego oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>",
+                    "description": "<p>@ref[name] jest rozpalana, zapewniając stałe oświetlenie w szerokim promieniu. Czynność ta zużywa jedną jednostkę @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{oleju do latarni} z ekwipunku; czas palenia zależy od jakości zużytego oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>",
                     "effects": [
                         {
                             "name": "Latarnia"
@@ -857,7 +857,7 @@
             "actions": {
                 "Ingest Paralytic": {
                     "name": "Spożycie środka paraliżującego",
-                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[paralyzed].</p><p>Czas trwania zależy od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 1 runda</p></li><li><p><strong>Standardowa jakość</strong> – 2 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 8 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – czas nieokreślony</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[paralyzed].</p><p>Czas trwania zależy od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 1 runda</p></li><li><p><strong>Standardowa jakość</strong> – 2 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 8 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – czas nieokreślony</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
                     "effects": [
                         {
                             "name": "Toksyna paraliżująca"
@@ -922,7 +922,7 @@
             "actions": {
                 "Ingest Poison": {
                     "name": "Spożycie trucizny",
-                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> –  obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> –  obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
                     "effects": [
                         {
                             "name": "Zatruty"
@@ -1341,7 +1341,7 @@
             "actions": {
                 "Light Torch": {
                     "name": "Zapalenie pochodni",
-                    "description": "<p>Rozpalasz @ref[name], tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
+                    "description": "<p>@ref[name] jest rozpalana, tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
                     "effects": [
                         {
                             "name": "Pochodnia"
