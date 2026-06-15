@@ -968,7 +968,7 @@
                         },
                         "Counterspell": {
                             "name": "Przeciwzaklęcie",
-                            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi dotyczące testów gry</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
+                            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi z testów</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
                             "actions": {
                                 "Counterspell": {
                                     "name": "Przeciwzaklęcie",
@@ -979,7 +979,7 @@
                         },
                         "Flame Proficiency": {
                             "name": "Biegłość płomienia",
-                            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+                            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
                         },
                         "Rune: Kinesis": {
                             "name": "Runa: Kinetyka",
@@ -993,7 +993,7 @@
                         },
                         "Gesture: Blast": {
                             "name": "Gest: Wybuch",
-                            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
+                            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
                         }
                     },
                     "ancestry": {
@@ -1127,7 +1127,7 @@
                         },
                         "Gesture: Blast": {
                             "name": "Gest: Wybuch",
-                            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
+                            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
                         },
                         "Rune: Flame": {
                             "name": "Runa: Płomień",
@@ -1527,7 +1527,7 @@
                         },
                         "Shield Ward": {
                             "name": "Tarcza ochronna",
-                            "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Ochrony</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Ochrony, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
+                            "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Glif</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Glif, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
                         },
                         "Heavy Weapon Training": {
                             "name": "Szkolenie z broni ciężkiej",
@@ -1826,7 +1826,7 @@
                             "actions": {
                                 "Blast Flask": {
                                     "name": "Kolba wybuchowa",
-                                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                                 }
                             }
                         },
@@ -1929,7 +1929,7 @@
                         },
                         "Counterspell": {
                             "name": "Przeciwzaklęcie",
-                            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi dotyczące testów gry</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
+                            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi z testów</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
                             "actions": {
                                 "Counterspell": {
                                     "name": "Przeciwzaklęcie",
@@ -2028,7 +2028,7 @@
                         },
                         "Gesture: Conjure": {
                             "name": "Gest: Wywołanie",
-                            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi dotyczące testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Przybysza ognia</strong>.</p>"
+                            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Przybysza ognia</strong>.</p>"
                         },
                         "Stiletto": {
                             "name": "Stiletto",
