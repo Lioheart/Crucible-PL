@@ -192,7 +192,7 @@
                 },
                 "Diseased": {
                     "name": "Zarażony",
-                    "text": "<p>Stworzenie, które jest <strong>Zarażone</strong>, nie może odzyskiwać Zdrowia ani leczyć Ran przez czas trwania efektu Choroby.</p>"
+                    "text": "<p>Stworzenie, które jest <strong>Zarażone</strong>, nie może odzyskiwać Zdrowia ani leczyć Ran przez czas trwania efektu Zarażenia.</p>"
                 },
                 "Invulnerable": {
                     "name": "Niezniszczalny",
