@@ -1636,7 +1636,7 @@
     }
   },
   "HOOKS": {
-    "NoModuleHooks": "Dla tego identyfikatora nie zarejestrowano żadnych uchwytów modułów.",
+    "NoModuleHooks": "Dla tego identyfikatora nie zarejestrowano żadnych uchwytów modułu.",
     "ToggleSource": "Zmień źródło",
     "WARNINGS": {
       "GemConjuredFlameShoddy": "Klejnot wywołanego płomienia tandetnej jakości nie pozwala przywołać żadnego żywiołaka.",
