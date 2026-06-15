@@ -51,7 +51,7 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
-                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                 }
             }
         },
@@ -175,7 +175,7 @@
                 },
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
-                    "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi dotyczące testów gry</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
+                    "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi z testów</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
                     "actions": {
                         "Counterspell": {
                             "name": "Przeciwzaklęcie",
@@ -1532,7 +1532,7 @@
                     "actions": {
                         "Blast Flask": {
                             "name": "Kolba wybuchowa",
-                            "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                            "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                         }
                     }
                 },
