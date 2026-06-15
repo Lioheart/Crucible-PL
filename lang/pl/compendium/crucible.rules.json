@@ -348,7 +348,7 @@
                 },
                 "Burrowing": {
                     "name": "Kopiący",
-                    "text": "<p>Stworzenie, które jest całkowicie zanurzone w gruncie, znajduje się w stanie <strong>Kopiący</strong>. Podczas Kopania stworzenie nie widzi ani nie może zostać dostrzeżone za pomocą zwykłej percepcji.</p><section class=\"foundryvtt\"><h4>Automatyzacja</h4><p>Stan Kopiący jest nakładany automatycznie, gdy stworzenie kończy własny ruch przy użyciu akcji ruchu <strong>Przekopywanie</strong>, i jest usuwany automatycznie, gdy to stworzenie później kończy ruch przy użyciu dowolnej innej akcji ruchu.</p></section>"
+                    "text": "<p>Stworzenie, które jest całkowicie zanurzone w gruncie, znajduje się w stanie <strong>Kopiący</strong>. Podczas Kopania stworzenie nie widzi ani nie może zostać dostrzeżone za pomocą percepcji opartej na świetle.</p><section class=\"foundryvtt\"><h4>Automatyzacja</h4><p>Stan Kopiący jest nakładany automatycznie, gdy stworzenie kończy własny ruch przy użyciu akcji ruchu <strong>Przekopywanie</strong>, i jest usuwany automatycznie, gdy to stworzenie później kończy ruch przy użyciu dowolnej innej akcji ruchu.</p></section>"
                 },
                 "Flying": {
                     "name": "Latanie",
