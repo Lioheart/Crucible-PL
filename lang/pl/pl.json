@@ -401,7 +401,7 @@
       "Allies": "Sojusznicy",
       "Enemies": "Wrogowie",
       "None": "Brak",
-      "Self": "Osobisty"
+      "Self": "Na siebie"
     },
     "TARGET_TYPES": {
       "Aura": "Aury",
@@ -412,7 +412,7 @@
       "None": "Brak",
       "Pulse": "Impuls",
       "Ray": "Promień",
-      "Self": "Osobisty",
+      "Self": "Na siebie",
       "Single": "Pojedynczy",
       "Summon": "Przywołany",
       "Wall": "Ściana"
