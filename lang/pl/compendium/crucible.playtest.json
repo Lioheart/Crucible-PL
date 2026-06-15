@@ -550,7 +550,7 @@
                     },
                     "taxonomy": {
                         "name": "Szkielet",
-                        "description": "<p>Złośliwe nieśmiertelne stworzenia powołane do życia przez nekromancję, stworzone ze szczątek szkieletów dawno zmarłych humanoidów. Kierowane przez nieczyste siły, nad którymi nie mają kontroli, @ref[name] rzadko istnieją z własnej woli i często spotyka się je jako sługi złych czarowników i potężniejszych nieumarłych.</p>"
+                        "description": "<p>Złośliwe nieśmiertelne stworzenia powołane do życia przez nekromancję, stworzone ze szczątek szkieletów dawno zmarłych humanoidów. Kierowane przez nieczyste siły, nad którymi nie mają kontroli, @ref[name] rzadko istnieje z własnej woli i często spotyka się go jako sługę złych czarowników i potężniejszych nieumarłych.</p>"
                     }
                 },
                 "Koy Rent": {
