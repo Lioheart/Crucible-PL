@@ -42,7 +42,7 @@
             "actions": {
                 "Alchemist's Fire": {
                     "name": "Ogień alchemika",
-                    "description": "<p>@ref[name] jest rzucana, zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
+                    "description": "<p>@ref[name] jest rzucana, zadając natychmiastowe <strong>Osłabione</strong> obrażenia, ale powodując stan @Condition[burning] u wszystkich wrogów w promieniu 4 stóp <strong>Wybuchu</strong>, którzy nie zdołali uniknąć ataku.</p><p>Wielkość obrażeń od płonięcia i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> - 2 obrażenia przez 2 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 3 obrażenia przez 3 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 obrażenia przez 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 6 obrażeń przez 5 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 8 obrażeń przez 6 rund</p></li></ul>",
                     "effects": [
                         {
                             "name": "Ogień alchemika"
