@@ -857,7 +857,7 @@
             "actions": {
                 "Ingest Paralytic": {
                     "name": "Spożycie środka paraliżującego",
-                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[paralyzed].</p><p>Czas trwania zależy od jakości @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 1 runda</p></li><li><p><strong>Standardowa jakość</strong> – 2 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 8 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – czas nieokreślony</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[paralyzed].</p><p>Czas trwania zależy od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 1 runda</p></li><li><p><strong>Standardowa jakość</strong> – 2 rundy</p></li><li><p><strong>Dobra jakość</strong> – 4 rundy</p></li><li><p><strong>Wybitna jakość</strong> – 8 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – czas nieokreślony</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
                     "effects": [
                         {
                             "name": "Toksyna paraliżująca"
