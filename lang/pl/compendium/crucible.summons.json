@@ -38,7 +38,7 @@
             "actions": {
                 "Aqueous Transmission": {
                     "name": "Transmisja wodna",
-                    "description": "<p> @ref[name] znajdujący się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                    "description": "<p>@ref[name] znajdujący się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                 }
             }
         },
@@ -247,7 +247,7 @@
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
-                            "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                            "description": "<p>@ref[name] znajdujący się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                         }
                     }
                 },
@@ -290,7 +290,7 @@
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Transmisja wodna",
-                            "description": "<p>Gdy @ref[name] znajduje się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                            "description": "<p>@ref[name] znajdujący się w wodzie, może natychmiast przenieść się do dowolnego wolnego miejsca w tym samym zbiorniku wodnym w odległości do 120 stóp. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
                         }
                     }
                 },
