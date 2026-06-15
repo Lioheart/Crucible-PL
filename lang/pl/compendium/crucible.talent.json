@@ -1021,7 +1021,7 @@
         },
         "Inflection: Negate": {
             "name": "Fleksja: Negacja",
-            "description": "<p>Odwróć działanie zaklęcia. Odwrócone zaklęcie Dotyk życia, które normalnie leczy cel, zamiast tego zadaje obrażenia od trucizny. Odwrócone zaklęcie Ochrona śmierci powoduje podatność na obrażenia od zepsucia u sąsiedniego wroga.</p><section class=\"construction\"><p>Efekty fleksji Negacji nie są jeszcze zautomatyzowane w Playtest 1. Fleksja ta została uwzględniona jako przykład zamierzonego kierunku rozwoju systemu Czaroznastwa.</p></section>"
+            "description": "<p>Odwróć działanie zaklęcia. Odwrócone zaklęcie Dotyk życia, które normalnie leczy cel, zamiast tego zadaje obrażenia od trucizny. Odwrócone zaklęcie Glif śmierci powoduje podatność na obrażenia od zepsucia u sąsiedniego wroga.</p><section class=\"construction\"><p>Efekty fleksji Negacji nie są jeszcze zautomatyzowane w Playtest 1. Fleksja ta została uwzględniona jako przykład zamierzonego kierunku rozwoju systemu Czaroznastwa.</p></section>"
         },
         "Inflection: Pull": {
             "name": "Fleksja: Przyciąganie",
