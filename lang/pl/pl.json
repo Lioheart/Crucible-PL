@@ -1768,7 +1768,7 @@
       "NoAffixCapacityTitle": "Zaklinanie niemożliwe",
       "NoAffixes": "Przeciągnij afiks z kompendium afiksów, aby go zastosować.",
       "UniqueItemTitle": "Unikatowy przedmiot",
-      "UniqueItemNoAffixes": "Ten przedmiot jest unikalny i nie można go wzbogacić o afiksy. Jego właściwości magiczne są określane przez uchwyty modułów.",
+      "UniqueItemNoAffixes": "Ten przedmiot jest unikalny i nie można go wzbogacić o afiksy. Jego właściwości magiczne są określane przez uchwyty modułu.",
       "EnchantmentDerivedHint": "Stopień zaklinania wynika z łącznego stopnia zastosowanych afiksów.",
       "Equipment": "Szczegóły wyposażenia",
       "EquipmentDrop": "Dodaj wyposażenie początkowe, przeciągając i upuszczając przedmioty w tym obszarze.",
