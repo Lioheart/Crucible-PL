@@ -142,7 +142,7 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
-                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong>wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                    "description": "<p>Podpalasz i rzucasz @ref[name], zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                 }
             }
         },
