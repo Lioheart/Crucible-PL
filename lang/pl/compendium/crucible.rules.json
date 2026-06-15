@@ -200,7 +200,7 @@
                 },
                 "Broken": {
                     "name": "Załamany",
-                    "text": "<p>Stworzenie, które jest <strong>Załamane</strong>, jest podatne na urazy psychiczne. Bohaterowie stają się <strong>Załamani</strong>, gdy ich Morale spadnie do zera. Każde kolejne obrażenia zadane Morale w stanie Złamania zwiększają Obłęd.</p><p>Gdy stworzenie jest Załamane, nie może wydawać <strong>Skupienia</strong>, a wykonywane przez nie akcje otrzymują <strong>+2 Zguby</strong>.</p><p>Stworzenia będące Załamane nie mogą przyczyniać się do flankowania. Przeciwnicy niezależni od graczy, którzy stają się Załamani, będą próbowali uciec z walki, chyba że nie posiadają instynktu samozachowawczego lub ucieczka jest niemożliwa.</p>"
+                    "text": "<p>Stworzenie, które jest <strong>Załamane</strong>, jest podatne na urazy psychiczne. Bohaterowie stają się Załamani, gdy ich Morale spadnie do zera. Każde kolejne obrażenia zadane Morale w stanie Złamania zwiększają Obłęd.</p><p>Gdy stworzenie jest Załamane, nie może wydawać <strong>Skupienia</strong>, a wykonywane przez nie akcje otrzymują <strong>+2 Zguby</strong>.</p><p>Stworzenia będące Załamane nie mogą przyczyniać się do flankowania. Przeciwnicy niezależni od graczy, którzy stają się Załamani, będą próbowali uciec z walki, chyba że nie posiadają instynktu samozachowawczego lub ucieczka jest niemożliwa.</p>"
                 },
                 "Insane": {
                     "name": "Obłąkany",
