@@ -471,7 +471,7 @@
             "actions": {
                 "Summon Flame Elemental": {
                     "name": "Przywołanie żywiołaka ognia",
-                    "description": "<p>@ref[name] rozbija się w wybuchu płomieni, pozostawiając po sobie ognistego żywiołaka. Żywiołaki przywołane przez ten klejnot pozostają w grze przez 6 rund (1 minutę).</p><ul><li><p><strong>andetna jakość - </strong>Żaden żywiołak nie zostaje przywołany</p></li><li><p><strong>Standardowa jakość</strong>- Cząstka żywiołów</p></li><li><p><strong>Dobra jakość</strong> - Duch żywiołów</p></li><li><p><strong>Wybitna jakość</strong> - Przybysz żywiołów</p></li><li><p><strong>Mistrzowska jakość - </strong>Wędrowiec żywiołów</p></li></ul>"
+                    "description": "<p>@ref[name] rozbija się w wybuchu płomieni, pozostawiając po sobie ognistego żywiołaka. Żywiołaki przywołane przez ten klejnot pozostają w grze przez 6 rund (1 minutę).</p><ul><li><p><strong>Tandetna jakość - </strong>Żaden żywiołak nie zostaje przywołany</p></li><li><p><strong>Standardowa jakość</strong>- Cząstka żywiołów</p></li><li><p><strong>Dobra jakość</strong> - Duch żywiołów</p></li><li><p><strong>Wybitna jakość</strong> - Przybysz żywiołów</p></li><li><p><strong>Mistrzowska jakość - </strong>Wędrowiec żywiołów</p></li></ul>"
                 }
             }
         },
