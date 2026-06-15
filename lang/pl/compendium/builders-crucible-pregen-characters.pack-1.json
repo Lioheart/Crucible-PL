@@ -376,7 +376,7 @@
                     "actions": {
                         "Light Torch": {
                             "name": "Zapalenie pochodni",
-                            "description": "<p>Rozpalasz @ref[name], tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
+                            "description": "<p>@ref[name] jest rozpalana, tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
                             "effects": [
                                 {
                                     "name": "Pochodnia"
@@ -554,7 +554,7 @@
                     "actions": {
                         "Light Torch": {
                             "name": "Zapalenie pochodni",
-                            "description": "<p>Rozpalasz @ref[name], tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
+                            "description": "<p>@ref[name] jest rozpalana, tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
                             "effects": [
                                 {
                                     "name": "Pochodnia"
