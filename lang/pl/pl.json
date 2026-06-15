@@ -502,7 +502,7 @@
       "WrongMovementToken": "Aby wykonać tę akcję, musisz przesunąć token."
     },
     "Action": "Akcja",
-    "AffectsScope": "Wpływa na {scope}",
+    "AffectsScope": "Wpływa na: {scope}",
     "AllResult": "{existing} (Wszystko)",
     "ChooseWeaponLabel": "Broń",
     "ChooseWeaponHint": "Możesz wybrać broń, której użyjesz do wykonania tej akcji.",
