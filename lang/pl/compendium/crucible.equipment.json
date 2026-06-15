@@ -732,7 +732,7 @@
             "actions": {
                 "Light Lantern": {
                     "name": "Zapalenie latarnii",
-                    "description": "<p>Rozpalasz @ref[name], zapewniając stałe oświetlenie w szerokim promieniu. Czynność ta zużywa jedną jednostkę @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{oleju do latarni} z ekwipunku; czas palenia zależy od jakości zużytego oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>",
+                    "description": "<p>@ref[name] jest rozpalana, zapewniając stałe oświetlenie w szerokim promieniu. Czynność ta zużywa jedną jednostkę @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{oleju do latarni} z ekwipunku; czas palenia zależy od jakości zużytego oleju:</p><ul><li><p><strong>Tandetna jakość</strong> - 1 godzina</p></li><li><p><strong>Standardowa jakość</strong> - 4 godziny</p></li><li><p><strong>Dobra jakość</strong> - 12 godzin</p></li><li><p><strong>Wybitna jakość</strong> - 24 godziny</p></li><li><p><strong>Mistrzowska jakość</strong> - 48 godzin</p></li></ul>",
                     "effects": [
                         {
                             "name": "Latarnia"
@@ -1341,7 +1341,7 @@
             "actions": {
                 "Light Torch": {
                     "name": "Zapalenie pochodni",
-                    "description": "<p>Rozpalasz @ref[name], tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
+                    "description": "<p>@ref[name] jest rozpalana, tworząc migoczące światło w szerokim promieniu na jedną godzinę. Pochodnia ulega zużyciu w wyniku tej czynności i nie można jej ponownie użyć, ale jej światło pozostaje, dopóki się nie wypali.</p>",
                     "effects": [
                         {
                             "name": "Pochodnia"
