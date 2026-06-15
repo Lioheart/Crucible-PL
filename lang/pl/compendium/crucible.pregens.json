@@ -746,7 +746,7 @@
                 },
                 "Shield Ward": {
                     "name": "Tarcza ochronna",
-                    "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Ochrony</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Ochrony, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
+                    "description": "<p>Opanowałeś specjalistyczną technikę pozwalającą włączyć fizyczną tarczę do gestu <strong>Glif</strong>. Możesz zignorować wymóg wolnej ręki dla zaklęć wykorzystujących gest Glif, gdy masz wyposażoną <strong>Tarczę</strong>.</p>"
                 },
                 "Heavy Weapon Training": {
                     "name": "Szkolenie z broni ciężkiej",
