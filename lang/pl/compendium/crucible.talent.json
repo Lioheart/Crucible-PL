@@ -441,7 +441,7 @@
         },
         "Control Proficiency": {
             "name": "Biegłość kontroli",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kontroli. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Motywowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kontroli. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Motywowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Cooking Journeyman": {
             "name": "Czeladnik gotowania",
@@ -486,7 +486,7 @@
         },
         "Counterspell": {
             "name": "Przeciwzaklęcie",
-            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi dotyczące testów gry</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
+            "description": "<p>Natychmiast reagujesz na rzucane zaklęcie i tworzysz runę oraz gest mające na celu zniweczenie magii wrogiego maga.</p><h2 class=\"divider\">Uwagi z testów</h2><p>Ta akcja może być teraz używana podczas testowania gry, ale nie jest jeszcze <em>w pełni zautomatyzowana</em>. Przeciwzaklęcie może zostać rzucone, ale to Mistrz Gry decyduje o ręcznym cofnięciu wcześniej rzuconego zaklęcia i ręcznym odjęciu jego kosztu <strong>Akcji</strong> i <strong>Skupienia</strong>. Te etapy ogólnego procesu rzucania Przeciwzaklęcia <em>zostaną zautomatyzowane</em> w kolejnej aktualizacji, tak aby potwierdzone Przeciwzaklęcie potwierdzało również zaklęcie, które zostało skontrowane, ale z usuniętymi efektami.</p>",
             "actions": {
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
@@ -497,7 +497,7 @@
         },
         "Death Proficiency": {
             "name": "Biegłość śmierci",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Śmierci. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Osłabiania</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Śmierci. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Osłabiania</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Deception Adept": {
             "name": "Adept oszustwa",
@@ -658,7 +658,7 @@
         },
         "Earth Proficiency": {
             "name": "Biegłość ziemi",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Ziemi. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Formowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Ziemi. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Formowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Enchanting Journeyman": {
             "name": "Czeladnik zaklinania",
@@ -744,7 +744,7 @@
         },
         "Flame Proficiency": {
             "name": "Biegłość płomienia",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Flaming Arrow": {
             "name": "Płonąca strzała",
@@ -809,7 +809,7 @@
         },
         "Frost Proficiency": {
             "name": "Biegłość mrozu",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Mrozu. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kondensacja</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Mrozu. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kondensacja</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Fulcrum": {
             "name": "Wspornik",
@@ -846,15 +846,15 @@
         },
         "Gesture: Aura": {
             "name": "Gest: Aura",
-            "description": "<p>Koncentrujesz tajemniczą moc runy, aby stworzyć trwałe pole energii, które otacza sojuszników i wrogów znajdujących się w pobliżu.</p><p>Gest Aura skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 20 stóp, której centrum znajduje się w miejscu, w którym stoi rzucający zaklęcie. Centrum tej Aury przemieszcza się wraz z rzucającym zaklęcie.</p><p>W zależności od użytej runy, aura zadaje obrażenia lub leczy każdą istotę, która rozpocznie swoją turę w jej zasięgu. Gest ten wymaga użycia <strong>2 rąk</strong>, ma podstawowy koszt <strong>5 Akcji</strong> i <strong>1 Skupienia</strong> i musi być <strong>Podtrzymywany</strong>, co kosztuje dodatkowe <strong>1 Skupienie</strong> w każdej kolejnej rundzie.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność jest obecnie umieszczona na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p><p>Szablony emanacji, które są powiązane z tokenem i poruszają się wraz z nim, to funkcja dostępna w wersji 14 Foundry VTT. Automatyzacja gestu Aura nastąpi, gdy Crucible będzie opierać się na wersji 14 Foundry VTT.</p>"
+            "description": "<p>Koncentrujesz tajemniczą moc runy, aby stworzyć trwałe pole energii, które otacza sojuszników i wrogów znajdujących się w pobliżu.</p><p>Gest Aura skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 20 stóp, której centrum znajduje się w miejscu, w którym stoi rzucający zaklęcie. Centrum tej Aury przemieszcza się wraz z rzucającym zaklęcie.</p><p>W zależności od użytej runy, aura zadaje obrażenia lub leczy każdą istotę, która rozpocznie swoją turę w jej zasięgu. Gest ten wymaga użycia <strong>2 rąk</strong>, ma podstawowy koszt <strong>5 Akcji</strong> i <strong>1 Skupienia</strong> i musi być <strong>Podtrzymywany</strong>, co kosztuje dodatkowe <strong>1 Skupienie</strong> w każdej kolejnej rundzie.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ta umiejętność jest obecnie umieszczona na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p><p>Szablony emanacji, które są powiązane z tokenem i poruszają się wraz z nim, to funkcja dostępna w wersji 14 Foundry VTT. Automatyzacja gestu Aura nastąpi, gdy Crucible będzie opierać się na wersji 14 Foundry VTT.</p>"
         },
         "Gesture: Blast": {
             "name": "Gest: Wybuch",
-            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
+            "description": "<p>Wyrzucasz tajemniczą moc runy w intensywną eksplozję energii w najbliższym widocznym punkcie.</p><p>Gest Wybuch skaluje się wraz z <strong>Intelektem</strong> i powoduje wybuch o promieniu 6 stóp, którego centrum znajduje się w odległości do 60 stóp od rzucającego zaklęcie. Wybuch zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
         },
         "Gesture: Cone": {
             "name": "Gest: Stożek",
-            "description": "<p>Skupiasz tajemniczą moc runy w wąskim stożku, który rozchodzi się na zewnątrz od twojej pozycji.</p><p>Gest stożka skaluje się wraz z <strong>Intelektem</strong> i tworzy stożek o promieniu 30 stóp i kącie 60 stopni, którego punktem początkowym jest rzucający zaklęcie. Stożek zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
+            "description": "<p>Skupiasz tajemniczą moc runy w wąskim stożku, który rozchodzi się na zewnątrz od twojej pozycji.</p><p>Gest stożka skaluje się wraz z <strong>Intelektem</strong> i tworzy stożek o promieniu 30 stóp i kącie 60 stopni, którego punktem początkowym jest rzucający zaklęcie. Stożek zadaje <strong>8 punktów obrażeń podstawowych</strong> celom, które nie zdołały się oprzeć zaklęciu. Gest ten wymaga użycia <strong>2 rąk</strong> i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ta umiejętność znajduje się obecnie na węźle <strong>stopnia 4</strong>. Ostatecznie będzie można ją zdobyć dopiero na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest ona dostępna „wcześniej” w celu przetestowania.</p>"
         },
         "Gesture: Conjure": {
             "name": "Gest: Wywołanie",
@@ -985,11 +985,11 @@
         },
         "Illumination Proficiency": {
             "name": "Biegłość światłości",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Światłości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Ujawnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Światłości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Ujawnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Illusion Proficiency": {
             "name": "Biegłość iluzji",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Iluzji. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Pozorność</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Iluzji. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Pozorność</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
@@ -1195,7 +1195,7 @@
         },
         "Kinesis Proficiency": {
             "name": "Biegłość kinetyki",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kinetyki. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Napędzanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kinetyki. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Napędzanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Kineturge": {
             "name": "Kineturg",
@@ -1241,7 +1241,7 @@
         },
         "Life Proficiency": {
             "name": "Biegłość życia",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kwitnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kwitnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Light Weapon Proficiency": {
             "name": "Biegłość w broni lekkiej",
@@ -1377,7 +1377,7 @@
         },
         "Oblivion Proficiency": {
             "name": "Biegłość nicości",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Nicości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Wymazanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Nicości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Wymazanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Operator": {
             "name": "Operator",
@@ -2013,7 +2013,7 @@
         },
         "Storm Proficiency": {
             "name": "Biegłość burzy",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Burzy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi dotyczące testów gry</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Energetyzacji</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Burzy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Energetyzacji</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Strategic Repositioning": {
             "name": "Strategiczna reorganizacja",
