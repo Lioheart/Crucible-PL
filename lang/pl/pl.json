@@ -220,7 +220,7 @@
         },
         "self": {
           "hint": "W razie potrzeby automatycznie wybierz siebie jako cel, jeśli jest to odpowiednie dla skonfigurowanego zakresu i typu celu akcji.",
-          "label": "Cel osobisty"
+          "label": "Cel na siebie"
         },
         "size": {
           "hint": "Niektóre typy celów są dodatkowo modyfikowane przez rozmiar w stopach.",
