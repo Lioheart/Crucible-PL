@@ -5,7 +5,7 @@
   "version": "vDev",
   "socket": true,
   "compatibility": {
-    "minimum": "14",
+    "minimum": "14.364",
     "verified": "14",
     "maximum": "14"
   },
@@ -24,7 +24,7 @@
         "id": "crucible",
         "type": "system",
         "compatibility": {
-          "verified": "0.9.5"
+          "verified": "0.10.0"
         }
       }
     ],
