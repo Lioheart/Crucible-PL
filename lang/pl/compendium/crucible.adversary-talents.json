@@ -211,7 +211,7 @@
         },
         "Echolocation": {
             "name": "Echolokacja",
-            "description": "<p>@ref[actor.name]{To stworzenie} postrzega świat poprzez emitowanie impulsów dźwiękowych, które precyzyjnie wykrywają kształty, co pozwala mu zlokalizować poruszające się lub w inny sposób emitujące dźwięk stworzenia w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną. Jeśli stworzenie jest w stanie @Condition[deafened], nie może korzystać z tego zmysłu. </p><p>Stworzenie wykryte za pomocą @ref[name] jest traktowane jako widoczne dla celów akcji, które wymagają widzenia celu.</p>"
+            "description": "<p>@ref[actor.name]{To stworzenie} postrzega świat poprzez emitowanie impulsów dźwiękowych, które precyzyjnie wykrywają kształty, co pozwala mu zlokalizować poruszające się lub w inny sposób emitujące dźwięk stworzenia w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną. Jeśli stworzenie jest w stanie @Condition[deafened], nie może korzystać z tego zmysłu. </p><p>Stworzenie wykryte za pomocą akcji @ref[name] jest traktowane jako widoczne dla celów akcji, które wymagają widzenia celu.</p>"
         },
         "Electricity Absorption": {
             "name": "Absorpcja elektryczności",
@@ -647,7 +647,7 @@
         },
         "Swarm": {
             "name": "Rój",
-            "description": "<p>Ten przeciwnik to grupa wielu identycznych stworzeń, które działają jako jeden rojący się tłum wrogów.</p><ul><li><p>Maksymalne<strong>Zdrowie</strong> zostaje podwojone.</p></li><li><p>Wobec każdego źródła obrażeń skierowanego na pojedynczy cel, rój zyskuje dodatkową <strong>Odporność</strong> równą jego <strong>Wytrzymałości</strong>.</p></li><li><p><strong>Rozmiar</strong> roju zmniejsza się wraz z wyczerpywaniem się jego Zdrowia, aż do osiągnięcia minimalnego Rozmiaru wynoszącego 2.</p></li></ul> "
+            "description": "<p>Ten przeciwnik to grupa wielu identycznych stworzeń, które działają jako jeden rojący się tłum wrogów.</p><ul><li><p>Maksymalne <strong>Zdrowie</strong> zostaje podwojone.</p></li><li><p>Wobec każdego źródła obrażeń skierowanego na pojedynczy cel, rój zyskuje dodatkową <strong>Odporność</strong> równą jego <strong>Wytrzymałości</strong>.</p></li><li><p><strong>Rozmiar</strong> roju zmniejsza się wraz z wyczerpywaniem się jego Zdrowia, aż do osiągnięcia minimalnego Rozmiaru wynoszącego 2.</p></li></ul> "
         },
         "Swooping Strike": {
             "name": "Atak z powietrza",
