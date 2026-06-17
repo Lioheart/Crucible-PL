@@ -14,7 +14,10 @@
         },
         "Ancestral Guardian": {
             "name": "Strażnik przodków",
-            "biography": "<p>Strażnik Przodków to nie tyle istota, co raczej obecność: zgromadzone duchy tych, którzy odeszli, przywołane do świata przez @UUID[Compendium.crucible.talent.Item.warden0000000000]{Strażnika} za pośrednictwem Gaju Przodków. Nie da się nim kierować ani go przekonać, a ponadto nie jest zdolny do mowy. Po prostu czuwa nad żywymi tak długo, jak trwa komunia Strażnika. </p>",
+            "biography": {
+                "public": "<p>Strażnik Przodków to nie tyle istota, co raczej obecność: zgromadzone duchy tych, którzy odeszli, przywołane do świata przez @UUID[Compendium.crucible.talent.Item.warden0000000000]{Strażnika} za pośrednictwem Gaju Przodków. Nie da się nim kierować ani go przekonać, a ponadto nie jest zdolny do mowy. Po prostu czuwa nad żywymi tak długo, jak trwa komunia Strażnika. </p>",
+                "appearance": "<p>Przezroczysta postać utkana z płynnie zmieniających się kawałków kory, liści i korzeni, rozświetlona od wewnątrz delikatną zieloną poświatą. Nie ma stałego kształtu, dryfuje między sylwetkami przodków, których pamięć jest już tylko mglistym wspomnieniem, i nie rzuca ani cienia, ani nie obciąża ziemi, której strzeże.</p>"
+            },
             "items": {
                 "Ancestral Manifestation": {
                     "name": "Manifestacja przodków",
@@ -485,6 +488,15 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "biography": "system.details.biography.public"
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        }
     }
 }
