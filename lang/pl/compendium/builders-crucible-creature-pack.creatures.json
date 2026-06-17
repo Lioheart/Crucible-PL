@@ -1106,14 +1106,14 @@
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -2432,14 +2432,14 @@
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -3608,10 +3608,10 @@
                     "description": "<p>W jasnym świetle @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy każdej akcji.</p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -5548,14 +5548,14 @@
             "name": "Mroczny elf mag",
             "items": {
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -5643,14 +5643,14 @@
             "name": "Mroczny elf kapłan",
             "items": {
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -5755,14 +5755,14 @@
             "name": "Mroczny elf zwiadowca",
             "items": {
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -5856,14 +5856,14 @@
             "name": "Mroczny elf wojownik",
             "items": {
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -5961,10 +5961,10 @@
                     "description": "<p>W jasnym świetle @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy każdej akcji.</p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -6370,14 +6370,14 @@
                     "description": "Twoja nadprzyrodzona wytrzymałość sprawia, że jesteś odporny na trucizny i toksyny. Zyskujesz +5 do odporności na obrażenia od trucizny."
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -9183,14 +9183,14 @@
             "name": "Półpająk",
             "items": {
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -12291,14 +12291,14 @@
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -12335,14 +12335,14 @@
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
@@ -13405,7 +13405,7 @@
             }
         },
         "Sunlight Weakness": {
-            "name": "Wrażliwość na światło słoneczne"
+            "name": "Podatność na światło słoneczne"
         },
         "Surgeweaver": {
             "name": "Iskrzyciel"
@@ -14658,14 +14658,14 @@
                     "description": "<p>Życie @ref[actor.name]{stworzenia} jest podtrzymywane przez magię nekromantyczną lub siły z innego świata. Kiedy można by uznać, że jest @Condition[dead], jest ono zamiast tego @Condition[incapacitated].</p><p>Po zakończeniu walki @ref[actor.name]{stworzenie} może rozpocząć akcję Odzyskiwania, odzyskując przytomność po zakończeniu regeneracji. Odzyskaniu w ten sposób można zapobiec w jeden z następujących sposobów:</p><ul><li><p>Stworzenie zostało obezwładnione przez rodzaj obrażeń, na które jest <strong>podatne</strong>.</p></li><li><p>Siły magiczne, które spowodowały jego powstanie jako nieumarłego, zostały zakłócone, zneutralizowane lub w inny sposób rozproszone.</p></li><li><p>Ciało stworzenia zostało zniszczone w takim stopniu, że nie może ono dłużej utrzymać swojej fizycznej formy.</p></li></ul>"
                 },
                 "Sunlight Weakness": {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>W świetle słonecznym @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy wykonywaniu wszystkich akcji. </p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
                     "effects": {
                         "Sunlight Weakness": {
-                            "name": "Wrażliwość na światło słoneczne",
+                            "name": "Podatność na światło słoneczne",
                             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                             "changes": {
-                                "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                                "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                             }
                         }
                     }
