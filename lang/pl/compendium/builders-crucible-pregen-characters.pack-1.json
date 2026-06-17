@@ -114,7 +114,7 @@
             "actions": {
                 "Counterspell": {
                     "name": "Przeciwzaklęcie",
-                    "condition": "Kolejna istota, którą można zobaczyć, rzuca zaklęcie.",
+                    "condition": "Inna istota, którą można dostrzec, rzuca zaklęcie.",
                     "description": "<p>Formujesz tajemniczą energię w przeciwdziałające zaklęcie, kierując je na widocznego maga w promieniu 30 stóp.</p><p>Wybierz <strong>Runę</strong> i <strong>Gest</strong>, które znasz, aby spróbować przeciwdziałać zaklęciu. Wybranie Runy przeciwnej do tej użytej w zaklęciu zapewnia <strong>+2 Korzyści</strong> do twojej próby. Wybranie Gestu identycznego z tym używanym w zaklęciu również zapewnia <strong>+2 Korzyści</strong> do twojej próby.</p><p>Wykonaj nieszkodliwy atak magiczny przeciwko obronie <strong>Woli</strong> celu. Jeśli wynik rzutu przekroczy obronę celu, zaklęcie zostanie skontrowane, a jego magia unieważniona, nie wywołując żadnych efektów.</p>"
                 }
             }
@@ -179,7 +179,7 @@
                     "actions": {
                         "Counterspell": {
                             "name": "Przeciwzaklęcie",
-                            "condition": "Kolejna istota, którą można zobaczyć, rzuca zaklęcie.",
+                            "condition": "Inna istota, którą można dostrzec, rzuca zaklęcie.",
                             "description": "<p>Formujesz tajemniczą energię w przeciwdziałające zaklęcie, kierując je na widocznego maga w promieniu 30 stóp.</p><p>Wybierz <strong>Runę</strong> i <strong>Gest</strong>, które znasz, aby spróbować przeciwdziałać zaklęciu. Wybranie Runy przeciwnej do tej użytej w zaklęciu zapewnia <strong>+2 Korzyści</strong> do twojej próby. Wybranie Gestu identycznego z tym używanym w zaklęciu również zapewnia <strong>+2 Korzyści</strong> do twojej próby.</p><p>Wykonaj nieszkodliwy atak magiczny przeciwko obronie <strong>Woli</strong> celu. Jeśli wynik rzutu przekroczy obronę celu, zaklęcie zostanie skontrowane, a jego magia unieważniona, nie wywołując żadnych efektów.</p>"
                         }
                     }
