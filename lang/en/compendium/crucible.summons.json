@@ -14,7 +14,10 @@
         },
         "Ancestral Guardian": {
             "name": "Ancestral Guardian",
-            "biography": "<p>The Ancestral Guardian is less a creature than a presence: the gathered spirits of those who came before, called into the world by a @UUID[Compendium.crucible.talent.Item.warden0000000000]{Warden} through the Ancestral Grove. It cannot be commanded or reasoned with and offers no speech. It simply keeps watch over the living for as long as the Warden's communion endures.</p>",
+            "biography": {
+                "public": "<p>The Ancestral Guardian is less a creature than a presence: the gathered spirits of those who came before, called into the world by a @UUID[Compendium.crucible.talent.Item.warden0000000000]{Warden} through the Ancestral Grove. It cannot be commanded or reasoned with and offers no speech. It simply keeps watch over the living for as long as the Warden's communion endures.</p>",
+                "appearance": "<p>A translucent figure woven of shifting bark, leaf, and root, lit from within by a soft green glow. It holds no fixed form, drifting between the silhouettes of ancestors half-remembered, and casts neither shadow nor weight upon the ground it guards.</p>"
+            },
             "items": {
                 "Ancestral Manifestation": {
                     "name": "Ancestral Manifestation",
@@ -485,6 +488,15 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "biography": "system.details.biography.public"
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        }
     }
 }

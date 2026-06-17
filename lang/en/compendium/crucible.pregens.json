@@ -21,7 +21,9 @@
         },
         "Agnath": {
             "name": "Agnath",
-            "biography": "<p>Agnath is a sword-wielding necromancer who imbues deathly magic into their heavy blows. Agnath aspires to obtain the <strong>Spellblade</strong> signature talent.</p>",
+            "biography": {
+                "public": "<p>Agnath is a sword-wielding necromancer who imbues deathly magic into their heavy blows. Agnath aspires to obtain the <strong>Spellblade</strong> signature talent.</p>"
+            },
             "items": {
                 "Splint Mail": {
                     "name": "Splint Mail",
@@ -243,7 +245,9 @@
         },
         "Belladonna": {
             "name": "Belladonna",
-            "biography": "<p>Belladonna is a cunning rogue who fights with two daggers, dealing a rapid sequence of blows against an unwary target. Belladonna aspires to obtain the <strong>Poisoner</strong> signature talent.</p>",
+            "biography": {
+                "public": "<p>Belladonna is a cunning rogue who fights with two daggers, dealing a rapid sequence of blows against an unwary target. Belladonna aspires to obtain the <strong>Poisoner</strong> signature talent.</p>"
+            },
             "items": {
                 "Dagger": {
                     "name": "Dagger",
@@ -637,7 +641,9 @@
         },
         "Duurath": {
             "name": "Duurath",
-            "biography": "<p>Duurath is a stout dwarven defender who uses a hammer and shield to protect his allies and punish enemies by sapping their morale. Duurath aspires to obtain the <strong>Runewarden</strong> signature talent.</p>",
+            "biography": {
+                "public": "<p>Duurath is a stout dwarven defender who uses a hammer and shield to protect his allies and punish enemies by sapping their morale. Duurath aspires to obtain the <strong>Runewarden</strong> signature talent.</p>"
+            },
             "items": {
                 "Scale Mail": {
                     "name": "Scale Mail",
@@ -887,7 +893,9 @@
         },
         "Eliorwen": {
             "name": "Eliorwen",
-            "biography": "<p>Eliorwen is a nimble skirmisher who uses archery and spellcraft to suppress and eliminates foes from a tremendous distnace. Eliorwen aspires to obtain the <strong>Arcane Archer</strong> signature talent.</p>",
+            "biography": {
+                "public": "<p>Eliorwen is a nimble skirmisher who uses archery and spellcraft to suppress and eliminates foes from a tremendous distnace. Eliorwen aspires to obtain the <strong>Arcane Archer</strong> signature talent.</p>"
+            },
             "items": {
                 "Scimitar": {
                     "name": "Scimitar",
@@ -1128,7 +1136,9 @@
         },
         "Fizzit": {
             "name": "Fizzit",
-            "biography": "<p>Fizzit is a clever spellcrafter and scholar who slings spells from a distance and seeks to harness elemental forces to work in their service. Fizzit aspires to obtain the <strong>Conjurer</strong> signature talent.</p>",
+            "biography": {
+                "public": "<p>Fizzit is a clever spellcrafter and scholar who slings spells from a distance and seeks to harness elemental forces to work in their service. Fizzit aspires to obtain the <strong>Conjurer</strong> signature talent.</p>"
+            },
             "items": {
                 "Ring Mail": {
                     "name": "Ring Mail",
@@ -1507,7 +1517,9 @@
         },
         "Kagura": {
             "name": "Kagura",
-            "biography": "<p>Kagura is a stalwart healer who bolsters the health and morale of her allies amidst the frenzy of battle. Kagura aspires to obtain the <strong>Healer</strong> signature Talent.</p>",
+            "biography": {
+                "public": "<p>Kagura is a stalwart healer who bolsters the health and morale of her allies amidst the frenzy of battle. Kagura aspires to obtain the <strong>Healer</strong> signature Talent.</p>"
+            },
             "items": {
                 "Ice Staff": {
                     "name": "Ice Staff",
@@ -2059,7 +2071,9 @@
         },
         "Ulfen": {
             "name": "Ulfen",
-            "biography": "<p>Ulfen is a fierce warrior who fights with a two-handed greataxe, favoring heavy blows that do significant damage or hit multiple targets. Ulfen aspires to obtain the <strong>Berserker </strong>signature talent.</p>",
+            "biography": {
+                "public": "<p>Ulfen is a fierce warrior who fights with a two-handed greataxe, favoring heavy blows that do significant damage or hit multiple targets. Ulfen aspires to obtain the <strong>Berserker </strong>signature talent.</p>"
+            },
             "items": {
                 "Scale Mail": {
                     "name": "Scale Mail",
@@ -2339,7 +2353,9 @@
         },
         "Zarajah": {
             "name": "Zarajah",
-            "biography": "<p>Zarajah is a spirited Devilkin with a penchant for pyromancy who weaves dangerous and warding spells to control the battlefield. Zarajah aspires to obtain the <strong>War Mage</strong> signature Talent.</p>",
+            "biography": {
+                "public": "<p>Zarajah is a spirited Devilkin with a penchant for pyromancy who weaves dangerous and warding spells to control the battlefield. Zarajah aspires to obtain the <strong>War Mage</strong> signature Talent.</p>"
+            },
             "items": {
                 "Flame Staff": {
                     "name": "Flame Staff",
@@ -2515,6 +2531,15 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "biography": "system.details.biography.public"
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        }
     }
 }
