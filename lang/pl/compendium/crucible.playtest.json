@@ -1004,7 +1004,9 @@
                         "name": "Artysta",
                         "description": "Byłeś wędrownym artystą estradowym. Nauczyłeś się czuć swobodnie podczas różnych imprez towarzyskich, jak grać przed publicznością, upiększać szczegóły swojego występu, aby wywołać określone reakcje emocjonalne."
                     },
-                    "biography": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>"
+                    }
                 },
                 "Agnath": {
                     "name": "Agnath",
@@ -1164,7 +1166,9 @@
                         "name": "Żołnierz",
                         "description": "<p>Byłeś szeregowym członkiem jakiejś organizacji wojskowej. Dyscyplina sprawiła, że przetrwałeś i podkreśliła znaczenie okazywania siły i dominacji nad innymi, a lata spędzone na koniu lub w marszu nauczyły cię, jak radzić sobie w każdym terenie.</p>"
                     },
-                    "biography": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>"
+                    }
                 },
                 "Belladonna": {
                     "name": "Belladonna",
@@ -1414,7 +1418,9 @@
                         "name": "Ulicznik",
                         "description": "<p>Niewielu uczy się przetrwać tak jak ty. Twoja edukacja była surowa i oparta na nieufności. Nauczyłeś się obserwować innych, wypatrując oznak niebezpieczeństwa lub nielojalności, unikać zwracania na siebie uwagi, szukać resztek jedzenia na ulicach rozległych miast.</p>"
                     },
-                    "biography": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>"
+                    }
                 },
                 "Duurath": {
                     "name": "Duurath",
@@ -1665,7 +1671,9 @@
                         "name": "Konstabl",
                         "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
                     },
-                    "biography": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>"
+                    }
                 },
                 "Eliorwen": {
                     "name": "Eliorwen",
@@ -1869,7 +1877,9 @@
                         "name": "Wędrowiec",
                         "description": "<p>Twoje życie upływało w ciągłej wędrówce. Nie ma dla Ciebie nic przyjemniejszego niż uczucie jazdy wozem lub na wierzchowcu, obserwowanie nieznanego nieba powoli przesuwającego się nad głową. Nauczyłeś się zwracać baczną uwagę na otoczenie i jego potrzeby, dbać o stworzenia, na których polegasz, i radzić sobie z tym, co uda Ci się znaleźć.</p>"
                     },
-                    "biography": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>"
+                    }
                 },
                 "Fizzit": {
                     "name": "Fizzit",
@@ -2055,7 +2065,9 @@
                         "name": "Naukowiec",
                         "description": "<p>Zawsze najlepiej czułeś się w bibliotece lub sali lekcyjnej. Twoje studia skupiały się na odkrywaniu tajemnic otaczającego Cię świata i niewiele jest przedmiotów teoretycznych, których jeszcze nie znasz.</p>"
                     },
-                    "biography": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>"
+                    }
                 },
                 "Kagura": {
                     "name": "Kagura",
@@ -2220,7 +2232,9 @@
                         "name": "Lekarz",
                         "description": "<p>Byłeś uzdrowicielem lub pracownikiem służby zdrowia. Część swojego życia poświęciłeś na naukę medycyny i masz zdolność dostrzegania chorób u innych. Wiesz, jak leczyć rany i choroby oraz jak rozpoznawać ich przyczyny.</p>"
                     },
-                    "biography": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>"
+                    }
                 },
                 "Ulfen": {
                     "name": "Ulfen",
@@ -2442,7 +2456,9 @@
                         "name": "Konstabl",
                         "description": "<p>Byłeś członkiem organizacji zajmującej się egzekwowaniem prawa. Nauczyłeś się zachowywać czujność wobec otoczenia, pracować w złożonych strukturach społecznych i wywierać imponujące wrażenie.</p>"
                     },
-                    "biography": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>"
+                    "biography": {
+                        "public": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>"
+                    }
                 },
                 "Party": {
                     "name": "Drużyna",
@@ -2509,7 +2525,16 @@
             "path": "system.details.taxonomy",
             "converter": "embedded_object_with_actions_converter"
         },
-        "biography": "system.details.biography.public",
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        },
         "tokenName": {
             "path": "prototypeToken.name",
             "converter": "nested_object_converter"
@@ -2581,7 +2606,16 @@
                     "path": "system.details.taxonomy",
                     "converter": "embedded_object_with_actions_converter"
                 },
-                "biography": "system.details.biography.public"
+                "biography": {
+                    "path": "system.details.biography",
+                    "converter": "structured",
+                    "cardinality": "one",
+                    "mapping": {
+                        "public": "public",
+                        "private": "private",
+                        "appearance": "appearance"
+                    }
+                }
             }
         }
     }
