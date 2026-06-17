@@ -298,10 +298,10 @@
             "description": "<p>W jasnym świetle @ref[actor.name]{stworzenie} otrzymuje <strong>2 Zguby</strong> przy każdej akcji.</p><p>Mechanika ta jest realizowana poprzez <strong>efekt aktywny</strong>, który można łatwo włączyć lub wyłączyć w odpowiednim momencie.</p>",
             "effects": [
                 {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                     "changes": {
-                        "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                        "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                     }
                 }
             ]
@@ -645,7 +645,7 @@
             }
         },
         "Sunlight Weakness": {
-            "name": "Wrażliwość na światło słoneczne",
+            "name": "Podatność na światło słoneczne",
             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>"
         },
         "Telepathy": {
