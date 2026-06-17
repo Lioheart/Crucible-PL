@@ -1045,7 +1045,7 @@
         },
         "Inquisitor": {
             "name": "Inkwizytor",
-            "description": "<p>Jesteś ekspertem w walce z użytkownikami magii, wyszkolonym w oszczędzaniu energii i uderzaniu w idealnym momencie, by udaremnić zaklęcie.</p><p>Koszt akcji @Action[default reactiveStrike] zmniejsza się o dodatkową 1 <strong>Akcję</strong>, ale zawsze kosztuje 1 <strong>punkt skupienia</strong>. Kiedy uderzasz wroga w reakcji na rzucenie przez niego zaklęcia, udane trafienie odbiera <strong>1 Skupienie</strong> temu wrogowi i zwraca twój własny; przy <strong>trafieniu krytycznym</strong> jego zaklęcie zostaje przerwane, a magia przepada.</p>",
+            "description": "<p>Jesteś ekspertem w walce z użytkownikami magii, wyszkolonym w oszczędzaniu energii i uderzaniu w idealnym momencie, by udaremnić zaklęcie.</p><p>Koszt akcji @Action[default reactiveStrike] zmniejsza się o dodatkową 1 <strong>Akcję</strong>, ale zawsze kosztuje 1 <strong>punkt skupienia</strong>. Kiedy uderzasz wroga w reakcji na rzucenie przez niego zaklęcia, udane trafienie odbiera <strong>1 Skupienie</strong> temu wrogowi i zwraca twój własny punkt skupienia; przy <strong>trafieniu krytycznym</strong> jego zaklęcie zostaje przerwane, a magia przepada.</p>",
             "actions": {
                 "Abjure": {
                     "name": "Wyrzekanie",
