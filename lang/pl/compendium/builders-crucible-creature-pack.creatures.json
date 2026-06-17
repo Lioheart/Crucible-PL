@@ -3010,7 +3010,7 @@
                 },
                 "Thermal Vision": {
                     "name": "Widzenie termiczne",
-                    "description": "<p>@ref[actor.name]{Stworzenie} precyzyjnie postrzega otoczenie na podstawie różnic temperatur, co pozwala jej lokalizować istoty, których temperatura ciała odbiega od norm otoczenia. </p><p>Pozwala to na wykrycie stworzeń, których temperatura ciała jest <strong>Lodowata</strong>, <strong>Chłodna</strong>, <strong>Ciepła</strong> lub <strong>Upalna</strong> w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną i o ile @ref[actor.name]{stworzenie} nie jest w stanie @Condition[blinded] lub @Condition[incapacitated]. Stworzenie wykryte w ten sposób jest traktowane jako widoczne dla celów akcji wymagających wzroku.</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} precyzyjnie postrzega otoczenie na podstawie różnic temperatur, co pozwala jej lokalizować istoty, których temperatura ciała odbiega od norm otoczenia. </p><p>Pozwala to na wykrycie stworzeń, których temperatura ciała jest <strong>Lodowata</strong>, <strong>Chłodna</strong>, <strong>Ciepła</strong> lub <strong>Gorąca</strong> w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną i o ile @ref[actor.name]{stworzenie} nie jest w stanie @Condition[blinded] lub @Condition[incapacitated]. Stworzenie wykryte w ten sposób jest traktowane jako widoczne dla celów akcji wymagających wzroku.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie"
