@@ -21,7 +21,9 @@
         },
         "Agnath": {
             "name": "Agnath",
-            "biography": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>",
+            "biography": {
+                "public": "<p>Agnath jest dzierżącym miecz nekromantą, który nasyca śmiertelną magią swoje ciężkie ciosy. Agnath dąży do zdobycia popisowego talentu <strong>Zaklętego ostrza</strong>.</p>"
+            },
             "items": {
                 "Splint Mail": {
                     "name": "Napierśnik",
@@ -243,7 +245,9 @@
         },
         "Belladonna": {
             "name": "Belladonna",
-            "biography": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>",
+            "biography": {
+                "public": "<p>Belladonna to przebiegła łotrzyca, która walczy dwoma sztyletami, zadając szybką sekwencję ciosów nieostrożnemu celowi. Belladonna dąży do zdobycia popisowego talentu <strong>Truciciel</strong>.</p>"
+            },
             "items": {
                 "Dagger": {
                     "name": "Sztylet",
@@ -637,7 +641,9 @@
         },
         "Duurath": {
             "name": "Duurath",
-            "biography": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>",
+            "biography": {
+                "public": "<p>Duurath to krzepki krasnoludzki obrońca, który używa młota i tarczy, aby chronić sojuszników i karać wrogów, osłabiając ich morale. Duurath dąży do zdobycia popisowego talentu <strong>Strażnika run</strong>.</p>"
+            },
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -887,7 +893,9 @@
         },
         "Eliorwen": {
             "name": "Eliorwen",
-            "biography": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>",
+            "biography": {
+                "public": "<p>Eliorwen jest zwinną wojowniczką, która używa łucznictwa i czarów do tłumienia i eliminowania wrogów z ogromnego dystansu. Eliorwen dąży do uzyskania talentu <strong>Tajemnego łucznika</strong>.</p>"
+            },
             "items": {
                 "Scimitar": {
                     "name": "Bułat",
@@ -1128,7 +1136,9 @@
         },
         "Fizzit": {
             "name": "Fizzit",
-            "biography": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>",
+            "biography": {
+                "public": "<p>Fizzit jest sprytnym zaklinaczem i uczonym, który rzuca zaklęcia na odległość i stara się okiełznać siły żywiołów. Fizzit dąży do zdobycia popisowego talentu <strong>Przywoływacza</strong>.</p>"
+            },
             "items": {
                 "Ring Mail": {
                     "name": "Kolczuga pierścieniowa",
@@ -1507,7 +1517,9 @@
         },
         "Kagura": {
             "name": "Kagura",
-            "biography": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>",
+            "biography": {
+                "public": "<p>Kagura jest nieustępliwą uzdrowicielką, która wzmacnia zdrowie i morale swoich sojuszników w bitewnym szale. Kagura dąży do zdobycia popisowego talentu <strong>Uzdrowiciel</strong>.</p>"
+            },
             "items": {
                 "Ice Staff": {
                     "name": "Kostur lodu",
@@ -2059,7 +2071,9 @@
         },
         "Ulfen": {
             "name": "Ulfen",
-            "biography": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>",
+            "biography": {
+                "public": "<p>Ulfen jest zaciekłym wojownikiem, który walczy dwuręcznym wielkim toporem, preferując ciężkie ciosy, które zadają znaczne obrażenia lub trafiają wiele celów. Ulfen dąży do uzyskania talentu <strong>Berserker</strong>.</p>"
+            },
             "items": {
                 "Scale Mail": {
                     "name": "Zbroja łuskowa",
@@ -2339,7 +2353,9 @@
         },
         "Zarajah": {
             "name": "Zarajah",
-            "biography": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>",
+            "biography": {
+                "public": "<p>Zarajah to porywczy Diabelny z zamiłowaniem do piromancji, który tworzy niebezpieczne zaklęcia, aby kontrolować pole bitwy. Zarajah dąży do zdobycia popisowego talentu <strong>Maga wojennego</strong>.</p>"
+            },
             "items": {
                 "Flame Staff": {
                     "name": "Kostur ognia",
@@ -2515,6 +2531,15 @@
             "path": "system.details.taxonomy",
             "converter": "nested_object_converter"
         },
-        "biography": "system.details.biography.public"
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        }
     }
 }
