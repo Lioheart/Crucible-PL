@@ -525,7 +525,7 @@
             "name": "Krwawiciel"
         },
         "Bulwark": {
-            "name": "Zapora"
+            "name": "Tarczownik"
         },
         "Cadence": {
             "name": "Kadencja"
@@ -702,7 +702,7 @@
                     }
                 },
                 "Bulwark": {
-                    "name": "Zapora",
+                    "name": "Tarczownik",
                     "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
                 },
                 "Testudo": {
