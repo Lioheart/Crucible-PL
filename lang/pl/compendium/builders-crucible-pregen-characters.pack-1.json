@@ -2041,9 +2041,9 @@
                     },
                     "effects": {
                         "Determination": {
-                            "name": "Determinacji",
+                            "name": "Determinacja",
                             "description": "<p>Zwiększa <strong>Wolę</strong> o 1 za każdy <strong>Stopień</strong> tego przyrostka II.</p>",
-                            "adjective": "Determinacji"
+                            "adjective": "Determinacja"
                         }
                     }
                 }
