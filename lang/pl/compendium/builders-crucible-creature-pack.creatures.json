@@ -3565,7 +3565,7 @@
             }
         },
         "Bulwark": {
-            "name": "Bastion"
+            "name": "Zapora"
         },
         "Burrower": {
             "name": "Kopacz",
@@ -6398,7 +6398,7 @@
                     }
                 },
                 "Bulwark": {
-                    "name": "Bastion",
+                    "name": "Zapora",
                     "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
                 },
                 "Intercept": {
@@ -8045,7 +8045,7 @@
                     }
                 },
                 "Bulwark": {
-                    "name": "Bastion",
+                    "name": "Zapora",
                     "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
                 },
                 "Heater Shield": {
