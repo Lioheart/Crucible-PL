@@ -618,14 +618,14 @@
             }
         },
         "Sunlight Weakness": {
-            "name": "Wrażliwość na światło słoneczne",
+            "name": "Podatność na światło słoneczne",
             "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
             "effects": [
                 {
-                    "name": "Wrażliwość na światło słoneczne",
+                    "name": "Podatność na światło słoneczne",
                     "description": "<p>Istota ta ponosi kary za wszystkie działania, gdy jest wystawiona na działanie promieni słonecznych.</p>",
                     "changes": {
-                        "system.rollBonuses.banes.sunlightWeakness.label": "Wrażliwość na światło słoneczne"
+                        "system.rollBonuses.banes.sunlightWeakness.label": "Podatność na światło słoneczne"
                     }
                 }
             ]
