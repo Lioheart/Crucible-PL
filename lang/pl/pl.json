@@ -2315,7 +2315,7 @@
     "DamageType": "Typ obrażeń",
     "Iconic": "Zaklęcie ikoniczne",
     "IconicPl": "Zaklęcia ikoniczne",
-    "NameFormatAdj": "{rune} {gesture}",
+    "NameFormatAdj": "Zaklęcie {rune} {gesture}",
     "NameFormatNoun": "{gesture} z runą {rune}"
   },
   "TALENT": {
