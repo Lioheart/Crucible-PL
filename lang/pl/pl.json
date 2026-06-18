@@ -1208,7 +1208,7 @@
     "MILESTONE": {
       "Award": "Nagroda za postępy w realizacji kamieni milowych ",
       "GroupAward": "Przyznano nagrodę {number} {label} grupie {name} oraz następującym członkom:",
-      "GroupRevoke": "Odwołano {number} {label} grupie {name} oraz następującym członkom:",
+      "GroupRevoke": "Cofnięto {number} {label} grupie {name} oraz następującym członkom:",
       "Identifier": "Identyfikator",
       "IdentifierHint": "Unikalny identyfikator nagrody za osiągnięcie kamienia milowego musi być slugiem (bez spacji i znaków specjalnych).",
       "Recipients": "Osoby, które osiągnęły kamień milowy",
