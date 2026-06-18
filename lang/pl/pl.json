@@ -824,7 +824,7 @@
         },
         "movement": {
           "air.label": "Prędkość w powietrzu",
-          "label": "Szybkość ruchu",
+          "label": "Prędkość ruchu",
           "land.label": "Prędkość na lądzie",
           "pace.label": "Tempo podróży",
           "water.label": "Prędkość w wodzie"
