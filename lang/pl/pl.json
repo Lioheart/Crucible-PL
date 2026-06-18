@@ -1213,7 +1213,7 @@
       "IdentifierHint": "Unikalny identyfikator nagrody za osiągnięcie kamienia milowego musi być slugiem (bez spacji i znaków specjalnych).",
       "Recipients": "Osoby, które osiągnęły kamień milowy",
       "RecipientsHint": "Wyznacz jednego lub więcej bohaterów, którzy otrzymają ten kamień milowy.",
-      "Revoke": "Odwołać kamienie milowe",
+      "Revoke": "Wycofanie kamieni milowych",
       "zero": "Kamieni milowych",
       "one": "Kamień milowy",
       "two": "Kamienie milowe",
