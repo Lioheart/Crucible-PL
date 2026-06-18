@@ -1407,7 +1407,7 @@
     },
     "PROPERTIES": {
       "Thrown": "Rzucana",
-      "ThrownTooltip":"Ten materiał eksploatacyjny jest przeznaczony do wyrzucenia."
+      "ThrownTooltip":"Ten materiał eksploatacyjny jest przeznaczony do rzucenia."
     },
     "SCROLL": {
       "ComponentBudget": "Ten zwój może zapewnić do {budget} magicznych komponentów. Wybierz, jakie składniki zapewnia ten zwój.",
