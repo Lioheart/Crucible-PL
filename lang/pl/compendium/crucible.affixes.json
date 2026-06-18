@@ -454,7 +454,7 @@
         "Negate Spellcraft": {
             "name": "Czaroznastwo negacji",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Negacja</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Negacji</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
-            "adjective": "Negacja"
+            "adjective": "Negacji"
         },
         "Nimbleness": {
             "name": "Zwinności",
