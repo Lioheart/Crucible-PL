@@ -2316,7 +2316,7 @@
     "Iconic": "Zaklęcie ikoniczne",
     "IconicPl": "Zaklęcia ikoniczne",
     "NameFormatAdj": "Zaklęcie {rune} {gesture}",
-    "NameFormatNoun": "{gesture} z runą {rune}"
+    "NameFormatNoun": "Zaklęcie {gesture} z runą {rune}"
   },
   "TALENT": {
     "ACTIONS": {
