@@ -569,7 +569,7 @@
         "Radiant Damage": {
             "name": "Obrażeń świetlistych",
             "description": "<p>Dodaje obrażenia typu <strong>Świetliste</strong> do ataków wykonywanych tą bronią. Dodatkowe obrażenia wynoszą 2 za każdy <strong>Stopień</strong> tego przyrostka II.</p><h3 class=\"divider\">Uwagi do playtestu</h3><p>Obecnie premia ta jest stosowana jako stałe dodatkowe obrażenia typu bazowego broni. W przyszłej aktualizacji będzie zadawać obrażenia jako <strong>Świetliste</strong>, sprawdzane oddzielnie względem odporności celu na <strong>Świetliste</strong> obrażenia.</p>",
-            "adjective": "Świetlistości"
+            "adjective": "Promienności"
         },
         "Radiant Resistance": {
             "name": "Odporność na świetliste obrażenia",
