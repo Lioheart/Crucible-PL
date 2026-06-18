@@ -594,7 +594,7 @@
         "React Spellcraft": {
             "name": "Czaroznastwo reagowania",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Reagowanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Reagowania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
-            "adjective": "Reagowanie"
+            "adjective": "Reagowania"
         },
         "Reinforcement": {
             "name": "Wzmocnienia",
