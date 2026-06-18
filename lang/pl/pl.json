@@ -585,7 +585,7 @@
       "Title": "Nasycenie afiksem"
     },
     "Throw": {
-      "NotGrappling": "Możesz rzucić tylko stworzeniem, którego przytrzymujesz."
+      "NotGrappling": "Możesz rzucić tylko stworzeniem, które przytrzymujesz."
     }
   },
   "ACTIVE_EFFECT": {
