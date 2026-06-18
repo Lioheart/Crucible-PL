@@ -1688,7 +1688,7 @@
       "Recover": "Odzyskaj {typeLabel}",
       "RecoverAllContent": "Podnieść wszystkie przedmioty upuszczone przez {actor}?",
       "RecoverAllTitle": "Odzyskaj upuszczone przedmioty",
-      "RecoverDetail": "Odzyskaj upuszczony {item}",
+      "RecoverDetail": "Odzyskaj upuszczony przedmiot: {item}",
       "UnEquip": "Zdejmij wyposażenie {typeLabel}",
       "UnEquipDetail": "Zdjęto {item}"
     },
