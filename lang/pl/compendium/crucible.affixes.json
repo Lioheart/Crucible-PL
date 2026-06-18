@@ -609,7 +609,7 @@
         "Reshape Spellcraft": {
             "name": "Czaroznastwo przekształcania",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Przekształcanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Przekształcania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
-            "adjective": "Przekształcanie"
+            "adjective": "Przekształcania"
         },
         "Returning": {
             "name": "Powracania",
