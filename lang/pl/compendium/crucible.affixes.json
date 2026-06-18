@@ -256,7 +256,7 @@
         "Elude Spellcraft": {
             "name": "Czaroznastwo unikania",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Unikanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Unikania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
-            "adjective": "Unikanie"
+            "adjective": "Omijania"
         },
         "Evasion": {
             "name": "Unikania",
