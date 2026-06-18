@@ -1758,7 +1758,7 @@
       "NotKnown": "Nieznane",
       "Parry": "Parowanie {parry}",
       "Range": "Zasięg {range}",
-      "Stackable": "Grupowalna",
+      "Stackable": "Grupowalny",
       "Unequipped": "Nie wyposażony",
       "Unique": "Unikalny"
     },
