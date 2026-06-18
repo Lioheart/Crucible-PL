@@ -416,9 +416,9 @@
             "adjective": "Runy życia"
         },
         "Luminary": {
-            "name": "Świetlistości",
+            "name": "Świetlności",
             "description": "<p>Zyskujesz korzyści do <strong>Skomponowanych</strong> akcji, które zawierają <strong>Fleksję</strong>. Liczba uzyskanych korzyści jest równa <strong>Stopniowi</strong> tego przyrostka I. Tylko jeden afiks może zapewniać tę korzyść.</p>",
-            "adjective": "Świetlistości"
+            "adjective": "Świetlności"
         },
         "Luminous": {
             "name": "Świetlisty",
