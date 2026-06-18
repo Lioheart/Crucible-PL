@@ -266,7 +266,7 @@
         "Extend Spellcraft": {
             "name": "Czaroznastwo rozszerzania",
             "description": "<p>Ten przedmiot jest nasycony esencją czaroznawstwa <strong>Rozszerzanie</strong>. Podczas noszenia posiadacz instynktownie zyskuje znajomość fleksji <strong>Rozszerzania</strong>, co pozwala mu komponować zaklęcia z jego użyciem, nawet jeśli nie nauczył się tej fleksji poprzez talent.</p>",
-            "adjective": "Rozszerzanie"
+            "adjective": "Rozszerzania"
         },
         "Fan Spellcraft": {
             "name": "Czaroznastwo wachlarza",
