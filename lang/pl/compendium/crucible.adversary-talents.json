@@ -237,7 +237,7 @@
             }
         },
         "Extended Breath": {
-            "name": "Wydłużony oddech",
+            "name": "Wydłużone zionięcie",
             "description": "<p>@ref[actor.name]{Stworzenie} może wstrzymywać oddech przez <strong>15 minut</strong>.</p>"
         },
         "False Appearance": {
