@@ -2759,7 +2759,7 @@
       "ReturningTooltip": "Ta broń została zaprojektowana w sposób magiczny lub mechaniczny tak, aby po rzuceniu powróciła do ręki użytkownika. Wykorzystanie akcji Rzucenie bronią z tą bronią nie powoduje jej Upuszczenia.",
       "Thrown": "Rzucana",
       "ThrownTooltip": "Broń ta została zaprojektowana tak, aby nadawała się do rzucania i nie podlega karze Zgub, która zazwyczaj jest nakładana na akcję rzucania bronią.",
-      "UntrainedTooltip": "Twoja postać nie posiada {training} w posługiwaniu się tą bronią i otrzymuje karę -4 do umiejętności podczas ataku tą bronią.",
+      "UntrainedTooltip": "Twoja postać nie posiada treningu w posługiwaniu się bronią typu {training} i otrzymuje karę -4 do umiejętności podczas ataku tą bronią.",
       "Versatile": "Wszechstronna",
       "VersatileTooltip": "Broń tę można dzierżyć jedną lub dwiema rękami i przełączać się między tymi trybami bez ponoszenia kosztów Punktów Akcji. Podczas dzierżenia broni dwiema rękami zyskuje ona dodatkowe +2 do podstawowych obrażeń, ale uderzenie kosztuje 1 dodatkowy Punkt Akcji."
     }
