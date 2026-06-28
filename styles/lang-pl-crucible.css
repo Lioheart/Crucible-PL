@@ -22,3 +22,14 @@ body {
 .crucible .line-item .title h4 {
     white-space: wrap;
 }
+
+/* Ukrycie ikony dla składni @[feet N] */
+enriched-content.lang-pl-crucible-no-icon::before {
+    display: none !important;
+}
+
+/* Metry na linijce ruchu */
+.lang-pl-crucible-meters {
+    opacity: 0.8;
+    font-size: 0.88em;
+}

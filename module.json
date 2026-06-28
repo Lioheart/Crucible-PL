@@ -12,7 +12,8 @@
   "esmodules": [
     "babele-register.js",
     "src/original-name.js",
-    "src/heroism-reroll.mjs"
+    "src/heroism-reroll.mjs",
+    "src/metric-distances.mjs"
   ],
   "styles": [
     "styles/lang-pl-crucible.css",
