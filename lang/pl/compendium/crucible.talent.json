@@ -1398,7 +1398,7 @@
             "description": "<p>Twoja szybka reakcja pozwala wykorzystać krótkie okazje. Możesz wykonać <strong>Atak wycofujący</strong> za pomocą gestu <strong>Dotyku</strong> zamiast ataku bronią do walki wręcz.</p>"
         },
         "Overwatch": {
-            "name": "Obserwacja",
+            "name": "Czuwający",
             "description": "<p>Masz pole bitwy na celowniku, gotowy ukarać każdego wroga, który znajdzie się w zasięgu twojego ognia. Rzucający zaklęcia przed tobą ryzykuje nie tylko trafienie z twojej broni, ale także przerwanie swojej inkantacji.</p>",
             "actions": {
                 "Covering Fire": {
