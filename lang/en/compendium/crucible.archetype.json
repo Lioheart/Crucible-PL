@@ -128,6 +128,10 @@
             "name": "Pack Member",
             "description": "Beasts that hunt in packs."
         },
+        "Prankster": {
+            "name": "Prankster",
+            "description": "<p>Humanoid creatures who thrive on nuisance, annoyance, trickery, and deception.</p>"
+        },
         "Priest": {
             "name": "Priest",
             "description": "<p>Devout servants of the gods who derive their power through their faith and devotion to their deity.</p>"

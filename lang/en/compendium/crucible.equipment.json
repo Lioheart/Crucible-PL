@@ -42,7 +42,7 @@
             "actions": {
                 "Alchemist's Fire": {
                     "name": "Alchemist's Fire",
-                    "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "description": "<p>You hurl the @ref[item.name], dealing @Rule[action.weakened] immediate <strong>Fire</strong> damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Alchemist's Fire"
@@ -92,7 +92,7 @@
             "actions": {
                 "Antitoxin": {
                     "name": "Antitoxin",
-                    "description": "<p>Consuming this @ref[name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
+                    "description": "<p>Consuming this @ref[item.name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[item.name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
                 }
             }
         },
@@ -142,7 +142,7 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Blast Flask",
-                    "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
+                    "description": "<p>You light and throw the @ref[item.name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion who fail to avoid the attack. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
                 }
             }
         },
@@ -191,7 +191,7 @@
             "actions": {
                 "Caustic Phial": {
                     "name": "Caustic Phial",
-                    "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+                    "description": "<p>You fling the @ref[item.name], dealing @Rule[action.weakened] immediate <strong>Acid</strong> damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of corroding damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Caustic Phial"
@@ -252,7 +252,7 @@
             "actions": {
                 "Choking Ampoule": {
                     "name": "Choking Ampoule",
-                    "description": "<p>You hurl the @ref[name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
+                    "description": "<p>You hurl the @ref[item.name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[item.name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Choking Ampoule"
@@ -374,7 +374,7 @@
             "actions": {
                 "Electrocharge Ampoule": {
                     "name": "Electrocharge Ampoule",
-                    "description": "<p>You throw the @ref[name], dealing weakened <strong>Electricity </strong>damage to all enemies in the radius of the discharge and leaving them briefly @Condition[staggered]. The radius of the <strong>Discharge</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
+                    "description": "<p>You throw the @ref[item.name], dealing weakened <strong>Electricity </strong>damage to all enemies in the radius of the discharge who fail to avoid the attack and leaving them briefly @Condition[staggered]. The radius of the <strong>Discharge</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
                     "effects": [
                         {
                             "name": "Electrocharge Ampoule"
@@ -452,12 +452,12 @@
                 "private": "<p></p><p>Primarily used to rapidly cool metallurgical compounds in advanced smithing, these alchemical phials can be quite dangerous to living tissue if exposed for a long period of time.</p>"
             },
             "actions": {
-                "Frostdrop Flask": {
-                    "name": "Frostdrop Flask",
-                    "description": "<p>You throw the @ref[name], dealing weakened <strong>Cold </strong>damage to all enemies in the radius of the explosion and causing them to be @Condition[slowed] briefly. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
+                "Frostdrop Phial": {
+                    "name": "Frostdrop Phial",
+                    "description": "<p>You throw the @ref[item.name], dealing weakened <strong>Cold </strong>damage to all enemies in the radius of the explosion who fail to avoid the attack and causing them to be @Condition[slowed] briefly. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
                     "effects": [
                         {
-                            "name": "Frostdrop Flask"
+                            "name": "Frostdrop Phial"
                         }
                     ]
                 }
@@ -471,7 +471,7 @@
             "actions": {
                 "Summon Flame Elemental": {
                     "name": "Summon Flame Elemental",
-                    "description": "<p>The @ref[name] shatters in a burst of flame, leaving in its place a fiery elemental. Elementals summoned by this gem remain for 6 Rounds (1 minute).</p><ul><li><p><strong>Shoddy - </strong>No elemental is summoned</p></li><li><p><strong>Standard </strong>- Mote</p></li><li><p><strong>Fine</strong> - Sprite</p></li><li><p><strong>Superior</strong> - Visitor</p></li><li><p><strong>Masterwork - </strong>Wanderer</p></li></ul>"
+                    "description": "<p>The @ref[item.name] shatters in a burst of flame, leaving in its place a fiery elemental. Elementals summoned by this gem remain for 6 Rounds (1 minute).</p><ul><li><p><strong>Shoddy - </strong>No elemental is summoned</p></li><li><p><strong>Standard </strong>- Mote</p></li><li><p><strong>Fine</strong> - Sprite</p></li><li><p><strong>Superior</strong> - Visitor</p></li><li><p><strong>Masterwork - </strong>Wanderer</p></li></ul>"
                 }
             }
         },
@@ -489,7 +489,7 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Activate Illumination",
-                            "description": "<p>You speak the command word and the @ref[name] kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim</p></li></ul> <p>The light persists until you dismiss the effect or remove the item.</p>"
+                            "description": "<p>You speak the command word and the @ref[item.name]{item} kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim light.</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim light.</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim light.</p></li></ul><p>The light persists until you dismiss the effect or remove the item.</p>"
                         }
                     }
                 }
@@ -732,7 +732,7 @@
             "actions": {
                 "Light Lantern": {
                     "name": "Light Lantern",
-                    "description": "<p>You ignite the @ref[name], producing steady illumination in a wide radius. This action consumes one unit of @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Lantern Oil} from your inventory; the burn duration depends on the quality of the oil consumed:</p><ul><li><p><strong>Shoddy</strong> - 1 hour</p></li><li><p><strong>Standard</strong> - 4 hours</p></li><li><p><strong>Fine</strong> - 12 hours</p></li><li><p><strong>Superior</strong> - 24 hours</p></li><li><p><strong>Masterwork</strong> - 48 hours</p></li></ul>",
+                    "description": "<p>You ignite the @ref[item.name], producing steady illumination in a wide radius. This action consumes one unit of @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Lantern Oil} from your inventory; the burn duration depends on the quality of the oil consumed:</p><ul><li><p><strong>Shoddy</strong> - 1 hour</p></li><li><p><strong>Standard</strong> - 4 hours</p></li><li><p><strong>Fine</strong> - 12 hours</p></li><li><p><strong>Superior</strong> - 24 hours</p></li><li><p><strong>Masterwork</strong> - 48 hours</p></li></ul>",
                     "effects": [
                         {
                             "name": "Lantern"
@@ -857,7 +857,7 @@
             "actions": {
                 "Ingest Paralytic": {
                     "name": "Ingest Paralytic",
-                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": [
                         {
                             "name": "Paralytic Toxin"
@@ -922,7 +922,7 @@
             "actions": {
                 "Ingest Poison": {
                     "name": "Ingest Poison",
-                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": [
                         {
                             "name": "Poisoned"
@@ -1341,7 +1341,7 @@
             "actions": {
                 "Light Torch": {
                     "name": "Light Torch",
-                    "description": "<p>You ignite the @ref[name], producing flickering illumination in a wide radius for one hour. The torch is consumed by this action and cannot be used again, but its light remains until it burns out.</p>",
+                    "description": "<p>You ignite the @ref[item.name], producing flickering illumination in a wide radius for one hour. The torch is consumed by this action and cannot be used again, but its light remains until it burns out.</p>",
                     "effects": [
                         {
                             "name": "Torch"

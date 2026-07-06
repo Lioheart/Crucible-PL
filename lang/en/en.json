@@ -241,11 +241,11 @@
       "ItemDivested": "Divested"
     },
     "TABS": {
-      "Description": "Description",
-      "Effects": "Effects",
-      "Hooks": "Hooks",
-      "Target": "Target",
-      "Usage": "Usage"
+      "description": "Description",
+      "effects": "Effects",
+      "hooks": "Hooks",
+      "target": "Target",
+      "usage": "Usage"
     },
     "TAG": {
       "Accurate": "Accurate",
@@ -487,6 +487,8 @@
       "OncePerRound": "You may only perform the {action} action once per round.",
       "OncePerTurn": "You may only perform the {action} action once per turn.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
+      "RequiresGesture": "You must know the Gesture required by this action.",
+      "RequiresInflection": "You must know the Inflection required by this action.",
       "RequiresMelee": "You must have melee weapons equipped to use this action.",
       "RequiresNatural": "This action requires use of a natural weapon.",
       "RequiresOffhand": "This action requires an offhand weapon equipped.",
@@ -498,7 +500,9 @@
       "RequireTemplate": "You must place a Measured Template to indicate the area of effect of {action}.",
       "Restrained": "You may not move while Restrained!",
       "Silenced": "You cannot use this action while Silenced.",
+      "TargetTooLarge": "Target \"{target}\" is too large for {action}.",
       "UnimplementedTarget": "Automation for target type {type} for action {name} is not yet supported, you must manually target affected tokens.",
+      "WeaponDropped": "Your weapon has been dropped and must be retrieved in order to use this action.",
       "WrongMovementToken": "You must move the token performing this action."
     },
     "Action": "Action",
@@ -583,6 +587,9 @@
       "Required": "You must choose both an item and an affix.",
       "TierTooHigh": "That affix cannot be imbued at Tier 1.",
       "Title": "Imbue Affix"
+    },
+    "Swallow": {
+      "AlreadySwallowing": "You are already Swallowing another creature."
     },
     "Throw": {
       "NotGrappling": "You may only Throw a creature you are Grappling."
@@ -939,14 +946,14 @@
       "Resources": "Resources"
     },
     "TABS": {
-      "Actions": "Actions",
-      "Attributes": "Attributes",
-      "Biography": "Biography",
-      "Effects": "Effects",
-      "Inventory": "Inventory",
-      "Skills": "Skills",
-      "Spells": "Spells",
-      "Talents": "Talents"
+      "actions": "Actions",
+      "attributes": "Attributes",
+      "biography": "Biography",
+      "effects": "Effects",
+      "inventory": "Inventory",
+      "skills": "Skills",
+      "spells": "Spells",
+      "talents": "Talents"
     },
     "WARNINGS": {
       "InsufficientCurrency": "Insufficient currency to deduct {delta} {denom}",
@@ -1344,6 +1351,10 @@
       "maintenance": {
         "cost": {
           "label": "Maintenance Cost"
+        },
+        "hands": {
+          "hint": "The number of hands occupied while this effect is maintained, reducing hands free for weapons and spellcasting.",
+          "label": "Hands Occupied"
         },
         "label": "Maintenance"
       },
@@ -1785,15 +1796,15 @@
       "Type": "Equipment Type"
     },
     "TABS": {
-      "Actions": "Actions",
-      "Affixes": "Affixes",
-      "Configuration": "Configuration",
-      "Description": "Description",
-      "Equipment": "Equipment",
-      "Hooks": "Hooks",
-      "Secrets": "Secrets",
-      "Spells": "Spells",
-      "Talents": "Talents"
+      "actions": "Actions",
+      "affixes": "Affixes",
+      "config": "Configuration",
+      "description": "Description",
+      "equipment": "Equipment",
+      "hooks": "Hooks",
+      "secrets": "Secrets",
+      "spells": "Spells",
+      "talents": "Talents"
     },
     "WARNINGS": {
       "CombineDifferent": "{item} cannot be combined with {target} because the items are not identical.",
@@ -2761,7 +2772,7 @@
       "ThrownTooltip": "This weapon is designed to be suitable for throwing and does not suffer the Banes penalty that is usually applied to the Throw Weapon action.",
       "UntrainedTooltip": "Your character lacks {training} weapon training and suffers a -4 Skill penalty when attacking with this weapon.",
       "Versatile": "Versatile",
-      "VersatileTooltip": "This weapon can be wielded with either one or two hands, and switched between these modes without any Action Point cost. While wielded in two hands, the weapon gains an additional +2 base damage but incurs 1 additional Action cost to Strike."
+      "VersatileTooltip": "This weapon can be wielded with either one or two hands, switching between grips without any Action Point cost. In its alternate grip it functions as the corresponding weapon of its kind: a one-handed weapon becomes the larger two-handed weapon, and a two-handed weapon becomes the smaller one-handed weapon."
     }
   }
 }

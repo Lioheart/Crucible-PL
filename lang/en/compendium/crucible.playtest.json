@@ -341,7 +341,7 @@
                         },
                         "Gesture: Create": {
                             "name": "Gesture: Create",
-                            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+                            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a@UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                         },
                         "Gesture: Arrow": {
                             "name": "Gesture: Arrow",
@@ -498,7 +498,7 @@
                         },
                         "Bulwark": {
                             "name": "Bulwark",
-                            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
+                            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the @Action[default defend] action at a reduced cost of 1 Action Point.</p>"
                         },
                         "Armored Efficiency": {
                             "name": "Armored Efficiency",
@@ -610,7 +610,7 @@
                             "actions": {
                                 "Ferocious Leap": {
                                     "name": "Ferocious Leap",
-                                    "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
+                                    "description": "<p>You <strong>Jump</strong> up to 10 feet, delivering a <strong>Strike</strong> against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
                                 }
                             }
                         },
@@ -936,7 +936,7 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Flame</strong> scales with as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                         },
                         "Gesture: Pulse": {
                             "name": "Gesture: Pulse",
@@ -952,7 +952,7 @@
                         },
                         "Lightbringer": {
                             "name": "Lightbringer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Illumination</strong> scales with as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                         },
                         "Awareness Novice": {
                             "name": "Awareness Novice",
@@ -979,7 +979,7 @@
                         },
                         "Flame Proficiency": {
                             "name": "Flame Proficiency",
-                            "description": "<p>You have fluency in weaving spellcraft using the Rune of Flame. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Enkindle</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
+                            "description": "<p>You have fluency in weaving spellcraft using the Rune of Flame. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle] action, expanding its effectiveness or including new options for how to use it.</p>"
                         },
                         "Rune: Kinesis": {
                             "name": "Rune: Kinesis",
@@ -1125,7 +1125,7 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Flame</strong> scales with as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                         },
                         "Gesture: Blast": {
                             "name": "Gesture: Blast",
@@ -1143,7 +1143,7 @@
                         },
                         "Rune: Storm": {
                             "name": "Rune: Storm",
-                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
                             "actions": {
                                 "Energize": {
                                     "name": "Energize",
@@ -1303,7 +1303,7 @@
                             "actions": {
                                 "Antitoxin": {
                                     "name": "Antitoxin",
-                                    "description": "<p>Consuming this @ref[name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
+                                    "description": "<p>Consuming this @ref[item.name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[item.name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
                                 }
                             }
                         },
@@ -1315,7 +1315,7 @@
                             "actions": {
                                 "Ingest Poison": {
                                     "name": "Ingest Poison",
-                                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                                     "effects": [
                                         {
                                             "name": "Poisoned"
@@ -1484,7 +1484,7 @@
                         },
                         "Bulwark": {
                             "name": "Bulwark",
-                            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
+                            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the @Action[default defend] action at a reduced cost of 1 Action Point.</p>"
                         },
                         "Testudo": {
                             "name": "Testudo",
@@ -1697,7 +1697,7 @@
                             "actions": {
                                 "Pinning Shot": {
                                     "name": "Pinning Shot",
-                                    "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes @Condition[restrained] until the end of their next Turn.</p>",
+                                    "description": "<p>You <strong>Strike</strong> from distance. The attack is @Rule[action.difficult], however if your target is hit they become @Condition[restrained] until the end of their next <strong>Turn</strong>.</p>",
                                     "effects": [
                                         {
                                             "name": "Pinning Shot"
@@ -1801,7 +1801,7 @@
                         },
                         "Surgeweaver": {
                             "name": "Surgeweaver",
-                            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half the ability score your <strong>Rune of Storm</strong> scales with as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                         },
                         "Awareness Novice": {
                             "name": "Awareness Novice",
@@ -1819,7 +1819,7 @@
                         },
                         "Subtle Extrication": {
                             "name": "Subtle Extrication",
-                            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Reactive Strike</strong> against you is performed with <strong>+1 Bane</strong>.</p>"
+                            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any @Action[default reactiveStrike] against you is performed with <strong>+1 Bane</strong>.</p>"
                         },
                         "Focused Anticipation": {
                             "name": "Focused Anticipation",
@@ -1834,7 +1834,7 @@
                             "actions": {
                                 "Blast Flask": {
                                     "name": "Blast Flask",
-                                    "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
+                                    "description": "<p>You light and throw the @ref[item.name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion who fail to avoid the attack. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
                                 }
                             }
                         },
@@ -1856,12 +1856,18 @@
                         },
                         "Rune: Storm": {
                             "name": "Rune: Storm",
-                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
                             "actions": {
                                 "Energize": {
                                     "name": "Energize",
                                     "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                                 }
+                            }
+                        },
+                        "Pistol": {
+                            "name": "Pistol",
+                            "description": {
+                                "public": "<p>An early black powder firearm with a single, thunderous shot, the flintlock pistol is a gambler’s weapon—deadly in a flash, but slow to reload in the chaos of battle.</p>"
                             }
                         },
                         "Perspicacity": {
@@ -1919,7 +1925,7 @@
                         },
                         "Gesture: Create": {
                             "name": "Gesture: Create",
-                            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+                            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a@UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                         },
                         "Inflection: Compose": {
                             "name": "Inflection: Compose",
@@ -1931,7 +1937,7 @@
                         },
                         "Rimecaller": {
                             "name": "Rimecaller",
-                            "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half the ability score your <strong>Rune of Frost</strong> scales with as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
                         },
                         "Recognize Spellcraft": {
                             "name": "Recognize Spellcraft",
@@ -1980,11 +1986,11 @@
                         },
                         "Surgeweaver": {
                             "name": "Surgeweaver",
-                            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half the ability score your <strong>Rune of Storm</strong> scales with as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                         },
                         "Mesmer": {
                             "name": "Mesmer",
-                            "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half the ability score your <strong>Rune of Illusion</strong> scales with as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
                         },
                         "Rune: Kinesis": {
                             "name": "Rune: Kinesis",
@@ -2038,7 +2044,7 @@
                         },
                         "Gesture: Conjure": {
                             "name": "Gesture: Conjure",
-                            "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a <strong>Flame Visitor</strong>.</p>"
+                            "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a@UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
                         },
                         "Stiletto": {
                             "name": "Stiletto",
@@ -2048,7 +2054,7 @@
                         },
                         "Rune: Storm": {
                             "name": "Rune: Storm",
-                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
                             "actions": {
                                 "Energize": {
                                     "name": "Energize",
@@ -2122,7 +2128,7 @@
                         },
                         "Dustbinder": {
                             "name": "Dustbinder",
-                            "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Earth</strong> scales with as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
                         },
                         "Talisman Weapon Training": {
                             "name": "Talisman Weapon Training",
@@ -2175,11 +2181,11 @@
                         },
                         "Inspirator": {
                             "name": "Inspirator",
-                            "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Soul</strong> scales with as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
                         },
                         "Mender": {
                             "name": "Mender",
-                            "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
+                            "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Life</strong> scales with as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
                         },
                         "Arcana Novice": {
                             "name": "Arcana Novice",
@@ -2306,10 +2312,6 @@
                             "name": "Strong Grip",
                             "description": "<p>Your grasp of your weaponry is firm and unyielding. While wielding a two-handed weapon that scales with Strength you may cast spells which require two hands, and attempts to Disarm you are made with +2 Banes. </p><p>Additionally, you may wield a one-handed Heavy weapon in your off-hand.</p>"
                         },
-                        "Blood Frenzy": {
-                            "name": "Blood Frenzy",
-                            "description": "<p>Your battle lust spurs you to feats of heightened action. When you achieve a <strong>Critical Hit</strong> that deals damage to Health you immediately gain +1 Action. This benefit may only happen once per Round.</p>"
-                        },
                         "Executioner's Strike": {
                             "name": "Executioner's Strike",
                             "description": "<p>You deliver a single decisive strike against a wounded enemy.</p>",
@@ -2416,16 +2418,6 @@
                             "name": "Armored Efficiency",
                             "description": "<p>You are trained in wearing the heaviest types of armor while still retaining mobility. You are able to use a free Movement action once per Turn while wearing Heavy armor.</p>"
                         },
-                        "Penetrating Throw": {
-                            "name": "Penetrating Throw",
-                            "description": "<p>You can hurl your weapon with such ferocity that it strikes all targets in a direct line.</p>",
-                            "actions": {
-                                "Penetrating Throw": {
-                                    "name": "Penetrating Throw",
-                                    "description": "<p>You perform a <strong>Throw</strong> weapon strike which penetrates to hit all enemies in a straight line.</p>"
-                                }
-                            }
-                        },
                         "Stiletto": {
                             "name": "Stiletto",
                             "description": {
@@ -2444,6 +2436,16 @@
                                             "name": "Adrenaline Surge"
                                         }
                                     ]
+                                }
+                            }
+                        },
+                        "Ferocious Leap": {
+                            "name": "Ferocious Leap",
+                            "description": "<p>You leap powerfully into battle to deliver a punishing blow to a nearby enemy with your mainhand weapon.</p>",
+                            "actions": {
+                                "Ferocious Leap": {
+                                    "name": "Ferocious Leap",
+                                    "description": "<p>You <strong>Jump</strong> up to 10 feet, delivering a <strong>Strike</strong> against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
                                 }
                             }
                         }

@@ -89,7 +89,7 @@
             "actions": {
                 "Alchemical Resolve": {
                     "name": "Alchemical Resolve",
-                    "description": "<p>You rapidly bolster the Morale of an ally within 4 feet by applying vapours. Perform a <strong>Medicine</strong> check against the target's <strong>Madness Threshold</strong>. Successful checks restore <strong>Morale</strong>.</p>"
+                    "description": "<p>You rapidly bolster the Morale of an ally within 4 feet by applying vapours. Perform a <strong>Medicine</strong> check against the target's <strong>Rallying Threshold</strong>. Successful checks restore <strong>Morale</strong>.</p>"
                 }
             }
         },
@@ -352,7 +352,7 @@
         },
         "Bulwark": {
             "name": "Bulwark",
-            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
+            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the @Action[default defend] action at a reduced cost of 1 Action Point.</p>"
         },
         "Cadence": {
             "name": "Cadence",
@@ -360,7 +360,7 @@
         },
         "Carefree": {
             "name": "Carefree",
-            "description": "<p>You are able to compartmentalize and brush off setbacks, providing a remarkable ability to recover from damage to your Morale.</p>\n<p>Your <strong>Madness Threshold</strong> is reduced by 1, making you easier to heal.</p>"
+            "description": "<p>You are able to compartmentalize and brush off setbacks, providing a remarkable ability to recover from damage to your Morale.</p>\n<p>Your <strong>Rallying Threshold</strong> is reduced by 1, making you easier to heal.</p>"
         },
         "Champion": {
             "name": "Champion",
@@ -398,7 +398,7 @@
             "actions": {
                 "Clarify Intent": {
                     "name": "Clarify Intent",
-                    "description": "<p>You explain your intentions to an ally within 12 feet. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.</p>",
+                    "description": "<p>You explain your intentions to an ally within 12 feet. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made during their next turn.</p>",
                     "effects": [
                         {
                             "name": "Clarify Intent"
@@ -423,7 +423,7 @@
             "actions": {
                 "Combat Medicine": {
                     "name": "Combat Medicine",
-                    "description": "<p>You rapidly treat the wounds of an ally within 4 feet. Perform a <strong>Medicine Check</strong> against the target's Wounds Threshold. Your ally's Health is increased by the amount of the Roll in excess of the threshold.</p>"
+                    "description": "<p>You rapidly treat the wounds of an ally within 4 feet. Perform a <strong>Medicine Check</strong> against the target's Healing Threshold. Your ally's Health is increased by the amount of the Roll in excess of the threshold.</p>"
                 }
             }
         },
@@ -441,7 +441,7 @@
         },
         "Control Proficiency": {
             "name": "Control Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Control. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Motivate </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Control. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeControl00000 motivate] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Cooking Journeyman": {
             "name": "Cooking Journeyman",
@@ -497,7 +497,7 @@
         },
         "Death Proficiency": {
             "name": "Death Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Death. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Ennervate </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Death. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeDeath0000000 ennervate] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Deception Adept": {
             "name": "Deception Adept",
@@ -595,7 +595,7 @@
         },
         "Disarming Strike": {
             "name": "Disarming Strike",
-            "description": "<p>A martial technique designed to disarm your opponent, forcing them to drop an object held in one of their hands.</p>",
+            "description": "<p>A martial technique designed to disarm your opponent, forcing them to drop an object held in their main hand.</p>",
             "actions": {
                 "Disarming Strike": {
                     "name": "Disarming Strike",
@@ -654,11 +654,11 @@
         },
         "Dustbinder": {
             "name": "Dustbinder",
-            "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Earth</strong> scales with as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
         },
         "Earth Proficiency": {
             "name": "Earth Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Earth. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Mould</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Earth. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeEarth0000000 mould] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Enchanting Journeyman": {
             "name": "Enchanting Journeyman",
@@ -699,7 +699,7 @@
         },
         "Extoll Deeds": {
             "name": "Extoll Deeds",
-            "description": "You inspire courage within your allies by extolling the heroic deeds of a companion. You may react by composing a verse, making a quip, or shouting a battle cry when an ally you can see <strong>Incapacitates</strong> or achieves a <strong>Critical Hit</strong> against an enemy creature. The celebration of these heroic deeds restores the Morale of your allies within 6 spaces.",
+            "description": "You inspire courage within your allies by extolling the heroic deeds of a companion. You may react by composing a verse, making a quip, or shouting a battle cry when an ally you can see <strong>Incapacitates</strong> or achieves a <strong>Critical Hit</strong> against an enemy creature. The celebration of these heroic deeds restores the Morale of your allies within 10 feet.",
             "actions": {
                 "Extoll Deeds": {
                     "name": "Extoll Deeds",
@@ -738,13 +738,13 @@
             "actions": {
                 "Ferocious Leap": {
                     "name": "Ferocious Leap",
-                    "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
+                    "description": "<p>You <strong>Jump</strong> up to 10 feet, delivering a <strong>Strike</strong> against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
                 }
             }
         },
         "Flame Proficiency": {
             "name": "Flame Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Flame. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Enkindle</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Flame. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Flaming Arrow": {
             "name": "Flaming Arrow",
@@ -809,7 +809,7 @@
         },
         "Frost Proficiency": {
             "name": "Frost Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Frost. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Condense </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Frost. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeFrost0000000 condense] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Fulcrum": {
             "name": "Fulcrum",
@@ -824,11 +824,11 @@
         },
         "Gambit": {
             "name": "Gambit",
-            "description": "<p>Some fight by the book, you fight by the odds. Every exchange is a wager: you read your opponent's intent, make risky bets to goad them into overcommitting, then stake everything on a game-changing payout. You trust your gut, wits, and some arcane chicanery to tilt the odds in your favor, gaining the following benefits:</p><ul><li><p><em>The Tell.</em> You see a blow before it is thrown. Your <strong>Dodge</strong> defense is calculated using your <strong>Intellect</strong> instead of <strong>Dexterity</strong>, if it is higher.</p></li><li><p><em>Loaded Dice.</em> Fortune bends to those who help it along. Once per round, the first time you roll a 1 on any die, that die is rerolled and you keep the new result.</p></li><li><p><em>Ante Up.</em> When you make a @Action[default strike], you can choose to intentionally add <strong>Banes</strong> to it. If the Strike hits, a special <strong>Gambit</strong> effect increments according to the number of Banes you wagered. These charges last until the end of Combat or until spent.</p></li></ul>",
+            "description": "<p>Some fight by the book, you fight by the odds. Every exchange is a wager: you read your opponent's intent, make risky bets to goad them into overcommitting, then stake everything on a game-changing payout. You trust your gut, wits, and some arcane chicanery to tilt the odds in your favor, gaining the following benefits:</p><ul><li><p><em>The Tell.</em> You see a blow before it is thrown. Your <strong>Dodge</strong> defense is calculated using your <strong>Intellect</strong> instead of <strong>Dexterity</strong>, if your <strong>Intellect</strong> is higher.</p></li><li><p><em>Loaded Dice.</em> Fortune bends to those who help it along. Once per round, the first time you roll a 1 on any die, that die is rerolled and you keep the new result.</p></li><li><p><em>Ante Up.</em> When you make a @Action[default strike], you can choose to wager additional <strong>Banes</strong> against yourself. If the Strike hits an enemy, you gain <strong>Gambit</strong> charges equal to the number of Banes you wagered. These charges accumulate until the end of Combat or until spent.</p></li></ul>",
             "actions": {
                 "All-In": {
                     "name": "All-In",
-                    "description": "<p>Every gamble you have made comes due, and you collect all at once. The next single attack or check rolls the maximum possible result on all of its dice. You can activate this action by spending either 6 <strong>Gambit</strong> charges, or 1 <strong>Heroism</strong>.</p>"
+                    "description": "<p>Every gamble you have made comes due, and you collect all at once. The next attack or check you make this turn rolls the maximum possible result on every die in its pool. If that action makes more than one roll, only the first is maximized. You can activate this action by spending either 6 <strong>Gambit</strong> charges or 1 <strong>Heroism</strong>.</p>"
                 }
             }
         },
@@ -858,11 +858,11 @@
         },
         "Gesture: Conjure": {
             "name": "Gesture: Conjure",
-            "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a <strong>Flame Visitor</strong>.</p>"
+            "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a@UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
         },
         "Gesture: Create": {
             "name": "Gesture: Create",
-            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+            "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a@UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
         },
         "Gesture: Fan": {
             "name": "Gesture: Fan",
@@ -937,7 +937,7 @@
             "actions": {
                 "Headbutt": {
                     "name": "Headbutt",
-                    "description": "<p>Make an unarmed <strong>Strike</strong> against the <strong>Fortitude</strong> defense of an adjacent enemy. If your <strong>Initiative</strong> is superior to that of your target, you gain <strong>+1 Boon</strong> to this attack.</p><p>The attack is <strong>Difficult</strong> and only deals <strong>Weakened</strong> damage, but if successful it inflicts the @Condition[staggered] for one round.</p><p>This action always uses an Unarmed weapon, even if your weapon slots are otherwise occupied.</p>",
+                    "description": "<p>Make an unarmed <strong>Strike</strong> against the <strong>Fortitude</strong> defense of an adjacent enemy. If your <strong>Initiative</strong> is superior to that of your target, you gain <strong>+1 Boon</strong> to this attack.</p><p>The attack is <strong>Difficult</strong> and only deals @Rule[action.weakened] damage, but if successful it inflicts the @Condition[staggered] for one round.</p><p>This action always uses an Unarmed weapon, even if your weapon slots are otherwise occupied.</p>",
                     "effects": [
                         {
                             "name": "Headbutt"
@@ -985,11 +985,11 @@
         },
         "Illumination Proficiency": {
             "name": "Illumination Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Illumination. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Reveal</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Illumination. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeIllumination reveal] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Illusion Proficiency": {
             "name": "Illusion Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Illusion. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Seeming </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Illusion. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeIllusion0000 seeming] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Impenetrable Guard": {
             "name": "Impenetrable Guard",
@@ -1055,7 +1055,7 @@
         },
         "Inspirator": {
             "name": "Inspirator",
-            "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Soul</strong> scales with as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspire Heroism",
@@ -1195,11 +1195,11 @@
         },
         "Kinesis Proficiency": {
             "name": "Kinesis Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Kinesis. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Propel </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Kinesis. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Kineturge": {
             "name": "Kineturge",
-            "description": "<p>You are highly skilled in weaving the Rune of Kinesis. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[bleeding] condition.</p><p>The Bleeding effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> ability score as additional <strong>Piercing</strong> damage to <strong>Health</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Kinesis. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[bleeding] condition.</p><p>The Bleeding effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Kinesis</strong> scales with as additional <strong>Piercing</strong> damage to <strong>Health</strong>.</p>"
         },
         "Last Stand": {
             "name": "Last Stand",
@@ -1241,7 +1241,7 @@
         },
         "Life Proficiency": {
             "name": "Life Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Life. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Blossom </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Life. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeLife00000000 bloom] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Light Weapon Proficiency": {
             "name": "Light Weapon Proficiency",
@@ -1259,7 +1259,7 @@
         },
         "Lightbringer": {
             "name": "Lightbringer",
-            "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Illumination</strong> scales with as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
         },
         "Mark Prey": {
             "name": "Mark Prey",
@@ -1312,7 +1312,7 @@
         },
         "Mender": {
             "name": "Mender",
-            "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals the ability score your <strong>Rune of Life</strong> scales with as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Mental Fortress",
@@ -1320,7 +1320,7 @@
         },
         "Mesmer": {
             "name": "Mesmer",
-            "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half the ability score your <strong>Rune of Illusion</strong> scales with as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
         },
         "Mnemonic Realization": {
             "name": "Mnemonic Realization",
@@ -1358,7 +1358,7 @@
         },
         "Necromancer": {
             "name": "Necromancer",
-            "description": "<p>You are highly skilled in weaving the Rune of Death. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[decaying] condition.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Presence</strong> score as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Death. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[decaying] condition.</p><p>The Decaying effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Death</strong> scales with as <strong>Corruption</strong> damage to <strong>Health</strong> each Round.</p>"
         },
         "Never Yield": {
             "name": "Never Yield",
@@ -1377,7 +1377,7 @@
         },
         "Oblivion Proficiency": {
             "name": "Oblivion Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Oblivion. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Erase </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Oblivion. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeOblivion0000 erase] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Operator": {
             "name": "Operator",
@@ -1410,7 +1410,7 @@
         },
         "Patient Deflection": {
             "name": "Patient Deflection",
-            "description": "Your expertise with martial arts allows you to dodge or deflect blows as effectively as a heavily armored fighter. While unarmed, half your Wisdom score contributes to your Parry defense."
+            "description": "Your expertise with martial arts allows you to dodge or deflect blows as effectively as a heavily armored fighter. While unarmed or wielding only natural weapons, half your Wisdom score contributes to your Parry defense."
         },
         "Peltast": {
             "name": "Peltast",
@@ -1438,7 +1438,7 @@
             "actions": {
                 "Penetrating Throw": {
                     "name": "Penetrating Throw",
-                    "description": "<p>You perform a <strong>Throw</strong> weapon strike which penetrates to hit all enemies in a straight line.</p>"
+                    "description": "<p>You perform a @Rule[action.thrown] weapon strike which penetrates to hit all enemies in a straight line.</p>"
                 }
             }
         },
@@ -1468,7 +1468,7 @@
             "actions": {
                 "Pinning Shot": {
                     "name": "Pinning Shot",
-                    "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes @Condition[restrained] until the end of their next Turn.</p>",
+                    "description": "<p>You <strong>Strike</strong> from distance. The attack is @Rule[action.difficult], however if your target is hit they become @Condition[restrained] until the end of their next <strong>Turn</strong>.</p>",
                     "effects": [
                         {
                             "name": "Pinning Shot"
@@ -1483,7 +1483,7 @@
             "actions": {
                 "Salvo": {
                     "name": "Salvo",
-                    "description": "You fire a barrage of attacks using a one-handed mechanical weapon, shooting three times at a target without the need to reload in-between shots."
+                    "description": "<p>You fire a barrage of attacks using a one-handed mechanical weapon, shooting three times at a target without the need to reload in-between shots.</p>"
                 }
             }
         },
@@ -1512,7 +1512,7 @@
         },
         "Powerful Throw": {
             "name": "Powerful Throw",
-            "description": "<p>The maximum range of actions with the <strong>Throw</strong> tag or actions from <strong>Bomb</strong> consumables are doubled</p>"
+            "description": "<p>The maximum range of actions with the @Rule[action.thrown] tag or actions from <strong>Bomb</strong> consumables are doubled</p>"
         },
         "Precision Shot": {
             "name": "Precision Shot",
@@ -1610,7 +1610,7 @@
         },
         "Pyromancer": {
             "name": "Pyromancer",
-            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half the ability score your <strong>Rune of Flame</strong> scales with as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Rallying Cry",
@@ -1644,11 +1644,11 @@
         },
         "Resilient": {
             "name": "Resilient",
-            "description": "<p>Your body responds eagerly to healing, demonstrating a remarkable ability to recover from wounds.</p>\n<p>Your <strong>Wounds Threshold</strong> is reduced by 1, making you easier to heal.</p>"
+            "description": "<p>Your body responds eagerly to healing, demonstrating a remarkable ability to recover from wounds.</p>\n<p>Your <strong>Healing Threshold</strong> is reduced by 1, making you easier to heal.</p>"
         },
         "Rimecaller": {
             "name": "Rimecaller",
-            "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half the ability score your <strong>Rune of Frost</strong> scales with as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
         },
         "Rune: Control": {
             "name": "Rune: Control",
@@ -1702,7 +1702,7 @@
         },
         "Rune: Illumination": {
             "name": "Rune: Illumination",
-            "description": "<p>The orderly force of light and energy. The Illumination rune governs light and radiance. </p><p>The Illumination rune scales using <strong>Presence</strong>, targets <strong>Reflex</strong>, and deals <strong>Radiant</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Illusion</strong>.</p>",
+            "description": "<p>The orderly force of light and energy. The Illumination rune governs light and radiance.</p><p>The Illumination rune scales using <strong>Presence</strong>, targets <strong>Reflex</strong>, and deals <strong>Radiant</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Illusion</strong>.</p>",
             "actions": {
                 "Reveal": {
                     "name": "Reveal",
@@ -1762,7 +1762,7 @@
         },
         "Rune: Storm": {
             "name": "Rune: Storm",
-            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+            "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
             "actions": {
                 "Energize": {
                     "name": "Energize",
@@ -1962,7 +1962,7 @@
         },
         "Soul Proficiency": {
             "name": "Soul Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Soul. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Evoke </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Soul. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeSoul00000000 evoke] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Spellblade": {
             "name": "Spellblade",
@@ -2013,7 +2013,7 @@
         },
         "Storm Proficiency": {
             "name": "Storm Proficiency",
-            "description": "<p>You have fluency in weaving spellcraft using the Rune of Storm. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Energize </strong>action, expanding its effectiveness or including new options for how to use it.</p>"
+            "description": "<p>You have fluency in weaving spellcraft using the Rune of Storm. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the @Action[Compendium.crucible.talent.Item.runeStorm0000000 energize] action, expanding its effectiveness or including new options for how to use it.</p>"
         },
         "Strategic Repositioning": {
             "name": "Strategic Repositioning",
@@ -2033,7 +2033,7 @@
             "actions": {
                 "Stunning Strike": {
                     "name": "Stunning Strike",
-                    "description": "<p>You <strong>Strike</strong> a vital pressure point, inflicting <strong>Stun</strong> on your enemy for 1 Round if successful.</p>",
+                    "description": "<p>You <strong>Strike</strong> a vital pressure point, inflicting the @Rule[condition.stunned] condition on your enemy for 1 Round if successful.</p>",
                     "effects": [
                         {
                             "name": "Stunning Strike"
@@ -2044,7 +2044,7 @@
         },
         "Subtle Extrication": {
             "name": "Subtle Extrication",
-            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any <strong>Reactive Strike</strong> against you is performed with <strong>+1 Bane</strong>.</p>"
+            "description": "<p>You understand how to move away from an opponent without exposing yourself to the worst attacks in return. Any @Action[default reactiveStrike] against you is performed with <strong>+1 Bane</strong>.</p>"
         },
         "Sundering Strike": {
             "name": "Sundering Strike",
@@ -2063,7 +2063,7 @@
         },
         "Surgeweaver": {
             "name": "Surgeweaver",
-            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half the ability score your <strong>Rune of Storm</strong> scales with as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
         },
         "Swashbuckler": {
             "name": "Swashbuckler",
@@ -2136,7 +2136,7 @@
         },
         "Thoughtbinder": {
             "name": "Thoughtbinder",
-            "description": "<p>You are highly skilled in weaving the Rune of Control. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[dominated] condition.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Control. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[dominated] condition.</p><p>The Dominated effect lasts for <strong>3 Rounds</strong> and deals the ability score your <strong>Rune of Control</strong> scales with as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Thread the Needle",
@@ -2174,7 +2174,7 @@
         },
         "Unarmed Blocking": {
             "name": "Unarmed Blocking",
-            "description": "Your honed reflexes and physical toughness allow you to block enemy blows using your bare arms. While <strong>Unarmed</strong>, half your Toughness score contributes to your <strong>Block</strong> defense."
+            "description": "Your honed reflexes and physical toughness allow you to block enemy blows using your bare limbs. While <strong>Unarmed</strong> or wielding only natural weapons, half your Toughness score contributes to your <strong>Block</strong> defense."
         },
         "Unarmed Combat Proficiency": {
             "name": "Unarmed Combat Proficiency",
@@ -2228,7 +2228,7 @@
         },
         "Voidcaller": {
             "name": "Voidcaller",
-            "description": "<p>You are highly skilled in weaving the Rune of Oblivion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[entropy] condition.</p><p>The Entropy effect lasts for <strong>1 Round</strong>, deals half your <strong>Presence</strong> score as <strong>Void</strong> damage to <strong>Health</strong>, and applies the @Condition[frightened] condition.</p>"
+            "description": "<p>You are highly skilled in weaving the Rune of Oblivion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[entropy] condition.</p><p>The Entropy effect lasts for <strong>1 Round</strong>, deals half the ability score your <strong>Rune of Oblivion</strong> scales with as <strong>Void</strong> damage to <strong>Health</strong>, and applies the @Condition[frightened] condition.</p>"
         },
         "Vow of Animus": {
             "name": "Vow of Animus",
@@ -2291,7 +2291,7 @@
                 },
                 "Dirge of the Glutton's Lethargy": {
                     "name": "Dirge of the Glutton's Lethargy",
-                    "description": "<p>You drone a dragging requiem to the <strong>Glutton</strong>, too bloated and idle to stir. Enemy creatures within <strong>15 feet</strong> gain lose <strong>Free</strong> <strong>Movement</strong> and reduce their <strong>Stride</strong> by 2.</p>",
+                    "description": "<p>You drone a dragging requiem to the <strong>Glutton</strong>, too bloated and idle to stir. Enemy creatures within <strong>15 feet</strong> lose <strong>Free Movement</strong> and reduce their <strong>Stride</strong> by 2.</p>",
                     "effects": [
                         {
                             "name": "Dirge of the Glutton's Lethargy"

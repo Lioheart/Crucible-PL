@@ -201,12 +201,6 @@
                 "public": "<p>The @ref[actor.name]{creature}'s skin is covered in lightweight scales that provide protection without slowing it down.</p>"
             }
         },
-        "Obsidian Thorns": {
-            "name": "Obsidian Thorns",
-            "description": {
-                "public": "<p>The @ref[actor.name]{creature} lashes out with a thorned length of razor-sharp black glass.</p>"
-            }
-        },
         "Pestilent Bite": {
             "name": "Pestilent Bite",
             "description": {
@@ -307,6 +301,12 @@
             "name": "Thick Hide",
             "description": {
                 "public": "<p>The @ref[actor.name]{creature} has a thick, leathery hide that is resilient against attack.</p>"
+            }
+        },
+        "Thorns": {
+            "name": "Thorns",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} lashes out with a thorn-covered vine, limb, or tendril.</p>"
             }
         },
         "Tusks": {

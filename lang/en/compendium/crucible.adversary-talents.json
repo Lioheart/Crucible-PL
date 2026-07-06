@@ -632,16 +632,23 @@
         },
         "Swallow": {
             "name": "Swallow",
-            "description": "<p>@Ref[actor.name]{This creature} has the capability of swallowing creatures smaller than them whole, though only one creature may be affected by this action at a time.</p>",
+            "description": "<p>The @ref[actor.name]{creature} can swallow whole a creature whose Size is at least 2 less than its own. Only one creature may be swallowed at a time, unless an additional creature is one-quarter of this creature's Size or less.</p>",
             "actions": {
                 "Swallow": {
                     "name": "Swallow",
-                    "description": "<p>You swallow a target enemy, effectively removing that foe from combat. The swallowed target is @Condition[blinded] and @Condition[restrained] until released.</p><p>If you take <strong>Severe</strong> damage, are <strong>Wounded</strong>, or are rendered @Condition[incapacitated] you regurgitate the swallowed creature.</p>",
+                    "description": "<p>You swallow a target enemy, effectively removing that foe from combat. The swallowed target is @Condition[blinded] and @Condition[restrained] until released.</p><p>If you become @Condition[stunned], @Condition[incapacitated], or @Condition[weakened], you regurgitate every swallowed creature.</p>",
                     "effects": [
                         {
                             "name": "Swallow"
+                        },
+                        {
+                            "name": "Swallowing"
                         }
                     ]
+                },
+                "Regurgitate": {
+                    "name": "Regurgitate",
+                    "description": "<p>You expel every creature you have swallowed, returning them to the space around you and ending the @Condition[blinded] and @Condition[restrained] conditions imposed by your gullet.</p>"
                 }
             }
         },

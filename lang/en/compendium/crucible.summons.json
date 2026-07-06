@@ -429,7 +429,7 @@
             "items": {
                 "Rune: Storm": {
                     "name": "Rune: Storm",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Storm rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "<p>The chaotic force of raw, electrical energy. The Storm rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
