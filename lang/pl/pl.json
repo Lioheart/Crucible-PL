@@ -241,11 +241,11 @@
       "ItemDivested": "Zbycie"
     },
     "TABS": {
-      "Description": "Opis",
-      "Effects": "Efekty",
-      "Hooks": "Uchwyty",
-      "Target": "Cel",
-      "Usage": "Użycie"
+      "description": "Opis",
+      "effects": "Efekty",
+      "hooks": "Uchwyty",
+      "target": "Cel",
+      "usage": "Użycie"
     },
     "TAG": {
       "Accurate": "Dokładny",
@@ -487,6 +487,8 @@
       "OncePerRound": "Akcję {action} można wykonać tylko raz na rundę.",
       "OncePerTurn": "Akcję {action} można wykonać tylko raz na turę.",
       "ReactionUnaware": "Nie możesz użyć reakcji, gdy jesteś Nieświadomy!",
+      "RequiresGesture": "Musisz znać gest wymagany dla tej akcji.",
+      "RequiresInflection": "Musisz znać fleksję wymaganą dla tej akcji.",
       "RequiresMelee": "Aby wykonać tę akcję, musisz mieć wyposażoną broń do walki wręcz.",
       "RequiresNatural": "Ta akcja wymaga użycia broni naturalnej.",
       "RequiresOffhand": "Aby wykonać tę akcję, musisz mieć wyposażoną broń w drugiej ręce.",
@@ -498,7 +500,9 @@
       "RequireTemplate": "Musisz umieścić szablon pomiarowy, aby wskazać obszar działania {action}.",
       "Restrained": "Nie możesz się ruszać, gdy jesteś Unieruchomiony!",
       "Silenced": "Nie możesz użyć tej akcji, gdy jesteś Wyciszony.",
+      "TargetTooLarge": "Cel „{target}” jest zbyt duży dla {action}.",
       "UnimplementedTarget": "Automatyzacja dla typu celu {type} dla akcji {name} nie jest jeszcze obsługiwana, należy ręcznie wybrać odpowiednie tokeny.",
+      "WeaponDropped": "Twoja broń wypadła z rąk i musisz ją podnieść, aby wykonać tę akcję.",
       "WrongMovementToken": "Aby wykonać tę akcję, musisz przesunąć token."
     },
     "Action": "Akcja",
@@ -583,6 +587,9 @@
       "Required": "Musisz wybrać zarówno przedmiot, jak i afiks.",
       "TierTooHigh": "Tego afiksu nie można nadać przy stopniu 1.",
       "Title": "Nasycenie afiksem"
+    },
+    "Swallow": {
+      "AlreadySwallowing": "Właśnie połknąłeś inną istotę."
     },
     "Throw": {
       "NotGrappling": "Możesz rzucić tylko stworzeniem, które przytrzymujesz."
@@ -939,14 +946,14 @@
       "Resources": "Zasoby"
     },
     "TABS": {
-      "Actions": "Akcje",
-      "Attributes": "Atrybuty",
-      "Biography": "Biografia",
-      "Effects": "Efekty",
-      "Inventory": "Wyposażenie",
-      "Skills": "Umiejętności",
-      "Spells": "Zaklęcia",
-      "Talents": "Talenty"
+      "actions": "Akcje",
+      "attributes": "Atrybuty",
+      "biography": "Biografia",
+      "effects": "Efekty",
+      "inventory": "Wyposażenie",
+      "skills": "Umiejętności",
+      "spells": "Zaklęcia",
+      "talents": "Talenty"
     },
     "WARNINGS": {
       "InsufficientCurrency": "Brak wystarczającej kwoty do obciążenia {delta} {denom}",
@@ -1344,6 +1351,10 @@
       "maintenance": {
         "cost": {
           "label": "Koszt utrzymania"
+        },
+        "hands": {
+          "hint": "Liczba zajętych rąk w czasie trwania tego efektu, co ogranicza liczbę rąk wolnych do posługiwania się bronią i rzucania zaklęć.",
+          "label": "Zajęte ręce"
         },
         "label": "Utrzymanie"
       },
@@ -1785,15 +1796,15 @@
       "Type": "Typ wyposażenia"
     },
     "TABS": {
-      "Actions": "Akcje",
-      "Affixes": "Afiksy",
-      "Configuration": "Konfiguracja",
-      "Description": "Opis",
-      "Equipment": "Wyposażenie",
-      "Hooks": "Uchwyty",
-      "Secrets": "Sekrety",
-      "Spells": "Zaklęcia",
-      "Talents": "Talenty"
+      "actions": "Akcje",
+      "affixes": "Afiksy",
+      "config": "Konfiguracja",
+      "description": "Opis",
+      "equipment": "Wyposażenie",
+      "hooks": "Uchwyty",
+      "secrets": "Sekrety",
+      "spells": "Zaklęcia",
+      "talents": "Talenty"
     },
     "WARNINGS": {
       "CombineDifferent": "{item} nie można połączyć z {target}, ponieważ przedmioty te nie są identyczne.",
@@ -2761,7 +2772,7 @@
       "ThrownTooltip": "Broń ta została zaprojektowana tak, aby nadawała się do rzucania i nie podlega karze Zgub, która zazwyczaj jest nakładana na akcję rzucania bronią.",
       "UntrainedTooltip": "Twoja postać nie posiada treningu w posługiwaniu się bronią typu {training} i otrzymuje karę -4 do umiejętności podczas ataku tą bronią.",
       "Versatile": "Wszechstronna",
-      "VersatileTooltip": "Broń tę można dzierżyć jedną lub dwiema rękami i przełączać się między tymi trybami bez ponoszenia kosztów Punktów Akcji. Podczas dzierżenia broni dwiema rękami zyskuje ona dodatkowe +2 do podstawowych obrażeń, ale uderzenie kosztuje 1 dodatkowy Punkt Akcji."
+      "VersatileTooltip": "Broń tę można dzierżyć zarówno jedną, jak i dwiema rękami, przełączając się między sposobami trzymania bez ponoszenia kosztu punktów akcji. W alternatywnym uchwycie działa ona jak broń tego samego rodzaju: broń jednoręczna staje się większą bronią dwuręczną, a broń dwuręczna – mniejszą bronią jednoręczną."
     }
   }
 }
