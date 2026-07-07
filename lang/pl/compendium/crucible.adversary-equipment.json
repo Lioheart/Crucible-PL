@@ -201,12 +201,6 @@
                 "public": "<p>Skóra @ref[actor.name]{stworzenia} pokryta jest lekkimi łuskami, które zapewniają jej ochronę, nie spowalniając jej ruchów.</p>"
             }
         },
-        "Obsidian Thorns": {
-            "name": "Obsydianowe ciernie",
-            "description": {
-                "public": "<p>@ref[actor.name]{Stworzenie} atakuje kolczastym kawałkiem ostrego jak brzytwa czarnego szkła.</p>"
-            }
-        },
         "Pestilent Bite": {
             "name": "Zaraźliwe ukąszenie",
             "description": {
@@ -307,6 +301,12 @@
             "name": "Gruba skóra",
             "description": {
                 "public": "<p>@ref[actor.name]{Stworzenie} ma grubą, skórzastą powłokę, która jest odporna na ataki.</p>"
+            }
+        },
+        "Thorns": {
+            "name": "Ciernie",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} atakuje pnączem, gałęzią lub łodygą pokrytą kolcami.</p>"
             }
         },
         "Tusks": {
