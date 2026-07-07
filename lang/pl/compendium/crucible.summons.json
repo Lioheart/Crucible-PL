@@ -429,7 +429,7 @@
             "items": {
                 "Rune: Storm": {
                     "name": "Runa: Burza",
-                    "description": "<p> Chaotyczna siła surowej, elektrycznej energii. Runa Burzy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p> Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje <strong>Obrażenia Elektryczne</strong> <strong>Zdrowiu</strong>.</p>"
+                    "description": "<p>Chaotyczna siła surowej, elektrycznej energii. Runa Burzy zarządza źródłami energii elektrycznej i wyładowaniami elektrycznymi. Przeciwstawia się jej uporządkowana runa Ziemi.</p>\n<p>Runa Burzy skaluje się przy użyciu <strong>Intelektu</strong>, celuje w <strong>Refleks</strong> i zadaje obrażenia <strong>Elektryczne</strong> do <strong>Zdrowia</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorpcja elektryczności",
