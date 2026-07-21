@@ -1866,7 +1866,7 @@
     "Legends": "Legendy",
     "Machines": "Maszyny",
     "Monsters": "Potwory",
-    "Outsiders": "Zewnętrzni",
+    "Outsiders": "Przybysze",
     "Plants": "Rośliny",
     "Politics": "Polityka",
     "Rituals": "Rytuały",
@@ -2481,7 +2481,7 @@
       "Monstrosity": "Potworność",
       "Ooze": "Śluz",
       "Plant": "Roślina",
-      "Outsider": "Zewnętrzny",
+      "Outsider": "Przybysz",
       "Undead": "Nieumarły"
     },
     "FIELDS": {
