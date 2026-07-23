@@ -138,7 +138,7 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Płomienia</strong>, jako obrażenia <strong>ogniste</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Blast": {
                     "name": "Gest: Wybuch",
@@ -195,7 +195,7 @@
             "actions": {
                 "Antitoxin": {
                     "name": "Antytoksyna",
-                    "description": "<p>@ref[name] po spożyciu pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez przedmiot @ref[name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
+                    "description": "<p>@ref[item.name] po spożyciu pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez przedmiot @ref[item.name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
                 }
             }
         },
@@ -378,7 +378,7 @@
                     "actions": {
                         "Antitoxin": {
                             "name": "Antytoksyna",
-                            "description": "<p>@ref[name] po spożyciu pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez przedmiot @ref[name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
+                            "description": "<p>@ref[item.name] po spożyciu pozwala zneutralizować wszelkie stany @Condition[poisoned] wpływające na cel. Silniejsze trucizny wymagają silniejszej antytoksyny, aby je zneutralizować. </p><p>Kategoria trucizny neutralizowanej przez przedmiot @ref[item.name] zależy od jego jakości:</p><ul><li><p><strong>Tandetna jakość</strong> - Trucizny zadające 3 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Standardowa jakość</strong> - Trucizny zadające 5 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Dobra jakość</strong> – trucizny zadające 7 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Wybitna jakość</strong> – trucizny zadające 9 lub mniej punktów obrażeń na rundę</p></li><li><p><strong>Mistrzowska jakość</strong> – trucizny zadające 11 lub mniej punktów obrażeń na rundę</p></li></ul>"
                         }
                     }
                 },
@@ -390,7 +390,7 @@
                     "actions": {
                         "Ingest Poison": {
                             "name": "Spożycie trucizny",
-                            "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> – obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                            "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości przedmiotu @ref[item.name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> – obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
                             "effects": [
                                 {
                                     "name": "Zatruty"
@@ -514,12 +514,9 @@
             "actions": {
                 "Blast Flask": {
                     "name": "Kolba wybuchowa",
-                    "description": "<p>@ref[name] jest podpalana i rzucana, zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                    "description": "<p>@ref[item.name] jest podpalana i rzucana, zadając obrażenia od <strong>ognia</strong> wszystkim wrogom znajdującym się w promieniu wybuchu, którym nie udało się uniknąć ataku. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                 }
             }
-        },
-        "Blood Frenzy": {
-            "name": "Krwawa furia"
         },
         "Bloodletter": {
             "name": "Krwawiciel"
@@ -703,7 +700,7 @@
                 },
                 "Bulwark": {
                     "name": "Tarczownik",
-                    "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
+                    "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję @Action[default defend] za zmniejszoną cenę 1 Punktu Akcji.</p>"
                 },
                 "Testudo": {
                     "name": "Testudo",
@@ -915,7 +912,7 @@
                     "actions": {
                         "Pinning Shot": {
                             "name": "Strzał przyszpilający",
-                            "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on @Condition[restrained] do końca swojej następnej tury.</p>",
+                            "description": "<p><strong>Uderzasz</strong> z dystansu. Atak ma poziom trudności @Rule[action.difficult], jednak jeśli cel zostanie trafiony, przechodzi w stan @Condition[restrained] do końca swojej następnej <strong>tury</strong>.</p>",
                             "effects": [
                                 {
                                     "name": "Strzał przyszpilający"
@@ -1019,7 +1016,7 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, przekształca połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Burzy</strong>, w obrażenia <strong>elektryczne</strong> zadane <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
@@ -1052,7 +1049,7 @@
                     "actions": {
                         "Blast Flask": {
                             "name": "Kolba wybuchowa",
-                            "description": "<p>@ref[name] jest podpalana i rzucana, zadając obrażenia od <strong>ognia</strong> wszystkim wrogom w promieniu wybuchu. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
+                            "description": "<p>@ref[item.name] jest podpalana i rzucana, zadając obrażenia od <strong>ognia</strong> wszystkim wrogom znajdującym się w promieniu wybuchu, którym nie udało się uniknąć ataku. Promień <strong>wybuchu</strong> zależy od jakości bomby:</p><ul><li><p><strong>Tandetna jakość</strong> - 3 stopy</p></li><li><p><strong>Standardowa jakość</strong> - 4 stopy</p></li><li><p><strong>Dobra jakość</strong> - 6 stóp</p></li><li><p><strong>Wybitna jakość</strong> - 8 stóp</p></li><li><p><strong>Mistrzowska jakość</strong> - 10 stóp</p></li></ul>"
                         }
                     }
                 },
@@ -1080,6 +1077,12 @@
                             "name": "Energetyzacja",
                             "description": "<p>Twoja znajomość Runy Burzy pozwala ci kierować przepływem powietrza i elektryczności, manipulując ładunkiem i aerodynamiką, aby uzyskać jeden z następujących efektów:</p><ul><li><p>Wprowadź ładunek elektromagnetyczny do metalowego przedmiotu, którego dotykasz, nie większego niż sześcian o boku 30 cm, powodując, że silnie przylega on do innych metali. W danym momencie można naładować w ten sposób tylko jeden przedmiot. Rzucenie tego zaklęcia na inny przedmiot powoduje utratę efektu magnetycznego przez poprzedni przedmiot.</p></li><li><p>Zbierz burzę wiatru w miejscu, w którym się znajdujesz, w promieniu sześciu stóp, która wieje albo jako podmuch w jednym kontrolowanym kierunku, albo jako cyklon z siłą dośrodkową we wszystkich kierunkach. Efekty powietrzne w najbliższym otoczeniu są rozpraszane, a niezabezpieczone przedmioty o masie mniejszej niż 1 są wyrzucane w kierunku podmuchu.</p></li><li><p>Wytwórz ogłuszający dźwięk grzmotu w miejscu widocznym w promieniu 15 stóp od aktualnej pozycji.</p></li></ul><p>Energetyzacja może oddziaływać tylko na stworzenia lub przedmioty, których możesz fizycznie dotknąć. Możesz próbować innych zastosowań podobnych do powyższych, a o ich skuteczności decyduje Mistrz Gry.</p>"
                         }
+                    }
+                },
+                "Pistol": {
+                    "name": "Pistolet",
+                    "description": {
+                        "public": "<p>Wczesna broń palna na proch czarny, wystrzeliwująca pojedynczy, głośny pocisk, pistolet skałkowy jest bronią hazardzisty — zabójczą w mgnieniu oka, ale powolną w przeładowywaniu w chaosie bitwy.</p>"
                     }
                 },
                 "Perspicacity": {
@@ -1134,6 +1137,15 @@
                 }
             }
         },
+        "Ferocious Leap": {
+            "name": "Dziki skok",
+            "actions": {
+                "Ferocious Leap": {
+                    "name": "Dziki skok",
+                    "description": "<p><strong>Wyskakujesz</strong> na wysokość do 10 stóp i wykonujesz <strong>uderzenie</strong> na wroga znajdującego się w zasięgu walki wręcz od miejsca lądowania. Twój ruch ignoruje trudny teren i nie jest blokowany przez wrogie stworzenia.</p>"
+                }
+            }
+        },
         "Fizzit": {
             "name": "Fizzit",
             "biography": {
@@ -1164,7 +1176,7 @@
                 },
                 "Gesture: Create": {
                     "name": "Gest: Tworzenie",
-                    "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ducha ognia</strong>.</p>"
+                    "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                 },
                 "Rune: Kinesis": {
                     "name": "Runa: Kinetyka",
@@ -1226,7 +1238,7 @@
                 },
                 "Rimecaller": {
                     "name": "Wywoływacz mrozu",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, zadaje obrażenia od <strong>zimna</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[slowed].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, przekształca połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Mrozu</strong>, w obrażenia od <strong>mrozu</strong> zadane <strong>Zdrowiu</strong> oraz nakłada stan @Condition[slowed].</p>"
                 },
                 "Recognize Spellcraft": {
                     "name": "Rozpoznawanie czarów",
@@ -1275,11 +1287,11 @@
                 },
                 "Surgeweaver": {
                     "name": "Iskrzyciel",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, przekształca połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Burzy</strong>, w obrażenia <strong>elektryczne</strong> zadane <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
                 },
                 "Mesmer": {
                     "name": "Hipnotyk",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę wartości atrybutu, od której skaluje się <strong>Runa Iluzji</strong>, jako obrażenia <strong>psychiczne</strong> do <strong>morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
                 },
                 "Talisman Weapon Training": {
                     "name": "Szkolenie z talizmanów",
@@ -1303,7 +1315,7 @@
                 },
                 "Gesture: Conjure": {
                     "name": "Gest: Wywołanie",
-                    "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Przybysza ognia</strong>.</p>"
+                    "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować @UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
                 },
                 "Stiletto": {
                     "name": "Stiletto",
@@ -1570,7 +1582,7 @@
                 },
                 "Dustbinder": {
                     "name": "Zaklinacz pyłu",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>kwasowe</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której zależy siła działania twojej <strong>Runy Ziemi</strong>, w postaci obrażeń <strong>kwasowych</strong> do <strong>Zdrowia</strong> w każdej rundzie.</p>"
                 },
                 "Talisman Weapon Training": {
                     "name": "Szkolenie z talizmanów",
@@ -1623,11 +1635,11 @@
                 },
                 "Inspirator": {
                     "name": "Inspirator",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> równe twojej wartości <strong>Prezencji</strong> do <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Duszy</strong>, jako dodatkowe <strong>Przywrócenie</strong> do <strong>Morale</strong>.</p>"
                 },
                 "Mender": {
                     "name": "Znachor",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong>  przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Życia</strong>, jako dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong>.</p>"
                 },
                 "Arcana Novice": {
                     "name": "Nowicjusz arkan",
@@ -1737,15 +1749,6 @@
         "Opportunistic Spellcraft": {
             "name": "Magia sytuacyjna"
         },
-        "Penetrating Throw": {
-            "name": "Rzut penetrujący",
-            "actions": {
-                "Penetrating Throw": {
-                    "name": "Rzut penetrujący",
-                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
-                }
-            }
-        },
         "Perspicacity": {
             "name": "Przenikliwość"
         },
@@ -1754,7 +1757,7 @@
             "actions": {
                 "Pinning Shot": {
                     "name": "Strzał przyszpilający",
-                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on @Condition[restrained] do końca swojej następnej tury.</p>",
+                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak ma poziom trudności @Rule[action.difficult], jednak jeśli cel zostanie trafiony, przechodzi w stan @Condition[restrained] do końca swojej następnej <strong>tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Strzał przyszpilający"
@@ -1763,12 +1766,15 @@
                 }
             }
         },
+        "Pistol": {
+            "name": "Pistolet"
+        },
         "Poison Vial": {
             "name": "Fiolka z trucizną",
             "actions": {
                 "Ingest Poison": {
                     "name": "Spożycie trucizny",
-                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości przedmiotu @ref[name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> –  obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
+                    "description": "<p>Kiedy ta toksyna zostanie spożyta lub w inny sposób dostanie się do krwiobiegu stworzenia, początkowo jest <strong>nieszkodliwa</strong>, ale cel musi obronić się przed atakiem na swoją <strong>Wytrwałość</strong> lub stanie się @Condition[poisoned].</p><p>Wielkość obrażeń od trucizny i czas ich trwania zależą od jakości przedmiotu @ref[item.name]:</p><ul><li><p><strong>Tandetna jakość</strong> – 2 obrażeń na 4 rundy</p></li><li><p><strong>Standardowa jakość</strong> – 4 obrażeń na 6 rund</p></li><li><p><strong>Dobra jakość</strong> – 6 obrażeń na 8 rund</p></li><li><p><strong>Wybitna jakość</strong> – obrażeń na 10 rund</p></li><li><p><strong>Mistrzowska jakość</strong> – 10 obrażeń na 12 rund</p></li></ul><p><em>Tę akcję należy wykonać po spożyciu trucizny, a nie po jej pierwszym zastosowaniu.</em></p>",
                     "effects": [
                         {
                             "name": "Zatruty"
@@ -2141,10 +2147,6 @@
                     "name": "Silny chwyt",
                     "description": "<p>Twoja pewność w posługiwaniu się bronią jest niezachwiana. Korzystając z broni dwuręcznej, której siła ataku zależy od Siły, możesz rzucać zaklęcia wymagające użycia obu rąk, a próby rozbrojenia cię otrzymują modyfikator +2 do zguby. </p><p>Ponadto możesz dzierżyć ciężką broń jednoręczną w drugiej ręce.</p>"
                 },
-                "Blood Frenzy": {
-                    "name": "Krwawa furia",
-                    "description": "<p>Twoja żądza walki pobudza cię do wzmożonej aktywności. Kiedy zadajesz <strong>Trafienie krytyczne</strong>, które powoduje utratę punktów Zdrowia, natychmiast zyskujesz +1 Akcję. Ta korzyść może wystąpić tylko raz na rundę.</p>"
-                },
                 "Executioner's Strike": {
                     "name": "Atak egzekutora",
                     "description": "<p>Zadajesz pojedyncze, decydujące uderzenie rannemu przeciwnikowi.</p>",
@@ -2251,16 +2253,6 @@
                     "name": "Sprawność w pancerzu",
                     "description": "<p>Jesteś wyszkolony w noszeniu najcięższych rodzajów pancerzy, zachowując jednocześnie mobilność. Możesz wykonać jedną akcję Ruchu za darmo na Turę, nosząc Ciężki pancerz.</p>"
                 },
-                "Penetrating Throw": {
-                    "name": "Rzut penetrujący",
-                    "description": "<p>Możesz rzucić bronią z taką siłą, że trafi ona wszystkie cele znajdujące się w linii prostej.</p>",
-                    "actions": {
-                        "Penetrating Throw": {
-                            "name": "Rzut penetrujący",
-                            "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
-                        }
-                    }
-                },
                 "Stiletto": {
                     "name": "Stiletto",
                     "description": {
@@ -2279,6 +2271,16 @@
                                     "name": "Przypływ adrenaliny"
                                 }
                             ]
+                        }
+                    }
+                },
+                "Ferocious Leap": {
+                    "name": "Dziki skok",
+                    "description": "<p>Wskakujesz z impetem do walki, aby zadać potężny cios pobliskim wrogom swoją główną bronią.</p>",
+                    "actions": {
+                        "Ferocious Leap": {
+                            "name": "Dziki skok",
+                            "description": "<p><strong>Wyskakujesz</strong> na wysokość do 10 stóp i wykonujesz <strong>uderzenie</strong> na wroga znajdującego się w zasięgu walki wręcz od miejsca lądowania. Twój ruch ignoruje trudny teren i nie jest blokowany przez wrogie stworzenia.</p>"
                         }
                     }
                 }
@@ -2436,7 +2438,7 @@
                 },
                 "Pyromancer": {
                     "name": "Piromanta",
-                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Płomienia</strong>, jako obrażenia <strong>ogniste</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
                 },
                 "Gesture: Pulse": {
                     "name": "Gest: Impuls",
@@ -2452,7 +2454,7 @@
                 },
                 "Lightbringer": {
                     "name": "Niosący światło",
-                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
+                    "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> oraz zadaje obrażenia typu <strong>Świetliste</strong>, których wielkość zależy od wartości atrybutu, z którym skaluje się twoja <strong>Runa Światłości</strong>, zarówno do <strong>Zdrowia</strong>, jak i do <strong>Morale</strong>.</p>"
                 },
                 "Awareness Novice": {
                     "name": "Nowicjusz świadomości",
@@ -2479,7 +2481,7 @@
                 },
                 "Flame Proficiency": {
                     "name": "Biegłość płomienia",
-                    "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+                    "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
                 },
                 "Rune: Kinesis": {
                     "name": "Runa: Kinetyka",

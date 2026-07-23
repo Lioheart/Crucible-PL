@@ -631,17 +631,24 @@
             ]
         },
         "Swallow": {
-            "name": "Połykanie",
-            "description": "<p>@Ref[actor.name]{Ta istota} potrafi połknąć w całości istoty mniejsze od siebie, choć akcja ta może dotyczyć tylko jednej istoty naraz.</p>",
+            "name": "Połknięcie",
+            "description": "<p>@ref[actor.name]{Stworzenie} może połknąć w całości inne stworzenie, którego Rozmiar jest co najmniej o 2 mniejszy od jego własnego. Jednocześnie można połknąć tylko jedno stworzenie, chyba że dodatkowe stworzenie ma Rozmiar równy jednej czwartej Rozmiaru tego stworzenia lub mniejszy.</p>",
             "actions": {
                 "Swallow": {
-                    "name": "Połykanie",
-                    "description": "<p>Połykasz wybranego wroga, skutecznie wyłączając go z walki. Połknięty przeciwnik otrzymuje statusy @Condition[blinded] i @Condition[restrained] do momentu uwolnienia.</p><p>Jeśli odniesiesz <strong>poważne</strong> obrażenia, zostaniesz <strong>Ranny</strong> lub znajdziesz się w stanie @Condition[incapacitated], zwracasz połknięte stworzenie.</p>",
+                    "name": "Połknięcie",
+                    "description": "<p>Połykasz wybranego wroga, skutecznie wyłączając go z walki. Połknięty cel pozostaje w stanie @Condition[blinded] i @Condition[restrained] do momentu uwolnienia.</p><p>Jeśli znajdziesz się w stanie @Condition[stunned], @Condition[incapacitated] lub @Condition[weakened], wypluwasz wszystkie połknięte stworzenia.</p>",
                     "effects": [
+                        {
+                            "name": "Połknięcie"
+                        },
                         {
                             "name": "Połykanie"
                         }
                     ]
+                },
+                "Regurgitate": {
+                    "name": "Zwracanie",
+                    "description": "<p>Wypluwasz wszystkie stworzenia, które połknąłeś, przywracając je do przestrzeni wokół ciebie i znosząc stany @Condition[blinded] oraz @Condition[restrained] nałożone przez twoje gardło.</p>"
                 }
             }
         },

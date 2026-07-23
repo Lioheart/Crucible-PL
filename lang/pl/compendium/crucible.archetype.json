@@ -128,6 +128,10 @@
             "name": "Członek stada",
             "description": "Zwierzęta polujące w stadach."
         },
+        "Prankster": {
+            "name": "Żartowniś",
+            "description": "<p>Istoty humanoidalne, które czerpią radość z wyrządzania szkód, irytowania innych, stosowania podstępów i oszustw.</p>"
+        },
         "Priest": {
             "name": "Kapłan",
             "description": "<p>Pobożni słudzy bogów, którzy czerpią swoją moc z wiary i oddania swoim bóstwom.</p>"

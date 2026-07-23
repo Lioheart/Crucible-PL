@@ -89,7 +89,7 @@
             "actions": {
                 "Alchemical Resolve": {
                     "name": "Alchemiczna determinacja",
-                    "description": "<p>Szybko podnosisz Morale sojusznika znajdującego się w odległości do 4 stóp, stosując opary. Wykonaj test <strong>Medycyny</strong> przeciwko <strong>Progowi Obłędu</strong> celu. Pomyślny test przywraca <strong>Morale</strong>.</p>"
+                    "description": "<p>Szybko podnosisz Morale sojusznika znajdującego się w odległości do 4 stóp, stosując opary. Wykonaj test <strong>Medycyny</strong> przeciwko <strong>progowi Mobilizacji</strong> celu. Pomyślny test przywraca <strong>Morale</strong>.</p>"
                 }
             }
         },
@@ -352,7 +352,7 @@
         },
         "Bulwark": {
             "name": "Tarczownik",
-            "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję <strong>Obrona</strong> za zmniejszoną cenę 1 Punktu Akcji.</p>"
+            "description": "<p>Masz doświadczenie w używaniu <strong>Tarczy</strong> do obrony siebie i innych.</p><p>Raz na turę, gdy masz wyposażoną tarczę, możesz wykonać akcję @Action[default defend] za zmniejszoną cenę 1 Punktu Akcji.</p>"
         },
         "Cadence": {
             "name": "Kadencja",
@@ -360,7 +360,7 @@
         },
         "Carefree": {
             "name": "Beztroski",
-            "description": "<p>Potrafisz oddzielać i ignorować niepowodzenia, co zapewnia Ci niezwykłą zdolność do regeneracji po utracie Morale.</p>\n<p>Twój <strong>Próg Obłędu</strong> zostaje zmniejszony o 1, co sprawia, że łatwiej cię wyleczyć.</p>"
+            "description": "<p>Potrafisz oddzielać i ignorować niepowodzenia, co zapewnia Ci niezwykłą zdolność do regeneracji po utracie Morale.</p>\n<p>Twój <strong>próg Mobilizacji</strong> zostaje zmniejszony o 1, co sprawia, że łatwiej cię wyleczyć.</p>"
         },
         "Champion": {
             "name": "Czempion",
@@ -398,7 +398,7 @@
             "actions": {
                 "Clarify Intent": {
                     "name": "Wyjaśnienie intencji",
-                    "description": "<p>Wyjaśniasz swoje zamiary sojusznikowi znajdującemu się w odległości do 12 stóp. Wykonaj atak przy użyciu umiejętności <strong>Dyplomacji</strong> przeciwko Progowi Obłędu sojusznika. Jeśli atak się powiedzie, sojusznik zyskuje +1 do <strong>Skupienia</strong> i +1 <strong>Korzyści</strong> do akcji wykonanych w następnej rundzie.</p>",
+                    "description": "<p>Wyjaśniasz swoje zamiary sojusznikowi znajdującemu się w odległości do 12 stóp. Wykonaj atak przy użyciu umiejętności <strong>Dyplomacji</strong> przeciwko Progowi Obłędu sojusznika. Jeśli atak się powiedzie, sojusznik zyskuje +1 do <strong>Skupienia</strong> i +1 <strong>Korzyści</strong> do akcji wykonanych w swojej następnej turze.</p>",
                     "effects": [
                         {
                             "name": "Wyjaśnienie intencji"
@@ -423,7 +423,7 @@
             "actions": {
                 "Combat Medicine": {
                     "name": "Medycyna bojowa",
-                    "description": "<p>Szybko opatrujesz rany sojusznika znajdującego się w odległości do 4 stóp. Wykonaj <strong>test Medycyny</strong> przeciwko Progowi Ran celu. Zdrowie sojusznika wzrasta o wartość rzutu przekraczającą próg.</p>"
+                    "description": "<p>Szybko opatrujesz rany sojusznika znajdującego się w odległości do 4 stóp. Wykonaj <strong>test Medycyny</strong> przeciwko progowi Leczenia celu. Zdrowie sojusznika wzrasta o wartość rzutu przekraczającą próg.</p>"
                 }
             }
         },
@@ -441,7 +441,7 @@
         },
         "Control Proficiency": {
             "name": "Biegłość kontroli",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kontroli. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Motywowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kontroli. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeControl00000 motivate], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Cooking Journeyman": {
             "name": "Czeladnik gotowania",
@@ -497,7 +497,7 @@
         },
         "Death Proficiency": {
             "name": "Biegłość śmierci",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Śmierci. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Osłabiania</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Śmierci. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeDeath0000000 ennervate], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Deception Adept": {
             "name": "Adept oszustwa",
@@ -595,7 +595,7 @@
         },
         "Disarming Strike": {
             "name": "Atak rozbrajający",
-            "description": "<p>Technika walki mająca na celu rozbrojenie przeciwnika, zmuszając go do upuszczenia przedmiotu trzymanego w jednej z rąk.</p>",
+            "description": "<p>Technika walki mająca na celu rozbrojenie przeciwnika poprzez zmuszenie go do upuszczenia przedmiotu trzymanego w głównej ręce.</p>",
             "actions": {
                 "Disarming Strike": {
                     "name": "Atak rozbrajający",
@@ -654,11 +654,11 @@
         },
         "Dustbinder": {
             "name": "Zaklinacz pyłu",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>kwasowe</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Ziemi. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[corroding]. </p><p>Efekt Korozji trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której zależy siła działania twojej <strong>Runy Ziemi</strong>, w postaci obrażeń <strong>kwasowych</strong> do <strong>Zdrowia</strong> w każdej rundzie.</p>"
         },
         "Earth Proficiency": {
             "name": "Biegłość ziemi",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Ziemi. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Formowanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Ziemi. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeEarth0000000 mould], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Enchanting Journeyman": {
             "name": "Czeladnik zaklinania",
@@ -699,7 +699,7 @@
         },
         "Extoll Deeds": {
             "name": "Chwalebne czyny",
-            "description": "Inspirujesz swoich sojuszników do odwagi, wychwalając heroiczne czyny towarzysza. Możesz zareagować, komponując wiersz, rzucając dowcipną uwagę lub wydając okrzyk bojowy, gdy sojusznik, którego widzisz, <strong>Obezwładnia</strong> lub zadaje <strong>Krytyczne Trafienie</strong> przeciwnikowi. Świętowanie tych heroicznych czynów przywraca Morale twoich sojuszników w promieniu 6 pól.",
+            "description": "Inspirujesz swoich sojuszników do odwagi, wychwalając heroiczne czyny towarzysza. Możesz zareagować, komponując wiersz, rzucając dowcipną uwagę lub wydając okrzyk bojowy, gdy sojusznik, którego widzisz, <strong>Obezwładnia</strong> lub zadaje <strong>Krytyczne Trafienie</strong> przeciwnikowi. Świętowanie tych heroicznych czynów przywraca Morale twoich sojuszników w promieniu 10 stóp.",
             "actions": {
                 "Extoll Deeds": {
                     "name": "Chwalebne czyny",
@@ -738,13 +738,13 @@
             "actions": {
                 "Ferocious Leap": {
                     "name": "Dziki skok",
-                    "description": "<p>Wyskakujesz na wysokość do 10 stóp i wykonujesz uderzenie na wroga znajdującego się w zasięgu walki wręcz od miejsca lądowania. Twój ruch ignoruje trudny teren i nie jest blokowany przez wrogie stworzenia.</p>"
+                    "description": "<p><strong>Wyskakujesz</strong> na wysokość do 10 stóp i wykonujesz <strong>uderzenie</strong> na wroga znajdującego się w zasięgu walki wręcz od miejsca lądowania. Twój ruch ignoruje trudny teren i nie jest blokowany przez wrogie stworzenia.</p>"
                 }
             }
         },
         "Flame Proficiency": {
             "name": "Biegłość płomienia",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Rozpalanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Płomienia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Flaming Arrow": {
             "name": "Płonąca strzała",
@@ -809,7 +809,7 @@
         },
         "Frost Proficiency": {
             "name": "Biegłość mrozu",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Mrozu. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kondensacja</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Mrozu. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeFrost0000000 condense], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Fulcrum": {
             "name": "Wspornik",
@@ -824,11 +824,11 @@
         },
         "Gambit": {
             "name": "Gambit",
-            "description": "<p>Niektórzy walczą zgodnie z zasadami, ty walczysz, licząc na szansę. Każda wymiana ciosów to zakład: odczytujesz zamiary przeciwnika, podejmujesz ryzykowne decyzje, by skłonić go do nadmiernego zaangażowania, a następnie stawiasz wszystko na jedną kartę, licząc na przełomowy wynik. Ufasz swojej intuicji, sprytowi i pewnym tajemniczym sztuczkom, by przechylić szalę na swoją stronę, zyskując następujące korzyści:</p><ul><li><p><em>Zdradzający sygnał.</em> Widzisz cios, zanim zostanie zadany. Twój <strong>Unik</strong> jest obliczany na podstawie <strong>Intelektu</strong> zamiast <strong>Zręczności</strong>, jeśli jest wyższa. </p></li><li><p><em>Podrobione kości.</em> Szczęście sprzyja tym, którzy mu pomagają. Raz na rundę, gdy po raz pierwszy wyrzucisz 1 na dowolnej kości, kość ta jest rzucana ponownie, a nowy wynik zostaje zachowany.</p></li><li><p><em>Podbij stawkę.</em> Kiedy wykonujesz @Action[default strike], możesz zdecydować się na celowe dodanie do niego <strong>Zgub</strong>. Jeśli cios trafi, specjalny efekt <strong>Gambit</strong> zwiększa się zgodnie z liczbą postawionych przez ciebie zgub. Ładunki te trwają do końca walki lub do momentu ich wyczerpania.</p></li></ul>",
+            "description": "<p>Niektórzy walczą zgodnie z zasadami, ty walczysz, licząc na szansę. Każda wymiana ciosów to zakład: odczytujesz zamiary przeciwnika, podejmujesz ryzykowne decyzje, by skłonić go do nadmiernego zaangażowania, a następnie stawiasz wszystko na jedną kartę, licząc na przełomowy wynik. Ufasz swojej intuicji, sprytowi i pewnym tajemniczym sztuczkom, by przechylić szalę na swoją stronę, zyskując następujące korzyści:</p><ul><li><p><em>Zdradzający sygnał.</em> Widzisz cios, zanim zostanie zadany. Twój <strong>Unik</strong> jest obliczany na podstawie <strong>Intelektu</strong> zamiast <strong>Zręczności</strong>, jeśli twój <strong>Intelekt</strong> jest wyższy. </p></li><li><p><em>Podrobione kości.</em> Szczęście sprzyja tym, którzy mu pomagają. Raz na rundę, gdy po raz pierwszy wyrzucisz 1 na dowolnej kości, kość ta jest rzucana ponownie, a nowy wynik zostaje zachowany.</p></li><li><p><em>Podbij stawkę.</em> Wykonując akcję @Action[default strike], możesz zdecydować się na postawienie dodatkowych <strong>Zgub</strong> przeciwko sobie. Jeśli atak trafi wroga, zyskujesz <strong>Gambit</strong> w liczbie równej liczbie postawionych Zgub. Punkty te kumulują się do końca walki lub do momentu ich wykorzystania.</p></li></ul>",
             "actions": {
                 "All-In": {
                     "name": "Wszystko na jedną kartę",
-                    "description": "<p>Każdy podjęty przez ciebie ryzykowny ruch przynosi teraz korzyści, a ty zbierasz je wszystkie naraz. Kolejny pojedynczy atak lub rzut na obronę daje maksymalny możliwy wynik na wszystkich kościach. Możesz aktywować tę akcję, wydając albo 6 <strong>punktów gambitu</strong>, albo 1 <strong>punkt heroizmu</strong>.</p>"
+                    "description": "<p>Każdy podjęty przez ciebie ryzykowny ruch przynosi teraz korzyści, a ty zbierasz je wszystkie naraz. Kolejny atak lub test, który wykonasz w tej turze, daje maksymalny możliwy wynik na każdej kostce z puli. Jeśli w ramach tej akcji wykonasz więcej niż jeden rzut, maksymalny wynik dotyczy tylko pierwszego z nich. Możesz aktywować tę akcję, wydając albo 6 <strong>punktów gambitu</strong>, albo 1 <strong>punkt heroizmu</strong>.</p>"
                 }
             }
         },
@@ -858,11 +858,11 @@
         },
         "Gesture: Conjure": {
             "name": "Gest: Wywołanie",
-            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować <strong>Przybysza ognia</strong>.</p>"
+            "description": "<p>Łączysz tajemniczą moc w wyższą formę, manifestując <strong>Przybysza</strong>, który pojawia się w odległości 30 stóp i dołącza do walki z <strong>Inicjatywą</strong> 1. Twój Przybysz jest sługą o poziomie równym twojemu. </p><p>Gest przywołania skaluje się wraz z <strong>Mądrością</strong>, a Przybysz przetrwa przez <strong>12 rund</strong>. Możesz mieć tylko jednego aktywnego Przybysza. Rzucenie innego zaklęcia przy użyciu gestu przywołania zastępuje poprzedniego Przybysza. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>5 Akcji</strong> i <strong>2 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent znajduje się obecnie w węźle <strong>stopnia 4</strong>. Ostatecznie będzie można go uzyskać tylko na wyższym poziomie (prawdopodobnie wymaganym będzie stopień 6). Obecnie jest on dostępny „wcześniej” do testów. </p><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Przybysza. Runy, które nie mają jeszcze zdefiniowanego Przywoływania, będą — na razie — manifestować @UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
         },
         "Gesture: Create": {
             "name": "Gest: Tworzenie",
-            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować <strong>Ducha ognia</strong>.</p>"
+            "description": "<p>Łączysz tajemniczą moc w namacalną formę, manifestując <strong>Ducha</strong>, który pojawia się w odległości 10 stóp i dołącza do walki z Inicjatywą 1. Twój Duch jest <strong>Sługusem</strong> o połowie twojego poziomu. </p><p>Gest Kształt skaluje się wraz z <strong>Mądrością</strong>, a Duch przetrwa przez <strong>6 rund</strong>. Możesz mieć tylko jednego aktywnego Ducha, rzucenie kolejnego zaklęcia za pomocą gestu tworzenia zastępuje poprzedniego Ducha. Gest ten wymaga <strong>2 rąk</strong> do rzucenia i ma podstawowy koszt <strong>4 Akcji</strong> i <strong>1 Skupienia</strong>. </p><h3 class=\"divider\">Uwagi z testów</h3><p>Nie wszystkie runy mają jeszcze zdefiniowanego aktora Ducha. Runy, które nie mają jeszcze zdefiniowanego Wytworu, będą — na razie — manifestować @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
         },
         "Gesture: Fan": {
             "name": "Gest: Wachlarz",
@@ -882,7 +882,7 @@
         },
         "Gesture: Sense": {
             "name": "Gest: Zmysł",
-            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Burza</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Zewnętrzni</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
+            "description": "<p>Dostrajasz swój umysł do tajemnej mocy runy, aby wyczuć pobliskie źródła energii.</p><p>Gest Zmysłu skaluje się wraz z <strong>Prezencją</strong> i wytwarza emanację o promieniu 30 stóp, której środek pozostaje w pozycji rzucającego zaklęcie. Gest ten wymaga <strong>1 ręki</strong> do rzucenia i ma podstawowy koszt <strong>3 Akcji</strong> oraz <strong>1 Skupienia</strong>. Opcjonalnie można go <strong>Podtrzymywać</strong> za dodatkowy koszt <strong>1 Skupienia</strong> w każdej kolejnej rundzie. </p><p>Zaklęcie to pozwala rzucającemu wykryć obecność magii wykorzystującej tę samą runę, co zaklęcie. Zmysły rzucającego wykryją również chwilowo obecność stworzeń zgodnie z ich typem.</p><ul><li><p><strong>Kontrola</strong>: Diabły</p></li><li><p><strong>Śmierć</strong>: Nieumarli</p></li><li><p><strong>Ziemia</strong>: Szlamy i żywiołaki ziemi</p></li><li><p><strong>Płomień</strong>: Smoki i żywiołaki ognia</p></li><li><p><strong>Mróz</strong>: Giganci i żywiołaki mrozu</p></li><li><p><strong>Światłość</strong>: Niebiańskie istoty</p></li><li><p><strong>Iluzja</strong>: Fey</p></li><li><p><strong>Kinetyka</strong>: Potworności</p></li><li><p><strong>Życie</strong>: Rośliny i bestie</p></li><li><p><strong>Burza</strong>: Konstrukty i żywiołaki burzy</p></li><li><p><strong>Nicość</strong>: Przybysze</p></li><li><p><strong>Dusza</strong>: Humanoidy</p></li></ul>"
         },
         "Gesture: Step": {
             "name": "Gest: Krok",
@@ -937,7 +937,7 @@
             "actions": {
                 "Headbutt": {
                     "name": "Uderzenie głową",
-                    "description": "<p>Wykorzystaj <strong>Uderzenie</strong> bez broni przeciwko obronie na <strong>Wytrwałość</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 korzyść</strong> do tego ataku. </p><p>Atak jest <strong>trudny</strong> i zadaje jedynie <strong>osłabione</strong> obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
+                    "description": "<p>Wykonaj <strong>uderzenie</strong> bez broni przeciwko obronie <strong>Wytrwałości</strong> sąsiadującego wroga. Jeśli twoja <strong>Inicjatywa</strong> jest wyższa od inicjatywy celu, otrzymujesz <strong>+1 Korzyść</strong> do tego ataku.</p><p>Ten atak jest <strong>Trudny</strong> i zadaje jedynie @Rule[action.weakened] obrażenia, ale w przypadku powodzenia powoduje @Condition[staggered] na jedną rundę.</p><p>Ta akcja zawsze wykorzystuje atak nieuzbrojony, nawet jeśli twoje miejsca na broń są zajęte przez inne przedmioty.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie głową"
@@ -985,11 +985,11 @@
         },
         "Illumination Proficiency": {
             "name": "Biegłość światłości",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Światłości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Ujawnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Światłości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeIllumination reveal], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Illusion Proficiency": {
             "name": "Biegłość iluzji",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Iluzji. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Pozorność</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Iluzji. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeIllusion0000 seeming], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Impenetrable Guard": {
             "name": "Niezłomny strażnik",
@@ -1055,7 +1055,7 @@
         },
         "Inspirator": {
             "name": "Inspirator",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> równe twojej wartości <strong>Prezencji</strong> do <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Duszy. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne, które przywracają Morale, powodują wystąpienie stanu @Condition[inspired].</p><p>Efekt Inspiracji trwa <strong>1 rundę</strong> i przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Duszy</strong>, jako dodatkowe <strong>Przywrócenie</strong> do <strong>Morale</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspiracja heroizmu",
@@ -1195,11 +1195,11 @@
         },
         "Kinesis Proficiency": {
             "name": "Biegłość kinetyki",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kinetyki. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Napędzanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Kinetyki. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Kineturge": {
             "name": "Kineturg",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kinetyki. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[bleeding].</p><p>Efekt Krwawienia trwa przez <strong>1 rundę</strong> i zadaje dodatkowe obrażenia <strong>kłute</strong> równe twojej wartości cechy <strong>Prezencji</strong> do <strong>Zdrowia</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kinetyki. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[bleeding].</p><p>Efekt Krwawienia trwa przez <strong>1 rundę</strong> i przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Kinetyki</strong>, jako dodatkowe <strong>obrażenia kłute</strong> do <strong>Zdrowia</strong>.</p>"
         },
         "Last Stand": {
             "name": "Ostatnie starcie",
@@ -1241,7 +1241,7 @@
         },
         "Life Proficiency": {
             "name": "Biegłość życia",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Kwitnienie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Życia. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeLife00000000 bloom], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Light Weapon Proficiency": {
             "name": "Biegłość w broni lekkiej",
@@ -1259,7 +1259,7 @@
         },
         "Lightbringer": {
             "name": "Niosący światło",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> i zadaje obrażenia <strong>świetliste</strong> równe twojej wartości <strong>Prezencji</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Światłości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[irradiated].</p><p>Efekt Napromieniowania trwa przez <strong>1 rundę</strong> oraz zadaje obrażenia typu <strong>Świetliste</strong>, których wielkość zależy od wartości atrybutu, z którym skaluje się twoja <strong>Runa Światłości</strong>, zarówno do <strong>Zdrowia</strong>, jak i do <strong>Morale</strong>.</p>"
         },
         "Mark Prey": {
             "name": "Naznaczenie celu",
@@ -1312,7 +1312,7 @@
         },
         "Mender": {
             "name": "Znachor",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong> i zapewnia dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong> równe twojej wartości <strong>Mądrości</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tkania Runy Życia. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą runą, twoje trafienia krytyczne, które przywracają zdrowie, powodują wystąpienie stanu @Condition[mending].</p><p>Efekt Regenerujący trwa przez <strong>1 rundę</strong> przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Życia</strong>, jako dodatkowe <strong>Przywrócenie</strong> do <strong>Zdrowia</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Twierdza umysłu",
@@ -1320,7 +1320,7 @@
         },
         "Mesmer": {
             "name": "Hipnotyk",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>psychiczne</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Iluzji. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[confused]. </p><p>Efekt zdezorientowany trwa przez <strong>1 rundę</strong>, zadaje połowę wartości atrybutu, od której skaluje się <strong>Runa Iluzji</strong>, jako obrażenia <strong>psychiczne</strong> do <strong>morale</strong> oraz nakłada stan @Condition[disoriented].</p>"
         },
         "Mnemonic Realization": {
             "name": "Realizacja pamięciowa",
@@ -1358,7 +1358,7 @@
         },
         "Necromancer": {
             "name": "Nekromanta",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Śmierci. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[decaying] </p><p>Efekt Gnijący trwa przez <strong>3 rundy</strong> i zadaje w każdej rundzie obrażenia <strong>zepsucia</strong> równe połowie twojej <strong>Prezencji</strong> do <strong>Zdrowia</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Śmierci. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[decaying] </p><p>Efekt Gnijący trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której zależy siła działania twojej <strong>Runy Śmierci</strong>, w postaci obrażeń od <strong>zepsucia</strong> do <strong>Zdrowia</strong> w każdej rundzie.</p>"
         },
         "Never Yield": {
             "name": "Nigdy nie odpuszczać",
@@ -1377,7 +1377,7 @@
         },
         "Oblivion Proficiency": {
             "name": "Biegłość nicości",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Nicości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Wymazanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Nicości. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeOblivion0000 erase], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Operator": {
             "name": "Operator",
@@ -1410,7 +1410,7 @@
         },
         "Patient Deflection": {
             "name": "Rozważne odparcie",
-            "description": "Twoja biegłość w sztukach walki pozwala ci unikać lub odbijać ciosy równie skutecznie, jak ciężko opancerzony wojownik. Gdy jesteś nieuzbrojony, połowa twojej wartości Mądrości przyczynia się do twojej obrony Parowania."
+            "description": "Twoja biegłość w sztukach walki pozwala ci unikać lub odbijać ciosy równie skutecznie, jak ciężko opancerzony wojownik. Gdy jesteś nieuzbrojony lub posługujesz się wyłącznie bronią naturalną, połowa twojej wartości Mądrości przyczynia się do twojej obrony Parowania."
         },
         "Peltast": {
             "name": "Peltasta",
@@ -1438,7 +1438,7 @@
             "actions": {
                 "Penetrating Throw": {
                     "name": "Rzut penetrujący",
-                    "description": "<p>Wykonujesz uderzenie bronią <strong>Rzucaną</strong>, który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
+                    "description": "<p>Wykonujesz uderzenie bronią typu @Rule[action.thrown], który przebija się i trafia wszystkich wrogów w linii prostej.</p>"
                 }
             }
         },
@@ -1468,7 +1468,7 @@
             "actions": {
                 "Pinning Shot": {
                     "name": "Strzał przyszpilający",
-                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak jest <strong>Trudny</strong>, jednak jeśli trafisz cel, zostanie on @Condition[restrained] do końca swojej następnej tury.</p>",
+                    "description": "<p><strong>Uderzasz</strong> z dystansu. Atak ma poziom trudności @Rule[action.difficult], jednak jeśli cel zostanie trafiony, przechodzi w stan @Condition[restrained] do końca swojej następnej <strong>tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Strzał przyszpilający"
@@ -1483,7 +1483,7 @@
             "actions": {
                 "Salvo": {
                     "name": "Salwa",
-                    "description": "Wystrzeliwujesz serię ataków za pomocą jednoręcznej broni mechanicznej, strzelając trzy razy do celu bez konieczności przeładowywania między strzałami."
+                    "description": "<p>Wystrzeliwujesz serię ataków za pomocą jednoręcznej broni mechanicznej, strzelając trzy razy do celu bez konieczności przeładowywania między strzałami.</p>"
                 }
             }
         },
@@ -1512,7 +1512,7 @@
         },
         "Powerful Throw": {
             "name": "Potężny rzut",
-            "description": "<p>Maksymalny zasięg akcji z tagiem <strong>Rzucenie</strong> lub akcji z przedmiotów jednorazowego użytku typu <strong>Bomba</strong> zostaje podwojony.</p>"
+            "description": "<p>Maksymalny zasięg akcji z tagiem @Rule[action.thrown] lub akcji z przedmiotów jednorazowego użytku typu <strong>Bomba</strong> zostaje podwojony.</p>"
         },
         "Precision Shot": {
             "name": "Precyzyjny strzał",
@@ -1610,7 +1610,7 @@
         },
         "Pyromancer": {
             "name": "Piromanta",
-            "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia <strong>Ognia</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w tworzeniu Runy Płomienia. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[burning].</p><p>Efekt Płonący trwa przez <strong>3 rundy</strong> i zadaje połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Płomienia</strong>, jako obrażenia <strong>ogniste</strong> zarówno do <strong>Zdrowia</strong>, jak i <strong>Morale</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Okrzyk bojowy",
@@ -1644,11 +1644,11 @@
         },
         "Resilient": {
             "name": "Odporny",
-            "description": "<p>Twoje ciało chętnie reaguje na procesy lecznicze, wykazując niezwykłą zdolność do regeneracji po odniesionych ranach.</p>\n<p>Twój <strong>Próg Ran</strong> zostaje obniżony o 1, co sprawia, że łatwiej się goi.</p>"
+            "description": "<p>Twoje ciało chętnie reaguje na procesy lecznicze, wykazując niezwykłą zdolność do regeneracji po odniesionych ranach.</p>\n<p>Twój <strong>próg Leczenia</strong> zostaje obniżony o 1, co sprawia, że łatwiej się goi.</p>"
         },
         "Rimecaller": {
             "name": "Wywoływacz mrozu",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, zadaje obrażenia od <strong>zimna</strong> równe połowie twojej <strong>Mądrości</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[slowed].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Mrozu. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują nałożenie stanu @Condition[freezing]. </p><p>Efekt zamrożenia trwa <strong>1 rundę</strong>, przekształca połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Mrozu</strong>, w obrażenia od <strong>mrozu</strong> zadane <strong>Zdrowiu</strong> oraz nakłada stan @Condition[slowed].</p>"
         },
         "Rune: Control": {
             "name": "Runa: Kontrola",
@@ -1962,7 +1962,7 @@
         },
         "Soul Proficiency": {
             "name": "Biegłość duszy",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Duszy. Otrzymujesz <strong>+1 premii do umiejętności</strong> za zaklęcia rzucane przy użyciu tej runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Wywoływanie</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej użycia.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Duszy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeSoul00000000 evoke], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Spellblade": {
             "name": "Zaklęte ostrze",
@@ -2013,7 +2013,7 @@
         },
         "Storm Proficiency": {
             "name": "Biegłość burzy",
-            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Burzy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji <strong>Energetyzacji</strong>, zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
+            "description": "<p>Płynnie posługujesz się magią tkacką, używając Runy Burzy. Otrzymujesz <strong>+1 premii umiejętności</strong> do zaklęć rzucanych przy użyciu tej Runy.</p><h3 class=\"divider\">Uwagi z testów</h3><p>Ten talent ostatecznie zapewni również ulepszenie akcji @Action[Compendium.crucible.talent.Item.runeStorm0000000 energize], zwiększając jej skuteczność lub dodając nowe opcje jej wykorzystania.</p>"
         },
         "Strategic Repositioning": {
             "name": "Strategiczna reorganizacja",
@@ -2033,7 +2033,7 @@
             "actions": {
                 "Stunning Strike": {
                     "name": "Oszałamiające uderzenie",
-                    "description": "<p><strong>Uderzasz</strong> w ważny punkt nacisku, powodując <strong>Oszołomienie</strong> przeciwnika na 1 rundę, jeśli atak się powiedzie.</p>",
+                    "description": "<p><strong>Uderzasz</strong> w ważny punkt nacisku, powodując stan @Rule[condition.stunned] wobec przeciwnika na 1 rundę, jeśli atak się powiedzie.</p>",
                     "effects": [
                         {
                             "name": "Oszałamiające uderzenie"
@@ -2063,7 +2063,7 @@
         },
         "Surgeweaver": {
             "name": "Iskrzyciel",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, zadaje połowę twojej wartości <strong>Intelektu</strong> jako obrażenia od <strong>elektryczności</strong> do <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Burzy. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę Runę, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[shocked]. </p><p>Efekt porażenia trwa przez <strong>3 rundy</strong>, przekształca połowę wartości atrybutu, od której skaluje się twoja <strong>Runa Burzy</strong>, w obrażenia <strong>elektryczne</strong> zadane <strong>Morale</strong> oraz nakłada stan @Condition[staggered].</p>"
         },
         "Swashbuckler": {
             "name": "Zawadiaka",
@@ -2136,7 +2136,7 @@
         },
         "Thoughtbinder": {
             "name": "Myślotwórca",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kontroli. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[dominated].</p><p>Efekt Dominacji trwa przez <strong>3 rundy</strong> i zadaje dodatkowe obrażenia <strong>psychiczne</strong> równe twojej wartości cechy <strong>Mądrości</strong> do <strong>Morale</strong>.</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Kontroli. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują stan @Condition[dominated].</p><p>Efekt Dominacji trwa przez <strong>3 rundy</strong> i przyznaje wartość atrybutu, od której skaluje się twoja <strong>Runa Kontroli</strong>, jako dodatkowe <strong>obrażenia psychiczne</strong> do <strong>Morale</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Nawlekanie igły",
@@ -2174,7 +2174,7 @@
         },
         "Unarmed Blocking": {
             "name": "Blokowanie bez użycia broni",
-            "description": "Twoje wyćwiczone refleksy i wytrzymałość fizyczna pozwalają ci blokować ciosy przeciwnika gołymi rękami. Gdy jesteś <strong>Nieuzbrojony</strong>, połowa twojej Wytrzymałości przyczynia się do twojej obrony <strong>Bloku</strong>."
+            "description": "Twoje wyćwiczone refleksy i wytrzymałość fizyczna pozwalają ci blokować ciosy przeciwnika gołymi kończynami. Gdy jesteś <strong>Nieuzbrojony</strong> lub posługujesz się wyłącznie bronią naturalną, połowa twojej wartości Wytrzymałości wlicza się do twojej obrony <strong>Bloku</strong>."
         },
         "Unarmed Combat Proficiency": {
             "name": "Biegłość w walce bez broni",
@@ -2228,7 +2228,7 @@
         },
         "Voidcaller": {
             "name": "Wzywacz pustki",
-            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Nicości. Kiedy rzucasz zaklęcie lub wykonujesz akcję wykorzystującą tę runę, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[entropy]. </p><p>Efekt Entropii trwa przez <strong>1 rundę</strong>, zadaje połowę twojej wartości <strong>Prezencji</strong> jako obrażenia <strong>pustki</strong> do <strong>Zdrowia</strong> oraz nakłada stan @Condition[frightened].</p>"
+            "description": "<p>Posiadasz wysokie umiejętności w zakresie tworzenia Runy Nicości. Kiedy rzucasz zaklęcie lub wykonujesz akcję związaną z tą Runą, twoje trafienia krytyczne zadające obrażenia powodują wystąpienie stanu @Condition[entropy]. </p><p>Efekt entropii trwa przez <strong>1 rundę</strong>, zadaje połowę wartości atrybutu, od której skaluje się <strong>Runa Nicości</strong>, jako obrażenia od <strong>pustki</strong> do <strong>morale</strong> oraz nakłada stan @Condition[frightened].</p>"
         },
         "Vow of Animus": {
             "name": "Nienawistna przysięga",
@@ -2291,7 +2291,7 @@
                 },
                 "Dirge of the Glutton's Lethargy": {
                     "name": "Pieśń żałobna o Ospałości Żarłoka",
-                    "description": "<p>Intonujesz przeciągły requiem dla <strong>Żarłoka</strong>, który jest zbyt otyły i leniwy, by się poruszyć. Wrogie stworzenia w promieniu <strong>15 stóp</strong> tracą <strong>darmowy</strong> <strong>ruch</strong> i zmniejszają swój <strong>bieg</strong> o 2.</p>",
+                    "description": "<p>Intonujesz przeciągły requiem dla <strong>Żarłoka</strong>, który jest zbyt otyły i leniwy, by się poruszyć. Wrogie stworzenia w promieniu <strong>15 stóp</strong> tracą <strong>darmowy ruch</strong> i ich <strong>Bieg</strong> zmniejsza się o 2.</p>",
                     "effects": [
                         {
                             "name": "Pieśń żałobna o Ospałości Żarłoka"
