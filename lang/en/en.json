@@ -634,7 +634,6 @@
       "Falling": "Falling",
       "Fear": "Frightened",
       "Flanked": "Flanked",
-      "FlankedDescription": "You are flanked by multiple enemies who gain additional Boons to their attacks!",
       "Flying": "Flying",
       "Freezing": "Freezing",
       "Guarded": "Guarded",
@@ -648,6 +647,7 @@
       "Limitless": "Limitless",
       "Mending": "Mending",
       "Mute": "Silenced",
+      "Overrun": "Overrun",
       "Paralyzed": "Paralyzed",
       "Poisoned": "Poisoned",
       "Prone": "Prone",
@@ -660,6 +660,9 @@
       "Suffocating": "Suffocating",
       "Unaware": "Unaware",
       "Weakened": "Weakened"
+    },
+    "WARNINGS": {
+      "ReferenceNotDeleted": "Expected to delete \"{name}\" but it could not be deleted automatically. Please delete it manually if appropriate."
     }
   },
   "ACTOR": {
@@ -878,8 +881,10 @@
       "FavoriteActions": "Favorite Actions",
       "Knowledge": "Knowledge Areas",
       "KnowledgeHint": "Learn some Knowledge Areas from your Background or edit your Hero to gain some.",
+      "KnowledgeHintAdversary": "Use the configuration control to assign Knowledge Areas.",
       "Languages": "Known Languages",
       "LanguagesHint": "Learn some Languages from your Background or edit your Hero to gain some.",
+      "LanguagesHintAdversary": "Use the configuration control to assign Languages.",
       "OverCapacity": "Over Capacity"
     },
     "SECTIONS": {
@@ -1633,19 +1638,6 @@
     "SkillBonus": "Skill Bonus",
     "UnknownScore": "???"
   },
-  "FLANKED_EFFECT": {
-    "FIELDS": {
-      "allies": {
-        "label": "Allies Engaging"
-      },
-      "enemies": {
-        "label": "Enemies Engaging"
-      },
-      "flanked": {
-        "label": "Flanked Stage"
-      }
-    }
-  },
   "HOOKS": {
     "NoModuleHooks": "No module hooks are registered for this identifier.",
     "ToggleSource": "Toggle Source",
@@ -1664,6 +1656,8 @@
     "Rank": "Hazard {danger}",
     "TooltipDamage": "{rank} vs. {defense} dealing {damage} damage to {resource}",
     "TooltipRestoration": "{rank} vs. {defense} restoring {resource}",
+    "TooltipTag": "{label}: {tooltip}",
+    "TooltipTags": "{tooltip} ({tags})",
     "UseHazard": "Use Hazard",
     "WindowTitle": "Hazard: {name}",
     "CONFIG": {
@@ -2157,8 +2151,8 @@
     "SpecializationPathSelect": "Select Specialization",
     "SpecializationPathSpecific": "Specialization Path: {path}",
     "Summary": "Skill Summary",
-    "TooltipCheck": "[({a1} + {a2}) / 4] + Skill Bonus + Enchantment Bonus",
-    "TooltipPassive": "12 + Score",
+    "TooltipCheck": "[({v1} {a1} + {v2} {a2}) / 4] {skill} {rank} {enchantment} Enchantment",
+    "TooltipPassive": "12 + {score}",
     "UnacquiredRanks": "Unacquired Ranks"
   },
   "SPELL": {
@@ -2554,6 +2548,8 @@
   },
   "TOKEN": {
     "LABELS": {
+      "Allies": "{allies} Allies",
+      "Attackers": "{attackers} Attackers",
       "Enemies": "{enemies} Enemies",
       "Engagement": "Engagement {engagement}",
       "Flanked": "Flanked {flanked}"
@@ -2639,8 +2635,7 @@
   },
   "TYPES": {
     "ActiveEffect": {
-      "affix": "Affix",
-      "flanked": "Flanked"
+      "affix": "Affix"
     },
     "Actor": {
       "adversary": "Adversary",

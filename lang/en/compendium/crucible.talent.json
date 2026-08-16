@@ -298,7 +298,7 @@
         },
         "Berserker": {
             "name": "Berserker",
-            "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p>",
+            "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p><p>While @Condition[enraged] you may still spend <strong>Focus</strong> on any action which is not a spell.</p>",
             "actions": {
                 "Berserker Rage": {
                     "name": "Berserker Rage",
@@ -486,7 +486,7 @@
         },
         "Counterspell": {
             "name": "Counterspell",
-            "description": "<p>You immediately react to a spell being cast and compose a rune and gesture designed to unravel and negate the spellcraft of an enemy mage.</p><h2 class=\"divider\">Playtest Notes</h2><p>This action can now be used in playtesting, but it is not yet <em>fully automated</em>. The Counterspell can be performed, but it is up to the Gamemaster to manually reverse a previously applied spell and to manually deduct its <strong>Action</strong> and <strong>Focus</strong> cost. These steps of the overall Counterspell workflow <em>will be automated</em> in a subsequent update such that a confirmed Counterspell will also confirm the spell that was countered, but with its effects removed.</p>",
+            "description": "<p>You immediately react to a spell being cast and compose a rune and gesture designed to unravel and negate the spellcraft of an enemy mage.</p>",
             "actions": {
                 "Counterspell": {
                     "name": "Counterspell",
@@ -644,7 +644,7 @@
         },
         "Duelist": {
             "name": "Duelist",
-            "description": "<p>You relish the thrill and skillful mastery of single combat, employing a fighting style that uses a one-handed weapon while keeping your off-hand unoccupied.</p><p>While wielding a one-handed melee weapon with your other hand empty, you gain a <strong>+2</strong> bonus to your <strong>Parry</strong> defense as long as you are not @Condition[flanked]. While meeting these criteria, any attack that results in a <strong>Glance</strong> against your <strong>Armor</strong> becomes a <strong>Parry</strong> instead.</p>",
+            "description": "<p>You relish the thrill and skillful mastery of single combat, employing a fighting style that uses a one-handed weapon while keeping your off-hand unoccupied.</p><p>While wielding a one-handed melee weapon with your other hand empty, you gain a <strong>+2</strong> bonus to your <strong>Parry</strong> defense. While meeting these criteria, any attack that results in a <strong>Glance</strong> against your <strong>Armor</strong> becomes a <strong>Parry</strong> instead. You gain neither benefit against an attacker who has you @Condition[flanked].</p>",
             "actions": {
                 "Estocade": {
                     "name": "Estocade",
@@ -710,7 +710,7 @@
         },
         "Eye of the Storm": {
             "name": "Eye of the Storm",
-            "description": "<p>After you Delay your Turn, gain +2 Boons on any Strike or Spell attack against an enemy that you allowed to act before you that Round.</p><p>TODO: Needs automation. For now apply boons manually.</p>"
+            "description": "<p>After you Delay your Turn, gain +2 Boons on any Strike or Spell attack against an enemy that you allowed to act before you that Round.</p>"
         },
         "Fan of Arrows": {
             "name": "Fan of Arrows",
