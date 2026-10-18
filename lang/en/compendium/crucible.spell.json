@@ -175,7 +175,7 @@
             "actions": {
                 "Protective Mirage": {
                     "name": "Protective Mirage",
-                    "description": "<p>You become surrounded by three illusory duplicates which last up to 10 Rounds. Any incoming <strong>Strike</strong> against you is made with a number of <strong>Banes</strong> equal to two times your number of duplicates remaining. Each time a Strike misses you, one of your duplicates disappears.</p>",
+                    "description": "<p>You become surrounded by three illusory duplicates which last up to <strong>10 Rounds</strong>. Any incoming <strong>Strike</strong> against you is made with a number of <strong>Banes</strong> equal to two times your number of duplicates remaining. Each time a <strong>Strike</strong> misses you, one of your duplicates disappears.</p>",
                     "effects": [
                         {
                             "name": "Mirage"
@@ -186,7 +186,7 @@
         },
         "Revive": {
             "name": "Revive",
-            "description": "<p>A potent expression of Life and Control magics, Revive allows the caster to intervene in the natural process of death by driving a surge of the essence of life into the body of the recently deceased. Those who have experienced Revival are often reluctant to discuss it, but describe it as a sensation that is unpleasantly reminiscent of being woken suddenly from a deep slumber to find they have been freezing— the flesh prickles and aches, the mind reels, and the soul aches with the memory of its interrupted departure.</p>",
+            "description": "<p>A potent expression of <strong>Life</strong> and <strong>Control</strong> magics, <strong>Revive</strong> allows the caster to intervene in the natural process of death by driving a surge of the essence of life into the body of the recently deceased. Those who have experienced Revival are often reluctant to discuss it, but describe it as a sensation that is unpleasantly reminiscent of being woken suddenly from a deep slumber to find they have been freezing—the flesh prickles and aches, the mind reels, and the soul aches with the memory of its interrupted departure.</p>",
             "actions": {
                 "Revive": {
                     "name": "Revive",
@@ -201,11 +201,11 @@
         },
         "Telecognition": {
             "name": "Telecognition",
-            "description": "<p>A rudimentary example of the complex art of penetrating the minds of others, Telecognition skims thoughts from the surface of a subject's mind like leaves from the surface of a pond. Though it may not be disruptive, it is unsubtle— just as the pond ripples when its surface is touched, so too does the mind.</p><p></p>",
+            "description": "<p>A rudimentary example of the complex art of penetrating the minds of others, <strong>Telecognition</strong> skims thoughts from the surface of a subject's mind like leaves from the surface of a pond. Though it may not be disruptive, it is unsubtle— just as the pond ripples when its surface is touched, so too does the mind.</p><p></p>",
             "actions": {
                 "Telecognition": {
                     "name": "Telecognition",
-                    "description": "<p>You reach into the mind of a <strong>Humanoid</strong> or <strong>Giant</strong> creature, attempting to penetrate their <strong>Willpower</strong> defense to understand their thoughts and motives. The target of this spell is aware of the intrusion, even if they cannot perceive you.</p><p>If successful, the Gamemaster (in the case of an Adversary target) or Player (in the case of a Hero target) must describe to you in 3 words or less what idea or sentiment is at the forefront of their thoughts in the current moment.</p><p>Upon a Critical Success, this description may use up to 10 words to convey deeper understanding.</p>"
+                    "description": "<p>You reach into the mind of a <strong>Humanoid</strong> or <strong>Giant</strong> creature, attempting to penetrate their <strong>Willpower</strong> defense to understand their thoughts and motives. The target of this spell is aware of the intrusion, even if they cannot perceive you.</p><p>If successful, the <strong>Gamemaster</strong> (in the case of an <strong>Adversary</strong> target) or <strong>Player</strong> (in the case of a <strong>Hero</strong> target) must describe to you in 3 words or less what idea or sentiment is at the forefront of their thoughts in the current moment.</p><p>Upon a <strong>Critical Success</strong>, this description may use up to 10 words to convey deeper understanding.</p>"
                 }
             }
         }

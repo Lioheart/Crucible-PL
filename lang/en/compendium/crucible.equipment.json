@@ -60,7 +60,7 @@
         "Alchemist's Toolkit": {
             "name": "Alchemist's Toolkit",
             "description": {
-                "public": "<p>A wooden box wrapped in leather containing a stone mortar and pestle, spaces for securing several stoppered vials, a wooden spoon, and a small collapsible iron frame and small brass pot for combining ingredients above a fire.</p>"
+                "public": "<p>A wooden box wrapped in leather containing a stone mortar and pestle, a wooden spoon, and a small collapsible iron frame and brass pot for combining ingredients above a fire.</p><p>Its real worth is what fills the rest of it: stoppered vials of clear and cloudy liquid, twists of paper holding powders, pouches of coarse salts, a stub of chalk, a sealed jar of something that smells faintly of lightning. Each is racked in its own place and labelled in a hand only its owner can read.</p><p>Carrying the kit in your Toolbelt means those reagents are at your fingertips rather than at the bottom of a pack, which is the difference between knowing the answer and being able to apply it.</p>"
             }
         },
         "Amulet": {
@@ -74,7 +74,7 @@
             "name": "Amulet of Nimbleness",
             "description": {
                 "public": "<blockquote><p>This brightly colored necklace holds a stone amulet that glows with a rune that crackles faintly with electrical resonance. While holding it you have the surreal sensation of the world around you slowing down ever so slightly.</p></blockquote><p>This enchanted amulet provides a bonus to <strong>Reflex</strong> defense.</p>",
-                "private": "<p>This item is presented as an example of a Fine Amulet with the @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Nimbleness} suffix.</p><p>This affix can be applied to any armor or accessory and this amulet could be further enchanted with a Tier 1 prefix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Nimbleness} suffix.</p><p>This affix can be applied to any armor or accessory and this amulet could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Nimbleness": {
@@ -228,7 +228,7 @@
             "name": "Charm of Tenacity",
             "description": {
                 "public": "<blockquote><p>This charm-covered necklace looks rustic, but upon close inspection you notice a delicate craft imbued within its workmanship. While holding it you feel your breaths deepen and the minor aches within your muscles dissipate.</p></blockquote><p>This enchanted charm provides a bonus to <strong>Fortitude</strong> defense.</p>",
-                "private": "<p>This item is presented as an example of a Fine Charm with the @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Tenacity} suffix.</p><p>This affix can be applied to any armor or accessory and this charm could be further enchanted with a Tier 1 prefix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Tenacity} suffix.</p><p>This affix can be applied to any armor or accessory and this charm could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Tenacity": {
@@ -429,7 +429,7 @@
             "name": "Focusing Pearl",
             "description": {
                 "public": "<blockquote><p>A small, vibrant blue pearl that feels refreshingly cool to the touch regardless of ambient temperature.</p></blockquote><p>This enchanted pearl grants its bearer the <strong>Replenish Focus</strong> action, providing an additional reserve of <strong>Focus</strong> that can be drawn upon in moments of duress.</p>",
-                "private": "<p>This item is presented as an example of a Fine Pearl with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this pearl could be further enchanted with a Tier 1 suffix.</p>"
+                "private": "<p>This item is presented as an example of a <strong>Fine</strong> trinket with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this pearl could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Focusing": {
@@ -439,7 +439,7 @@
                     "actions": {
                         "affixFocusing": {
                             "name": "Replenish Focus",
-                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                         }
                     }
                 }
@@ -479,7 +479,7 @@
             "name": "Gem of Illumination",
             "description": {
                 "public": "<blockquote><p>This carefully faceted gemstone glows faintly with warm light, and feels warm to the touch.</p></blockquote><p>This enchanted gem grants its bearer the <strong>Activate Illumination</strong> action, shedding an otherworldly light in a wide radius until dismissed.</p>",
-                "private": "<p>This item is presented as an example of a Fine Gem with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Luminous} prefix.</p><p>This affix can be applied to any accessory and this gem could be further enchanted with a Tier 1 suffix.</p>"
+                "private": "<p>This item is presented as an example of a <strong>Fine</strong> trinket with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Luminous} prefix.</p><p>This affix can be applied to any accessory and this gem could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Luminous": {
@@ -629,7 +629,7 @@
             "actions": {
                 "Healing Tonic": {
                     "name": "Healing Tonic",
-                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each Round</p></li></ul>",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each <strong>Round</strong></p></li></ul>",
                     "effects": [
                         {
                             "name": "Healing Tonic"
@@ -774,8 +774,8 @@
         "Luminary Band": {
             "name": "Luminary Band",
             "description": {
-                "public": "<blockquote><p>An intricately engraved golden ring that wraps around an elliptical glinting orange gemstone.</p></blockquote><p>This enchanted band provides boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>.</p>",
-                "private": "<p>This item is presented as an example of a Fine Band with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Luminary} prefix.</p><p>This affix can be applied to any accessory and this band could be further enchanted with a Tier 1 suffix.</p>"
+                "public": "<blockquote><p>An intricately engraved golden ring that wraps around an elliptical glinting orange gemstone.</p></blockquote><p>This enchanted band provides boons to @Rule[action.composed] actions that include an <strong>Inflection</strong>.</p>",
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Luminary} prefix.</p><p>This affix can be applied to any accessory and this band could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Luminary": {
@@ -886,7 +886,7 @@
             "name": "Periapt of Determination",
             "description": {
                 "public": "<blockquote><p>A graceful silver amulet embedded with blue jewels imbues you with a feeling of steadfastness while you clutch it, prepared to weather any challenge.</p></blockquote><p>This enchanted periapt provides a bonus to <strong>Willpower</strong> defense.</p>",
-                "private": "<p>This item is presented as an example of a Fine Periapt with the @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Determination} suffix.</p><p>This affix can be applied to any armor or accessory and this periapt could be further enchanted with a Tier 1 prefix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Determination} suffix.</p><p>This affix can be applied to any armor or accessory and this periapt could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Determination": {
@@ -973,7 +973,7 @@
             "actions": {
                 "Rallying Tonic": {
                     "name": "Rallying Tonic",
-                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each Round</p></li></ul>",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each <strong>Round</strong></p></li></ul>",
                     "effects": [
                         {
                             "name": "Rallying Tonic"
@@ -1000,18 +1000,6 @@
                 "public": "<p>A particularly sharp blade used for shaving or, in some cases, surgery.</p>"
             }
         },
-        "Repair Kit (smith)": {
-            "name": "Repair Kit (smith)",
-            "description": {
-                "public": "<p>A leather-bound bag containing sharpening stones and a grinder, a small hammer, a small crucible for liquifying metal, and an assortment of small pieces of scrap metal. Can be used to repair metal armor, weapons, and accessories.</p>"
-            }
-        },
-        "Repair Kit (tailor)": {
-            "name": "Repair Kit (tailor)",
-            "description": {
-                "public": "<p>A leather-bound bag containing scissors, needles, a weaving frame, and an assortment of small pieces of scrap cloth, leather, thread and string. Can be used to repair cloth and leather armor and accessories.</p>"
-            }
-        },
         "Ring": {
             "name": "Ring",
             "description": {
@@ -1029,7 +1017,7 @@
             "name": "Ring of Evasion",
             "description": {
                 "public": "<blockquote><p>This elegant ornamented ring feels slightly slick and difficult to grasp. While held it vibrates almost imperceptibly.</p></blockquote><p>This enchanted ring provides a bonus to <strong>Dodge</strong> defense.</p>",
-                "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Evasion} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Evasion} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Evasion": {
@@ -1043,7 +1031,7 @@
             "name": "Ring of Gliding",
             "description": {
                 "public": "<blockquote><p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p></blockquote><p>This enchanted ring grants the ability to glide laterally during a fall.</p>",
-                "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Gliding": {
@@ -1160,7 +1148,7 @@
         "Smith's Toolkit": {
             "name": "Smith's Toolkit",
             "description": {
-                "public": "<p>A leather-bound wooden kitbag. Contains awls, pincers, scrap metal and a small anvil as well as space for storing bits of scrap metal.</p>"
+                "public": "<p>A leather-bound wooden kitbag containing awls, pincers, a small hammer, sharpening stones and a grinder, and a small anvil, with space set aside for storing bits of scrap metal.</p>"
             }
         },
         "Soap": {
@@ -1230,7 +1218,7 @@
             "name": "Spellband",
             "description": {
                 "public": "<blockquote><p>This ring made of an opaque stone that has been carefully carved with graceful, sweeping layers evoking an ancient aesthetic. The ring serves as a powerful spellcasting focus for the <strong>Invested</strong> wearer.</p></blockquote><p>This enchanted ring grants the ability to withdraw an additional reserve of <strong>Focus</strong> in moments of duress.</p>",
-                "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Reserved Focus} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
+                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Focusing": {
@@ -1240,7 +1228,7 @@
                     "actions": {
                         "affixFocusing": {
                             "name": "Replenish Focus",
-                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                         }
                     }
                 }
@@ -1312,7 +1300,7 @@
         "Tailor's Toolkit": {
             "name": "Tailor's Toolkit",
             "description": {
-                "public": "<p>A leather-bound wooden kitbag containing spools for thread, suitable needles and pins, a skinning knife awls, suitable for working with cloth and leather.</p>"
+                "public": "<p>A leather-bound wooden kitbag containing spools of thread, needles and pins, scissors, a skinning knife, and awls, with space set aside for scraps of cloth and leather.</p>"
             }
         },
         "Tent (caravan)": {

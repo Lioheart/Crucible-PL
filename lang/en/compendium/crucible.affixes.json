@@ -43,7 +43,7 @@
             "actions": {
                 "Replenish Action": {
                     "name": "Replenish Action",
-                    "description": "<p>In moments of duress you can draw upon an additional reserve of <strong>Action</strong> from this item. The amount of Action restored depends on the <strong>Tier</strong> of this affix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 Action</strong></p></li><li><p><strong>Tier 2:</strong> <strong>2 Action</strong></p></li><li><p><strong>Tier 3:</strong> <strong>3 Action</strong></p></li></ul>"
+                    "description": "<p>In moments of duress you can draw upon an additional reserve of <strong>Action</strong> from this item. The amount of <strong>Action</strong> restored depends on the <strong>Tier</strong> of this affix.</p><ul><li><p><strong>Tier 1</strong>: <strong>1 Action</strong></p></li><li><p><strong>Tier 2</strong>: <strong>2 Action</strong></p></li><li><p><strong>Tier 3</strong>: <strong>3 Action</strong></p></li></ul>"
                 }
             }
         },
@@ -144,7 +144,7 @@
         },
         "Control Spellcraft": {
             "name": "Control Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Control</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Control</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Control</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Control</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Kinematic Spellcraft</strong>.</p>",
             "adjective": "Control-Runic"
         },
         "Corruption Conversion": {
@@ -174,7 +174,7 @@
         },
         "Death Spellcraft": {
             "name": "Death Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Death</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Death</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Death</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Death</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Kinematic Spellcraft</strong>.</p>",
             "adjective": "Death-Runic"
         },
         "Deception": {
@@ -235,7 +235,7 @@
         },
         "Earth Spellcraft": {
             "name": "Earth Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Earth</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Earth</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Earth</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Earth</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Elemental Spellcraft</strong>.</p>",
             "adjective": "Earth-Runic"
         },
         "Electricity Conversion": {
@@ -305,7 +305,7 @@
         },
         "Flame Spellcraft": {
             "name": "Flame Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Flame</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Flame</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Flame</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Flame</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Elemental Spellcraft</strong>.</p>",
             "adjective": "Flame-Runic"
         },
         "Focusing": {
@@ -315,7 +315,7 @@
             "actions": {
                 "Replenish Focus": {
                     "name": "Replenish Focus",
-                    "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
+                    "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                 }
             }
         },
@@ -331,7 +331,7 @@
         },
         "Frost Spellcraft": {
             "name": "Frost Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Frost</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Frost</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Frost</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Frost</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Elemental Spellcraft</strong>.</p>",
             "adjective": "Frost-Runic"
         },
         "Giant Bane": {
@@ -367,7 +367,7 @@
         },
         "Illumination Spellcraft": {
             "name": "Illumination Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Illumination</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illumination</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Illumination</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illumination</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Spiritual Spellcraft</strong>.</p>",
             "adjective": "Illumination-Runic"
         },
         "Illusion Potency": {
@@ -377,7 +377,7 @@
         },
         "Illusion Spellcraft": {
             "name": "Illusion Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Illusion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illusion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Illusion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Illusion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Spiritual Spellcraft</strong>.</p>",
             "adjective": "Illusion-Runic"
         },
         "Influence Spellcraft": {
@@ -392,7 +392,7 @@
         },
         "Keen": {
             "name": "Keen",
-            "description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful Strike. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>",
+            "description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful <strong>Strike</strong>. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>",
             "adjective": "Keen"
         },
         "Kinesis Potency": {
@@ -402,7 +402,7 @@
         },
         "Kinesis Spellcraft": {
             "name": "Kinesis Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Kinesis</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Kinesis</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Kinesis</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Kinesis</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Kinematic Spellcraft</strong>.</p>",
             "adjective": "Kinesis-Runic"
         },
         "Life Potency": {
@@ -412,12 +412,12 @@
         },
         "Life Spellcraft": {
             "name": "Life Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Life</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Life</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Life</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Life</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Kinematic Spellcraft</strong>.</p>",
             "adjective": "Life-Runic"
         },
         "Luminary": {
             "name": "Luminary",
-            "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one Affix can provide this benefit.</p>",
+            "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix. Only one <strong>Affix</strong> can provide this benefit.</p>",
             "adjective": "Luminary"
         },
         "Luminous": {
@@ -463,7 +463,7 @@
         },
         "Nonchalant": {
             "name": "Nonchalant",
-            "description": "<p>Strikes against your <strong>Morale</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p><strong>Strikes</strong> against your <strong>Morale</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Nonchalant"
         },
         "Oblivion Potency": {
@@ -473,7 +473,7 @@
         },
         "Oblivion Spellcraft": {
             "name": "Oblivion Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Oblivion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Oblivion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Oblivion</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Oblivion</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Spiritual Spellcraft</strong>.</p>",
             "adjective": "Oblivion-Runic"
         },
         "Ooze Bane": {
@@ -523,7 +523,7 @@
         },
         "Potency": {
             "name": "Potency",
-            "description": "<p>Adds an <strong>Enchantment Bonus</strong> to all Strikes which use this weapon based on the <strong>Tier</strong> of the affix.</p>",
+            "description": "<p>Adds an <strong>Enchantment Bonus</strong> to all <strong>Strikes</strong> which use this weapon based on the <strong>Tier</strong> of the affix.</p>",
             "adjective": "Power"
         },
         "Psychic Conversion": {
@@ -588,7 +588,7 @@
         },
         "Reach": {
             "name": "Reach",
-            "description": "<p>Extends the effective range of this weapon. Melee weapons gain <strong>+1 range per Tier</strong>. Ranged weapons gain <strong>+10 range per Tier</strong>.</p>",
+            "description": "<p>Extends the effective range of this weapon. <strong>Melee</strong> weapons gain <strong>+1 range per Tier</strong>. <strong>Ranged</strong> weapons gain <strong>+10 range per Tier</strong>.</p>",
             "adjective": "Reaching"
         },
         "React Spellcraft": {
@@ -648,7 +648,7 @@
         },
         "Soul Spellcraft": {
             "name": "Soul Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Soul</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Soul</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Soul</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Soul</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Spiritual Spellcraft</strong>.</p>",
             "adjective": "Soul-Runic"
         },
         "Spirited": {
@@ -678,7 +678,7 @@
         },
         "Storm Spellcraft": {
             "name": "Storm Spellcraft",
-            "description": "<p>This item is imbued with the essence of <strong>Storm</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Storm</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent.</p>",
+            "description": "<p>This item is imbued with the essence of <strong>Storm</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Storm</strong> rune, allowing them to compose spells using it even without having learned the rune through a talent. It also grants <strong>2</strong> points of @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Proficiency} in <strong>Elemental Spellcraft</strong>.</p>",
             "adjective": "Storm-Runic"
         },
         "Strike Spellcraft": {
@@ -703,12 +703,12 @@
         },
         "Unshakeable": {
             "name": "Unshakeable",
-            "description": "<p>Strikes against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p><strong>Strikes</strong> against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Unshakeable"
         },
         "Vicious": {
             "name": "Vicious",
-            "description": "<p>A Strike that scores a <strong>Critical Hit</strong> with this weapon brutally exploits the wound.</p><ul><li><p>Weapons that deal <strong>Piercing</strong> or <strong>Slashing</strong> damage cause the target to begin @Condition[bleeding].</p></li><li><p>Weapons that deal <strong>Bludgeoning</strong> damage cause the target to become @Condition[staggered].</p></li></ul>",
+            "description": "<p>A <strong>Strike</strong> that scores a <strong>Critical Hit</strong> with this weapon brutally exploits the wound.</p><ul><li><p>Weapons that deal <strong>Piercing</strong> or <strong>Slashing</strong> damage cause the target to begin @Condition[bleeding].</p></li><li><p>Weapons that deal <strong>Bludgeoning</strong> damage cause the target to become @Condition[staggered].</p></li></ul>",
             "adjective": "Vicious"
         },
         "Void Conversion": {

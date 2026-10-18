@@ -41,12 +41,15 @@
             "actions": {
                 "Aqueous Transmission": {
                     "name": "Aqueous Transmission",
-                    "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                    "description": "<p>When the @ref[actor.name]{creature} is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                 }
             }
         },
         "Bony Claws": {
             "name": "Bony Claws"
+        },
+        "Caustic Limb": {
+            "name": "Caustic Limb"
         },
         "Cold Absorption": {
             "name": "Cold Absorption"
@@ -63,13 +66,9 @@
                 "Earthen Claw": {
                     "name": "Earthen Claw"
                 },
-                "Rune: Earth": {
-                    "name": "Rune: Earth",
-                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
-                },
                 "Gesture: Ray": {
                     "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                    "description": "<p>You funnel the arcane power of a <strong>Rune</strong> into a point and project it outwards in a beam.</p><p>The <strong>Ray</strong> gesture scales using <strong>Wisdom</strong> and produces a line that is <strong>1 foot</strong> wide and <strong>30 feet</strong> long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Acid Absorption": {
                     "name": "Acid Absorption",
@@ -81,7 +80,29 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Earth": {
+                    "name": "Rune: Earth",
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The <strong>Earth</strong> rune governs minerals, metals, soils, and other physical compounds.</p><p>The <strong>Earth</strong> rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Storm</strong>.</p>",
+                    "actions": {
+                        "Mould": {
+                            "name": "Mould",
+                            "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
+                },
+                "Caustic Limb": {
+                    "name": "Caustic Limb",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} strikes with a dripping limb of corrosive ichor.</p>"
+                    }
+                },
+                "Stone Skin": {
+                    "name": "Stone Skin",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has craggy, rock-like skin.</p>"
+                    }
                 }
             },
             "archetype": {
@@ -96,17 +117,13 @@
         "Earth Visitor": {
             "name": "Earth Visitor",
             "items": {
-                "Rune: Earth": {
-                    "name": "Rune: Earth",
-                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs health and matters relating to biological growth. It is opposed by the chaotic rune of Storm.</p>\n<p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>.</p>"
-                },
                 "Acid Absorption": {
                     "name": "Acid Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
@@ -116,7 +133,29 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a <strong>Rune</strong> into your body, empowering your own physical form or psyche.</p><p>When you assume a certain <strong>Aspect</strong>, you become more closely attuned to the damage type of the <strong>Rune</strong> used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your <strong>Aspect</strong> lasts for <strong>6 Rounds</strong>. You may only have one active <strong>Aspect</strong>; casting another spell using the <strong>Aspect</strong> gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Earth": {
+                    "name": "Rune: Earth",
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The <strong>Earth</strong> rune governs minerals, metals, soils, and other physical compounds.</p><p>The <strong>Earth</strong> rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Storm</strong>.</p>",
+                    "actions": {
+                        "Mould": {
+                            "name": "Mould",
+                            "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
+                },
+                "Caustic Limb": {
+                    "name": "Caustic Limb",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} strikes with a dripping limb of corrosive ichor.</p>"
+                    }
+                },
+                "Stone Skin": {
+                    "name": "Stone Skin",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has craggy, rock-like skin.</p>"
+                    }
                 }
             },
             "archetype": {
@@ -149,13 +188,9 @@
         "Flame Sprite": {
             "name": "Flame Sprite",
             "items": {
-                "Rune: Flame": {
-                    "name": "Rune: Flame",
-                    "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
-                },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Flame Claw": {
                     "name": "Flame Claw"
@@ -170,6 +205,16 @@
                 "False Appearance": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+                },
+                "Rune: Flame": {
+                    "name": "Rune: Flame",
+                    "description": "<p>The chaotic force of elemental, thermal energy. The <strong>Flame</strong> rune governs fire and heat.</p><p>The <strong>Flame</strong> rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+                    "actions": {
+                        "Enkindle": {
+                            "name": "Enkindle",
+                            "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 }
             },
             "archetype": {
@@ -184,17 +229,13 @@
         "Flame Visitor": {
             "name": "Flame Visitor",
             "items": {
-                "Rune: Flame": {
-                    "name": "Rune: Flame",
-                    "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat. It is opposed by the orderly rune of Frost.</p>\n<p>The Flame rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>.</p>"
-                },
                 "Fire Absorption": {
                     "name": "Fire Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -204,7 +245,17 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a <strong>Rune</strong> into your body, empowering your own physical form or psyche.</p><p>When you assume a certain <strong>Aspect</strong>, you become more closely attuned to the damage type of the <strong>Rune</strong> used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your <strong>Aspect</strong> lasts for <strong>6 Rounds</strong>. You may only have one active <strong>Aspect</strong>; casting another spell using the <strong>Aspect</strong> gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Flame": {
+                    "name": "Rune: Flame",
+                    "description": "<p>The chaotic force of elemental, thermal energy. The <strong>Flame</strong> rune governs fire and heat.</p><p>The <strong>Flame</strong> rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+                    "actions": {
+                        "Enkindle": {
+                            "name": "Enkindle",
+                            "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 }
             },
             "archetype": {
@@ -228,13 +279,9 @@
                 "Icy Claw": {
                     "name": "Icy Claw"
                 },
-                "Rune: Frost": {
-                    "name": "Rune: Frost",
-                    "description": "You learn Rune of Frost, allowing you to channel the arcane element of ice."
-                },
                 "Gesture: Influence": {
                     "name": "Gesture: Influence",
-                    "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
+                    "description": "<p>You intensify the arcane power of a <strong>Rune</strong> into a concentrated direct contact which is generally a more powerful evolution of the basic <strong>Touch</strong> gesture.</p><p>The <strong>Influence</strong> gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Cold Absorption": {
                     "name": "Cold Absorption",
@@ -242,15 +289,15 @@
                 },
                 "Amorphous": {
                     "name": "Amorphous",
-                    "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It is immune to the @Condition[restrained] condition.</p>"
+                    "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to half its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Aqueous Transmission",
-                    "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
+                    "description": "<p>The @ref[actor.name]{creature} is able to move instantaneously through water.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Aqueous Transmission",
-                            "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                            "description": "<p>When the @ref[actor.name]{creature} is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                         }
                     }
                 },
@@ -260,7 +307,17 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Frost": {
+                    "name": "Rune: Frost",
+                    "description": "<p>The orderly force of water and cold. The <strong>Frost</strong> rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The <strong>Frost</strong> rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>",
+                    "actions": {
+                        "Condense": {
+                            "name": "Condense",
+                            "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 }
             },
             "archetype": {
@@ -281,25 +338,21 @@
                 },
                 "Amorphous": {
                     "name": "Amorphous",
-                    "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It is immune to the @Condition[restrained] condition.</p>"
-                },
-                "Rune: Frost": {
-                    "name": "Rune: Frost",
-                    "description": "<p>The orderly force of elemental, thermal energy. The Frost rune governs sources of ice and cold. It is opposed by the chaotic rune of Flame.</p>\n<p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to half its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
                 },
                 "Aqueous Transmission": {
                     "name": "Aqueous Transmission",
-                    "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
+                    "description": "<p>The @ref[actor.name]{creature} is able to move instantaneously through water.</p>",
                     "actions": {
                         "Aqueous Transmission": {
                             "name": "Aqueous Transmission",
-                            "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                            "description": "<p>When the @ref[actor.name]{creature} is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                         }
                     }
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -309,7 +362,17 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a <strong>Rune</strong> into your body, empowering your own physical form or psyche.</p><p>When you assume a certain <strong>Aspect</strong>, you become more closely attuned to the damage type of the <strong>Rune</strong> used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your <strong>Aspect</strong> lasts for <strong>6 Rounds</strong>. You may only have one active <strong>Aspect</strong>; casting another spell using the <strong>Aspect</strong> gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Frost": {
+                    "name": "Rune: Frost",
+                    "description": "<p>The orderly force of water and cold. The <strong>Frost</strong> rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The <strong>Frost</strong> rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>",
+                    "actions": {
+                        "Condense": {
+                            "name": "Condense",
+                            "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 }
             },
             "archetype": {
@@ -348,17 +411,23 @@
                 "Bony Claws": {
                     "name": "Bony Claws"
                 },
-                "Rune: Death": {
-                    "name": "Rune: Death",
-                    "description": "You learn Rune of Death, allowing you to manipulate unholy power."
-                },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "You learn the Fan gesture, allowing you to cast arcane power in a limited arc."
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "False Appearance": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+                },
+                "Rune: Death": {
+                    "name": "Rune: Death",
+                    "description": "<p>The orderly force of destruction, responsible for the corruption of all biological matter. The <strong>Death</strong> rune governs decay and destruction.</p><p>The <strong>Death</strong> rune scales using <strong>Presence</strong>, targets <strong>Fortitude</strong>, and deals <strong>Corruption</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Life</strong>.</p>",
+                    "actions": {
+                        "Ennervate": {
+                            "name": "Ennervate",
+                            "description": "<p>Your command of the Rune of Death allows for basic communion with the dead and for rudimentary manipulation of unholy forces, producing one of the following effects:</p><ul><li><p>Spread decay over an object no larger than a 1-foot cube, causing plants to wither, metallic objects to rust, wood to become rotten, food to grow foul, or a corpse to rapidly decompose. Magical objects are typically unaffected.</p></li><li><p>Cause a corpse which has been dead for less than seven days or otherwise preserved to perform a lifeless reenactment of its final moments. Its movements imitate those that occurred during the creature's final 30 seconds of life. You have no control over the creature nor can it communicate in any other way.</p></li><li><p>Hasten the death of a willing creature that is currently dying, causing it to pass swiftly and peacefully.</p></li></ul><p>Ennervate may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 }
             },
             "archetype": {
@@ -371,19 +440,52 @@
             }
         },
         "Rune: Death": {
-            "name": "Rune: Death"
+            "name": "Rune: Death",
+            "actions": {
+                "Ennervate": {
+                    "name": "Ennervate",
+                    "description": "<p>Your command of the Rune of Death allows for basic communion with the dead and for rudimentary manipulation of unholy forces, producing one of the following effects:</p><ul><li><p>Spread decay over an object no larger than a 1-foot cube, causing plants to wither, metallic objects to rust, wood to become rotten, food to grow foul, or a corpse to rapidly decompose. Magical objects are typically unaffected.</p></li><li><p>Cause a corpse which has been dead for less than seven days or otherwise preserved to perform a lifeless reenactment of its final moments. Its movements imitate those that occurred during the creature's final 30 seconds of life. You have no control over the creature nor can it communicate in any other way.</p></li><li><p>Hasten the death of a willing creature that is currently dying, causing it to pass swiftly and peacefully.</p></li></ul><p>Ennervate may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
         },
         "Rune: Earth": {
-            "name": "Rune: Earth"
+            "name": "Rune: Earth",
+            "actions": {
+                "Mould": {
+                    "name": "Mould",
+                    "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
         },
         "Rune: Flame": {
-            "name": "Rune: Flame"
+            "name": "Rune: Flame",
+            "actions": {
+                "Enkindle": {
+                    "name": "Enkindle",
+                    "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
         },
         "Rune: Frost": {
-            "name": "Rune: Frost"
+            "name": "Rune: Frost",
+            "actions": {
+                "Condense": {
+                    "name": "Condense",
+                    "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
         },
         "Rune: Storm": {
-            "name": "Rune: Storm"
+            "name": "Rune: Storm",
+            "actions": {
+                "Energize": {
+                    "name": "Energize",
+                    "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+            }
+        },
+        "Stone Skin": {
+            "name": "Stone Skin"
         },
         "Storm Sprite": {
             "name": "Storm Sprite",
@@ -396,11 +498,17 @@
                 },
                 "Gesture: Arrow": {
                     "name": "Gesture: Arrow",
-                    "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
+                    "description": "<p>You hurl a projectile imbued with the magical power of a <strong>Rune</strong> at a distant target.</p><p>The <strong>Arrow</strong> gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of <strong>60 feet</strong>, dealing <strong>8 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Storm": {
                     "name": "Rune: Storm",
-                    "description": "You learn Rune of Storm, allowing you to control volatile arcane surges of electricity."
+                    "description": "<p>The chaotic force of raw electrical energy. The <strong>Storm</strong> rune governs sources of electrical charge and discharge.</p><p>The <strong>Storm</strong> rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "Energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -412,7 +520,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {
@@ -429,7 +537,13 @@
             "items": {
                 "Rune: Storm": {
                     "name": "Rune: Storm",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Storm rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>.</p>"
+                    "description": "<p>The chaotic force of raw electrical energy. The <strong>Storm</strong> rune governs sources of electrical charge and discharge.</p><p>The <strong>Storm</strong> rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electricity</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "Energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
                 },
                 "Electricity Absorption": {
                     "name": "Electricity Absorption",
@@ -437,7 +551,7 @@
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                    "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
                 "Voltaic Claw": {
                     "name": "Voltaic Claw"
@@ -447,7 +561,7 @@
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                    "description": "<p>You infuse the essence of a <strong>Rune</strong> into your body, empowering your own physical form or psyche.</p><p>When you assume a certain <strong>Aspect</strong>, you become more closely attuned to the damage type of the <strong>Rune</strong> used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your <strong>Aspect</strong> lasts for <strong>6 Rounds</strong>. You may only have one active <strong>Aspect</strong>; casting another spell using the <strong>Aspect</strong> gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
             },
             "archetype": {

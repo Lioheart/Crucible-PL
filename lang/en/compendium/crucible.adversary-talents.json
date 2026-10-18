@@ -155,13 +155,13 @@
                 "Corrode Weapon": {
                     "name": "Corrode Weapon",
                     "condition": "Struck in melee by a weapon made of metal.",
-                    "description": "<p>When struck by a melee weapon made of metal, the ooze attempts to consume the weapon itself, potentially breaking it.</p><p>This attack is <strong>Harmless</strong>, but if successful the <strong>Quality</strong> of the weapon used in the attack is downgraded by one tier. On a Critical Success or if the weapon is already <strong>Shoddy</strong>, the weapon becomes entirely <strong>Broken</strong>. Enchanted weapons are protected against this effect.</p>"
+                    "description": "<p>When struck by a melee weapon made of metal, the ooze attempts to consume the weapon itself, potentially breaking it.</p><p>This attack is @Rule[action.harmless], but if successful the <strong>Quality</strong> of the weapon used in the attack is downgraded by one tier. On a <strong>Critical Success</strong> or if the weapon is already <strong>Shoddy</strong>, the weapon becomes entirely <strong>Broken</strong>. <strong>Enchanted</strong> weapons are protected against this effect.</p>"
                 }
             }
         },
         "Corrosive Strikes": {
             "name": "Corrosive Strikes",
-            "description": "<p>The @ref[actor.name]{creature}'s caustic body sears whatever it strikes. When it scores a <strong>Critical Hit</strong> with a melee attack that deals damage to Health, the target becomes @Condition[corroding] for 3 rounds.</p>"
+            "description": "<p>The @ref[actor.name]{creature}'s caustic body sears whatever it strikes. When it scores a <strong>Critical Hit</strong> with a melee attack that deals damage to <strong>Health</strong>, the target becomes @Condition[corroding] for <strong>3 Rounds</strong>.</p>"
         },
         "Corrupting Death Burst": {
             "name": "Corrupting Death Burst",
@@ -181,7 +181,7 @@
         },
         "Corruption Absorption": {
             "name": "Corruption Absorption",
-            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of Death magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+            "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to shrug off the effects of <strong>Death</strong> magic. Its <strong>Corruption</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
         },
         "Crushing Leap": {
             "name": "Crushing Leap",
@@ -189,7 +189,7 @@
             "actions": {
                 "Crushing Leap": {
                     "name": "Crushing Leap",
-                    "description": "<p>You leap into the air, landing at a point you can see within 30 feet and crashing down with crushing force. All creatures within the area of the resulting <strong>Blast</strong> face an attack against their <strong>Reflex</strong>, suffering <strong>Bludgeoning</strong> damage and are knocked @Condition[prone]. The Blast extends outward from your own footprint, so larger creatures crash down over a wider area. This action scales with your highest ability of <strong>Strength</strong> or <strong>Toughness</strong>.</p>",
+                    "description": "<p>You leap into the air, landing at a point you can see within 30 feet and crashing down with crushing force. All creatures within the area of the resulting <strong>Blast</strong> face an attack against their <strong>Reflex</strong>, suffering <strong>Bludgeoning</strong> damage and are knocked @Condition[prone]. The <strong>Blast</strong> extends outward from your own footprint, so larger creatures crash down over a wider area. This action scales with your highest ability of <strong>Strength</strong> or <strong>Toughness</strong>.</p>",
                     "effects": [
                         {
                             "name": "Crushing Leap"
@@ -219,7 +219,7 @@
         },
         "Elusive Flight": {
             "name": "Elusive Flight",
-            "description": "<p>This @ref[actor.name]{creature} is especially elusive while in flight, able to swoop in and out of combat without provoking any <strong>Disengagement</strong>. It can be engaged if it lands upon the ground and Disengagement may apply if it attempts to return to flight.</p>"
+            "description": "<p>This @ref[actor.name]{creature} is especially elusive while in flight, able to swoop in and out of combat without provoking any @Action[default reactiveStrike]. It can be engaged if it lands upon the ground and such strikes may be used if it attempts to return to flight.</p>"
         },
         "Ensnare": {
             "name": "Ensnare",
@@ -227,7 +227,7 @@
             "actions": {
                 "Ensnare": {
                     "name": "Ensnare",
-                    "description": "<p>The @ref[actor.name]{creature} reaches out to seize a single target within range, attacking its <strong>Reflex</strong>. On a success the target is dragged back into reach and becomes @Condition[restrained]. This action may only be used on creatures which are eligible targets for @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple].</p><p>The hold is maintained until the @ref[actor.name]{creature} releases it, the target escapes, or a different creature is targeted with Ensnare.</p>",
+                    "description": "<p>The @ref[actor.name]{creature} reaches out to seize a single target within range, attacking its <strong>Reflex</strong>. On a success the target is dragged back into reach and becomes @Condition[restrained]. This action may only be used on creatures which are eligible targets for @Action[Compendium.crucible.talent.Item.grapple000000000 grapple].</p><p>The hold is maintained until the @ref[actor.name]{creature} releases it, the target escapes, or a different creature is targeted with Ensnare.</p>",
                     "effects": [
                         {
                             "name": "Ensnared"
@@ -250,7 +250,7 @@
         },
         "Glider": {
             "name": "Glider",
-            "description": "<p>The @ref[actor.name]{creature} controls its descent while falling. Unless it is Incapacitated or Restrained, a fall becomes a <strong>Glide</strong>: a downward Fly movement instead of an impact, suffering no falling damage.</p> <p>While gliding the creature's <strong>Stride</strong> is doubled and it is granted a free move, so it can always glide at least a short distance. Its glide must descend, and wherever the movement ends is where it comes to rest; if it ends the glide still aloft it gains the @Condition[flying] condition.</p>",
+            "description": "<p>The @ref[actor.name]{creature} controls its descent while falling. Unless it is @Condition[incapacitated] or @Condition[restrained], a fall becomes a <strong>Glide</strong>: a downward <strong>Fly</strong> movement instead of an impact, suffering no falling damage.</p><p>While gliding the creature's <strong>Stride</strong> is doubled and it is granted a free move, so it can always glide at least a short distance. Its glide must descend, and wherever the movement ends is where it comes to rest; if it ends the glide still aloft it gains the @Condition[flying] condition.</p>",
             "actions": {
                 "Glide": {
                     "name": "Glide",
@@ -268,12 +268,12 @@
         },
         "Grave Mark": {
             "name": "Grave Mark",
-            "description": "<p>When the @ref[actor.name]{creature} achieves a Critical Hit with a melee attack, it leaves a baleful Grave Mark upon its target.</p>",
+            "description": "<p>When the @ref[actor.name]{creature} achieves a <strong>Critical Hit</strong> with a melee attack, it leaves a baleful <strong>Grave Mark</strong> upon its target.</p>",
             "actions": {
                 "Grave Mark": {
                     "name": "Grave Mark",
                     "condition": "When achieving a Critical Hit with a melee attack.",
-                    "description": "<p>After achieving a <strong>Critical Hit</strong> with a melee attack, the @ref[actor.name]{creature} attacks the target's <strong>Willpower</strong> defense, leaving a Grave Mark upon a success that inflicts the @Condition[exhausted] condition that persists until the target completes a <strong>Rest</strong>.</p><p>If a humanoid creature bearing a Grave Mark dies while under the effects of the mark, it rises from death on its subsequent Turn as a @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
+                    "description": "<p>After achieving a <strong>Critical Hit</strong> with a melee attack, the @ref[actor.name]{creature} attacks the target's <strong>Willpower</strong> defense, leaving a <strong>Grave Mark</strong> upon a success that inflicts the @Condition[exhausted] condition, which persists until the target completes a @Action[default rest].</p><p>If a humanoid creature bearing a <strong>Grave Mark</strong> dies while under the effects of the mark, it rises from death on its subsequent <strong>Turn</strong> as a @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
                     "effects": [
                         {
                             "name": "Grave Mark"
@@ -442,7 +442,7 @@
         },
         "Pack Hunter": {
             "name": "Pack Hunter",
-            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a @Condition[flanked] enemy.</p>"
+            "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of <strong>Boons</strong> awarded from attacking a @Condition[flanked] enemy.</p>"
         },
         "Polybrachial": {
             "name": "Polybrachial",
@@ -508,7 +508,7 @@
             "actions": {
                 "Repugnant Pustules": {
                     "name": "Repugnant Pustules",
-                    "description": "<p>When the @ref[actor.name]{creature} is hit by a <strong>Strike</strong>, it may partially burst to release a spray of sickening fluid that deals <strong>Corruption</strong> damage. This action scales with <strong>Toughness</strong> and targets the <strong>Reflex</strong> defense of any creature within 3 feet.</p><p>On a <strong>Critical Success</strong>, the affected target becomes temporarily @Condition[diseased] for 3 Rounds.</p>",
+                    "description": "<p>When the @ref[actor.name]{creature} is hit by a <strong>Strike</strong>, it may partially burst to release a spray of sickening fluid that deals <strong>Corruption</strong> damage. This action scales with <strong>Toughness</strong> and targets the <strong>Reflex</strong> defense of any creature within 3 feet.</p><p>On a <strong>Critical Success</strong>, the affected target becomes temporarily @Condition[diseased] for <strong>3 Rounds</strong>.</p>",
                     "effects": [
                         {
                             "name": "Repugnant Pustules"
@@ -613,7 +613,7 @@
             "actions": {
                 "Subdivide": {
                     "name": "Subdivide",
-                    "description": "<p>The ooze's cells rapidly divide and the creature splits in two! The original creature and its clone equally divide its remaining <strong>Health</strong>. The <strong>Size</strong> of each resulting creature is decreased by 1.</p><p>If in combat, the new creature acts as a <strong>Summon</strong> and joins at <strong>Initiative</strong> 1. This Action may only be used if the creature has Size larger than 2. The created ooze never has rank superior to <strong>Normal</strong>.</p>"
+                    "description": "<p>The ooze's cells rapidly divide and the creature splits in two! The original creature and its clone equally divide its remaining <strong>Health</strong>. The <strong>Size</strong> of each resulting creature is decreased by 1, and its threat tier is reduced, for example an <strong>Elite</strong> ooze becomes a <strong>Normal</strong> ooze. The new ooze arrives with only the <strong>Action</strong> and <strong>Focus</strong> its parent had remaining after performing this Action. If in combat, the new creature acts as a <strong>Summon</strong> and joins at <strong>Initiative</strong> 1. This Action may only be used if the creature has <strong>Size</strong> larger than 2.</p>"
                 }
             }
         },
@@ -632,7 +632,7 @@
         },
         "Swallow": {
             "name": "Swallow",
-            "description": "<p>The @ref[actor.name]{creature} can swallow whole a creature whose Size is at least 2 less than its own. Only one creature may be swallowed at a time, unless an additional creature is one-quarter of this creature's Size or less.</p>",
+            "description": "<p>The @ref[actor.name]{creature} can swallow whole a creature whose <strong>Size</strong> is at least 2 less than its own. Only one creature may be swallowed at a time, unless an additional creature is one-quarter of this creature's <strong>Size</strong> or less.</p>",
             "actions": {
                 "Swallow": {
                     "name": "Swallow",
@@ -654,7 +654,7 @@
         },
         "Swarm": {
             "name": "Swarm",
-            "description": "<p>This adversary is a group of many identical creatures that operate as a single swarming throng of foes.</p><ul><li><p>Maximum <strong>Health</strong> is doubled.</p></li><li><p>Against any single-target source of damage, the swarm gains additional <strong>Resistance</strong> equal to its <strong>Toughness</strong>.</p></li><li><p>The swarm's <strong>Size</strong> decreases as its Health is depleted until reaching a minimum Size of 2.</p></li></ul>"
+            "description": "<p>This adversary is a group of many identical creatures that operate as a single swarming throng of foes.</p><ul><li><p>Maximum <strong>Health</strong> is doubled.</p></li><li><p>Against any single-target source of damage, the swarm gains additional <strong>Resistance</strong> equal to its <strong>Toughness</strong>.</p></li><li><p>The swarm's <strong>Size</strong> decreases as its <strong>Health</strong> is depleted until reaching a minimum <strong>Size</strong> of 2.</p></li></ul>"
         },
         "Swooping Strike": {
             "name": "Swooping Strike",
@@ -704,7 +704,7 @@
         },
         "Thermal Vision": {
             "name": "Thermal Vision",
-            "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures whose bodily temperature deviates from ambient norms.</p><p>This allows detection of creatures whose body temperatures are <strong>Gelid</strong>, <strong>Cool</strong>, <strong>Warm</strong>, or <strong>Boiling</strong> up to 60 feet away as long as they are not behind total cover and as long as the @ref[actor.name]{creature} is not @Condition[blinded] or @Condition[incapacitated]. A creature detected in this way is treated as visible for the purposes of Actions which require sight.</p>"
+            "description": "<p>The @ref[actor.name]{creature} perceives the world through differences in temperature with precision, allowing it to locate creatures whose bodily temperature deviates from ambient norms.</p><p>This allows detection of creatures whose body temperatures are <strong>Gelid</strong>, <strong>Cool</strong>, <strong>Warm</strong>, or <strong>Boiling</strong> up to 60 feet away as long as they are not behind total cover and as long as the @ref[actor.name]{creature} is not @Condition[blinded] or @Condition[incapacitated]. A creature detected in this way is treated as visible for the purposes of Actions which require sight.</p>"
         },
         "Thrash": {
             "name": "Thrash",
@@ -734,11 +734,11 @@
         },
         "Tusk Charge": {
             "name": "Tusk Charge",
-            "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet.",
+            "description": "<p>The @ref[actor.name]{creature} lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet.</p>",
             "actions": {
                 "Tusk Charge": {
                     "name": "Tusk Charge",
-                    "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked @Condition[prone].</p>",
+                    "description": "<p>Charge in a direct line up to your <strong>Stride</strong> and make a <strong>Strike</strong> against the first creature you encounter. If successful, the target is knocked @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Tusk Charge"

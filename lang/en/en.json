@@ -5,6 +5,14 @@
       "Resilience": "Resilience",
       "Speed": "Speed"
     },
+    "TOOLTIPS": {
+      "Dexterity": "<p>Dexterity is a physical quickness attribute that reflects agility and precision of movement. Dexterity affects <strong>Initiative</strong> in taking action, the <strong>Dodge</strong> component of Physical Defense, <strong>Reflex</strong> defense, and the use of weaponry which scales with Dexterity.</p>",
+      "Intellect": "<p>Intellect is a mental quickness attribute that reflects speed of thought and decisiveness of action. Intellect affects <strong>Initiative</strong> in taking action, the <strong>Reflex</strong> defense, and the size of <strong>Focus</strong> pool.</p>",
+      "Presence": "<p>Presence is a mental resilience attribute describing a creature's force of personality, resolve, and self-belief. Presence affects <strong>Willpower</strong> defense and the size of <strong>Focus</strong> pool. Each point of Presence increases base <strong>Morale</strong> by 4.</p>",
+      "Strength": "<p>Strength is a physical power attribute describing a creature's potency, brawn and might. Strength affects <strong>Fortitude</strong> defense, carrying <strong>Capacity</strong>, and the use of weaponry which scales with Strength. Each point of Strength increases base <strong>Health</strong> by 2.</p>",
+      "Toughness": "<p>Toughness is a physical resilience attribute describing physical hardiness and tenacity. Toughness affects the <strong>Fortitude</strong> defense. Each point of Toughness increases base <strong>Health</strong> by 4.</p>",
+      "Wisdom": "<p>Wisdom is a mental power attribute describing a creature's force of conviction, depth of knowledge, and patience. Wisdom affects <strong>Willpower</strong> defense and size of <strong>Focus</strong> pool. Each point of Wisdom increases base <strong>Morale</strong> by 2.</p>"
+    },
     "Dexterity": "Dexterity",
     "DexterityAbbr": "Dex",
     "Intellect": "Intellect",
@@ -29,8 +37,12 @@
   "ACTION": {
     "ACTIONS": {
       "AddFavorite": "Add Favorite",
+      "CreateRegionBehavior": "Create Region Behavior",
       "Delete": "Delete Action: {name}",
       "DeleteConfirm": "Are you sure you wish to delete the <strong>{name}</strong> action from the <strong>{parent}</strong> {type}?",
+      "DeleteRegionBehavior": "Delete Region Behavior",
+      "DeleteRegionBehaviorConfirm": "Are you sure you wish to delete this <strong>{action}</strong>'s Region Behavior?",
+      "EditRegionBehavior": "Edit Region Behavior",
       "RemoveFavorite": "Remove Favorite"
     },
     "DEFAULT_ACTIONS": {
@@ -68,7 +80,7 @@
         "Name": "Reactive Strike"
       },
       "Recover": {
-        "Description": "Spend 10 minutes outside of Combat recovering from exertion to fully restore Health, Morale, Action, and Focus.",
+        "Description": "Spend 10 minutes outside of Combat recovering from exertion to fully restore <strong>Health</strong>, <strong>Morale</strong>, <strong>Action</strong>, and <strong>Focus</strong>. Any existing <strong>Heroism</strong> is removed and temporary effects with a short duration end. Recover does not reduce <strong>Wounds</strong> or <strong>Madness</strong>.",
         "Name": "Recover"
       },
       "Reload": {
@@ -76,8 +88,12 @@
         "Name": "Reload Weapon"
       },
       "Rest": {
-        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources.",
+        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and heroes reduce accumulated <strong>Wounds</strong> and <strong>Madness</strong> by their character <strong>Level</strong>. Temporary effects with a longer duration also end.",
         "Name": "Rest"
+      },
+      "Search": {
+        "Description": "<p>Carefully sweep your surroundings to uncover what others have taken pains to conceal. You perform an <strong>Awareness</strong> check, looking for concealed creatures, objects, or other secrets.</p><p>While in combat, this action can discover creatures hidden via <strong>Stealth</strong> within a visible 30 foot radius. While out of combat, you spend 10 minutes or longer thoroughly canvassing the immediately reachable area, and may additionally discover concealed traps, hidden objects, or other secrets of the environment.</p>",
+        "Name": "Search"
       },
       "Strike": {
         "Description": "Attack a single creature or object with one of your equipped weapon.",
@@ -167,6 +183,10 @@
         "hint": "Provide a standardized camel-case alphanumeric identifier for this action. This identifier should be unique across all actions in the system.",
         "label": "Identifier"
       },
+      "persistRegion": {
+        "hint": "Produce a persistent Region with an optional pre-configured \"Crucible Action\" behavior on it. This region will last for the duration of the self-targeting Effect caused by this action, or indefinitely if no such Effect has been configured.",
+        "label": "Persistent Region"
+      },
       "range": {
         "hint": "Define a minimum or maximum range in feet at which this action may be performed.",
         "label": "Action Range",
@@ -180,6 +200,10 @@
           "hint": "The range of this action is defined by the effective range of the used weapon.",
           "label": "Use Weapon Range"
         }
+      },
+      "regionBehavior": {
+        "hint": "The region behavior which controls how the region persisted by this action behaves.",
+        "label": "Region Behavior"
       },
       "summon": {
         "actorUuid": {
@@ -272,6 +296,7 @@
       },
       "CostHealth": "{health}HP",
       "CostHeroism": "{heroism}H",
+      "CostMorale": "{morale}MP",
       "CostTooltip": "The Action Point or Focus Point cost of using this action.",
       "CostWeapon": "W",
       "CostWeaponAction": "W{action}A",
@@ -355,6 +380,8 @@
       "SkillTooltip": "This action involves a targeted or opposed Skill check.",
       "Spell": "Spell",
       "SpellTooltip": "This action involves spellcraft.",
+      "Subtle": "Subtle",
+      "SubtleTooltip": "This action is generally un-noticeable, preserving stealth and invisibility when used.",
       "Summon": "Summon",
       "SummonTooltip": "This action summons, calls, or otherwise creates a combatant which joins the encounter.",
       "TargetTooltip": "The target type, distance, and number which applies to this action.",
@@ -368,8 +395,6 @@
       "UnarmedTooltip": "This action requires you to be fully unarmed in order to perform.",
       "Unarmored": "Unarmored",
       "UnarmoredTooltip": "This action requires you to be unarmored in order to perform.",
-      "Undetectable": "Undetectable",
-      "UndetectableTooltip": "This action does not trigger conventional notice or magical detection, preserving stealth and invisibility when used.",
       "Vocal": "Vocal",
       "VocalTooltip": "This action requires its user to speak or otherwise vocalize sound.",
       "Weakened": "Weakened",
@@ -431,7 +456,7 @@
         }
       },
       "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
-      "AuraNoToken": "You cannot use an Aura-target action without having a token on the scene!",
+      "AuraNoToken": "You cannot use a self-emanating action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
       "CannotAffordCost": "{name} has insufficient {resource} to use {action}!",
       "CannotAffordHands": {
@@ -451,6 +476,9 @@
       "CannotUseReason": "{name} does not satisfy the prerequisites to use {action}: {reason}",
       "CannotUseTagGeneric": "with tag {tag}",
       "DirectMovementOnly": "This action requires a direct movement path with no intermediate waypoints.",
+      "CannotHideEngaged": "You cannot Hide while you are engaged with an enemy.",
+      "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
+      "HideObservers": "Additional Observers",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
       "InvalidTargetScope": "That creature is not a valid target for {action}.",
@@ -470,6 +498,7 @@
       "MustFollowRanged": "You may only perform the {action} action after a ranged weapon attack.",
       "MustFollowRest": "You may only perform the {action} action immediately after a Rest.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
+      "MustJoinParty": "You may only perform the {action} action as a member of the party.",
       "MustReactHit": "You may only perform the {action} action in response to an attack that hit or glanced.",
       "MustReactSingleTarget": "You may only perform the {action} action in response to an action that had a single target.",
       "MustReactStrike": "You may only perform the {action} action in response to a weapon Strike.",
@@ -480,6 +509,7 @@
       "NoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
       "NoConsumable": "No consumable Item identified for action \"{action}\"",
       "NoConsumableUses": "Consumable item \"{item}\" has no uses remaining for Action \"{action}\"",
+      "NoLanternOil": "You must have a unit of Lantern Oil in your inventory to light a lantern.",
       "NonCombat": "You may not use {action} during Combat.",
       "NoReloadRequired": "Your weapons do not require reloading",
       "NotFlanked": "{action} requires a flanked target. Target \"{target}\" is not flanked.",
@@ -487,6 +517,8 @@
       "OncePerRound": "You may only perform the {action} action once per round.",
       "OncePerTurn": "You may only perform the {action} action once per turn.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
+      "RequiresAlchemistsToolkit": "You must have an Alchemist's Toolkit equipped in your Toolbelt.",
+      "RequiresElementalCondition": "{target} does not suffer an elemental condition which this action can affect.",
       "RequiresGesture": "You must know the Gesture required by this action.",
       "RequiresInflection": "You must know the Inflection required by this action.",
       "RequiresMelee": "You must have melee weapons equipped to use this action.",
@@ -498,6 +530,7 @@
       "RequiresTalisman": "{action} requires use of a Talisman weapon.",
       "RequiresTwoHanded": "This action requires a two-handed weapon equipped.",
       "RequireTemplate": "You must place a Measured Template to indicate the area of effect of {action}.",
+      "RestRecoverIncapacitated": "You may not Rest or Recover while Dead or Insane.",
       "Restrained": "You may not move while Restrained!",
       "Silenced": "You cannot use this action while Silenced.",
       "TargetTooLarge": "Target \"{target}\" is too large for {action}.",
@@ -638,6 +671,7 @@
       "Freezing": "Freezing",
       "Guarded": "Guarded",
       "Hastened": "Hastened",
+      "Hexed": "Hexed",
       "Incapacitated": "Incapacitated",
       "Insane": "Insane",
       "Inspired": "Inspired",
@@ -677,10 +711,21 @@
       "IncreaseAbility": "Increase Ability Score",
       "IncreaseAbilitySpecific": "Increase {ability}",
       "LevelUp": "Level Up!",
+      "ProficiencyFilterAll": "Show All Proficiencies",
+      "ProficiencyFilterTrained": "Show Only Trained Proficiencies",
+      "ResetProficiency": "Reclaim All Proficiency Points",
+      "ResetProficiencyContent": "<p>Are you sure you wish to reclaim every allocated Proficiency Point? Training granted by your Ancestry, Background, or Talents is retained.</p>",
+      "ResetProficiencyTitle": "Reclaim Proficiency Points: {actor}",
       "ResetTalents": "Reset All Talents",
       "ResetTalentsContent": "<p>Are you sure you wish to reset all Talents?</p>",
       "ResetTalentsTitle": "Reset Talents: {actor}",
+      "ResolveProgress": "Go to the next progression step",
       "RollCheck": "Roll Check",
+      "SyncActor": "Sync from Compendium",
+      "SyncActorContent": "<p>Re-apply this Actor's Talents, Ancestry, Background, Taxonomy, and Archetype from their current compendium versions.</p><p><strong>Any customizations made to those items on this Actor will be overwritten with the compendium defaults.</strong> Granted Talents, equipment, and spells which the sources no longer provide will be removed.</p>",
+      "SyncActorResult": "Synced {actor}: refreshed {synced} Talents, removed {deleted}, re-applied {details} detail items.",
+      "SyncActorTitle": "Sync from Compendium: {actor}",
+      "SyncActorUnresolved": "No compendium source was found for the {details} of {actor}. Those were left unchanged.",
       "TalentTreeClose": "Close Talent Tree",
       "TalentTreeOpen": "Open Talent Tree",
       "ToggleTree": "Toggle Talent Tree"
@@ -759,9 +804,10 @@
       "movement": {
         "engagement": {
           "base": "Base Engagement",
+          "hint": "Number of Enemies able to be Engaged",
           "label": "Engagement",
           "labelShort": "Engage",
-          "tooltip": "Number of Enemies able to be Engaged<br>(Size - 2) + Engagement Bonus"
+          "tooltip": "Engagement describes the total number of opposing Combatants that you can simultaneously battle against without becoming more vulnerable. Heroes have a base of 1. Adversaries start at 1 and add +1 for every 2 Size above 4, rounded up.<br>Base Engagement + Engagement Bonus"
         },
         "engagementBonus": {
           "hint": "An additive modifier to base engagement.",
@@ -778,8 +824,9 @@
         },
         "stride": {
           "base": "Base Stride",
+          "hint": "Movement distance per spent Action Point.",
           "label": "Stride",
-          "tooltip": "Movement distance per spent Action Point."
+          "tooltip": "Movement actions allow you to move a number of feet up to your Stride. This movement cannot be broken up, and leftover distance is not saved across actions if you move less than your Stride.<br>Ancestry/Taxonomy Base Stride + Stride Bonus"
         },
         "strideBonus": {
           "hint": "An additive modifier to Stride speed of the Actor defined by Ancestry or Taxonomy.",
@@ -921,9 +968,6 @@
         "empty": "Equip up to {slots} tools or consumables from your Backpack toggling the shield icon.",
         "header": "Toolbelt"
       },
-      "TRAINING": {
-        "header": "Training Talents"
-      },
       "WEAPON": {
         "empty": "Equip weapons from your Backpack toggling the shield icon.",
         "header": "Weapons"
@@ -947,6 +991,7 @@
       "AbilityPoints": "Ability Points",
       "Defenses": "Defenses",
       "PointsAvailable": "Available",
+      "PointsGranted": "Trained",
       "PointsSpent": "Spent",
       "Resources": "Resources"
     },
@@ -956,7 +1001,7 @@
       "biography": "Biography",
       "effects": "Effects",
       "inventory": "Inventory",
-      "skills": "Skills",
+      "proficiency": "Proficiency",
       "spells": "Spells",
       "talents": "Talents"
     },
@@ -968,8 +1013,10 @@
       "NoBackground": "Choose a Background",
       "NoDragTalent": "Talents can only be added to a Hero Actor via the Talent Tree.",
       "OverspentAbility": "Too many Ability Points have been spent",
+      "OverspentProficiency": "Too many Proficiency Points have been spent",
       "OverspentTalent": "Too many Talents have been taken",
       "UnderspentAbility": "Spend Ability Points",
+      "UnderspentProficiency": "Spend Proficiency Points",
       "UnderspentTalent": "Spend Talent Points"
     },
     "Details": "Details",
@@ -978,6 +1025,7 @@
     "LanguageSpecific": "Language: {language}",
     "LevelSpecific": "Level {level}",
     "ProgressionRequirements": "Progression Requirements",
+    "TrainingSpecific": "{training} {points}",
     "ResistanceSpecific": "Resistance: {resistance}",
     "SizeSpecific": "Size {size}",
     "StrideSpecific": "Stride {stride}",
@@ -1001,6 +1049,9 @@
         "label": "Item Types",
         "hint": "Which item types this affix can be applied to. If no specific types are checked, then all item types are allowed."
       },
+      "properties": {
+        "label": "Affix Properties"
+      },
       "tier": {
         "label": "Tier",
         "hint": "The allowed range of power tiers for this affix. Each tier consumes one point of prefix or suffix capacity.",
@@ -1016,6 +1067,13 @@
         }
       }
     },
+    "PROPERTIES": {
+      "Cursed": "Cursed"
+    },
+    "WARNINGS": {
+      "CursedGamemasterOnly": "Only a Gamemaster may remove a Cursed affix from an item."
+    },
+    "CursedName": "Cursed {name}",
     "ConfigIdentity": "Affix Identity",
     "ConfigTier": "Tier Configuration",
     "TierRestriction": "Tier Range",
@@ -1059,8 +1117,10 @@
         "label": "Identifier"
       },
       "characteristics": {
+        "blooded.hint": "Whether this Ancestry has some form of blood.",
+        "blooded.label": "Blooded",
         "label": "Ancestry Characteristics",
-        "temperature.hint": "The body temperature of this Ancestry, neutral by default.",
+        "temperature.hint": "The body temperature of this Ancestry, warm by default.",
         "temperature.label": "Body Temperature"
       },
       "movement": {
@@ -1089,6 +1149,10 @@
       "talents": {
         "hint": "Configure one or more Talents that this Ancestry receives automatically.",
         "label": "Talent Progression"
+      },
+      "training": {
+        "hint": "Training points which this Ancestry grants freely, costing no Proficiency Points and not refundable.",
+        "label": "Granted Training"
       },
       "ui": {
         "color": {
@@ -1141,13 +1205,21 @@
       "talents": {
         "hint": "Configure one or more talents which this Archetype receives automatically.",
         "label": "Granted Talents"
+      },
+      "training": {
+        "hint": "Training points which this Archetype grants freely, costing no Proficiency Points and not refundable.",
+        "label": "Granted Training"
       }
     },
     "SHEET": {
       "Choose": "Choose Archetype",
       "Clear": "Clear Archetype",
       "RequiredComponents": "<p><strong>{spell}</strong> requires spell components not currently on this Archetype. Do you want to add them automatically?</p>",
-      "Skills": "Skill Progression"
+      "Training": "Training Preference",
+      "TrainingAdd": "Add a Proficiency",
+      "TrainingRemove": "Remove Proficiency",
+      "TrainingSpare": "Advanced only from points the weighted proficiencies cannot absorb.",
+      "TrainingHint": "Adversaries of this Archetype spend their training points in proportion to these weights, so only the ratios between them matter, not their absolute size. A weight of zero claims nothing until every weighted proficiency is fully trained, then shares whatever remains."
     },
     "WARNINGS": {
       "InvalidAbilities": "The sum of ability scaling values must equal 12. Currently {sum}",
@@ -1253,8 +1325,6 @@
       "CannotRevokeMilestone": "There is no milestone award with identifier \"{identifier}\" on group \"{group}\"",
       "DuplicateMilestone": "A milestone with identifier \"{identifier}\" has already been awarded to group \"{group}\"",
       "InvalidMilestoneNumber": "The number of milestones awarded must be a positive integer",
-      "InvalidMilestoneRecipient": "Actor ID \"{id}\" cannot be awarded a milestone",
-      "InvalidMilestoneRevokee": "Actor ID \"{id}\" cannot have a milestone revoked",
       "InvalidTerms": "Unable to parse {terms} as valid award terms.",
       "RequiresGM": "You must be a Gamemaster to use Award enrichers."
     },
@@ -1283,13 +1353,13 @@
         "hint": "Configure languages that this Background provides automatically.",
         "label": "Known Languages"
       },
-      "skills": {
-        "hint": "Configure skills which this Background provides automatically with novice training. Typically, a Background has training in two skills.",
-        "label": "Granted Skills"
-      },
       "talents": {
-        "hint": "Configure one or more talents which this Background receives automatically. Typically, a Background receives two granted talents.",
+        "hint": "Configure one or more talents which this Background receives automatically. Typically, a Background receives three granted talents.",
         "label": "Acquired Talents"
+      },
+      "training": {
+        "hint": "Proficiencies which this Background grants one training point apiece, free of Proficiency Point cost.",
+        "label": "Granted Training"
       },
       "ui": {
         "color": {
@@ -1308,7 +1378,8 @@
       "Choose": "Choose Background",
       "Clear": "Clear Background",
       "Identity": "Identity",
-      "Skills": "Skills",
+      "Grants": "Granted by Background",
+      "GrantWarning": "{count} of {expected} {label} granted. Heroes who choose this Background will begin with less than intended.",
       "TalentAdd": "Add Talent",
       "TalentDrop": "Add a talent to this Background by dragging and dropping from the Talents compendium pack.",
       "TalentRemove": "Remove Talent"
@@ -1423,7 +1494,7 @@
     },
     "PROPERTIES": {
       "Thrown": "Thrown",
-      "ThrownTooltip":"This consumable is designed to be thrown."
+      "ThrownTooltip": "This consumable is designed to be thrown."
     },
     "SCROLL": {
       "ComponentBudget": "This scroll may provide up to {budget} spellcraft component(s). Select which components this scroll provides.",
@@ -1459,6 +1530,7 @@
   "CRUCIBLE": {
     "SHEETS": {
       "Accessory": "Crucible Accessory Sheet",
+      "ActionBehavior": "Crucible Action Behavior Sheet",
       "Adversary": "Crucible Adversary Sheet",
       "Affix": "Crucible Affix Sheet",
       "Ancestry": "Crucible Ancestry Sheet",
@@ -1523,12 +1595,29 @@
     "Void": "Void"
   },
   "DEFENSES": {
-    "TOOLTIPS": {
+    "FORMULAS": {
+      "Armor": "Armor Base + Quality Bonus",
+      "Block": "Sum of equipped weapon Block",
+      "Dodge": "Armor Base Dodge + max(Dexterity - Scaling, 0) + Enchantment",
       "Fortitude": "{base} + ((Strength + Wisdom) / 4)",
       "Madness": "{base} + (Madness / 10)",
+      "Parry": "Sum of equipped weapon Parry",
+      "Physical": "Armor + Dodge + Parry + Block",
       "Reflex": "{base} + ((Dexterity + Intellect) / 4)",
       "Willpower": "{base} + ((Toughness + Presence) / 4)",
       "Wounds": "{base} + (Wounds / 10)"
+    },
+    "TOOLTIPS": {
+      "Armor": "",
+      "Block": "",
+      "Dodge": "",
+      "Fortitude": "",
+      "Madness": "",
+      "Parry": "",
+      "Physical": "",
+      "Reflex": "",
+      "Willpower": "",
+      "Wounds": ""
     },
     "Armor": "Armor",
     "Block": "Block",
@@ -1640,12 +1729,7 @@
   },
   "HOOKS": {
     "NoModuleHooks": "No module hooks are registered for this identifier.",
-    "ToggleSource": "Toggle Source",
-    "WARNINGS": {
-      "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
-      "NoLanternOil": "You must have a unit of Lantern Oil in your inventory to light a lantern.",
-      "RestRecoverIncapacitated": "You may not Rest or Recover while Dead or Insane."
-    }
+    "ToggleSource": "Toggle Source"
   },
   "HAZARD": {
     "DefaultActor": "Environment",
@@ -1787,6 +1871,11 @@
       "TalentConfiguration": "Talent Configuration",
       "TalentDrop": "Add a talent by dragging and dropping a Talent item into this area.",
       "TalentRemove": "Remove Talent",
+      "TalentRequirementAdd": "Require a Proficiency",
+      "TalentRequirementRemove": "Remove Requirement",
+      "TalentRequirements": "Required Proficiencies",
+      "TalentRequirementsHint": "A rank in each of these Proficiencies is required before this Talent may be purchased.",
+      "Training": "Training",
       "Type": "Equipment Type"
     },
     "TABS": {
@@ -1805,6 +1894,7 @@
       "CombineEquipped": "{item} cannot be combined into a stack while it is equipped.",
       "CombineInvalidTarget": "{item} cannot be combined: the target must be a different item on the same actor.",
       "CombineQuantity": "Cannot combine {quantity} units of {item} which holds a stack of {available}.",
+      "CursedDivestment": "{name} is cursed and cannot be divested. A Gamemaster must perform this action.",
       "HookAlreadyExists": "{item} already declares a function for the \"{hook}\" hook.",
       "InvalidIdentifier": "Invalid Crucible identifier value \"{id}\" which must be alphanumeric without spaces or special characters",
       "NotTalent": "The dropped document must be a Talent.",
@@ -1889,6 +1979,38 @@
     }
   },
   "REGION_BEHAVIORS": {
+    "ACTION": {
+      "FIELDS": {
+        "action": {
+          "hint": "The action to potentially perform on any token who triggers an event on this behavior.",
+          "label": "Triggered Action"
+        },
+        "actor": {
+          "hint": "The actor responsible for the creation of this behavior. This actor will roll any triggered actions.",
+          "label": "Origin Actor"
+        },
+        "frequency": {
+          "hint": "How frequently should this action be able to be applied to a triggering token?",
+          "label": "Frequency"
+        },
+        "origin": {
+          "hint": "The effect responsible for tracking the existence of this behavior. If present, determines which tokens should actually trigger an Action based on the originating action's targeting configuration.",
+          "label": "Origin"
+        }
+      },
+      "FREQUENCIES": {
+        "every": "Every Time",
+        "once": "Once",
+        "roundActor": "Once per Round per Actor"
+      },
+      "TABS": {
+        "action": "Action",
+        "effects": "Effects",
+        "behavior": "Behavior"
+      },
+      "ConfigTitle": "Region Action: {action}",
+      "RegionConfiguration": "Region Configuration"
+    },
     "HAZARD": {
       "FIELDS": {
         "danger": {
@@ -2029,6 +2151,10 @@
         "hint": "Which packs will be used as sources of ancestries during character creation.",
         "label": "Ancestry Sources"
       },
+      "archetype": {
+        "hint": "Which packs will be used as sources of adversary archetypes.",
+        "label": "Archetype Sources"
+      },
       "background": {
         "hint": "Which packs will be used as sources of backgrounds during character creation.",
         "label": "Background Sources"
@@ -2047,6 +2173,10 @@
       "talent": {
         "hint": "Which packs will be used as sources of talents for the talent tree.",
         "label": "Talent Sources"
+      },
+      "taxonomy": {
+        "hint": "Which packs will be used as sources of adversary taxonomies.",
+        "label": "Taxonomy Sources"
       }
     },
     "AutoConfirmAll": "Auto-Confirm All Actions",
@@ -2063,10 +2193,6 @@
   },
   "SKILL": {
     "CATEGORY": {
-      "CRAFTING": {
-        "hint": "Artisanal skills reflecting your character's ability to create items or equipment.",
-        "label": "Tradecraft"
-      },
       "EXPLORATION": {
         "hint": "Exploration skills pertain to your ability to traverse the world and meet its challenges.",
         "label": "Exploration"
@@ -2078,29 +2204,11 @@
       "SOCIAL": {
         "hint": "Social skills pertain to your character's ability to interact with other people or groups.",
         "label": "Social"
+      },
+      "TRADE": {
+        "hint": "Artisanal skills reflecting your character's ability to create items or equipment.",
+        "label": "Trade"
       }
-    },
-    "LABELS": {
-      "alchemy": "Alchemy",
-      "arcana": "Arcana",
-      "athletics": "Athletics",
-      "awareness": "Awareness",
-      "cooking": "Cooking",
-      "deception": "Deception",
-      "diplomacy": "Diplomacy",
-      "enchanting": "Enchanting",
-      "fletching": "Fletching",
-      "glyphweaving": "Glyphweaving",
-      "intimidation": "Intimidation",
-      "jewelcraft": "Jewelcraft",
-      "medicine": "Medicine",
-      "performance": "Performance",
-      "science": "Science",
-      "smithing": "Smithing",
-      "society": "Society",
-      "stealth": "Stealth",
-      "tailoring": "Tailoring",
-      "wilderness": "Wilderness"
     },
     "RANKS": {
       "ADEPT": {
@@ -2134,7 +2242,6 @@
     },
     "AcquiredRanks": "Acquired Ranks",
     "CantAfford": "You cannot afford to increase this skill. The next rank costs {cost} points and you have {points} skill points available.",
-    "CategoryHeader": "{category} Skills",
     "ChoosePath": "You must choose a specialization path before advancing this Skill further.",
     "Id": "Skill ID",
     "Overview": "Skill Overview",
@@ -2299,6 +2406,7 @@
       "Knowledge": "Required Knowledge"
     },
     "WARNINGS": {
+      "AuraRequiresCombat": "an Aura may only be cast during combat",
       "BindArmamentAlreadyBound": "weapon is already bound",
       "BindArmamentNoMainhand": "no mainhand weapon",
       "CannotAffordHands": {
@@ -2310,7 +2418,6 @@
         "other": "The {action} spell requires {hands} free hands to cast."
       },
       "CannotUseNotComposed": "You cannot cast a Spell which has not yet been fully composed.",
-      "CannotUseSilenced": "Cannot use Inflections while Silenced.",
       "IconicAlreadyKnown": "Actor {actor} already knows the {spell} Iconic Spell.",
       "IconicNoSlots": "Actor {actor} does not have any available Iconic Spell slots.",
       "IconicNotSatisfied": "Actor {actor} does not satisfy the knowledge requirements to learn the {spell} Iconic Spell.",
@@ -2353,31 +2460,27 @@
       "description": {
         "label": "Talent Description"
       },
-      "gesture": {
-        "hint": "Obtaining this talent grants knowledge of a specific spellcraft Gesture.",
-        "label": "Gesture"
-      },
       "iconicSpells": {
         "hint": "A number of Iconic Spell slots that are granted by this Talent.",
         "label": "Iconic Spells"
-      },
-      "inflection": {
-        "hint": "Obtaining this talent grants knowledge of a specific spellcraft Inflection.",
-        "label": "Inflection"
       },
       "nodes": {
         "hint": "Assign this Talent to be purchased from one or more particular nodes in the Talent Tree.",
         "label": "Talent Nodes"
       },
-      "rune": {
-        "hint": "Obtaining this talent grants knowledge of a specific spellcraft Rune.",
-        "label": "Rune"
+      "requirements": {
+        "training": {
+          "hint": "Training ranks which a character must already possess before this Talent may be purchased.",
+          "label": "Required Training"
+        }
+      },
+      "spellcraft": {
+        "hint": "Obtaining this Talent grants knowledge of one spellcraft component: a Rune, a Gesture, or an Inflection.",
+        "label": "Spellcraft Component"
       },
       "training": {
-        "hint": "Does this talent provide some rank of training in a particular area?",
-        "label": "Provided Training",
-        "rank.label": "Training Rank",
-        "type.label": "Training Type"
+        "hint": "Owning this talent contributes one training point to the area named here, whether the talent was purchased or granted. Leave blank if this talent advances no training.",
+        "label": "Provided Training"
       }
     },
     "HOOKS": {
@@ -2418,7 +2521,6 @@
       "Signature": "Signature",
       "Skill": "Skill",
       "Spell": "Spellcraft",
-      "Training": "Training",
       "Utility": "Utility"
     },
     "RANKS": {
@@ -2427,12 +2529,6 @@
       "Proficient": "Proficient",
       "Trained": "Trained",
       "Untrained": "Untrained"
-    },
-    "TRAINING": {
-      "Craft": "Tradecraft Training",
-      "Skill": "Skill Training",
-      "Spell": "Spellcraft Training",
-      "Weapon": "Weapon Training"
     },
     "WARNINGS": {
       "AlreadyOwned": "You already own {name} and cannot add it a second time.",
@@ -2455,7 +2551,8 @@
     "Prerequisites": "Prerequisites",
     "SignatureLimit": "Signature Limit Reached",
     "SignatureNext": "Next at Level {level}",
-    "Tier": "Tier {tier}"
+    "Tier": "Tier {tier}",
+    "TrainingGrant": "{training} +1"
   },
   "TAXONOMY": {
     "CATEGORIES": {
@@ -2488,6 +2585,8 @@
         "label": "Category"
       },
       "characteristics": {
+        "blooded.hint": "Whether this Taxonomy has some form of blood. Defaults to the bloodedness of the chosen creature category.",
+        "blooded.label": "Blooded",
         "equipment.label": "Can Use Equipment",
         "label": "Taxonomy Characteristics",
         "spells.label": "Can Cast Spells",
@@ -2621,7 +2720,7 @@
     },
     "FIELDS": {
       "skills": {
-        "hint": "Identify skills or tradecraft which involves usage of this particular tool.",
+        "hint": "Identify skills which involve usage of this particular tool.",
         "label": "Related Skills"
       }
     }
@@ -2661,6 +2760,7 @@
       "skill": "Crucible Skill"
     },
     "RegionBehavior": {
+      "crucible.action": "Crucible Action",
       "crucible.hazard": "Crucible Hazard"
     }
   },
@@ -2688,22 +2788,86 @@
     "CannotEquipSlotInUse": "Actor {actor} cannot equip {item} because the {type} item slot is already in use.",
     "CannotEquipTaxonomy": "Actor {actor} cannot equip {item} because the \"{taxonomy}\" taxonomy is incapable of using equipment.",
     "NoParty": "You must have a primary party configured for this.",
-    "SkillRequireAncestryBackground": "You must assign both Ancestry and Background before you can purchase Skill ranks."
+    "SkillRequireAncestryBackground": "You must assign both Ancestry and Background before you can purchase Skill ranks.",
+    "TrainingCannotDecrease": "You cannot decrease this Proficiency further.",
+    "TrainingCannotIncrease": "You cannot increase this Proficiency further."
+  },
+  "TRAINING": {
+    "BREAKDOWN": {
+      "Bonus": "Bonus",
+      "Cap": "Level Cap",
+      "Granted": "Granted",
+      "Increases": "Increases",
+      "Next": "Next Rank ({rank})",
+      "Talents": "Talents",
+      "Total": "Total"
+    },
+    "LABELS": {
+      "alchemy": "Alchemy",
+      "arcana": "Arcana",
+      "armor": "Armored Combat",
+      "armorShort": "Armor",
+      "athletics": "Athletics",
+      "awareness": "Awareness",
+      "cooking": "Cooking",
+      "deception": "Deception",
+      "diplomacy": "Diplomacy",
+      "elemental": "Elemental Spellcraft",
+      "elementalShort": "Elemental",
+      "enchanting": "Enchanting",
+      "fletching": "Fletching",
+      "glyphweaving": "Glyphweaving",
+      "heavy": "Heavy Weapons",
+      "heavyShort": "Heavy",
+      "intimidation": "Intimidation",
+      "jewelcraft": "Jewelcraft",
+      "light": "Light Weapons",
+      "lightShort": "Light",
+      "mechanical": "Mechanical Weapons",
+      "mechanicalShort": "Mechanical",
+      "medicine": "Medicine",
+      "natural": "Natural Weapons",
+      "naturalShort": "Natural",
+      "performance": "Performance",
+      "physical": "Kinematic Spellcraft",
+      "physicalShort": "Kinematic",
+      "projectile": "Projectile Weapons",
+      "projectileShort": "Projectile",
+      "science": "Science",
+      "shield": "Shield Combat",
+      "shieldShort": "Shield",
+      "simpleShort": "Simple",
+      "smithing": "Smithing",
+      "society": "Society",
+      "spiritual": "Spiritual Spellcraft",
+      "spiritualShort": "Spiritual",
+      "stealth": "Stealth",
+      "tailoring": "Tailoring",
+      "talisman": "Talisman Weapons",
+      "talismanShort": "Talisman",
+      "unarmed": "Unarmed Combat",
+      "unarmedShort": "Unarmed",
+      "wilderness": "Wilderness"
+    },
+    "GROUPS": {
+      "Equipment": "Equipment Proficiencies",
+      "Exploration": "Exploration Skills",
+      "Knowledge": "Knowledge Skills",
+      "Social": "Social Skills",
+      "Spell": "Spellcraft Proficiencies",
+      "Trade": "Trade Skills",
+      "Weapon": "Weapon Proficiencies"
+    },
+    "Decrease": "Reclaim a Proficiency Point",
+    "Increase": "Allocate a Proficiency Point",
+    "PassiveTooltip": "Your passive score for this training."
   },
   "WEAPON": {
     "CATEGORIES": {
       "Balanced": "Balanced",
       "CategoryHands": "{category} ({hands}h)",
-      "Heavy": "Heavy",
-      "Light": "Light",
-      "Mechanical": "Mechanical",
-      "Projectile": "Projectile",
-      "Shield": "Shield",
       "ShieldHeavy": "Heavy Shield",
-      "ShieldLight": "Light Shield",
-      "Simple": "Simple",
-      "Talisman": "Talisman",
-      "Unarmed": "Unarmed"
+      "ShieldLight": "Light Shield"
     },
     "FIELDS": {
       "damageType": {
@@ -2746,7 +2910,7 @@
       "Engaging": "Engaging",
       "EngagingTooltip": "Weapons in this category allow you to better combat multiple foes, increasing your Engagement by +1.",
       "Intuitive": "Intuitive",
-      "IntuitiveTooltip": "This weapon is intuitive enough to be used untrained. The Skill penalty when using this weapon untrained is only -1 instead of -4.",
+      "IntuitiveTooltip": "This weapon is easily understood and can be used without formal training. You are treated as having one additional point of proficiency when wielding it.",
       "Keen": "Keen",
       "KeenTooltip": "This weapon is particularly deadly when it achieves a critical hit. IMPORTANT NOTE - the keen property is not yet implemented in the playtest.",
       "Natural": "Natural",
@@ -2765,7 +2929,7 @@
       "ReturningTooltip": "This weapon is magically or mechanically engineered to return to your hand after being thrown. Using the Throw Weapon action with this weapon does not result in it becoming Dropped.",
       "Thrown": "Thrown",
       "ThrownTooltip": "This weapon is designed to be suitable for throwing and does not suffer the Banes penalty that is usually applied to the Throw Weapon action.",
-      "UntrainedTooltip": "Your character lacks {training} weapon training and suffers a -4 Skill penalty when attacking with this weapon.",
+      "UntrainedTooltip": "Your character is not fully Trained in the use of {training} weapons, and suffers a penalty when attacking.",
       "Versatile": "Versatile",
       "VersatileTooltip": "This weapon can be wielded with either one or two hands, switching between grips without any Action Point cost. In its alternate grip it functions as the corresponding weapon of its kind: a one-handed weapon becomes the larger two-handed weapon, and a two-handed weapon becomes the smaller one-handed weapon."
     }
