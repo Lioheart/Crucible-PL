@@ -1,40 +1,164 @@
 {
     "label": "Ancestry",
+    "folders": {
+        "Ancestries": "Ancestries",
+        "Ancestry Talents": "Ancestry Talents"
+    },
     "entries": {
         "Devilkin": {
             "name": "Devilkin",
             "description": "<p>You were born with unexpected magical influence over your creation. Your physical appearance shows tell-tale signs that the superstitious associate with planar beings- crimson flesh, ineffective wings or horns, reptilian eyes. Your dislike of light and preternatural resistance to fire does little to dissuade people from thinking you are an actual devil.</p>"
         },
-        "Dwarven": {
-            "name": "Dwarven",
+        "Devilkin Lineage": {
+            "name": "Devilkin Lineage",
+            "description": "<p>The infernal fire of your heritage smolders just beneath your skin, waiting to be unleashed through your blows.</p><p><strong>Thermal Vision.</strong> You gain the benefits of @UUID[Compendium.crucible.adversary-talents.thermalVision000] with a 30 foot radius.</p>",
+            "actions": {
+                "Hellbrand": {
+                    "name": "Hellbrand",
+                    "description": "<p>You expend @Rule[resource.heroism] to wreathe your attacks in hellfire for <strong>3 Rounds</strong>. Each of your attacks which deals damage to @Rule[resource.health] also deals additional <strong>Fire</strong> damage equal to half your @Rule[ability.presence]. A @Rule[dice.criticalSuccess]{Critical Hit} sets the target @Condition[burning].</p>",
+                    "effects": [
+                        {
+                            "name": "Hellbrand"
+                        }
+                    ]
+                }
+            }
+        },
+        "Dwarf": {
+            "name": "Dwarf",
             "description": "<p>Like your parents before you, you were born with the enduring fortitude of the Dwarves. Your stout stature and burly physical appearance are the hallmarks of a people born of earth and stone. A legacy of physical resilience is yours to inherit, for in your breast beats a heart of stone.</p>"
         },
-        "Elvish": {
-            "name": "Elvish",
+        "Dwarf Lineage": {
+            "name": "Dwarf Lineage",
+            "description": "<p>Your people never forget a slight, and your wrath toward a sworn enemy is as enduring as the stone of your ancestral halls.</p><p><strong>Darkvision.</strong> Generations beneath the earth have adapted your eyes to the dark. You can see in darkness as though it were dim light up to <strong>30 feet</strong> away, perceiving your surroundings in shades of grey.</p>",
+            "actions": {
+                "Grudgebearer": {
+                    "name": "Grudgebearer",
+                    "description": "<p>You expend @Rule[resource.heroism] to swear a grudge against an enemy you can see. Your attacks against that enemy deal bonus damage equal to your @Rule[ability.wisdom].</p><p>The grudge ends if you end your turn without having attacked that enemy during the turn. You may bear only one grudge at a time; swearing a new grudge ends the previous one.</p>",
+                    "effects": [
+                        {
+                            "name": "Grudge"
+                        }
+                    ]
+                }
+            }
+        },
+        "Elf": {
+            "name": "Elf",
             "description": "<p>Graceful in movement and swift in thought, you were born a long-lived elf. Your slight and nimble frame and sculpted features are the inherited traits of a people for whom elegance is a way of life. Your predisposition toward quick-thinking and precise movement the evolutionary results of hundreds of years of tradition.</p>"
+        },
+        "Elf Lineage": {
+            "name": "Elf Lineage",
+            "description": "<p>Centuries of elven tradition have honed your eye to find the flaw in any defense.</p><p><strong>Trance.</strong> Rather than sleep, you rest in a meditative trance which keeps your mind clear. You are immune to the @Condition[asleep] and @Condition[disoriented] conditions.</p>",
+            "actions": {
+                "Perfect Precision": {
+                    "name": "Perfect Precision",
+                    "description": "<p>You expend @Rule[resource.heroism] to strike with flawless precision. Until the end of your turn, your @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.lZfPVvBSsCEqlte4#critical-hits-and-misses]{Critical Success Threshold} is reduced by <strong>3</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Perfect Precision"
+                        }
+                    ]
+                }
+            }
         },
         "Giantkin": {
             "name": "Giantkin",
             "description": "<p>Elemental forces presided over your birth, instilling you with supernatural vigor. Your large frame and muscular build often lead others to believe you are an unthinking mass of muscle, but yours is a people known most for their physical resilience and the deep well of their knowledge. You have inherited the strength of mountains.</p>"
         },
+        "Giantkin Lineage": {
+            "name": "Giantkin Lineage",
+            "description": "<p>The elemental forces which presided over your birth still answer when you call upon them.</p><p><strong>Powerful Build.</strong> Your massive frame bears burdens that would stagger others. Your carrying capacity is increased by <strong>50%</strong>.</p>",
+            "actions": {
+                "Elemental Birthright": {
+                    "name": "Elemental Birthright",
+                    "description": "<p>You expend @Rule[resource.heroism] to call upon the elemental forces of your birthright. Until the start of your next turn, you gain resistance to <strong>Acid</strong>, <strong>Cold</strong>, <strong>Electricity</strong>, and <strong>Fire</strong> damage equal to your @Rule[ability.wisdom], and any <strong>Acid</strong>, <strong>Cold</strong>, <strong>Electricity</strong>, or <strong>Fire</strong> damage you deal is increased by your @Rule[ability.wisdom].</p>",
+                    "effects": [
+                        {
+                            "name": "Elemental Birthright"
+                        }
+                    ]
+                }
+            }
+        },
         "Gnome": {
             "name": "Gnome",
             "description": "<p>Yours was a birth of exuberant celebration. Your diminutive body and delicate features are paired with an almost supernatural propensity for discovery. The traditions of your people embrace a lust for life and the importance of quick-thinking and quick-action.</p>"
+        },
+        "Gnome Lineage": {
+            "name": "Gnome Lineage",
+            "description": "<p>A gnome's knack for improvisation lets you coax just a little more out of the tools and concoctions you carry.</p><p><strong>Tinker's Belt.</strong> Your cleverly arranged gear keeps more within reach. You have <strong>+1</strong> toolbelt slot.</p>",
+            "actions": {
+                "Tinker's Trick": {
+                    "name": "Tinker's Trick",
+                    "description": "<p>You expend @Rule[resource.heroism] to ready a clever trick. The next consumable you use from your toolbelt before the end of your turn costs no @Rule[resource.action] and is not consumed.</p>",
+                    "effects": [
+                        {
+                            "name": "Tinker's Trick"
+                        }
+                    ]
+                }
+            }
         },
         "Halfling": {
             "name": "Halfling",
             "description": "<p>You were raised in a creche surrounded by other halflings. Your lilliputian stature, thick-soled hairy feet, and the swiftness of your mind and body are what your people are most known for. Yours is a people for whom education and tradition are paramount.</p>"
         },
+        "Halfling Lineage": {
+            "name": "Halfling Lineage",
+            "description": "<p>Halflings are braver than their stature suggests, and your spirit is quick to recover from even the most harrowing of trials.</p><p><strong>Small and Nimble.</strong> Your slight frame slips easily out of sight and out of grasp. You gain @Rule[dice.boon]{+1 Boon} when you use the @Action[default escape], @Action[default hide], or <strong>Sneak</strong> actions.</p>",
+            "actions": {
+                "Stout Heart": {
+                    "name": "Stout Heart",
+                    "description": "<p>You expend @Rule[resource.heroism] to steel your resolve, instantly recovering @Rule[resource.morale] equal to two times your @Rule[ability.presence], which can restore you from being @Condition[broken]. You also end the @Condition[frightened] and @Condition[confused] conditions. You may perform this action outside of your turn in <strong>Combat</strong> before making a @Rule[action.reaction].</p>"
+                }
+            }
+        },
         "Human": {
             "name": "Human",
             "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
         },
-        "Orcish": {
-            "name": "Orcish",
+        "Human Lineage": {
+            "name": "Human Lineage",
+            "description": "<p>Humans are known for a stubborn will to survive, pressing onward through hardship that would halt anyone else.</p><p><strong>Adaptable.</strong> Your people are quick to learn whatever the moment demands. You gain <strong>+2</strong> Proficiency Points.</p>",
+            "actions": {
+                "Push Through": {
+                    "name": "Push Through",
+                    "description": "<p>You expend @Rule[resource.heroism] to push through adversity. Until the end of your turn, your attacks and skill checks ignore any @Rule[dice.bane]{Banes} imposed upon them. Banes you choose to take upon yourself are not ignored.</p>",
+                    "effects": [
+                        {
+                            "name": "Push Through"
+                        }
+                    ]
+                }
+            }
+        },
+        "Orc": {
+            "name": "Orc",
             "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
+        },
+        "Orc Lineage": {
+            "name": "Orc Lineage",
+            "description": "<p>The harsh northern clime forged your people to fight hardest when death is nearest.</p><p><strong>Scarred Hide.</strong> The more grievously you are wounded, the harder you are to put down. You gain resistance to <strong>Physical</strong> damage equal to your @Rule[ability.toughness] multiplied by the fraction of your maximum @Rule[resource.wounds] you have suffered, rounded down.</p>",
+            "actions": {
+                "Deathless Fury": {
+                    "name": "Deathless Fury",
+                    "condition": "While your Health does not exceed your Wounds",
+                    "description": "<p>While your @Rule[resource.health] does not exceed your @Rule[resource.wounds], you may expend @Rule[resource.heroism] to enter a deathless fury. While the fury lasts you ignore all penalties of being @Condition[weakened] and your @Action[default strike] attacks gain @Rule[dice.boon]{+1 Boon}.</p><p>The fury ends when your @Rule[resource.health] exceeds your @Rule[resource.wounds] or when <strong>Combat</strong> ends.</p>",
+                    "effects": [
+                        {
+                            "name": "Deathless Fury"
+                        }
+                    ]
+                }
+            }
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }

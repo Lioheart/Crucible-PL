@@ -9,6 +9,12 @@
         "Natural Weapons": "Natural Weapons"
     },
     "entries": {
+        "Antlers": {
+            "name": "Antlers",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has prominent antlers which it uses to defend itself and gore its enemies.</p>"
+            }
+        },
         "Beak": {
             "name": "Beak",
             "description": {
@@ -87,6 +93,12 @@
                 "public": "<p>The @ref[actor.name]{creature} has long, piercing fangs.</p>"
             }
         },
+        "Feet": {
+            "name": "Feet",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} can attack using feet with no claws or hooves.</p>"
+            }
+        },
         "Fists": {
             "name": "Fists",
             "description": {
@@ -123,6 +135,12 @@
                 "public": "<p>The @ref[actor.name]{creature} has formidable claws, each the size of a steel blade.</p>"
             }
         },
+        "Giant Feet": {
+            "name": "Giant Feet",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has feet of such magnitude that they can be used as powerful weapons, bludgeoning those caught underfoot.</p>"
+            }
+        },
         "Giant Jaws": {
             "name": "Giant Jaws",
             "description": {
@@ -133,6 +151,12 @@
             "name": "Giant Tail",
             "description": {
                 "public": "<p>The @ref[actor.name]{creature} has a trunk-thick tail that sweeps and slams.</p>"
+            }
+        },
+        "Giant Tusks": {
+            "name": "Giant Tusks",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has substantial tusks which it uses to bludgeon its foes.</p>"
             }
         },
         "Heavy Carapace": {
@@ -265,6 +289,12 @@
             "name": "Shadow Limb",
             "description": {
                 "public": "<p>The @ref[actor.name]{creature} strikes with a limb of grasping darkness.</p>"
+            }
+        },
+        "Spines": {
+            "name": "Spines",
+            "description": {
+                "public": "<p>A dense coat of barbed spines covers the back and flanks of the @ref[actor.name]{creature}, turning aside blows.</p>"
             }
         },
         "Stinger": {

@@ -1,0 +1,72 @@
+{
+    "label": "Effects",
+    "folders": {
+        "Healing Over Time": "Healing Over Time",
+        "Damage Over Time": "Damage Over Time"
+    },
+    "entries": {
+        "Bleeding (Piercing)": {
+            "name": "Bleeding (Piercing)",
+            "description": "<p>A @Condition[bleeding] (Piercing) creature suffers additional <strong>Piercing</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Bleeding (Slashing)": {
+            "name": "Bleeding (Slashing)",
+            "description": "<p>A @Condition[bleeding] creature suffers additional <strong>Slashing</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Burning": {
+            "name": "Burning",
+            "description": "<p>A @Condition[burning] creature suffers additional <strong>Fire</strong> damage to both @Rule[resource.health] and @Rule[resource.morale] at the start of its subsequent turns.</p>"
+        },
+        "Confused": {
+            "name": "Confused",
+            "description": "<p>A @Condition[confused] creature suffers <strong>Psychic</strong> damage to @Rule[resource.morale] at the start of each turn, and is also treated as @Condition[disoriented].</p>"
+        },
+        "Corroding": {
+            "name": "Corroding",
+            "description": "<p>A @Condition[corroding] creature suffers additional <strong>Acid</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Decaying": {
+            "name": "Decaying",
+            "description": "<p>A @Condition[decaying] creature suffers additional <strong>Corruption</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Dominated": {
+            "name": "Dominated",
+            "description": "<p>A @Condition[dominated] creature suffers <strong>Psychic</strong> damage to @Rule[resource.morale] at the start of each turn.</p>"
+        },
+        "Entropy": {
+            "name": "Entropy",
+            "description": "<p>A creature afflicted with @Condition[entropy] suffers <strong>Void</strong> damage to @Rule[resource.health] at the start of each turn, and is also treated as @Condition[frightened].</p>"
+        },
+        "Freezing": {
+            "name": "Freezing",
+            "description": "<p>A @Condition[freezing] creature suffers additional <strong>Cold</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Inspired": {
+            "name": "Inspired",
+            "description": "<p>A creature that is @Condition[inspired] will gradually recover @Rule[resource.morale] at the start of each of its turns.</p>"
+        },
+        "Irradiated": {
+            "name": "Irradiated",
+            "description": "<p>An @Condition[irradiated] creature suffers additional <strong>Radiant</strong> damage to both @Rule[resource.health] and @Rule[resource.morale] at the start of its subsequent turns.</p>"
+        },
+        "Mending": {
+            "name": "Mending",
+            "description": "<p>A creature that is @Condition[mending] will gradually recover @Rule[resource.health] at the start of each of its turns.</p>"
+        },
+        "Poisoned": {
+            "name": "Poisoned",
+            "description": "<p>A @Condition[poisoned] creature suffers additional <strong>Poison</strong> damage to @Rule[resource.health] at the start of its subsequent turns.</p>"
+        },
+        "Shocked": {
+            "name": "Shocked",
+            "description": "<p>A @Condition[shocked] creature suffers <strong>Electricity</strong> damage to @Rule[resource.morale] at the start of each turn.</p>"
+        },
+        "Suffocating": {
+            "name": "Suffocating",
+            "description": "<p>A @Condition[suffocating] creature suffers <strong>Void</strong> damage to both @Rule[resource.wounds] and @Rule[resource.madness] at the start of each turn, representing physical lung trauma and panic from being deprived of breathable air. While Suffocating, a creature is also @Condition[silenced].</p>"
+        }
+    },
+    "mapping": {
+        "description": "description"
+    }
+}

@@ -15,6 +15,7 @@
         "Scrolls": "Scrolls",
         "Flasks": "Flasks",
         "Heavy": "Heavy",
+        "Talisman (2h)": "Talisman (2h)",
         "Jewelry": "Jewelry",
         "Wilderness": "Wilderness",
         "Ingredients": "Ingredients",
@@ -30,7 +31,7 @@
         "Summons": "Summons",
         "Adventuring Gear": "Adventuring Gear",
         "Shields": "Shields",
-        "Talisman": "Talisman",
+        "Talisman (1h)": "Talisman (1h)",
         "Crafting Kits": "Crafting Kits"
     },
     "entries": {
@@ -73,13 +74,13 @@
         "Amulet of Nimbleness": {
             "name": "Amulet of Nimbleness",
             "description": {
-                "public": "<blockquote><p>This brightly colored necklace holds a stone amulet that glows with a rune that crackles faintly with electrical resonance. While holding it you have the surreal sensation of the world around you slowing down ever so slightly.</p></blockquote><p>This enchanted amulet provides a bonus to <strong>Reflex</strong> defense.</p>",
+                "public": "<blockquote><p>This brightly colored necklace holds a stone amulet that glows with a rune that crackles faintly with electrical resonance. While holding it you have the surreal sensation of the world around you slowing down ever so slightly.</p></blockquote><p>This enchanted amulet provides a bonus to @Rule[defense.reflex] defense.</p>",
                 "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Nimbleness} suffix.</p><p>This affix can be applied to any armor or accessory and this amulet could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Nimbleness": {
                     "name": "Nimbleness",
-                    "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "description": "<p>Increase @Rule[defense.reflex] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Nimbleness"
                 }
             }
@@ -99,7 +100,7 @@
         "Arcane Orb": {
             "name": "Arcane Orb",
             "description": {
-                "public": "<p>A sphere of crystal or glass that — in the palm of a capable spellcaster — becomes a conduit for their power. It gathers voltaic energy within its orb before blasting a target with electrifying force.</p>"
+                "public": "<p>A sphere of clouded crystal in which tiny threads of lightning crackle and coil. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.electricity] damage.</p>"
             }
         },
         "Bag of Holding": {
@@ -112,6 +113,18 @@
             "name": "Bastard Sword",
             "description": {
                 "public": "<p>A bastard sword, also known as a hand-and-a-half sword, is a versatile weapon with a straight, double-edged blade around 40 inches long. This weapon is forged for both single-handed agility and two-handed power.</p>"
+            }
+        },
+        "Battering Snare": {
+            "name": "Battering Snare",
+            "description": {
+                "public": "<p>This snare consists of a flat rock or metal plate held in place with a spring or flexible branch.</p>"
+            },
+            "actions": {
+                "Arm Battering Snare": {
+                    "name": "Arm Battering Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, the flat object swings wide and smacks the creature, dealing @Rule[damageType.bludgeoning] damage. If the attack is a @Rule[dice.criticalSuccess], the creature is also @Condition[stunned] until the end of its next turn. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 2 damage</p></li><li><p><strong>Standard</strong> - 4 damage</p></li><li><p><strong>Fine</strong> - 8 damage</p></li><li><p><strong>Superior</strong> - 12 damage</p></li><li><p><strong>Masterwork</strong> - 20 damage</p></li></ul>"
+                }
             }
         },
         "Battle Axe": {
@@ -146,10 +159,22 @@
                 }
             }
         },
+        "Blighted Bough": {
+            "name": "Blighted Bough",
+            "description": {
+                "public": "<p>A thick bough torn from a diseased tree, its bark weeping a sap that withers whatever it touches. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.poison] damage.</p>"
+            }
+        },
         "Bo Staff": {
             "name": "Bo Staff",
             "description": {
                 "public": "<p>A balanced hardwood staff favored by martial artists, lighter and quicker in the hand than a common quarterstaff. Its even weighting rewards a deft wielder, weaving constant parries between flurrying strikes.</p>"
+            }
+        },
+        "Bone Crook": {
+            "name": "Bone Crook",
+            "description": {
+                "public": "<p>A shepherd's crook of fused bone, gathered from things that should have stayed buried. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.corruption] damage.</p>"
             }
         },
         "Book": {
@@ -175,6 +200,30 @@
             "name": "Buckler",
             "description": {
                 "public": "<p>A small, round metal shield roughly the size of a dinner plate, the buckler is a duelist’s tool for deflecting blades and controlling space, worn on the forearm or gripped like a weapon.</p>"
+            }
+        },
+        "Burning Torch": {
+            "name": "Burning Torch",
+            "description": {
+                "public": "<p>A lit torch of oil-soaked rags wrapped around a rod of bone or another non-flammable material, shedding flickering illumination in a wide radius while held. It can be wielded as a weapon, or thrown to a distant area where it keeps burning until it is recovered.</p>"
+            },
+            "actions": {
+                "Throw Torch": {
+                    "name": "Throw Torch",
+                    "description": "<p>You fling the @ref[item.name] not at a specific creature, but instead towards an area, creating a temporary light source at that location or possibly spreading the flames to other flammable objects.</p>"
+                }
+            }
+        },
+        "Caltrop Snare": {
+            "name": "Caltrop Snare",
+            "description": {
+                "public": "<p>This snare consists of a hidden canister of caltrops attached to a trip wire. When the snare is triggered, it flings the caltrops into the nearby area.</p>"
+            },
+            "actions": {
+                "Arm Caltrop Snare": {
+                    "name": "Arm Caltrop Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the snare flings its caltrops and the area remains hazardous. The creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of a creature which enters or begins its turn within the area, at most once per round. If not resisted, it deals @Rule[damageType.piercing] damage and inflicts @Condition[bleeding] and @Condition[slowed]. The bleeding damage and the duration of both conditions vary according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage, 1 round</p></li><li><p><strong>Standard</strong> - 2 damage, 2 rounds</p></li><li><p><strong>Fine</strong> - 3 damage, 3 rounds</p></li><li><p><strong>Superior</strong> - 4 damage, 4 rounds</p></li><li><p><strong>Masterwork</strong> - 6 damage, 6 rounds</p></li></ul>"
+                }
             }
         },
         "Candle": {
@@ -203,7 +252,7 @@
         "Ceremonial Dagger": {
             "name": "Ceremonial Dagger",
             "description": {
-                "public": "<p>This blade is less functional and more ornamented than a regular dagger. Its inscriptions and craftsmanship are purposeful for use as a tool for spellcraft. In combat, it projects piercing blasts of arcane energy.</p>"
+                "public": "<p>An ornate ritual blade, better suited to sacrament than to swordplay. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.piercing] damage.</p>"
             }
         },
         "Chain": {
@@ -227,13 +276,13 @@
         "Charm of Tenacity": {
             "name": "Charm of Tenacity",
             "description": {
-                "public": "<blockquote><p>This charm-covered necklace looks rustic, but upon close inspection you notice a delicate craft imbued within its workmanship. While holding it you feel your breaths deepen and the minor aches within your muscles dissipate.</p></blockquote><p>This enchanted charm provides a bonus to <strong>Fortitude</strong> defense.</p>",
+                "public": "<blockquote><p>This charm-covered necklace looks rustic, but upon close inspection you notice a delicate craft imbued within its workmanship. While holding it you feel your breaths deepen and the minor aches within your muscles dissipate.</p></blockquote><p>This enchanted charm provides a bonus to @Rule[defense.fortitude] defense.</p>",
                 "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Tenacity} suffix.</p><p>This affix can be applied to any armor or accessory and this charm could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Tenacity": {
                     "name": "Tenacity",
-                    "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
+                    "description": "<p>Increase @Rule[defense.fortitude] defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Tenacity"
                 }
             }
@@ -252,13 +301,19 @@
             "actions": {
                 "Choking Ampoule": {
                     "name": "Choking Ampoule",
-                    "description": "<p>You hurl the @ref[item.name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[item.name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
+                    "description": "<p>You hurl the @ref[item.name], which is @Rule[action.harmless] in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their @Rule[defense.fortitude].</p><p>The gas deals poison damage to @Rule[resource.morale] in an amount dependent on the quality of the @ref[item.name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
                     "effects": [
                         {
                             "name": "Choking Ampoule"
                         }
                     ]
                 }
+            }
+        },
+        "Cinder Wand": {
+            "name": "Cinder Wand",
+            "description": {
+                "public": "<p>A blackened wand whose tip smolders with a perpetual ember. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.fire] damage.</p>"
             }
         },
         "Claw Hammer": {
@@ -283,7 +338,7 @@
         "Cloak of Kindly Visage": {
             "name": "Cloak of Kindly Visage",
             "description": {
-                "public": "<blockquote><p>A nondescript black cloak that seems as if it would match with almost any outfit.</p></blockquote><p>This enchanted cloak provides an enchantment bonus to <strong>Diplomacy</strong> skill checks and grants the ability to assume an illusory <strong>Disguise</strong>.</p>",
+                "public": "<blockquote><p>A nondescript black cloak that seems as if it would match with almost any outfit.</p></blockquote><p>This enchanted cloak provides an enchantment bonus to @Rule[skill.diplomacy] skill checks and grants the ability to assume an illusory <strong>Disguise</strong>.</p>",
                 "private": "<p>This item is presented as an example of a Fine Cloak with the @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomacy} prefix and the @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Disguise} suffix.</p>"
             },
             "effects": {
@@ -300,9 +355,15 @@
                 },
                 "Diplomacy": {
                     "name": "Diplomacy",
-                    "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+                    "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.diplomacy] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
                     "adjective": "Diplomatic"
                 }
+            }
+        },
+        "Clothing": {
+            "name": "Clothing",
+            "description": {
+                "public": "<p>A well-made shirt, trousers or skirt, a jerkin or vest, undergarments, stockings, and sturdy shoes or boots. Respectable everyday attire for a townsperson or tradesperson.</p>"
             }
         },
         "Club": {
@@ -315,6 +376,12 @@
             "name": "Common Clothing",
             "description": {
                 "public": "<p>A shirt, pair of pants, undergarments, socks and shoes or boots suitable for menial labor or travel.</p>"
+            }
+        },
+        "Compass": {
+            "name": "Compass",
+            "description": {
+                "public": "<p>A piece of ferrous metal suspended in a liquid dial, when held parallel to the ground it provides a reasonable bearing for navigation.</p><p></p><p>This Tool grants @Advantage[2] for navigation tasks on land or at sea.</p>"
             }
         },
         "Cook's Toolkit": {
@@ -401,6 +468,24 @@
                 "public": "<p>An expanded toolbelt in the form of a utility belt, a bandolier, or an array of pockets stitched into your equipment.</p><p>This item provides a number of additional Toolbelt slots according to its quality tier:</p><ul><li><p><strong>Standard</strong>: +1 Toolbelt slot</p></li><li><p><strong>Fine</strong>: +2 Toolbelt slots</p></li><li><p><strong>Superior</strong>: +3 Toolbelt slots</p></li><li><p><strong>Masterwork</strong>: +4 Toolbelt slots</p></li></ul>"
             }
         },
+        "Eyes of the Inspector": {
+            "name": "Eyes of the Inspector",
+            "description": {
+                "public": "<p>Carefully polished spectacles, the rims of which are inscribed with glyphs and sigils.</p><p>While <strong>Invested</strong> and wearing these glasses, you feel more deductive. You gain @Rule[dice.boon]{+2 Boons} when using @Action[default search], and <strong>+1 Enchantment Bonus</strong> on any @Rule[skill.awareness] checks.</p>"
+            },
+            "effects": {
+                "Awareness": {
+                    "name": "Awareness",
+                    "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Awareness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+                    "adjective": "Perceptive"
+                },
+                "Inspection": {
+                    "name": "Inspection",
+                    "description": "<p>@Action[default search] checks gain @Rule[dice.boon]{+2 Boons}.</p>",
+                    "adjective": "Inspection"
+                }
+            }
+        },
         "Firestarter": {
             "name": "Firestarter",
             "description": {
@@ -416,7 +501,7 @@
         "Flame Staff": {
             "name": "Flame Staff",
             "description": {
-                "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl gouts of arcane flame at enemies.</p>"
+                "public": "<p>A long staff of red-lacquered wood whose engravings glow like embers when it is wielded in anger. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.fire] damage.</p>"
             }
         },
         "Fletcher's Toolkit": {
@@ -428,21 +513,27 @@
         "Focusing Pearl": {
             "name": "Focusing Pearl",
             "description": {
-                "public": "<blockquote><p>A small, vibrant blue pearl that feels refreshingly cool to the touch regardless of ambient temperature.</p></blockquote><p>This enchanted pearl grants its bearer the <strong>Replenish Focus</strong> action, providing an additional reserve of <strong>Focus</strong> that can be drawn upon in moments of duress.</p>",
+                "public": "<blockquote><p>A small, vibrant blue pearl that feels refreshingly cool to the touch regardless of ambient temperature.</p></blockquote><p>This enchanted pearl grants its bearer the <strong>Replenish Focus</strong> action, providing an additional reserve of @Rule[resource.focus] that can be drawn upon in moments of duress.</p>",
                 "private": "<p>This item is presented as an example of a <strong>Fine</strong> trinket with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this pearl could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Focusing": {
                     "name": "Focusing",
-                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore @Rule[resource.focus] in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Focusing",
                     "actions": {
                         "affixFocusing": {
                             "name": "Replenish Focus",
-                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of @Rule[resource.focus] from this item. The amount of @Rule[resource.focus] restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                         }
                     }
                 }
+            }
+        },
+        "Frost Spire": {
+            "name": "Frost Spire",
+            "description": {
+                "public": "<p>A tall shaft of ice that never melts, no matter how warm the hand that holds it. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.cold] damage.</p>"
             }
         },
         "Frostdrop Phial": {
@@ -492,6 +583,23 @@
                             "description": "<p>You speak the command word and the @ref[item.name]{item} kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim light.</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim light.</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim light.</p></li></ul><p>The light persists until you dismiss the effect or remove the item.</p>"
                         }
                     }
+                }
+            }
+        },
+        "Geyser Stone": {
+            "name": "Geyser Stone",
+            "description": {
+                "public": "<p>A smooth blue stone humming with the influence of the frost rune. Hurled into a stream, pool, or spring, it makes the water erupt in a violent geyser. Favored by tricksters who want a cheap trick to look like real magic.</p>"
+            },
+            "actions": {
+                "Geyser Stone": {
+                    "name": "Geyser Stone",
+                    "description": "<p>You hurl the @ref[item.name] into water within 20 feet, and the water erupts in a 30 foot <strong>Ray</strong> in a direction of your choosing. Creatures in the ray who fail to avoid the blast suffer <strong>Bludgeoning</strong> damage and are pushed 15 feet away from the eruption. On a @Rule[dice.criticalSuccess], the target is also knocked @Condition[prone].</p><p>The base damage of the blast is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage</p></li><li><p><strong>Standard</strong> - 3 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 6 damage</p></li><li><p><strong>Masterwork</strong> - 8 damage</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Geyser Stone"
+                        }
+                    ]
                 }
             }
         },
@@ -552,7 +660,7 @@
         "Grimoire": {
             "name": "Grimoire",
             "description": {
-                "public": "<p>This heavy tome is used as a repository of knowledge as well as an implement for spellcraft. In the hands of an arcane practitioner, it can project concussive blasts of force towards a target.</p>"
+                "public": "<p>A heavy, iron-bound tome of arcane notation, as useful for battering a foe as for study. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.bludgeoning] damage.</p>"
             }
         },
         "Hacksaw": {
@@ -617,7 +725,7 @@
             "actions": {
                 "Healing Elixir": {
                     "name": "Healing Elixir",
-                    "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
+                    "description": "<p>Immediately recover an amount of @Rule[resource.health] dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
                 }
             }
         },
@@ -629,7 +737,7 @@
             "actions": {
                 "Healing Tonic": {
                     "name": "Healing Tonic",
-                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each <strong>Round</strong></p></li></ul>",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of @Rule[resource.health] dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Fine</strong> - Heals 8 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health</strong> each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health</strong> each <strong>Round</strong></p></li></ul>",
                     "effects": [
                         {
                             "name": "Healing Tonic"
@@ -653,7 +761,7 @@
         "Heavy Hides": {
             "name": "Heavy Hides",
             "description": {
-                "public": "<p>Toughened skins from large beasts or monsters, these rugged armors are worn by hunters and wildfolk, offering durable—but crude—defense in the field.</p>"
+                "public": "<p>Toughened skins from large beasts or monsters, assembled together into multiple layers of overlapping armor. The resulting armor offers durable — albeit crude — protection favored often favored by berserkers or warriors who wear them to proudly demonstrate their hunting or monster-felling prowess.</p>"
             }
         },
         "Helm": {
@@ -666,14 +774,7 @@
         "Holy Symbol": {
             "name": "Holy Symbol",
             "description": {
-                "public": "<p>This talisman is a visible proclamation of its wielder's faith and the power it bestows upon them. In combat it can be used to project a searing beam of radiant light towards an enemy.</p>",
-                "private": "<p>The type of damage dealt by this talisman can be tailored to the domain of whichever deity its weilder worships.</p>"
-            }
-        },
-        "Ice Staff": {
-            "name": "Ice Staff",
-            "description": {
-                "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl blasts of frigid ice towards enemies.</p>"
+                "public": "<p>An amulet bearing the sign of a divine patron, which glows faintly in the presence of faith. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.radiant] damage.</p>"
             }
         },
         "Incense": {
@@ -753,6 +854,18 @@
                 "public": "<p>Crafted from thick, boiled leather hardened into panels or a cuirass, leather armor offers lightweight protection ideal for scouts, rogues, and lightly armed skirmishers.</p>"
             }
         },
+        "Light Hides": {
+            "name": "Light Hides",
+            "description": {
+                "public": "<p>Toughened skins and leathers harvested from beasts of the wilderness. This rugged armor offers modest protection while remaining light enough to be preferred by hunters or wildfolk who travel long distances.</p>"
+            }
+        },
+        "Lightning Rod": {
+            "name": "Lightning Rod",
+            "description": {
+                "public": "<p>A copper-capped iron rod that draws the charge of the storm to its tip. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.electricity] damage.</p>"
+            }
+        },
         "Lockpicks": {
             "name": "Lockpicks",
             "description": {
@@ -788,7 +901,7 @@
         "Lyre": {
             "name": "Lyre",
             "description": {
-                "public": "<p>A stringed instrument within a curved frame. The lyre is a favored instrument of many roving bards or storytellers which use music to augment their magic or oration.</p>"
+                "public": "<p>A small stringed instrument whose notes linger in the mind long after they fade from the air. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.psychic] damage.</p>"
             }
         },
         "Mace": {
@@ -812,7 +925,7 @@
         "Net": {
             "name": "Net",
             "description": {
-                "public": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them vulnerable.</p>"
+                "public": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them helpless.</p>"
             },
             "actions": {
                 "Throw Net": {
@@ -857,7 +970,7 @@
             "actions": {
                 "Ingest Paralytic": {
                     "name": "Ingest Paralytic",
-                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially @Rule[action.harmless], but the target must defend an attack against its @Rule[defense.fortitude] or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": [
                         {
                             "name": "Paralytic Toxin"
@@ -885,13 +998,13 @@
         "Periapt of Determination": {
             "name": "Periapt of Determination",
             "description": {
-                "public": "<blockquote><p>A graceful silver amulet embedded with blue jewels imbues you with a feeling of steadfastness while you clutch it, prepared to weather any challenge.</p></blockquote><p>This enchanted periapt provides a bonus to <strong>Willpower</strong> defense.</p>",
+                "public": "<blockquote><p>A graceful silver amulet embedded with blue jewels imbues you with a feeling of steadfastness while you clutch it, prepared to weather any challenge.</p></blockquote><p>This enchanted periapt provides a bonus to @Rule[defense.willpower] defense.</p>",
                 "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Determination} suffix.</p><p>This affix can be applied to any armor or accessory and this periapt could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Determination": {
                     "name": "Determination",
-                    "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "description": "<p>Increase @Rule[defense.willpower] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Determination"
                 }
             }
@@ -914,6 +1027,18 @@
                 "public": "<p>The pinnacle of personal protection, plate mail encases the body in carefully fitted steel plates, offering near-complete protection while allowing impressive mobility for a trained wearer.</p>"
             }
         },
+        "Poison Barb Snare": {
+            "name": "Poison Barb Snare",
+            "description": {
+                "public": "<p>A circlet of venom-tipped barbs disguised to blend in with the nearby terrain. Once armed, a creature who steps within the trap area triggers it.</p>"
+            },
+            "actions": {
+                "Arm Poison Barb Snare": {
+                    "name": "Arm Poison Barb Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, the envenomed barbs bite into the creature with a @Rule[action.weakened] attack, dealing @Rule[damageType.poison] damage and inflicting @Condition[poisoned]. The poison damage and duration of the condition vary according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage, 1 round</p></li><li><p><strong>Standard</strong> - 2 damage, 2 rounds</p></li><li><p><strong>Fine</strong> - 3 damage, 3 rounds</p></li><li><p><strong>Superior</strong> - 4 damage, 4 rounds</p></li><li><p><strong>Masterwork</strong> - 6 damage, 6 rounds</p></li></ul>"
+                }
+            }
+        },
         "Poison Vial": {
             "name": "Poison Vial",
             "description": {
@@ -922,7 +1047,7 @@
             "actions": {
                 "Ingest Poison": {
                     "name": "Ingest Poison",
-                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+                    "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially @Rule[action.harmless], but the target must defend an attack against its @Rule[defense.fortitude] or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[item.name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": [
                         {
                             "name": "Poisoned"
@@ -941,10 +1066,37 @@
                 "public": "<p>A wooden box wrapped in leather etched with a decorative cross-stitch to make it clear it contains dangerous goods. Contains a stone mortar and pestle spaces for securing several stoppered vials of poisonous ingredients, a silver spoon, and a small collapsible iron frame and small brass pot for combining ingredients above a fire.</p>"
             }
         },
+        "Potion of Gliding": {
+            "name": "Potion of Gliding",
+            "description": {
+                "public": "<p>A slender vial of shimmering pale-blue liquid that feels almost weightless in the hand, its contents swirling gently as though caught in an unseen updraft.</p>"
+            },
+            "actions": {
+                "Potion of Gliding": {
+                    "name": "Potion of Gliding",
+                    "description": "<p>For the duration of this potion's effect, its drinker benefits from the @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Glider} talent as if they were a creature that possessed that trait, turning what would otherwise be falls into controlled <strong>Glides</strong>.</p><p>The potion's quality determines the duration of this effect:</p><ul><li><p><strong>Shoddy</strong>- 10 minutes</p></li><li><p><strong>Standard</strong> - 1 hour</p></li><li><p><strong>Fine</strong> - 4 hours</p></li><li><p><strong>Superior</strong> - 12 hours</p></li><li><p><strong>Masterwork</strong>- 24 hours</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Potion of Gliding"
+                        }
+                    ]
+                },
+                "Glide": {
+                    "name": "Glide",
+                    "description": "<p>You glide rather than fall, flying downward under control. The movement must descend and suffers no falling damage. If you end your glide while still aloft you gain the @Condition[flying] condition.</p>"
+                }
+            }
+        },
         "Primordial Seed": {
             "name": "Primordial Seed",
             "description": {
-                "public": "<p>This talisman, favored by druidic adherants attuned to the power of the land, aids in the practice of spellcraft or can be used in combat to direct a gout of poisonous spores towards an enemy.</p>"
+                "public": "<p>A gnarled seed pod from some ancient plant, swollen with a potent and bitter sap. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.poison] damage.</p>"
+            }
+        },
+        "Prismatic Spindle": {
+            "name": "Prismatic Spindle",
+            "description": {
+                "public": "<p>A long, slender spindle of faceted crystal that gathers light and spins it into searing prismatic beams. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.radiant] damage.</p>"
             }
         },
         "Quarterstaff": {
@@ -961,7 +1113,7 @@
             "actions": {
                 "Rallying Elixir": {
                     "name": "Rallying Elixir",
-                    "description": "<p>Immediately recover an amount of <strong>Morale </strong>dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Morale</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Morale</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Morale</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Morale</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Morale</strong>.</p></li></ul>"
+                    "description": "<p>Immediately recover an amount of @Rule[resource.morale]{Morale} dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Morale</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Morale</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Morale</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Morale</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Morale</strong>.</p></li></ul>"
                 }
             }
         },
@@ -973,7 +1125,7 @@
             "actions": {
                 "Rallying Tonic": {
                     "name": "Rallying Tonic",
-                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each <strong>Round</strong></p></li></ul>",
+                    "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of @Rule[resource.morale] dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Fine</strong> - Heals 8 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each <strong>Round</strong></p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each <strong>Round</strong></p></li></ul>",
                     "effects": [
                         {
                             "name": "Rallying Tonic"
@@ -1000,6 +1152,12 @@
                 "public": "<p>A particularly sharp blade used for shaving or, in some cases, surgery.</p>"
             }
         },
+        "Rime Crystal": {
+            "name": "Rime Crystal",
+            "description": {
+                "public": "<p>A shard of blue-white crystal, cold to the touch and furred with a thin layer of frost. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.cold] damage.</p>"
+            }
+        },
         "Ring": {
             "name": "Ring",
             "description": {
@@ -1016,13 +1174,13 @@
         "Ring of Evasion": {
             "name": "Ring of Evasion",
             "description": {
-                "public": "<blockquote><p>This elegant ornamented ring feels slightly slick and difficult to grasp. While held it vibrates almost imperceptibly.</p></blockquote><p>This enchanted ring provides a bonus to <strong>Dodge</strong> defense.</p>",
+                "public": "<blockquote><p>This elegant ornamented ring feels slightly slick and difficult to grasp. While held it vibrates almost imperceptibly.</p></blockquote><p>This enchanted ring provides a bonus to @Rule[defense.dodge] defense.</p>",
                 "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Evasion} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a <strong>Tier 1 Prefix</strong>.</p>"
             },
             "effects": {
                 "Evasion": {
                     "name": "Evasion",
-                    "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "description": "<p>Increase @Rule[defense.dodge] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Evasion"
                 }
             }
@@ -1030,18 +1188,18 @@
         "Ring of Gliding": {
             "name": "Ring of Gliding",
             "description": {
-                "public": "<blockquote><p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p></blockquote><p>This enchanted ring grants the ability to glide laterally during a fall.</p>",
-                "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
+                "public": "<blockquote><p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p></blockquote><p>This enchanted ring allows its wearer to glide rather than fall.</p>",
+                "private": "<p>This item is presented as an example of <strong>Superior</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} suffix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a <strong>Tier 2 Prefix</strong>.</p>"
             },
             "effects": {
                 "Gliding": {
                     "name": "Gliding",
-                    "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
+                    "description": "<p>Grants the bearer the benefits of the @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Glider} talent as if they were a creature that possessed that trait, turning what would otherwise be falls into controlled <strong>Glides</strong>.</p>",
                     "adjective": "Gliding",
                     "actions": {
-                        "gliding": {
-                            "name": "Gliding",
-                            "description": "<p>If used while @Condition[falling], you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+                        "fallGlide": {
+                            "name": "Glide",
+                            "description": "<p>You glide rather than fall, flying downward under control. The movement must descend and suffers no falling damage. If you end your glide while still aloft you gain the @Condition[flying] condition.</p>"
                         }
                     }
                 }
@@ -1050,13 +1208,13 @@
         "Ring of Reinforcement": {
             "name": "Ring of Reinforcement",
             "description": {
-                "public": "<blockquote><p>This steel ring feels permanently cool to the touch and gives the sensation of weighing more than expected given its narrow band.</p></blockquote><p>This enchanted ring provides a bonus to <strong>Armor</strong> defense.</p>",
+                "public": "<blockquote><p>This steel ring feels permanently cool to the touch and gives the sensation of weighing more than expected given its narrow band.</p></blockquote><p>This enchanted ring provides a bonus to @Rule[defense.armor] defense.</p>",
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Reinforcement} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
                 "Reinforcement": {
                     "name": "Reinforcement",
-                    "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+                    "description": "<p>Increase @Rule[defense.armor] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Reinforcement"
                 }
             }
@@ -1130,7 +1288,7 @@
         "Skull Fetish": {
             "name": "Skull Fetish",
             "description": {
-                "public": "<p>This macabre talisman invokes the fear and energies of death to aid spellcaft or afflict enemies with corrupting influence.</p>"
+                "public": "<p>A small skull bound in twine and feathers, said to whisper of rot and ruin. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.corruption] damage.</p>"
             }
         },
         "Sling": {
@@ -1149,6 +1307,23 @@
             "name": "Smith's Toolkit",
             "description": {
                 "public": "<p>A leather-bound wooden kitbag containing awls, pincers, a small hammer, sharpening stones and a grinder, and a small anvil, with space set aside for storing bits of scrap metal.</p>"
+            }
+        },
+        "Smoke Jar": {
+            "name": "Smoke Jar",
+            "description": {
+                "public": "<p>A heavy clay jar packed with smoldering reagents and sealed with wax. When exposed to air, the contents erupt into rapid burning embers and thick grey smoke that blots out sight across a wide area before the haze drifts apart on its own. Favored by tricksters, bandits and skirmishers for covering an escape.</p>"
+            },
+            "actions": {
+                "Smoke Jar": {
+                    "name": "Smoke Jar",
+                    "description": "<p>When thrown, the @ref[name] shatters on impact and erupts into a billowing cloud of smoke filling a <strong>10 foot</strong> radius <strong>Blast</strong>. The smoke is non-magical and @Rule[action.harmless], but still heavily obscures sight: creatures cannot see through or within the cloud of smoke using light-based vision. The smoke disperses on its own after <strong>3 Rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Smoke Jar"
+                        }
+                    ]
+                }
             }
         },
         "Soap": {
@@ -1217,18 +1392,18 @@
         "Spellband": {
             "name": "Spellband",
             "description": {
-                "public": "<blockquote><p>This ring made of an opaque stone that has been carefully carved with graceful, sweeping layers evoking an ancient aesthetic. The ring serves as a powerful spellcasting focus for the <strong>Invested</strong> wearer.</p></blockquote><p>This enchanted ring grants the ability to withdraw an additional reserve of <strong>Focus</strong> in moments of duress.</p>",
+                "public": "<blockquote><p>This ring made of an opaque stone that has been carefully carved with graceful, sweeping layers evoking an ancient aesthetic. The ring serves as a powerful spellcasting focus for the <strong>Invested</strong> wearer.</p></blockquote><p>This enchanted ring grants the ability to withdraw an additional reserve of @Rule[resource.focus] in moments of duress.</p>",
                 "private": "<p>This item is presented as an example of <strong>Fine</strong> jewelry with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a <strong>Tier 1 Suffix</strong>.</p>"
             },
             "effects": {
                 "Focusing": {
                     "name": "Focusing",
-                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
+                    "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore @Rule[resource.focus] in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Focusing",
                     "actions": {
                         "affixFocusing": {
                             "name": "Replenish Focus",
-                            "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
+                            "description": "<p>In moments of duress you can withdraw an additional reserve of @Rule[resource.focus] from this item. The amount of @Rule[resource.focus] restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                         }
                     }
                 }
@@ -1261,21 +1436,12 @@
         "Steel-Jaw Trap": {
             "name": "Steel-Jaw Trap",
             "description": {
-                "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center</p>"
+                "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center.</p>"
             },
             "actions": {
                 "Arm Steel-Jaw Trap": {
                     "name": "Arm Steel-Jaw Trap",
-                    "description": "<p>Setting the trap places a dangerous hazard that deals significant damage if triggered. It must be affixed by heavy chain to an immobile object, such as a tree or spike driven into the ground. The area of the trap is a circle with a radius of 2 feet.</p>"
-                },
-                "Trigger Steel-Jaw Trap": {
-                    "name": "Trigger Steel-Jaw Trap",
-                    "description": "<p>When triggered the creature that set the trap makes a <strong>Wilderness</strong> skill attack against the <strong>Reflex</strong> defense of a single target which triggered the trap. If not resisted, it deals piercing damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul><p></p>",
-                    "effects": [
-                        {
-                            "name": "Steel-Jaw Trap"
-                        }
-                    ]
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, it deals @Rule[damageType.piercing] damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul>"
                 }
             }
         },
@@ -1324,17 +1490,12 @@
         "Torch": {
             "name": "Torch",
             "description": {
-                "public": "<p>Layered oil-soaked affixed around the end of a rod made of bone or another non-flammable material, an inexpensive, if inefficient, temporary lightsource. Each torch can burned for one hour before it can no longer be used.</p>"
+                "public": "<p>Oil-soaked rags wrapped around the end of a rod made of bone or another non-flammable material, an inexpensive, if inefficient, source of light. Once lit, a torch can be wielded as a weapon or thrown to light a distant area.</p>"
             },
             "actions": {
                 "Light Torch": {
                     "name": "Light Torch",
-                    "description": "<p>You ignite the @ref[item.name], producing flickering illumination in a wide radius for one hour. The torch is consumed by this action and cannot be used again, but its light remains until it burns out.</p>",
-                    "effects": [
-                        {
-                            "name": "Torch"
-                        }
-                    ]
+                    "description": "<p>You ignite the @ref[item.name] and take it in a free hand as a Burning Torch, which sheds flickering illumination in a wide radius for as long as you hold it.</p>"
                 }
             }
         },
@@ -1348,6 +1509,24 @@
             "name": "Travel Jug",
             "description": {
                 "public": "<p>A clay jug with a stopper, wrapped in leather that can be affixed to a belt or outside of a pack for convenient use. Can contain 40oz of liquid.</p>"
+            }
+        },
+        "Unblinking Eye": {
+            "name": "Unblinking Eye",
+            "description": {
+                "public": "<p>A glassy eye set in a ring of dark sinew, which never closes and always seems to be watching. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.void] damage.</p>"
+            }
+        },
+        "Verdigris Scepter": {
+            "name": "Verdigris Scepter",
+            "description": {
+                "public": "<p>A heavy copper scepter, crusted green with the corrosion it delights in spreading. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.acid] damage.</p>"
+            }
+        },
+        "War Drum": {
+            "name": "War Drum",
+            "description": {
+                "public": "<p>A hide drum whose rhythm stirs dread or fury in all who hear it. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.psychic] damage.</p>"
             }
         },
         "War Hammer": {
@@ -1368,6 +1547,12 @@
                 "public": "<p>A set of clothing designed for protecting the wearer against inclement weather such as extremes of temperature, wind, or humidity.</p>"
             }
         },
+        "Weeping Geode": {
+            "name": "Weeping Geode",
+            "description": {
+                "public": "<p>A split geode whose glittering hollow constantly beads with a hissing, caustic dew. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.acid] damage.</p>"
+            }
+        },
         "Wetskin": {
             "name": "Wetskin",
             "description": {
@@ -1378,6 +1563,12 @@
             "name": "Whistle",
             "description": {
                 "public": "<p>An instrument made from carved wood or bone that, when blown into, produces a single shrill sound that can be heard over long distances. Often used by hunters and fishers to signal one another when in the wilderness or at sea.</p>"
+            }
+        },
+        "Writhing Crozier": {
+            "name": "Writhing Crozier",
+            "description": {
+                "public": "<p>A hooked staff of black wood that slowly twists and coils of its own accord. Spellcasters may focus their spellcraft through this talisman, or use it to strike foes with @Rule[damageType.void] damage.</p>"
             }
         }
     },

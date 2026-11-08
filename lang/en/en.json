@@ -10,8 +10,8 @@
       "Intellect": "<p>Intellect is a mental quickness attribute that reflects speed of thought and decisiveness of action. Intellect affects <strong>Initiative</strong> in taking action, the <strong>Reflex</strong> defense, and the size of <strong>Focus</strong> pool.</p>",
       "Presence": "<p>Presence is a mental resilience attribute describing a creature's force of personality, resolve, and self-belief. Presence affects <strong>Willpower</strong> defense and the size of <strong>Focus</strong> pool. Each point of Presence increases base <strong>Morale</strong> by 4.</p>",
       "Strength": "<p>Strength is a physical power attribute describing a creature's potency, brawn and might. Strength affects <strong>Fortitude</strong> defense, carrying <strong>Capacity</strong>, and the use of weaponry which scales with Strength. Each point of Strength increases base <strong>Health</strong> by 2.</p>",
-      "Toughness": "<p>Toughness is a physical resilience attribute describing physical hardiness and tenacity. Toughness affects the <strong>Fortitude</strong> defense. Each point of Toughness increases base <strong>Health</strong> by 4.</p>",
-      "Wisdom": "<p>Wisdom is a mental power attribute describing a creature's force of conviction, depth of knowledge, and patience. Wisdom affects <strong>Willpower</strong> defense and size of <strong>Focus</strong> pool. Each point of Wisdom increases base <strong>Morale</strong> by 2.</p>"
+      "Toughness": "<p>Toughness is a physical resilience attribute describing physical hardiness and tenacity. Toughness affects the <strong>Willpower</strong> defense. Each point of Toughness increases base <strong>Health</strong> by 4.</p>",
+      "Wisdom": "<p>Wisdom is a mental power attribute describing a creature's force of conviction, depth of knowledge, and patience. Wisdom affects <strong>Fortitude</strong> defense and size of <strong>Focus</strong> pool. Each point of Wisdom increases base <strong>Morale</strong> by 2.</p>"
     },
     "Dexterity": "Dexterity",
     "DexterityAbbr": "Dex",
@@ -50,6 +50,10 @@
         "Description": "Weave arcana to create a work of spellcraft.",
         "Name": "Cast Spell"
       },
+      "Convalesce": {
+        "Description": "You devote your rest to tending your injuries. Remove 1 additional <strong>Wound</strong> when you <strong>Rest</strong>.",
+        "Name": "Convalesce"
+      },
       "Defend": {
         "Description": "You concentrate effort on avoiding harm, heightening your physical defense. You gain the <strong>Guarded</strong> condition until the start of your next Turn.",
         "Name": "Defend"
@@ -67,9 +71,19 @@
         "Name": "Fall",
         "NameDistance": "Fall ({distance} feet)"
       },
+      "Interact": {
+        "CloseDoor": "Close Door",
+        "Description": "Interact with an object in your environment, such as opening a door, pulling a lever, or picking up an object. If your @Rule[movement.freeMovement] for the round is still available, it is spent in place of the @Rule[resource.action] cost.",
+        "Name": "Interact",
+        "OpenDoor": "Open Door"
+      },
       "Investiture": {
         "Description": "Spend time outside of Combat attuning to your equipped magic items, causing them to enter the Invested state.",
         "Name": "Investiture"
+      },
+      "Meditate": {
+        "Description": "You devote your rest to quieting your mind. Remove 1 additional <strong>Madness</strong> when you <strong>Rest</strong>.",
+        "Name": "Meditate"
       },
       "Move": {
         "Description": "Move a distance by spending an amount of Action that depends on your Stride and which movement action is used.",
@@ -88,7 +102,7 @@
         "Name": "Reload Weapon"
       },
       "Rest": {
-        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and heroes reduce accumulated <strong>Wounds</strong> and <strong>Madness</strong> by their character <strong>Level</strong>. Temporary effects with a longer duration also end.",
+        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and characters who suffer <strong>Wounds</strong> and <strong>Madness</strong> reduce each by their <strong>Level</strong>. Temporary effects with a longer duration also end.",
         "Name": "Rest"
       },
       "Search": {
@@ -115,7 +129,8 @@
     },
     "EFFECTS": {
       "Add": "Add Effect",
-      "Delete": "Remove Effect"
+      "Delete": "Remove Effect",
+      "RemovableHint": "This effect may be removed by overcoming its removal difficulty. Leave the DC blank to derive it from the action's roll."
     },
     "FIELDS": {
       "actionHooks": {
@@ -301,7 +316,7 @@
       "CostWeapon": "W",
       "CostWeaponAction": "W{action}A",
       "Deadly": "Deadly",
-      "DeadlyTooltip": "This action has the potential to deal a tremendous amount of damage, increasing the damage multiplier for any damage dealt by x1.",
+      "DeadlyTooltip": "This action has the potential to deal a tremendous amount of damage, increasing the Damage Multiplier applied to its Overflow by +1, for example from ×1 to ×2.",
       "Difficult": "Difficult",
       "DifficultTooltip": "This action is complicated or challenging to perform. You incur 1 additional bane when attempting the action.",
       "Disarm": "Disarm",
@@ -323,7 +338,7 @@
       "IconicSpell": "Iconic Spell",
       "IconicSpellTooltip": "This action is an Iconic Spell learned through mastery of its components.",
       "Keen": "Keen",
-      "KeenTooltip": "This action is precise, lowering its critical hit threshold by 2 and making a Critical Hit more likely.",
+      "KeenTooltip": "This action is precise, lowering its Critical Success Threshold by 2 and making a Critical Hit more likely.",
       "MainHand": "Main-Hand",
       "MainHandTooltip": "This action utilizes your main-hand weapon to make an attack.",
       "Maintained": "Maintained",
@@ -360,6 +375,8 @@
       "OffHandTooltip": "This action utilizes your off-hand weapon to make an attack.",
       "OneHand": "One-Handed",
       "OneHandTooltip": "This action requires wielding a one-handed weapon.",
+      "Party": "Party",
+      "PartyTooltip": "This action requires membership in the active party.",
       "Projectile": "Projectile",
       "ProjectileTooltip": "This action requires use of a projectile weapon.",
       "Rallying": "Rallying",
@@ -370,8 +387,8 @@
       "ReactionTooltip": "This action can only be performed during some other creature's turn when its activation condition is met.",
       "Reload": "Reload",
       "ReloadTooltip": "This action reloads a ranged weapon which requires reloading.",
-      "Rest": "After Rest",
-      "RestTooltip": "This action may only be performed immediately after you confirm a Rest action, and only one such action may follow each Rest.",
+      "Rest": "During Rest",
+      "RestTooltip": "This action is performed as part of a Rest. Each character may perform one such action during a group Rest, or immediately after confirming a Rest of their own.",
       "Severe": "Severe",
       "SevereTooltip": "If the target of this action has Wounds and Madness resources, this action damages those resources directly regardless of their Health or Morale.",
       "Shield": "Shield",
@@ -380,6 +397,8 @@
       "SkillTooltip": "This action involves a targeted or opposed Skill check.",
       "Spell": "Spell",
       "SpellTooltip": "This action involves spellcraft.",
+      "Strike": "Strike",
+      "StrikeTooltip": "This action makes one or more Strikes using an equipped weapon. Any action which attacks with a wielded weapon is a Strike, not only the basic Strike action.",
       "Subtle": "Subtle",
       "SubtleTooltip": "This action is generally un-noticeable, preserving stealth and invisibility when used.",
       "Summon": "Summon",
@@ -435,6 +454,7 @@
       "Fan": "Fan",
       "Movement": "Movement",
       "None": "None",
+      "Party": "Party",
       "Pulse": "Pulse",
       "Ray": "Ray",
       "Self": "Self",
@@ -443,18 +463,6 @@
       "Wall": "Wall"
     },
     "WARNINGS": {
-      "SPECIFIC": {
-        "DELAY": {
-          "AlreadyDelayed": "You may not delay your turn again this combat round.",
-          "WrongTurn": "You may only use the Delay action on your own turn in combat."
-        },
-        "ESTOCADE": {
-          "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
-        },
-        "REVIVE": {
-          "RequiresDead": "Revive requires a Dead target."
-        }
-      },
       "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
       "AuraNoToken": "You cannot use a self-emanating action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
@@ -468,7 +476,8 @@
         "other": "{name} must have {hands} free hands to use {action}!"
       },
       "CannotAffordMove": "{name} has insufficient action to move this distance which requires {cost}A!",
-      "CannotSpendAction": "{name} cannot spend Action because they are Incapacitated!",
+      "CannotConfirmTarget": "Cannot {change} {action} while the action it responds to is {state}.",
+      "CannotSpendAction":"{name} cannot spend Action because they are Incapacitated!",
       "CannotSpendFocus": "{name} cannot spend Focus because they are currently {status}!",
       "CannotTargetSelf": "You cannot target yourself with this Action!",
       "CannotThrow": "You cannot throw this weapon.",
@@ -480,6 +489,7 @@
       "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
       "HideObservers": "Additional Observers",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
+      "InteractRange": "You are too far away to interact with that object.",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
       "InvalidTargetScope": "That creature is not a valid target for {action}.",
       "InvalidTargetsGeneric": "Invalid targets for this action!",
@@ -506,6 +516,7 @@
       "MustScaleDex": "Every weapon used in this action must scale using dexterity.",
       "MustScaleStrength": "Every weapon used in this action must scale using strength.",
       "MustTargetTarget": "The {action} action may only be used on the target of the most recent action.",
+      "MustUseRestCard": "A party rest is underway; perform the {action} action from its chat card.",
       "NoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
       "NoConsumable": "No consumable Item identified for action \"{action}\"",
       "NoConsumableUses": "Consumable item \"{item}\" has no uses remaining for Action \"{action}\"",
@@ -513,9 +524,11 @@
       "NonCombat": "You may not use {action} during Combat.",
       "NoReloadRequired": "Your weapons do not require reloading",
       "NotFlanked": "{action} requires a flanked target. Target \"{target}\" is not flanked.",
+      "NotYourTurn": "You may only use the {action} action on your own turn in combat.",
       "NoViewedScene": "A viewed Scene is required to acquire targets for this action.",
       "OncePerRound": "You may only perform the {action} action once per round.",
       "OncePerTurn": "You may only perform the {action} action once per turn.",
+      "PassThroughMaxOne": "You may move through the space of only one other creature.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
       "RequiresAlchemistsToolkit": "You must have an Alchemist's Toolkit equipped in your Toolbelt.",
       "RequiresElementalCondition": "{target} does not suffer an elemental condition which this action can affect.",
@@ -553,8 +566,6 @@
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
     "EffectSpecific": "Effect: {effect}",
-    "MaintainContent": "<p>Spend {cost} Focus to maintain {effect}?</p>",
-    "MaintainTitle": "Maintain Focus: {effect}",
     "NoTargets": "No Targets",
     "Overview": "Action Overview",
     "PlanMovement": "Plan Movement",
@@ -567,6 +578,7 @@
     "RequestRollsSuffix": "{label}: Request Rolls",
     "RequiresMovement": "You must plan a movement path before this action can be used.",
     "RequiresRegion": "You must place a Region before this action can be used.",
+    "Reversed": "Reversed",
     "SkillCheck": "{skill} Skill Check",
     "SkillCheckGeneric": "Skill Check",
     "StandardCheck": "Standard Check",
@@ -587,14 +599,33 @@
       "Required": "You must choose an affix to amplify.",
       "Title": "Amplify Affix"
     },
+    "Beastmaster": {
+      "AlreadyBonded": "You already have a bonded companion.",
+      "NoCompanion": "You do not have a companion to release.",
+      "NoneChosen": "No companion selected.",
+      "NotEngagedByCompanion": "The target must be engaged by your companion.",
+      "WhichBond": "Which type of beast will you bond?"
+    },
     "Challenge": {
       "Dominance": "Dominance"
+    },
+    "DeathlessFury": {
+      "CannotUse": "{name} can only enter a Deathless Fury while their Health does not exceed their Wounds."
+    },
+    "Delay": {
+      "AlreadyDelayed": "You may not delay your turn again this combat round."
+    },
+    "Estocade": {
+      "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
     },
     "FieldStudy": {
       "Effect": "Field Study: {knowledge}",
       "Label": "Topic of Study",
       "Required": "You must choose a field of Knowledge to study.",
       "Title": "Field Study"
+    },
+    "FlankingManeuver": {
+      "NotEngaged": "The target must be engaged by the companion's master."
     },
     "Gambit": {
       "AnteWon": "Gambit (+{count})",
@@ -610,6 +641,9 @@
       "AlreadyGrappling": "You are already Grappling another creature.",
       "TooLarge": "{name} is too large for you to Grapple."
     },
+    "Grudgebearer": {
+      "Grudge": "Grudge: {target}"
+    },
     "ImbueAffix": {
       "AffixLabel": "Affix",
       "Incompatible": "That affix cannot be applied to the chosen item.",
@@ -621,11 +655,24 @@
       "TierTooHigh": "That affix cannot be imbued at Tier 1.",
       "Title": "Imbue Affix"
     },
+    "LoyalProtector": {
+      "NotMaster": "You must target the companion's master."
+    },
+    "Revive": {
+      "RequiresDead": "Revive requires a Dead target."
+    },
     "Swallow": {
       "AlreadySwallowing": "You are already Swallowing another creature."
     },
     "Throw": {
       "NotGrappling": "You may only Throw a creature you are Grappling."
+    },
+    "ThrowTorch": {
+      "LightName": "Thrown Torch ({actor})"
+    },
+    "VowOfAnimus": {
+      "VowDescription": "You vowed to vanquish a specific foe who became the subject of your animus.",
+      "VowName": "Sworn Vow: {target}"
     }
   },
   "ACTIVE_EFFECT": {
@@ -721,6 +768,7 @@
       "ResetTalentsTitle": "Reset Talents: {actor}",
       "ResolveProgress": "Go to the next progression step",
       "RollCheck": "Roll Check",
+      "SplitCurrency": "Split Currency Among Party",
       "SyncActor": "Sync from Compendium",
       "SyncActorContent": "<p>Re-apply this Actor's Talents, Ancestry, Background, Taxonomy, and Archetype from their current compendium versions.</p><p><strong>Any customizations made to those items on this Actor will be overwritten with the compendium defaults.</strong> Granted Talents, equipment, and spells which the sources no longer provide will be removed.</p>",
       "SyncActorResult": "Synced {actor}: refreshed {synced} Talents, removed {deleted}, re-applied {details} detail items.",
@@ -732,8 +780,10 @@
     },
     "ADVERSARY": {
       "ACTIONS": {
+        "CycleRank": "Cycle Rank",
         "DecreaseLevel": "Decrease Level",
-        "IncreaseLevel": "Increase Level"
+        "IncreaseLevel": "Increase Level",
+        "ResetAdjustment": "Reset Level and Rank"
       },
       "THREAT_RANKS": {
         "Boss": "Boss",
@@ -893,11 +943,30 @@
         "recover": "Recover",
         "rest": "Rest"
       },
+      "MILESTONES": {
+        "Award": "Award Milestone",
+        "Cumulative": "Cumulative",
+        "None": "No milestones have been earned yet.",
+        "Number": "Number",
+        "Reason": "Reason"
+      },
+      "TABS": {
+        "members": "Members",
+        "milestones": "Milestones"
+      },
       "REST": {
         "FIELDS": {
           "allowInterruption": {
             "label": "Allow Interruption",
             "hint": "If checked, it is possible for this rest to be interrupted by configured gameplay events."
+          },
+          "allowRestActions": {
+            "label": "Allow Rest Actions",
+            "hint": "If checked, each resting character may perform one rest action as part of the rest."
+          },
+          "designation": {
+            "label": "Rest Action",
+            "hint": "The rest action this character will attempt during the rest."
           },
           "hours": {
             "label": "Hours of Rest",
@@ -908,10 +977,33 @@
             "hint": "Each selected character will perform the Rest action."
           }
         },
+        "STATUSES": {
+          "Cancelled": "Cancelled",
+          "Complete": "Complete",
+          "Interrupted": "Interrupted",
+          "Planning": "Planning",
+          "Ready": "Ready",
+          "Rolling": "Rolling"
+        },
+        "WARNINGS": {
+          "NoGM": "A Gamemaster must be connected to designate a rest action."
+        },
+        "Abstain": "No Rest Action",
+        "CardTitle": "{name} Rest ({hours} Hours)",
         "Confirm": "Begin Rest",
+        "ConfirmRest": "Confirm Rest",
         "ContinuationHint": "This rest is being continued from a previous rest that was interrupted. {hoursCompleted} of {hoursRequired} hours have been completed.",
+        "Designate": "Choose Rest Action",
+        "DesignateTitle": "{name}: Rest Action",
+        "HideResult": "Hide Result",
         "Interrupted": "Your rest has been interrupted after {hours} hours!",
-        "Title": "Confirm Group Rest"
+        "NoChanges": "No recovery needed",
+        "Perform": "Perform Rest Action",
+        "Resolved": "Rest action resolved",
+        "ReturnToPlanning": "Return to Planning",
+        "ShowResult": "Show Result",
+        "Title": "Confirm Group Rest",
+        "Undecided": "Undecided"
       },
       "WARNINGS": {
         "NoAddSelf": "You cannot add your own group!",
@@ -980,6 +1072,7 @@
         "ActionsGeneral": "General Actions",
         "ActionsMovement": "Movement Actions",
         "ActionsReaction": "Reactions",
+        "ActionsRest": "Rest Actions",
         "ActionsSpell": "Spellcraft Actions",
         "ActionsSummon": "Summon Actions",
         "EffectsDisabled": "Disabled Effects",
@@ -994,6 +1087,11 @@
       "PointsGranted": "Trained",
       "PointsSpent": "Spent",
       "Resources": "Resources"
+    },
+    "SUBSTITUTION": {
+      "Confirm": "Choose Replacements",
+      "Hint": "Your Background grants Talents which your Ancestry also grants. Choose a replacement for each from the same node of the Talent Tree.",
+      "Title": "Duplicate Talent Grants"
     },
     "TABS": {
       "actions": "Actions",
@@ -1012,6 +1110,7 @@
       "NoAncestry": "Choose an Ancestry",
       "NoBackground": "Choose a Background",
       "NoDragTalent": "Talents can only be added to a Hero Actor via the Talent Tree.",
+      "NoToken": "You must have a controlled Token or an assigned character to do that.",
       "OverspentAbility": "Too many Ability Points have been spent",
       "OverspentProficiency": "Too many Proficiency Points have been spent",
       "OverspentTalent": "Too many Talents have been taken",
@@ -1020,10 +1119,15 @@
       "UnderspentTalent": "Spend Talent Points"
     },
     "Details": "Details",
+    "DifficultTerrain": "Difficult Terrain",
     "DisarmedStatus": "Disarmed!",
+    "ExtremeTerrain": "Extreme Terrain",
+    "FreeMovement": "Free Movement",
+    "FullyEngaged": "Fully Engaged",
     "KnowledgeSpecific": "Knowledge: {knowledge}",
     "LanguageSpecific": "Language: {language}",
     "LevelSpecific": "Level {level}",
+    "NormalTerrain": "Normal Terrain",
     "ProgressionRequirements": "Progression Requirements",
     "TrainingSpecific": "{training} {points}",
     "ResistanceSpecific": "Resistance: {resistance}",
@@ -1069,6 +1173,9 @@
     },
     "PROPERTIES": {
       "Cursed": "Cursed"
+    },
+    "SUPPRESSION": {
+      "Duplicate": "Superseded by another instance of the same affix"
     },
     "WARNINGS": {
       "CursedGamemasterOnly": "Only a Gamemaster may remove a Cursed affix from an item."
@@ -1124,6 +1231,10 @@
         "temperature.label": "Body Temperature"
       },
       "movement": {
+        "heightRatio": {
+          "hint": "The standing height of this Ancestry as a multiple of its Size. Height is Size times this ratio, rounded to the nearest foot.",
+          "label": "Height Ratio"
+        },
         "label": "Movement",
         "size": {
           "hint": "The size of this ancestry in grid spaces.",
@@ -1249,11 +1360,8 @@
     },
     "PROPERTIES": {
       "Bulky": "Bulky",
-      "BulkyTooltip": "Armor that is <strong>Bulky</strong> is cumbersome to wield and conveys a penalty of +2 Banes to all Initiative rolls.",
       "Natural": "Natural",
-      "NaturalTooltip": "Natural armor is a feature of the being 'wearing' it. It cannot typically be unequipped.",
-      "Noisy": "Noisy",
-      "NoisyTooltip": "Armor that is <strong>Noisy</strong> makes it difficult to move quietly."
+      "Noisy": "Noisy"
     },
     "SHEET": {
       "ArmorBonus": "Armor Bonus",
@@ -1311,10 +1419,10 @@
         "Label": "Currency",
         "Total": "Total"
       },
-      "Cost": "{award} cost paid by:",
-      "CostSplit": "{award} cost split between:",
-      "Reward": "{award} granted to:",
-      "RewardSplit": "{award} split between:"
+      "Cost": "Cost Paid",
+      "CostSplit": "Cost Split",
+      "Reward": "Reward Granted",
+      "RewardSplit": "Reward Split"
     },
     "TOOLTIPS": {
       "Currency": "Award Currency",
@@ -1388,13 +1496,42 @@
   "BASE_EFFECT": {
     "Difficulty": "Difficulty {dc}",
     "Suspended": "Suspended",
+    "ACTIONS": {
+      "AddDoT": "Add Damage Over Time",
+      "DeleteDoT": "Remove Damage Over Time",
+      "Maintain": "Maintain",
+      "MaintainCost": "Maintain ({cost} Focus)",
+      "MaintainDetail": "Expend Focus to maintain {effect}.",
+      "MaintainName": "Maintain {effect}"
+    },
     "PROPERTIES": {
+      "Deployed": "Deployed",
+      "DeployedTooltip": "This effect exists because its origin item was dropped, placed, or thrown. Recovering that item ends the effect.",
       "Magical": "Magical",
-      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities."
+      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities.",
+      "Maintained": "Maintained",
+      "MaintainedTooltip": "This effect lapses at the end of your turn unless you spend Focus to maintain it.",
+      "Removable": "Removable",
+      "RemovableTooltip": "This effect may be removed by overcoming its removal difficulty."
     },
     "SECTIONS": {
-      "Removal": "Removal",
-      "General": "General"
+      "DoT": "Damage Over Time",
+      "General": "General",
+      "Removal": "Removal"
+    },
+    "SUPPRESSION": {
+      "Maintenance": "Requires Maintenance"
+    },
+    "MAINTENANCE": {
+      "EndConfirm": "Maintaining {effect} will end {effects}, which you can no longer maintain.",
+      "EndHint": "You cannot maintain more effects. Choose {count} to end so that you can maintain {effect}.",
+      "EndLabel": "Effects to End",
+      "EndTitle": "End Maintained Effects"
+    },
+    "WARNINGS": {
+      "MaintainedCancelled": "{action} was cancelled; no maintained effects were ended.",
+      "MaintainOwnTurn": "{name} can only maintain effects during their own turn.",
+      "MaintenanceNotDue": "{effect} does not require maintenance right now."
     },
     "FIELDS": {
       "dc": {
@@ -1426,6 +1563,7 @@
       },
       "maintenance": {
         "cost": {
+          "hint": "The Focus spent each turn to keep this effect from lapsing.",
           "label": "Maintenance Cost"
         },
         "hands": {
@@ -1434,6 +1572,10 @@
         },
         "label": "Maintenance"
       },
+      "lights": {
+        "hint": "The light sources dependent on this effect.",
+        "label": "Lights"
+      },
       "regions": {
         "hint": "The regions dependent on this effect.",
         "label": "Regions"
@@ -1441,6 +1583,10 @@
       "summons": {
         "hint": "The summoned Tokens dependent on this effect.",
         "label": "Summons"
+      },
+      "suppression": {
+        "hint": "Reasons this effect is currently suppressed.",
+        "label": "Suppression"
       }
     }
   },
@@ -1456,7 +1602,6 @@
       "EffectGainedDuration": "Gained ({duration})",
       "HeaderEnd": "{actor} - Turn End",
       "HeaderStart": "{actor} - Turn Start",
-      "Maintaining": "{effect} (Maintaining)",
       "TableTitleEffects": "Effect Changes",
       "TableTitleResources": "Resource Changes"
     },
@@ -1493,8 +1638,7 @@
       }
     },
     "PROPERTIES": {
-      "Thrown": "Thrown",
-      "ThrownTooltip": "This consumable is designed to be thrown."
+      "Thrown": "Thrown"
     },
     "SCROLL": {
       "ComponentBudget": "This scroll may provide up to {budget} spellcraft component(s). Select which components this scroll provides.",
@@ -1552,9 +1696,11 @@
     },
     "Base": "Base",
     "Bonus": "Bonus",
+    "Parenthetical": "{label} ({detail})",
     "Rules": "Crucible Rules",
     "Scaled": "Scaled",
     "Scaling": "Scaling",
+    "SendChatReadaloud": "Send to Chat",
     "Syncing": "Synchronizing Talents & Spells"
   },
   "CURRENCY_DENOMINATIONS": {
@@ -1633,6 +1779,7 @@
     "WoundsShort": "Healing"
   },
   "DETECTION_MODES": {
+    "BloodSense": "Blood Sense",
     "Echolocation": "Echolocation",
     "SenseCreature": "Sense Creature",
     "ThermalVision": "Thermal Vision"
@@ -1702,6 +1849,8 @@
     },
     "CircumstanceBonus": "Circumstance Bonus",
     "Confirm": "Confirm",
+    "CriticalFailureThreshold": "Critical Failure Threshold",
+    "CriticalSuccessThreshold": "Critical Success Threshold",
     "Damage": "Damage",
     "DamageBase": "Base {type}",
     "DamageBonus": "Action Bonus",
@@ -1712,6 +1861,7 @@
     "DC": "DC",
     "DCAdditionalPassive": "{dcLabel}, Passive",
     "DCAdditionalGroup": "{dcLabel}, Group",
+    "DCMinimum": "{dc}+",
     "DCSpecific": "DC {dc}",
     "DCTargetSpecific": "{skill} DC Target",
     "DiceTotal": "Dice Total",
@@ -1726,6 +1876,48 @@
     "Skill": "Skill",
     "SkillBonus": "Skill Bonus",
     "UnknownScore": "???"
+  },
+  "EFFECT": {
+    "TABS": {
+      "damage": "Damage"
+    }
+  },
+  "ENCOUNTER": {
+    "DIFFICULTIES": {
+      "Challenging": "Challenging",
+      "Deadly": "Deadly",
+      "Easy": "Easy",
+      "Hopeless": "Hopeless",
+      "Moderate": "Moderate",
+      "Trivial": "Trivial"
+    },
+    "AdversaryThreat": "Adversary Threat",
+    "OngoingCombat": "Ongoing Combat",
+    "PartyThreat": "Party Threat",
+    "Threat": "Threat {threat}",
+    "ThreatDifficulty": "Threat {threat} ({difficulty})"
+  },
+  "FOOTFALLS": {
+    "FIELDS": {
+      "material": {
+        "hint": "What this surface is made of, which determines how footfalls on it sound.",
+        "label": "Material"
+      },
+      "materialVolume": {
+        "hint": "The material fills the Region's whole elevation range, like a body of water, rather than lying only on its surfaces.",
+        "label": "Material Fills Volume"
+      }
+    },
+    "Legend": "Footfalls",
+    "MATERIALS": {
+      "Grass": "Grass",
+      "Ice": "Ice",
+      "Metal": "Metal",
+      "Snow": "Snow",
+      "Stone": "Stone",
+      "Water": "Water",
+      "Wood": "Wood"
+    }
   },
   "HOOKS": {
     "NoModuleHooks": "No module hooks are registered for this identifier.",
@@ -1924,6 +2116,7 @@
     "QualityShoddy": "Shoddy",
     "QualityStandard": "Standard",
     "QualitySuperior": "Superior",
+    "QuantityMultiple": "(&times;{quantity})",
     "QuantityNone": "None"
   },
   "KEYBINDINGS": {
@@ -1994,7 +2187,7 @@
           "label": "Frequency"
         },
         "origin": {
-          "hint": "The effect responsible for tracking the existence of this behavior. If present, determines which tokens should actually trigger an Action based on the originating action's targeting configuration.",
+          "hint": "The effect responsible for tracking the existence of this behavior.",
           "label": "Origin"
         }
       },
@@ -2283,7 +2476,6 @@
     "COUNTERSPELL": {
       "WARNINGS": {
         "BadTarget": "You can only Counterspell the caster of the last action, and that action must be a spell.",
-        "CannotConfirm": "Cannot {change} a Counterspell if the targeted spell is already {state}",
         "InvalidTerms": "Unable to parse {terms} as valid Counterspell terms.",
         "MissingComponents": "A Counterspell enricher must have at least 1 rune and 1 gesture.",
         "NoTalent": "{actor} does not have the Counterspell talent.",
@@ -2377,6 +2569,8 @@
       "CurseToxicity": "Curse of Toxicity"
     },
     "RUNES": {
+      "Blight": "Blight",
+      "BlightAdj": "Blighted",
       "Control": "Control",
       "ControlAdj": "Controlling",
       "Death": "Death",
@@ -2400,7 +2594,9 @@
       "Soul": "Soul",
       "SoulAdj": "Soulful",
       "Storm": "Storm",
-      "StormAdj": "Voltaic"
+      "StormAdj": "Voltaic",
+      "Torment": "Torment",
+      "TormentAdj": "Tormenting"
     },
     "SHEET": {
       "Knowledge": "Required Knowledge"
@@ -2446,7 +2642,10 @@
       "PurchaseTitle": "Purchase Talent: {name}",
       "Remove": "<p>Remove talent <strong>{name}</strong>, reclaiming 1 Talent Point?</p>",
       "RemoveTitle": "Remove Talent: {name}",
-      "Reset": "Reset"
+      "Reset": "Reset",
+      "ShowTalents": "Show Compendium Talents",
+      "ShowSheet": "Show Character Sheet",
+      "ToggleSearch": "Toggle Talent Search"
     },
     "FIELDS": {
       "actions": {
@@ -2463,6 +2662,10 @@
       "iconicSpells": {
         "hint": "A number of Iconic Spell slots that are granted by this Talent.",
         "label": "Iconic Spells"
+      },
+      "keywords": {
+        "hint": "Playstyles this Talent is especially valuable for, used to find Talents in the Talent Tree. Assign a keyword only when the Talent is clearly more valuable to a character built around it than to a typical character.",
+        "label": "Keywords"
       },
       "nodes": {
         "hint": "Assign this Talent to be purchased from one or more particular nodes in the Talent Tree.",
@@ -2483,6 +2686,31 @@
         "label": "Provided Training"
       }
     },
+    "FILTER": {
+      "Clear": "Clear Filters",
+      "FIELDS": {
+        "ability": {
+          "label": "Ability"
+        },
+        "keywords": {
+          "label": "Keywords"
+        },
+        "levels": {
+          "label": "Level"
+        },
+        "query": {
+          "label": "Search"
+        },
+        "playstyle": {
+          "label": "Playstyle"
+        },
+        "training": {
+          "label": "Proficiency"
+        }
+      },
+      "Matches": "{talents} Talents in {nodes} Nodes",
+      "QueryPlaceholder": "Talent or action name"
+    },
     "HOOKS": {
       "GroupAction": "Action Usage",
       "GroupCombat": "Combat Turns",
@@ -2490,6 +2718,37 @@
       "GroupPreparation": "Actor Data Preparation",
       "GroupSpellcraft": "Spellcraft Preparation",
       "Register": "Register Hook Function"
+    },
+    "KEYWORDS": {
+      "Defensive": "Defensive",
+      "HeavyArmor": "Heavy Armor",
+      "Initiative": "Initiative",
+      "LightArmor": "Light Armor",
+      "MediumArmor": "Medium Armor",
+      "Melee": "Melee",
+      "Ranged": "Ranged",
+      "Rest": "Rest",
+      "Senses": "Senses",
+      "Spellcraft": "Spellcraft",
+      "Toolbelt": "Toolbelt",
+      "Unarmored": "Unarmored",
+      "Utility": "Utility"
+    },
+    "KEYWORD_GROUPS": {
+      "Armor": "Armor",
+      "Damage": "Damage",
+      "Defense": "Defense",
+      "FightingStyle": "Fighting Style",
+      "Playstyle": "Playstyle",
+      "Resources": "Resources",
+      "Restoration": "Restoration",
+      "SpellComponents": "Spell Components",
+      "Tactics": "Tactics",
+      "TargetDefense": "Target Defense",
+      "TargetResource": "Target Resource",
+      "Time": "Time",
+      "Toolbelt": "Toolbelt",
+      "Weapons": "Weapons"
     },
     "LABELS": {
       "Points": {
@@ -2602,6 +2861,10 @@
         "label": "Identifier"
       },
       "movement": {
+        "heightRatio": {
+          "hint": "The standing height of this creature as a multiple of its Size. Height is Size times this ratio, rounded to the nearest foot.",
+          "label": "Height Ratio"
+        },
         "label": "Movement",
         "size": {
           "hint": "The size of this adversary in grid spaces.",
@@ -2740,6 +3003,9 @@
       "adversary": "Adversary",
       "group": "Group",
       "hero": "Hero"
+    },
+    "ChatMessage": {
+      "rest": "Group Rest"
     },
     "Item": {
       "accessory": "Accessory",
@@ -2903,35 +3169,22 @@
     },
     "TAGS": {
       "Ambush": "Ambush",
-      "AmbushTooltip": "This weapon is well-suited to striking before your opponents get a chance to react. When attacking a target lower than you in the initiative order you gain +1 Boon.",
       "Blocking": "Blocking",
-      "BlockingTooltip": "This weapon provides a bonus to your Block defense.",
       "DamageTooltip": "A shorthand representation of the offensive capabilities of this weapon, expressed as Attack Bonus / Damage Bonus / Damage Multiplier.",
       "Engaging": "Engaging",
-      "EngagingTooltip": "Weapons in this category allow you to better combat multiple foes, increasing your Engagement by +1.",
       "Intuitive": "Intuitive",
-      "IntuitiveTooltip": "This weapon is easily understood and can be used without formal training. You are treated as having one additional point of proficiency when wielding it.",
       "Keen": "Keen",
-      "KeenTooltip": "This weapon is particularly deadly when it achieves a critical hit. IMPORTANT NOTE - the keen property is not yet implemented in the playtest.",
       "Natural": "Natural",
-      "NaturalTooltip": "Natural weapons benefit from Natural Weapon Training rather than training from their actual category. Natural weapons cannot be dropped.",
       "Oversized": "Oversized",
-      "OversizedTooltip": "This item is over-sized or otherwise cumbersome to wield, preventing you from acting quickly. You have +2 banes to Initiative while this item is equipped.",
       "Parrying": "Parrying",
-      "ParryingTooltip": "This weapon provides a bonus to your Parry defense.",
       "Reach": "Reach",
-      "ReachTooltip": "This weapon provides a larger than normal effective range. You are able to perform basic Strike attacks at twice your normal range.",
       "Reliable": "Reliable",
-      "ReliableTooltip": "This weapon is trustworthy and almost never produces spectacularly bad outcomes. The critical failure threshold of the weapon is reduced by 2 making it less likely that unsuccessful Strikes yield a critical miss.",
       "Reload": "Reload",
       "ReloadTooltip": "This weapon requires reloading in order to strike. When the weapon is not loaded, any actions which use the weapon cost +1 Action Points.",
       "Returning": "Returning",
-      "ReturningTooltip": "This weapon is magically or mechanically engineered to return to your hand after being thrown. Using the Throw Weapon action with this weapon does not result in it becoming Dropped.",
       "Thrown": "Thrown",
-      "ThrownTooltip": "This weapon is designed to be suitable for throwing and does not suffer the Banes penalty that is usually applied to the Throw Weapon action.",
       "UntrainedTooltip": "Your character is not fully Trained in the use of {training} weapons, and suffers a penalty when attacking.",
-      "Versatile": "Versatile",
-      "VersatileTooltip": "This weapon can be wielded with either one or two hands, switching between grips without any Action Point cost. In its alternate grip it functions as the corresponding weapon of its kind: a one-handed weapon becomes the larger two-handed weapon, and a two-handed weapon becomes the smaller one-handed weapon."
+      "Versatile": "Versatile"
     }
   }
 }

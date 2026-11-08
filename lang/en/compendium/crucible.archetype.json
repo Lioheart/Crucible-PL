@@ -5,6 +5,7 @@
         "Dragons": "Dragons",
         "Constructs": "Constructs",
         "Elementals": "Elementals",
+        "Companions": "Companions",
         "Beasts": "Beasts"
     },
     "entries": {
@@ -28,6 +29,10 @@
             "name": "Berserker",
             "description": "A rage-fueled warrior which prefers two-handed attacks using Heavy weapons."
         },
+        "Bestial Companion": {
+            "name": "Bestial Companion",
+            "description": "<p>Beasts which, through magical means or training, have developed into loyal companions.</p>"
+        },
         "Brigand": {
             "name": "Brigand",
             "description": "<p>Villainous lawbreakers whether they be bandits, pirates, ruffians, or other knaves.</p>"
@@ -35,6 +40,10 @@
         "Burrower": {
             "name": "Burrower",
             "description": "<p>Beasts or beast-like creatures which are expert at burrowing through solid material.</p>"
+        },
+        "Chirurgeon": {
+            "name": "Chirurgeon",
+            "description": "<p>Healers and sawbones, medical professionals and twisted poisoners.</p>"
         },
         "Chomper": {
             "name": "Chomper",
@@ -56,9 +65,17 @@
             "name": "Drakeling",
             "description": "<p>Smaller or younger drakes which are individually undersized, but dangerous as stalkers who hunt in packs.</p>"
         },
+        "Druid": {
+            "name": "Druid",
+            "description": "<p>Dedicated to magics that enrich the land and its inhabitants, wielding power to express the majesty and fury of nature.</p>"
+        },
         "Elemental Mote": {
             "name": "Elemental Mote",
             "description": "<p>Motes are the smallest elemental embodiments that still take physical form. They are generally unintelligent and act according to environmental stimuli or following the instinctual direction of a nearby greater elemental.</p>"
+        },
+        "Elemental Scamp": {
+            "name": "Elemental Scamp",
+            "description": "<p>Elemental trickster spirits which cause delight in mischief and deception.</p>"
         },
         "Elemental Sprite": {
             "name": "Elemental Sprite",
@@ -66,19 +83,27 @@
         },
         "Elemental Visitor": {
             "name": "Elemental Visitor",
-            "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+            "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
         },
         "Elemental Wanderer": {
             "name": "Elemental Wanderer",
             "description": "<p>Wanderers are significant manifestations of elemental energy that assume a form that is imposing or majestic. They are self-aware, sapient, and understand that they unnatural interlopers when outside of their typical realm. They are often driven by some instinctive or premeditated purpose which has drawn them forth.</p>"
         },
+        "Engineer": {
+            "name": "Engineer",
+            "description": "<p>Smiths that specialize in scientific and mechanical construction.</p>"
+        },
         "Fighter": {
             "name": "Fighter",
-            "description": "Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor."
+            "description": "Hardened melee combatants expert at wielding one-handed weaponry, shield, and heavy armor."
         },
         "Geomancer": {
             "name": "Geomancer",
             "description": "<p>Mages that specialize in the runes of Earth and Flame.</p>"
+        },
+        "Gladiator": {
+            "name": "Gladiator",
+            "description": "<p>Formidable warriors who are near peerless in the art of one-on-one combat, using a mixture of honed reflex and toughened grit to outlast and outmatch their opponents.</p>"
         },
         "Grappler": {
             "name": "Grappler",
@@ -87,6 +112,10 @@
         "Guardian Beast": {
             "name": "Guardian Beast",
             "description": "<p>Beasts that serve as guardians, standing watch over places or people to whom they are unwaveringly loyal.</p>"
+        },
+        "Harrier": {
+            "name": "Harrier",
+            "description": "<p>Flighted enemies who excel in menacing their foes from above, engaging and disengaging at will, never giving them a moment's rest.</p>"
         },
         "Herd Beast": {
             "name": "Herd Beast",
@@ -107,6 +136,10 @@
         "Lightweaver": {
             "name": "Lightweaver",
             "description": "<p>Mages that specialize in the runes of Illumination and Fire.</p>"
+        },
+        "Lurker": {
+            "name": "Lurker",
+            "description": "<p>Lurkers are subtle creatures that operate by stealth and by using attacks that seek to deprive an opponent of the ability to fight back.</p>"
         },
         "Mage": {
             "name": "Mage",
@@ -144,6 +177,10 @@
             "name": "Scout",
             "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
         },
+        "Seer": {
+            "name": "Seer",
+            "description": "<p>Oracles and soothsayers who practice the art of divination.</p>"
+        },
         "Servitor": {
             "name": "Servitor",
             "description": "<p>Creatures which are specialized in espionage or performing tasks in remote service of a controlling master.</p>"
@@ -155,6 +192,10 @@
         "Skirmisher": {
             "name": "Skirmisher",
             "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+        },
+        "Sorcerer": {
+            "name": "Sorcerer",
+            "description": "A magic user which wields flame and electricity in battle."
         },
         "Spellblade": {
             "name": "Spellblade",

@@ -3,7 +3,8 @@
     "folders": {
         "Talents": "Talents",
         "Gesture: Create": "Gesture: Create",
-        "Gesture: Conjure": "Gesture: Conjure"
+        "Gesture: Conjure": "Gesture: Conjure",
+        "Beastmaster": "Beastmaster"
     },
     "entries": {
         "Acid Absorption": {
@@ -45,14 +46,290 @@
                 }
             }
         },
+        "Battle-Worn": {
+            "name": "Battle-Worn"
+        },
+        "Beak": {
+            "name": "Beak"
+        },
+        "Bite": {
+            "name": "Bite"
+        },
+        "Blindsight": {
+            "name": "Blindsight"
+        },
         "Bony Claws": {
             "name": "Bony Claws"
         },
         "Caustic Limb": {
             "name": "Caustic Limb"
         },
+        "Claws": {
+            "name": "Claws"
+        },
         "Cold Absorption": {
             "name": "Cold Absorption"
+        },
+        "Companion of the Air": {
+            "name": "Companion of the Air",
+            "items": {
+                "Glider": {
+                    "name": "Glider",
+                    "description": "<p>The @ref[actor.name]{creature} controls its descent while falling. Unless it is @Condition[incapacitated] or @Condition[restrained], a fall becomes a <strong>Glide</strong>: a downward <strong>Fly</strong> movement instead of an impact, suffering no falling damage.</p><p>While gliding the creature's @Rule[movement.stride] is doubled and it is granted a @Rule[movement.freeMovement]{free move}, so it can always glide at least a short distance. Its glide must descend, and wherever the movement ends is where it comes to rest; if it ends the glide still aloft it gains the @Condition[flying] condition.</p>",
+                    "actions": {
+                        "Glide": {
+                            "name": "Glide",
+                            "description": "<p>The @ref[actor.name]{creature} glides rather than falls, flying downward under control. The movement must descend and suffers no falling damage. If the creature ends its glide while still aloft it gains the @Condition[flying] condition.</p>"
+                        }
+                    }
+                },
+                "Rake": {
+                    "name": "Rake",
+                    "description": "<p>The @ref[actor.name]{creature} attacks rapidly with its talons, dealing multiple raking blows against a single target.</p>",
+                    "actions": {
+                        "Rake": {
+                            "name": "Rake",
+                            "description": "<p>The @ref[actor.name]{creature} attacks swiftly with claws or talons.</p><p>If at least one attack results in a @Rule[dice.criticalSuccess], it inflicts the @Condition[bleeding] condition for <strong>2 Rounds</strong>.</p>",
+                            "effects": [
+                                {
+                                    "name": "Rake"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Echolocation": {
+                    "name": "Echolocation",
+                    "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p>"
+                },
+                "Beak": {
+                    "name": "Beak",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has a sharp, tearing beak.</p>"
+                    }
+                },
+                "Talons": {
+                    "name": "Talons",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has curved talons for gripping and rending prey.</p>"
+                    }
+                },
+                "Battle-Worn": {
+                    "name": "Battle-Worn",
+                    "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the @Action[default rest] action, you recover additional @Rule[resource.wounds] equal to half your @Rule[ability.toughness] score (rounded down).</p>"
+                },
+                "Loyal Protector": {
+                    "name": "Loyal Protector",
+                    "description": "<p>@ref[actor.name]{The companion} is fiercely loyal to its master, and will move to their side and provide defensive assistance immediately upon request.</p>",
+                    "actions": {
+                        "Loyal Protector": {
+                            "name": "Loyal Protector",
+                            "description": "<p>@ref[actor.name]{The companion} moves adjacent to its master, providing them with the @Condition[guarded] condition until the start of their next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Loyal Protector"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Flanking Maneuver": {
+                    "name": "Flanking Maneuver",
+                    "description": "<p>Working in tandem with its master, @ref[actor.name]{the companion} can create openings in the defenses of even the most attentive opponents.</p>",
+                    "actions": {
+                        "Flanking Maneuver": {
+                            "name": "Flanking Maneuver",
+                            "description": "<p>@ref[actor.name]{The companion} makes a deliberate strike at an opponent who is currently being engaged by its master. On a hit, the opponent becomes @Condition[overrun] until the start of its next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Flanking Maneuver"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "archetype": {
+                "name": "Bestial Companion",
+                "description": "<p>Beasts which, through magical means or training, have developed into loyal companions.</p>"
+            },
+            "taxonomy": {
+                "name": "Beast of the Air",
+                "description": "<p>Companion beasts who take to the skies. Their view from above can provide their masters a strong tactical advantage, and they remain dexterous enough to aid in combat when necessary.</p>"
+            }
+        },
+        "Companion of the Land": {
+            "name": "Companion of the Land",
+            "items": {
+                "Pouncing Strike": {
+                    "name": "Pouncing Strike",
+                    "description": "<p>This creature lunges forward, putting its whole weight behind a leaping strike.</p>",
+                    "actions": {
+                        "Pouncing Strike": {
+                            "name": "Pouncing Strike",
+                            "description": "<p>This attack may be used after a <strong>Move</strong> that brings the @ref[actor.name]{creature} at least 10 feet closer to its target. If the creature was above the target, this attack gains @Rule[dice.boon]{+1 Boon} per 10 feet of elevation decrease in that movement.</p><p>If this attack is a @Rule[dice.criticalSuccess]{Critical Hit}, the target of the attack is immediately knocked @Condition[prone].</p>",
+                            "effects": [
+                                {
+                                    "name": "Pouncing Strike"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Pack Hunter": {
+                    "name": "Pack Hunter",
+                    "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of @Rule[dice.boon]{Boons} awarded from attacking a @Condition[flanked] enemy.</p>"
+                },
+                "Darkvision": {
+                    "name": "Darkvision",
+                    "description": "<p>The @ref[actor.name]{creature} can see in darkness as though it were dim light up to 60 feet away, perceiving its surroundings in shades of grey. Darkvision does not function while the @ref[actor.name]{creature} is @Condition[blinded].</p>"
+                },
+                "Thick Hide": {
+                    "name": "Thick Hide",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has a thick, leathery hide that is resilient against attack.</p>"
+                    }
+                },
+                "Bite": {
+                    "name": "Bite",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} possesses a formidable bite of sharp teeth.</p>"
+                    }
+                },
+                "Claws": {
+                    "name": "Claws",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} has elongated and sharpened claws.</p>"
+                    }
+                },
+                "Battle-Worn": {
+                    "name": "Battle-Worn",
+                    "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the @Action[default rest] action, you recover additional @Rule[resource.wounds] equal to half your @Rule[ability.toughness] score (rounded down).</p>"
+                },
+                "Loyal Protector": {
+                    "name": "Loyal Protector",
+                    "description": "<p>@ref[actor.name]{The companion} is fiercely loyal to its master, and will move to their side and provide defensive assistance immediately upon request.</p>",
+                    "actions": {
+                        "Loyal Protector": {
+                            "name": "Loyal Protector",
+                            "description": "<p>@ref[actor.name]{The companion} moves adjacent to its master, providing them with the @Condition[guarded] condition until the start of their next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Loyal Protector"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Flanking Maneuver": {
+                    "name": "Flanking Maneuver",
+                    "description": "<p>Working in tandem with its master, @ref[actor.name]{the companion} can create openings in the defenses of even the most attentive opponents.</p>",
+                    "actions": {
+                        "Flanking Maneuver": {
+                            "name": "Flanking Maneuver",
+                            "description": "<p>@ref[actor.name]{The companion} makes a deliberate strike at an opponent who is currently being engaged by its master. On a hit, the opponent becomes @Condition[overrun] until the start of its next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Flanking Maneuver"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "archetype": {
+                "name": "Bestial Companion",
+                "description": "<p>Beasts which, through magical means or training, have developed into loyal companions.</p>"
+            },
+            "taxonomy": {
+                "name": "Beast of the Land",
+                "description": "<p>Companion beasts who stride across land. Their strength and pack hunter tactics serve their masters well, often acting as another frontline team member.</p>"
+            }
+        },
+        "Companion of the Sea": {
+            "name": "Companion of the Sea",
+            "items": {
+                "Ensnare": {
+                    "name": "Ensnare",
+                    "description": "<p>The @ref[actor.name]{creature} lashes out with a grasping tendril, coil, or limb to seize prey at range and drag it into a crushing hold.</p>",
+                    "actions": {
+                        "Ensnare": {
+                            "name": "Ensnare",
+                            "description": "<p>The @ref[actor.name]{creature} reaches out to seize a single target within range, attacking its @Rule[defense.reflex]. On a success the target is dragged back into reach and becomes @Condition[restrained]. This action may only be used on creatures which are eligible targets for @Action[Compendium.crucible.talent.Item.grapple000000000 grapple].</p><p>The hold is maintained until the @ref[actor.name]{creature} releases it, the target escapes, or a different creature is targeted with Ensnare.</p>",
+                            "effects": [
+                                {
+                                    "name": "Ensnared"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Blindsight": {
+                    "name": "Blindsight",
+                    "description": "<p>@ref[actor.name]{This creature} perceives its surroundings without the use of sight, sensing the precise location of creatures and objects within 60 feet. It is unaffected by @Condition[blinded], darkness, or invisibility, and any creature it detects this way is treated as visible to it.</p>"
+                },
+                "Slippery Form": {
+                    "name": "Slippery Form",
+                    "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>",
+                    "actions": {
+                        "Slippery Escape": {
+                            "name": "Slippery Escape",
+                            "description": "<p>The creature uses it slippery form to escape restraints, immediately ending the @Condition[restrained] condition.</p>"
+                        }
+                    }
+                },
+                "Tentacles": {
+                    "name": "Tentacles",
+                    "description": {
+                        "public": "<p>The @ref[actor.name]{creature} attacks with writhing, grasping tentacles.</p>"
+                    }
+                },
+                "Battle-Worn": {
+                    "name": "Battle-Worn",
+                    "description": "<p>Your body has endured so many injuries that it has learned how to mend itself with remarkable efficiency. When you perform the @Action[default rest] action, you recover additional @Rule[resource.wounds] equal to half your @Rule[ability.toughness] score (rounded down).</p>"
+                },
+                "Loyal Protector": {
+                    "name": "Loyal Protector",
+                    "description": "<p>@ref[actor.name]{The companion} is fiercely loyal to its master, and will move to their side and provide defensive assistance immediately upon request.</p>",
+                    "actions": {
+                        "Loyal Protector": {
+                            "name": "Loyal Protector",
+                            "description": "<p>@ref[actor.name]{The companion} moves adjacent to its master, providing them with the @Condition[guarded] condition until the start of their next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Loyal Protector"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Flanking Maneuver": {
+                    "name": "Flanking Maneuver",
+                    "description": "<p>Working in tandem with its master, @ref[actor.name]{the companion} can create openings in the defenses of even the most attentive opponents.</p>",
+                    "actions": {
+                        "Flanking Maneuver": {
+                            "name": "Flanking Maneuver",
+                            "description": "<p>@ref[actor.name]{The companion} makes a deliberate strike at an opponent who is currently being engaged by its master. On a hit, the opponent becomes @Condition[overrun] until the start of its next turn.</p>",
+                            "effects": [
+                                {
+                                    "name": "Flanking Maneuver"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "archetype": {
+                "name": "Bestial Companion",
+                "description": "<p>Beasts which, through magical means or training, have developed into loyal companions.</p>"
+            },
+            "taxonomy": {
+                "name": "Beast of the Sea",
+                "description": "<p>Companion beasts who dwell in the deep. Their blindsight can reveal to their masters the location of would-be hidden enemies, and woe unto any who find themselves ensnared by such beasts.</p>"
+            }
+        },
+        "Darkvision": {
+            "name": "Darkvision"
         },
         "Deathly Armor": {
             "name": "Deathly Armor"
@@ -60,9 +337,6 @@
         "Earth Sprite": {
             "name": "Earth Sprite",
             "items": {
-                "Elemental Armor": {
-                    "name": "Elemental Armor"
-                },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
                 },
@@ -103,6 +377,10 @@
                     "description": {
                         "public": "<p>The @ref[actor.name]{creature} has craggy, rock-like skin.</p>"
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -127,9 +405,6 @@
                 },
                 "Earthen Claw": {
                     "name": "Earthen Claw"
-                },
-                "Elemental Armor": {
-                    "name": "Elemental Armor"
                 },
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
@@ -156,6 +431,10 @@
                     "description": {
                         "public": "<p>The @ref[actor.name]{creature} has craggy, rock-like skin.</p>"
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -170,11 +449,28 @@
         "Earthen Claw": {
             "name": "Earthen Claw"
         },
+        "Echolocation": {
+            "name": "Echolocation"
+        },
         "Electricity Absorption": {
             "name": "Electricity Absorption"
         },
         "Elemental Armor": {
             "name": "Elemental Armor"
+        },
+        "Ensnare": {
+            "name": "Ensnare",
+            "actions": {
+                "Ensnare": {
+                    "name": "Ensnare",
+                    "description": "<p>The @ref[actor.name]{creature} reaches out to seize a single target within range, attacking its @Rule[defense.reflex]. On a success the target is dragged back into reach and becomes @Condition[restrained]. This action may only be used on creatures which are eligible targets for @Action[Compendium.crucible.talent.Item.grapple000000000 grapple].</p><p>The hold is maintained until the @ref[actor.name]{creature} releases it, the target escapes, or a different creature is targeted with Ensnare.</p>",
+                    "effects": [
+                        {
+                            "name": "Ensnared"
+                        }
+                    ]
+                }
+            }
         },
         "False Appearance": {
             "name": "False Appearance"
@@ -215,6 +511,10 @@
                             "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -256,6 +556,10 @@
                             "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -265,6 +569,20 @@
             "taxonomy": {
                 "name": "Fire Elemental",
                 "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
+            }
+        },
+        "Flanking Maneuver": {
+            "name": "Flanking Maneuver",
+            "actions": {
+                "Flanking Maneuver": {
+                    "name": "Flanking Maneuver",
+                    "description": "<p>@ref[actor.name]{The companion} makes a deliberate strike at an opponent who is currently being engaged by its master. On a hit, the opponent becomes @Condition[overrun] until the start of its next turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Flanking Maneuver"
+                        }
+                    ]
+                }
             }
         },
         "Frost Claw": {
@@ -318,6 +636,10 @@
                             "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -373,6 +695,10 @@
                             "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one quarter gallon of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -399,8 +725,31 @@
         "Gesture: Ray": {
             "name": "Gesture: Ray"
         },
+        "Glider": {
+            "name": "Glider",
+            "actions": {
+                "Glide": {
+                    "name": "Glide",
+                    "description": "<p>The @ref[actor.name]{creature} glides rather than falls, flying downward under control. The movement must descend and suffers no falling damage. If the creature ends its glide while still aloft it gains the @Condition[flying] condition.</p>"
+                }
+            }
+        },
         "Icy Claw": {
             "name": "Icy Claw"
+        },
+        "Loyal Protector": {
+            "name": "Loyal Protector",
+            "actions": {
+                "Loyal Protector": {
+                    "name": "Loyal Protector",
+                    "description": "<p>@ref[actor.name]{The companion} moves adjacent to its master, providing them with the @Condition[guarded] condition until the start of their next turn.</p>",
+                    "effects": [
+                        {
+                            "name": "Loyal Protector"
+                        }
+                    ]
+                }
+            }
         },
         "Moldy Skeleton": {
             "name": "Moldy Skeleton",
@@ -428,6 +777,10 @@
                             "description": "<p>Your command of the Rune of Death allows for basic communion with the dead and for rudimentary manipulation of unholy forces, producing one of the following effects:</p><ul><li><p>Spread decay over an object no larger than a 1-foot cube, causing plants to wither, metallic objects to rust, wood to become rotten, food to grow foul, or a corpse to rapidly decompose. Magical objects are typically unaffected.</p></li><li><p>Cause a corpse which has been dead for less than seven days or otherwise preserved to perform a lifeless reenactment of its final moments. Its movements imitate those that occurred during the creature's final 30 seconds of life. You have no control over the creature nor can it communicate in any other way.</p></li><li><p>Hasten the death of a willing creature that is currently dying, causing it to pass swiftly and peacefully.</p></li></ul><p>Ennervate may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -437,6 +790,37 @@
             "taxonomy": {
                 "name": "Skeleton",
                 "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
+            }
+        },
+        "Pack Hunter": {
+            "name": "Pack Hunter"
+        },
+        "Pouncing Strike": {
+            "name": "Pouncing Strike",
+            "actions": {
+                "Pouncing Strike": {
+                    "name": "Pouncing Strike",
+                    "description": "<p>This attack may be used after a <strong>Move</strong> that brings the @ref[actor.name]{creature} at least 10 feet closer to its target. If the creature was above the target, this attack gains @Rule[dice.boon]{+1 Boon} per 10 feet of elevation decrease in that movement.</p><p>If this attack is a @Rule[dice.criticalSuccess]{Critical Hit}, the target of the attack is immediately knocked @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Pouncing Strike"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rake": {
+            "name": "Rake",
+            "actions": {
+                "Rake": {
+                    "name": "Rake",
+                    "description": "<p>The @ref[actor.name]{creature} attacks swiftly with claws or talons.</p><p>If at least one attack results in a @Rule[dice.criticalSuccess], it inflicts the @Condition[bleeding] condition for <strong>2 Rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rake"
+                        }
+                    ]
+                }
             }
         },
         "Rune: Death": {
@@ -484,6 +868,15 @@
                 }
             }
         },
+        "Slippery Form": {
+            "name": "Slippery Form",
+            "actions": {
+                "Slippery Escape": {
+                    "name": "Slippery Escape",
+                    "description": "<p>The creature uses it slippery form to escape restraints, immediately ending the @Condition[restrained] condition.</p>"
+                }
+            }
+        },
         "Stone Skin": {
             "name": "Stone Skin"
         },
@@ -521,6 +914,10 @@
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
                     "description": "<p>You shape the essence of a <strong>Rune</strong> into a sweeping or splintered arc to strike multiple targets in close proximity.</p><p>The <strong>Fan</strong> gesture scales using <strong>Intellect</strong> and targets a 120 degree arc with a <strong>6 foot</strong> radius. It deals <strong>6 Base Damage</strong> to targets which fail to resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -562,6 +959,10 @@
                 "Gesture: Aspect": {
                     "name": "Gesture: Aspect",
                     "description": "<p>You infuse the essence of a <strong>Rune</strong> into your body, empowering your own physical form or psyche.</p><p>When you assume a certain <strong>Aspect</strong>, you become more closely attuned to the damage type of the <strong>Rune</strong> used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p><p>Your <strong>Aspect</strong> lasts for <strong>6 Rounds</strong>. You may only have one active <strong>Aspect</strong>; casting another spell using the <strong>Aspect</strong> gesture replaces the previous effect. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
+                },
+                "Summoned": {
+                    "name": "Summoned",
+                    "description": "<p>The @ref[actor.name]{creature} was summoned into being by a spellcaster. Its training in the spellcraft used to summon it cannot exceed the training of its summoner.</p>"
                 }
             },
             "archetype": {
@@ -572,6 +973,18 @@
                 "name": "Storm Elemental",
                 "description": "<p>Elemental creatures corresponding to the element of Storm.</p>"
             }
+        },
+        "Summoned": {
+            "name": "Summoned"
+        },
+        "Talons": {
+            "name": "Talons"
+        },
+        "Tentacles": {
+            "name": "Tentacles"
+        },
+        "Thick Hide": {
+            "name": "Thick Hide"
         },
         "Voltaic Claw": {
             "name": "Voltaic Claw"

@@ -6,6 +6,7 @@
         "Potency": "Potency",
         "Weapons": "Weapons",
         "Spellcraft": "Spellcraft",
+        "Senses": "Senses",
         "Movement": "Movement",
         "Prefixes": "Prefixes",
         "Bonuses": "Bonuses",
@@ -16,7 +17,6 @@
         "Gestures": "Gestures",
         "Resources": "Resources",
         "Inflections": "Inflections",
-        "Senses": "Senses",
         "Damage": "Damage",
         "Resistances": "Resistances"
     },
@@ -38,18 +38,18 @@
         },
         "Activating": {
             "name": "Activating",
-            "description": "<p>Grants the <strong>Replenish Action</strong> action, allowing the bearer to restore <strong>Action</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Grants the <strong>Replenish Action</strong> action, allowing the bearer to restore @Rule[resource.action] in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Activating",
             "actions": {
                 "Replenish Action": {
                     "name": "Replenish Action",
-                    "description": "<p>In moments of duress you can draw upon an additional reserve of <strong>Action</strong> from this item. The amount of <strong>Action</strong> restored depends on the <strong>Tier</strong> of this affix.</p><ul><li><p><strong>Tier 1</strong>: <strong>1 Action</strong></p></li><li><p><strong>Tier 2</strong>: <strong>2 Action</strong></p></li><li><p><strong>Tier 3</strong>: <strong>3 Action</strong></p></li></ul>"
+                    "description": "<p>In moments of duress you can draw upon an additional reserve of @Rule[resource.action] from this item. The amount of @Rule[resource.action] restored depends on the <strong>Tier</strong> of this affix.</p><ul><li><p><strong>Tier 1</strong>: <strong>1 Action</strong></p></li><li><p><strong>Tier 2</strong>: <strong>2 Action</strong></p></li><li><p><strong>Tier 3</strong>: <strong>3 Action</strong></p></li></ul>"
                 }
             }
         },
         "Arcana": {
             "name": "Arcana",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Arcana</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.arcana] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Arcane"
         },
         "Arrow Spellcraft": {
@@ -64,7 +64,7 @@
         },
         "Athletics": {
             "name": "Athletics",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Athletics</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.athletics] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Athletic"
         },
         "Aura Spellcraft": {
@@ -74,12 +74,12 @@
         },
         "Awareness": {
             "name": "Awareness",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Awareness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.awareness] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Perceptive"
         },
         "Beast Bane": {
             "name": "Beast Bane",
-            "description": "<p>This weapon is especially effective against <strong>Beast</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Beast</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Beast-Bane"
         },
         "Blast Spellcraft": {
@@ -99,7 +99,7 @@
         },
         "Celestial Bane": {
             "name": "Celestial Bane",
-            "description": "<p>This weapon is especially effective against <strong>Celestial</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Celestial</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Celestial-Bane"
         },
         "Cold Conversion": {
@@ -134,7 +134,7 @@
         },
         "Construct Bane": {
             "name": "Construct Bane",
-            "description": "<p>This weapon is especially effective against <strong>Construct</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Construct</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Construct-Bane"
         },
         "Control Potency": {
@@ -179,17 +179,17 @@
         },
         "Deception": {
             "name": "Deception",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Deception</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.deception] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Deceptive"
         },
         "Deflection": {
             "name": "Deflection",
-            "description": "<p>Increase <strong>Parry</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.parry] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Deflection"
         },
         "Determination": {
             "name": "Determination",
-            "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.willpower] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Determination"
         },
         "Determine Spellcraft": {
@@ -199,7 +199,7 @@
         },
         "Diplomacy": {
             "name": "Diplomacy",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.diplomacy] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Diplomatic"
         },
         "Disguise": {
@@ -220,12 +220,12 @@
         },
         "Dragon Bane": {
             "name": "Dragon Bane",
-            "description": "<p>This weapon is especially effective against <strong>Dragon</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Dragon</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Dragon-Bane"
         },
         "Earth Elemental Bane": {
             "name": "Earth Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Earth Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Earth Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Earth-Bane"
         },
         "Earth Potency": {
@@ -260,7 +260,7 @@
         },
         "Evasion": {
             "name": "Evasion",
-            "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.dodge] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Evasion"
         },
         "Extend Spellcraft": {
@@ -275,7 +275,7 @@
         },
         "Fey Bane": {
             "name": "Fey Bane",
-            "description": "<p>This weapon is especially effective against <strong>Fey</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Fey</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Fey-Bane"
         },
         "Fire Conversion": {
@@ -290,7 +290,7 @@
         },
         "Fire Elemental Bane": {
             "name": "Fire Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Fire Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Fire Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Fire-Bane"
         },
         "Fire Resistance": {
@@ -310,18 +310,18 @@
         },
         "Focusing": {
             "name": "Focusing",
-            "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
+            "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore @Rule[resource.focus] in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
             "adjective": "Focusing",
             "actions": {
                 "Replenish Focus": {
                     "name": "Replenish Focus",
-                    "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of <strong>Focus</strong> restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
+                    "description": "<p>In moments of duress you can withdraw an additional reserve of @Rule[resource.focus] from this item. The amount of @Rule[resource.focus] restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1</strong>: <strong>4 Focus</strong></p></li><li><p><strong>Tier 2</strong>: <strong>6 Focus</strong></p></li><li><p><strong>Tier 3</strong>: <strong>8 Focus</strong></p></li></ul>"
                 }
             }
         },
         "Frost Elemental Bane": {
             "name": "Frost Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Frost Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Frost Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Frost-Bane"
         },
         "Frost Potency": {
@@ -336,28 +336,28 @@
         },
         "Giant Bane": {
             "name": "Giant Bane",
-            "description": "<p>This weapon is especially effective against <strong>Giant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Giant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Giant-Bane"
         },
         "Gliding": {
             "name": "Gliding",
-            "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Grants the bearer the benefits of the @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Glider} talent as if they were a creature that possessed that trait, turning what would otherwise be falls into controlled <strong>Glides</strong>.</p>",
             "adjective": "Gliding",
             "actions": {
-                "Gliding": {
-                    "name": "Gliding",
-                    "description": "<p>If used while @Condition[falling], you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+                "Glide": {
+                    "name": "Glide",
+                    "description": "<p>You glide rather than fall, flying downward under control. The movement must descend and suffers no falling damage. If you end your glide while still aloft you gain the @Condition[flying] condition.</p>"
                 }
             }
         },
         "Guarding": {
             "name": "Guarding",
-            "description": "<p>Increase <strong>Block</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.block] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Guarding"
         },
         "Hale": {
             "name": "Hale",
-            "description": "<p>Increase maximum <strong>Health</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase maximum @Rule[resource.health] by 6 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Hale"
         },
         "Illumination Potency": {
@@ -385,14 +385,19 @@
             "description": "<p>This item is imbued with the essence of <strong>Influence</strong> spellcraft. While equipped, the bearer instinctively gains knowledge of the <strong>Influence</strong> gesture, allowing them to compose spells using it even without having learned the gesture through a talent.</p>",
             "adjective": "Influence"
         },
+        "Inspection": {
+            "name": "Inspection",
+            "description": "<p>@Action[default search] checks gain @Rule[dice.boon]{+2 Boons}.</p>",
+            "adjective": "Inspection"
+        },
         "Intimidation": {
             "name": "Intimidation",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Intimidation</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.intimidation] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Intimidating"
         },
         "Keen": {
             "name": "Keen",
-            "description": "<p>Reduce the <strong>Critical Threshold</strong> needed to obtain a <strong>Critical Hit</strong> on a successful <strong>Strike</strong>. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>",
+            "description": "<p>Reduce the @Rule[dice.criticalSuccessThreshold] needed to obtain a @Rule[dice.criticalSuccess]{Critical Hit} on a successful <strong>Strike</strong>. This threshold is reduced by 1 for each <strong>Tier</strong> of this affix.</p>",
             "adjective": "Keen"
         },
         "Kinesis Potency": {
@@ -438,17 +443,17 @@
         },
         "Medicine": {
             "name": "Medicine",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Medicine</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.medicine] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Medicinal"
         },
         "Mending": {
             "name": "Mending",
-            "description": "<p>Reduce the <strong>Wounds</strong> defense threshold by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from wounds.</p>",
+            "description": "<p>Reduce the @Rule[defense.wounds] by 1 for each <strong>Tier</strong> of this prefix, making the wearer easier to heal from wounds.</p>",
             "adjective": "Mending"
         },
         "Monstrosity Bane": {
             "name": "Monstrosity Bane",
-            "description": "<p>This weapon is especially effective against <strong>Monstrosity</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Monstrosity</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Monstrosity-Bane"
         },
         "Negate Spellcraft": {
@@ -458,12 +463,12 @@
         },
         "Nimbleness": {
             "name": "Nimbleness",
-            "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.reflex] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Nimbleness"
         },
         "Nonchalant": {
             "name": "Nonchalant",
-            "description": "<p><strong>Strikes</strong> against your <strong>Morale</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p><strong>Strikes</strong> against your @Rule[resource.morale] require a higher overflow to achieve a @Rule[dice.criticalSuccess]{Critical Hit}. The @Rule[dice.criticalSuccessThreshold] is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Nonchalant"
         },
         "Oblivion Potency": {
@@ -478,17 +483,17 @@
         },
         "Ooze Bane": {
             "name": "Ooze Bane",
-            "description": "<p>This weapon is especially effective against <strong>Ooze</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Ooze</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Ooze-Bane"
         },
         "Outsider Bane": {
             "name": "Outsider Bane",
-            "description": "<p>This weapon is especially effective against <strong>Outsider</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Outsider</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Outsider-Bane"
         },
         "Performance": {
             "name": "Performance",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Performance</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.performance] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Performative"
         },
         "Piercing Damage": {
@@ -503,7 +508,7 @@
         },
         "Plant Bane": {
             "name": "Plant Bane",
-            "description": "<p>This weapon is especially effective against <strong>Plant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Plant</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Plant-Bane"
         },
         "Poison Conversion": {
@@ -598,12 +603,12 @@
         },
         "Reinforcement": {
             "name": "Reinforcement",
-            "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.armor] defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Reinforcement"
         },
         "Reliable": {
             "name": "Reliable",
-            "description": "<p>Reduces the <strong>Critical Failure Threshold</strong> for attack rolls made with this weapon. The threshold decreases by <strong>1 per Tier</strong>.</p>",
+            "description": "<p>Reduces the @Rule[dice.criticalFailureThreshold] for attack rolls made with this weapon. The threshold decreases by <strong>1 per Tier</strong>.</p>",
             "adjective": "Reliable"
         },
         "Reshape Spellcraft": {
@@ -618,7 +623,7 @@
         },
         "Science": {
             "name": "Science",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Science</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.science] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Scientific"
         },
         "Sense Spellcraft": {
@@ -638,7 +643,7 @@
         },
         "Society": {
             "name": "Society",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Society</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.society] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Sociable"
         },
         "Soul Potency": {
@@ -653,12 +658,12 @@
         },
         "Spirited": {
             "name": "Spirited",
-            "description": "<p>Increase maximum <strong>Morale</strong> by 6 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase maximum @Rule[resource.morale] by 6 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Spirited"
         },
         "Stealth": {
             "name": "Stealth",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Stealth</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.stealth] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Stealthy"
         },
         "Step Spellcraft": {
@@ -668,7 +673,7 @@
         },
         "Storm Elemental Bane": {
             "name": "Storm Elemental Bane",
-            "description": "<p>This weapon is especially effective against <strong>Storm Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Storm Elemental</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Storm-Bane"
         },
         "Storm Potency": {
@@ -693,22 +698,22 @@
         },
         "Tenacity": {
             "name": "Tenacity",
-            "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
+            "description": "<p>Increase @Rule[defense.fortitude] defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
             "adjective": "Tenacity"
         },
         "Undead Bane": {
             "name": "Undead Bane",
-            "description": "<p>This weapon is especially effective against <strong>Undead</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus <strong>Boons</strong> equal to the <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>This weapon is especially effective against <strong>Undead</strong> creatures. When making a <strong>Strike</strong> against a target of that creature type, the attacker gains bonus @Rule[dice.boon]{Boons} equal to the <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Undead-Bane"
         },
         "Unshakeable": {
             "name": "Unshakeable",
-            "description": "<p><strong>Strikes</strong> against your <strong>Health</strong> require a higher overflow to achieve a <strong>Critical Hit</strong>. The critical threshold is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p><strong>Strikes</strong> against your @Rule[resource.health] require a higher overflow to achieve a @Rule[dice.criticalSuccess]{Critical Hit}. The @Rule[dice.criticalSuccessThreshold] is increased by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Unshakeable"
         },
         "Vicious": {
             "name": "Vicious",
-            "description": "<p>A <strong>Strike</strong> that scores a <strong>Critical Hit</strong> with this weapon brutally exploits the wound.</p><ul><li><p>Weapons that deal <strong>Piercing</strong> or <strong>Slashing</strong> damage cause the target to begin @Condition[bleeding].</p></li><li><p>Weapons that deal <strong>Bludgeoning</strong> damage cause the target to become @Condition[staggered].</p></li></ul>",
+            "description": "<p>A <strong>Strike</strong> that scores a @Rule[dice.criticalSuccess]{Critical Hit} with this weapon brutally exploits the wound.</p><ul><li><p>Weapons that deal <strong>Piercing</strong> or <strong>Slashing</strong> damage cause the target to begin @Condition[bleeding].</p></li><li><p>Weapons that deal <strong>Bludgeoning</strong> damage cause the target to become @Condition[staggered].</p></li></ul>",
             "adjective": "Vicious"
         },
         "Void Conversion": {
@@ -733,7 +738,7 @@
         },
         "Wilderness": {
             "name": "Wilderness",
-            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Wilderness</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
+            "description": "<p>Increase the <strong>Enchantment Bonus</strong> for @Rule[skill.wilderness] skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
             "adjective": "Survivalist"
         }
     },
