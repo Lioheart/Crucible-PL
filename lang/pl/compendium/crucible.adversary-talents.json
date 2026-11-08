@@ -2,10 +2,10 @@
     "label": "Talenty przeciwników",
     "folders": {
         "Ooze": "Śluz",
-        "Charge": "Szarża",
+        "Charges": "Szarże",
         "Form": "Kształt",
         "Bites": "Ugryzienia",
-        "Claws": "Pazury",
+        "Biological": "Biologiczny",
         "Construct": "Konstrukt",
         "Communication": "Komunikacja",
         "Undead": "Nieumarły",
@@ -19,7 +19,7 @@
         "Death": "Śmierć",
         "Breath": "Zionięcie",
         "Senses": "Zmysły",
-        "Tail": "Ogon"
+        "Companion": "Towarzysz"
     },
     "entries": {
         "Acid Absorption": {
@@ -32,7 +32,7 @@
             "actions": {
                 "Acid Spit": {
                     "name": "Plucie kwasem",
-                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kwaśną żółcią w cel znajdujący się w odległości do 20 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kwaśną żółcią w cel znajdujący się w odległości do 20 stóp.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego}, atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Plucie kwasem"
@@ -47,7 +47,7 @@
             "actions": {
                 "Acid Spray": {
                     "name": "Rozprysk kwasu",
-                    "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>Stworzenie wyrzuca strumień kwaśnej żółci w promieniu 10 stóp.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego}, atak ten powoduje stan @Condition[corroding] na <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Rozprysk kwasu"
@@ -58,7 +58,7 @@
         },
         "Amorphous": {
             "name": "Amorficzny",
-            "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego <strong>Biegu</strong>. Otrzymuje premię do <strong>Uniku</strong> równą połowie swojej wartości <strong>Wytrzymałości</strong>i jest odporny na stan @Condition[restrained].</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} może poruszać się przez przestrzeń o średnicy zaledwie 1 centymetra bez żadnej kary do swojego @Rule[movement.stride]{Biegu}. Otrzymuje premię do @Rule[defense.dodge]{Uniku} równą połowie swojej wartości @Rule[ability.toughness]{Wytrzymałości} i jest odporny na stan @Condition[restrained].</p>"
         },
         "Aquatic Breathing": {
             "name": "Oddychanie pod wodą",
@@ -66,7 +66,7 @@
         },
         "Aqueous Camouflage": {
             "name": "Kamuflaż wodny",
-            "description": "<p>Gdy @ref[actor.name]{ta istota} jest całkowicie zanurzona w wodzie lub innym płynie, otrzymuje @Advantage[2] do testów <strong>Skradania się</strong>.</p>"
+            "description": "<p>Gdy @ref[actor.name]{ta istota} jest całkowicie zanurzona w wodzie lub innym płynie, otrzymuje @Rule[dice.boon]{+2 Korzyści} do testów @Rule[skill.stealth]{Skradania się}.</p>"
         },
         "Aqueous Transmission": {
             "name": "Transmisja wodna",
@@ -80,7 +80,26 @@
         },
         "Bestial Senses": {
             "name": "Zwierzęce zmysły",
-            "description": "<p>@ref[actor.name]{Stworzenie} ma wyostrzone zmysły i jest szczególnie wyczulony na otoczenie, wszystkie testy <strong>Świadomości</strong> otrzymują <strong>+2 Korzyści</strong>.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} ma wyostrzone zmysły i jest szczególnie wyczulony na otoczenie, wszystkie testy @Rule[skill.awareness]{Świadomości} otrzymują @Rule[dice.boon]{+2 Korzyści}.</p>"
+        },
+        "Bioluminescent Display": {
+            "name": "Podświetlenie bioluminescencyjne",
+            "description": "<p>Ciało @ref[actor.name]{stworzenia} mieni się bioluminescencją, a zmieniające się wariacje kolorów drażnią zmysły, wywołując dezorientację lub coś gorszego.</p>",
+            "actions": {
+                "Confusing Patterns": {
+                    "name": "Mylące wzory",
+                    "description": "<p>Stworzenie zaczyna pulsować i migotać w szalonych wzorach kolorów i światła. Wrogowie znajdujący się w promieniu 20 stóp muszą obronić się przed atakiem, rzucając kość na @Rule[defense.willpower], albo ogarnie ich oszałamiające ospałość, zadająca @Rule[damageType.radiant] obrażeń do @Rule[resource.morale] i powodująca stan @Condition[disoriented].</p>",
+                    "effects": [
+                        {
+                            "name": "Mylące wzory"
+                        }
+                    ]
+                },
+                "Scintillating Agony": {
+                    "name": "Olśniewająca agonia",
+                    "description": "<p>Stworzenie przybiera krwistoczerwony kolor i pulsuje falami ciemniejszej i jaśniejszej czerwieni, zadając obrażenia psychiczne wszystkim w swoim otoczeniu. Wrogowie w promieniu 15 stóp muszą obronić się przed atakiem @Rule[action.empowered], rzucając kość na @Rule[defense.willpower], albo poniosą obrażenia @Rule[damageType.psychic] wobec @Rule[resource.morale].</p>"
+                }
+            }
         },
         "Blindsight": {
             "name": "Ślepowidzenie",
@@ -88,15 +107,46 @@
         },
         "Blood Sense": {
             "name": "Zmysł krwi",
-            "description": "<p>@ref[actor.name]{Stworzenie} potrafi precyzyjnie wyczuć każdą krwawiącą istotę w promieniu 20 stóp, która nie posiada wszystkich Punktów Życia. Każda broń lub atak umiejętności przeciwko zranionej istocie nie podlega <strong>Zgubie</strong>, które normalnie miałyby zastosowanie, gdyby istota była @Condition[blinded].</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi precyzyjnie wyczuć każdą krwawiącą istotę w promieniu 20 stóp, która nie posiada wszystkich Punktów Życia. Każda broń lub atak umiejętności przeciwko zranionej istocie nie podlega @Rule[dice.bane]{Zgubie}, które normalnie miałyby zastosowanie, gdyby istota była @Condition[blinded].</p>"
         },
         "Bloodless": {
             "name": "Bezkrwawy",
-            "description": "<p>@ref[actor.name]{Stworzenie} nie ma krwi, ważnych organów ani słabych punktów, które można wykorzystać. Jest odporne na stan @Condition[bleeding], a próg trafienia krytycznego dla <strong>Uderzeń</strong> wymierzonych w nie zostaje zwiększony o 2.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} nie ma krwi, ważnych organów ani słabych punktów, które można wykorzystać. Jest odporne na stan @Condition[bleeding], a @Rule[dice.criticalSuccessThreshold]{próg trafienia krytycznego} dla <strong>Uderzeń</strong> wymierzonych w nie zostaje zwiększony o 2.</p>"
         },
         "Bonded Mind": {
             "name": "Połączone umysły",
             "description": "<p>Umysł @ref[actor.name]{Stworzenie} posiadającego ten talent jest nierozerwalnie związany z innymi członkami swojej grupy. Jest on zdolny do natychmiastowej komunikacji telepatycznej z każdym innym @ref[actor.taxonomy.name]{stworzeniem tej samej taksonomii} w promieniu 60 stóp.</p>"
+        },
+        "Buck": {
+            "name": "Wierzgnięcie",
+            "description": "<p>@ref[actor.name]{Stworzenie} pochyla głowę w kierunku ziemi i uderza tylnymi łapami z ogromną siłą.</p>",
+            "actions": {
+                "Buck": {
+                    "name": "Wierzgnięcie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wykonuje dwa ataki @Rule[action.natural]{Naturalne} kopytami na pojedynczy cel znajdujący się za nim. Atak ten jest @Rule[action.difficult] i w przypadku trafienia zadaje <strong>obrażenia obuchowe</strong>.</p><p>W przypadku uzyskania wyniku @Rule[dice.criticalSuccess] cel otrzymuje stan @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Wierzgnięcie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Burning Death Burst": {
+            "name": "Płonący wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} ginie, wybucha gwałtownym płomieniem.</p>",
+            "actions": {
+                "Burning Death Burst": {
+                    "name": "Płonący wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>płomienia</strong>, który atakuje @Rule[defense.reflex] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[burning] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Płonący wybuch śmierci"
+                        }
+                    ]
+                }
+            }
         },
         "Burnout": {
             "name": "Wypalenie",
@@ -105,7 +155,7 @@
                 "Burnout": {
                     "name": "Wypalenie",
                     "condition": "@ref[actor.name]{Konstrukt} jest ranny",
-                    "description": "<p>@ref[actor.name]{Konstrukt} pęka, wyrzucając strumień płomieni i dymu, atakując <strong>Refleks</strong> każdego celu w promieniu i zadając obrażenia <strong>od ognia</strong>. Ci, którzy otrzymają obrażenia od tego ataku, są @Condition[blinded] przez 3 tury.</p>",
+                    "description": "<p>@ref[actor.name]{Konstrukt} pęka, wyrzucając strumień płomieni i dymu, atakując @Rule[defense.reflex] każdego celu w promieniu i zadając obrażenia <strong>od ognia</strong>. Ci, którzy otrzymają obrażenia od tego ataku, są @Condition[blinded] przez 3 tury.</p>",
                     "effects": [
                         {
                             "name": "Wypalenie"
@@ -116,12 +166,12 @@
         },
         "Burrower": {
             "name": "Kopacz",
-            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność szybkiego przedzierania się przez twarde powierzchnie, które nie są całkowicie nieprzepuszczalne.</p><p>Dodatkowo może ścisnąć swoje ciało, aby przejść przez otwory, które mogą pomieścić ¼ jego <strong>Rozmiaru</strong>.</p>",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność szybkiego przedzierania się przez twarde powierzchnie, które nie są całkowicie nieprzepuszczalne.</p><p>Dodatkowo może ścisnąć swoje ciało, aby przejść przez otwory, które mogą pomieścić ¼ jego @Rule[movement.size]{Rozmiaru}.</p>",
             "actions": {
                 "Explosive Emergence": {
                     "name": "Wybuchowe pojawienie się",
                     "condition": "Podczas kopania.",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując <strong>Wzmocniony</strong> atak.</p>"
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyłania się z ziemi z zaskakującą i nagłą siłą. Akcja ta może zostać aktywowana tylko natychmiast po opuszczeniu przez stworzenie stanu @Condition[burrowing].</p><p>@ref[actor.name]{Stworzenie} wyskakuje, aby <strong>uderzyć</strong> wszystkich wrogów znajdujących się w zasięgu jego broni, wykonując @Rule[action.empowered] atak.</p>"
                 },
                 "Submerging Withdrawal": {
                     "name": "Podwodne wycofanie",
@@ -135,7 +185,7 @@
             "actions": {
                 "Dropping Strike": {
                     "name": "Uderzenie z góry",
-                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje <strong>Wzmocniony</strong> atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia. </p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} może rzucić się z góry, aby <strong>uderzyć</strong> stworzenie znajdujące się pod nim. Cel ataku otrzymuje @Rule[action.empowered] atak, który w przypadku powodzenia powoduje @Condition[prone] oraz zadaje obrażenia.</p><p>@ref[actor.name]{Stworzenie} może otrzymać obrażenia od upadku w wyniku tego ataku tylko wtedy, gdy nie trafi w cel.</p>",
                     "effects": [
                         {
                             "name": "Uderzenie z góry"
@@ -148,6 +198,26 @@
             "name": "Absorpcja zimna",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do życia w ekstremalnie zimnym środowisku. Jego odporność na <strong>Zimno</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
         },
+        "Colossal Form": {
+            "name": "Ogromna postać",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest gigantyczne — jego słabe punkty są oddalone od siebie i dobrze chronione, a samo stworzenie jest znacznie bardziej wytrzymałe niż większość innych. @Rule[dice.criticalSuccessThreshold] dla <strong>ataków</strong> wymierzonych przeciwko niemu zostaje zwiększone o 2, a żadna siła, z wyjątkiem tych najpotężniejszych, nie jest w stanie przesunąć go wbrew jego woli.</p>"
+        },
+        "Concussive Death Burst": {
+            "name": "Ogłuszający wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, wywołując gwałtowny wybuch powodujący wstrząs.</p>",
+            "actions": {
+                "Concussive Death Burst": {
+                    "name": "Ogłuszający wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} osiągnie stan @Condition[dead], wybucha, wywołując potężny wybuch obrażeń <strong>obuchowych</strong>, który atakuje @Rule[defense.reflex] wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku krytycznego trafienia nakłada na nie stan @Condition[staggered] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Ogłuszający wybuch śmierci"
+                        }
+                    ]
+                }
+            }
+        },
         "Corrode Weapon": {
             "name": "Korodowanie broni",
             "description": "<p>Wewnętrzny korozyjny metabolizm @ref[actor.name]{śluzu} grozi rozpuszczeniem metalowej broni, która go uderzy.</p>",
@@ -155,25 +225,41 @@
                 "Corrode Weapon": {
                     "name": "Korodowanie broni",
                     "condition": "Uderzony w walce wręcz bronią wykonaną z metalu.",
-                    "description": "<p>Po uderzeniu bronią białą wykonaną z metalu, śluz próbuje pochłonąć samą broń, potencjalnie ją łamiąc. </p><p>Atak ten jest <strong>Nieszkodliwy</strong>, ale jeśli się powiedzie, <strong>Jakość</strong> broni użytej do ataku zostaje obniżona o jeden poziom. W przypadku Krytycznego Sukcesu lub jeśli broń jest już <strong>Tandetna</strong>, broń zostaje całkowicie <strong>Zepsuta</strong>. Broń zaklęta jest chroniona przed tym efektem.</p>"
+                    "description": "<p>Po uderzeniu bronią białą wykonaną z metalu, śluz próbuje pochłonąć samą broń, potencjalnie ją łamiąc. </p><p>Atak ten jest @Rule[action.harmless], ale jeśli się powiedzie, <strong>Jakość</strong> broni użytej do ataku zostaje obniżona o jeden poziom. W przypadku @Rule[dice.criticalSuccess]{Krytycznego sukcesu} lub jeśli broń jest już <strong>Tandetna</strong>, broń zostaje całkowicie <strong>Zepsuta</strong>. Broń <strong>zaklęta</strong> jest chroniona przed tym efektem.</p>"
+                }
+            }
+        },
+        "Corroding Death Burst": {
+            "name": "Korodujący wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, rozpryskując żrący kwas.</p>",
+            "actions": {
+                "Corroding Death Burst": {
+                    "name": "Korodujący wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>kwasu</strong>, który atakuje @Rule[defense.fortitude] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[corroding] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Korodujący wybuch śmierci"
+                        }
+                    ]
                 }
             }
         },
         "Corrosive Strikes": {
             "name": "Ataki korozyjne",
-            "description": "<p>Żrące ciało @ref[actor.name]{stworzenia} wypala wszystko, co dotknie. Gdy zadaje ono <strong>trafienie krytyczne</strong> atakiem wręcz, który zadaje obrażenia do zdrowia, cel otrzymuje @Condition[corroding] na 3 rundy.</p>"
+            "description": "<p>Żrące ciało @ref[actor.name]{stworzenia} wypala wszystko, co dotknie. Gdy zadaje ono @Rule[dice.criticalSuccess]{Trafienie krytyczne} atakiem wręcz, który zadaje obrażenia do @Rule[resource.health]{zdrowia}, cel otrzymuje @Condition[corroding] na <strong>3 rundy</strong>.</p>"
         },
         "Corrupting Death Burst": {
-            "name": "Niszczycielska fala śmierci",
+            "name": "Niszczycielski wybuch śmierci",
             "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę energii zepsucia.</p>",
             "actions": {
                 "Corrupting Death Burst": {
-                    "name": "Niszczycielska fala śmierci",
+                    "name": "Niszczycielski wybuch śmierci",
                     "condition": "Stworzenie staje się martwe.",
-                    "description": "<p>Gdy @ref[actor.name]{stworzenie} uzyska stan @Condition[dead], eksploduje, wyrzucając chmurę zarodników, które zadają obrażenia <strong>od rozkładu</strong>, atakując <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakładając na nie stan @Condition[decaying] na <strong>3 rundy</strong>.</p>",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} uzyska stan @Condition[dead], eksploduje, wyrzucając chmurę zarodników, które zadają obrażenia <strong>od rozkładu</strong>, atakując @Rule[defense.fortitude] wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakładając na nie stan @Condition[decaying] na <strong>3 rundy</strong>.</p>",
                     "effects": [
                         {
-                            "name": "Niszczycielska fala śmierci"
+                            "name": "Niszczycielski wybuch śmierci"
                         }
                     ]
                 }
@@ -181,7 +267,7 @@
         },
         "Corruption Absorption": {
             "name": "Absorpcja zepsucia",
-            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii śmierci. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność ignorowania efektów magii <strong>śmierci</strong>. Jego odporność na <strong>Zepsucie</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
         },
         "Crushing Leap": {
             "name": "Miażdżący skok",
@@ -189,10 +275,70 @@
             "actions": {
                 "Crushing Leap": {
                     "name": "Miażdżący skok",
-                    "description": "<p>Wyskakujesz w powietrze, lądując w widocznym miejscu w promieniu 30 stóp i uderzając z miażdżącą siłą. Wszystkie stworzenia znajdujące się w obszarze powstałego <strong>Wybuchu</strong> muszą wykonać rzut obronny na <strong>Refleks</strong>, otrzymują <strong>obrażenia obuchowe</strong> i otrzymują stan @Condition[prone]. Wybuch rozchodzi się na zewnątrz od miejsca, w którym stoisz, więc większe stworzenia uderzają w ziemię na większym obszarze. Ta akcja skaluje się z twoją najwyższą cechą <strong>Siły</strong> lub <strong>Wytrzymałości</strong>.</p>",
+                    "description": "<p>Wyskakujesz w powietrze, lądując w widocznym miejscu w promieniu 30 stóp i uderzając z miażdżącą siłą. Wszystkie stworzenia znajdujące się w obszarze powstałego <strong>Wybuchu</strong> muszą wykonać rzut obronny na @Rule[defense.reflex], otrzymują <strong>obrażenia obuchowe</strong> i otrzymują stan @Condition[prone]. <strong>Wybuch</strong> rozchodzi się na zewnątrz od miejsca, w którym stoisz, więc większe stworzenia uderzają w ziemię na większym obszarze. Ta akcja skaluje się z twoją najwyższą cechą @Rule[ability.strength]{Siły} lub @Rule[ability.toughness]{Wytrzymałości}.</p>",
                     "effects": [
                         {
                             "name": "Miażdżący skok"
+                        }
+                    ]
+                }
+            }
+        },
+        "Darkvision": {
+            "name": "Widzenie w ciemności",
+            "description": "<p>@ref[actor.name]{Stworzenie} widzi w ciemności tak, jakby panowało słabe światło w odległości do 60 stóp, postrzegając otoczenie w odcieniach szarości. Widzenie w ciemności nie działa, gdy @ref[actor.name]{stworzenie} znajduje się w stanie @Condition[blinded].</p>"
+        },
+        "Debilitating Tendrils": {
+            "name": "Osłabiające macki",
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada liczne macki pokryte silną neurotoksyną.</p>",
+            "actions": {
+                "Debilitating Tendrils": {
+                    "name": "Osłabiające macki",
+                    "description": "<p>Ten atak jest skierowany przeciwko @Rule[defense.fortitude] i naraża stworzenie na działanie neurotoksyny, która może spowodować osłabienie. Ten @Rule[action.weakened] atak zadaje obrażenia typu @Rule[damageType.poison] na @Rule[resource.morale] oraz nakłada na cel stan @Condition[poisoned] na 3 tury.</p><p>W przypadku krytycznego sukcesu nakłada również stan @Condition[paralyzed] na 2 tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Osłabiające macki"
+                        },
+                        {
+                            "name": "Osłabiające macki"
+                        }
+                    ]
+                }
+            }
+        },
+        "Digestive Sacs": {
+            "name": "Woreczki trawienne",
+            "description": "<p>@ref[actor.name]{Stworzenie} może wciągnąć do swoich wnętrzności stworzenie, którego @Rule[movement.size] jest co najmniej o 2 mniejsze od jego własnego, aby zostało strawione przez żrące kwasy. Jednorazowo można pochłonąć maksymalnie trzy stworzenia.</p><p>Jeśli @ref[actor.name]{stworzenie} uzyska stan @Condition[burning], @Condition[stunned], @Condition[incapacitated] lub @Condition[weakened], zwraca wszystkie pochłonięte stworzenia.</p>",
+            "actions": {
+                "Digestive Sacs": {
+                    "name": "Woreczki trawienne",
+                    "description": "<p>Wciągasz wybranego wroga do jednego ze swoich woreczków trawiennych. Pochłonięty cel pozostaje w stanach @Condition[restrained] i @Condition[corroding] aż do momentu uwolnienia, ponieważ kwasy trawienne próbują go strawić. </p><p>Jeśli zyskasz stan @Condition[burning], @Condition[stunned], @Condition[incapacitated] lub @Condition[weakened], zwracasz wszystkie pochłonięte stworzenia.</p>",
+                    "effects": [
+                        {
+                            "name": "Woreczki trawienne"
+                        },
+                        {
+                            "name": "Trawienie"
+                        }
+                    ]
+                },
+                "Regurgitate": {
+                    "name": "Zwracanie",
+                    "description": "<p>Wypluwasz wszystkie stworzenia uwięzione w twoich woreczkach trawiennych, uwalniając je do przestrzeni wokół ciebie i znosząc stany @Condition[restrained] oraz @Condition[corroding] nałożone przez twoje woreczki.</p>"
+                }
+            }
+        },
+        "Disorienting Death Burst": {
+            "name": "Dezorientujący wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, wybucha gwałtownym rozbłyskiem dezorientującej energii.</p>",
+            "actions": {
+                "Disorienting Death Burst": {
+                    "name": "Dezorientujący wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha impulsem <strong>psychicznej</strong> energii, który atakuje @Rule[defense.willpower] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[confused] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Dezorientujący wybuch śmierci"
                         }
                     ]
                 }
@@ -209,6 +355,16 @@
                 }
             }
         },
+        "Earthmeld": {
+            "name": "Wtopienie w skałę",
+            "description": "<p>@ref[actor.name]{Stworzenie} jest w stanie poruszać się błyskawicznie w skale.</p>",
+            "actions": {
+                "Earthmeld": {
+                    "name": "Wtopienie w skałę",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} styka się z litą skałą, może natychmiast przenieść się do dowolnego wolnego miejsca stykającego się z tą samą formacją skalną, oddalonego o maksymalnie <strong>30 stóp</strong>. Nie musi widzieć miejsca docelowego, aby wykonać ten <strong>Ruch</strong>.</p>"
+                }
+            }
+        },
         "Echolocation": {
             "name": "Echolokacja",
             "description": "<p>@ref[actor.name]{To stworzenie} postrzega świat poprzez emitowanie impulsów dźwiękowych, które precyzyjnie wykrywają kształty, co pozwala mu zlokalizować poruszające się lub w inny sposób emitujące dźwięk stworzenia w odległości do 60 stóp, o ile nie znajdują się one za całkowitą osłoną. Jeśli stworzenie jest w stanie @Condition[deafened], nie może korzystać z tego zmysłu. </p><p>Stworzenie wykryte za pomocą akcji @ref[name] jest traktowane jako widoczne dla celów akcji, które wymagają widzenia celu.</p>"
@@ -217,9 +373,25 @@
             "name": "Absorpcja elektryczności",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przyjmowania uderzeń pioruna bez mrugnięcia okiem. Jego odporność na <strong>Elektryczność</strong> jest podwojona, a jeśli ta odporność zmniejszyłaby ilość obrażeń poniżej zera, ujemna wartość jest traktowana jako <strong>Uzdrawianie</strong>.</p>"
         },
+        "Electrostatic Death Burst": {
+            "name": "Elektrostatyczny wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę energii elektrostatycznej.</p>",
+            "actions": {
+                "Electrostatic Death Burst": {
+                    "name": "Elektrostatyczny wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>elektryczności</strong>, który atakuje @Rule[defense.reflex] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[shocked] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Elektrostatyczny wybuch śmierci"
+                        }
+                    ]
+                }
+            }
+        },
         "Elusive Flight": {
             "name": "Nieuchwytny lot",
-            "description": "<p>@ref[actor.name]{Stworzenie} jest szczególnie nieuchwytne podczas lotu, potrafiące wlatywać i wylatywać z walki bez wywoływania <strong>Wycofania się</strong>. Można je zaatakować, jeśli wyląduje na ziemi, a Wycofanie się może mieć zastosowanie, jeśli spróbuje powrócić do lotu.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} jest szczególnie nieuchwytne podczas lotu, potrafiące wlatywać i wylatywać z walki bez wywoływania akcji @Action[default reactiveStrike]. Może być @Rule[movement.engagement]{Zaangażowane}, jeśli obiekt wyląduje na ziemi, a takie ataki można zastosować, jeśli spróbuje ponownie wzbić się w powietrze.</p>"
         },
         "Ensnare": {
             "name": "Zwabianie",
@@ -227,10 +399,26 @@
             "actions": {
                 "Ensnare": {
                     "name": "Zwabianie",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyciąga rękę, by chwycić pojedynczy cel znajdujący się w zasięgu, atakując jego <strong>Refleks</strong>. W przypadku powodzenia cel zostaje przyciągnięty z powrotem do zasięgu i otrzymuje stan @Condition[restrained]. Akcja ta może zostać użyta wyłącznie wobec stworzeń, które kwalifikują się jako cele dla @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple].</p><p>Utrzymanie trwa do momentu, gdy @ref[actor.name]{stworzenie} zwolni cel, cel ucieknie lub inna istota zostanie wybrana jako cel dla Zwabienia.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyciąga rękę, by chwycić pojedynczy cel znajdujący się w zasięgu, atakując jego @Rule[defense.reflex]. W przypadku powodzenia cel zostaje przyciągnięty z powrotem do zasięgu i otrzymuje stan @Condition[restrained]. Akcja ta może zostać użyta wyłącznie wobec stworzeń, które kwalifikują się jako cele dla @Action[Compendium.crucible.talent.Item.grapple000000000 grapple].</p><p>Utrzymanie trwa do momentu, gdy @ref[actor.name]{stworzenie} zwolni cel, cel ucieknie lub inna istota zostanie wybrana jako cel dla Zwabienia.</p>",
                     "effects": [
                         {
                             "name": "W pułapce"
+                        }
+                    ]
+                }
+            }
+        },
+        "Entropic Death Burst": {
+            "name": "Entropiczny wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę energii pustki.</p>",
+            "actions": {
+                "Entropic Death Burst": {
+                    "name": "Entropiczny wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha impulsem energii <strong>pustki</strong>, który atakuje @Rule[defense.willpower] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[entropy] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Entropiczny wybuch śmierci"
                         }
                     ]
                 }
@@ -244,13 +432,54 @@
             "name": "Fałszywy wygląd",
             "description": "<p>@ref[actor.name]{Stworzenie} jest nie do odróżnienia od innych obiektów lub materiałów, gdy pozostaje nieruchome.</p>"
         },
+        "Field Repairs": {
+            "name": "Naprawy terenowe",
+            "description": "<p>@ref[actor.name]{Inżynier} może szybko naprawić niektóre uszkodzenia sojuszniczego <strong>Konstruktu</strong>.</p>",
+            "actions": {
+                "Field Repairs": {
+                    "name": "Naprawy terenowe",
+                    "description": "<p>Szybko naprawiasz obrażenia sojuszniczego konstrukta w promieniu <strong>4 stóp</strong>. Wykonaj @Rule[skill.science]{Test nauki} przeciwko @Rule[defense.wounds]{Progu leczenia} celu. @Rule[resource.health] twojego sojusznika wzrasta o nadwyżkę wyniku testu.</p>"
+                }
+            }
+        },
         "Fire Absorption": {
             "name": "Absorpcja ognia",
             "description": "<p>@ref[actor.name]{Stworzenie} posiada wyjątkową zdolność do przetrwania w ekstremalnie gorącym środowisku. Jego odporność na <strong>Ogień</strong> jest podwojona, a jeśli ta odporność spowoduje zmniejszenie ilości obrażeń poniżej zera, ujemna wartość zostanie zamieniona na <strong>Uzdrawianie</strong>.</p>"
         },
+        "Flanking Maneuver": {
+            "name": "Manewr oskrzydlający",
+            "description": "<p>Działając w tandemie ze swoim panem, @ref[actor.name]{towarzysz} potrafi stworzyć luki w obronie nawet najbardziej czujnych przeciwników.</p>",
+            "actions": {
+                "Flanking Maneuver": {
+                    "name": "Manewr oskrzydlający",
+                    "description": "<p>@ref[actor.name]{Towarzysz} zadaje celowy cios przeciwnikowi, z którym w danej chwili walczy jego pan. W przypadku trafienia przeciwnik przechodzi w stan @Condition[overrun] do początku swojej następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Manewr oskrzydlający"
+                        }
+                    ]
+                }
+            }
+        },
+        "Freezing Death Burst": {
+            "name": "Zamarzający wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę mrożącej energii.</p>",
+            "actions": {
+                "Freezing Death Burst": {
+                    "name": "Zamarzający wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>zimnego</strong> powietrza, który atakuje @Rule[defense.fortitude] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[freezing] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Zamarzający wybuch śmierci"
+                        }
+                    ]
+                }
+            }
+        },
         "Glider": {
             "name": "Szybowanie",
-            "description": "<p>@ref[actor.name]{Stworzenie} kontroluje swoje opadanie podczas upadku. O ile nie jest obezwładnione ani unieruchomione, upadek zamienia się w <strong>szybowanie</strong>: ruch w dół w trybie latania zamiast uderzenia o podłoże, bez ponoszenia obrażeń od upadku.</p><p>Podczas szybowania <strong>zasięg biegu</strong> stworzenia podwaja się i otrzymuje ono darmowy ruch, dzięki czemu zawsze może szybować przynajmniej na niewielką odległość. Jego szybowanie musi przebiegać w dół, a miejsce, w którym ruch się kończy, jest miejscem, w którym zatrzymuje się; jeśli kończy szybowanie wciąż w powietrzu, zyskuje stan @Condition[flying].</p>",
+            "description": "<p>@ref[actor.name]{Stworzenie} kontroluje swoje opadanie podczas upadku. O ile nie jest @Condition[incapacitated] ani @Condition[restrained], upadek zamienia się w <strong>szybowanie</strong>: ruch w dół w trybie <strong>Lotu</strong> zamiast uderzenia o podłoże, bez ponoszenia obrażeń od upadku.</p><p>Podczas szybowania @Rule[movement.stride] stworzenia podwaja się i otrzymuje ono @Rule[movement.freeMovement]{darmowy ruch}, dzięki czemu zawsze może szybować przynajmniej na niewielką odległość. Jego szybowanie musi przebiegać w dół, a miejsce, w którym ruch się kończy, jest miejscem, w którym zatrzymuje się; jeśli kończy szybowanie wciąż w powietrzu, zyskuje stan @Condition[flying].</p>",
             "actions": {
                 "Glide": {
                     "name": "Szybowanie",
@@ -266,17 +495,47 @@
             "name": "Świecące ciało",
             "description": "<p>@ref[actor.name]{Stworzenie} emituje niemagiczne jasne światło w promieniu 15 stóp i słabe światło w promieniu 30 stóp.</p>"
         },
+        "Gore": {
+            "name": "Bodnięcie",
+            "description": "<p>@ref[actor.name]{Stworzenie} uderza swoim porożem, kłami lub rogami w inne stworzenie z całej siły.</p>",
+            "actions": {
+                "Gore": {
+                    "name": "Bodnięcie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} uderza swoim porożem, kłami lub rogami w inne stworzenie z cechą @Rule[action.brute], wykonując @Rule[action.deadly] atak, który – jeśli się powiedzie – powoduje również, że cel znajduje się w stanie @Condition[staggered] do końca swojej następnej <strong>tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Bodnięcie"
+                        }
+                    ]
+                }
+            }
+        },
         "Grave Mark": {
             "name": "Trupi znak",
-            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zadaje Krytyczne Trafienie atakiem wręcz, pozostawia na swoim celu złowrogi Trupi Znak.</p>",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} zadaje @Rule[dice.criticalSuccess]{Krytyczne trafienie} atakiem wręcz, pozostawia na swoim celu złowrogi <strong>Trupi Znak</strong>.</p>",
             "actions": {
                 "Grave Mark": {
                     "name": "Trupi znak",
                     "condition": "W przypadku Trafienia krytycznego atakiem wręcz.",
-                    "description": "<p>Po osiągnięciu <strong>Krytycznego Trafienia</strong> atakiem wręcz, @ref[actor.name]{stworzenie} atakuje obronę <strong> Woli</strong> celu, pozostawiając w przypadku sukcesu Trupi Znak, który nakłada stan @Condition[exhausted], utrzymujący się do momentu, aż cel zakończy <strong>Odpoczynek</strong>.</p><p>Jeśli humanoidalna istota nosząca Trupi Znak umrze pod wpływem tego znaku, w następnej turze powstaje z martwych jako @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
+                    "description": "<p>Po osiągnięciu @Rule[dice.criticalSuccess]{Krytycznego trafienia} atakiem wręcz, @ref[actor.name]{stworzenie} atakuje @Rule[defense.willpower]{Wolę} celu, pozostawiając w przypadku sukcesu <strong>Trupi Znak</strong>, który nakłada stan @Condition[exhausted], utrzymujący się do momentu, aż cel zakończy @Action[default rest].</p><p>Jeśli humanoidalna istota nosząca <strong>Trupi Znak</strong> umrze pod wpływem tego znaku, w następnej <strong>turze</strong> powstaje z martwych jako @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
                     "effects": [
                         {
                             "name": "Trupi znak"
+                        }
+                    ]
+                }
+            }
+        },
+        "Hexing Burst": {
+            "name": "Fala klątwy",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi wytworzyć i wyrzucić potężny strumień niemal namacalnego pecha.</p>",
+            "actions": {
+                "Hexing Burst": {
+                    "name": "Fala klątwy",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wystrzeliwuje falę czystego nieszczęścia o zasięgu 15 stóp, atakując @Rule[defense.willpower]{Wolę} każdego wrogiego celu znajdującego się w tym zasięgu. Ta fala jest @Rule[action.harmless]{Nieszkodliwa}, ale w przypadku sukcesu cele pozostają w stanie @Condition[hexed] do końca swojej następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Fala klątwy"
                         }
                     ]
                 }
@@ -289,7 +548,7 @@
                 "Horrific Critical": {
                     "name": "Przerażający krytyk",
                     "condition": "Natychmiast po tym, jak stworzenie osiągnie Trafienie krytyczne atakiem wręcz.",
-                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} osiąga <strong>Krytyczne Trafienie</strong> za pomocą ataku wręcz, może wyolbrzymiać cios w sposób, który wywołuje strach u tych, którzy są świadkami uderzenia.</p><p>Wszyscy przeciwnicy w promieniu 30 stóp, którzy widzą stworzenie, muszą wykonać <strong>Nieszkodliwy</strong> test przeciwko swojej <strong>Woli</strong> lub otrzymają @Condition[frightened] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} osiąga @Rule[dice.criticalSuccess]{Krytyczne trafienie} za pomocą ataku wręcz, może wyolbrzymiać cios w sposób, który wywołuje strach u tych, którzy są świadkami uderzenia.</p><p>Wszyscy przeciwnicy w promieniu 30 stóp, którzy widzą stworzenie, muszą wykonać @Rule[action.harmless] test przeciwko swojej @Rule[defense.willpower]{Woli} lub otrzymają @Condition[frightened] na <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Przerażający krytyk"
@@ -308,7 +567,7 @@
             "actions": {
                 "Lightning Burst": {
                     "name": "Wybuch błyskawicy",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wystrzeliwuje błyskawicę o zasięgu 15 stóp, atakując <strong>Refleks</strong> każdego celu znajdującego się w tym zasięgu i zadając <strong>obrażenia od elektryczności</strong>.</p><p>W przypadku <strong>trafienia krytycznego</strong> atak powoduje stan @Condition[shocked] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wystrzeliwuje błyskawicę o zasięgu 15 stóp, atakując @Rule[defense.reflex] każdego celu znajdującego się w tym zasięgu i zadając <strong>obrażenia od elektryczności</strong>.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} atak powoduje stan @Condition[shocked] na <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Wybuch błyskawicy"
@@ -323,7 +582,7 @@
             "actions": {
                 "Lightning Spit": {
                     "name": "Plucie błyskawicą",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wypluwa niewielką błyskawicę w kierunku wybranego stworzenia znajdującego się w odległości do 20 stóp, atakując jego <strong>Refleks</strong> i zadając obrażenia <strong>Elektryczne</strong>.</p><p>W przypadku <strong>Krytycznego Trafienia</strong> atak powoduje stan @Condition[shocked] trwający <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wypluwa niewielką błyskawicę w kierunku wybranego stworzenia znajdującego się w odległości do 20 stóp, atakując jego @Rule[defense.reflex] i zadając obrażenia <strong>Elektryczne</strong>.</p><p>W przypadku @Rule[dice.criticalSuccess]{Krytycznego trafienia} atak powoduje stan @Condition[shocked] trwający <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Plucie błyskawicą"
@@ -338,7 +597,7 @@
             "actions": {
                 "Lightning Spray": {
                     "name": "Rozprysk błyskawicy",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyrzuca błyskawicę o zasięgu 30 stóp i szerokości 4 stóp, atakując <strong>Refleks</strong> każdego celu na tej ścieżce i zadając obrażenia <strong>Elektryczne</strong>. </p><p>W przypadku <strong>Trafienia krytycznego</strong> atak powoduje stan @Condition[shocked] trwający <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wystrzeliwuje błyskawicę o zasięgu 30 stóp i szerokości 4 stóp, atakując @Rule[defense.reflex] każdego celu znajdującego się na tej trajektorii i zadając <strong>obrażenia elektryczne</strong>.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} atak powoduje wystąpienie stanu @Condition[shocked] przez <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Rozprysk błyskawicy"
@@ -349,7 +608,22 @@
         },
         "Living Boulder": {
             "name": "Żyjący głaz",
-            "description": "<p>@ref[actor.name]{Stworzenie} czerpie moc z ziemi poprzez swoją masę fizyczną, a nie umysł. Jej wykorzystanie runy <strong>Runy Ziemi</strong> zależy od <strong>Wytrzymałości</strong>, a nie od <strong>Mądrości</strong>.</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} czerpie moc z ziemi poprzez swoją masę fizyczną, a nie umysł. Jej wykorzystanie runy <strong>Runy Ziemi</strong> zależy od @Rule[ability.toughness]{Wytrzymałości}, a nie od @Rule[ability.wisdom]{Mądrości}.</p>"
+        },
+        "Loyal Protector": {
+            "name": "Wierny obrońca",
+            "description": "<p>@ref[actor.name]{Towarzysz} jest niezwykle lojalny wobec swojego pana i natychmiast po wezwaniu podejdzie do niego, zapewniając mu wsparcie obronne.</p>",
+            "actions": {
+                "Loyal Protector": {
+                    "name": "Wierny obrońca",
+                    "description": "<p>@ref[actor.name]{Towarzysz} przemieszcza się obok swojego pana, zapewniając mu stan @Condition[guarded] do początku jego następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Wierny obrońca"
+                        }
+                    ]
+                }
+            }
         },
         "Maddening Shriek": {
             "name": "Obłędny wrzask",
@@ -357,7 +631,7 @@
             "actions": {
                 "Maddening Shriek": {
                     "name": "Obłędny wrzask",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wydaje przenikliwy, ostry skrzek, który osłabia <strong>Morale</strong> wszystkich znajdujących się w zasięgu i nakłada na nich stan @Condition[deafened] na jedną rundę.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wydaje przenikliwy, ostry skrzek, który osłabia @Rule[resource.morale] wszystkich znajdujących się w zasięgu i nakłada na nich stan @Condition[deafened] na jedną rundę.</p>",
                     "effects": [
                         {
                             "name": "Obłędny wrzask"
@@ -368,7 +642,7 @@
         },
         "Magical Sight": {
             "name": "Magiczny wzrok",
-            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność widzenia, dzięki której jest szczególnie wyczulony na niebezpieczeństwa i okazje. Otrzymuje +2 <strong>Korzyści</strong> do wszystkich testów <strong>Świadomości</strong> i może widzieć stworzenia @Condition[invisible].</p>"
+            "description": "<p>@ref[actor.name]{Stworzenie} posiada nadprzyrodzoną zdolność widzenia, dzięki której jest szczególnie wyczulony na niebezpieczeństwa i okazje. Otrzymuje @Rule[dice.boon]{+2 Korzyści} do wszystkich testów @Rule[skill.awareness]{Świadomości} i może widzieć stworzenia w stanie @Condition[invisible].</p>"
         },
         "Multiply": {
             "name": "Wielokrotność",
@@ -376,7 +650,7 @@
             "actions": {
                 "Multiply": {
                     "name": "Wielokrotność",
-                    "description": "<p>Komórki szlamu szybko się namnażają wraz z rozwojem stworzenia. Jego <strong>Rozmiar</strong> zwiększa się o 1, a <strong>Zdrowie</strong> wzrasta o wartość jego <strong>Wytrzymałości</strong>.</p>"
+                    "description": "<p>Komórki szlamu szybko się namnażają wraz z rozwojem stworzenia. Jego @Rule[movement.size] zwiększa się o 1, a @Rule[resource.health] wzrasta o wartość jego @Rule[ability.toughness]{Wytrzymałości}.</p>"
                 }
             }
         },
@@ -401,10 +675,25 @@
             "actions": {
                 "Necrotic Bite": {
                     "name": "Nekrotyczne ugryzienie",
-                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje zaraźliwym ugryzieniem, które jest <strong>Wzmocnione</strong> i zadaje obrażenia od <strong>zepsucia</strong>.</p><p>W przypadku <strong>Krytycznego Sukcesu</strong> atak powoduje stan @Condition[decaying] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje zaraźliwym ugryzieniem, które jest @Rule[action.empowered] i zadaje obrażenia od <strong>zepsucia</strong>.</p><p>W przypadku @Rule[dice.criticalSuccess]{Krytycznego sukcesu} atak powoduje stan @Condition[decaying] na <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Nekrotyczne ugryzienie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Noxious Burst": {
+            "name": "Trujący wybuch",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi wyzwolić chmurę trującego gazu.</p>",
+            "actions": {
+                "Noxious Burst": {
+                    "name": "Trujący wybuch",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wytwarza wybuch trującego gazu o zasięgu 15 stóp, atakując @Rule[defense.fortitude] każdego celu znajdującego się w tym zasięgu i zadając obrażenia typu @Rule[damageType.poison] na @Rule[resource.morale].</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} atak powoduje wystąpienie stanu @Condition[poisoned] przez <strong>3 tury</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Trujący wybuch"
                         }
                     ]
                 }
@@ -416,7 +705,7 @@
             "actions": {
                 "Noxious Spit": {
                     "name": "Plucie trucizną",
-                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kulką toksyny w kierunku stworzenia znajdującego się w odległości do 20 stóp, atakując jego <strong>Refleks</strong> i zadając obrażenia <strong>Trucizną</strong>.</p><p>W przypadku <strong>Krytycznego Trafienia</strong> atak powoduje stan @Condition[poisoned] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} pluje kulką trucizny w wybrane stworzenie znajdujące się w odległości do 20 stóp, atakując jego @Rule[defense.reflex] i zadając <strong>obrażenia od trucizny</strong>.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} atak powoduje wystąpienie stanu @Condition[poisoned] przez <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Plucie trucizną"
@@ -431,7 +720,7 @@
             "actions": {
                 "Noxious Spray": {
                     "name": "Rozprysk trucizny",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wyrzuca toksyczną substancję w promieniu 30 stóp i szerokości 4 stóp, atakując <strong>Refleks</strong> każdego celu na tej ścieżce i zadając obrażenia <strong>Trucizną</strong>.</p><p>W przypadku <strong>Trafienia krytycznego</strong> atak powoduje stan @Condition[poisoned] na <strong>3 tury</strong>.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wyzwala toksyczny strumień o zasięgu 30 stóp i szerokości 4 stóp, atakując @Rule[defense.reflex] każdego celu znajdującego się na tej ścieżce i zadając <strong>trujące</strong> obrażenia.</p><p>W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} atak powoduje wystąpienie stanu @Condition[poisoned] przez <strong>3 tury</strong>.</p>",
                     "effects": [
                         {
                             "name": "Rozprysk trucizny"
@@ -440,9 +729,13 @@
                 }
             }
         },
+        "Noxious Strikes": {
+            "name": "Trujące ataki",
+            "description": "<p>Ciało @ref[actor.name]{stworzenia} zadaje efekt zatrucia każdemu, kogo uderzy. Gdy zadaje @Rule[dice.criticalSuccess]{Trafienie krytyczne} atakiem wręcz, który zadaje obrażenia @Rule[resource.health], cel otrzymuje @Condition[poisoned] na <strong>3 rundy</strong>.</p>"
+        },
         "Pack Hunter": {
             "name": "Stadny łowca",
-            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę Korzyści przyznawanych za atakowanie wroga ze stanem @Condition[flanked].</p>"
+            "description": "<p>Ta istota poluje w stadzie, polegając na swoich sojusznikach, którzy flankują i nękają cel, aby narazić go na dalsze obrażenia.</p><p>Ta istota podwaja liczbę @Rule[dice.boon]{Korzyści} przyznawanych za atakowanie wroga ze stanem @Condition[flanked].</p>"
         },
         "Polybrachial": {
             "name": "Wieloramienny",
@@ -454,7 +747,7 @@
             "actions": {
                 "Pouncing Strike": {
                     "name": "Atak z wyskoku",
-                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który zbliża @ref[actor.name]{stworzenie} o co najmniej 10 stóp do celu. Jeśli stworzenie znajdowało się nad celem, atak ten zyskuje <strong>+1 Korzyść</strong> za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest <strong>Trafieniem krytycznym</strong>, cel ataku natychmiast zostaje @Condition[prone].</p>",
+                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który zbliża @ref[actor.name]{stworzenie} o co najmniej 10 stóp do celu. Jeśli stworzenie znajdowało się nad celem, atak ten zyskuje @Rule[dice.boon]{+1 Korzyść} za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest @Rule[dice.criticalSuccess]{Trafieniem krytycznym}, cel ataku natychmiast zostaje @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Atak z wyskoku"
@@ -478,7 +771,7 @@
                 "Radiant Death Burst": {
                     "name": "Świetlisty wybuch śmierci",
                     "condition": "Stworzenie staje się martwe.",
-                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha impulsem energii <strong>Świetlistej</strong>, który atakuje <strong>Wytrwałość</strong> wszystkich pobliskich stworzeń, którym nie uda się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[irradiated] na <strong>3 rundy</strong>.</p>",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>świetlistej</strong> energii, który atakuje @Rule[defense.fortitude] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[irradiated] na <strong>3 rundy</strong>.</p>",
                     "effects": [
                         {
                             "name": "Świetlisty wybuch śmierci"
@@ -487,16 +780,16 @@
                 }
             }
         },
-        "Raking Talons": {
-            "name": "Drapieżne szpony",
+        "Rake": {
+            "name": "Rozszarpywanie",
             "description": "<p>@ref[actor.name]{Stworzenie} atakuje szybko swoimi szponami, zadając wiele ciosów pojedynczemu celowi.</p>",
             "actions": {
-                "Raking Talons": {
-                    "name": "Drapieżne szpony",
-                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje szybko oboma szponami.</p><p>Jeśli co najmniej jeden atak zakończy się <strong>Krytycznym Sukcesem</strong>, powoduje on stan @Condition[bleeding] trwający <strong>2 rundy</strong>.</p>",
+                "Rake": {
+                    "name": "Rozszarpywanie",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje błyskawicznie pazurami lub szponami.</p><p>Jeśli co najmniej jeden atak zakończy się @Rule[dice.criticalSuccess]{Sukcesem}, powoduje to wystąpienie stanu @Condition[bleeding] trwającego <strong>2 rundy</strong>.</p>",
                     "effects": [
                         {
-                            "name": "Drapieżne szpony"
+                            "name": "Rozszarpywanie"
                         }
                     ]
                 }
@@ -508,7 +801,7 @@
             "actions": {
                 "Repugnant Pustules": {
                     "name": "Odrażające czyraki",
-                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od <strong>Wytrzymałość</strong> i atakuje obronę <strong>Refleks</strong> każdej istoty w promieniu 3 stóp. </p><p>W przypadku <strong>Krytycznego Sukcesu</strong> dotknięty cel staje się tymczasowo @Condition[diseased] na 3 rundy.</p>",
+                    "description": "<p>Kiedy @ref[actor.name]{stworzenie} zostanie trafione przez <strong>uderzenie</strong>, może częściowo pęknąć, uwalniając strumień obrzydliwego płynu, który zadaje obrażenia od <strong>Zepsucia</strong>. Akcja ta jest skalowana w zależności od @Rule[ability.toughness]{Wytrzymałości} i atakuje @Rule[defense.reflex] każdej istoty w promieniu 3 stóp.</p><p>W przypadku @Rule[dice.criticalSuccess]{Krytycznego sukcesu} dotknięty cel staje się tymczasowo @Condition[diseased] na <strong>3 rundy</strong>.</p>",
                     "effects": [
                         {
                             "name": "Odrażające czyraki"
@@ -527,7 +820,7 @@
             "actions": {
                 "Restraining Chomp": {
                     "name": "Zaciśnięcie",
-                    "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy <strong>Rozmiar</strong>, otrzymuje również stan @Condition[restrained], dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
+                    "description": "<p>Stworzenie gryzie swoją ofiarę. Jeśli atak się powiedzie, a ofiara ma taki sam lub mniejszy @Rule[movement.size], otrzymuje również stan @Condition[restrained], dopóki stworzenie nie zdecyduje się jej uwolnić lub unieruchomienie nie zostanie w inny sposób przerwane. W danym momencie tylko jedna ofiara może zostać unieruchomiona w wyniku tej akcji.</p>",
                     "effects": [
                         {
                             "name": "Zaciśnięcie"
@@ -543,7 +836,7 @@
                 "Sacrifice Self": {
                     "name": "Poświęcenie siebie",
                     "condition": "Pobliskiego sojusznika atakuje wróg.",
-                    "description": "<p>@ref[actor.name]{Stworzenie} reaguje, wykonując <strong>Ruch</strong> o długości równej <strong>Biegowi</strong>, aby stanąć między pobliskim sojusznikiem a źródłem zagrożenia, które jest w stanie dostrzec.</p><p>@ref[actor.name]{Stworzenie} staje się @Condition[dead], ginąc w wyniku swojego poświęcenia, ale wywołująca to działanie akcja nie powoduje żadnych skutków dla pierwotnego celu.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} reaguje, wykonując <strong>Ruch</strong> o długości równej @Rule[movement.stride]{Biegu}, aby stanąć między pobliskim sojusznikiem a źródłem zagrożenia, które jest w stanie dostrzec.</p><p>@ref[actor.name]{Stworzenie} staje się @Condition[dead], ginąc w wyniku swojego poświęcenia, ale wywołująca to działanie akcja nie powoduje żadnych skutków dla pierwotnego celu.</p>",
                     "effects": [
                         {
                             "name": "Poświęcenie siebie"
@@ -558,7 +851,7 @@
             "actions": {
                 "Self-Repair": {
                     "name": "Samonaprawa",
-                    "description": "<p>Konstrukt odzyskuje swoją wartość <strong>Wytrzymałości</strong> w postaci <strong>Zdrowia</strong> i natychmiast kończy jeden wybrany przez siebie stan, który obecnie na niego oddziałuje.</p>"
+                    "description": "<p>Konstrukt odzyskuje swoją wartość @Rule[ability.toughness]{Wytrzymałości} w postaci @Rule[resource.health]{Zdrowia} i natychmiast kończy jeden wybrany przez siebie stan, który obecnie na niego oddziałuje.</p>"
                 }
             }
         },
@@ -579,6 +872,22 @@
                 "Shadow Gait": {
                     "name": "Widmowy chód",
                     "description": "<p>W słabym świetle lub ciemności @ref[actor.name] może wtopić się w cień i zniknąć z pola widzenia. Może się <strong>Poruszyć</strong> i pojawić się ponownie w innym miejscu, również słabo oświetlonym lub zaciemnionym. Jest to ruch typu <strong>Przemieszczenie</strong>, który nie powoduje wycofania się z walki.</p>"
+                }
+            }
+        },
+        "Shredding Death Burst": {
+            "name": "Rozszarpujący wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, wybucha, rozrzucając na wszystkie strony ostre odłamki.</p>",
+            "actions": {
+                "Shredding Death Burst": {
+                    "name": "Rozszarpujący wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, rozrzucając <strong>kłute</strong> odłamki, które atakują @Rule[defense.reflex] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[bleeding] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Rozszarpujący wybuch śmierci"
+                        }
+                    ]
                 }
             }
         },
@@ -613,9 +922,13 @@
             "actions": {
                 "Subdivide": {
                     "name": "Podział",
-                    "description": "<p>Komórki szlamu szybko się dzielą, a stworzenie rozdziela się na dwie części! Oryginalne stworzenie i jego klon dzielą między siebie pozostałe <strong>Zdrowie</strong>. <strong>Rozmiar</strong> każdego z powstałych stworzeń zmniejsza się o 1.</p><p>W przypadku walki nowe stworzenie działa jak <strong>Przywołane</strong> i dołącza z <strong>Inicjatywą</strong> 1. Akcja ta może być użyta tylko wtedy, gdy stworzenie ma rozmiar większy niż 2. Utworzony śluz nigdy nie ma rangi wyższej niż <strong>Normalna</strong>.</p>"
+                    "description": "<p>Komórki szlamu gwałtownie się dzielą, a stworzenie rozdziela się na dwie części! Pierwotne stworzenie i jego klon dzielą między siebie po równo pozostałe @Rule[resource.health]. Wartość @Rule[movement.size]{Rozmiaru} każdego z powstałych stworzeń zmniejsza się o 1, a jego poziom zagrożenia zostaje obniżony – na przykład <strong>Elitarny</strong> szlam staje się <strong>Zwykłym</strong> szlamem. Nowy szlam pojawia się, dysponując jedynie @Rule[resource.action]{Akcją} i @Rule[resource.focus]{Skupieniem}, które pozostały jego rodzicowi po wykonaniu tej akcji. Jeśli znajduje się w walce, nowe stworzenie działa jak <strong>Przywołanie</strong> i dołącza z <strong>Inicjatywą</strong> 1. Z tej akcji można skorzystać tylko wtedy, gdy stworzenie ma @Rule[movement.size] większy niż 2.</p>"
                 }
             }
+        },
+        "Summoned": {
+            "name": "Przywołany",
+            "description": "<p>@ref[actor.name]{Stworzenie} zostało przywołane do życia przez rzucającego zaklęcia. Jego poziom biegłości w sztuce magicznej, za pomocą której zostało przywołane, nie może przewyższać poziomu biegłości osoby, która je przywołała.</p>"
         },
         "Sunlight Weakness": {
             "name": "Podatność na światło słoneczne",
@@ -632,7 +945,7 @@
         },
         "Swallow": {
             "name": "Połknięcie",
-            "description": "<p>@ref[actor.name]{Stworzenie} może połknąć w całości inne stworzenie, którego Rozmiar jest co najmniej o 2 mniejszy od jego własnego. Jednocześnie można połknąć tylko jedno stworzenie, chyba że dodatkowe stworzenie ma Rozmiar równy jednej czwartej Rozmiaru tego stworzenia lub mniejszy.</p>",
+            "description": "<p>@ref[actor.name]{Stworzenie} może połknąć w całości inne stworzenie, którego @Rule[movement.size] jest co najmniej o 2 mniejszy od jego własnego. W danym momencie można połknąć tylko jedną istotę, chyba że dodatkowa istota ma rozmiar równy co najmniej jednej czwartej wartości @Rule[movement.size] tej istoty.</p>",
             "actions": {
                 "Swallow": {
                     "name": "Połknięcie",
@@ -654,7 +967,7 @@
         },
         "Swarm": {
             "name": "Rój",
-            "description": "<p>Ten przeciwnik to grupa wielu identycznych stworzeń, które działają jako jeden rojący się tłum wrogów.</p><ul><li><p>Maksymalne <strong>Zdrowie</strong> zostaje podwojone.</p></li><li><p>Wobec każdego źródła obrażeń skierowanego na pojedynczy cel, rój zyskuje dodatkową <strong>Odporność</strong> równą jego <strong>Wytrzymałości</strong>.</p></li><li><p><strong>Rozmiar</strong> roju zmniejsza się wraz z wyczerpywaniem się jego Zdrowia, aż do osiągnięcia minimalnego Rozmiaru wynoszącego 2.</p></li></ul> "
+            "description": "<p>Ten przeciwnik to grupa wielu identycznych stworzeń, które działają wspólnie jako jeden rój.</p><ul><li><p>Maksymalne @Rule[resource.health] zostaje podwojone.</p></li><li><p>Przeciwko obrażeniom ze źródeł oddziałujących na pojedynczy cel rój zyskuje dodatkową <strong>Odporność</strong> równą jego @Rule[ability.toughness]{Wytrzymałości}.</p></li><li><p>@Rule[movement.size] roju zmniejsza się wraz z utratą @Rule[resource.health]{Zdrowia}, aż do osiągnięcia minimalnego @Rule[movement.size]{Rozmiaru} wynoszącego 2.</p></li></ul>"
         },
         "Swooping Strike": {
             "name": "Atak z powietrza",
@@ -662,7 +975,7 @@
             "actions": {
                 "Swooping Strike": {
                     "name": "Atak z powietrza",
-                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który spowodował spadek o co najmniej 10 stóp w kierunku celu. Atak zyskuje <strong>+1 Korzyść</strong> za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest <strong>Trafieniem krytycznym</strong>, cel ataku zostaje natychmiast @Condition[prone].</p>",
+                    "description": "<p>Atak ten może zostać wykonany po wykonaniu <strong>Ruchu</strong>, który spowodował spadek o co najmniej 10 stóp w kierunku celu. Atak zyskuje @Rule[dice.boon]{+1 Korzyść} za każde 10 stóp spadku wysokości podczas tego ruchu.</p><p>Jeśli atak ten jest @Rule[dice.criticalSuccess]{Trafieniem krytycznym}, cel ataku zostaje natychmiast @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Atak z powietrza"
@@ -677,7 +990,7 @@
             "actions": {
                 "Tail Sweep": {
                     "name": "Zamach ogonem",
-                    "description": "<p>@ref[actor.name]{Stworzenie} wymachuje swoim ciężkim ogonem po łuku, uderzając wszystkie stworzenia w zasięgu. W przypadku <strong>Trafienia krytycznego</strong> dotknięte cele otrzymują @Condition[staggered] do końca swojej następnej tury.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} wymachuje swoim ciężkim ogonem po łuku, uderzając wszystkie stworzenia w zasięgu. W przypadku @Rule[dice.criticalSuccess]{Trafienia krytycznego} dotknięte cele otrzymują stan @Condition[staggered] do końca swojej następnej tury.</p>",
                     "effects": [
                         {
                             "name": "Zamach ogonem"
@@ -693,7 +1006,7 @@
                 "Terrifying Presence": {
                     "name": "Przerażająca obecność",
                     "condition": "Wróg przemieszcza się w promieniu 20 stóp.",
-                    "description": "<p>Gdy przeciwnik zbliży się na odległość 20 stóp od @ref[actor.name]{stworzenia}, zostaje on narażony na działanie przerażającej obecności, która atakuje jego <strong>Wolę</strong> i w razie powodzenia nakłada na niego stan @Condition[frightened].</p>",
+                    "description": "<p>Gdy przeciwnik zbliży się na odległość 20 stóp od @ref[actor.name]{stworzenia}, zostaje on narażony na działanie przerażającej obecności, która atakuje jego @Rule[defense.willpower]{Wolę} i w razie powodzenia nakłada na niego stan @Condition[frightened].</p>",
                     "effects": [
                         {
                             "name": "Przerażająca obecność"
@@ -713,7 +1026,23 @@
                 "Thrash": {
                     "name": "Szarpanina",
                     "condition": "Cel jest Unieruchomiony przez tę istotę.",
-                    "description": "<p>Stworzenie zadaje <strong>Mordercze</strong> obrażenia celowi, na którym obecnie działa stan @Condition[restrained].</p>"
+                    "description": "<p>Stworzenie zadaje @Rule[action.deadly] obrażenia celowi, na którym obecnie działa stan @Condition[restrained].</p>"
+                }
+            }
+        },
+        "Toxic Death Burst": {
+            "name": "Toksyczny wybuch śmierci",
+            "description": "<p>Kiedy @ref[actor.name]{stworzenie} umiera, eksploduje, uwalniając gwałtowną falę trującej energii.</p>",
+            "actions": {
+                "Toxic Death Burst": {
+                    "name": "Toksyczny wybuch śmierci",
+                    "condition": "Stworzenie staje się martwe.",
+                    "description": "<p>Gdy @ref[actor.name]{stworzenie} przechodzi w stan @Condition[dead], wybucha, wyrzucając strumień <strong>trucizny</strong>, który atakuje @Rule[defense.fortitude] wszystkich pobliskich stworzeń, którym nie udało się oprzeć się temu efektowi, a w przypadku trafienia krytycznego nakłada na nie stan @Condition[poisoned] na <strong>3 rundy</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Toksyczny wybuch śmierci"
+                        }
+                    ]
                 }
             }
         },
@@ -723,7 +1052,7 @@
             "actions": {
                 "Trampling Charge": {
                     "name": "Taranowanie",
-                    "description": "<p>@ref[actor.name]{Stworzenie} porusza się do przodu o odległość równą dwukrotności swojego <strong>Biegu</strong>, atakując obronę <strong>Refleks</strong> wszystkich stworzeń na swojej drodze. Cele, które są o połowę mniejsze od tego stworzenia lub mniejsze, są @Condition[stunned] do końca swojej następnej tury, ponieważ zostają one odrzucone na bok.</p>",
+                    "description": "<p>@ref[actor.name]{Stworzenie} przemieszcza się naprzód na odległość do 2 × @Rule[movement.stride], atakując @Rule[defense.reflex] wszystkich stworzeń na swojej drodze. Cele, których rozmiar nie przekracza połowy rozmiaru stworzenia, zostają odrzucone na bok i są w stanie @Condition[stunned] do końca swojej następnej tury.</p><p>Ta akcja wykorzystuje broń naturalną o najniższym koszcie użycia spośród tych, w które stworzenie jest wyposażone. Pierwszeństwo ma broń zadająca obrażenia obuchowe.</p>",
                     "effects": [
                         {
                             "name": "Taranowanie"
@@ -734,11 +1063,11 @@
         },
         "Tusk Charge": {
             "name": "Szarża kłami",
-            "description": "Dzik opuszcza głowę i szarżuje z szaloną prędkością, a jego kły wystają spod śliniącego się gardła.",
+            "description": "<p>@ref[actor.name]{Stworzenie} opuszcza głowę i szarżuje z szaloną prędkością, a jego kły wystają spod śliniącego się gardła.</p>",
             "actions": {
                 "Tusk Charge": {
                     "name": "Szarża kłami",
-                    "description": "<p>Wykonaj Szarżę w linii prostej i zaatakuj pierwsze napotkane stworzenie. Jeśli atak się powiedzie, cel zostanie @Condition[prone].</p>",
+                    "description": "<p>Wykonaj Szarżę w linii prostej na odległość równą wartości @Rule[movement.stride] i zadaj <strong>Uderzenie</strong> pierwszej napotkanej istocie. Jeśli się powiedzie, cel otrzymuje stan @Condition[prone].</p>",
                     "effects": [
                         {
                             "name": "Szarża kłami"
@@ -757,6 +1086,21 @@
                     "effects": [
                         {
                             "name": "Jadowite ugryzienie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Vine Lash": {
+            "name": "Smagnięcie pnączem",
+            "description": "<p>@ref[actor.name]{Stworzenie} potrafi strzelać swoimi pnączami po polu bitwy z ogromną siłą.</p>",
+            "actions": {
+                "Vine Lash": {
+                    "name": "Smagnięcie pnączem",
+                    "description": "<p>@ref[actor.name]{Stworzenie} atakuje kolczastymi pnączami, tworząc rozległy <strong>Wachlarz</strong> o zasięgu 20 stóp, który uderza wszystkie stworzenia znajdujące się w zasięgu. W przypadku @Rule[dice.criticalSuccess]{Sukcesu} trafione cele otrzymują stan @Condition[staggered] do końca swojej następnej tury.</p>",
+                    "effects": [
+                        {
+                            "name": "Smagnięcie pnączem"
                         }
                     ]
                 }
