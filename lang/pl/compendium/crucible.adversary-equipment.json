@@ -9,6 +9,12 @@
         "Natural Weapons": "Naturalne bronie"
     },
     "entries": {
+        "Antlers": {
+            "name": "Rogi",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma potężne rogi, których używa do obrony i do atakowania wrogów.</p>"
+            }
+        },
         "Beak": {
             "name": "Dziób",
             "description": {
@@ -87,6 +93,12 @@
                 "public": "<p>@ref[actor.name]{Stworzenie} ma długie, ostre kły.</p>"
             }
         },
+        "Feet": {
+            "name": "Stopy",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} może atakować za pomocą stóp pozbawionych pazurów lub kopyt.</p>"
+            }
+        },
         "Fists": {
             "name": "Pięści",
             "description": {
@@ -123,6 +135,12 @@
                 "public": "<p>@ref[actor.name]{Stworzenie} ma potężne szpony, z których każdy jest wielkości stalowego ostrza.</p>"
             }
         },
+        "Giant Feet": {
+            "name": "Olbrzymie stopy",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} ma stopy tak ogromne, że mogą służyć jako potężna broń, miażdżąc wszystko, co znajdzie się pod nimi.</p>"
+            }
+        },
         "Giant Jaws": {
             "name": "Olbrzymie szczęki",
             "description": {
@@ -133,6 +151,12 @@
             "name": "Olbrzymi ogon",
             "description": {
                 "public": "<p>@ref[actor.name]{Stworzenie} ma ogon gruby jak kłoda, którym macha i uderza.</p>"
+            }
+        },
+        "Giant Tusks": {
+            "name": "Olbrzymie kły",
+            "description": {
+                "public": "<p>@ref[actor.name]{Stworzenie} posiada potężne kły, których używa do okładania przeciwników.</p>"
             }
         },
         "Heavy Carapace": {
@@ -265,6 +289,12 @@
             "name": "Cienista kończyna",
             "description": {
                 "public": "<p>@ref[actor.name]{Stworzenie} atakuje ramieniem ogarniającej ciemności.</p>"
+            }
+        },
+        "Spines": {
+            "name": "Kolce",
+            "description": {
+                "public": "<p>Grube pokrycie kolczastych wyrostków pokrywające grzbiet i boki @ref[actor.name]{stworzenia} pozwala mu odbijać ciosy.</p>"
             }
         },
         "Stinger": {
