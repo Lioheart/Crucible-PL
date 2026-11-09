@@ -5,6 +5,7 @@
         "Dragons": "Smoki",
         "Constructs": "Konstrukty",
         "Elementals": "Żywiołaki",
+        "Companions": "Towarzysze",
         "Beasts": "Bestie"
     },
     "entries": {
@@ -28,6 +29,10 @@
             "name": "Berserker",
             "description": "Wojownik napędzany gniewem, który preferuje ataki dwuręczne przy użyciu broni ciężkiej."
         },
+        "Bestial Companion": {
+            "name": "Zwierzęcy towarzysz",
+            "description": "<p>Zwierzęta, które dzięki magii lub tresurze stały się lojalnymi towarzyszami.</p>"
+        },
         "Brigand": {
             "name": "Bandyta",
             "description": "<p>Nikczemni przestępcy, niezależnie od tego, czy są to bandyci, piraci, łotrzykowie czy inni łotrzykowie.</p>"
@@ -35,6 +40,10 @@
         "Burrower": {
             "name": "Kopacz",
             "description": "<p>Zwierzęta lub stworzenia podobne do zwierząt, które są ekspertami w kopaniu tuneli w twardych materiałach.</p>"
+        },
+        "Chirurgeon": {
+            "name": "Chirurg",
+            "description": "<p>Uzdrowiciele i rzeźnicy, lekarze i nikczemni truciciele.</p>"
         },
         "Chomper": {
             "name": "Kłapacz",
@@ -56,9 +65,17 @@
             "name": "Smoczątko",
             "description": "<p>Mniejsze lub młodsze smoczydła, które indywidualnie są zbyt małe, ale stanowią zagrożenie jako łowcy polujący w stadach.</p>"
         },
+        "Druid": {
+            "name": "Druid",
+            "description": "<p>Poświęcony magii, która wzbogaca ziemię i jej mieszkańców, wykorzystującej moc do wyrażania majestatu i furii natury.</p>"
+        },
         "Elemental Mote": {
             "name": "Cząstka żywiołów",
             "description": "<p>Cząsteczki są najmniejszymi elementarnymi postaciami, które nadal przyjmują fizyczną formę. Zazwyczaj nie są inteligentne i działają zgodnie z bodźcami środowiskowymi lub podążają za instynktownymi wskazówkami większego elementarza znajdującego się w pobliżu.</p>"
+        },
+        "Elemental Scamp": {
+            "name": "Psotnik żywiołów",
+            "description": "<p>Psotnicy żywiołów, którzy czerpią radość z psot i oszustw.</p>"
         },
         "Elemental Sprite": {
             "name": "Duch żywiołów",
@@ -72,6 +89,10 @@
             "name": "Wędrowiec żywiołów",
             "description": "<p>Wędrowcy są znaczącymi przejawami energii żywiołów, które przyjmują imponującą lub majestatyczną postać. Są samoświadomi, rozumni i zdają sobie sprawę, że poza swoim typowym królestwem są nienaturalnymi intruzami. Często kierują nimi instynktowne lub przemyślane cele, które ich przyciągnęły.</p>"
         },
+        "Engineer": {
+            "name": "Inżynier",
+            "description": "<p>Kowale specjalizujący się w konstrukcjach mechanicznych i technicznych. </p>"
+        },
         "Fighter": {
             "name": "Wojownik",
             "description": "Wykwalifikowani wojownicy walczący w zwarciu, biegli w posługiwaniu się bronią jednoręczną, tarczą i ciężką zbroją."
@@ -80,6 +101,10 @@
             "name": "Geomanta",
             "description": "<p>Magowie specjalizujący się w runach Ziemi i Ognia.</p>"
         },
+        "Gladiator": {
+            "name": "Gladiator",
+            "description": "<p>Niezwykli wojownicy, niemal bezkonkurencyjni w sztuce walki jeden na jednego, wykorzystujący połączenie wyćwiczonego refleksu i hartowanej wytrwałości, by przetrwać i pokonać swoich przeciwników.</p>"
+        },
         "Grappler": {
             "name": "Zapaśnik",
             "description": "Wojownicy, którzy specjalizują się w fizycznym obezwładnianiu przeciwników i narażaniu ich na dalsze ataki."
@@ -87,6 +112,10 @@
         "Guardian Beast": {
             "name": "Strażnik bestii",
             "description": "<p>Bestie pełniące rolę strażników, czuwające nad miejscami lub ludźmi, którym są niezachwianie lojalne.</p>"
+        },
+        "Harrier": {
+            "name": "Prześladowca",
+            "description": "<p>Latający przeciwnicy, którzy doskonale potrafią zastraszać wrogów z góry, wchodząc w walkę i wycofując się z niej według własnego uznania, nie dając im ani chwili wytchnienia.</p>"
         },
         "Herd Beast": {
             "name": "Stadna bestia",
@@ -107,6 +136,10 @@
         "Lightweaver": {
             "name": "Tkacz światła",
             "description": "<p>Magowie specjalizujący się w runach Światłości i Ognia.</p>"
+        },
+        "Lurker": {
+            "name": "Czyhacz",
+            "description": "<p>Czychacze to podstępne stworzenia, które działają w ukryciu i stosują ataki mające na celu pozbawienie przeciwnika możliwości obrony.</p>"
         },
         "Mage": {
             "name": "Mag",
@@ -144,6 +177,10 @@
             "name": "Zwiadowca",
             "description": "<p>Osoby przeszkolone w zakresie rozpoznania i wstępnej eksploracji nieznanych obszarów.</p>"
         },
+        "Seer": {
+            "name": "Wróżbita",
+            "description": "<p>Wyrocznie i wróżbici, którzy zajmują się sztuką wróżenia.</p>"
+        },
         "Servitor": {
             "name": "Sługa",
             "description": "<p>Stworzenia wyspecjalizowane w szpiegostwie lub wykonywaniu zadań w odległej służbie kontrolującego je pana.</p>"
@@ -155,6 +192,10 @@
         "Skirmisher": {
             "name": "Harcownik",
             "description": "Nieustępliwy i zdeterminowany wojownik walczący w zwarciu, który wykorzystuje połączenie zwinności i siły, aby pokonać przeciwników."
+        },
+        "Sorcerer": {
+            "name": "Czarownik",
+            "description": "Mag, który w walce posługuje się ogniem i elektrycznością."
         },
         "Spellblade": {
             "name": "Zaklęte ostrze",
