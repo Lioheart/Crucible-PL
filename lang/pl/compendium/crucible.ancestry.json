@@ -1,40 +1,164 @@
 {
     "label": "Pochodzenie",
+    "folders": {
+        "Ancestries": "Pochodzenia",
+        "Ancestry Talents": "Talenty pochodzenia"
+    },
     "entries": {
         "Devilkin": {
             "name": "Diablęcy potomek",
             "description": "<p>Urodziłeś się z nieoczekiwaną magiczną władzą nad swoim stworzeniem. Twój wygląd fizyczny nosi znamiona, które przesądni ludzie kojarzą z istotami z innych wymiarów – szkarłatna skóra, nieskuteczne skrzydła lub rogi, gadzie oczy. Twoja niechęć do światła i nadprzyrodzona odporność na ogień nie przekonują ludzi, by przestali uważać cię za prawdziwego diabła.</p>"
         },
-        "Dwarven": {
+        "Devilkin Lineage": {
+            "name": "Rodowód diablęcego potomka",
+            "description": "<p>Piekielny ogień twojego dziedzictwa tli się tuż pod twoją skórą, czekając, by wybuchnąć dzięki twoim ciosom.</p><p><strong>Widzenie termiczne.</strong> Zyskujesz korzyści wynikające z @UUID[Compendium.crucible.adversary-talents.thermalVision000] w promieniu 30 stóp.</p>",
+            "actions": {
+                "Hellbrand": {
+                    "name": "Piekielne piętno",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], aby pokryć swoje ataki piekielnym ogniem przez <strong>3 rundy</strong>. Każdy z twoich ataków, który zadaje obrażenia @Rule[resource.health]{Zdrowiu}, zadaje również dodatkowe <strong>obrażenia od ognia</strong> równe połowie twojej wartości @Rule[ability.presence]{Prezencji}. @Rule[dice.criticalSuccess]{Trafienie krytyczne} nakłada na cel stan @Condition[burning].</p>",
+                    "effects": [
+                        {
+                            "name": "Piekielne piętno"
+                        }
+                    ]
+                }
+            }
+        },
+        "Dwarf": {
             "name": "Krasnolud",
             "description": "<p>Podobnie jak twoi rodzice przed tobą, urodziłeś się z niezłomną wytrzymałością krasnoludów. Twoja krępa budowa ciała i krzepka sylwetka są cechami charakterystycznymi dla ludu zrodzonego z ziemi i kamienia. Odziedziczyłeś fizyczną wytrzymałość, ponieważ w twojej piersi bije serce z kamienia.</p>"
         },
-        "Elvish": {
+        "Dwarf Lineage": {
+            "name": "Rodowód krasnoluda",
+            "description": "<p>Twój lud nigdy nie zapomina zniewagi, a twój gniew wobec zaprzysięgłego wroga jest tak trwały jak kamień, z którego zbudowane są twoje rodowe siedziby.</p><p><strong>Widzenie w ciemności.</strong> Pokolenia spędzone pod ziemią sprawiły, że twoje oczy przystosowały się do ciemności. Widzisz w ciemności tak, jakby panowało tam słabe światło, w odległości do <strong>30 stóp</strong>, dostrzegając otoczenie w odcieniach szarości.</p>",
+            "actions": {
+                "Grudgebearer": {
+                    "name": "Mściwy",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], aby złożyć przysięgę zemsty wobec wroga, którego widzisz. Twoje ataki na tego wroga zadają dodatkowe obrażenia równe wartości twojej @Rule[ability.wisdom]{Mądrości}.</p><p>Przysięga zemsty wygasa, jeśli zakończysz swoją turę, nie zaatakowawszy tego wroga w jej trakcie. W danym momencie możesz mieć tylko jedną przysięgę zemsty; złożenie nowej przysięgi kończy poprzednią.</p>",
+                    "effects": [
+                        {
+                            "name": "Uraza"
+                        }
+                    ]
+                }
+            }
+        },
+        "Elf": {
             "name": "Elf",
             "description": "<p>Pełen wdzięku w ruchach i szybki w myśleniu, urodziłeś się jako długowieczny elf. Twoja smukła i zwinna sylwetka oraz wyrzeźbione rysy twarzy są cechami odziedziczonymi po ludziach, dla których elegancja jest sposobem na życie. Twoja skłonność do szybkiego myślenia i precyzyjnych ruchów jest wynikiem ewolucji trwającej setki lat tradycji.</p>"
+        },
+        "Elf Lineage": {
+            "name": "Rodowód elfa",
+            "description": "<p>Wielowiekowa tradycja elfów wyostrzyła twoje zmysły, pozwalając ci znajdować słabe punkty w każdej obronie.</p><p><strong>Trans.</strong> Zamiast spać, odpoczywasz w medytacyjnym transie, który pozwala ci zachować jasność umysłu. Jesteś odporny na stany @Condition[asleep] i @Condition[disoriented].</p>",
+            "actions": {
+                "Perfect Precision": {
+                    "name": "Idealna precyzja",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], by zadać cios z nieskazitelną precyzją. Do końca swojej tury twój @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.lZfPVvBSsCEqlte4#critical-hits-and-misses]{Próg krytycznego sukcesu} zostaje zmniejszony o <strong>3</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Idealna precyzja"
+                        }
+                    ]
+                }
+            }
         },
         "Giantkin": {
             "name": "Potomek olbrzymów",
             "description": "<p>Siły żywiołów czuwały nad twoimi narodzinami, obdarzając cię nadprzyrodzoną energią. Twoja potężna sylwetka i muskularna budowa ciała często sprawiają, że inni uważają cię za bezmyślną masę mięśni, ale twój lud znany jest przede wszystkim ze swojej fizycznej wytrzymałości i głębokiej wiedzy. Odziedziczyłeś siłę gór.</p>"
         },
+        "Giantkin Lineage": {
+            "name": "Rodowód potomka olbrzymów",
+            "description": "<p>Siły żywiołów, które czuwały nad twoim narodzeniem, wciąż odpowiadają, gdy je wzywasz.</p><p><strong>Potężna budowa ciała.</strong> Twoja potężna postać wytrzymuje obciążenia, które przytłoczyłyby innych. Twoja nośność wzrasta o <strong>50%</strong>.</p>",
+            "actions": {
+                "Elemental Birthright": {
+                    "name": "Pierwotne dziedzictwo",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], aby wezwać siły żywiołów wynikające z twojego dziedzictwa. Do początku twojej następnej tury zyskujesz odporność na obrażenia od <strong>kwasu</strong>, <strong>zimna</strong>, <strong>elektryczności</strong> oraz <strong>ognia</strong> równą twojej @Rule[ability.wisdom]{Mądrości}, a wszelkie zadane przez ciebie obrażenia od <strong>kwasu</strong>, <strong>zimna</strong>, <strong>elektryczności</strong> lub <strong>ognia</strong>, które zadajesz, zostają zwiększone o wartość twojej @Rule[ability.wisdom]{Mądrości}.</p>",
+                    "effects": [
+                        {
+                            "name": "Pierwotne dziedzictwo"
+                        }
+                    ]
+                }
+            }
+        },
         "Gnome": {
             "name": "Gnom",
             "description": "<p>Twoje narodziny były okazją do hucznych uroczystości. Twoje drobne ciało i delikatne rysy twarzy idą w parze z niemal nadprzyrodzoną skłonnością do odkrywania. Tradycje twojego ludu opierają się na radości życia oraz znaczeniu szybkiego myślenia i działania.</p>"
+        },
+        "Gnome Lineage": {
+            "name": "Rodowód gnoma",
+            "description": "<p>Umiejętność improwizacji gnoma pozwala ci wydobyć nieco więcej z narzędzi i mikstur, które nosisz przy sobie.</p><p><strong>Pas majsterkowicza.</strong> Dzięki sprytnemu rozmieszczeniu sprzętu masz więcej rzeczy pod ręką. Masz <strong>+1</strong> miejsca w pasie podręcznym.</p>",
+            "actions": {
+                "Tinker's Trick": {
+                    "name": "Sztuczka majsterkowicza",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], aby przygotować sprytną sztuczkę. Następny przedmiot konsumpcyjny, który użyjesz z paska podręcznego przed końcem swojej tury, nie kosztuje @Rule[resource.action]{Akcji} i nie zostaje zużyty.</p>",
+                    "effects": [
+                        {
+                            "name": "Sztuczka majsterkowicza"
+                        }
+                    ]
+                }
+            }
         },
         "Halfling": {
             "name": "Niziołek",
             "description": "<p>Wychowywałeś się w żłobku w otoczeniu innych półludzi. Twoja liliputowska postura, grube, owłosione stopy oraz szybkość umysłu i ciała to cechy, z których najbardziej znany jest twój lud. Twój lud to lud, dla którego edukacja i tradycja mają nadrzędne znaczenie.</p>"
         },
+        "Halfling Lineage": {
+            "name": "Rodowód niziołka",
+            "description": "<p>Niziołki są odważniejsze, niż sugeruje ich postać, a twój duch szybko dochodzi do siebie nawet po najbardziej wstrząsających próbach.</p><p><strong>Mały i zwinny.</strong> Twoja drobna sylwetka z łatwością znika z pola widzenia i wymyka się z uścisku. Otrzymujesz @Rule[dice.boon]{+1 Korzyść}, gdy wykonujesz akcje @Action[default escape], @Action[default hide] lub <strong>Skradanie się</strong>.</p>",
+            "actions": {
+                "Stout Heart": {
+                    "name": "Odważne serce",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism], aby umocnić swoją determinację, natychmiast odzyskując @Rule[resource.morale] równe dwukrotności twojej wartości @Rule[ability.presence]{Prezencji}, co pozwala ci wyjść ze stanu @Condition[broken]. Kończysz również stany @Condition[frightened] i @Condition[confused]. Możesz wykonać tę akcję poza swoją turą w <strong>Walce</strong> przed wykonaniem @Rule[action.reaction]{Reakcji}.</p>"
+                }
+            }
+        },
         "Human": {
             "name": "Człowiek",
             "description": "<p>Znaleziony wśród niezliczonych warunków i odległych miejsc, urodziłeś się jako człowiek zdolny do ciągłej adaptacji. Wysoki lub niski, szczupły, umięśniony lub krępy – Twój wygląd fizyczny jest niezwykle zróżnicowany. Ludzie są najbardziej znani ze swojej genetycznej predyspozycji do determinacji, a tradycje napędzają ich upartą wolę przetrwania.</p>"
         },
-        "Orcish": {
+        "Human Lineage": {
+            "name": "Rodowód człowieka",
+            "description": "<p>Ludzie słyną z upartej woli przetrwania, która pozwala im iść naprzód pomimo trudności, które powstrzymałyby każdego innego.</p><p><strong>Adaptacja.</strong> Twój lud szybko przyswaja wszystko, czego wymaga dana sytuacja. Otrzymujesz <strong>+2</strong> punktów biegłości.</p>",
+            "actions": {
+                "Push Through": {
+                    "name": "Niezłomność",
+                    "description": "<p>Wykorzystujesz @Rule[resource.heroism] na pokonanie przeciwności losu. Do końca swojej tury twoje ataki i testy umiejętności ignorują wszelkie @Rule[dice.bane]{Zguby}, które zostały na nie nałożone. Zguby, które zdecydujesz się wziąć na siebie, nie są ignorowane.</p>",
+                    "effects": [
+                        {
+                            "name": "Niezłomność"
+                        }
+                    ]
+                }
+            }
+        },
+        "Orc": {
             "name": "Ork",
             "description": "<p>Twoje narodziny były naznaczone gwiazdami i tradycjami dumnego i wytrwałego ludu. Twoje wysokie i dobrze zbudowane ciało oraz naturalna skłonność do wytrzymałości mają swoje źródło wśród ludu narażonego na nieustanną walkę z surowym klimatem północy. Twój lud znany jest przede wszystkim ze swojej siły i odporności.</p>"
+        },
+        "Orc Lineage": {
+            "name": "Rodowód orka",
+            "description": "<p>Surowy klimat północy sprawił, że twój lud walczy najzacieklej, gdy śmierć jest najbliżej.</p><p><strong>Bliznowata Skóra.</strong> Im poważniejsze są twoje rany, tym trudniej cię pokonać. Zyskujesz odporność na <strong>fizyczne</strong> obrażenia równą twojej @Rule[ability.toughness]{Wytrzymałości} pomnożonej przez ułamek maksymalnej wartości @Rule[resource.wounds]{Ran}, jaki straciłeś, zaokrąglony w dół.</p>",
+            "actions": {
+                "Deathless Fury": {
+                    "name": "Nieskończona furia",
+                    "condition": "Dopóki twoje Zdrowie nie przewyższa liczby odniesionych Ran",
+                    "description": "<p>Dopóki twoja wartość @Rule[resource.health]{Zdrowia} nie przekroczy wartości @Rule[resource.wounds]{Ran}, możesz wydać @Rule[resource.heroism], aby wejść w stan Nieskończonej furii. Podczas trwania tej furii ignorujesz wszystkie kary wynikające ze stanu @Condition[weakened], a twoje ataki @Action[default strike] zyskują @Rule[dice.boon]{+1 Korzyść}.</p><p>Furia kończy się, gdy twoja wartość @Rule[resource.health]{Zdrowia} przekroczy wartość @Rule[resource.wounds]{Ran} lub gdy <strong>Walka</strong> dobiegnie końca.</p>",
+                    "effects": [
+                        {
+                            "name": "Nieskończona furia"
+                        }
+                    ]
+                }
+            }
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     }
 }
