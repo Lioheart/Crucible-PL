@@ -1,0 +1,72 @@
+{
+    "label": "Efekty",
+    "folders": {
+        "Healing Over Time": "Leczenie w czasie",
+        "Damage Over Time": "Obrażenia w czasie"
+    },
+    "entries": {
+        "Bleeding (Piercing)": {
+            "name": "Krwawiący (Kłute)",
+            "description": "<p>Stworzenie z efektem @Condition[bleeding] (Kłute) otrzymuje dodatkowe <strong>Kłute</strong> obrażenia do @Rule[resource.health]{Zdrowia} na początku swoich kolejnych tur.</p>"
+        },
+        "Bleeding (Slashing)": {
+            "name": "Krwawiący (Cięte)",
+            "description": "<p>Stworzenie z efektem @Condition[bleeding] (Cięte) otrzymuje dodatkowe <strong>Cięte</strong> obrażenia do @Rule[resource.health]{Zdrowia} na początku swoich kolejnych tur.</p>"
+        },
+        "Burning": {
+            "name": "Płonący",
+            "description": "<p>Stworzenie z efektem @Condition[burning] otrzymuje dodatkowe <strong>Ogniste</strong> obrażenia zarówno do @Rule[resource.health]{Zdrowia}, jak i do @Rule[resource.morale] na początku swoich kolejnych tur.</p>"
+        },
+        "Confused": {
+            "name": "Skonfundowany",
+            "description": "<p>Stworzenie z efektem @Condition[confused] otrzymuje <strong>Psychiczne</strong> obrażenia do @Rule[resource.morale] na początku każdej tury, a ponadto jest traktowane jako @Condition[disoriented].</p>"
+        },
+        "Corroding": {
+            "name": "Korodujący",
+            "description": "<p>Stworzenie z efektem @Condition[corroding] otrzymuje dodatkowe obrażenia od <strong>Kwasu</strong> do @Rule[resource.health]{Zdrowia} na początku każdej kolejnej tury.</p>"
+        },
+        "Decaying": {
+            "name": "Gnijący",
+            "description": "<p>Stworzenie z efektem @Condition[decaying] otrzymuje dodatkowe obrażenia od <strong>Zepsucia</strong> do @Rule[resource.health]{Zdrowia} na początku kolejnych tur.</p>"
+        },
+        "Dominated": {
+            "name": "Zdominowany",
+            "description": "<p>Stworzenie z efektem @Condition[dominated] otrzymuje <strong>Psychiczne</strong> obrażenia do @Rule[resource.morale] na początku każdej tury.</p>"
+        },
+        "Entropy": {
+            "name": "Entropiczny",
+            "description": "<p>Stworzenie dotknięte efektem @Condition[entropy] otrzymuje obrażenia od <strong>Pustki</strong> do @Rule[resource.health]{Zdrowia} na początku każdej tury, a ponadto jest traktowane jako @Condition[frightened].</p>"
+        },
+        "Freezing": {
+            "name": "Zamarzający",
+            "description": "<p>Stworzenie z efektem @Condition[freezing] otrzymuje dodatkowe obrażenia od <strong>Zimna</strong> do @Rule[resource.health]{Zdrowia} na początku każdej kolejnej tury.</p>"
+        },
+        "Inspired": {
+            "name": "Zainspirowany",
+            "description": "<p>Stworzenie, które ma efekt @Condition[inspired], stopniowo odzyskuje @Rule[resource.morale] na początku każdej swojej tury.</p>"
+        },
+        "Irradiated": {
+            "name": "Napromieniowany",
+            "description": "<p>Stworzenie z efektem @Condition[irradiated] otrzymuje dodatkowe <strong>Świetliste</strong> obrażenia zarówno do @Rule[resource.health]{Zdrowia}, jak i @Rule[resource.morale] na początku swoich kolejnych tur.</p>"
+        },
+        "Mending": {
+            "name": "Regenerujący",
+            "description": "<p>Stworzenie, które ma efekt @Condition[mending], stopniowo odzyskuje @Rule[resource.health]{Zdrowia} na początku każdej swojej tury.</p>"
+        },
+        "Poisoned": {
+            "name": "Zatruty",
+            "description": "<p>Stworzenie z efektem @Condition[poisoned] otrzymuje dodatkowe obrażenia od <strong>Trucizny</strong> do @Rule[resource.health]{Zdrowia} na początku każdej kolejnej tury.</p>"
+        },
+        "Shocked": {
+            "name": "Porażony",
+            "description": "<p>Stworzenie z efektem @Condition[shocked] otrzymuje <strong>Elektryczne</strong> obrażenia do @Rule[resource.morale] na początku każdej tury.</p>"
+        },
+        "Suffocating": {
+            "name": "Duszony",
+            "description": "<p>Stworzenie z efektem @Condition[suffocating] otrzymuje obrażenia od <strong>Pustki</strong> zarówno do @Rule[resource.wounds]{Ran}, jak i @Rule[resource.madness]{Obłędu} na początku każdej tury, co odzwierciedla fizyczny uraz płuc oraz panikę spowodowaną brakiem powietrza do oddychania. Podczas trwania efektu Duszenia stworzenie znajduje się również w stanie @Condition[silenced].</p>"
+        }
+    },
+    "mapping": {
+        "description": "description"
+    }
+}
